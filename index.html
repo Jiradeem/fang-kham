@@ -162,6 +162,18 @@ textarea, .panel input[type="text"] { width: 100%; border: 1.5px solid var(--lin
 .thbar button.cur { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
 .thbar button.cur small { color: inherit; }
 .thbar button:disabled { opacity: .45; cursor: default; }
+.tips { margin-top: 10px; border-top: 1px dashed var(--line); padding-top: 8px; }
+.tips b { font-size: 13px; color: var(--bad); }
+.tips ul { margin: 4px 0 0; padding-left: 18px; font-size: 13.5px; }
+.tips li { margin-bottom: 3px; }
+.set-note { font-size: 13.5px; background: var(--chip); border-radius: 8px; padding: 8px 10px; margin-top: 8px; }
+.set-note:empty { display: none; }
+.item-note { font-size: 13.5px; color: var(--accent); margin-top: 6px; }
+.item-note:empty { display: none; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 10px 0; }
+.pair .btn { justify-content: center; font-size: 19px; padding: 14px; font-weight: 600; }
+.pair .btn.right { background: var(--good); border-color: var(--good); color: #fff; }
+.pair .btn.wrong { background: var(--bad); border-color: var(--bad); color: #fff; }
 .status { font-size: 13.5px; color: var(--accent); font-weight: 600; }
 footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display: grid; gap: 4px; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
@@ -228,6 +240,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
         <div class="row" id="wAudio"></div>
         <ol class="defs" id="wDefs"></ol>
         <div class="links" id="wLinks"></div>
+        <div class="tips" id="wTips" hidden><b>⚠ จุดที่คนไทยมักพลาด</b><ul id="wTipList"></ul></div>
       </div>
 
       <div class="panel">
@@ -236,6 +249,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
           <button role="tab" aria-selected="false" data-tab="dict">ฟังแล้วพิมพ์</button>
           <button role="tab" aria-selected="false" data-tab="use">แต่งประโยค</button>
           <button role="tab" aria-selected="false" data-tab="quiz">ควิซเติมคำ</button>
+          <button role="tab" aria-selected="false" data-tab="pairs">แยกเสียง</button>
         </div>
         <div data-pane="speak">
           <p class="hint">ฟังประโยคแล้วพูดตาม ระบบจะฟังเสียงแล้วบอกว่าคำไหนตรง (ใช้ได้ดีที่สุดใน Chrome)</p>
@@ -270,6 +284,20 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
           </div>
           <div class="hint" id="useMsg"></div>
         </div>
+        <div data-pane="pairs" hidden>
+          <div id="pairStart">
+            <p class="hint">ฝึกหูแยกเสียงที่คนไทยมักฟังเป็นเสียงเดียวกัน เช่น ship/sheep, live/leave, think/sink ฟังคลิปจริงแล้วเลือกว่าได้ยินคำไหน 10 ข้อ</p>
+            <button class="btn primary" id="bPairs">เริ่มฝึกแยกเสียง</button>
+            <div class="hint" id="pairInfo" style="margin-top:8px"></div>
+          </div>
+          <div id="pairBox" hidden>
+            <div class="row" style="margin-top:0;justify-content:space-between"><span class="count" id="pProg"></span><span class="count" id="pScore"></span></div>
+            <div class="hint" id="pFocus"></div>
+            <div class="pair" id="pOpts"></div>
+            <div class="row"><button class="btn" id="pReplay">↻ ฟังอีกครั้ง</button><button class="btn primary" id="pNext" hidden>ข้อต่อไป →</button></div>
+            <div class="hint" id="pMsg"></div>
+          </div>
+        </div>
         <div data-pane="quiz" hidden>
           <div id="quizStart">
             <p class="hint">ฟังคลิปแล้วเลือกคำที่หายไป 10 ข้อ ใช้สำเนียง ประเภท และระดับที่เลือกไว้ด้านบน</p>
@@ -288,7 +316,9 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
       <div class="panel">
         <h3>ชุดคำศัพท์ <small>กดคำเพื่อฟัง</small></h3>
         <select id="setSel" aria-label="เลือกชุดคำศัพท์" style="width:100%;border:1.5px solid var(--line);border-radius:8px;padding:7px 9px;background:var(--bg)"></select>
+        <div class="set-note" id="setNote"></div>
         <div class="set-words" id="setWords"></div>
+        <div class="item-note" id="itemNote"></div>
         <div class="row"><button class="btn" id="bSetNext">คำถัดไปในชุด →</button></div>
       </div>
 
@@ -410,6 +440,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
           $('meta').insertAdjacentHTML('afterbegin', '<span class="tag">คลิปนี้เล่นไม่ได้ กำลังข้ามไปคลิปถัดไป…</span>');
           // Skip clips that stopped being playable, but never loop through the whole list on our own.
           if (quiz.on) { setTimeout(() => quizLoad(true), 1200); return; }
+          if (pairGame.on) return;
           if (++autoSkips < 5 && st.hits.length > 1) setTimeout(() => step(1), 1200);
         },
         onStateChange: e => {
@@ -598,6 +629,9 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
       ['https://translate.google.com/?sl=en&tl=th&op=translate&text=' + enc, 'Google แปล'],
       ['https://youglish.com/pronounce/' + enc + '/english', 'YouGlish']
     ].map(([u, t]) => '<a href="' + u + '" target="_blank" rel="noopener">' + t + ' ↗</a>').join('') : '';
+    const tips = q && window.thaiTips ? window.thaiTips(q) : [];
+    $('wTips').hidden = !tips.length;
+    $('wTipList').innerHTML = tips.map(t => '<li>' + escHtml(t) + '</li>').join('');
     if (!q) return;
     $('wSyl').textContent = q.includes(' ') ? 'วลี' : syllables(q) + ' พยางค์ (ประมาณ)';
     if (q.split(' ').length > 3) return;
@@ -672,6 +706,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     document.querySelectorAll('.tabs button').forEach(x => x.setAttribute('aria-selected', String(x === b)));
     document.querySelectorAll('[data-pane]').forEach(p => p.hidden = p.dataset.pane !== b.dataset.tab);
     if (b.dataset.tab !== 'quiz' && quiz.on) quizEnd(false);
+    if (b.dataset.tab !== 'pairs' && pairGame.on) pairEnd(false);
     if (b.dataset.tab === 'dict') { setHide(true); setLoop(true); }
   });
   const toks = t => norm(t).replace(/[^a-z0-9' ]+/g, ' ').split(' ').filter(Boolean);
@@ -774,6 +809,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   function stopModes() {
     if (shadow.on) { shadow.on = false; $('bShadow').textContent = '▶ ฝึกพูดตามต่อเนื่อง'; if (rec) rec.stop(); }
     if (quiz.on) quizEnd(false);
+    if (pairGame.on) pairEnd(false);
     st.override = null;
   }
 
@@ -975,12 +1011,77 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   $('stats').textContent = 'คลังตอนนี้: ' + C.v.length.toLocaleString() + ' คลิป · ' + C.s.length.toLocaleString() + ' ประโยค · ' +
     Object.entries(accs).map(([k, n]) => k + ' ' + n).join(' · ');
 
+  // ---------- minimal pairs ----------
+  const PAIRS = [
+    ['ship', 'sheep', 'สระสั้น /ɪ/ กับสระยาว /iː/'], ['live', 'leave', 'สระสั้น /ɪ/ กับสระยาว /iː/'], ['sit', 'seat', 'สระสั้น /ɪ/ กับสระยาว /iː/'],
+    ['fill', 'feel', 'สระสั้น /ɪ/ กับสระยาว /iː/'], ['still', 'steal', 'สระสั้น /ɪ/ กับสระยาว /iː/'], ['full', 'fool', 'สระสั้น /ʊ/ กับสระยาว /uː/'],
+    ['think', 'sink', 'th /θ/ กับ s'], ['thing', 'sing', 'th /θ/ กับ s'], ['three', 'tree', 'th /θ/ กับ t'], ['thought', 'taught', 'th /θ/ กับ t'],
+    ['they', 'day', 'th /ð/ กับ d'], ['then', 'den', 'th /ð/ กับ d'], ['very', 'berry', 'v กับ b'], ['vote', 'boat', 'v กับ b'],
+    ['west', 'vest', 'w กับ v'], ['fan', 'van', 'f กับ v'], ['light', 'right', 'l กับ r'], ['long', 'wrong', 'l กับ r'], ['glass', 'grass', 'l กับ r'],
+    ['play', 'pray', 'l กับ r'], ['fly', 'fry', 'l กับ r'], ['collect', 'correct', 'l กับ r'], ['walk', 'work', 'สระ /ɔː/ กับ /ɜː/'],
+    ['want', "won't", 'สระ /ɒ/ กับ /əʊ/'], ['bad', 'bed', 'สระ /æ/ กับ /e/'], ['man', 'men', 'สระ /æ/ กับ /e/'], ['cat', 'cut', 'สระ /æ/ กับ /ʌ/'],
+    ['hat', 'hut', 'สระ /æ/ กับ /ʌ/'], ['watch', 'wash', 'ch กับ sh'], ['chair', 'share', 'ch กับ sh'], ['price', 'prize', 's กับ z ท้ายคำ'],
+    ['rice', 'rise', 's กับ z ท้ายคำ'], ['back', 'bag', 'k กับ g ท้ายคำ'], ['right', 'ride', 't กับ d ท้ายคำ'], ['wait', 'weight', 'เสียงเหมือนกัน (ต้องฟังจากบริบท)']
+  ];
+  const wordHits = w => { const re = makeRe(w), out = []; for (let i = 0; i < C.s.length; i++) if (re.test(C.s[i][3]) && passes(C.v[C.s[i][0]])) out.push(i); return out; };
+  const pairGame = { on: false, items: [], i: 0, score: 0, answered: false };
+  $('bPairs').onclick = () => {
+    stopModes();
+    const usable = PAIRS.filter(([a, b]) => a !== 'wait').map(([a, b, f]) => [a, b, f, wordHits(a), wordHits(b)]).filter(p => p[3].length && p[4].length);
+    if (usable.length < 3) { $('pairInfo').textContent = 'ตัวกรองแคบเกินไป ลองเลือกสำเนียง ประเภท และระดับเป็น "ทั้งหมด"'; return; }
+    const items = [];
+    for (let k = 0; k < 10; k++) {
+      const p = usable[Math.floor(Math.random() * usable.length)], pickA = Math.random() < 0.5;
+      const pool = pickA ? p[3] : p[4];
+      items.push({ a: p[0], b: p[1], focus: p[2], ans: pickA ? p[0] : p[1], si: pool[Math.floor(Math.random() * pool.length)] });
+    }
+    Object.assign(pairGame, { on: true, items, i: 0, score: 0 });
+    $('pairStart').hidden = true; $('pairBox').hidden = false;
+    pairLoad();
+  };
+  function pairLoad() {
+    const it = pairGame.items[pairGame.i];
+    pairGame.answered = false;
+    st.override = it.si; setHide(true); setLoop(true);
+    renderClip(it.si);
+    $('pProg').textContent = 'ข้อ ' + (pairGame.i + 1) + ' / ' + pairGame.items.length;
+    $('pScore').textContent = 'ถูก ' + pairGame.score;
+    $('pFocus').textContent = 'ฝึกแยก: ' + it.focus;
+    const opts = Math.random() < 0.5 ? [it.a, it.b] : [it.b, it.a];
+    $('pOpts').innerHTML = opts.map(o => '<button class="btn" type="button">' + escHtml(o) + '</button>').join('');
+    $('pMsg').textContent = 'ฟังทั้งประโยค แล้วเลือกคำที่ได้ยิน'; $('pNext').hidden = true;
+  }
+  $('pOpts').addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b || !pairGame.on || pairGame.answered) return;
+    const it = pairGame.items[pairGame.i]; pairGame.answered = true;
+    const ok = b.textContent === it.ans; if (ok) pairGame.score++;
+    $('pOpts').querySelectorAll('button').forEach(x => { if (x.textContent === it.ans) x.classList.add('right'); else if (x === b) x.classList.add('wrong'); });
+    $('pMsg').textContent = (ok ? 'ถูกต้อง 👍 ' : 'ยังไม่ถูก ') + 'ประโยคนี้พูดว่า “' + it.ans + '” ดูซับแล้วกดฟังซ้ำเพื่อเทียบเสียง';
+    $('pScore').textContent = 'ถูก ' + pairGame.score;
+    setHide(false); st.q = it.ans; renderSub(it.si); renderWord(it.ans);
+    $('pNext').hidden = false; $('pNext').textContent = pairGame.i + 1 < pairGame.items.length ? 'ข้อต่อไป →' : 'ดูผลคะแนน';
+  });
+  $('pNext').onclick = () => { pairGame.i++; pairGame.i < pairGame.items.length ? pairLoad() : pairEnd(true); };
+  $('pReplay').onclick = replay;
+  function pairEnd(showScore) {
+    pairGame.on = false; st.override = null; setLoop(false); setHide(false);
+    st.q = norm($('q').value && !isThai($('q').value) ? $('q').value : st.q);
+    $('pairStart').hidden = false; $('pairBox').hidden = true;
+    $('pairInfo').textContent = showScore ? 'รอบที่แล้วได้ ' + pairGame.score + ' / ' + pairGame.items.length + ' คะแนน' : '';
+    if (showScore) backToHit();
+  }
+
   // ---------- topic word sets ----------
   const SETS = C.sets || {};
-  $('setSel').innerHTML = Object.keys(SETS).map(k => '<option>' + escHtml(k) + ' (' + SETS[k].length + ')</option>').join('');
+  const setItems = k => Array.isArray(SETS[k]) ? SETS[k] : (SETS[k] && SETS[k].w) || [];
+  $('setSel').innerHTML = Object.keys(SETS).map(k => '<option>' + escHtml(k) + ' (' + setItems(k).length + ')</option>').join('');
   $('setSel').value = $('setSel').options[0] ? $('setSel').options[0].value : '';
-  function curSet() { return SETS[Object.keys(SETS)[$('setSel').selectedIndex]] || []; }
+  function curSet() { return setItems(Object.keys(SETS)[$('setSel').selectedIndex]); }
   function renderSetWords(q) {
+    const k = Object.keys(SETS)[$('setSel').selectedIndex], cur = q || st.q;
+    $('setNote').textContent = (SETS[k] && SETS[k].d) || '';
+    const item = curSet().find(([w]) => w === cur);
+    $('itemNote').textContent = item && item[2] ? cur + ' = ' + item[2] : '';
     $('setWords').innerHTML = curSet().map(([w, n]) => '<button type="button" data-w="' + escHtml(w) + '" class="' + (w === (q || st.q) ? 'cur' : '') + '">' + escHtml(w) + '<small>' + n + '</small></button>').join('');
   }
   $('setSel').onchange = () => { store.set('set', $('setSel').selectedIndex); renderSetWords(); const f = curSet()[0]; if (f) go(f[0]); };

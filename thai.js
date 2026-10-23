@@ -227,3 +227,40 @@ window.THAI_EN = {
   'ในอนาคต': ['in the future', 'future'],
   'ในอดีต': ['in the past', 'used to']
 };
+
+// Pronunciation warnings for Thai speakers, chosen from the spelling of the searched English word or phrase.
+window.THAI_WORD_TIPS = {
+  'walk': 'walk (วอค) ไม่ออกเสียง l อย่าสับสนกับ work (เวิร์ค)', 'work': 'work เสียงสระ /ɜː/ แบบ เออร์ อย่าสับสนกับ walk',
+  'island': 'ตัว s ไม่ออกเสียง: ไอ-เลินด์', 'salmon': 'ตัว l ไม่ออกเสียง: แซม-เมิน', 'receipt': 'ตัว p ไม่ออกเสียง: รี-ซีท',
+  'comfortable': 'พูดจริงเหลือ 3 พยางค์: คัมฟ-เทอะ-เบิล', 'vegetable': 'พูดจริงเหลือ 3 พยางค์: เวจ-เทอะ-เบิล',
+  'wednesday': 'ตัว d ไม่ออกเสียง: เว้นซ์-เดย์', 'clothes': 'ออกเสียงใกล้ close: โคลธซ์ อย่าแยกเป็น โคล-เธส',
+  'women': 'women (วิม-มิน) ต่างจาก woman (วุ-เมิน)', 'live': 'live (ลิฟว์ สระสั้น) ต่างจาก leave (ลีฟว์ สระยาว)',
+  'leave': 'leave สระยาว /iː/ ต่างจาก live สระสั้น', 'ship': 'ship สระสั้น ต่างจาก sheep สระยาว', 'sheep': 'sheep สระยาว ต่างจาก ship สระสั้น',
+  'beach': 'beach สระยาว /iː/ ต้องลากเสียงให้ยาว', 'focus': 'โฟ-เคิส เน้นพยางค์แรก', 'fifteen': 'fifteen เน้นพยางค์หลัง (fif-TEEN) ส่วน fifty เน้นพยางค์แรก',
+  'fifty': 'fifty เน้นพยางค์แรก (FIF-ty) ส่วน fifteen เน้นพยางค์หลัง', 'thirteen': 'เน้นพยางค์หลัง thir-TEEN ส่วน thirty เน้นหน้า',
+  'thirty': 'เน้นพยางค์หน้า THIR-ty ส่วน thirteen เน้นหลัง', 'determine': 'ดิ-เทอร์-มิน ไม่ใช่ ดีเทอร์ไมน์', 'suite': 'ออกเสียงเหมือน sweet (สวีท)',
+  'world': 'world มีเสียง r + l ติดกัน: เวิร์ล-ด์ อย่าลืม d ท้าย', 'girl': 'girl ม้วนลิ้น r แล้วจบด้วย l: เกิร์ล', 'three': 'three เสียง th + r ไม่ใช่ ทรี',
+  'thank': 'th ต้องแลบลิ้นเล็กน้อย ไม่ใช่ แต้ง หรือ แธง', 'think': 'think ไม่ใช่ ทิงค์ หรือ ซิงค์ ต้องแลบลิ้นที่เสียง th'
+};
+window.thaiTips = function (q) {
+  const tips = [], w = q.toLowerCase().trim(), words = w.split(/\s+/);
+  words.forEach(x => { if (window.THAI_WORD_TIPS[x]) tips.push(window.THAI_WORD_TIPS[x]); });
+  const has = re => words.some(x => re.test(x));
+  if (has(/[^aeiou]ed$/) || has(/[aeiou]ed$/)) {
+    const x = words.find(x => /ed$/.test(x)), stem = x.replace(/e?d$/, '');
+    const kind = /[td]$/.test(stem) ? '/ɪd/ เพิ่มพยางค์ (อิด)' : /(k|p|s|sh|ch|f|x|c)$/.test(stem) ? '/t/ (ท ท้ายคำ)' : '/d/ (ด ท้ายคำ เบา ๆ)';
+    tips.push('คำลงท้าย -ed อ่านเป็น ' + kind + ' คนไทยมักไม่ออกเสียงท้ายนี้ ทำให้ฟังเป็นปัจจุบัน');
+  }
+  if (has(/[^s'](s|es)$/) && !has(/(ss|us|is|ous)$/)) tips.push('อย่าลืมเสียง /s/ หรือ /z/ ท้ายคำ คนไทยมักตัดทิ้ง ทำให้ฟังผิดเป็นเอกพจน์หรือผิด tense');
+  if (has(/th/)) tips.push('เสียง th: แลบปลายลิ้นแตะฟันหน้าแล้วเป่าลม ไม่ใช่ ท ต ด หรือ ซ');
+  if (has(/v/)) tips.push('เสียง v: ฟันบนแตะริมฝีปากล่างแล้วสั่นเสียง ไม่ใช่ ว แบบไทย (very ≠ เวรี่ แบบ ว)');
+  if (has(/z/) || has(/[aeiou]s[aeiou]/)) tips.push('เสียง z สั่นในลำคอเหมือนผึ้งบิน ไม่ใช่ ซ ธรรมดา (เช่น easy, music, busy)');
+  if (has(/sh|tion|sion/)) tips.push('เสียง sh /ʃ/ ห่อปากเหมือนบอกให้เงียบ (ชู่ว) ไม่ใช่ ช ช้าง');
+  if (has(/^(str|spr|scr|spl|st|sp|sk|sc|sl|sm|sn|sw)/)) tips.push('พยัญชนะต้นควบ เช่น st, sp, str ห้ามเติมสระ สะ- ข้างหน้า (school ไม่ใช่ สะคูล)');
+  if (has(/(st|sk|nd|nt|ld|lt|ct|pt|xt|mp|nk|ks|ts|ps)$/)) tips.push('พยัญชนะท้ายควบ ต้องออกเสียงให้ครบทุกตัว คนไทยมักเหลือแค่ตัวเดียว (asked ไม่ใช่ อาส)');
+  if (has(/[aeiou]l$|[aeiou]ll$|le$/)) tips.push('เสียง l ท้ายคำ ยกปลายลิ้นแตะเหงือก ไม่ใช่ เสียง ว หรือ น (feel ไม่ใช่ ฟีว, school ไม่ใช่ สคูน)');
+  if (has(/r/) && has(/l/)) tips.push('มีทั้ง r และ l: r ห่อลิ้นไม่แตะเพดาน, l ปลายลิ้นแตะเหงือก คนไทยมักออกเป็นเสียงเดียวกัน');
+  else if (has(/^r|[^aeiou]r[aeiou]/)) tips.push('เสียง r แบบอังกฤษ ห่อลิ้นไม่ให้แตะเพดาน ไม่รัวแบบ ร ไทย และไม่ใช่ ล');
+  if (words.length > 1) tips.push('เจ้าของภาษาพูดวลีนี้ต่อกันเป็นก้อนเดียว ฟังว่าคำไหนถูกเน้น คำเล็ก ๆ เช่น to, of, a มักออกเสียงเบาเป็น เทอะ, เอิฟ, เออะ');
+  return [...new Set(tips)].slice(0, 4);
+};
