@@ -425,6 +425,8 @@ footer.foot > div:not(#stats) { max-width: 90ch; }
 .subs .ctx { display: none; color: var(--muted); font-size: 15px; line-height: 1.5; }
 .subs.show-ctx .ctx:not(:empty) { display: block; }
 .subs .now { color: var(--sub-ink); font: 600 clamp(21px, 2.6vw, 36px)/1.4 var(--font-body); text-wrap: balance; }
+.subs .now .said, .subs .now .todo { color: var(--muted); font-weight: 500; transition: color .2s; }
+.subs .now .said mark, .subs .now .todo mark { color: #111; }
 .subs .now.long { font-size: clamp(19px, 2vw, 28px); }
 .subs .now.xlong { font-size: clamp(17px, 1.6vw, 23px); line-height: 1.45; }
 .subs mark { background: var(--sub-mark); color: #111; border-radius: 6px; padding: 0 5px; }
@@ -1020,20 +1022,31 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
     while (start < text.length && /\s/.test(text[start])) start++;
     const sa = segAt(start)[0], sb = segAt(Math.max(start, end - 1))[0];
     const out = { text: text.slice(start, end).trim(), a: Math.min(sa, si), b: Math.max(sb, si), t0: C.s[Math.min(sa, si)][1], t1: C.s[Math.max(sb, si)][1] + C.s[Math.max(sb, si)][2] };
+    // Where each caption line sits inside the sentence, so the line being spoken can be marked.
+    out.ranges = offs.filter(o => o[0] >= out.a && o[0] <= out.b).map(o => [o[0], Math.max(0, o[1] - start), Math.min(out.text.length, o[2] - start)]);
     sentCache.set(ck, out);
     return out;
   }
 
   let shownSeg = -1, shownSent = null;
+  // The searched sentence is shown whole, with the caption line being spoken marked, so the text moves with the
+  // voice. Once playback leaves that sentence the strip follows the clip's own caption lines, exactly on time.
   function renderSub(si) {
     shownSeg = si;
-    const sen = shownSent = sentence(si), s = C.s[si], prev = C.s[sen.a - 1], next = C.s[sen.b + 1];
+    const hit = hitSeg(), hs = hit >= 0 && C.s[hit][0] === C.s[si][0] ? sentence(hit) : null;
+    const inHit = hs && si >= hs.a && si <= hs.b;
+    const s = C.s[si], sen = shownSent = inHit ? hs : null;
+    const text = sen ? sen.text : s[3], prev = C.s[(sen ? sen.a : si) - 1], next = C.s[(sen ? sen.b : si) + 1];
     $('subPrev').textContent = prev && prev[0] === s[0] ? prev[3] : '';
     $('subNext').textContent = next && next[0] === s[0] ? next[3] : '';
-    $('subNow').innerHTML = highlight(sen.text.replace(/\s--\s/g, ' — '));
+    const r = sen && sen.ranges.find(x => x[0] === si);
+    const fix = t => t.replace(/\s--\s/g, ' — ');
+    $('subNow').innerHTML = r && sen.a !== sen.b
+      ? '<span class="said">' + highlight(fix(text.slice(0, r[1]))) + '</span>' + highlight(fix(text.slice(r[1], r[2]))) + '<span class="todo">' + highlight(fix(text.slice(r[2]))) + '</span>'
+      : highlight(fix(text));
     // Long sentences get a smaller size so the clip, the sentence and the buttons stay on one screen.
-    $('subNow').classList.toggle('long', sen.text.length > 85 && sen.text.length <= 150);
-    $('subNow').classList.toggle('xlong', sen.text.length > 150);
+    $('subNow').classList.toggle('long', text.length > 85 && text.length <= 150);
+    $('subNow').classList.toggle('xlong', text.length > 150);
     $('subNow').classList.add('static');
     karaoke = { si, idx: -1, ends: [...$('subNow').querySelectorAll('.w, mark')].map(el => el.textContent.length) };
     let acc = 0; const total = karaoke.ends.reduce((a, b) => a + b, 0) || 1;
@@ -1124,10 +1137,9 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
     const vi = hs[0];
     let lo = vStart[vi], hi = vEnd[vi], found = -1;
     while (lo <= hi) { const mid = (lo + hi) >> 1; if (C.s[mid][1] <= t + 0.15) { found = mid; lo = mid + 1; } else hi = mid - 1; }
-    // Keep the matched line on screen during the lead-in second before it is spoken.
-    if (found < hitSeg() && t < hs[1]) found = hitSeg();
-    // The whole sentence stays on screen while any of its lines is spoken.
-    if (found >= 0 && found !== shownSeg && !shadow.on && !(shownSent && found >= shownSent.a && found <= shownSent.b && shownSeg >= 0 && C.s[shownSeg][0] === vi)) renderSub(found);
+    // Keep the searched sentence on screen during the lead-in before it is spoken.
+    if (found < hsen.a && t < hsen.t0 && t > hsen.t0 - 3) found = hsen.a;
+    if (found >= 0 && found !== shownSeg && !shadow.on) renderSub(found);
     try { if (!$('unmute').hidden && !player.isMuted()) $('unmute').hidden = true; } catch (e) {}
     karaokeTick(t);
     shadowTick(t);
