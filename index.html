@@ -231,6 +231,11 @@ body.dh-mode #accChips, body.dh-mode #catChips, body.dh-mode #levelChips { displ
 .g-chips button { border: 0; background: var(--chip); border-radius: 6px; padding: 3px 9px; font-size: 13.5px; }
 .g-chips button small { color: var(--muted); font-family: var(--font-mono); font-size: 11px; margin-left: 4px; }
 .g-chips button .th { color: var(--accent); margin-left: 4px; font-size: 12.5px; }
+.g-save { margin-left: 6px; color: var(--muted); cursor: pointer; font-size: 14px; padding: 0 2px; }
+.g-save.on { color: #d4a017; }
+.g-lines li { display: flex; gap: 4px; align-items: flex-start; }
+.g-lines li .g-save { margin-left: 0; margin-top: 3px; }
+.note-filter { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 8px; }
 .g-empty { color: var(--muted); font-size: 13px; }
 .status { font-size: 13.5px; color: var(--accent); font-weight: 600; }
 footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display: grid; gap: 4px; }
@@ -476,6 +481,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
 
       <div class="panel">
         <h3>สมุดของฉัน <small id="noteCount"></small></h3>
+        <div class="note-filter" id="noteFilter"></div>
         <ul class="note-list" id="notes"></ul>
       </div>
     </aside>
@@ -1118,18 +1124,36 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     $('bSave').textContent = '★ บันทึกแล้ว'; setTimeout(() => $('bSave').textContent = '☆ บันทึก', 1500);
   }
   $('bSave').onclick = saveClip;
+  let noteFilter = 'all';
+  const NOTE_KINDS = [['all', 'ทั้งหมด'], ['word', '📌 คำ'], ['clip', '🎬 ประโยคจากคลิป'], ['sentence', '✍️ ประโยคที่แต่ง'], ['dhamma', '🪷 ธรรมะ']];
   function renderNotes() {
     const all = notes();
     $('noteCount').textContent = all.length ? all.length + ' รายการ' : '';
-    $('notes').innerHTML = all.length ? all.map((n, i) => '<li><div><button class="link" data-i="' + i + '">' + escHtml(n.q || '') + '</button> ' +
-      (n.type === 'sentence' ? '✍️ ' : '🎬 ') + '<span>' + escHtml(n.text) + '</span></div><button class="x" data-del="' + i + '" aria-label="ลบ">✕</button></li>').join('')
-      : '<li class="hint">กด ☆ บันทึก เพื่อเก็บคลิปที่ชอบ หรือบันทึกประโยคที่แต่งเองไว้ทบทวน</li>';
+    $('noteFilter').innerHTML = NOTE_KINDS.map(([k, l]) => '<button type="button" class="chip" data-nf="' + k + '" aria-pressed="' + (k === noteFilter) + '">' + l + '</button>').join('') +
+      (all.length ? '<button type="button" class="chip" id="bCsv">⬇ ดาวน์โหลด CSV</button>' : '');
+    const show = all.map((n, i) => [n, i]).filter(([n]) => noteFilter === 'all' || (noteFilter === 'dhamma' ? n.corp === 'dhamma' : n.type === noteFilter));
+    $('notes').innerHTML = show.length ? show.map(([n, i]) => '<li><div><button class="link" data-i="' + i + '">' + escHtml(n.q || '') + '</button> ' +
+      (n.type === 'sentence' ? '✍️ ' : n.type === 'word' ? '📌 ' : '🎬 ') + (n.corp === 'dhamma' ? '🪷 ' : '') +
+      (n.th ? '<b class="th" style="color:var(--accent);font-weight:500">' + escHtml(n.th) + '</b> · ' : '') + '<span>' + escHtml(n.text) + '</span></div><button class="x" data-del="' + i + '" aria-label="ลบ">✕</button></li>').join('')
+      : '<li class="hint">กด ☆ ในกล่อง "แนะนำในคลิปนี้" หรือปุ่ม ☆ บันทึก เพื่อเก็บคำและประโยคไว้ทบทวนตามรอบ</li>';
   }
+  $('noteFilter').addEventListener('click', e => {
+    if (e.target.closest('#bCsv')) {
+      const rows = [['ประเภท', 'คำ/หัวข้อ', 'ความหมาย', 'ประโยค', 'คลิป', 'ลิงก์', 'คลัง', 'รอบทบทวนถัดไป']].concat(notes().map(n => [n.type, n.q || '', n.th || '', n.text || '', n.vid || '',
+        n.vid ? 'https://www.youtube.com/watch?v=' + n.vid + '&t=' + Math.floor(n.t || 0) + 's' : '', n.corp || 'main', n.due ? new Date(n.due * 86400000).toISOString().slice(0, 10) : '']));
+      const csv = '\ufeff' + rows.map(r => r.map(c => '"' + String(c).replace(/"/g, '""') + '"').join(',')).join('\r\n');
+      const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' })); a.download = 'fang-kham-notebook.csv'; a.click();
+      return;
+    }
+    const b = e.target.closest('[data-nf]'); if (b) { noteFilter = b.dataset.nf; renderNotes(); }
+  });
   $('notes').addEventListener('click', e => {
     const d = e.target.closest('[data-del]'), o = e.target.closest('[data-i]');
     if (d) { const all = notes(); all.splice(+d.dataset.del, 1); store.set('notes', all); renderNotes(); return; }
     if (o) {
-      const n = notes()[+o.dataset.i]; go(n.q);
+      const n = notes()[+o.dataset.i];
+      if ((n.corp || 'main') === 'dhamma') { goIn('dhamma', n.q); return; }
+      go(n.q);
       if (n.type === 'clip') { const k = st.hits.findIndex(i => C.v[C.s[i][0]][0] === n.vid && Math.abs(C.s[i][1] - n.t) < 0.5); if (k >= 0) { st.idx = k; show(); } }
     }
   });
@@ -1403,14 +1427,14 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     const hitsOf = re => lines.filter(i => re.test(C.s[i][3]));
     const conn = CONNECTORS.map(([w, th, re]) => [w, th, hitsOf(re)]).filter(x => x[2].length).sort((a, b) => b[2].length - a[2].length);
     const strong = conn.filter(c => !['so', 'but', 'if', 'when'].includes(c[0])).concat(conn.filter(c => ['so', 'but', 'if', 'when'].includes(c[0])));
-    $('gConn').innerHTML = strong.slice(0, 14).map(([w, th, l]) => '<button type="button" data-g="' + l.join(',') + '">' + escHtml(w) + '<span class="th">' + escHtml(th) + '</span><small>' + l.length + '</small></button>').join('') || '<span class="g-empty">ไม่พบคำเชื่อมในคลิปนี้</span>';
+    $('gConn').innerHTML = strong.slice(0, 14).map(([w, th, l]) => '<button type="button" data-sq="' + escHtml(w) + '" data-th="' + escHtml(th) + '" data-g="' + l.join(',') + '">' + escHtml(w) + '<span class="th">' + escHtml(th) + '</span><small>' + l.length + '</small>' + star('word', w) + '</button>').join('') || '<span class="g-empty">ไม่พบคำเชื่อมในคลิปนี้</span>';
     const isDh = v[3] === 'dhamma';
     $('gDhSec').hidden = !isDh;
     let dh = [];
     if (isDh) {
       DH_TERMS = DH_TERMS || dhTermRes();
       dh = DH_TERMS.map(([t, th, re]) => [t, th, hitsOf(re)]).filter(x => x[2].length).sort((a, b) => b[2].length - a[2].length);
-      $('gDh').innerHTML = dh.slice(0, 16).map(([t, th, l]) => '<button type="button" data-g="' + l.join(',') + '">' + escHtml(t) + '<span class="th">' + escHtml(th) + '</span><small>' + l.length + '</small></button>').join('') || '<span class="g-empty">ไม่พบคำธรรมะหลักในคลิปนี้</span>';
+      $('gDh').innerHTML = dh.slice(0, 16).map(([t, th, l]) => '<button type="button" data-sq="' + escHtml(t) + '" data-th="' + escHtml(th) + '" data-g="' + l.join(',') + '">' + escHtml(t) + '<span class="th">' + escHtml(th) + '</span><small>' + l.length + '</small>' + star('word', t) + '</button>').join('') || '<span class="g-empty">ไม่พบคำธรรมะหลักในคลิปนี้</span>';
     }
     // Words worth learning: repeated content words that are useful (mid-frequency) or rarer than everyday words.
     const cnt = {}, at = {};
@@ -1423,7 +1447,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     const isDhWord = w => dhWords.has(w) || dhWords.has(w.replace(/(ed|ing|s)$/, ''));
     const words = Object.keys(cnt).filter(w => cnt[w] >= 2 && !isDhWord(w) && (quizSet.has(w) || w.length >= 7))
       .sort((a, b) => cnt[b] - cnt[a]).slice(0, 14);
-    $('gWords').innerHTML = words.map(w => '<button type="button" data-w="' + w + '" data-g="' + [...new Set(at[w])].join(',') + '">' + escHtml(w) + '<small>' + cnt[w] + '</small></button>').join('') || '<span class="g-empty">—</span>';
+    $('gWords').innerHTML = words.map(w => '<button type="button" data-w="' + w + '" data-sq="' + w + '" data-g="' + [...new Set(at[w])].join(',') + '">' + escHtml(w) + '<small>' + cnt[w] + '</small>' + star('word', w) + '</button>').join('') || '<span class="g-empty">—</span>';
     // Sentences: two caption lines joined, 8–24 words, scored for connectors, Dhamma terms and clean speech; spread over the clip.
     const scored = [];
     for (let k = 0; k < lines.length; k++) {
@@ -1445,9 +1469,33 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     picked.sort((a, b) => a[1] - b[1]);
     const mm = t => { const m = Math.floor(t / 60); return (m >= 60 ? Math.floor(m / 60) + ':' + String(m % 60).padStart(2, '0') : m) + ':' + String(Math.floor(t % 60)).padStart(2, '0'); };
     const hl = t => { let h = escHtml(t); strong.concat(dh).slice(0, 30).forEach(c => { const re = new RegExp('\\b(' + esc(c[0]) + ')\\b', 'ig'); h = h.replace(re, '<mark>$1</mark>'); }); return h; };
-    $('gLines').innerHTML = picked.map(([, i, text]) => '<li><button type="button" data-g="' + i + '"><small>' + mm(C.s[i][1]) + '</small>' + hl(text) + '</button></li>').join('') || '<li class="g-empty">ยังไม่พบประโยคที่เหมาะในคลิปนี้</li>';
+    $('gLines').innerHTML = picked.map(([, i, text]) => '<li>' + star('line', String(i), text) + '<button type="button" data-g="' + i + '" data-line="' + escHtml(text) + '"><small>' + mm(C.s[i][1]) + '</small>' + hl(text) + '</button></li>').join('') || '<li class="g-empty">ยังไม่พบประโยคที่เหมาะในคลิปนี้</li>';
   }
+  // Save buttons: a word (connector, Dhamma term, useful word) or a whole sentence goes into the notebook and spaced review.
+  function isSaved(kind, key, text) {
+    const v = C.v[guideVi];
+    return notes().some(n => (n.corp || 'main') === corpusName && (kind === 'line' ? n.type === 'clip' && n.vid === (v && v[0]) && n.text === text : n.type === 'word' && n.q === key));
+  }
+  function star(kind, key, text) {
+    const on = isSaved(kind, key, text);
+    return '<span class="g-save' + (on ? ' on' : '') + '" role="button" tabindex="0" data-save="' + kind + '" title="' + (on ? 'เก็บแล้ว' : 'เก็บไว้ทบทวน') + '" aria-label="เก็บไว้ทบทวน">' + (on ? '★' : '☆') + '</span>';
+  }
+  function saveFromGuide(sv) {
+    const kind = sv.dataset.save;
+    if (sv.classList.contains('on')) return;
+    if (kind === 'line') {
+      const btn = sv.parentElement.querySelector('[data-line]'), si = +btn.dataset.g, s = C.s[si], v = C.v[s[0]];
+      addNote({ type: 'clip', q: st.lesson ? st.lesson.title : (st.q || '').split('|')[0], vid: v[0], t: s[1], text: btn.dataset.line });
+    } else {
+      const btn = sv.closest('[data-sq]'), list = btn.dataset.g.split(',').map(Number), si = list[guideCycle[btn.dataset.g] || 0] ?? list[0];
+      const s = C.s[si], v = C.v[s[0]];
+      addNote({ type: 'word', q: btn.dataset.sq, th: btn.dataset.th || '', vid: v[0], t: s[1], text: s[3] });
+    }
+    sv.classList.add('on'); sv.textContent = '★'; sv.title = 'เก็บแล้ว';
+  }
+  $('guidePanel').addEventListener('keydown', e => { const sv = e.target.closest('.g-save'); if (sv && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); saveFromGuide(sv); } });
   $('guidePanel').addEventListener('click', e => {
+    const sv = e.target.closest('.g-save'); if (sv) { e.stopPropagation(); saveFromGuide(sv); return; }
     const b = e.target.closest('[data-g]'); if (!b) return;
     const list = b.dataset.g.split(',').map(Number), key = b.dataset.g;
     const n = guideCycle[key] = ((guideCycle[key] ?? -1) + 1) % list.length;
@@ -1589,25 +1637,36 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     $('rCard').hidden = false; reviewLoad();
   };
   function noteSeg(n) {
-    if (n.type !== 'clip' || (n.corp || 'main') !== corpusName) return -1;
+    if ((n.type !== 'clip' && n.type !== 'word') || (n.corp || 'main') !== corpusName) return -1;
     for (let i = 0; i < C.s.length; i++) if (C.v[C.s[i][0]][0] === n.vid && Math.abs(C.s[i][1] - n.t) < 0.5) return i;
     return -1;
   }
-  function reviewLoad() {
+  async function reviewLoad() {
     const [n] = review.list[review.i];
+    if ((n.corp || 'main') !== corpusName && n.type !== 'sentence') { await useCorpus(n.corp || 'main'); $('rCard').hidden = false; }
     $('rProg').textContent = 'รายการ ' + (review.i + 1) + ' / ' + review.list.length + ' · กล่อง ' + ((n.box || 0) + 1) + ' / 5';
     $('rAns').hidden = true; $('rRate').hidden = true; $('rShow').hidden = false;
     const si = noteSeg(n);
     if (si >= 0) {
       st.override = si; setHide(true); setLoop(true); renderClip(si);
-      $('rText').textContent = 'ฟังคลิปแล้วลองพูดหรือเขียนประโยคที่ได้ยิน (คำหลัก: ' + (n.q || '') + ')';
+      if (n.type === 'word') {
+        $('rText').innerHTML = 'คำว่า <b>' + escHtml(n.q) + '</b> แปลว่าอะไร? ฟังตัวอย่างในคลิปแล้วนึกความหมาย';
+        setHide(false);
+      } else $('rText').textContent = 'ฟังคลิปแล้วลองพูดหรือเขียนประโยคที่ได้ยิน' + (n.q ? ' (คำหลัก: ' + n.q + ')' : '');
       $('rPlay').onclick = replay;
+    } else if (n.vid && playerReady) {
+      // The clip is in a Dhamma shard that is not loaded now: play it straight from YouTube at the saved time.
+      st.override = null; setHide(true);
+      player.loadVideoById({ videoId: n.vid, startSeconds: Math.max(0, (n.t || 0) - 1) });
+      $('rText').innerHTML = n.type === 'word' ? 'คำว่า <b>' + escHtml(n.q) + '</b> แปลว่าอะไร? ฟังตัวอย่างในคลิปแล้วนึกความหมาย' : 'ฟังคลิปแล้วลองพูดหรือเขียนประโยคที่ได้ยิน';
+      $('rPlay').onclick = () => { player.seekTo(Math.max(0, (n.t || 0) - 1), true); player.playVideo(); };
     } else {
       $('rText').textContent = 'ฟังประโยคที่คุณเคยแต่งไว้ แล้วนึกความหมาย (คำหลัก: ' + (n.q || '') + ')';
       $('rPlay').onclick = () => speak(n.text);
       speak(n.text);
     }
-    $('rAns').textContent = n.text;
+    $('rAns').textContent = n.type === 'word' ? (n.th ? n.th + ' · ' : '') + 'ตัวอย่าง: ' + n.text : n.text;
+    if (n.type === 'word') renderWord(n.q);
   }
   $('rShow').onclick = () => { $('rAns').hidden = false; $('rRate').hidden = false; $('rShow').hidden = true; setHide(false); };
   function rate(good) {
