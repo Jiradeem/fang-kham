@@ -259,6 +259,10 @@ body.dh-mode #accChips, body.dh-mode #catChips, body.dh-mode #levelChips { displ
 .week-list button { border: 0; background: var(--chip); border-radius: 8px; padding: 7px 10px; width: 100%; text-align: left; }
 .week-list small { color: var(--muted); font-family: var(--font-mono); margin-left: 6px; }
 .g-empty { color: var(--muted); font-size: 13px; }
+.about { margin-bottom: 14px; color: var(--ink); font-size: 14px; }
+.about p { margin: 0 0 8px; max-width: 80ch; }
+.contact-row { display: flex; flex-wrap: wrap; gap: 8px; }
+#cLine { background: #06c755; border-color: #06c755; color: #fff; font-weight: 600; text-decoration: none; }
 .status { font-size: 13.5px; color: var(--accent); font-weight: 600; }
 footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display: grid; gap: 4px; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
@@ -528,6 +532,19 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   </div>
 
   <footer class="foot">
+    <section class="panel about" id="about" aria-labelledby="aboutTitle">
+      <h3 id="aboutTitle">เกี่ยวกับ · ติดต่อ</h3>
+      <p>เว็บฝึกฟังและพูดภาษาอังกฤษจากคลิปจริง จัดทำโดย <a href="https://dreamenglishlearning.com/" target="_blank" rel="noopener">Dream English Learning</a> เพื่อการศึกษา ไม่แสวงหากำไร ไม่มีค่าใช้จ่าย</p>
+      <div class="contact-row">
+        <a class="btn" id="cLine" href="https://line.me/R/ti/p/@154yrgoe" target="_blank" rel="noopener">LINE @154yrgoe</a>
+        <span class="btn" id="cMail" title="คัดลอกอีเมล" role="button" tabindex="0"></span>
+        <a class="btn" href="https://dreamenglishlearning.com/" target="_blank" rel="noopener">เว็บหลัก dreamenglishlearning.com ↗</a>
+      </div>
+      <p class="hint" style="margin:8px 0 0"><b>แหล่งที่มา:</b> วิดีโอทุกคลิปเล่นผ่านเครื่องเล่นของ YouTube จากช่องทางการของเจ้าของ (TED, BBC, PBS, CBC, ABC, RTÉ, RNZ, NBC, Warner Bros. และอื่น ๆ) ลิขสิทธิ์เป็นของเจ้าของแต่ละช่อง ·
+        คลิปสนทนาธรรมจากช่อง International Dhamma Discussions และ Studying Dhamma with Ajahn Sujin ของมูลนิธิศึกษาและเผยแพร่พระพุทธศาสนา (บ้านธัมมะ) · อภิธานศัพท์บาลีจาก <a href="https://www.dhammahome.com/article_en/section/4" target="_blank" rel="noopener">dhammahome.com</a> ·
+        พจนานุกรมจาก Free Dictionary API และ Wiktionary · คำแปลอัตโนมัติจาก MyMemory / Google แปล</p>
+      <p class="hint" style="margin:6px 0 0"><b>สำหรับเจ้าของเนื้อหา:</b> หากต้องการให้นำคลิป ซับไตเติล หรือข้อความใดออก กรุณาติดต่อทางอีเมลหรือ LINE ด้านบน เราจะนำออกโดยเร็ว</p>
+    </section>
     <div id="stats"></div>
     <div>คลิปทั้งหมดเล่นผ่านเครื่องเล่น YouTube จากช่องทางการของเจ้าของ · สำเนียงกำหนดตามประเทศของช่อง ผู้พูดบางคนอาจมีสำเนียงต่างออกไป · ซับที่ติดป้าย "auto" สร้างโดยระบบอัตโนมัติของ YouTube อาจคลาดเคลื่อนบ้าง</div>
     <div>ระดับ A2–C1 เป็นค่าประมาณจากความเร็วพูดและความยากของคำ สื่อจริงของเจ้าของภาษาแทบไม่มีระดับ A1 ผู้เรียนระดับเริ่มต้นแนะนำให้เลือกระดับ A2 ความเร็ว "ช้า" และเปิดความเร็ว 0.75× · คำแปลไทยใช้บริการแปลฟรี (จำกัดจำนวนต่อวัน) และไฮไลต์ทีละคำเป็นจังหวะโดยประมาณ</div>
@@ -1592,6 +1609,18 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     if (b.dataset.w) renderWord(b.dataset.w);
     b.querySelector('small') && list.length > 1 && (b.title = 'จุดที่ ' + (n + 1) + ' จาก ' + list.length);
   });
+
+  // Contact e-mail is assembled here so address-harvesting bots reading the HTML do not find it.
+  (() => {
+    const addr = ['dreamenglishlearningthai', 'gmail.com'].join('@');
+    $('cMail').textContent = '✉ ' + addr;
+    const copy = () => {
+      const done = () => { $('cMail').textContent = '✓ คัดลอกอีเมลแล้ว'; setTimeout(() => $('cMail').textContent = '✉ ' + addr, 1600); };
+      try { navigator.clipboard.writeText(addr).then(done, () => { location.href = 'mailto:' + addr; }); } catch (e) { location.href = 'mailto:' + addr; }
+    };
+    $('cMail').onclick = copy;
+    $('cMail').onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); copy(); } };
+  })();
 
   // ---------- backup and restore of everything this browser keeps ----------
   $('bBackup').onclick = () => {
