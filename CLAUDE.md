@@ -7,7 +7,7 @@ A YouGlish-style listening site for Thai learners of English: search a word or p
 - Pushing to `main` updates the live site within 1–2 minutes. No build step on GitHub; `data.js` is committed.
 
 ## Start here (handoff for the next session)
-Status on 2026-10-23: 962 general clips (226,841 lines) from 60+ official channels, 2,554 Dhamma clips (119 with searchable captions), two weekly GitHub Actions workflows set up; the general one was tried once and YouTube blocked GitHub (see item 1).
+Status on 2026-10-23: 1,221 general clips (268,016 lines) from 60+ official channels, 2,554 Dhamma clips (119 with searchable captions), two weekly GitHub Actions workflows set up; the general one was tried once and YouTube blocked GitHub (see item 1).
 
 About the owner (follow these):
 - English teacher (not a researcher, not a nursing teacher for this project). Their own site is https://dreamenglishlearning.com (on Netlify; its code is not in this repo). Contact on the site: LINE @154yrgoe and dreamenglishlearningthai@gmail.com (already in the About box).
@@ -23,7 +23,7 @@ Waiting for the owner:
 3. Visitor counter (GoatCounter) needs a code from the owner's sign-up; permission e-mail to the Baan Dhamma foundation was offered, not written.
 
 Agreed plan for growing the corpus (the owner asked for "as many clips as possible, as fast as possible", without paying):
-- Step 1: daily runs (see above). Also add more TED / TED-Ed clips (licence CC BY-NC-ND, hand-made captions); a collection of up to 150 per channel was running at the end of the last session and may not have been published.
+- Step 1: daily runs (see above). Also add more TED / TED-Ed clips (licence CC BY-NC-ND, hand-made captions); 262 TED/TED-Ed talks were added on 2026-10-23 (150 per channel collected; TED now ~170, TED-Ed ~170).
 - Step 2: when the corpus nears 3,000 clips (`--max` in the workflow), load parts only when a search needs them.
 - Step 3 (only when the owner says "ทำขั้น 3"): move search to Cloudflare Workers + D1 (free tier) so the browser no longer downloads the corpus; keep the current files as a fallback when the server is down. The owner must create the Cloudflare account and an API token (GitHub secret) themselves; guide them step by step.
 - Do not use proxies or IP rotation to get around YouTube limits. The YouTube Data API cannot download other channels' captions.
