@@ -4,41 +4,49 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>ฟังคำจริง</title>
+<link rel="icon" href="img/owl-192.png">
+<link rel="apple-touch-icon" href="img/owl-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Noto+Serif+Thai:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Mitr:wght@500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Noto+Serif+Thai:wght@500;600;700&display=swap">
 <style>
 /* Layout: a search bar on top, then a two-column stage — the player with its subtitle strip on the left, word study and practice on the right. */
 :root {
-  --bg: #f3f4f1;
+  --bg: #fbf7ee;
   --surface: #ffffff;
-  --ink: #17202a;
-  --muted: #5d6874;
-  --line: #d9ddd8;
+  --ink: #143a38;
+  --muted: #5b716e;
+  --line: #e4e6dc;
   --screen: #0f1418;
   --subtitle: #ffd54a;
-  --accent: #1f6f78;
+  --accent: #0c8c80;
   --accent-ink: #ffffff;
-  --good: #2e7d4f;
-  --bad: #b3402f;
-  --chip: #e7ebe6;
-  --font-display: "Bricolage Grotesque", "IBM Plex Sans Thai", system-ui, sans-serif;
+  --brand: #00c2a8;
+  --coral: #ff7a59; --coral-d: #ec5f3c; --coral-soft: #ffe6dd;
+  --good: #1f9d68;
+  --bad: #e1556a;
+  --chip: #edf5f1;
+  --lv0-bg: #ffe7dc; --lv0-fg: #8c2f16; --lv1-bg: #d6f7ec; --lv1-fg: #046b52; --lv2-bg: #dceffc; --lv2-fg: #08588f;
+  --lv3-bg: #ebe3fd; --lv3-fg: #5122c4; --lv4-bg: #ffe4ee; --lv4-fg: #ac1b55; --lv5-bg: #fff1cc; --lv5-fg: #855400;
+  --font-display: "Fredoka", "Mitr", "IBM Plex Sans Thai", system-ui, sans-serif;
   --font-body: "IBM Plex Sans Thai", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
   --radius: 10px;
-  --accent-soft: #e2eff0; --shadow: 0 1px 2px rgba(20, 32, 40, .05), 0 6px 18px rgba(20, 32, 40, .05);
+  --accent-soft: #d4f4ee; --shadow: 0 1px 2px rgba(20, 58, 56, .05), 0 8px 22px rgba(20, 58, 56, .06);
   --gold: #a8801f; --gold-soft: #f7f0dc; --gold-line: #e3cf97; --font-serif-th: "Noto Serif Thai", "IBM Plex Sans Thai", serif;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #111518; --surface: #192025; --ink: #e8ecef; --muted: #9aa6b0; --line: #2a333a;
-    --screen: #05080a; --subtitle: #ffd54a; --accent: #5fb7c0; --accent-ink: #0b1215;
-    --good: #6cc68f; --bad: #ef8a78; --chip: #222b31; --accent-soft: #1b3236; --shadow: 0 1px 2px rgba(0, 0, 0, .3); --gold: #e2c06b; --gold-soft: #2a2416; --gold-line: #5a4a22; color-scheme: dark;
+    --bg: #0f1c1b; --surface: #162826; --ink: #e6f2ef; --muted: #95aba7; --line: #25403c;
+    --screen: #05080a; --subtitle: #ffd54a; --accent: #2fd3bd; --accent-ink: #062320; --brand: #2fd3bd; --coral: #ff8a6b; --coral-d: #f26b48; --coral-soft: #3a2420;
+    --lv0-bg: #3a241b; --lv0-fg: #ffb497; --lv1-bg: #143a2f; --lv1-fg: #7be3bf; --lv2-bg: #13324a; --lv2-fg: #8cc8f5; --lv3-bg: #2a2147; --lv3-fg: #c3adff; --lv4-bg: #3d1a2a; --lv4-fg: #ff9cc0; --lv5-bg: #3a2e12; --lv5-fg: #f3cd6a;
+    --good: #5fd39b; --bad: #ff8a9a; --chip: #1d3431; --accent-soft: #143a36; --shadow: 0 1px 2px rgba(0, 0, 0, .3); --gold: #e2c06b; --gold-soft: #2a2416; --gold-line: #5a4a22; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #111518; --surface: #192025; --ink: #e8ecef; --muted: #9aa6b0; --line: #2a333a;
-  --screen: #05080a; --subtitle: #ffd54a; --accent: #5fb7c0; --accent-ink: #0b1215;
-  --good: #6cc68f; --bad: #ef8a78; --chip: #222b31; --accent-soft: #1b3236; --shadow: 0 1px 2px rgba(0, 0, 0, .3); --gold: #e2c06b; --gold-soft: #2a2416; --gold-line: #5a4a22; color-scheme: dark;
+  --bg: #0f1c1b; --surface: #162826; --ink: #e6f2ef; --muted: #95aba7; --line: #25403c;
+  --screen: #05080a; --subtitle: #ffd54a; --accent: #2fd3bd; --accent-ink: #062320; --brand: #2fd3bd; --coral: #ff8a6b; --coral-d: #f26b48; --coral-soft: #3a2420;
+    --lv0-bg: #3a241b; --lv0-fg: #ffb497; --lv1-bg: #143a2f; --lv1-fg: #7be3bf; --lv2-bg: #13324a; --lv2-fg: #8cc8f5; --lv3-bg: #2a2147; --lv3-fg: #c3adff; --lv4-bg: #3d1a2a; --lv4-fg: #ff9cc0; --lv5-bg: #3a2e12; --lv5-fg: #f3cd6a;
+  --good: #5fd39b; --bad: #ff8a9a; --chip: #1d3431; --accent-soft: #143a36; --shadow: 0 1px 2px rgba(0, 0, 0, .3); --gold: #e2c06b; --gold-soft: #2a2416; --gold-line: #5a4a22; color-scheme: dark;
 }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
@@ -444,17 +452,56 @@ details.more[open] > summary { margin-bottom: 6px; }
   .fhint { display: none; }
   .tools .btn { flex: 1 1 auto; justify-content: center; padding: 7px 8px; font-size: 13.5px; }
 }
+/* ---------- Dream English Learning colours: mint, coral, cream, the owl, level colours ---------- */
+.brand .logo { width: 46px; height: 46px; border-radius: 13px; box-shadow: 0 2px 8px rgba(0, 120, 105, .18); }
+.brand-t b { font-family: "Mitr", var(--font-body); font-weight: 600; color: var(--ink); }
+.brand-t small { font-family: "Fredoka", var(--font-body); font-weight: 600; letter-spacing: .01em; }
+.brand-t small em { font-style: normal; color: var(--accent); }
+.brand-t small i { font-style: normal; color: var(--coral-d); }
+.home-link { flex: none; display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--accent); font-weight: 600; font-size: 14px; border: 1.5px solid color-mix(in srgb, var(--brand) 45%, var(--line)); background: var(--surface); border-radius: 999px; padding: 8px 14px; }
+.home-link:hover { background: var(--accent-soft); }
+.result-head h2, .course-head h2, .dh-head h2, .panel h3, .sec-title, .course-sec h3, .wod .term { font-family: "Mitr", var(--font-body); font-weight: 500; }
+.result-head h2 em, .lesson-list .no { font-family: "Fredoka", "Mitr", var(--font-body); }
+.btn.primary { background: linear-gradient(180deg, var(--coral), var(--coral-d)); border-color: var(--coral-d); color: #fff; box-shadow: 0 3px 10px color-mix(in srgb, var(--coral) 35%, transparent); }
+.btn.primary:hover { filter: brightness(1.05); border-color: var(--coral-d); }
+form.search .btn.primary { border-radius: 999px; padding-inline: 22px; }
+form.search input { border-radius: 999px; padding-inline: 20px; border-color: color-mix(in srgb, var(--brand) 30%, var(--line)); }
+form.search input:focus { border-color: var(--brand); }
+nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(--brand), var(--accent)); color: #fff; }
+.ic.big { background: linear-gradient(180deg, var(--coral), var(--coral-d)); border-color: var(--coral-d); color: #fff; box-shadow: 0 3px 10px color-mix(in srgb, var(--coral) 40%, transparent); }
+.ic.big:hover:not(:disabled) { background: linear-gradient(180deg, var(--coral), var(--coral-d)); }
+.panel, .filterbox, nav.views, .course-head, .subs, .lesson-list li, .about { border-radius: 18px; }
+.course-head { border-left-color: var(--brand); }
+#wordPanel { border-top-color: var(--brand); }
+.subs mark { background: #ffd84d; }
+/* Level colours from the main site: A1 green, A2 blue, B1 purple, B2 pink, C1 gold */
+#levelChips .chip[data-k="A1"], .tag.lv[data-k="A1"] { background: var(--lv1-bg); color: var(--lv1-fg); }
+#levelChips .chip[data-k="A2"], .tag.lv[data-k="A2"] { background: var(--lv2-bg); color: var(--lv2-fg); }
+#levelChips .chip[data-k="B1"], .tag.lv[data-k="B1"] { background: var(--lv3-bg); color: var(--lv3-fg); }
+#levelChips .chip[data-k="B2"], .tag.lv[data-k="B2"] { background: var(--lv4-bg); color: var(--lv4-fg); }
+#levelChips .chip[data-k="C1"], .tag.lv[data-k="C1"] { background: var(--lv5-bg); color: var(--lv5-fg); }
+.tag.lv { border-color: transparent; font-weight: 600; }
+#levelChips .chip[aria-pressed="true"][data-k]:not([data-k="all"]) { box-shadow: inset 0 0 0 2px currentColor; font-weight: 700; }
+#levelChips .chip[aria-pressed="true"] small { opacity: 1; }
+@media (max-width: 720px) {
+  header.top { display: grid; grid-template-columns: minmax(0, 1fr) auto; }
+  form.search { grid-column: 1 / -1; order: 3; }
+  .home-link { padding: 7px 12px; font-size: 13px; }
+  .brand .logo { width: 40px; height: 40px; }
+  nav.views button[aria-current="page"] { background: var(--accent-soft); color: var(--accent); }
+}
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header class="top">
-    <a class="brand" href="./" aria-label="ฟังคำจริง หน้าแรก"><svg class="logo" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="currentColor"/><g stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M11 17v6M16 13v14M21 10v20M26 14v12M31 18v4"/></g></svg><span class="brand-t"><b>ฟังคำจริง</b><small>ฟังคำศัพท์จากคลิปจริง หลายสำเนียง</small></span></a>
+    <a class="brand" href="./" aria-label="ฟังคำจริง หน้าแรก"><img class="logo" src="img/owl-192.png" width="46" height="46" alt=""><span class="brand-t"><b>ฟังคำจริง</b><small>by <em>Dream English</em> <i>Learning</i></small></span></a>
     <form class="search" id="searchForm" role="search">
       <input id="q" type="search" placeholder="พิมพ์คำอังกฤษ หรือคำไทยก็ได้ เช่น however, ถึงแม้ว่า, ฉันควรจะ" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="คำที่ต้องการฟัง">
       <button class="btn primary" type="submit">ค้นหา</button>
     </form>
+    <a class="home-link" href="https://dreamenglishlearning.com/" title="กลับเว็บหลัก Dream English Learning"><span aria-hidden="true">🏠</span> <span class="hl-t">เว็บหลัก</span></a>
   </header>
 
   <nav class="views" aria-label="ส่วนของเว็บ">
@@ -836,7 +883,7 @@ details.more[open] > summary { margin-bottom: 6px; }
     el.querySelectorAll('.chip').forEach(b => b.remove());
     list.forEach(([k, label]) => {
       const b = document.createElement('button');
-      b.className = 'chip'; b.type = 'button';
+      b.className = 'chip'; b.type = 'button'; b.dataset.k = k;
       const n = k === 'all' || k === 'All' ? total : (counts[k] || 0);
       b.innerHTML = label + (st.q ? ' <small>' + n + '</small>' : '');
       b.setAttribute('aria-pressed', String(k === cur));
@@ -933,7 +980,7 @@ details.more[open] > summary { margin-bottom: 6px; }
     renderSub(si);
     const v = C.v[C.s[si][0]];
     $('meta').innerHTML = '<span class="tag">' + v[4] + '</span><span class="tag">' + (CAT_TH[v[3]] || v[3]) + '</span>' +
-      (v[5] === 'a' ? '<span class="tag">ซับ auto</span>' : '') + '<span class="tag">' + v[7] + ' คำ/นาที</span><span class="tag">ระดับ ' + v[8] + '</span>' +
+      (v[5] === 'a' ? '<span class="tag">ซับ auto</span>' : '') + '<span class="tag">' + v[7] + ' คำ/นาที</span><span class="tag lv" data-k="' + v[8] + '">ระดับ ' + v[8] + '</span>' +
       '<span>' + escHtml(v[2]) + ' — ' + escHtml(v[1]) + '</span>' +
       '<a href="https://www.youtube.com/watch?v=' + v[0] + '&t=' + Math.floor(C.s[si][1]) + 's" target="_blank" rel="noopener">เปิดใน YouTube ↗</a>';
   }

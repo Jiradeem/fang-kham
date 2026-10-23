@@ -121,3 +121,8 @@ The search box stays and also says which topic a word belongs to.
 2. 👁 "See it" sources and action/direction vocabulary
 3. A2 topics, then B1, B2, C1 functions and grammar
 4. Fill words with fewer than 5 clips; split the data files
+
+## Design
+- Colours follow the main site dreamenglishlearning.com: mint `--brand #00c2a8` / `--accent #0c8c80`, coral `--coral #ff7a59` for primary buttons and the play button, cream `--bg #fbf7ee`, level colours `--lv1..lv5` (A1 green, A2 blue, B1 purple, B2 pink, C1 gold). Headings use Mitr / Fredoka. The gratitude card to Ajahn Sujin keeps its own gold tones.
+- `img/owl-192.png` is the Dreamy Owl app icon from the main site (the owner's own brand), used as logo and favicon.
+- Clip area works like YouGlish: icon bar under the video, one whole sentence in a large card (`sentence()` joins caption pieces up to sentence ends), context lines on demand. Phones get a bottom tab bar.
