@@ -236,6 +236,23 @@ body.dh-mode #accChips, body.dh-mode #catChips, body.dh-mode #levelChips { displ
 .g-lines li { display: flex; gap: 4px; align-items: flex-start; }
 .g-lines li .g-save { margin-left: 0; margin-top: 3px; }
 .note-filter { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 8px; }
+.lesson-list li { display: flex; align-items: stretch; }
+.lesson-list li > button[data-lesson] { flex: 1; min-width: 0; }
+.lesson-list .done-box { display: grid; place-items: center; padding: 0 12px; border-left: 1px solid var(--line); cursor: pointer; color: var(--muted); font-size: 18px; }
+.lesson-list .done-box.on { color: var(--good); }
+.lesson-list li.done .t { color: var(--muted); }
+.prog { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--muted); margin: -4px 0 12px; }
+.prog .goal-bar { flex: 1; max-width: 360px; margin: 0; }
+.q-opts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; margin-top: 8px; }
+.q-opts .btn { justify-content: center; }
+.q-opts .btn.right { background: var(--good); border-color: var(--good); color: #fff; }
+.q-opts .btn.wrong { background: var(--bad); border-color: var(--bad); color: #fff; }
+.wod { display: grid; gap: 4px; }
+.wod .term { font: 700 22px/1.2 var(--font-display); }
+.wod .term span { color: var(--accent); font-size: 18px; margin-left: 8px; }
+.week-list { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 4px; }
+.week-list button { border: 0; background: var(--chip); border-radius: 8px; padding: 7px 10px; width: 100%; text-align: left; }
+.week-list small { color: var(--muted); font-family: var(--font-mono); margin-left: 6px; }
 .g-empty { color: var(--muted); font-size: 13px; }
 .status { font-size: 13.5px; color: var(--accent); font-weight: 600; }
 footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display: grid; gap: 4px; }
@@ -270,6 +287,19 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
       <h2>ฟังธรรมะภาษาอังกฤษ · บ้านธัมมะ</h2>
       <p class="hint" style="margin:0 0 10px">สนทนาธรรมภาษาอังกฤษจากช่อง <a href="https://www.youtube.com/@IntlDhammaDiscussions" target="_blank" rel="noopener">International Dhamma Discussions</a> ของมูลนิธิศึกษาและเผยแพร่พระพุทธศาสนา · อ่านต่อที่ <a href="https://www.dhammahome.com/en" target="_blank" rel="noopener">dhammahome.com/en</a></p>
     </div>
+    <div class="dh-grid" style="margin-bottom:16px">
+      <div class="panel">
+        <h3>คำธรรมะประจำวัน <small id="wodDate"></small></h3>
+        <div class="wod" id="wod"></div>
+        <div class="row"><button class="btn primary" type="button" id="wodPlay">▶ ฟังในคลิป</button><button class="btn" type="button" id="wodSave">☆ เก็บไว้ทบทวน</button></div>
+      </div>
+      <div class="panel">
+        <h3>บทเรียนจากการสนทนาล่าสุด <small>คลิปใหม่ที่ค้นคำได้แล้ว</small></h3>
+        <p class="hint" style="margin:0">กดคลิปเพื่อเรียน: กล่อง "แนะนำในคลิปนี้" จะรวมประโยค คำเชื่อม คำธรรมะ และคำศัพท์ของคลิปนั้นให้</p>
+        <ul class="week-list" id="weekList"><li><button type="button" id="weekLoad">แสดงคลิปล่าสุด</button></li></ul>
+      </div>
+    </div>
+
     <div class="panel" style="margin-bottom:16px">
       <h3>ค้นคำในคลิปสนทนาธรรม <small id="dhCorpusInfo">ค้นจากสิ่งที่พูดจริงในคลิปภาษาอังกฤษ แล้วเปิดตรงวินาทีนั้น</small></h3>
       <form class="search" id="dhSearch" role="search" style="flex:none">
@@ -371,6 +401,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
         <div class="review-card" id="rCard" hidden>
           <div class="count" id="rProg"></div>
           <div id="rText" style="margin-top:4px"></div>
+          <div id="rQuiz"></div>
           <div class="row"><button class="btn" id="rPlay">↻ ฟังอีกครั้ง</button><button class="btn" id="rShow">ดูเฉลย</button></div>
           <div class="ans" id="rAns" hidden></div>
           <div class="row" id="rRate" hidden><button class="btn" id="rAgain">ยังจำไม่ได้</button><button class="btn primary" id="rGood">จำได้แล้ว ✓</button></div>
@@ -482,6 +513,8 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
       <div class="panel">
         <h3>สมุดของฉัน <small id="noteCount"></small></h3>
         <div class="note-filter" id="noteFilter"></div>
+        <div class="row" style="margin:0 0 8px"><button class="btn" id="bBackup" type="button">⬇ สำรองข้อมูล</button><label class="btn" for="fRestore" style="cursor:pointer">⬆ นำเข้าข้อมูล</label><input type="file" id="fRestore" accept=".json,application/json" hidden></div>
+        <p class="hint" id="backupMsg" style="margin:0 0 8px">ย้ายสมุด สถิติ และรอบทบทวนไปเครื่องอื่น: กดสำรองข้อมูลที่เครื่องนี้ แล้วนำเข้าไฟล์ที่อีกเครื่อง</p>
         <ul class="note-list" id="notes"></ul>
       </div>
     </aside>
@@ -1202,7 +1235,8 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     if (st.lesson) {
       const L = st.lesson, all = L.phrases.join('|');
       $('thBar').hidden = false;
-      $('thBar').innerHTML = '<button type="button" data-back="1">← สารบัญ</button><b>โครงสร้าง:</b> ' + escHtml(L.struct) + ' · ฟัง:' +
+      const isCourse = L.course === 'book' || L.course === 'grammar', dn = isCourse && doneSet().has(L.id);
+      $('thBar').innerHTML = '<button type="button" data-back="1">← สารบัญ</button>' + (isCourse ? '<button type="button" data-mark="1" class="' + (dn ? 'cur' : '') + '">' + (dn ? '✔ เรียนแล้ว' : '○ ทำเครื่องหมายว่าเรียนแล้ว') + '</button>' : '') + '<b>โครงสร้าง:</b> ' + escHtml(L.struct) + ' · ฟัง:' +
         '<button type="button" data-en="' + escHtml(all) + '" class="' + (st.q === norm(all) ? 'cur' : '') + '">ทั้งหมด</button>' +
         L.phrases.map(p => '<button type="button" data-en="' + escHtml(p) + '" class="' + (st.q === norm(p) ? 'cur' : '') + '">' + escHtml(p) + '</button>').join('');
       return;
@@ -1214,6 +1248,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   }
   $('thBar').addEventListener('click', e => {
     if (e.target.closest('[data-back]')) { showView(st.lesson.course); return; }
+    if (e.target.closest('[data-mark]')) { toggleDone(st.lesson.id); renderThaiBar(); return; }
     const b = e.target.closest('button[data-en]'); if (b) { stopModes(); runSearch(b.dataset.en); }
   });
 
@@ -1313,14 +1348,30 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
       : 'สารบัญไวยากรณ์ 140 บท กดบทเพื่อฟังตัวอย่างจากคลิปจริง ตัวเลขด้านขวาคือจำนวนประโยคที่พบ';
     const vi = Math.min(volSel[key] || 0, c.volumes.length - 1);
     $('volTabs').innerHTML = c.volumes.map((v, i) => '<button type="button" class="chip" data-vol="' + i + '" aria-pressed="' + (i === vi) + '">' + escHtml(v.name) + '</button>').join('');
-    const vol = c.volumes[vi];
-    $('courseBody').innerHTML = vol.sections.map(s => '<div class="course-sec"><h3>' + escHtml(s.name) + '</h3><ul class="lesson-list">' +
-      s.lessons.map(l => {
-        const id = key + '-' + vi + '-' + l[0], n = COUNTS[id];
-        return '<li><button type="button" data-lesson="' + id + '"><span class="no">' + l[0] + '</span><span class="t">' + escHtml(l[1]) + '<small>' + escHtml(l[2]) + '</small></span>' +
-          '<span class="n' + (n === 0 ? ' none' : '') + '">' + (n === undefined ? '' : n ? n + ' ประโยค' : 'ยังไม่มีคลิป') + '</span></button></li>';
-      }).join('') + '</ul></div>').join('');
+    const vol = c.volumes[vi], done = doneSet();
+    const ids = vol.sections.flatMap(s => s.lessons.map(l => key + '-' + vi + '-' + l[0]));
+    const nDone = ids.filter(id => done.has(id)).length;
+    const allIds = c.volumes.flatMap((v, i) => v.sections.flatMap(s => s.lessons.map(l => key + '-' + i + '-' + l[0])));
+    const allDone = allIds.filter(id => done.has(id)).length;
+    $('courseBody').innerHTML = '<div class="prog"><span>' + escHtml(vol.name) + ': เรียนแล้ว ' + nDone + ' / ' + ids.length + ' บท</span><div class="goal-bar"><i style="width:' + (ids.length ? nDone / ids.length * 100 : 0) + '%"></i></div><span>ทั้งชุด ' + Math.round(allDone / allIds.length * 100) + '%</span></div>' +
+      vol.sections.map(s => {
+        const sd = s.lessons.filter(l => done.has(key + '-' + vi + '-' + l[0])).length;
+        return '<div class="course-sec"><h3>' + escHtml(s.name) + ' <small style="font:400 12px var(--font-body);color:var(--muted)">' + sd + '/' + s.lessons.length + '</small></h3><ul class="lesson-list">' +
+        s.lessons.map(l => {
+          const id = key + '-' + vi + '-' + l[0], n = COUNTS[id], d = done.has(id);
+          return '<li class="' + (d ? 'done' : '') + '"><button type="button" data-lesson="' + id + '"><span class="no">' + l[0] + '</span><span class="t">' + escHtml(l[1]) + '<small>' + escHtml(l[2]) + '</small></span>' +
+            '<span class="n' + (n === 0 ? ' none' : '') + '">' + (n === undefined ? '' : n ? n + ' ประโยค' : 'ยังไม่มีคลิป') + '</span></button>' +
+            '<span class="done-box' + (d ? ' on' : '') + '" role="checkbox" tabindex="0" aria-checked="' + d + '" data-done="' + id + '" title="ทำเครื่องหมายว่าเรียนแล้ว">' + (d ? '✔' : '○') + '</span></li>';
+        }).join('') + '</ul></div>';
+      }).join('');
   }
+  function doneSet() { return new Set(store.get('done', [])); }
+  function toggleDone(id, force) {
+    const d = doneSet(); const on = force === undefined ? !d.has(id) : force;
+    on ? d.add(id) : d.delete(id); store.set('done', [...d]);
+    if (on) track('lesson');
+  }
+  $('courseBody').addEventListener('keydown', e => { const t = e.target.closest('[data-done]'); if (t && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); toggleDone(t.dataset.done); renderCourse(curView); } });
   $('volTabs').addEventListener('click', e => { const b = e.target.closest('[data-vol]'); if (!b) return; const key = curView; volSel[key] = +b.dataset.vol; store.set('vol.' + key, volSel[key]); renderCourse(key); });
   function findLesson(id) {
     const [key, vi, no] = id.split('-'), c = COURSES[key]; if (!c || !c.volumes[+vi]) return null;
@@ -1336,7 +1387,10 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     runSearch(L.phrases.join('|'));
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-  $('courseBody').addEventListener('click', e => { const b = e.target.closest('[data-lesson]'); if (b) openLesson(b.dataset.lesson); });
+  $('courseBody').addEventListener('click', e => {
+    const t = e.target.closest('[data-done]'); if (t) { toggleDone(t.dataset.done); renderCourse(curView); return; }
+    const b = e.target.closest('[data-lesson]'); if (b) openLesson(b.dataset.lesson);
+  });
 
   const DH = window.DHAMMA || [];
   let dhCat = 'all', dhCur = null;
@@ -1507,6 +1561,67 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     b.querySelector('small') && list.length > 1 && (b.title = 'จุดที่ ' + (n + 1) + ' จาก ' + list.length);
   });
 
+  // ---------- backup and restore of everything this browser keeps ----------
+  $('bBackup').onclick = () => {
+    const data = {}; try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k.startsWith('fk.') && k !== 'fk.th') data[k] = localStorage.getItem(k); } } catch (e) {}
+    const blob = new Blob([JSON.stringify({ app: 'fang-kham', saved: new Date().toISOString(), data })], { type: 'application/json' });
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'fang-kham-backup-' + new Date().toISOString().slice(0, 10) + '.json'; a.click();
+    $('backupMsg').textContent = 'บันทึกไฟล์สำรองแล้ว นำไฟล์นี้ไปกด "นำเข้าข้อมูล" ที่อีกเครื่อง';
+  };
+  $('fRestore').onchange = async e => {
+    const f = e.target.files[0]; if (!f) return;
+    try {
+      const j = JSON.parse(await f.text()); if (j.app !== 'fang-kham') throw new Error('not ours');
+      // Notes are merged (nothing is lost on either device); other settings take the file's values.
+      const mine = notes(), theirs = JSON.parse(j.data['fk.notes'] || '[]'), seen = new Set(mine.map(n => n.at + '|' + n.q));
+      Object.entries(j.data).forEach(([k, v]) => { if (k !== 'fk.notes') localStorage.setItem(k, v); });
+      store.set('notes', mine.concat(theirs.filter(n => !seen.has(n.at + '|' + n.q))).sort((a, b) => b.at - a.at));
+      $('backupMsg').textContent = 'นำเข้าแล้ว: รวมสมุดเป็น ' + notes().length + ' รายการ';
+      renderNotes(); renderReview(); renderGoal();
+    } catch (err) { $('backupMsg').textContent = 'ไฟล์นี้ไม่ใช่ไฟล์สำรองของเว็บฟังคำจริง'; }
+    e.target.value = '';
+  };
+
+  // ---------- Dhamma word of the day ----------
+  const wodIdx = CORE.length ? dayNum() % CORE.length : -1;
+  function renderWod() {
+    const g = CORE[wodIdx]; if (!g) return;
+    $('wodDate').textContent = new Date().toLocaleDateString('th-TH', { day: 'numeric', month: 'long', year: 'numeric' });
+    $('wod').innerHTML = '<div class="term">' + escHtml(g[0]) + '<span>' + escHtml(g[1]) + '</span></div><div class="hint">' + escHtml(g[2]) + '</div>';
+    const saved = notes().some(n => n.type === 'word' && n.q === g[0]);
+    $('wodSave').textContent = saved ? '★ เก็บแล้ว' : '☆ เก็บไว้ทบทวน';
+  }
+  $('wodPlay').onclick = () => openGlossary('core', wodIdx);
+  $('wodSave').onclick = () => {
+    const g = CORE[wodIdx]; if (!g || notes().some(n => n.type === 'word' && n.q === g[0])) return;
+    addNote({ type: 'word', q: g[0], th: g[1], text: g[2], corp: 'dhamma' });
+    renderWod();
+  };
+  renderWod();
+
+  // ---------- lessons from the latest discussions ----------
+  const dateOf = t => { const m = String(t).match(/(\d{1,2})(?:st|nd|rd|th)?\s+([A-Z][a-z]+)\s*,?\s*(20\d\d)|([A-Z][a-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?\s*,?\s*(20\d\d)/); if (!m) return 0;
+    const d = m[1] ? m[1] + ' ' + m[2] + ' ' + m[3] : m[5] + ' ' + m[4] + ' ' + m[6]; const x = Date.parse(d); return isNaN(x) ? 0 : x; };
+  async function renderWeek() {
+    $('weekList').innerHTML = '<li class="hint">กำลังโหลดคลิปล่าสุด…</li>';
+    try { await loadDhammaCorpus(); } catch (e) { $('weekList').innerHTML = '<li class="hint">โหลดไม่สำเร็จ ลองรีเฟรชหน้าเว็บ</li>'; return; }
+    const D = window.DHAMMA_CORPUS;
+    const talks = D.v.map((v, i) => [i, v, dateOf(v[1])]).filter(x => x[2] && x[1][6] > 1200).sort((a, b) => b[2] - a[2]).slice(0, 6);
+    $('weekList').innerHTML = talks.map(([i, v, d]) => '<li><button type="button" data-wk="' + v[0] + '">' + escHtml(v[1]) + '<small>' + Math.round(v[6] / 60) + ' นาที</small></button></li>').join('')
+      || '<li class="hint">ชุดที่เลือกยังไม่มีคลิปที่ระบุวันที่ ลองเลือกชุดปีล่าสุดในหน้าค้นคำ</li>';
+  }
+  $('weekList').addEventListener('click', async e => {
+    if (e.target.closest('#weekLoad')) { renderWeek(); return; }
+    const b = e.target.closest('[data-wk]'); if (!b) return;
+    if (!(await useCorpus('dhamma'))) return;
+    const vi = C.v.findIndex(v => v[0] === b.dataset.wk); if (vi < 0) return;
+    stopModes(); st.lesson = null; st.thq = ''; thaiChips = null;
+    runSearch(DH_TERMS ? 'moment' : 'understanding');
+    st.override = vStart[vi]; showView('search'); renderClip(vStart[vi]); updatePracticeLine();
+    $('headline').innerHTML = 'บทเรียนจากคลิป <em>' + escHtml(C.v[vi][1]) + '</em>'; $('count').textContent = ''; $('thBar').hidden = true;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
   // ---------- minimal pairs ----------
   const PAIRS = [
     ['ship', 'sheep', 'สระสั้น /ɪ/ กับสระยาว /iː/'], ['live', 'leave', 'สระสั้น /ɪ/ กับสระยาว /iː/'], ['sit', 'seat', 'สระสั้น /ɪ/ กับสระยาว /iː/'],
@@ -1596,6 +1711,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     const all = stats(), k = dayNum(), d = all[k] || { listen: 0, speak: 0, speakSum: 0, quiz: 0, pair: 0, review: 0, n: 0 };
     if (kind === 'speak') { d.speak++; d.speakSum += val; }
     else if (kind === 'quiz' || kind === 'pair') { if (val) d[kind]++; }
+    else if (kind === 'lesson') d.lesson = (d.lesson || 0) + 1;
     else d[kind] = (d[kind] || 0) + 1;
     d.n++;
     all[k] = d;
@@ -1666,9 +1782,55 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
       speak(n.text);
     }
     $('rAns').textContent = n.type === 'word' ? (n.th ? n.th + ' · ' : '') + 'ตัวอย่าง: ' + n.text : n.text;
-    if (n.type === 'word') renderWord(n.q);
+    $('rQuiz').innerHTML = '';
+    if (n.type === 'word') { renderWord(n.q); wordQuiz(n); }
   }
-  $('rShow').onclick = () => { $('rAns').hidden = false; $('rRate').hidden = false; $('rShow').hidden = true; setHide(false); };
+  // Word reviews change form as the word moves up the boxes: recognise the meaning, fill the gap, then say it from Thai.
+  function wordQuiz(n) {
+    const box = n.box || 0, others = notes().filter(x => x.type === 'word' && x.th && x.q !== n.q).map(x => x.th);
+    const pool = [...new Set(others.concat((window.DHAMMA_CORE || []).map(g => g[1])))].filter(t => t && t !== n.th);
+    const re = new RegExp('\\b' + esc(n.q) + '\\b', 'i');
+    let mode = 'recall';
+    if (box === 0 && n.th && pool.length >= 3) mode = 'choice';
+    else if (box <= 2 && re.test(n.text || '')) mode = 'cloze';
+    else if (n.th) mode = 'produce';
+    if (mode === 'choice') {
+      const opts = [n.th, ...pool.sort(() => Math.random() - 0.5).slice(0, 3)].sort(() => Math.random() - 0.5);
+      $('rText').innerHTML = 'ฟังคลิป แล้วเลือกความหมายของคำว่า <b>' + escHtml(n.q) + '</b>';
+      $('rQuiz').innerHTML = '<div class="q-opts">' + opts.map(o => '<button type="button" class="btn" data-opt="' + escHtml(o) + '">' + escHtml(o) + '</button>').join('') + '</div>';
+      $('rQuiz').onclick = e => {
+        const b = e.target.closest('[data-opt]'); if (!b || $('rQuiz').dataset.done) return;
+        $('rQuiz').dataset.done = '1';
+        $('rQuiz').querySelectorAll('[data-opt]').forEach(x => x.classList.add(x.dataset.opt === n.th ? 'right' : x === b ? 'wrong' : 'x'));
+        revealReview(b.dataset.opt === n.th);
+      };
+    } else if (mode === 'cloze' || mode === 'produce') {
+      $('rText').innerHTML = mode === 'cloze'
+        ? 'ฟังแล้วพิมพ์คำที่หายไป: “' + escHtml(n.text).replace(re, '<b>_____</b>') + '”'
+        : 'พูดหรือพิมพ์เป็นภาษาอังกฤษ: <b>' + escHtml(n.th) + '</b>';
+      if (mode === 'cloze') setHide(true);
+      $('rQuiz').innerHTML = '<div class="row"><input type="text" id="rIn" autocomplete="off" placeholder="พิมพ์คำตอบ" style="flex:1"><button class="btn primary" type="button" id="rCheck">ตรวจ</button>' +
+        (SR ? '<button class="btn" type="button" id="rMic">🎙</button>' : '') + '</div><div class="hint" id="rRes"></div>';
+      const check = val => {
+        if ($('rQuiz').dataset.done) return;
+        const ok = norm(val).replace(/[^a-z' ]/g, '').trim() === norm(n.q).replace(/[^a-z' ]/g, '').trim();
+        $('rRes').innerHTML = ok ? '✔ ถูกต้อง' : '✘ คำตอบคือ <b>' + escHtml(n.q) + '</b>';
+        $('rQuiz').dataset.done = '1'; revealReview(ok);
+      };
+      $('rCheck').onclick = () => check($('rIn').value);
+      $('rIn').onkeydown = e => { if (e.key === 'Enter') check($('rIn').value); };
+      if ($('rMic')) $('rMic').onclick = () => {
+        const r = new SR(); r.lang = 'en-US'; r.onresult = e => { const t = e.results[0][0].transcript; $('rIn').value = t; check(t); }; r.start();
+      };
+    }
+    delete $('rQuiz').dataset.done;
+  }
+  function revealReview(ok) {
+    $('rAns').hidden = false; $('rRate').hidden = false; $('rShow').hidden = true; setHide(false);
+    $('rGood').textContent = ok ? 'จำได้แล้ว ✓ (แนะนำ)' : 'จำได้แล้ว ✓';
+    $('rAgain').textContent = ok ? 'ยังจำไม่ได้' : 'ยังจำไม่ได้ (แนะนำ)';
+  }
+  $('rShow').onclick = () => { revealReview(true); $('rGood').textContent = 'จำได้แล้ว ✓'; $('rAgain').textContent = 'ยังจำไม่ได้'; };
   function rate(good) {
     const [n, idx] = review.list[review.i], all = notes(), cur = all[idx];
     if (cur && cur.at === n.at) {
