@@ -220,6 +220,18 @@ body.dh-mode #accChips, body.dh-mode #catChips, body.dh-mode #levelChips { displ
 .gl-list .th { color: var(--accent); }
 .gl-list .en { color: var(--muted); font-size: 13px; }
 .gl-list .n { font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+.g-sec { margin-top: 8px; }
+.g-sec > b { font-size: 13px; color: var(--muted); letter-spacing: .02em; }
+.g-lines { margin: 4px 0 0; padding-left: 20px; display: grid; gap: 4px; }
+.g-lines button { border: 0; background: none; padding: 2px 0; text-align: left; font-size: 14px; line-height: 1.45; }
+.g-lines button:hover { color: var(--accent); }
+.g-lines small { font-family: var(--font-mono); color: var(--muted); font-size: 11px; margin-right: 6px; }
+.g-lines mark { background: none; color: var(--accent); font-weight: 600; }
+.g-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 4px; }
+.g-chips button { border: 0; background: var(--chip); border-radius: 6px; padding: 3px 9px; font-size: 13.5px; }
+.g-chips button small { color: var(--muted); font-family: var(--font-mono); font-size: 11px; margin-left: 4px; }
+.g-chips button .th { color: var(--accent); margin-left: 4px; font-size: 12.5px; }
+.g-empty { color: var(--muted); font-size: 13px; }
 .status { font-size: 13.5px; color: var(--accent); font-weight: 600; }
 footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display: grid; gap: 4px; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
@@ -358,6 +370,15 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
           <div class="ans" id="rAns" hidden></div>
           <div class="row" id="rRate" hidden><button class="btn" id="rAgain">ยังจำไม่ได้</button><button class="btn primary" id="rGood">จำได้แล้ว ✓</button></div>
         </div>
+      </div>
+
+      <div class="panel" id="guidePanel">
+        <h3>แนะนำในคลิปนี้ <small id="gClip"></small></h3>
+        <div class="g-sec"><b>ประโยคน่าเรียน</b><ol class="g-lines" id="gLines"></ol></div>
+        <div class="g-sec"><b>คำเชื่อม</b><div class="g-chips" id="gConn"></div></div>
+        <div class="g-sec" id="gDhSec"><b>คำธรรมะ</b><div class="g-chips" id="gDh"></div></div>
+        <div class="g-sec"><b>คำศัพท์น่ารู้</b><div class="g-chips" id="gWords"></div></div>
+        <p class="hint" style="margin:6px 0 0">กดเพื่อฟังตรงจุดนั้น กดคำเดิมซ้ำเพื่อไปจุดถัดไปในคลิป</p>
       </div>
 
       <div class="panel" id="wordPanel">
@@ -626,6 +647,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
 
   function renderClip(si, reload = true) {
     if (reload) load(si);
+    renderGuide(C.s[si][0]);
     renderSub(si);
     const v = C.v[C.s[si][0]];
     $('meta').innerHTML = '<span class="tag">' + v[4] + '</span><span class="tag">' + (CAT_TH[v[3]] || v[3]) + '</span>' +
@@ -1207,7 +1229,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     store.set('dhSel', dhSel); renderShardBar();
     $('stats').textContent = 'กำลังโหลดคลังธรรมะ…';
     try { await loadDhammaCorpus(); } catch (err) { $('stats').textContent = 'โหลดคลังธรรมะไม่สำเร็จ ลองรีเฟรชหน้าเว็บ'; return; }
-    C = window.DHAMMA_CORPUS; indexVideos(); buildVocab(); renderStats();
+    C = window.DHAMMA_CORPUS; indexVideos(); buildVocab(); renderStats(); guideVi = -1;
     if (st.lesson) runSearch(st.lesson.phrases.join('|')); else if (st.q) runSearch(st.q);
   });
   renderShardBar();
@@ -1220,7 +1242,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     stopModes();
     C = name === 'dhamma' ? window.DHAMMA_CORPUS : MAIN; corpusName = name;
     st.acc = 'All'; st.cat = 'all'; st.level = 'all'; st.idx = 0;
-    indexVideos(); buildVocab(); renderStats();
+    indexVideos(); buildVocab(); renderStats(); guideVi = -1;
     return true;
   }
   async function goIn(name, q) { if (await useCorpus(name)) { showView('search'); go(q); } }
@@ -1269,7 +1291,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   }
   function openLesson(id) {
     const L = findLesson(id); if (!L) return;
-    if (corpusName !== 'main') { C = MAIN; corpusName = 'main'; indexVideos(); buildVocab(); renderStats(); }
+    if (corpusName !== 'main') { C = MAIN; corpusName = 'main'; indexVideos(); buildVocab(); renderStats(); guideVi = -1; }
     stopModes(); st.thq = ''; thaiChips = null; st.lesson = L;
     $('q').value = '';
     runSearch(L.phrases.join('|'));
@@ -1333,6 +1355,94 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   $('dhCats').addEventListener('click', e => { const b = e.target.closest('[data-cat]'); if (b) { dhCat = b.dataset.cat; renderDhamma(); } });
   $('dhQ').addEventListener('input', () => renderDhamma());
   $('dhList').addEventListener('click', e => { const b = e.target.closest('[data-v]'); if (b) playDhamma(b.dataset.v, true); });
+
+  // ---------- clip guide: sentences, connectors, Dhamma terms and words worth learning in this clip ----------
+  const CONNECTORS = [
+    ['however', 'อย่างไรก็ตาม'], ['therefore', 'ดังนั้น'], ['although', 'แม้ว่า'], ['even though', 'ถึงแม้ว่า'], ['even if', 'ถึงแม้'],
+    ['because', 'เพราะ'], ['so that', 'เพื่อที่จะ'], ['unless', 'เว้นแต่'], ['as long as', 'ตราบใดที่'], ['whether', 'ไม่ว่า/หรือไม่'],
+    ['instead of', 'แทนที่จะ'], ['rather than', 'แทนที่จะ'], ['in other words', 'พูดอีกอย่างคือ'], ['that means', 'นั่นหมายความว่า'],
+    ['that is why', 'นั่นคือเหตุผลที่'], ["that's why", 'นั่นคือเหตุผลที่'], ['in fact', 'ที่จริง'], ['actually', 'จริง ๆ แล้ว'],
+    ['for example', 'ตัวอย่างเช่น'], ['for instance', 'ตัวอย่างเช่น'], ['on the other hand', 'ในทางกลับกัน'], ['as a result', 'ผลก็คือ'],
+    ['otherwise', 'มิฉะนั้น'], ['meanwhile', 'ในขณะเดียวกัน'], ['moreover', 'ยิ่งกว่านั้น'], ['besides', 'นอกจากนี้'],
+    ['not only', 'ไม่เพียงแต่'], ['no matter', 'ไม่ว่า…ก็ตาม'], ['as soon as', 'ทันทีที่'], ['until', 'จนกระทั่ง'],
+    ['while', 'ในขณะที่'], ['whereas', 'ในขณะที่'], ['despite', 'แม้จะ'], ['so', 'ดังนั้น'], ['but', 'แต่'], ['if', 'ถ้า'],
+    ['when', 'เมื่อ'], ['anyway', 'อย่างไรก็ดี'], ['eventually', 'ในที่สุด'], ['after all', 'ท้ายที่สุดแล้ว'], ['at least', 'อย่างน้อย']
+  ].map(([w, th]) => [w, th, makeRe(w)]);
+  const FILLER = /^(uh|um|er|ah|oh|hmm|mhm|yeah|okay|ok|so|and|but)$/i;
+  const STOPW = new Set('the a an and or but so if of to in on at for with by from as is are was were be been being am it its this that these those there here what which who whom whose when where why how not no yes do does did done have has had having can could will would shall should may might must i you he she we they me him her us them my your his our their mine yours just very really also only even then than too more most much many some any all each every one two about into out up down over again because while until whether like know think going get got say said thing things something anything nothing people time way well right now yeah okay uh um oh ah'.split(' '));
+  const quizSet = new Set(MAIN.quiz || []);
+  let guideVi = -1, guideCycle = {};
+  function dhTermRes() {
+    return (window.DHAMMA_CORE || []).map(g => [g[0], g[1], makeRe(g[3].split('|').filter(x => !x.includes(' ') || x.split(' ').length <= 3).join('|'))]);
+  }
+  let DH_TERMS = null;
+  function renderGuide(vi) {
+    if (vi === guideVi) return;
+    guideVi = vi; guideCycle = {};
+    const from = vStart[vi], to = vEnd[vi];
+    if (from === undefined) return;
+    const v = C.v[vi], lines = [];
+    for (let i = from; i <= to; i++) lines.push(i);
+    $('gClip').textContent = (v[5] === 'm' ? 'ซับคนพิมพ์ · ' : 'ซับอัตโนมัติ · ') + lines.length + ' ประโยค';
+    // Connectors and Dhamma terms: count lines in this clip that contain them.
+    const hitsOf = re => lines.filter(i => re.test(C.s[i][3]));
+    const conn = CONNECTORS.map(([w, th, re]) => [w, th, hitsOf(re)]).filter(x => x[2].length).sort((a, b) => b[2].length - a[2].length);
+    const strong = conn.filter(c => !['so', 'but', 'if', 'when'].includes(c[0])).concat(conn.filter(c => ['so', 'but', 'if', 'when'].includes(c[0])));
+    $('gConn').innerHTML = strong.slice(0, 14).map(([w, th, l]) => '<button type="button" data-g="' + l.join(',') + '">' + escHtml(w) + '<span class="th">' + escHtml(th) + '</span><small>' + l.length + '</small></button>').join('') || '<span class="g-empty">ไม่พบคำเชื่อมในคลิปนี้</span>';
+    const isDh = v[3] === 'dhamma';
+    $('gDhSec').hidden = !isDh;
+    let dh = [];
+    if (isDh) {
+      DH_TERMS = DH_TERMS || dhTermRes();
+      dh = DH_TERMS.map(([t, th, re]) => [t, th, hitsOf(re)]).filter(x => x[2].length).sort((a, b) => b[2].length - a[2].length);
+      $('gDh').innerHTML = dh.slice(0, 16).map(([t, th, l]) => '<button type="button" data-g="' + l.join(',') + '">' + escHtml(t) + '<span class="th">' + escHtml(th) + '</span><small>' + l.length + '</small></button>').join('') || '<span class="g-empty">ไม่พบคำธรรมะหลักในคลิปนี้</span>';
+    }
+    // Words worth learning: repeated content words that are useful (mid-frequency) or rarer than everyday words.
+    const cnt = {}, at = {};
+    lines.forEach(i => (C.s[i][3].toLowerCase().match(/[a-z][a-z']{3,}/g) || []).forEach(w => {
+      if (STOPW.has(w)) return;
+      cnt[w] = (cnt[w] || 0) + 1; (at[w] = at[w] || []).push(i);
+    }));
+    const dhWords = new Set();
+    if (isDh) (window.DHAMMA_CORE || []).forEach(g => g[3].split('|').forEach(x => x.split(' ').forEach(y => { dhWords.add(y); dhWords.add(y.replace(/(ed|ing|s)$/, '')); })));
+    const isDhWord = w => dhWords.has(w) || dhWords.has(w.replace(/(ed|ing|s)$/, ''));
+    const words = Object.keys(cnt).filter(w => cnt[w] >= 2 && !isDhWord(w) && (quizSet.has(w) || w.length >= 7))
+      .sort((a, b) => cnt[b] - cnt[a]).slice(0, 14);
+    $('gWords').innerHTML = words.map(w => '<button type="button" data-w="' + w + '" data-g="' + [...new Set(at[w])].join(',') + '">' + escHtml(w) + '<small>' + cnt[w] + '</small></button>').join('') || '<span class="g-empty">—</span>';
+    // Sentences: two caption lines joined, 8–24 words, scored for connectors, Dhamma terms and clean speech; spread over the clip.
+    const scored = [];
+    for (let k = 0; k < lines.length; k++) {
+      const i = lines[k], j = lines[k + 1];
+      const text = (C.s[i][3] + (j !== undefined && v[5] !== 'm' ? ' ' + C.s[j][3] : '')).replace(/\s+/g, ' ').trim();
+      const ws = text.split(' ');
+      if (ws.length < 8 || ws.length > 24) continue;
+      let sc = 0;
+      if (strong.some(c => c[2].includes(i) && !['so', 'but', 'if', 'when'].includes(c[0]))) sc += 3;
+      if (dh.some(d => d[2].includes(i))) sc += 3;
+      if (words.some(w => text.toLowerCase().includes(w))) sc += 1;
+      sc -= ws.filter(x => FILLER.test(x)).length * 1.5;
+      const uniq = new Set(ws.map(x => x.toLowerCase())).size / ws.length; if (uniq < 0.7) sc -= 3;
+      if (sc > 0) scored.push([sc, i, text]);
+    }
+    scored.sort((a, b) => b[0] - a[0]);
+    const picked = [], gap = Math.max(4, Math.floor(lines.length / 12));
+    for (const s of scored) { if (picked.length >= 6) break; if (picked.every(p => Math.abs(p[1] - s[1]) > gap)) picked.push(s); }
+    picked.sort((a, b) => a[1] - b[1]);
+    const mm = t => { const m = Math.floor(t / 60); return (m >= 60 ? Math.floor(m / 60) + ':' + String(m % 60).padStart(2, '0') : m) + ':' + String(Math.floor(t % 60)).padStart(2, '0'); };
+    const hl = t => { let h = escHtml(t); strong.concat(dh).slice(0, 30).forEach(c => { const re = new RegExp('\\b(' + esc(c[0]) + ')\\b', 'ig'); h = h.replace(re, '<mark>$1</mark>'); }); return h; };
+    $('gLines').innerHTML = picked.map(([, i, text]) => '<li><button type="button" data-g="' + i + '"><small>' + mm(C.s[i][1]) + '</small>' + hl(text) + '</button></li>').join('') || '<li class="g-empty">ยังไม่พบประโยคที่เหมาะในคลิปนี้</li>';
+  }
+  $('guidePanel').addEventListener('click', e => {
+    const b = e.target.closest('[data-g]'); if (!b) return;
+    const list = b.dataset.g.split(',').map(Number), key = b.dataset.g;
+    const n = guideCycle[key] = ((guideCycle[key] ?? -1) + 1) % list.length;
+    const si = list[n];
+    stopModes();
+    st.override = si; setLoop(false);
+    renderClip(si); updatePracticeLine();
+    if (b.dataset.w) renderWord(b.dataset.w);
+    b.querySelector('small') && list.length > 1 && (b.title = 'จุดที่ ' + (n + 1) + ' จาก ' + list.length);
+  });
 
   // ---------- minimal pairs ----------
   const PAIRS = [
