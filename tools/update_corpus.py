@@ -13,7 +13,7 @@ YTDLP = [sys.executable, '-m', 'yt_dlp']
 PROBE = 'UF8uR6Z6KLc'  # a TED talk that always has captions: if it has none either, YouTube is blocking us
 EN = ['en', 'en-US', 'en-GB', 'en-AU', 'en-CA', 'en-IE', 'en-NZ']
 # Titles with these words are skipped: the site is used with school students.
-UNSUITABLE = re.compile(r"\b(murder\w*|kill(ed|ing|s|er)?|shoot(ing|er)s?|shot dead|stab\w*|rape\w*|sex\w*|porn\w*|drugs?|"
+UNSUITABLE = re.compile(r"\b(murder\w*|kill(ed|ing|s|er)?|shoot(ing|er)s?|shot dead|stab(bed|bing|s)?|rape\w*|sex\w*|porn\w*|drugs?|"
                         r"cocaine|heroin|overdose|suicide|terror\w*|massacre|beheaded|abuse[ds]?|naked|nude|explicit|"
                         r"war crimes?|bomb(ing|ed)?|gore|horror|graphic)\b", re.I)
 BLEEP = re.compile(r'\[\s*_+\s*\]|\*\*+|\bf\*+|\bs\*+t')
