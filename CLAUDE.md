@@ -35,6 +35,9 @@ A YouGlish-style listening site for Thai learners of English: search a word or p
 ## Features in `index.html`
 Search (English regex with word boundaries; Thai via `THAI_EN`, then free machine translation as fallback), filters (accent, category, speed, level), YouTube IFrame player that jumps to the line, subtitle strip with prev/next lines, approximate word-by-word highlight, Thai translation of the current line, controls and keyboard shortcuts (N P R B K L H T S), dictionary panel (dictionaryapi.dev, Wiktionary fallback) with "จุดที่คนไทยมักพลาด" tips, practice tabs (speak along with scoring via Web Speech API, continuous shadowing, dictation, write your own sentence, fill-in-the-blank quiz, minimal-pairs game), word sets, nearby words, notebook with spaced review (1·3·7·14·30 days), daily goal with streak. Notebook, stats and review live in `localStorage` per browser.
 
+## Automatic Dhamma updates
+`.github/workflows/update-dhamma.yml` runs `tools/update_dhamma.py` every 6 hours (and by hand from the Actions tab). Each run lists the newest clips of the verified channels, adds them to `dhamma.js`, fetches captions for up to 40 clips without captions (short clips and English-only talks first), rebuilds the shards from the published shard files and commits. No raw caption files are stored; the shards are the source. If YouTube starts blocking GitHub's runners the log says "blocked by YouTube" and the run stops; then run the same script from a Claude Code session instead (`--caps-dir` merges captions collected elsewhere).
+
 ## Rebuilding or extending the corpus
 The collection must run somewhere YouTube is reachable (Claude Code cloud environment with Network access set to Full works).
 
