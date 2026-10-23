@@ -1,7 +1,8 @@
 # Fetch English auto captions (json3, word timing kept) for the English-only Dhamma discussions.
 import json, os, subprocess, sys, time, urllib.request, html
 yt, src, out = sys.argv[1], sys.argv[2], sys.argv[3]
-items = [x for x in json.loads(open(src, encoding='utf-8').read().split('=', 1)[1].rstrip().rstrip(';')) if x[3] in ('สนทนาธรรม (อังกฤษ)', 'International')]
+raw = open(src, encoding='utf-8').read()
+items = json.loads(raw) if src.endswith('.json') else json.loads(raw.split('=', 1)[1].rstrip().rstrip(';'))
 def fetch(url):
     for i in range(3):
         try:
@@ -28,7 +29,7 @@ for vid, title, dur, cat in items:
             if 'segs' not in ev: continue
             t = ''.join(s.get('utf8', '') for s in ev['segs']).replace('\n', ' ').strip()
             if t: segs.append([round(ev['tStartMs'] / 1000, 2), round(ev.get('dDurationMs', 0) / 1000, 2), html.unescape(t)])
-        json.dump({'id': vid, 't': title, 'cat': cat, 'dur': dur, 's': segs}, open(fn, 'w', encoding='utf-8'), ensure_ascii=False)
+        json.dump({'id': vid, 't': title, 'cat': cat, 'dur': dur, 'manual': bool((info.get('subtitles') or {}).get('en')), 's': segs}, open(fn, 'w', encoding='utf-8'), ensure_ascii=False)
         ok += 1; print('ok', ok, vid, len(segs), flush=True); time.sleep(4)
     except Exception as e:
         print('err', vid, type(e).__name__, str(e)[:80], flush=True); time.sleep(10)

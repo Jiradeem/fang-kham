@@ -210,6 +210,7 @@ nav.views button[aria-current="page"] { color: var(--ink); border-color: var(--a
 .dh-list button { width: 100%; border: 0; background: none; text-align: left; padding: 8px 12px; display: flex; justify-content: space-between; gap: 10px; }
 .dh-list button:hover, .dh-list button.cur { background: var(--chip); }
 .dh-list small { font-family: var(--font-mono); color: var(--muted); white-space: nowrap; }
+body:not(.dh-mode) #shardBar { display: none; }
 body.dh-mode #accChips, body.dh-mode #catChips, body.dh-mode #levelChips { display: none; }
 .gl-list { list-style: none; margin: 0; padding: 0; max-height: 60vh; overflow: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
 .gl-list li + li { border-top: 1px solid var(--line); }
@@ -292,6 +293,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     <button type="button" class="chip" data-corpus="main" aria-pressed="true">คลิปทั่วไป (หนัง ข่าว ทีวี TED…)</button>
     <button type="button" class="chip" data-corpus="dhamma" aria-pressed="false">คลิปสนทนาธรรม 🪷</button>
   </div>
+  <div class="chips" id="shardBar" style="margin-bottom:8px"></div>
   <section class="filters" aria-label="ตัวกรอง">
     <div class="chips" id="accChips"><span class="label">สำเนียง</span></div>
     <div class="chips" id="catChips"><span class="label">ประเภทสื่อ</span></div>
@@ -473,6 +475,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
 <script src="dhamma.js"></script>
 <script src="dhamma-glossary-core.js"></script>
 <script src="dhamma-glossary.js"></script>
+<script src="dhamma-shards.js"></script>
 <script>
 (() => {
   'use strict';
@@ -1170,22 +1173,49 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   }
   renderStats();
 
-  // Switch the searched corpus. The Dhamma corpus is a separate file, fetched the first time it is needed.
-  let dhLoading = null;
-  function loadDhammaCorpus() {
-    if (window.DHAMMA_CORPUS) return Promise.resolve();
-    if (!dhLoading) dhLoading = new Promise((ok, fail) => {
-      const s = document.createElement('script'); s.src = 'dhamma-corpus.js';
-      s.onload = () => ok(); s.onerror = () => { dhLoading = null; fail(new Error('load')); };
+  // Switch the searched corpus. The Dhamma corpus is split into shards (short clips, then talks by year);
+  // the learner picks which shards to search and only those files are fetched.
+  const SHARDS = window.DHAMMA_SHARD_INDEX || [];
+  let dhSel = store.get('dhSel', null);
+  if (!Array.isArray(dhSel) || !dhSel.every(k => SHARDS.some(s => s[0] === k))) dhSel = SHARDS.slice(0, 2).map(s => s[0]);
+  const shardLoads = {};
+  function loadShard(key) {
+    if (window.DHAMMA_SHARDS && window.DHAMMA_SHARDS[key]) return Promise.resolve();
+    if (!shardLoads[key]) shardLoads[key] = new Promise((ok, fail) => {
+      const s = document.createElement('script'); s.src = 'dhamma-corpus-' + key + '.js';
+      s.onload = () => ok(); s.onerror = () => { delete shardLoads[key]; fail(new Error('load')); };
       document.head.appendChild(s);
     });
-    return dhLoading;
+    return shardLoads[key];
   }
+  async function loadDhammaCorpus() {
+    await Promise.all(dhSel.map(loadShard));
+    const v = [], s = [];
+    dhSel.forEach(k => { const part = window.DHAMMA_SHARDS[k], off = v.length; part.v.forEach(x => v.push(x)); part.s.forEach(x => s.push([x[0] + off, x[1], x[2], x[3]])); });
+    window.DHAMMA_CORPUS = { v, s };
+  }
+  function renderShardBar() {
+    $('shardBar').innerHTML = '<span class="label">ชุดที่ค้น</span>' + SHARDS.map(([k, label, talks, lines, kb]) =>
+      '<button type="button" class="chip" data-shard="' + k + '" aria-pressed="' + dhSel.includes(k) + '" title="' + talks + ' คลิป · ' + lines.toLocaleString() + ' ประโยค · ' + (kb / 1024).toFixed(1) + ' MB">' + escHtml(label) + ' <small>' + talks + '</small></button>').join('') +
+      '<span class="hint">เลือกหลายชุดได้ ยิ่งเลือกมาก ยิ่งโหลดนาน</span>';
+  }
+  $('shardBar').addEventListener('click', async e => {
+    const b = e.target.closest('[data-shard]'); if (!b) return;
+    const k = b.dataset.shard;
+    dhSel = dhSel.includes(k) ? dhSel.filter(x => x !== k) : [...dhSel, k];
+    if (!dhSel.length) dhSel = [k];
+    store.set('dhSel', dhSel); renderShardBar();
+    $('stats').textContent = 'กำลังโหลดคลังธรรมะ…';
+    try { await loadDhammaCorpus(); } catch (err) { $('stats').textContent = 'โหลดคลังธรรมะไม่สำเร็จ ลองรีเฟรชหน้าเว็บ'; return; }
+    C = window.DHAMMA_CORPUS; indexVideos(); buildVocab(); renderStats();
+    if (st.lesson) runSearch(st.lesson.phrases.join('|')); else if (st.q) runSearch(st.q);
+  });
+  renderShardBar();
   async function useCorpus(name) {
     if (name === corpusName) return true;
     if (name === 'dhamma') {
       $('stats').textContent = 'กำลังโหลดคลังธรรมะ…';
-      try { await loadDhammaCorpus(); } catch (e) { $('stats').textContent = 'โหลดคลังธรรมะไม่สำเร็จ ลองรีเฟรชหน้าเว็บ'; return false; }
+      try { if (!window.DHAMMA_CORPUS) await loadDhammaCorpus(); } catch (e) { $('stats').textContent = 'โหลดคลังธรรมะไม่สำเร็จ ลองรีเฟรชหน้าเว็บ'; return false; }
     }
     stopModes();
     C = name === 'dhamma' ? window.DHAMMA_CORPUS : MAIN; corpusName = name;
