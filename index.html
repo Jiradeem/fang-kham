@@ -105,6 +105,11 @@ main.stage { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1
 .subs .now .w:hover { background: rgba(255, 213, 74, .18); }
 .subs mark { background: var(--subtitle); color: #111; border-radius: 3px; padding: 0 2px; }
 .subs.hide-text .now, .subs.hide-text .ctx, .subs.hide-text .th { filter: blur(7px); user-select: none; }
+.subs { position: relative; }
+.subs .hid-note { display: none; position: absolute; inset: 0; place-items: center; color: #e8ecef; font-size: 14px; cursor: pointer; background: rgba(15, 20, 24, .35); border: 0; width: 100%; }
+.subs.hide-text .hid-note { display: grid; }
+.g-th { display: block; color: var(--accent); font-size: 13px; line-height: 1.4; margin-top: 1px; }
+.g-chips .g-wth { color: var(--accent); font-size: 12.5px; margin-left: 4px; }
 .meta { display: flex; flex-wrap: wrap; gap: 4px 12px; padding: 0 18px 14px; color: #9aa6b0; font-size: 12.5px; }
 .meta a { color: #c8d0d6; }
 .tag { font-family: var(--font-mono); font-size: 11px; border: 1px solid #39444c; border-radius: 4px; padding: 0 6px; color: #c8d0d6; }
@@ -365,6 +370,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
           <div class="now" id="subNow"></div>
           <div class="th" id="subTh" hidden></div>
           <div class="ctx" id="subNext"></div>
+          <button type="button" class="hid-note" id="hidNote">ซับถูกซ่อนอยู่ (โหมดฝึกฟัง) · แตะเพื่อแสดงซับ</button>
         </div>
         <div class="meta" id="meta"></div>
       </div>
@@ -750,6 +756,8 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
         const r = await fetch('https://api.mymemory.translated.net/get?langpair=' + from + '|' + to + '&q=' + encodeURIComponent(text));
         const j = await r.json(); const t = j && j.responseData && j.responseData.translatedText;
         if (!r.ok || !t || /MYMEMORY WARNING|QUERY LENGTH/i.test(t)) throw new Error('mymemory');
+        // Some answers arrive as UTF-8 bytes read as Latin-1 ("à¸..."); turn them back into Thai, or use the next service.
+        if (/[àÃ][\u0080-\u00ff]/.test(t)) { try { const f = decodeURIComponent(escape(t)); if (/[\u0e00-\u0e7f]/.test(f)) return f; } catch (e) {} throw new Error('mojibake'); }
         return t;
       },
       async () => {
@@ -816,6 +824,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   function setLoop(v) { st.loop = v; $('bLoop').setAttribute('aria-pressed', String(v)); }
   function setTh(v) { st.th = v; $('bTh').setAttribute('aria-pressed', String(v)); translateNow(); }
   $('bTh').onclick = () => setTh(!st.th);
+  $('hidNote').onclick = () => setHide(false);
   function setHide(v) { st.hide = v; $('bHide').setAttribute('aria-pressed', String(v)); $('subs').classList.toggle('hide-text', v); }
   $('bPrev').onclick = () => step(-1);
   $('bNext').onclick = () => step(1);
@@ -1501,7 +1510,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     const isDhWord = w => dhWords.has(w) || dhWords.has(w.replace(/(ed|ing|s)$/, ''));
     const words = Object.keys(cnt).filter(w => cnt[w] >= 2 && !isDhWord(w) && (quizSet.has(w) || w.length >= 7))
       .sort((a, b) => cnt[b] - cnt[a]).slice(0, 14);
-    $('gWords').innerHTML = words.map(w => '<button type="button" data-w="' + w + '" data-sq="' + w + '" data-g="' + [...new Set(at[w])].join(',') + '">' + escHtml(w) + '<small>' + cnt[w] + '</small>' + star('word', w) + '</button>').join('') || '<span class="g-empty">—</span>';
+    $('gWords').innerHTML = words.map(w => '<button type="button" data-w="' + w + '" data-sq="' + w + '" data-th="' + escHtml(thCache['w:' + w] || '') + '" data-g="' + [...new Set(at[w])].join(',') + '">' + escHtml(w) + '<span class="g-wth" data-wth="' + w + '">' + escHtml(thCache['w:' + w] || '') + '</span><small>' + cnt[w] + '</small>' + star('word', w) + '</button>').join('') || '<span class="g-empty">—</span>';
     // Sentences: two caption lines joined, 8–24 words, scored for connectors, Dhamma terms and clean speech; spread over the clip.
     const scored = [];
     for (let k = 0; k < lines.length; k++) {
@@ -1523,7 +1532,8 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     picked.sort((a, b) => a[1] - b[1]);
     const mm = t => { const m = Math.floor(t / 60); return (m >= 60 ? Math.floor(m / 60) + ':' + String(m % 60).padStart(2, '0') : m) + ':' + String(Math.floor(t % 60)).padStart(2, '0'); };
     const hl = t => { let h = escHtml(t); strong.concat(dh).slice(0, 30).forEach(c => { const re = new RegExp('\\b(' + esc(c[0]) + ')\\b', 'ig'); h = h.replace(re, '<mark>$1</mark>'); }); return h; };
-    $('gLines').innerHTML = picked.map(([, i, text]) => '<li>' + star('line', String(i), text) + '<button type="button" data-g="' + i + '" data-line="' + escHtml(text) + '"><small>' + mm(C.s[i][1]) + '</small>' + hl(text) + '</button></li>').join('') || '<li class="g-empty">ยังไม่พบประโยคที่เหมาะในคลิปนี้</li>';
+    $('gLines').innerHTML = picked.map(([, i, text]) => '<li>' + star('line', String(i), text) + '<button type="button" data-g="' + i + '" data-line="' + escHtml(text) + '"><small>' + mm(C.s[i][1]) + '</small>' + hl(text) + '<span class="g-th" data-lth="' + escHtml(text) + '">' + escHtml(thCache[text] || '') + '</span></button></li>').join('') || '<li class="g-empty">ยังไม่พบประโยคที่เหมาะในคลิปนี้</li>';
+    translateGuide();
   }
   // Save buttons: a word (connector, Dhamma term, useful word) or a whole sentence goes into the notebook and spaced review.
   function isSaved(kind, key, text) {
@@ -1539,7 +1549,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     if (sv.classList.contains('on')) return;
     if (kind === 'line') {
       const btn = sv.parentElement.querySelector('[data-line]'), si = +btn.dataset.g, s = C.s[si], v = C.v[s[0]];
-      addNote({ type: 'clip', q: st.lesson ? st.lesson.title : (st.q || '').split('|')[0], vid: v[0], t: s[1], text: btn.dataset.line });
+      addNote({ type: 'clip', q: st.lesson ? st.lesson.title : (st.q || '').split('|')[0], th: thCache[btn.dataset.line] || '', vid: v[0], t: s[1], text: btn.dataset.line });
     } else {
       const btn = sv.closest('[data-sq]'), list = btn.dataset.g.split(',').map(Number), si = list[guideCycle[btn.dataset.g] || 0] ?? list[0];
       const s = C.s[si], v = C.v[s[0]];
@@ -1548,6 +1558,28 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     sv.classList.add('on'); sv.textContent = '★'; sv.title = 'เก็บแล้ว';
   }
   $('guidePanel').addEventListener('keydown', e => { const sv = e.target.closest('.g-save'); if (sv && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); saveFromGuide(sv); } });
+  // Thai for the guide: each sentence and word is translated once, then kept in this browser's cache.
+  let guideTok = 0;
+  function translateGuide() { const tok = ++guideTok; translateGuideLines(tok); translateGuideWords(tok); }
+  async function translateGuideLines(tok) {
+    for (const el of $('gLines').querySelectorAll('[data-lth]')) {
+      if (tok !== guideTok) return;
+      if (el.textContent) continue;
+      try { el.textContent = await translate(el.dataset.lth); } catch (e) { el.textContent = ''; return; }
+    }
+  }
+  async function translateGuideWords(tok) {
+    for (const el of $('gWords').querySelectorAll('[data-wth]')) {
+      if (tok !== guideTok) return;
+      if (el.textContent) continue;
+      const w = el.dataset.wth;
+      try {
+        let t = await translate(w);
+        t = t.replace(/[.。]$/, '').trim();
+        if (t && t.toLowerCase() !== w) { thCache['w:' + w] = t; store.set('th', thCache); el.textContent = t; el.closest('[data-sq]').dataset.th = t; }
+      } catch (e) { return; }
+    }
+  }
   $('guidePanel').addEventListener('click', e => {
     const sv = e.target.closest('.g-save'); if (sv) { e.stopPropagation(); saveFromGuide(sv); return; }
     const b = e.target.closest('[data-g]'); if (!b) return;
