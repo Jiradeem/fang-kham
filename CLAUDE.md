@@ -7,7 +7,7 @@ A YouGlish-style listening site for Thai learners of English: search a word or p
 - Pushing to `main` updates the live site within 1–2 minutes. No build step on GitHub; `data.js` is committed.
 
 ## Start here (handoff for the next session)
-Status on 2026-10-23: 962 general clips (226,841 lines) from 60+ official channels, 2,554 Dhamma clips (119 with searchable captions), two weekly GitHub Actions workflows set up but **neither has run on GitHub yet**.
+Status on 2026-10-23: 962 general clips (226,841 lines) from 60+ official channels, 2,554 Dhamma clips (119 with searchable captions), two weekly GitHub Actions workflows set up; the general one was tried once and YouTube blocked GitHub (see item 1).
 
 About the owner (follow these):
 - English teacher (not a researcher, not a nursing teacher for this project). Their own site is https://dreamenglishlearning.com (on Netlify; its code is not in this repo). Contact on the site: LINE @154yrgoe and dreamenglishlearningthai@gmail.com (already in the About box).
@@ -17,7 +17,7 @@ About the owner (follow these):
 - Gratitude to Ajahn Sujin: the gold card on the Dhamma page, the gold card in the About box, and a gold line under the player while a Dhamma clip plays (owner's choice "ข"). Name spelling: ท่านอาจารย์สุจินต์ บริหารวนเขตต์.
 
 Waiting for the owner:
-1. Run "Add general clips" once by hand (Actions → update-corpus.yml → Run workflow) and report ✅/❌. If it works, change the schedule to 4 runs a day with `--limit 40` (cron e.g. `23 0,6,12,18 * * *`), as agreed. If YouTube blocks GitHub ("blocked by YouTube" in the log), keep collecting from a Claude Code session instead (see "Rebuilding or extending the corpus").
+1. **Result of the first GitHub run (2026-10-23, run 39971839183): YouTube blocked GitHub's runner within 10 seconds** (the PROBE clip had no caption tracks). So the weekly workflows will most likely add nothing; they stop safely and change no data. Clips must be collected from a Claude Code session (works; ~450 clips per 2-hour background command) or from the owner's home computer. Options were being discussed with the owner; nothing decided yet. Do not schedule 4 runs a day on GitHub.
 2. Add a "ฟังคำจริง" link on the main site (menu "คลังสื่อ", function `mediaDropdown()`): a prepared copy of the main site's index.html was made in the previous session but is not in this repo; the owner may do it with their own tools.
 3. Visitor counter (GoatCounter) needs a code from the owner's sign-up; permission e-mail to the Baan Dhamma foundation was offered, not written.
 

@@ -103,9 +103,10 @@ def main():
     random.shuffle(chans)
     chans.sort(key=lambda c: acc_n[c[2]] + cat_n[c[1]])
 
-    added, strikes = 0, 0
+    added, strikes, stop = 0, 0, False
+    unsure = []  # clips with no caption tracks; skipped for good only once YouTube is known not to be blocking us
     for handle, cat, acc in chans:
-        if added >= a.limit or time.time() - start > a.minutes * 60: break
+        if stop or added >= a.limit or time.time() - start > a.minutes * 60: break
         r = subprocess.run(YTDLP + ['--flat-playlist', '--playlist-end', str(a.depth), '--print', '%(id)s\t%(duration)s\t%(title)s',
                                     'https://www.youtube.com/' + handle + '/videos'], capture_output=True, text=True, timeout=600)
         got = 0
@@ -122,10 +123,13 @@ def main():
                 info = info_of(vid)
                 if not has_tracks(info):
                     strikes += 1
-                    if strikes >= 4 and blocked_now(): print('blocked by YouTube, stopping this run', flush=True); added = a.limit; break
-                    if info: skip.add(vid)
+                    if info: unsure.append(vid)
+                    if strikes >= 4:
+                        if blocked_now(): print('blocked by YouTube, stopping this run', flush=True); unsure.clear(); stop = True; break
+                        skip.update(unsure); unsure.clear(); strikes = 0
                     continue
                 strikes = 0
+                skip.update(unsure); unsure.clear()
                 if info.get('playable_in_embed') is False or (info.get('age_limit') or 0) > 0 or info.get('availability') not in (None, 'public'):
                     skip.add(vid); continue
                 segs, kind = captions(info)
