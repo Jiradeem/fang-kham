@@ -2,7 +2,7 @@ name: Update Dhamma clips
 
 on:
   schedule:
-    - cron: '17 */6 * * *'   # every 6 hours
+    - cron: '17 */6 * * 0,1,2,6'   # every 6 hours on Sat, Sun, Mon and Tue (UTC): discussions are on Sat, Sun and Mon
   workflow_dispatch: {}      # also runnable by hand from the Actions tab
 
 permissions:
@@ -29,7 +29,7 @@ jobs:
         run: |
           git config user.name "fang-kham bot"
           git config user.email "actions@users.noreply.github.com"
-          git add dhamma.js dhamma-shards.js dhamma-corpus-*.js
+          git add dhamma.js dhamma-shards.js dhamma-corpus-*.js tools/dhamma-skip.json
           git add -u
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           git commit -m "Update Dhamma clips and captions"

@@ -12,12 +12,13 @@ CHANNELS = [  # (url, category or None to classify by title)
     ('https://www.youtube.com/@IntlDhammaDiscussions/streams', None),
     ('https://www.youtube.com/@IntlDhammaDiscussions/videos', None),
 ]
-PRIORITY = {'คลิปสั้น Studying Dhamma': 0, 'สนทนาธรรม (อังกฤษ)': 1, 'International': 1, 'สหายธรรมต่างชาติ (มศพ.)': 1}
+PRIORITY = {'คลิปสั้น Studying Dhamma': 0, 'สนทนาธรรม (อังกฤษ)': 1, 'International': 1, 'สหายธรรมต่างชาติ (มศพ.)': 1, 'ไลฟ์ (ยังไม่ตรวจภาษา)': 3}
 PER_SHARD = 60
 YTDLP = [sys.executable, '-m', 'yt_dlp']
 
 def classify(t):
     l = t.lower()
+    if 'สตรีม' in t or not re.search(r'dhamma|discussion|dharma', l): return 'ไลฟ์ (ยังไม่ตรวจภาษา)'
     if 'chinese' in l or re.search(r'[一-鿿]', t): return 'จีน–อังกฤษ'
     if 'viet' in l: return 'เวียดนาม–อังกฤษ'
     if 'india' in l or 'hindi' in l or 'nepal' in l: return 'อินเดีย / เนปาล'
@@ -58,8 +59,11 @@ def captions(vid):
                                 'youtube:player_client=web_embedded', 'https://www.youtube.com/watch?v=' + vid], capture_output=True, text=True, timeout=180)
     info = json.loads(p.stdout or 'null')
     if not info: return None, 'blocked'
+    # Keep only clips where English is really spoken: hand-made English captions, or YouTube's speech
+    # recognition ran in English ("en-orig"). A plain "en" track alone is a machine translation (e.g. of Thai).
     manual = (info.get('subtitles') or {}).get('en') or []
-    tracks = manual or (info.get('automatic_captions') or {}).get('en-orig') or (info.get('automatic_captions') or {}).get('en') or []
+    tracks = manual or (info.get('automatic_captions') or {}).get('en-orig') or []
+    if not tracks: return None, 'not-english'
     url = next((f['url'] for f in tracks if f.get('ext') == 'json3'), None)
     if not url: return None, 'nocaps'
     segs = []
@@ -127,8 +131,10 @@ def main():
     ap.add_argument('--no-fetch', action='store_true')
     a = ap.parse_args()
     start = time.time()
-    clips = read_js(os.path.join(ROOT, 'dhamma.js'), r'^window\.DHAMMA=') or []
-    known = {c[0] for c in clips}
+    skip_path = os.path.join(ROOT, 'tools', 'dhamma-skip.json')
+    skip = set(json.load(open(skip_path))) if os.path.exists(skip_path) else set()
+    clips = [c for c in (read_js(os.path.join(ROOT, 'dhamma.js'), r'^window\.DHAMMA=') or []) if c[0] not in skip]
+    known = {c[0] for c in clips} | skip
     recs = load_records()
     if a.caps_dir:
         for f in glob.glob(os.path.join(a.caps_dir, '*.json')):
@@ -147,9 +153,13 @@ def main():
         except Exception as e:
             print('error', vid, type(e).__name__, flush=True); time.sleep(10); continue
         if status == 'blocked': print('blocked by YouTube, stopping this run', flush=True); break
-        if res is None: print(status, vid, flush=True); continue
+        if res is None:
+            print(status, vid, flush=True)
+            if status == 'not-english': skip.add(vid); clips = [c for c in clips if c[0] != vid]
+            continue
         recs[vid] = {'id': vid, 't': title, 'cat': cat, 'dur': dur, 'manual': res['manual'], 's': res['s']}
         got += 1; print('ok', got, vid, len(res['s']), flush=True); time.sleep(4)
+    json.dump(sorted(skip), open(skip_path, 'w'), indent=0)
     with open(os.path.join(ROOT, 'dhamma.js'), 'w', encoding='utf-8') as o:
         o.write('window.DHAMMA=' + json.dumps(clips, ensure_ascii=False, separators=(',', ':')) + ';\n')
     index = write_shards(recs)
