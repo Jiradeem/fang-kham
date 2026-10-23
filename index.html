@@ -356,7 +356,13 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
           // Skip clips that stopped being playable, but never loop through the whole list on our own.
           if (++autoSkips < 5 && st.hits.length > 1) setTimeout(() => step(1), 1200);
         },
-        onStateChange: e => { if (e.data === 1) autoSkips = 0; }
+        onStateChange: e => {
+          if (e.data === 1) {
+            autoSkips = 0;
+            // Our subtitle strip replaces YouTube's own captions, which would cover the speaker's face.
+            try { player.unloadModule('captions'); player.unloadModule('cc'); } catch (err) {}
+          }
+        }
       }
     });
   };
@@ -469,10 +475,11 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     if (!q) return;
     $('wSyl').textContent = q.includes(' ') ? 'วลี' : syllables(q) + ' พยางค์ (ประมาณ)';
     if (q.split(' ').length > 3) return;
+    let r = null;
+    try { r = await fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + enc); } catch (e) { r = null; }
+    if (tok !== dictToken) return;
+    if (!r || !r.ok) { await wiktionary(q, tok); return; }
     try {
-      const r = await fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + enc);
-      if (tok !== dictToken) return;
-      if (!r.ok) { $('wDefs').innerHTML = '<li class="hint">ไม่พบในพจนานุกรม ลองลิงก์ด้านล่าง</li>'; return; }
       const data = await r.json();
       const ph = data.flatMap(d => d.phonetics || []);
       $('wIpa').textContent = [...new Set(ph.map(p => p.text).filter(Boolean))].slice(0, 2).join('   ');
@@ -488,7 +495,26 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
       data.forEach(d => (d.meanings || []).forEach(m => (m.definitions || []).slice(0, 2).forEach(df => items.push([m.partOfSpeech, df.definition, df.example]))));
       $('wDefs').innerHTML = items.slice(0, 4).map(([p, d, ex]) => '<li><span class="pos">' + escHtml(p || '') + '</span>' + escHtml(d) + (ex ? '<span class="ex">“' + escHtml(ex) + '”</span>' : '') + '</li>').join('');
     } catch (e) {
-      if (tok === dictToken) $('wDefs').innerHTML = '<li class="hint">โหลดพจนานุกรมไม่ได้ (ต้องต่ออินเทอร์เน็ต)</li>';
+      await wiktionary(q, tok);
+    }
+  }
+  // Second dictionary source for when the first one is down or lacks the word.
+  async function wiktionary(q, tok) {
+    try {
+      const r = await fetch('https://en.wiktionary.org/api/rest_v1/page/definition/' + encodeURIComponent(q.replace(/ /g, '_')));
+      if (tok !== dictToken) return;
+      if (!r.ok) throw new Error(r.status);
+      const data = await r.json();
+      const strip = h => { const d = document.createElement('div'); d.innerHTML = h; return d.textContent.trim(); };
+      const items = [];
+      (data.en || []).forEach(m => (m.definitions || []).slice(0, 2).forEach(df => {
+        const d = strip(df.definition || '');
+        if (d) items.push([m.partOfSpeech, d, (df.examples || []).map(strip)[0]]);
+      }));
+      $('wDefs').innerHTML = items.length ? items.slice(0, 4).map(([p, d, ex]) => '<li><span class="pos">' + escHtml(p || '') + '</span>' + escHtml(d) + (ex ? '<span class="ex">“' + escHtml(ex) + '”</span>' : '') + '</li>').join('')
+        : '<li class="hint">ไม่พบในพจนานุกรม ลองลิงก์ด้านล่าง</li>';
+    } catch (e) {
+      if (tok === dictToken) $('wDefs').innerHTML = '<li class="hint">ไม่พบในพจนานุกรม ลองลิงก์ด้านล่าง</li>';
     }
   }
   function syllables(w) {
