@@ -6,9 +6,14 @@
 #  4. Keep the corpus under --max clips by dropping auto-captioned clips from the biggest groups, fastest speech first.
 #  5. Rebuild data.js with tools/build_data.py; the workflow then runs tools/count_lessons.js.
 # Usage (repository root): python3 -I tools/update_corpus.py [--limit 80] [--minutes 240] [--per-channel 3] [--max 3000]
+# On the owner's Windows computer (tools/windows/run.bat) the work is split in two so a long night of collecting never
+# conflicts with other commits: --save-dir DIR only collects new clips into DIR, then, after pulling the latest main,
+# --merge-dir DIR merges them into the published corpus and rebuilds.
 import argparse, collections, html, json, os, random, re, shutil, subprocess, sys, tempfile, time, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.environ['PYTHONUTF8'] = '1'  # yt-dlp output holds emoji and Thai; Windows consoles default to other code pages
+RUN = dict(capture_output=True, text=True, encoding='utf-8', errors='replace')
 YTDLP = [sys.executable, '-m', 'yt_dlp']
 PROBE = 'UF8uR6Z6KLc'  # a TED talk that always has captions: if it has none either, YouTube is blocking us
 EN = ['en', 'en-US', 'en-GB', 'en-AU', 'en-CA', 'en-IE', 'en-NZ']
@@ -45,7 +50,7 @@ def fetch_json(url):
 def info_of(vid):
     p = subprocess.run(YTDLP + ['-J', '--skip-download', '--no-warnings', '--ignore-no-formats-error', '--extractor-args',
                                 'youtube:player_client=web_embedded', 'https://www.youtube.com/watch?v=' + vid],
-                       capture_output=True, text=True, timeout=180)
+                       timeout=180, **RUN)
     return json.loads(p.stdout or 'null')
 
 def has_tracks(info): return bool(info and (info.get('subtitles') or info.get('automatic_captions')))
@@ -87,6 +92,9 @@ def main():
     ap.add_argument('--per-channel', type=int, default=3)
     ap.add_argument('--depth', type=int, default=15, help='newest clips to look at per channel')
     ap.add_argument('--max', type=int, default=3000, help='largest corpus to keep')
+    ap.add_argument('--save-dir', help='only collect: write new clips (and newly skipped ids) to this folder')
+    ap.add_argument('--merge-dir', help='only merge: add the clips saved in this folder to the corpus and rebuild')
+    ap.add_argument('--wait-when-blocked', type=float, default=0, help='minutes to wait and retry when YouTube blocks (0 = stop)')
     a = ap.parse_args()
     start = time.time()
     skip_path = os.path.join(ROOT, 'tools', 'corpus-skip.json')
@@ -96,6 +104,24 @@ def main():
     removed = [v for v in recs if v in skip]
     for v in removed: del recs[v]
     print(len(recs), 'clips published;', len(skip), 'on the skip list;', len(removed), 'removed by the skip list', flush=True)
+    saved = {}
+    for d in [a.save_dir, a.merge_dir]:
+        if not d: continue
+        os.makedirs(d, exist_ok=True)
+        for f in os.listdir(d):
+            if f == 'skip.json': skip.update(json.load(open(os.path.join(d, f))))
+            elif f.endswith('.json'):
+                r = json.load(open(os.path.join(d, f), encoding='utf-8')); saved[r['id']] = r
+    if a.merge_dir:
+        new = {k: r for k, r in saved.items() if k not in recs and k not in skip}
+        recs.update(new)
+        print(len(new), 'clips merged from', a.merge_dir, flush=True)
+        return finish(a, recs, skip, skip_path, len(new), len(removed))
+    known = set(recs) | set(saved)
+    room = a.max - len(known)
+    if room <= 0:
+        print('the corpus is full (', a.max, 'clips ). Raise --max once search runs on a server (step 3).'); return
+    a.limit = min(a.limit, room)
 
     # Channels whose accent and category have the fewest clips go first, so the corpus stays balanced.
     acc_n = collections.Counter(r['acc'] for r in recs.values()); cat_n = collections.Counter(r['cat'] for r in recs.values())
@@ -103,17 +129,17 @@ def main():
     random.shuffle(chans)
     chans.sort(key=lambda c: acc_n[c[2]] + cat_n[c[1]])
 
-    added, strikes, stop = 0, 0, False
+    added, strikes, blocks, stop = 0, 0, 0, False
     unsure = []  # clips with no caption tracks; skipped for good only once YouTube is known not to be blocking us
     for handle, cat, acc in chans:
         if stop or added >= a.limit or time.time() - start > a.minutes * 60: break
         r = subprocess.run(YTDLP + ['--flat-playlist', '--playlist-end', str(a.depth), '--print', '%(id)s\t%(duration)s\t%(title)s',
-                                    'https://www.youtube.com/' + handle + '/videos'], capture_output=True, text=True, timeout=600)
+                                    'https://www.youtube.com/' + handle + '/videos'], timeout=600, **RUN)
         got = 0
         for row in r.stdout.splitlines():
             if got >= a.per_channel or added >= a.limit or time.time() - start > a.minutes * 60: break
             p = row.split('\t', 2)
-            if len(p) < 3 or p[0] in recs or p[0] in skip: continue
+            if len(p) < 3 or p[0] in known or p[0] in skip: continue
             vid, title = p[0], p[2]
             try: dur = float(p[1])
             except ValueError: continue
@@ -125,10 +151,14 @@ def main():
                     strikes += 1
                     if info: unsure.append(vid)
                     if strikes >= 4:
-                        if blocked_now(): print('blocked by YouTube, stopping this run', flush=True); unsure.clear(); stop = True; break
+                        if blocked_now():
+                            unsure.clear(); blocks += 1
+                            if not a.wait_when_blocked or blocks > 3: print('blocked by YouTube, stopping this run', flush=True); stop = True; break
+                            print('blocked by YouTube, waiting', a.wait_when_blocked, 'minutes', flush=True); time.sleep(a.wait_when_blocked * 60); strikes = 0
+                            continue
                         skip.update(unsure); unsure.clear(); strikes = 0
                     continue
-                strikes = 0
+                strikes = blocks = 0
                 skip.update(unsure); unsure.clear()
                 if info.get('playable_in_embed') is False or (info.get('age_limit') or 0) > 0 or info.get('availability') not in (None, 'public'):
                     skip.add(vid); continue
@@ -137,11 +167,22 @@ def main():
                 print('error', vid, type(e).__name__, flush=True); time.sleep(10); continue
             why = 'no English captions' if not segs else suitable(segs)
             if why: skip.add(vid); print('skip (' + why + ')', vid, flush=True); continue
-            recs[vid] = {'id': vid, 't': info.get('title') or title, 'ch': info.get('channel') or handle, 'cat': cat, 'acc': acc,
-                         'cap': kind, 'dur': dur, 's': segs}
+            rec = {'id': vid, 't': info.get('title') or title, 'ch': info.get('channel') or handle, 'cat': cat, 'acc': acc,
+                   'cap': kind, 'dur': dur, 's': segs}
+            known.add(vid)
+            if a.save_dir:
+                json.dump(rec, open(os.path.join(a.save_dir, vid + '.json'), 'w', encoding='utf-8'), ensure_ascii=False)
+                json.dump(sorted(skip), open(os.path.join(a.save_dir, 'skip.json'), 'w'), indent=0)
+            else: recs[vid] = rec
             got += 1; added += 1
             print('ok', added, vid, acc, cat, kind, len(segs), flush=True); time.sleep(6)
 
+    if a.save_dir:
+        json.dump(sorted(skip), open(os.path.join(a.save_dir, 'skip.json'), 'w'), indent=0)
+        print('clips collected this run:', added, '| waiting in', a.save_dir, ':', len(saved) + added); return
+    finish(a, recs, skip, skip_path, added, len(removed))
+
+def finish(a, recs, skip, skip_path, added, removed):
     # Stay under the size limit: drop auto-captioned clips from the biggest accent/category groups, fastest speech first.
     dropped = 0
     while len(recs) > a.max:
@@ -152,13 +193,13 @@ def main():
         del recs[victim['id']]; dropped += 1
 
     json.dump(sorted(skip), open(skip_path, 'w'), indent=0)
-    dropped += len(removed)
+    dropped += removed
     if not added and not dropped: print('no new clips this run'); return
     tmp = tempfile.mkdtemp()
     try:
         for r in recs.values():
             json.dump(r, open(os.path.join(tmp, r['id'] + '.json'), 'w', encoding='utf-8'), ensure_ascii=False)
-        subprocess.run([sys.executable, '-I', os.path.join(ROOT, 'tools', 'build_data.py'), tmp, os.path.join(ROOT, 'data.js')], check=True)
+        subprocess.run([sys.executable, '-X', 'utf8', '-I', os.path.join(ROOT, 'tools', 'build_data.py'), tmp, os.path.join(ROOT, 'data.js')], check=True)
     finally:
         shutil.rmtree(tmp)
     print('clips added this run:', added, '| dropped to stay under', a.max, ':', dropped, '| total', len(recs))
