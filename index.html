@@ -50,6 +50,7 @@ body {
 .wrap { max-width: 1180px; margin: 0 auto; }
 button, input, select, textarea { font: inherit; color: inherit; }
 button { cursor: pointer; }
+a { color: var(--accent); }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 header.top { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; padding-block: 18px 12px; }
@@ -209,6 +210,15 @@ nav.views button[aria-current="page"] { color: var(--ink); border-color: var(--a
 .dh-list button { width: 100%; border: 0; background: none; text-align: left; padding: 8px 12px; display: flex; justify-content: space-between; gap: 10px; }
 .dh-list button:hover, .dh-list button.cur { background: var(--chip); }
 .dh-list small { font-family: var(--font-mono); color: var(--muted); white-space: nowrap; }
+body.dh-mode #accChips, body.dh-mode #catChips, body.dh-mode #levelChips { display: none; }
+.gl-list { list-style: none; margin: 0; padding: 0; max-height: 60vh; overflow: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.gl-list li + li { border-top: 1px solid var(--line); }
+.gl-list button { width: 100%; border: 0; background: none; text-align: left; padding: 8px 12px; display: grid; gap: 2px; }
+.gl-list button:hover { background: var(--chip); }
+.gl-list b { font-family: var(--font-display); }
+.gl-list .th { color: var(--accent); }
+.gl-list .en { color: var(--muted); font-size: 13px; }
+.gl-list .n { font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
 .status { font-size: 13.5px; color: var(--accent); font-weight: 600; }
 footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display: grid; gap: 4px; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
@@ -242,6 +252,21 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
       <h2>ฟังธรรมะภาษาอังกฤษ · บ้านธัมมะ</h2>
       <p class="hint" style="margin:0 0 10px">สนทนาธรรมภาษาอังกฤษจากช่อง <a href="https://www.youtube.com/@IntlDhammaDiscussions" target="_blank" rel="noopener">International Dhamma Discussions</a> ของมูลนิธิศึกษาและเผยแพร่พระพุทธศาสนา · อ่านต่อที่ <a href="https://www.dhammahome.com/en" target="_blank" rel="noopener">dhammahome.com/en</a></p>
     </div>
+    <div class="panel" style="margin-bottom:16px">
+      <h3>ค้นคำในคลิปสนทนาธรรม <small id="dhCorpusInfo">ค้นจากสิ่งที่พูดจริงในคลิปภาษาอังกฤษ แล้วเปิดตรงวินาทีนั้น</small></h3>
+      <form class="search" id="dhSearch" role="search" style="flex:none">
+        <input id="dhWord" type="search" placeholder="พิมพ์คำอังกฤษ คำบาลี หรือคำไทย เช่น awareness, citta, จิต, ปัญญา" autocomplete="off" aria-label="คำที่ต้องการฟังในคลิปธรรมะ">
+        <button class="btn primary" type="submit">ค้นในคลิปธรรมะ</button>
+      </form>
+      <div class="row" style="justify-content:space-between;align-items:baseline">
+        <b>อภิธานศัพท์ธรรมะ</b>
+        <div class="chips"><button type="button" class="chip" data-gl="core" aria-pressed="true">คำหลัก + ความหมายไทย</button><button type="button" class="chip" data-gl="full" aria-pressed="false">อภิธานศัพท์บาลีทั้งหมด (dhammahome)</button></div>
+      </div>
+      <input type="search" id="glQ" placeholder="กรองอภิธานศัพท์ เช่น citta, จิต, wisdom" aria-label="กรองอภิธานศัพท์" style="width:100%;border:1.5px solid var(--line);border-radius:8px;padding:7px 10px;background:var(--bg);margin:8px 0">
+      <ul class="gl-list" id="glList"></ul>
+      <p class="hint" style="margin:6px 0 0">กดคำเพื่อฟังทุกช่วงที่พูดคำนั้น ซับเป็นแบบอัตโนมัติ คำบาลีจึงมักสะกดผิด เช่น citta เป็น jitta หรือ rupa เป็น ruper ระบบค้นรูปที่สะกดผิดให้ด้วยแล้ว · ความหมายในอภิธานศัพท์ทั้งหมดมาจาก <a href="https://www.dhammahome.com/article_en/section/4" target="_blank" rel="noopener">Glossary of Pali Terms, dhammahome.com</a></p>
+    </div>
+    <h3 style="font:700 16px var(--font-display);margin:0 0 8px">ดูทั้งคลิป</h3>
     <div class="dh-grid">
       <div>
         <div class="dh-player"><iframe id="dhFrame" title="สนทนาธรรม" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
@@ -263,6 +288,10 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   </section>
 
   <div id="viewSearch">
+  <div class="chips" id="corpusBar" style="margin-bottom:8px"><span class="label">ค้นใน</span>
+    <button type="button" class="chip" data-corpus="main" aria-pressed="true">คลิปทั่วไป (หนัง ข่าว ทีวี TED…)</button>
+    <button type="button" class="chip" data-corpus="dhamma" aria-pressed="false">คลิปสนทนาธรรม 🪷</button>
+  </div>
   <section class="filters" aria-label="ตัวกรอง">
     <div class="chips" id="accChips"><span class="label">สำเนียง</span></div>
     <div class="chips" id="catChips"><span class="label">ประเภทสื่อ</span></div>
@@ -442,10 +471,14 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
 <script src="curriculum.js"></script>
 <script src="counts.js"></script>
 <script src="dhamma.js"></script>
+<script src="dhamma-glossary-core.js"></script>
+<script src="dhamma-glossary.js"></script>
 <script>
 (() => {
   'use strict';
-  const C = window.CORPUS || { v: [], s: [] };
+  // C is the corpus being searched: the general clips, or the Dhamma discussions loaded on demand.
+  const MAIN = window.CORPUS || { v: [], s: [] };
+  let C = MAIN, corpusName = 'main';
   const $ = id => document.getElementById(id);
   const ACC = [['All', 'ทั้งหมด'], ['US', 'US'], ['UK', 'UK'], ['AUS', 'AUS'], ['CAN', 'CAN'], ['IRL', 'IRL'], ['SCO', 'SCO'], ['NZ', 'NZ']];
   const LANG = { US: 'en-US', UK: 'en-GB', AUS: 'en-AU', CAN: 'en-CA', IRL: 'en-IE', SCO: 'en-GB', NZ: 'en-NZ', All: 'en-US' };
@@ -458,8 +491,9 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     (st.speed === 'all' || speedOf(v[7]) === st.speed) && (st.level === 'all' || v[8] === st.level);
 
   // Segment ranges per video, so the subtitle strip can follow the player.
-  const vStart = [], vEnd = [];
-  C.s.forEach((s, i) => { if (vStart[s[0]] === undefined) vStart[s[0]] = i; vEnd[s[0]] = i; });
+  let vStart = [], vEnd = [];
+  function indexVideos() { vStart = []; vEnd = []; C.s.forEach((s, i) => { if (vStart[s[0]] === undefined) vStart[s[0]] = i; vEnd[s[0]] = i; }); }
+  indexVideos();
 
   const store = {
     get(k, d) { try { const v = localStorage.getItem('fk.' + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
@@ -789,11 +823,13 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   }
 
   // ---------- nearby words ----------
-  const vocab = (() => {
+  let vocab = [];
+  function buildVocab() {
     const set = new Set();
     C.s.forEach(s => (s[3].toLowerCase().match(/[a-z][a-z'’-]*[a-z]|[a-z]/g) || []).forEach(w => set.add(w.replace(/’/g, "'"))));
-    return [...set].sort();
-  })();
+    vocab = [...set].sort();
+  }
+  buildVocab();
   function renderNear() {
     const q = st.q.split('|')[0];
     if (!q) { $('near').innerHTML = ''; return; }
@@ -920,7 +956,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   }
 
   // ---------- fill-in-the-blank quiz ----------
-  const quizWords = new Set(C.quiz || []);
+  const quizWords = new Set(MAIN.quiz || []);
   const quiz = { on: false, items: [], i: 0, score: 0, answered: false };
   function pickQuiz() {
     const pool = [];
@@ -930,7 +966,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
       const cands = (s[3].match(/[A-Za-z]+/g) || []).filter(w => quizWords.has(w.toLowerCase()));
       if (!cands.length) continue;
       const word = cands[Math.floor(Math.random() * cands.length)];
-      const lw = word.toLowerCase(), similar = (C.quiz || []).filter(w => w !== lw && Math.abs(w.length - lw.length) <= 2);
+      const lw = word.toLowerCase(), similar = (MAIN.quiz || []).filter(w => w !== lw && Math.abs(w.length - lw.length) <= 2);
       const opts = new Set([lw]);
       while (opts.size < 4 && similar.length) opts.add(similar[Math.floor(Math.random() * similar.length)]);
       pool.push({ si, word: lw, opts: [...opts].sort(() => Math.random() - 0.5) });
@@ -1034,7 +1070,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
 
   // ---------- notebook ----------
   function notes() { return store.get('notes', []); }
-  function addNote(n) { const all = notes(); all.unshift(Object.assign({ at: Date.now(), box: 0, due: dayNum() + 1 }, n)); store.set('notes', all.slice(0, 300)); renderNotes(); renderReview(); }
+  function addNote(n) { const all = notes(); all.unshift(Object.assign({ at: Date.now(), box: 0, due: dayNum() + 1, corp: corpusName }, n)); store.set('notes', all.slice(0, 300)); renderNotes(); renderReview(); }
   function saveClip() {
     const si = hitSeg(); if (si < 0) return;
     const s = C.s[si], v = C.v[s[0]];
@@ -1125,9 +1161,40 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   function setUrl() { try { const u = new URL(location.href); if (st.lesson) { u.searchParams.delete('q'); u.searchParams.set('lesson', st.lesson.id); } else { u.searchParams.delete('lesson'); u.searchParams.set('q', st.thq || st.q); } if (st.acc !== 'All') u.searchParams.set('acc', st.acc); else u.searchParams.delete('acc'); history.replaceState(null, '', u); } catch (e) {} }
   $('searchForm').addEventListener('submit', e => { e.preventDefault(); go($('q').value); });
 
-  const accs = {}; C.v.forEach(v => accs[v[4]] = (accs[v[4]] || 0) + 1);
-  $('stats').textContent = 'คลังตอนนี้: ' + C.v.length.toLocaleString() + ' คลิป · ' + C.s.length.toLocaleString() + ' ประโยค · ' +
-    Object.entries(accs).map(([k, n]) => k + ' ' + n).join(' · ');
+  function renderStats() {
+    const accs = {}; C.v.forEach(v => accs[v[4]] = (accs[v[4]] || 0) + 1);
+    $('stats').textContent = (corpusName === 'dhamma' ? 'คลังธรรมะ: ' : 'คลังตอนนี้: ') + C.v.length.toLocaleString() + ' คลิป · ' + C.s.length.toLocaleString() + ' ประโยค' +
+      (corpusName === 'dhamma' ? '' : ' · ' + Object.entries(accs).map(([k, n]) => k + ' ' + n).join(' · '));
+    document.querySelectorAll('#corpusBar [data-corpus]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.corpus === corpusName)));
+    document.body.classList.toggle('dh-mode', corpusName === 'dhamma');
+  }
+  renderStats();
+
+  // Switch the searched corpus. The Dhamma corpus is a separate file, fetched the first time it is needed.
+  let dhLoading = null;
+  function loadDhammaCorpus() {
+    if (window.DHAMMA_CORPUS) return Promise.resolve();
+    if (!dhLoading) dhLoading = new Promise((ok, fail) => {
+      const s = document.createElement('script'); s.src = 'dhamma-corpus.js';
+      s.onload = () => ok(); s.onerror = () => { dhLoading = null; fail(new Error('load')); };
+      document.head.appendChild(s);
+    });
+    return dhLoading;
+  }
+  async function useCorpus(name) {
+    if (name === corpusName) return true;
+    if (name === 'dhamma') {
+      $('stats').textContent = 'กำลังโหลดคลังธรรมะ…';
+      try { await loadDhammaCorpus(); } catch (e) { $('stats').textContent = 'โหลดคลังธรรมะไม่สำเร็จ ลองรีเฟรชหน้าเว็บ'; return false; }
+    }
+    stopModes();
+    C = name === 'dhamma' ? window.DHAMMA_CORPUS : MAIN; corpusName = name;
+    st.acc = 'All'; st.cat = 'all'; st.level = 'all'; st.idx = 0;
+    indexVideos(); buildVocab(); renderStats();
+    return true;
+  }
+  async function goIn(name, q) { if (await useCorpus(name)) { showView('search'); go(q); } }
+  $('corpusBar').addEventListener('click', e => { const b = e.target.closest('[data-corpus]'); if (b) goIn(b.dataset.corpus, st.lesson ? 'actually' : ($('q').value || (b.dataset.corpus === 'dhamma' ? 'understanding' : 'actually'))); });
 
   // ---------- views: search, two courses, Dhamma ----------
   const COURSES = window.COURSES || {}, COUNTS = window.LESSON_COUNTS || {};
@@ -1172,6 +1239,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   }
   function openLesson(id) {
     const L = findLesson(id); if (!L) return;
+    if (corpusName !== 'main') { C = MAIN; corpusName = 'main'; indexVideos(); buildVocab(); renderStats(); }
     stopModes(); st.thq = ''; thaiChips = null; st.lesson = L;
     $('q').value = '';
     runSearch(L.phrases.join('|'));
@@ -1198,6 +1266,40 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     $('dhMeta').innerHTML = escHtml(d[1]) + ' · <a href="https://www.youtube.com/watch?v=' + id + '" target="_blank" rel="noopener">เปิดใน YouTube ↗</a> · ซับภาษาอังกฤษอัตโนมัติ เปิด/ปิดได้ที่ปุ่ม CC';
     $('dhList').querySelectorAll('button').forEach(b => b.classList.toggle('cur', b.dataset.v === id));
   }
+  // Dhamma word search and glossary.
+  const CORE = window.DHAMMA_CORE || [], FULL = window.DHAMMA_GLOSSARY || [];
+  let glMode = 'core';
+  function renderGlossary() {
+    document.querySelectorAll('[data-gl]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.gl === glMode)));
+    const q = ($('glQ').value || '').trim().toLowerCase();
+    const rows = glMode === 'core'
+      ? CORE.map((g, i) => [i, g[0], g[1], g[2]]).filter(r => !q || (r[1] + ' ' + r[2] + ' ' + r[3]).toLowerCase().includes(q))
+      : FULL.map((g, i) => [i, g[0], '', g[1]]).filter(r => !q || (r[1] + ' ' + r[3]).toLowerCase().includes(q));
+    $('glList').innerHTML = rows.slice(0, 500).map(r => '<li><button type="button" data-gi="' + glMode + ':' + r[0] + '"><b>' + escHtml(r[1]) + (r[2] ? ' · <span class="th">' + escHtml(r[2]) + '</span>' : '') + '</b><span class="en">' + escHtml(r[3]) + '</span></button></li>').join('')
+      || '<li class="hint" style="padding:10px">ไม่พบคำนี้ในอภิธานศัพท์ ลองค้นในคลิปด้วยช่องด้านบน</li>';
+  }
+  async function openGlossary(mode, i) {
+    const g = mode === 'core' ? CORE[i] : FULL[i]; if (!g) return;
+    if (!(await useCorpus('dhamma'))) return;
+    const phrases = mode === 'core' ? g[3].split('|') : [g[0].toLowerCase().replace(/[^a-z' -]/g, '').trim()];
+    stopModes(); st.thq = ''; thaiChips = null;
+    st.lesson = { id: 'dh-' + mode + '-' + i, course: 'dhamma', title: g[0] + (mode === 'core' ? ' (' + g[1] + ')' : ''), struct: mode === 'core' ? g[2] : g[1], phrases, label: 'ธรรมะ:' };
+    $('q').value = '';
+    runSearch(phrases.join('|'));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  $('glList').addEventListener('click', e => { const b = e.target.closest('[data-gi]'); if (b) { const [m, i] = b.dataset.gi.split(':'); openGlossary(m, +i); } });
+  document.querySelectorAll('[data-gl]').forEach(b => b.onclick = () => { glMode = b.dataset.gl; renderGlossary(); });
+  $('glQ').addEventListener('input', renderGlossary);
+  $('dhSearch').addEventListener('submit', e => {
+    e.preventDefault();
+    const q = $('dhWord').value.trim(); if (!q) return;
+    // A Thai Dhamma word (จิต, ปัญญา) maps to its Pali and English forms first.
+    if (isThai(q)) { const k = CORE.findIndex(g => g[1].split(/\s*\/\s*/).some(t => t.replace(/\s/g, '') === q.replace(/\s/g, ''))); if (k >= 0) { openGlossary('core', k); return; } }
+    goIn('dhamma', q);
+  });
+  renderGlossary();
+
   $('dhCats').addEventListener('click', e => { const b = e.target.closest('[data-cat]'); if (b) { dhCat = b.dataset.cat; renderDhamma(); } });
   $('dhQ').addEventListener('input', () => renderDhamma());
   $('dhList').addEventListener('click', e => { const b = e.target.closest('[data-v]'); if (b) playDhamma(b.dataset.v, true); });
@@ -1332,7 +1434,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     $('rCard').hidden = false; reviewLoad();
   };
   function noteSeg(n) {
-    if (n.type !== 'clip') return -1;
+    if (n.type !== 'clip' || (n.corp || 'main') !== corpusName) return -1;
     for (let i = 0; i < C.s.length; i++) if (C.v[C.s[i][0]][0] === n.vid && Math.abs(C.s[i][1] - n.t) < 0.5) return i;
     return -1;
   }
