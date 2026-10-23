@@ -25,19 +25,20 @@
   --font-body: "IBM Plex Sans Thai", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
   --radius: 10px;
+  --accent-soft: #e2eff0; --shadow: 0 1px 2px rgba(20, 32, 40, .05), 0 6px 18px rgba(20, 32, 40, .05);
   --gold: #a8801f; --gold-soft: #f7f0dc; --gold-line: #e3cf97; --font-serif-th: "Noto Serif Thai", "IBM Plex Sans Thai", serif;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #111518; --surface: #192025; --ink: #e8ecef; --muted: #9aa6b0; --line: #2a333a;
     --screen: #05080a; --subtitle: #ffd54a; --accent: #5fb7c0; --accent-ink: #0b1215;
-    --good: #6cc68f; --bad: #ef8a78; --chip: #222b31; --gold: #e2c06b; --gold-soft: #2a2416; --gold-line: #5a4a22; color-scheme: dark;
+    --good: #6cc68f; --bad: #ef8a78; --chip: #222b31; --accent-soft: #1b3236; --shadow: 0 1px 2px rgba(0, 0, 0, .3); --gold: #e2c06b; --gold-soft: #2a2416; --gold-line: #5a4a22; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #111518; --surface: #192025; --ink: #e8ecef; --muted: #9aa6b0; --line: #2a333a;
   --screen: #05080a; --subtitle: #ffd54a; --accent: #5fb7c0; --accent-ink: #0b1215;
-  --good: #6cc68f; --bad: #ef8a78; --chip: #222b31; --gold: #e2c06b; --gold-soft: #2a2416; --gold-line: #5a4a22; color-scheme: dark;
+  --good: #6cc68f; --bad: #ef8a78; --chip: #222b31; --accent-soft: #1b3236; --shadow: 0 1px 2px rgba(0, 0, 0, .3); --gold: #e2c06b; --gold-soft: #2a2416; --gold-line: #5a4a22; color-scheme: dark;
 }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
@@ -276,13 +277,125 @@ body.dh-mode #accChips, body.dh-mode #catChips, body.dh-mode #levelChips { displ
 .gratitude .g4 { font: 400 13.5px/1.6 var(--font-body); color: var(--muted); margin: 0; }
 .status { font-size: 13.5px; color: var(--accent); font-weight: 600; }
 footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display: grid; gap: 4px; }
+/* ---------- design refresh: brand header, icon navigation (a tab bar on phones), folding boxes, cards ---------- */
+body { font-size: 15.5px; }
+header.top { padding-block: 16px 14px; gap: 12px 24px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); flex: none; }
+.brand .logo { width: 40px; height: 40px; color: var(--accent); flex: none; }
+.brand-t { display: grid; line-height: 1.15; }
+.brand-t b { font: 700 24px/1.1 var(--font-display); letter-spacing: -0.01em; }
+.brand-t small { color: var(--muted); font-size: 12.5px; }
+form.search input { border-radius: 12px; padding: 11px 16px; box-shadow: var(--shadow); }
+form.search .btn.primary { border-radius: 12px; padding-inline: 20px; }
+.btn { border-radius: 10px; min-height: 40px; transition: border-color .15s, background .15s; }
+.btn.primary:hover { filter: brightness(1.08); }
+.btn[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); font-weight: 600; }
+
+nav.views { gap: 6px; border: 0; background: var(--surface); padding: 5px; border-radius: 14px; box-shadow: var(--shadow); border: 1px solid var(--line); margin-bottom: 16px; flex-wrap: nowrap; overflow-x: auto; }
+nav.views button { display: inline-flex; align-items: center; gap: 7px; border: 0; margin: 0; padding: 9px 14px; border-radius: 10px; color: var(--muted); white-space: nowrap; font-weight: 500; }
+nav.views button svg { width: 18px; height: 18px; flex: none; }
+nav.views button:hover { background: var(--chip); color: var(--ink); }
+nav.views button[aria-current="page"] { background: var(--accent); color: var(--accent-ink); font-weight: 600; }
+nav.views .short { display: none; }
+
+.chip { padding: 5px 12px; transition: background .15s; }
+.chip:hover:not(:disabled) { background: var(--accent-soft); }
+.chip[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+#corpusBar .chip { padding: 6px 14px; font-weight: 500; }
+
+.filterbox { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; margin-bottom: 16px; box-shadow: var(--shadow); }
+.filterbox > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 8px; padding: 10px 16px; font-weight: 600; font-size: 14.5px; }
+.filterbox > summary::-webkit-details-marker, details.fold > summary::-webkit-details-marker { display: none; }
+.filterbox > summary::after, details.fold > summary h3::after { content: ""; width: 8px; height: 8px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(45deg); margin-left: auto; flex: none; transition: transform .2s; position: relative; top: -2px; }
+.filterbox[open] > summary::after, details.fold[open] > summary h3::after { transform: rotate(-135deg); top: 2px; }
+.filterbox .f-ic { color: var(--accent); }
+.fsum { font-weight: 400; color: var(--muted); font-size: 13px; background: var(--chip); border-radius: 99px; padding: 2px 10px; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fsum.set { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.filterbox .filters { padding: 2px 16px 14px; border-top: 1px solid var(--line); padding-top: 12px; }
+
+.result-head h2 { font-size: 22px; }
+.screen { border-radius: 14px; box-shadow: 0 8px 24px rgba(10, 16, 20, .18); }
+.subs .now { font-size: 22px; }
+.controls { gap: 8px; padding: 12px 0 8px; }
+.controls select { border-radius: 10px; min-height: 40px; }
+
+aside.side { gap: 16px; }
+.panel { border-radius: 14px; padding: 16px 18px; box-shadow: var(--shadow); }
+.panel h3 { font-size: 16px; margin-bottom: 10px; }
+details.fold > summary { list-style: none; cursor: pointer; margin: -2px 0; }
+details.fold > summary h3 { margin: 0; align-items: center; }
+details.fold > summary h3 small { margin-left: auto; }
+details.fold[open] > summary { margin-bottom: 10px; }
+#wordPanel { border-top: 3px solid var(--accent); }
+#wordPanel h3 #wTitle { font-size: 20px; }
+#goalPanel .goal-bar i, .prog .goal-bar i { background: linear-gradient(90deg, var(--accent), var(--good)); }
+
+.course-head, .dh-head > h2 { margin-bottom: 6px; }
+.course-head { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; box-shadow: var(--shadow); border-left: 5px solid var(--accent); }
+.course-head h2, .dh-head h2 { font-size: 24px; }
+.vol-tabs .chip { padding: 7px 16px; font-weight: 500; }
+.course-sec h3 { font-size: 17px; margin: 0 0 8px; padding-left: 10px; border-left: 3px solid var(--accent); }
+.lesson-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 440px), 1fr)); gap: 8px; border: 0; background: none; overflow: visible; }
+.lesson-list li { border: 1px solid var(--line) !important; border-radius: 12px; background: var(--surface); overflow: hidden; transition: border-color .15s, box-shadow .15s; }
+.lesson-list li:hover { border-color: var(--accent) !important; box-shadow: var(--shadow); }
+.lesson-list li.done { background: color-mix(in srgb, var(--good) 7%, var(--surface)); }
+.lesson-list button { padding: 11px 12px; }
+.lesson-list .no { display: grid; place-items: center; width: 2em; height: 2em; border-radius: 50%; background: var(--accent-soft); color: var(--accent); font-size: 12.5px; font-weight: 600; }
+
+.dh-head h2 { margin-bottom: 10px; }
+.gl-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+.gl-list li, .gl-list li + li { border: 0; box-shadow: inset 0 -1px 0 var(--line), inset -1px 0 0 var(--line); }
+.sec-title { font: 700 18px/1.3 var(--font-display); margin: 22px 0 10px; padding-left: 10px; border-left: 3px solid var(--accent); }
+.dh-list, .gl-list { border-radius: 12px; }
+.week-list button:hover, .dh-list button:hover { background: var(--accent-soft); }
+
+footer.foot { margin-top: 32px; }
+footer.foot > div:not(#stats) { max-width: 90ch; }
+.about { padding: 18px 20px; }
+
+@media (hover: none) { .kbd:not(label) { display: none; } }
+@media (max-width: 720px) {
+  body { padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px)); font-size: 15px; }
+  header.top { padding-block: 12px 10px; }
+  .brand .logo { width: 34px; height: 34px; }
+  .brand-t b { font-size: 21px; }
+  form.search { flex-basis: 100%; }
+  form.search input { font-size: 16px; }
+  nav.views { position: fixed; z-index: 30; left: 0; right: 0; bottom: 0; margin: 0; border-radius: 0; border: 0; border-top: 1px solid var(--line);
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; padding: 6px 6px calc(6px + env(safe-area-inset-bottom, 0px));
+    box-shadow: 0 -4px 18px rgba(0, 0, 0, .08); }
+  nav.views button { flex-direction: column; gap: 2px; padding: 6px 2px; font-size: 12px; border-radius: 10px; }
+  nav.views button svg { width: 22px; height: 22px; }
+  nav.views button[aria-current="page"] { background: var(--accent-soft); color: var(--accent); }
+  nav.views .full { display: none; }
+  nav.views .short { display: inline; }
+  .chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+  .chips::-webkit-scrollbar { display: none; }
+  .chips .label { min-width: auto; flex: none; }
+  .chip { flex: none; }
+  .vol-tabs, #dhCats { flex-wrap: wrap; }
+  #corpusBar { margin-bottom: 10px !important; }
+  .controls { gap: 6px; }
+  .controls .btn, .controls select { flex: 1 1 auto; justify-content: center; padding: 8px 10px; font-size: 14px; white-space: nowrap; }
+  .controls .sep, .controls label.kbd { display: none; }
+  section > .kbd { display: none; }
+  .subs { padding: 12px 14px 14px; min-height: 100px; }
+  .subs .now { font-size: 19px; }
+  .panel { padding: 14px; }
+  #goalPanel { order: 9; }
+  .course-head { padding: 14px; }
+  .lesson-list button { grid-template-columns: 2.2em minmax(0, 1fr); padding: 10px; }
+  .lesson-list .n { grid-column: 2; }
+  .row .chips, #dhCats { flex-wrap: wrap; overflow: visible; }
+  .course-head h2, .dh-head h2 { font-size: 20px; }
+}
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header class="top">
-    <div class="brand"><h1>ฟังคำจริง</h1><span>ฟังคำศัพท์จากคลิปจริง หลายสำเนียง</span></div>
+    <a class="brand" href="./" aria-label="ฟังคำจริง หน้าแรก"><svg class="logo" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="currentColor"/><g stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M11 17v6M16 13v14M21 10v20M26 14v12M31 18v4"/></g></svg><span class="brand-t"><b>ฟังคำจริง</b><small>ฟังคำศัพท์จากคลิปจริง หลายสำเนียง</small></span></a>
     <form class="search" id="searchForm" role="search">
       <input id="q" type="search" placeholder="พิมพ์คำอังกฤษ หรือคำไทยก็ได้ เช่น however, ถึงแม้ว่า, ฉันควรจะ" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="คำที่ต้องการฟัง">
       <button class="btn primary" type="submit">ค้นหา</button>
@@ -290,10 +403,10 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   </header>
 
   <nav class="views" aria-label="ส่วนของเว็บ">
-    <button type="button" data-view="search" aria-current="page">ค้นคำ</button>
-    <button type="button" data-view="book">หนังสือ: คิดเป็นไทย พูดเป็นอังกฤษ</button>
-    <button type="button" data-view="grammar">ไวยากรณ์ A1–A2</button>
-    <button type="button" data-view="dhamma">ฟังธรรมะ (English)</button>
+    <button type="button" data-view="search" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M10.5 4a6.5 6.5 0 1 0 4 11.6l4.4 4.4 1.4-1.4-4.4-4.4A6.5 6.5 0 0 0 10.5 4zm0 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9z"/></svg><span class="full">ค้นคำจากคลิป</span><span class="short">ค้นคำ</span></button>
+    <button type="button" data-view="book"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M3 5.2c2.9-1 6-.8 8.2.9v13.4c-2.3-1.6-5.3-1.8-8.2-.9V5.2zm18 0c-2.9-1-6-.8-8.2.9v13.4c2.3-1.6 5.3-1.8 8.2-.9V5.2z"/></svg><span class="full">หนังสือ: คิดเป็นไทย พูดเป็นอังกฤษ</span><span class="short">หนังสือ</span></button>
+    <button type="button" data-view="grammar"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M5 5h14v2H5zm0 4h9v2H5zm0 4h14v2H5zm0 4h9v2H5z"/><circle cx="18" cy="10" r="2"/></svg><span class="full">ไวยากรณ์ A1–A2</span><span class="short">ไวยากรณ์</span></button>
+    <button type="button" data-view="dhamma"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 4c2 2.3 2 6.5 0 10-2-3.5-2-7.7 0-10zM12 15c-1.3-3.6-4.3-6-7.8-6.2.3 3.6 3.4 6 7.8 6.2zm0 0c1.3-3.6 4.3-6 7.8-6.2-.3 3.6-3.4 6-7.8 6.2zM4 17.5c2.5-1.2 5.5-1.4 8-.5 2.5-.9 5.5-.7 8 .5-2.3 1.8-5.4 2.3-8 1.3-2.6 1-5.7.5-8-1.3z"/></svg><span class="full">ฟังธรรมะ (English)</span><span class="short">ธรรมะ</span></button>
   </nav>
 
   <section id="viewCourse" hidden>
@@ -335,7 +448,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
       <ul class="gl-list" id="glList"></ul>
       <p class="hint" style="margin:6px 0 0">กดคำเพื่อฟังทุกช่วงที่พูดคำนั้น ซับเป็นแบบอัตโนมัติ คำบาลีจึงมักสะกดผิด เช่น citta เป็น jitta หรือ rupa เป็น ruper ระบบค้นรูปที่สะกดผิดให้ด้วยแล้ว · ความหมายในอภิธานศัพท์ทั้งหมดมาจาก <a href="https://www.dhammahome.com/article_en/section/4" target="_blank" rel="noopener">Glossary of Pali Terms, dhammahome.com</a></p>
     </div>
-    <h3 style="font:700 16px var(--font-display);margin:0 0 8px">ดูทั้งคลิป</h3>
+    <h3 class="sec-title">ดูทั้งคลิป</h3>
     <div class="dh-grid">
       <div>
         <div class="dh-player"><iframe id="dhFrame" title="สนทนาธรรม" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
@@ -362,12 +475,14 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     <button type="button" class="chip" data-corpus="dhamma" aria-pressed="false">คลิปสนทนาธรรม 🪷</button>
   </div>
   <div class="chips" id="shardBar" style="margin-bottom:8px"></div>
+  <details class="filterbox" id="filterBox" open><summary><span class="f-ic" aria-hidden="true">⚙</span> ตัวกรองคลิป <span class="fsum" id="filterSum">ทั้งหมด</span></summary>
   <section class="filters" aria-label="ตัวกรอง">
     <div class="chips" id="accChips"><span class="label">สำเนียง</span></div>
     <div class="chips" id="catChips"><span class="label">ประเภทสื่อ</span></div>
     <div class="chips" id="speedChips"><span class="label">ความเร็วพูด</span></div>
     <div class="chips" id="levelChips"><span class="label">ระดับ</span></div>
   </section>
+  </details>
 
   <main class="stage">
     <section aria-live="polite">
@@ -417,29 +532,6 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
         <div class="week" id="week" aria-label="กิจกรรม 7 วันล่าสุด"></div>
       </div>
 
-      <div class="panel" id="reviewPanel">
-        <h3>ทบทวนตามรอบ <small id="rDue"></small></h3>
-        <p class="hint" style="margin:0">คลิปและประโยคที่บันทึกไว้จะกลับมาให้ทบทวนหลัง 1 · 3 · 7 · 14 · 30 วัน ยิ่งจำได้ ยิ่งเว้นห่างขึ้น</p>
-        <div class="row"><button class="btn primary" id="bReview">เริ่มทบทวน</button></div>
-        <div class="review-card" id="rCard" hidden>
-          <div class="count" id="rProg"></div>
-          <div id="rText" style="margin-top:4px"></div>
-          <div id="rQuiz"></div>
-          <div class="row"><button class="btn" id="rPlay">↻ ฟังอีกครั้ง</button><button class="btn" id="rShow">ดูเฉลย</button></div>
-          <div class="ans" id="rAns" hidden></div>
-          <div class="row" id="rRate" hidden><button class="btn" id="rAgain">ยังจำไม่ได้</button><button class="btn primary" id="rGood">จำได้แล้ว ✓</button></div>
-        </div>
-      </div>
-
-      <div class="panel" id="guidePanel">
-        <h3>แนะนำในคลิปนี้ <small id="gClip"></small></h3>
-        <div class="g-sec"><b>ประโยคน่าเรียน</b><ol class="g-lines" id="gLines"></ol></div>
-        <div class="g-sec"><b>คำเชื่อม</b><div class="g-chips" id="gConn"></div></div>
-        <div class="g-sec" id="gDhSec"><b>คำธรรมะ</b><div class="g-chips" id="gDh"></div></div>
-        <div class="g-sec"><b>คำศัพท์น่ารู้</b><div class="g-chips" id="gWords"></div></div>
-        <p class="hint" style="margin:6px 0 0">กดเพื่อฟังตรงจุดนั้น กดคำเดิมซ้ำเพื่อไปจุดถัดไปในคลิป</p>
-      </div>
-
       <div class="panel" id="wordPanel">
         <h3><span id="wTitle">คำศัพท์</span><small id="wSyl"></small></h3>
         <div class="ipa" id="wIpa"></div>
@@ -449,7 +541,16 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
         <div class="tips" id="wTips" hidden><b>⚠ จุดที่คนไทยมักพลาด</b><ul id="wTipList"></ul></div>
       </div>
 
-      <div class="panel">
+      <details class="panel fold" id="guidePanel" open>
+        <summary><h3>แนะนำในคลิปนี้ <small id="gClip"></small></h3></summary>
+        <div class="g-sec"><b>ประโยคน่าเรียน</b><ol class="g-lines" id="gLines"></ol></div>
+        <div class="g-sec"><b>คำเชื่อม</b><div class="g-chips" id="gConn"></div></div>
+        <div class="g-sec" id="gDhSec"><b>คำธรรมะ</b><div class="g-chips" id="gDh"></div></div>
+        <div class="g-sec"><b>คำศัพท์น่ารู้</b><div class="g-chips" id="gWords"></div></div>
+        <p class="hint" style="margin:6px 0 0">กดเพื่อฟังตรงจุดนั้น กดคำเดิมซ้ำเพื่อไปจุดถัดไปในคลิป</p>
+      </details>
+
+      <div class="panel" id="practicePanel">
         <div class="tabs" role="tablist">
           <button role="tab" aria-selected="true" data-tab="speak">พูดตาม</button>
           <button role="tab" aria-selected="false" data-tab="dict">ฟังแล้วพิมพ์</button>
@@ -519,27 +620,41 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
         </div>
       </div>
 
-      <div class="panel">
-        <h3>ชุดคำศัพท์ <small>กดคำเพื่อฟัง</small></h3>
+      <details class="panel fold" id="reviewPanel" open>
+        <summary><h3>ทบทวนตามรอบ <small id="rDue"></small></h3></summary>
+        <p class="hint" style="margin:0">คลิปและประโยคที่บันทึกไว้จะกลับมาให้ทบทวนหลัง 1 · 3 · 7 · 14 · 30 วัน ยิ่งจำได้ ยิ่งเว้นห่างขึ้น</p>
+        <div class="row"><button class="btn primary" id="bReview">เริ่มทบทวน</button></div>
+        <div class="review-card" id="rCard" hidden>
+          <div class="count" id="rProg"></div>
+          <div id="rText" style="margin-top:4px"></div>
+          <div id="rQuiz"></div>
+          <div class="row"><button class="btn" id="rPlay">↻ ฟังอีกครั้ง</button><button class="btn" id="rShow">ดูเฉลย</button></div>
+          <div class="ans" id="rAns" hidden></div>
+          <div class="row" id="rRate" hidden><button class="btn" id="rAgain">ยังจำไม่ได้</button><button class="btn primary" id="rGood">จำได้แล้ว ✓</button></div>
+        </div>
+      </details>
+
+      <details class="panel fold m-closed" open>
+        <summary><h3>ชุดคำศัพท์ <small>กดคำเพื่อฟัง</small></h3></summary>
         <select id="setSel" aria-label="เลือกชุดคำศัพท์" style="width:100%;border:1.5px solid var(--line);border-radius:8px;padding:7px 9px;background:var(--bg)"></select>
         <div class="set-note" id="setNote"></div>
         <div class="set-words" id="setWords"></div>
         <div class="item-note" id="itemNote"></div>
         <div class="row"><button class="btn" id="bSetNext">คำถัดไปในชุด →</button></div>
-      </div>
+      </details>
 
-      <div class="panel">
-        <h3>คำใกล้เคียงในคลัง <small>กดเพื่อฟัง</small></h3>
-        <div class="near" id="near"></div>
-      </div>
-
-      <div class="panel">
-        <h3>สมุดของฉัน <small id="noteCount"></small></h3>
+      <details class="panel fold m-closed" open>
+        <summary><h3>สมุดของฉัน <small id="noteCount"></small></h3></summary>
         <div class="note-filter" id="noteFilter"></div>
         <div class="row" style="margin:0 0 8px"><button class="btn" id="bBackup" type="button">⬇ สำรองข้อมูล</button><label class="btn" for="fRestore" style="cursor:pointer">⬆ นำเข้าข้อมูล</label><input type="file" id="fRestore" accept=".json,application/json" hidden></div>
         <p class="hint" id="backupMsg" style="margin:0 0 8px">ย้ายสมุด สถิติ และรอบทบทวนไปเครื่องอื่น: กดสำรองข้อมูลที่เครื่องนี้ แล้วนำเข้าไฟล์ที่อีกเครื่อง</p>
         <ul class="note-list" id="notes"></ul>
-      </div>
+      </details>
+
+      <details class="panel fold m-closed" open>
+        <summary><h3>คำใกล้เคียงในคลัง <small>กดเพื่อฟัง</small></h3></summary>
+        <div class="near" id="near"></div>
+      </details>
     </aside>
   </main>
   </div>
@@ -674,6 +789,10 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     chipRow($('catChips'), CAT, st.cat, countBy(v => v[3]), st.all.length, k => { st.cat = k; applyFilters(false); });
     chipRow($('speedChips'), SPEED, st.speed, countBy(v => speedOf(v[7])), st.all.length, k => { st.speed = k; applyFilters(false); });
     chipRow($('levelChips'), LEVEL, st.level, countBy(v => v[8]), st.all.length, k => { st.level = k; applyFilters(false); });
+    const on = [[ACC, st.acc, 'All'], [CAT, st.cat, 'all'], [SPEED, st.speed, 'all'], [LEVEL, st.level, 'all']]
+      .filter(([, cur, all]) => cur !== all).map(([list, cur]) => (list.find(x => x[0] === cur) || [, cur])[1]);
+    $('filterSum').textContent = on.length ? on.join(' · ') : 'ทั้งหมด';
+    $('filterSum').classList.toggle('set', on.length > 0);
   }
 
   // ---------- player ----------
@@ -1389,7 +1508,12 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     if (v !== 'search' && playerReady) { try { player.pauseVideo(); } catch (e) {} }
     try { history.replaceState(null, '', location.pathname + location.search + (v === 'search' ? '' : '#' + v)); } catch (e) {}
   }
-  document.querySelector('nav.views').addEventListener('click', e => { const b = e.target.closest('[data-view]'); if (b) showView(b.dataset.view); });
+  document.querySelector('nav.views').addEventListener('click', e => { const b = e.target.closest('[data-view]'); if (b) { showView(b.dataset.view); window.scrollTo({ top: 0 }); } });
+  // On a phone the filters and the less used side boxes start folded, so the player comes first.
+  if (window.matchMedia && matchMedia('(max-width: 720px)').matches) {
+    $('filterBox').open = false;
+    document.querySelectorAll('details.m-closed').forEach(d => d.open = false);
+  }
 
   const volSel = { book: store.get('vol.book', 0), grammar: store.get('vol.grammar', 0) };
   function renderCourse(key) {
