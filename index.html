@@ -425,6 +425,11 @@ footer.foot > div:not(#stats) { max-width: 90ch; }
 .subs .ctx { display: none; color: var(--muted); font-size: 15px; line-height: 1.5; }
 .subs.show-ctx .ctx:not(:empty) { display: block; }
 .subs .now { color: var(--sub-ink); font: 600 clamp(21px, 2.6vw, 36px)/1.4 var(--font-body); text-wrap: balance; }
+/* Shown under the player only while a Dhamma clip is playing */
+.dh-thanks { display: none; margin: 4px auto 8px; text-align: center; font: 500 14px/1.6 var(--font-serif-th); color: var(--ink); background: var(--gold-soft); border: 1px solid var(--gold-line); border-radius: 18px; padding: 5px 16px; width: fit-content; max-width: 100%; }
+.dh-thanks b { color: var(--gold); font-weight: 700; white-space: nowrap; }
+.dh-thanks span { white-space: nowrap; }
+body.dh-mode .dh-thanks { display: block; }
 .subs .now .said, .subs .now .todo { color: var(--muted); font-weight: 500; transition: color .2s; }
 .subs .now .said mark, .subs .now .todo mark { color: #111; }
 .subs .now.long { font-size: clamp(19px, 2vw, 28px); }
@@ -626,6 +631,7 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
         <button class="btn" id="bCtx" aria-pressed="false" title="แสดงประโยคก่อนและหลัง (C)">📄 แสดงบริบท</button>
         <button class="btn" id="bSave" title="บันทึกคลิปนี้ (S)">☆ บันทึก</button>
       </div>
+      <p class="dh-thanks">🪷 <span>กราบขอบพระคุณ</span> <b>ท่านอาจารย์สุจินต์ บริหารวนเขตต์</b> <span>· มูลนิธิศึกษาและเผยแพร่พระพุทธศาสนา</span></p>
       <div class="meta" id="meta"></div>
       <div class="kbd">คีย์ลัด: N ถัดไป · P ก่อนหน้า · R ฟังซ้ำ · B ถอย 5 วิ · K เล่น/หยุด · L วนประโยค · H ซ่อนซับ · T แปลไทย · C บริบท</div>
     </section>
