@@ -389,6 +389,59 @@ footer.foot > div:not(#stats) { max-width: 90ch; }
   .row .chips, #dhCats { flex-wrap: wrap; overflow: visible; }
   .course-head h2, .dh-head h2 { font-size: 20px; }
 }
+/* ---------- the clip area, YouGlish style: icon bar under the video, one large sentence on a light card ---------- */
+:root { --sub-ink: #12385a; --sub-mark: #ffe94a; }
+:root[data-theme="dark"] { --sub-ink: #eef2f5; --sub-mark: #f5d63d; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --sub-ink: #eef2f5; --sub-mark: #f5d63d; } }
+.filterbox .filters { display: grid; gap: 8px; }
+.fhint { color: var(--muted); font-weight: 400; font-size: 12.5px; }
+.filterbox > summary .fsum { margin-left: auto; }
+.filterbox > summary::after { margin-left: 4px; }
+.result-head { margin-bottom: 8px; }
+.ctrlbar { display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: var(--surface); border-top: 1px solid var(--line); }
+.ctrlbar .sep { flex: 1; }
+.ic { width: 44px; height: 44px; border-radius: 50%; border: 2px solid color-mix(in srgb, var(--accent) 35%, var(--line)); background: var(--surface); color: var(--accent); display: grid; place-items: center; padding: 0; flex: none; transition: background .15s, border-color .15s, transform .1s; }
+.ic svg { width: 22px; height: 22px; fill: currentColor; }
+.ic svg text { fill: currentColor; }
+.ic:hover:not(:disabled) { background: var(--accent-soft); border-color: var(--accent); }
+.ic:active:not(:disabled) { transform: scale(.94); }
+.ic.big { width: 52px; height: 52px; background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.ic.big:hover:not(:disabled) { background: var(--accent); filter: brightness(1.1); }
+.ic:disabled { opacity: .35; cursor: default; }
+.ic .i-pause, .ic.playing .i-play { display: none; }
+.ic.playing .i-pause { display: block; }
+@media (min-width: 901px) { .player-box { max-height: max(260px, calc(100vh - 420px)); } }
+.speed { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 14px; }
+.speed select { border: 1.5px solid var(--line); background: var(--surface); border-radius: 10px; padding: 8px 10px; min-height: 40px; color: var(--ink); font-weight: 600; }
+.subs { margin-top: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); padding: 18px 24px; min-height: 0; text-align: center; align-content: center; gap: 6px; }
+.subs .ctx { display: none; color: var(--muted); font-size: 15px; line-height: 1.5; }
+.subs.show-ctx .ctx:not(:empty) { display: block; }
+.subs .now { color: var(--sub-ink); font: 600 clamp(21px, 2.5vw, 32px)/1.4 var(--font-body); text-wrap: balance; }
+.subs mark { background: var(--sub-mark); color: #111; border-radius: 6px; padding: 0 5px; }
+.subs .now .w:hover { background: color-mix(in srgb, var(--sub-mark) 35%, transparent); }
+.subs .th { color: var(--accent); font-size: clamp(16px, 1.6vw, 19px); line-height: 1.5; }
+.subs .hid-note { background: color-mix(in srgb, var(--surface) 55%, transparent); color: var(--ink); font-size: 15px; font-weight: 600; border-radius: 14px; }
+.tools { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 12px 0 8px; }
+.tools .btn { min-height: 38px; font-size: 14px; padding: 7px 13px; }
+.meta { justify-content: center; text-align: center; color: var(--muted); padding: 2px 0 0; font-size: 13px; }
+.meta a { color: var(--accent); }
+.tag { border-color: var(--line); color: var(--muted); background: var(--surface); }
+section > .kbd { text-align: center; font-size: 12px; margin-top: 6px; }
+.panel h3 small { font-size: 12.5px; }
+details.more { margin-top: 6px; }
+details.more > summary { cursor: pointer; color: var(--accent); font-size: 13px; }
+details.more[open] > summary { margin-bottom: 6px; }
+.week div { font-size: 11.5px; }
+@media (max-width: 720px) {
+  .ctrlbar { gap: 6px; padding: 8px 10px; }
+  .ic { width: 40px; height: 40px; }
+  .ic.big { width: 46px; height: 46px; }
+  .speed span { display: none; }
+  .speed select { padding: 6px 6px; }
+  .subs { padding: 14px 14px; }
+  .fhint { display: none; }
+  .tools .btn { flex: 1 1 auto; justify-content: center; padding: 7px 8px; font-size: 13.5px; }
+}
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 </style>
 </head>
@@ -470,13 +523,13 @@ footer.foot > div:not(#stats) { max-width: 90ch; }
   </section>
 
   <div id="viewSearch">
-  <div class="chips" id="corpusBar" style="margin-bottom:8px"><span class="label">ค้นใน</span>
+  <details class="filterbox" id="filterBox"><summary><span class="f-ic" aria-hidden="true">⚙</span> ค้นใน · ตัวกรอง <span class="fhint">สำเนียง ประเภท ความเร็ว ระดับ</span> <span class="fsum" id="filterSum">คลิปทั่วไป · ทั้งหมด</span></summary>
+  <section class="filters" aria-label="ตัวกรอง">
+    <div class="chips" id="corpusBar"><span class="label">ค้นใน</span>
     <button type="button" class="chip" data-corpus="main" aria-pressed="true">คลิปทั่วไป (หนัง ข่าว ทีวี TED…)</button>
     <button type="button" class="chip" data-corpus="dhamma" aria-pressed="false">คลิปสนทนาธรรม 🪷</button>
   </div>
-  <div class="chips" id="shardBar" style="margin-bottom:8px"></div>
-  <details class="filterbox" id="filterBox" open><summary><span class="f-ic" aria-hidden="true">⚙</span> ตัวกรองคลิป <span class="fsum" id="filterSum">ทั้งหมด</span></summary>
-  <section class="filters" aria-label="ตัวกรอง">
+    <div class="chips" id="shardBar"></div>
     <div class="chips" id="accChips"><span class="label">สำเนียง</span></div>
     <div class="chips" id="catChips"><span class="label">ประเภทสื่อ</span></div>
     <div class="chips" id="speedChips"><span class="label">ความเร็วพูด</span></div>
@@ -497,30 +550,33 @@ footer.foot > div:not(#stats) { max-width: 90ch; }
           <div class="no-hit" id="noHit" hidden></div>
           <button type="button" class="unmute" id="unmute" hidden>🔇 แตะเพื่อเปิดเสียง</button>
         </div>
-        <div class="subs" id="subs">
-          <div class="ctx" id="subPrev"></div>
-          <div class="now" id="subNow"></div>
-          <div class="th" id="subTh" hidden></div>
-          <div class="ctx" id="subNext"></div>
-          <button type="button" class="hid-note" id="hidNote">ซับถูกซ่อนอยู่ (โหมดฝึกฟัง) · แตะเพื่อแสดงซับ</button>
+        <div class="ctrlbar" role="toolbar" aria-label="ควบคุมการเล่น">
+          <button class="ic" id="bPrev" title="คลิปก่อนหน้า (P)" aria-label="คลิปก่อนหน้า"><svg viewBox="0 0 24 24"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>
+          <button class="ic" id="bBack" title="ถอยหลัง 5 วินาที (B)" aria-label="ถอยหลัง 5 วินาที"><svg viewBox="0 0 24 24"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z"/><text x="12" y="16.2" font-size="7.5" font-weight="700" text-anchor="middle" font-family="sans-serif">5</text></svg></button>
+          <button class="ic" id="bReplay" title="ฟังประโยคนี้ซ้ำ (R)" aria-label="ฟังประโยคนี้ซ้ำ"><svg viewBox="0 0 24 24"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z"/></svg></button>
+          <button class="ic big" id="bPlay" title="เล่น/หยุด (K)" aria-label="เล่นหรือหยุด"><svg viewBox="0 0 24 24" class="i-play"><path d="M8 5v14l11-7z"/></svg><svg viewBox="0 0 24 24" class="i-pause"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg></button>
+          <button class="ic" id="bNext" title="คลิปถัดไป (N)" aria-label="คลิปถัดไป"><svg viewBox="0 0 24 24"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></button>
+          <span class="sep"></span>
+          <label class="speed" for="rate"><span>ความเร็ว</span>
+          <select id="rate"><option value="0.5">0.5×</option><option value="0.75">0.75×</option><option value="1" selected>ปกติ</option><option value="1.25">1.25×</option></select></label>
         </div>
-        <div class="meta" id="meta"></div>
       </div>
-      <div class="controls" role="toolbar" aria-label="ควบคุมการเล่น">
-        <button class="btn" id="bPrev" title="คลิปก่อนหน้า (P)">⏮ ก่อนหน้า</button>
-        <button class="btn" id="bBack" title="ถอยหลัง 5 วินาที (B)">↶ 5 วิ</button>
-        <button class="btn" id="bReplay" title="เล่นประโยคนี้ซ้ำ (R)">↻ ฟังซ้ำ</button>
-        <button class="btn" id="bPlay" title="เล่น/หยุด (K)">⏯</button>
-        <button class="btn primary" id="bNext" title="คลิปถัดไป (N)">ถัดไป ⏭</button>
-        <span class="sep"></span>
-        <button class="btn" id="bLoop" aria-pressed="false" title="วนประโยคเดิม (L)">วนประโยค</button>
-        <button class="btn" id="bHide" aria-pressed="false" title="ซ่อนซับ (H)">ซ่อนซับ</button>
-        <button class="btn" id="bTh" aria-pressed="false" title="แสดงคำแปลไทย (T)">แปลไทย</button>
-        <label class="kbd" for="rate">ความเร็ว</label>
-        <select id="rate"><option value="0.5">0.5×</option><option value="0.75">0.75×</option><option value="1" selected>1×</option><option value="1.25">1.25×</option></select>
+      <div class="subs" id="subs">
+        <div class="ctx" id="subPrev"></div>
+        <div class="now" id="subNow"></div>
+        <div class="th" id="subTh" hidden></div>
+        <div class="ctx" id="subNext"></div>
+        <button type="button" class="hid-note" id="hidNote">ซับถูกซ่อนอยู่ (โหมดฝึกฟัง) · แตะเพื่อแสดงซับ</button>
+      </div>
+      <div class="tools" role="toolbar" aria-label="ตัวช่วยการฟัง">
+        <button class="btn" id="bLoop" aria-pressed="false" title="วนประโยคเดิม (L)">🔁 วนประโยค</button>
+        <button class="btn" id="bHide" aria-pressed="false" title="ซ่อนซับ (H)">🙈 ซ่อนซับ</button>
+        <button class="btn" id="bTh" aria-pressed="false" title="แสดงคำแปลไทย (T)">🇹🇭 แปลไทย</button>
+        <button class="btn" id="bCtx" aria-pressed="false" title="แสดงประโยคก่อนและหลัง (C)">📄 แสดงบริบท</button>
         <button class="btn" id="bSave" title="บันทึกคลิปนี้ (S)">☆ บันทึก</button>
       </div>
-      <div class="kbd">คีย์ลัด: N ถัดไป · P ก่อนหน้า · R ฟังซ้ำ · B ถอย 5 วิ · K เล่น/หยุด · L วนประโยค · H ซ่อนซับ</div>
+      <div class="meta" id="meta"></div>
+      <div class="kbd">คีย์ลัด: N ถัดไป · P ก่อนหน้า · R ฟังซ้ำ · B ถอย 5 วิ · K เล่น/หยุด · L วนประโยค · H ซ่อนซับ · T แปลไทย · C บริบท</div>
     </section>
 
     <aside class="side">
@@ -528,8 +584,10 @@ footer.foot > div:not(#stats) { max-width: 90ch; }
         <h3>เป้าหมายวันนี้ <small><label for="goalSel">เป้า</label> <select id="goalSel" style="border:1px solid var(--line);border-radius:6px;background:var(--bg)"><option>10</option><option selected>20</option><option>40</option></select> กิจกรรม</small></h3>
         <div class="stat-row"><span>ทำแล้ว <b id="gDone">0</b> / <b id="gGoal">20</b></span><span>เรียนต่อเนื่อง <b id="gStreak">0</b> วัน 🔥</span></div>
         <div class="goal-bar"><i id="gBar" style="width:0%"></i></div>
+        <details class="more"><summary>ดูสถิติวันนี้และ 7 วันล่าสุด</summary>
         <div class="stat-row"><span>ฟัง <b id="sListen">0</b></span><span>พูด <b id="sSpeak">0</b> (เฉลี่ย <b id="sAvg">–</b>)</span><span>ควิซถูก <b id="sQuiz">0</b></span><span>แยกเสียงถูก <b id="sPair">0</b></span><span>ทบทวน <b id="sReview">0</b></span></div>
         <div class="week" id="week" aria-label="กิจกรรม 7 วันล่าสุด"></div>
+        </details>
       </div>
 
       <div class="panel" id="wordPanel">
@@ -791,7 +849,7 @@ footer.foot > div:not(#stats) { max-width: 90ch; }
     chipRow($('levelChips'), LEVEL, st.level, countBy(v => v[8]), st.all.length, k => { st.level = k; applyFilters(false); });
     const on = [[ACC, st.acc, 'All'], [CAT, st.cat, 'all'], [SPEED, st.speed, 'all'], [LEVEL, st.level, 'all']]
       .filter(([, cur, all]) => cur !== all).map(([list, cur]) => (list.find(x => x[0] === cur) || [, cur])[1]);
-    $('filterSum').textContent = on.length ? on.join(' · ') : 'ทั้งหมด';
+    $('filterSum').textContent = (corpusName === 'dhamma' ? 'คลิปธรรมะ' : 'คลิปทั่วไป') + ' · ' + (on.length ? on.join(' · ') : 'ทั้งหมด');
     $('filterSum').classList.toggle('set', on.length > 0);
   }
 
@@ -811,6 +869,7 @@ footer.foot > div:not(#stats) { max-width: 90ch; }
           if (++autoSkips < 5 && st.hits.length > 1) setTimeout(() => step(1), 1200);
         },
         onStateChange: e => {
+          $('bPlay').classList.toggle('playing', e.data === 1 || e.data === 3);
           if (e.data === 1) {
             if (st.hits.length && st.override === null && countedSeg !== hitSeg()) { countedSeg = hitSeg(); track('listen'); }
             autoSkips = 0;
@@ -995,11 +1054,14 @@ footer.foot > div:not(#stats) { max-width: 90ch; }
   $('bPlay').onclick = toggle;
   $('bLoop').onclick = () => setLoop(!st.loop);
   $('bHide').onclick = () => setHide(!st.hide);
+  function setCtx(v) { store.set('ctx', v); $('bCtx').setAttribute('aria-pressed', String(v)); $('subs').classList.toggle('show-ctx', v); }
+  $('bCtx').onclick = () => setCtx(!$('subs').classList.contains('show-ctx'));
+  setCtx(!!store.get('ctx', false));
   $('rate').onchange = e => { st.rate = +e.target.value; if (playerReady) player.setPlaybackRate(st.rate); };
   document.addEventListener('keydown', e => {
     if (e.target.matches('input, textarea, select') || e.metaKey || e.ctrlKey || e.altKey) return;
     const k = e.key.toLowerCase();
-    const map = { n: () => step(1), p: () => step(-1), r: replay, b: back5, k: toggle, l: () => setLoop(!st.loop), h: () => setHide(!st.hide), s: saveClip, t: () => setTh(!st.th) };
+    const map = { n: () => step(1), p: () => step(-1), r: replay, b: back5, k: toggle, l: () => setLoop(!st.loop), h: () => setHide(!st.hide), s: saveClip, t: () => setTh(!st.th), c: () => setCtx(!$('subs').classList.contains('show-ctx')) };
     if (map[k]) { e.preventDefault(); map[k](); }
   });
 
@@ -1510,8 +1572,9 @@ footer.foot > div:not(#stats) { max-width: 90ch; }
   }
   document.querySelector('nav.views').addEventListener('click', e => { const b = e.target.closest('[data-view]'); if (b) { showView(b.dataset.view); window.scrollTo({ top: 0 }); } });
   // On a phone the filters and the less used side boxes start folded, so the player comes first.
+  $('filterBox').open = !!store.get('fopen', false);
+  $('filterBox').addEventListener('toggle', () => store.set('fopen', $('filterBox').open));
   if (window.matchMedia && matchMedia('(max-width: 720px)').matches) {
-    $('filterBox').open = false;
     document.querySelectorAll('details.m-closed').forEach(d => d.open = false);
   }
 
