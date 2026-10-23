@@ -1,4 +1,4 @@
-# ฟังคำจริง (fang-kham)
+# Dreamlearning (repository fang-kham; the site was first called ฟังคำจริง)
 
 A YouGlish-style listening site for Thai learners of English: search a word or phrase (in English or Thai) and hear it in real YouTube clips from official channels, with accents, levels and practice tools.
 

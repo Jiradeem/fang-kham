@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>ฟังคำจริง</title>
+<title>Dreamlearning</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
 <style>
@@ -267,7 +267,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
 <body>
 <div class="wrap">
   <header class="top">
-    <div class="brand"><h1>ฟังคำจริง</h1><span>ฟังคำศัพท์จากคลิปจริง หลายสำเนียง</span></div>
+    <div class="brand"><h1>Dreamlearning</h1><span>ฟังคำศัพท์จากคลิปจริง หลายสำเนียง</span></div>
     <form class="search" id="searchForm" role="search">
       <input id="q" type="search" placeholder="พิมพ์คำอังกฤษ หรือคำไทยก็ได้ เช่น however, ถึงแม้ว่า, ฉันควรจะ" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="คำที่ต้องการฟัง">
       <button class="btn primary" type="submit">ค้นหา</button>
@@ -1610,7 +1610,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
       store.set('notes', mine.concat(theirs.filter(n => !seen.has(n.at + '|' + n.q))).sort((a, b) => b.at - a.at));
       $('backupMsg').textContent = 'นำเข้าแล้ว: รวมสมุดเป็น ' + notes().length + ' รายการ';
       renderNotes(); renderReview(); renderGoal();
-    } catch (err) { $('backupMsg').textContent = 'ไฟล์นี้ไม่ใช่ไฟล์สำรองของเว็บฟังคำจริง'; }
+    } catch (err) { $('backupMsg').textContent = 'ไฟล์นี้ไม่ใช่ไฟล์สำรองของเว็บ Dreamlearning'; }
     e.target.value = '';
   };
 
