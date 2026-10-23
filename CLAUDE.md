@@ -58,3 +58,53 @@ What we learned while collecting:
 - Finish the channels above and add more movie, sitcom and talk-show sources.
 - Grow `THAI_EN` from words students search for that miss.
 - A teacher view of class progress would need a backend; current stats are per browser only.
+
+## Next project: communicative curriculum A1 → C1 (agreed with the owner, not started)
+Goal: turn the search tool into a course where every topic starts from what the learner can **say** in real life, then shows the grammar and words it needs, proved by native-speaker clips. Start at A1 and finish each level before the next.
+
+### Topic page (one per topic)
+1. Can-do statement in Thai, e.g. "แนะนำตัวเองได้"
+2. Thai explanation card: when to use it, the pattern (e.g. `Subject + am/is/are + ...`), and what Thai speakers get wrong
+3. Real clips, slow and clear first (manual captions, short complete lines, low words-per-minute)
+4. Practice for that topic: speak along with scoring, quiz, dictation, minimal pairs where relevant
+5. Progress per topic (localStorage)
+The search box stays and also says which topic a word belongs to.
+
+### Sections
+1. Communication functions per level (the spine of the course)
+2. Grammar, ordered A1 → C1: verb to be, do/does/did, have/has, parts of speech, sentence types (statement, negative, yes/no question, Wh-/How question, imperative, exclamation), modals, 12 tenses, active/passive, conditionals, reported speech, relative clauses, comparatives, gerund/infinitive, articles, prepositions
+3. Topic vocabulary with a 👁 "see it" tag: body actions (kneel down, squat, roll over, lie down, breathe in), movement and direction (go in, come out, go through, in front of, behind), daily routines, kitchen, body, feelings
+4. Existing sets: connectors, phrasal verbs, expressions, connected speech
+
+### A1 topics to build first (communication → grammar → words)
+| # | Can do (Thai) | Grammar | Words / clips |
+|---|---|---|---|
+| 1 | ทักทาย ลา ขอบคุณ ขอโทษ | set phrases | hello, bye, thanks, sorry, excuse me |
+| 2 | แนะนำตัว บอกชื่อ อายุ ประเทศ อาชีพ | verb to be (am/is/are), my/your | I'm, my name is, I'm from |
+| 3 | ถาม-ตอบข้อมูลส่วนตัว | Wh- questions with be (what, where, how old) | What's your name? Where are you from? |
+| 4 | พูดถึงครอบครัวและคนรอบตัว | have/has got, his/her, plurals | mother, brother, friend |
+| 5 | บอกสิ่งที่ชอบ/ไม่ชอบ | present simple + don't/doesn't | like, love, hate, don't like |
+| 6 | เล่ากิจวัตรประจำวัน | present simple, adverbs of frequency, time | get up, have breakfast, always, usually |
+| 7 | บอกว่าทำอะไรได้/ไม่ได้ | can / can't, yes/no questions | can you swim? |
+| 8 | บอกตำแหน่งสิ่งของและสถานที่ | there is/are, prepositions of place | in, on, under, next to, behind, in front of 👁 |
+| 9 | ถามทาง บอกทาง | imperatives, directions | turn left, go straight, go through 👁 |
+| 10 | สั่งอาหาร ซื้อของ ถามราคา | I'd like, can I have, how much | menu, price, numbers |
+| 11 | บอกเวลา วัน เดือน นัดหมาย | numbers, time, prepositions of time | at 7, on Monday, in May |
+| 12 | บรรยายคน สิ่งของ ความรู้สึก | adjectives, be + adjective | tall, happy, tired |
+| 13 | ทำตามคำสั่งท่าทาง (TPR) | imperatives | stand up, sit down, kneel down, breathe in 👁 |
+| 14 | พูดถึงสิ่งที่กำลังทำอยู่ | present continuous | I'm cooking, she's running 👁 |
+| 15 | เล่าเรื่องเมื่อวาน (แนะนำ past) | past of be (was/were), common past verbs | yesterday, went, had |
+
+### How to get the clips
+- Tag every caption line at build time with spaCy (free, offline): sentence type, tense, passive, modal, question word, imperative. Topic pages then fill themselves. It is accurate but not perfect; say so on the page.
+- "See it" 👁 clips must come from instructional channels where speech and action happen together (yoga, fitness, cooking, dance, first aid, DIY, kids' action songs from official channels). Check each channel allows embedding and has English captions (the `web_embedded` client only returns embeddable videos).
+- For A1–A2 prefer slow, clear speech: instructional videos, kids' programmes, learner-friendly native content. News and talk shows stay for B2–C1.
+- Word lists: use NGSL and NGSL-Spoken (open licence) as the base. Oxford 3000 and English Vocabulary Profile are copyrighted; use them only as a reference, do not copy them into the site. Order topics to match the Thai basic education curriculum (หลักสูตรแกนกลางฯ) where possible.
+- Collect for missing words instead of collecting at random: for each target word with fewer than 5 good clips, search for videos likely to contain it.
+- Split `data.js` into chunks (by level or by topic) before the corpus grows past ~10 MB, so phones stay fast.
+
+### Phases (one new session each)
+1. Course page + spaCy tagging + A1 topics 1–15 with clips and practice
+2. 👁 "See it" sources and action/direction vocabulary
+3. A2 topics, then B1, B2, C1 functions and grammar
+4. Fill words with fewer than 5 clips; split the data files
