@@ -99,7 +99,7 @@ main.stage { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1
 .subs { padding: 14px 18px 16px; min-height: 118px; display: grid; gap: 4px; }
 .subs .ctx { color: #8b97a1; font-size: 14px; line-height: 1.45; }
 .subs .now { color: var(--subtitle); font-size: 21px; line-height: 1.4; font-weight: 500; }
-.subs .now .w { cursor: pointer; border-radius: 3px; opacity: .6; transition: opacity .12s; }
+.subs .now .w { cursor: pointer; border-radius: 3px; }
 .subs .now .w.on, .subs .now.static .w { opacity: 1; }
 .subs .th { color: #bfe3e6; font-size: 16px; line-height: 1.5; }
 .subs .now .w:hover { background: rgba(255, 213, 74, .18); }
@@ -515,6 +515,18 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     (st.speed === 'all' || speedOf(v[7]) === st.speed) && (st.level === 'all' || v[8] === st.level);
 
   // Segment ranges per video, so the subtitle strip can follow the player.
+  // Caption text as YouTube sends it can carry HTML entities (&gt;&gt; for a new speaker) and sound notes
+  // ([clears throat], (laughs)); show clean words only.
+  const ENT = { '&amp;': '&', '&gt;': '>', '&lt;': '<', '&quot;': '"', '&#39;': "'", '&nbsp;': ' ' };
+  function cleanCap(t) {
+    let x = String(t);
+    for (let i = 0; i < 3 && /&(amp|gt|lt|quot|#39|nbsp);/.test(x); i++) x = x.replace(/&(amp|gt|lt|quot|#39|nbsp);/g, m => ENT[m]);
+    // Short lowercase notes like [music] or [clears throat] are sounds; longer bracketed text in hand-made captions is speech.
+    return x.replace(/>>+|<<+/g, ' ').replace(/\[[a-z ]{1,25}\]|\((?:laughs?|laughter|music|applause|inaudible|crosstalk|clears throat|coughs?)\)/gi, ' ').replace(/[\[\]]/g, '')
+      .replace(/^\s*-\s+/, '').replace(/\s+/g, ' ').trim();
+  }
+  function cleanCorpus(c) { if (!c.cleaned) { c.s.forEach(x => { x[3] = cleanCap(x[3]); }); c.cleaned = true; } return c; }
+  cleanCorpus(MAIN);
   let vStart = [], vEnd = [];
   function indexVideos() { vStart = []; vEnd = []; C.s.forEach((s, i) => { if (vStart[s[0]] === undefined) vStart[s[0]] = i; vEnd[s[0]] = i; }); }
   indexVideos();
@@ -592,6 +604,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   let player = null, playerReady = false, pending = null, autoSkips = 0;
   window.onYouTubeIframeAPIReady = () => {
     player = new YT.Player('player', {
+      host: 'https://www.youtube-nocookie.com',
       playerVars: { playsinline: 1, rel: 0, modestbranding: 1, iv_load_policy: 3, cc_load_policy: 0, fs: 1 },
       events: {
         onReady: () => { playerReady = true; if (pending) { load(pending); pending = null; } },
@@ -671,7 +684,9 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   }
   // Word-by-word highlight, timed by spreading the line's duration over its letters.
   let karaoke = null;
-  function karaokeTick(t) {
+  // The estimated word-by-word highlight drifted from the voice; the line is now shown whole, like YouGlish.
+  function karaokeTick() { return; }
+  function karaokeTickOld(t) {
     if (!karaoke || karaoke.si !== shownSeg) return;
     const s = C.s[shownSeg], frac = (t - s[1]) / Math.max(0.3, s[2]);
     if (frac < 0 || frac > 1.2) { $('subNow').classList.add('static'); return; }
@@ -1214,7 +1229,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     await Promise.all(dhSel.map(loadShard));
     const v = [], s = [];
     dhSel.forEach(k => { const part = window.DHAMMA_SHARDS[k], off = v.length; part.v.forEach(x => v.push(x)); part.s.forEach(x => s.push([x[0] + off, x[1], x[2], x[3]])); });
-    window.DHAMMA_CORPUS = { v, s };
+    window.DHAMMA_CORPUS = cleanCorpus({ v, s });
   }
   function renderShardBar() {
     $('shardBar').innerHTML = '<span class="label">ชุดที่ค้น</span>' + SHARDS.map(([k, label, talks, lines, kb]) =>
@@ -1314,7 +1329,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   function playDhamma(id, autoplay) {
     const d = DH.find(x => x[0] === id); if (!d) return;
     dhCur = id;
-    $('dhFrame').src = 'https://www.youtube.com/embed/' + id + '?rel=0&cc_load_policy=1&cc_lang_pref=en' + (autoplay ? '&autoplay=1' : '');
+    $('dhFrame').src = 'https://www.youtube-nocookie.com/embed/' + id + '?rel=0&cc_load_policy=1&cc_lang_pref=en' + (autoplay ? '&autoplay=1' : '');
     $('dhMeta').innerHTML = escHtml(d[1]) + ' · <a href="https://www.youtube.com/watch?v=' + id + '" target="_blank" rel="noopener">เปิดใน YouTube ↗</a> · ซับภาษาอังกฤษอัตโนมัติ เปิด/ปิดได้ที่ปุ่ม CC';
     $('dhList').querySelectorAll('button').forEach(b => b.classList.toggle('cur', b.dataset.v === id));
   }
