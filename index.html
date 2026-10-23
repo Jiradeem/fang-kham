@@ -263,6 +263,7 @@ body.dh-mode #accChips, body.dh-mode #catChips, body.dh-mode #levelChips { displ
 .about p { margin: 0 0 8px; max-width: 80ch; }
 .contact-row { display: flex; flex-wrap: wrap; gap: 8px; }
 #cLine { background: #06c755; border-color: #06c755; color: #fff; font-weight: 600; text-decoration: none; }
+.unmute { position: absolute; left: 50%; bottom: 14%; transform: translateX(-50%); z-index: 2; border: 0; border-radius: 999px; padding: 10px 18px; background: rgba(0, 0, 0, .78); color: #fff; font-size: 15px; font-weight: 600; box-shadow: 0 4px 16px rgba(0, 0, 0, .35); }
 .status { font-size: 13.5px; color: var(--accent); font-weight: 600; }
 footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display: grid; gap: 4px; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
@@ -368,6 +369,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
         <div class="player-box">
           <div id="player"></div>
           <div class="no-hit" id="noHit" hidden></div>
+          <button type="button" class="unmute" id="unmute" hidden>🔇 แตะเพื่อเปิดเสียง</button>
         </div>
         <div class="subs" id="subs">
           <div class="ctx" id="subPrev"></div>
@@ -698,7 +700,18 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     if (same) { player.seekTo(Math.max(0, s[1] - 1), true); player.playVideo(); }
     else player.loadVideoById({ videoId: v[0], startSeconds: Math.max(0, s[1] - 1) });
     player.setPlaybackRate(st.rate);
+    // Browsers often block playback with sound until the viewer has clicked on the page. Like YouGlish, start
+    // muted instead so the clip and the captions move at once, and offer one tap to turn the sound on.
+    clearTimeout(autoplayTimer);
+    autoplayTimer = setTimeout(() => {
+      try {
+        const s = player.getPlayerState();
+        if (s !== 1 && s !== 3 && s !== 2) { player.mute(); player.playVideo(); $('unmute').hidden = false; }
+      } catch (e) {}
+    }, 1500);
   }
+  let autoplayTimer = 0;
+  $('unmute').onclick = () => { try { player.unMute(); player.setVolume(100); player.playVideo(); } catch (e) {} $('unmute').hidden = true; };
 
   // The line being studied: a search hit, or a line picked by the quiz or the shadowing mode.
   function hitSeg() { return st.override !== null ? st.override : st.hits.length ? st.hits[st.idx] : -1; }
@@ -829,6 +842,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     // Keep the matched line on screen during the lead-in second before it is spoken.
     if (found < hitSeg() && t < hs[1]) found = hitSeg();
     if (found >= 0 && found !== shownSeg && !shadow.on) renderSub(found);
+    try { if (!$('unmute').hidden && !player.isMuted()) $('unmute').hidden = true; } catch (e) {}
     karaokeTick(t);
     shadowTick(t);
   }, 200);
