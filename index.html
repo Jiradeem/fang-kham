@@ -174,6 +174,16 @@ textarea, .panel input[type="text"] { width: 100%; border: 1.5px solid var(--lin
 .pair .btn { justify-content: center; font-size: 19px; padding: 14px; font-weight: 600; }
 .pair .btn.right { background: var(--good); border-color: var(--good); color: #fff; }
 .pair .btn.wrong { background: var(--bad); border-color: var(--bad); color: #fff; }
+.goal-bar { height: 10px; background: var(--chip); border-radius: 99px; overflow: hidden; margin: 6px 0; }
+.goal-bar i { display: block; height: 100%; background: var(--accent); border-radius: 99px; transition: width .3s; }
+.week { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; align-items: end; height: 46px; margin-top: 6px; }
+.week div { display: grid; gap: 2px; justify-items: center; font-size: 10.5px; color: var(--muted); font-family: var(--font-mono); }
+.week span { width: 100%; max-width: 22px; background: var(--accent); border-radius: 3px; min-height: 2px; opacity: .85; }
+.week span.miss { background: var(--line); }
+.stat-row { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 13px; color: var(--muted); }
+.stat-row b { color: var(--ink); font-variant-numeric: tabular-nums; }
+.review-card { background: var(--chip); border-radius: 8px; padding: 10px; margin-top: 8px; }
+.review-card .ans { margin-top: 6px; }
 .status { font-size: 13.5px; color: var(--accent); font-weight: 600; }
 footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display: grid; gap: 4px; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
@@ -234,6 +244,27 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     </section>
 
     <aside class="side">
+      <div class="panel" id="goalPanel">
+        <h3>เป้าหมายวันนี้ <small><label for="goalSel">เป้า</label> <select id="goalSel" style="border:1px solid var(--line);border-radius:6px;background:var(--bg)"><option>10</option><option selected>20</option><option>40</option></select> กิจกรรม</small></h3>
+        <div class="stat-row"><span>ทำแล้ว <b id="gDone">0</b> / <b id="gGoal">20</b></span><span>เรียนต่อเนื่อง <b id="gStreak">0</b> วัน 🔥</span></div>
+        <div class="goal-bar"><i id="gBar" style="width:0%"></i></div>
+        <div class="stat-row"><span>ฟัง <b id="sListen">0</b></span><span>พูด <b id="sSpeak">0</b> (เฉลี่ย <b id="sAvg">–</b>)</span><span>ควิซถูก <b id="sQuiz">0</b></span><span>แยกเสียงถูก <b id="sPair">0</b></span><span>ทบทวน <b id="sReview">0</b></span></div>
+        <div class="week" id="week" aria-label="กิจกรรม 7 วันล่าสุด"></div>
+      </div>
+
+      <div class="panel" id="reviewPanel">
+        <h3>ทบทวนตามรอบ <small id="rDue"></small></h3>
+        <p class="hint" style="margin:0">คลิปและประโยคที่บันทึกไว้จะกลับมาให้ทบทวนหลัง 1 · 3 · 7 · 14 · 30 วัน ยิ่งจำได้ ยิ่งเว้นห่างขึ้น</p>
+        <div class="row"><button class="btn primary" id="bReview">เริ่มทบทวน</button></div>
+        <div class="review-card" id="rCard" hidden>
+          <div class="count" id="rProg"></div>
+          <div id="rText" style="margin-top:4px"></div>
+          <div class="row"><button class="btn" id="rPlay">↻ ฟังอีกครั้ง</button><button class="btn" id="rShow">ดูเฉลย</button></div>
+          <div class="ans" id="rAns" hidden></div>
+          <div class="row" id="rRate" hidden><button class="btn" id="rAgain">ยังจำไม่ได้</button><button class="btn primary" id="rGood">จำได้แล้ว ✓</button></div>
+        </div>
+      </div>
+
       <div class="panel" id="wordPanel">
         <h3><span id="wTitle">คำศัพท์</span><small id="wSyl"></small></h3>
         <div class="ipa" id="wIpa"></div>
@@ -445,6 +476,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
         },
         onStateChange: e => {
           if (e.data === 1) {
+            if (st.hits.length && st.override === null && countedSeg !== hitSeg()) { countedSeg = hitSeg(); track('listen'); }
             autoSkips = 0;
             // Our subtitle strip replaces YouTube's own captions, which would cover the speaker's face.
             try { player.unloadModule('captions'); player.unloadModule('cc'); } catch (err) {}
@@ -762,7 +794,9 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     rec.onend = () => {
       rec = null; $('bSpeak').textContent = '🎙 เริ่มพูด';
       if (!finalText && !/กรุณา|ไม่สำเร็จ/.test($('spHeard').textContent)) $('spHeard').textContent = 'ไม่ได้ยินเสียง ลองพูดดังขึ้นอีกนิด';
-      done(finalText ? compare(targetText(), finalText).score : null);
+      const sc = finalText ? compare(targetText(), finalText).score : null;
+      if (sc !== null) track('speak', sc);
+      done(sc);
     };
     rec.start();
   }
@@ -810,6 +844,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     if (shadow.on) { shadow.on = false; $('bShadow').textContent = '▶ ฝึกพูดตามต่อเนื่อง'; if (rec) rec.stop(); }
     if (quiz.on) quizEnd(false);
     if (pairGame.on) pairEnd(false);
+    if (!$('rCard').hidden) { $('rCard').hidden = true; setLoop(false); setHide(false); }
     st.override = null;
   }
 
@@ -858,6 +893,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     const it = quiz.items[quiz.i]; quiz.answered = true;
     const ok = b.textContent === it.word;
     if (ok) quiz.score++;
+    track('quiz', ok);
     $('qOpts').querySelectorAll('button').forEach(x => { if (x.textContent === it.word) x.classList.add('right'); else if (x === b) x.classList.add('wrong'); });
     $('qText').querySelector('.blank').textContent = it.word;
     $('qMsg').textContent = ok ? 'ถูกต้อง 👍' : 'ยังไม่ถูก คำที่ถูกคือ “' + it.word + '”';
@@ -927,7 +963,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
 
   // ---------- notebook ----------
   function notes() { return store.get('notes', []); }
-  function addNote(n) { const all = notes(); all.unshift(Object.assign({ at: Date.now() }, n)); store.set('notes', all.slice(0, 300)); renderNotes(); }
+  function addNote(n) { const all = notes(); all.unshift(Object.assign({ at: Date.now(), box: 0, due: dayNum() + 1 }, n)); store.set('notes', all.slice(0, 300)); renderNotes(); renderReview(); }
   function saveClip() {
     const si = hitSeg(); if (si < 0) return;
     const s = C.s[si], v = C.v[s[0]];
@@ -1055,6 +1091,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     const b = e.target.closest('button'); if (!b || !pairGame.on || pairGame.answered) return;
     const it = pairGame.items[pairGame.i]; pairGame.answered = true;
     const ok = b.textContent === it.ans; if (ok) pairGame.score++;
+    track('pair', ok);
     $('pOpts').querySelectorAll('button').forEach(x => { if (x.textContent === it.ans) x.classList.add('right'); else if (x === b) x.classList.add('wrong'); });
     $('pMsg').textContent = (ok ? 'ถูกต้อง 👍 ' : 'ยังไม่ถูก ') + 'ประโยคนี้พูดว่า “' + it.ans + '” ดูซับแล้วกดฟังซ้ำเพื่อเทียบเสียง';
     $('pScore').textContent = 'ถูก ' + pairGame.score;
@@ -1091,6 +1128,94 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   if ($('setSel').options[savedSet]) $('setSel').selectedIndex = savedSet;
   renderSetWords();
 
+  // ---------- daily goal and stats (kept in this browser) ----------
+  let countedSeg = -1;
+  function dayNum(d = new Date()) { return Math.floor((d.getTime() - d.getTimezoneOffset() * 60000) / 86400000); }
+  function stats() { return store.get('stats', {}); }
+  function track(kind, val) {
+    const all = stats(), k = dayNum(), d = all[k] || { listen: 0, speak: 0, speakSum: 0, quiz: 0, pair: 0, review: 0, n: 0 };
+    if (kind === 'speak') { d.speak++; d.speakSum += val; }
+    else if (kind === 'quiz' || kind === 'pair') { if (val) d[kind]++; }
+    else d[kind] = (d[kind] || 0) + 1;
+    d.n++;
+    all[k] = d;
+    Object.keys(all).forEach(x => { if (+x < k - 120) delete all[x]; });
+    store.set('stats', all); renderGoal();
+  }
+  function renderGoal() {
+    const all = stats(), k = dayNum(), d = all[k] || {}, goal = +store.get('goal', 20);
+    $('goalSel').value = String(goal);
+    $('gDone').textContent = d.n || 0; $('gGoal').textContent = goal;
+    $('gBar').style.width = Math.min(100, (d.n || 0) / goal * 100) + '%';
+    let streak = 0;
+    for (let x = (all[k] && all[k].n) ? k : k - 1; all[x] && all[x].n; x--) streak++;
+    $('gStreak').textContent = streak;
+    $('sListen').textContent = d.listen || 0; $('sSpeak').textContent = d.speak || 0;
+    $('sAvg').textContent = d.speak ? Math.round(d.speakSum / d.speak) + '%' : '–';
+    $('sQuiz').textContent = d.quiz || 0; $('sPair').textContent = d.pair || 0; $('sReview').textContent = d.review || 0;
+    const days = ['อา', 'จ', 'อ', 'พ', 'พฤ', 'ศ', 'ส'], max = Math.max(goal, ...Array.from({ length: 7 }, (_, i) => (all[k - 6 + i] || {}).n || 0));
+    $('week').innerHTML = Array.from({ length: 7 }, (_, i) => {
+      const n = (all[k - 6 + i] || {}).n || 0, date = new Date(Date.now() - (6 - i) * 86400000);
+      return '<div title="' + n + ' กิจกรรม"><span class="' + (n ? '' : 'miss') + '" style="height:' + Math.max(2, n / max * 32) + 'px"></span>' + days[date.getDay()] + '</div>';
+    }).join('');
+  }
+  $('goalSel').onchange = e => { store.set('goal', +e.target.value); renderGoal(); };
+
+  // ---------- spaced review of saved notes ----------
+  const BOXES = [1, 3, 7, 14, 30];
+  const review = { list: [], i: 0 };
+  function dueNotes() { const k = dayNum(); return notes().map((n, idx) => [n, idx]).filter(([n]) => (n.due || 0) <= k); }
+  function renderReview() {
+    const n = dueNotes().length;
+    $('rDue').textContent = n ? 'ถึงรอบ ' + n + ' รายการ' : 'วันนี้ไม่มีรายการถึงรอบ';
+    $('bReview').disabled = !n;
+  }
+  $('bReview').onclick = () => {
+    stopModes();
+    review.list = dueNotes().slice(0, 20); review.i = 0;
+    if (!review.list.length) return;
+    $('rCard').hidden = false; reviewLoad();
+  };
+  function noteSeg(n) {
+    if (n.type !== 'clip') return -1;
+    for (let i = 0; i < C.s.length; i++) if (C.v[C.s[i][0]][0] === n.vid && Math.abs(C.s[i][1] - n.t) < 0.5) return i;
+    return -1;
+  }
+  function reviewLoad() {
+    const [n] = review.list[review.i];
+    $('rProg').textContent = 'รายการ ' + (review.i + 1) + ' / ' + review.list.length + ' · กล่อง ' + ((n.box || 0) + 1) + ' / 5';
+    $('rAns').hidden = true; $('rRate').hidden = true; $('rShow').hidden = false;
+    const si = noteSeg(n);
+    if (si >= 0) {
+      st.override = si; setHide(true); setLoop(true); renderClip(si);
+      $('rText').textContent = 'ฟังคลิปแล้วลองพูดหรือเขียนประโยคที่ได้ยิน (คำหลัก: ' + (n.q || '') + ')';
+      $('rPlay').onclick = replay;
+    } else {
+      $('rText').textContent = 'ฟังประโยคที่คุณเคยแต่งไว้ แล้วนึกความหมาย (คำหลัก: ' + (n.q || '') + ')';
+      $('rPlay').onclick = () => speak(n.text);
+      speak(n.text);
+    }
+    $('rAns').textContent = n.text;
+  }
+  $('rShow').onclick = () => { $('rAns').hidden = false; $('rRate').hidden = false; $('rShow').hidden = true; setHide(false); };
+  function rate(good) {
+    const [n, idx] = review.list[review.i], all = notes(), cur = all[idx];
+    if (cur && cur.at === n.at) {
+      cur.box = good ? Math.min(BOXES.length - 1, (cur.box || 0) + 1) : 0;
+      cur.due = dayNum() + BOXES[cur.box];
+      store.set('notes', all);
+    }
+    track('review');
+    review.i++;
+    if (review.i < review.list.length) reviewLoad();
+    else { $('rCard').hidden = true; st.override = null; setLoop(false); setHide(false); renderReview(); backToHit(); $('rDue').textContent = 'ทบทวนครบแล้ววันนี้ 👍'; }
+  }
+  $('rAgain').onclick = () => rate(false);
+  $('rGood').onclick = () => rate(true);
+
+  // Older notes saved before reviews existed join the schedule from today.
+  (() => { const all = notes(); let ch = false; all.forEach(n => { if (n.due === undefined) { n.box = 0; n.due = dayNum(); ch = true; } }); if (ch) store.set('notes', all); })();
+  renderGoal(); renderReview();
   renderNotes();
   const params = new URLSearchParams(location.search);
   if (params.get('acc')) st.acc = params.get('acc');
