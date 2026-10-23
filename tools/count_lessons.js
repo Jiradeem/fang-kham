@@ -2,7 +2,9 @@
 // Run from the repository root after changing data.js or curriculum.js:  node tools/count_lessons.js
 global.window = {};
 require('../data.js'); require('../curriculum.js');
-const C = window.CORPUS, esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const C = window.CORPUS;
+(C.parts || []).forEach((p, i) => { require('../' + p[0]); C.s.push(...window.CORPUS_PARTS[i]); });
+const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const norm = s => s.toLowerCase().replace(/[’‘]/g, "'").replace(/\s+/g, ' ').trim();
 const makeRe = q => new RegExp("(^|[^a-z0-9'’])(" + norm(q).split('|').map(x => esc(x.trim()).replace(/'/g, "['’]").replace(/ /g, "[\\s,.\\-–—]+")).join('|') + ")(?=$|[^a-z0-9'’])", 'i');
 const out = {};

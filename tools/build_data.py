@@ -1,6 +1,10 @@
 # Build data.js for the site from collected caption files.
+# data.js holds the clip list, word sets and quiz words; the caption lines go to data-1.js, data-2.js, … which the
+# page loads in parallel, so the first screen does not wait for the whole corpus.
+# Usage: python3 -I tools/build_data.py <caption dir> data.js
 import json, glob, os, sys, re, collections
 src, dst = sys.argv[1], sys.argv[2]
+PART_LINES = 45000
 
 SETS = {
     'คำเชื่อมประโยค': ['however', 'therefore', 'although', 'even though', 'moreover', 'meanwhile', 'instead', 'otherwise', 'in fact',
@@ -62,9 +66,12 @@ NOTED_SETS = {
         ['were killed', 'ถูกฆ่า/เสียชีวิต (พบบ่อยในข่าว)'], ['was arrested', 'ถูกจับกุม (ข่าว)'], ['is expected to', 'คาดว่าจะ… (ข่าว)'], ['being', 'กำลังถูก… (is being + V3)']]),
 }
 
+# Clips with hand-made captions and the learner-friendly channels come first, so they are in the first part.
+FIRST = {'learning': 0, 'kids': 0, 'ted': 1, 'documentary': 1}
+docs = [json.load(open(f, encoding='utf-8')) for f in sorted(glob.glob(os.path.join(src, '*.json')))]
+docs.sort(key=lambda d: (d['cap'] != 'm', FIRST.get(d['cat'], 2), d['id']))
 vids, segs = [], []
-for f in sorted(glob.glob(os.path.join(src, '*.json'))):
-    d = json.load(open(f, encoding='utf-8'))
+for d in docs:
     s = [x for x in d['s'] if x[2] and not re.fullmatch(r'\[.*\]|\(.*\)|♪.*', x[2])]
     if len(s) < 5: continue
     words = sum(len(x[2].split()) for x in s)
@@ -114,9 +121,23 @@ lower = collections.Counter(w for s in segs for w in re.findall(r"(?<![.!?]\s)\b
 quiz = sorted(w for w, n in freq.items() if 300 <= rank[w] <= 6000 and n >= 4 and len(w) >= 4 and w.isalpha()
               and w not in STOP and lower[w] >= 0.8 * n)
 
+# Split the lines into parts at clip boundaries.
+parts, cur = [], []
+for i, sg in enumerate(segs):
+    cur.append(sg)
+    if len(cur) >= PART_LINES and (i + 1 == len(segs) or segs[i + 1][0] != sg[0]): parts.append(cur); cur = []
+if cur: parts.append(cur)
+base = os.path.splitext(dst)[0]
+for old in glob.glob(base + '-*.js'): os.remove(old)
+names = []
+for n, part in enumerate(parts):
+    fn = base + '-' + str(n + 1) + '.js'; names.append([os.path.basename(fn), len(part)])
+    with open(fn, 'w', encoding='utf-8') as o:
+        o.write('(window.CORPUS_PARTS=window.CORPUS_PARTS||{})[' + str(n) + ']=')
+        json.dump(part, o, ensure_ascii=False, separators=(',', ':')); o.write(';\n')
 with open(dst, 'w', encoding='utf-8') as o:
     o.write('window.CORPUS=')
-    json.dump({'v': vids, 's': segs, 'sets': sets, 'quiz': quiz}, o, ensure_ascii=False, separators=(',', ':'))
+    json.dump({'v': vids, 's': [], 'parts': names, 'sets': sets, 'quiz': quiz}, o, ensure_ascii=False, separators=(',', ':'))
     o.write(';\n')
-print(len(vids), 'videos', len(segs), 'lines', os.path.getsize(dst) // 1024, 'KB',
+print(len(vids), 'videos', len(segs), 'lines in', len(parts), 'parts,', sum(os.path.getsize(base + '-' + str(i + 1) + '.js') for i in range(len(parts))) // 1024, 'KB',
       '| levels', collections.Counter(v[8] for v in vids), '| sets', {k: len(v['w']) for k, v in sets.items()}, '| quiz words', len(quiz))

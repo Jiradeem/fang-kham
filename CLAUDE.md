@@ -25,11 +25,12 @@ A YouGlish-style listening site for Thai learners of English: search a word or p
 | `tools/corpus-videos.tgz` | The raw caption files (`videos/<id>.json`), so the corpus can be rebuilt or extended without refetching. |
 
 ### `data.js` format
+- `data.js` holds `window.CORPUS = {v, s: [], parts, sets, quiz}`; the caption lines are in `data-1.js`, `data-2.js`, … (`parts = [[file, lineCount], …]`, about 45,000 lines each, split at clip boundaries). The page loads the parts in parallel, starts on part 1 and grows an open search as the rest arrive. Clips with hand-made captions and the learning/kids channels are put first, so part 1 is the most useful.
 - `v[i] = [videoId, title, channel, category, accent, captionKind('m' manual | 'a' auto), durationSec, wordsPerMinute, level]`
 - `s[j] = [videoIndex, startSec, durSec, text]`, sorted by video then time.
 - `sets[name] = {d: Thai description, w: [[phrase, lineCount, Thai note], ...]}`
 - `quiz` = mid-frequency lowercase words used for the fill-in-the-blank quiz.
-- Categories: movie, series, tv, interview, documentary, ted, news, conversation. Accents: US, UK, AUS, CAN, IRL, SCO, NZ (assigned by the channel's country, not per speaker).
+- Categories: movie, series, tv, interview, documentary, ted, news, conversation, learning (BBC Learning English…), kids (Sesame Street, Peppa Pig, Bluey…). Accents: US, UK, AUS, CAN, IRL, SCO, NZ (assigned by the channel's country, not per speaker).
 - Level (A2–C1) is an estimate from speaking speed and the share of less common words, split by percentile. Native media has almost no A1 material; the site says so.
 
 ## Features in `index.html`
@@ -114,7 +115,8 @@ The search box stays and also says which topic a word belongs to.
 - For A1–A2 prefer slow, clear speech: instructional videos, kids' programmes, learner-friendly native content. News and talk shows stay for B2–C1.
 - Word lists: use NGSL and NGSL-Spoken (open licence) as the base. Oxford 3000 and English Vocabulary Profile are copyrighted; use them only as a reference, do not copy them into the site. Order topics to match the Thai basic education curriculum (หลักสูตรแกนกลางฯ) where possible.
 - Collect for missing words instead of collecting at random: for each target word with fewer than 5 good clips, search for videos likely to contain it.
-- Split `data.js` into chunks (by level or by topic) before the corpus grows past ~10 MB, so phones stay fast.
+- `data.js` is split into parts (done). If the corpus grows past ~40 MB, consider loading parts only when a search needs them.
+- Collecting: YouTube rate-limits a container after a few hundred requests. `collect_captions.py` checks a known clip (PROBE) before pausing, so channels without captions (e.g. VOA Learning English, whose videos have no caption tracks) are skipped instead of stalling. yt-dlp needs `yt-dlp-ejs` (pip) and `--js-runtimes node` is optional.
 
 ### Phases (one new session each)
 1. Course page + spaCy tagging + A1 topics 1–15 with clips and practice

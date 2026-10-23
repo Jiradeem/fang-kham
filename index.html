@@ -804,7 +804,7 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
   const $ = id => document.getElementById(id);
   const ACC = [['All', 'ทั้งหมด'], ['US', 'US'], ['UK', 'UK'], ['AUS', 'AUS'], ['CAN', 'CAN'], ['IRL', 'IRL'], ['SCO', 'SCO'], ['NZ', 'NZ']];
   const LANG = { US: 'en-US', UK: 'en-GB', AUS: 'en-AU', CAN: 'en-CA', IRL: 'en-IE', SCO: 'en-GB', NZ: 'en-NZ', All: 'en-US' };
-  const CAT = [['all', 'ทั้งหมด'], ['movie', 'หนัง'], ['series', 'ซีรีส์'], ['tv', 'รายการทีวี'], ['interview', 'สัมภาษณ์'], ['documentary', 'สารคดี'], ['ted', 'TED'], ['news', 'ข่าว'], ['conversation', 'บทสนทนา']];
+  const CAT = [['all', 'ทั้งหมด'], ['movie', 'หนัง'], ['series', 'ซีรีส์'], ['tv', 'รายการทีวี'], ['interview', 'สัมภาษณ์'], ['documentary', 'สารคดี'], ['ted', 'TED'], ['news', 'ข่าว'], ['conversation', 'บทสนทนา'], ['learning', 'สื่อเรียนภาษา'], ['kids', 'การ์ตูน/เด็ก']];
   const CAT_TH = Object.fromEntries(CAT);
   const SPEED = [['all', 'ทั้งหมด'], ['slow', 'ช้า (<140 คำ/นาที)'], ['mid', 'ปานกลาง'], ['fast', 'เร็ว (>175)']];
   const speedOf = wpm => wpm < 140 ? 'slow' : wpm > 175 ? 'fast' : 'mid';
@@ -846,23 +846,26 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
   }
   function hash(str) { let h = 2166136261; for (const c of str) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; }
 
-  function runSearch(q) {
-    st.q = norm(q);
-    const re = makeRe(st.q);
+  function findHits(q) {
+    const re = makeRe(q);
     const hits = [];
     for (let i = 0; i < C.s.length; i++) {
       const s = C.s[i];
       if (re.test(s[3])) { hits.push(i); continue; }
       const n = C.s[i + 1];
-      if (st.q.includes(' ') && n && n[0] === s[0] && re.test(s[3] + ' ' + n[3]) && !re.test(n[3])) hits.push(i);
+      if (q.includes(' ') && n && n[0] === s[0] && re.test(s[3] + ' ' + n[3]) && !re.test(n[3])) hits.push(i);
     }
     // Spread results across videos: first hit of each video first, in a stable order per word.
-    const seed = hash(st.q), seen = new Set(), first = [], rest = [];
+    const seed = hash(q), seen = new Set(), first = [], rest = [];
     hits.forEach(i => (seen.has(C.s[i][0]) ? rest : (seen.add(C.s[i][0]), first)).push(i));
     // Clips with hand-made captions come first: their lines are whole, punctuated sentences, as on YouGlish.
     const key = i => (C.v[C.s[i][0]][5] === 'a' ? 1 : 0) * 2 ** 32 + hash(seed + ':' + C.s[i][0]);
     first.sort((a, b) => key(a) - key(b));
-    st.all = first.concat(rest);
+    return first.concat(rest);
+  }
+  function runSearch(q) {
+    st.q = norm(q);
+    st.all = findHits(st.q);
     renderThaiBar();
     showView('search');
     applyFilters(true);
@@ -1107,7 +1110,8 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
     }
     return words(rest) + html;
   }
-  function words(t) { return escHtml(t).replace(/[A-Za-z][A-Za-z'’-]*/g, w => '<span class="w" data-w="' + w + '">' + w + '</span>'); }
+  // Split the raw text into words first and escape each piece, so quotes (&quot;) never get cut in half.
+  function words(t) { return String(t).split(/([A-Za-z][A-Za-z'’-]*)/).map((p, i) => i % 2 ? '<span class="w" data-w="' + escHtml(p) + '">' + escHtml(p) + '</span>' : escHtml(p)).join(''); }
   $('subNow').addEventListener('click', e => { const w = e.target.closest('.w'); if (w) go(w.dataset.w.replace(/[’]/g, "'").replace(/^'+|'+$/g, '')); });
 
   // Follow playback: update the subtitle strip and handle sentence looping.
@@ -2219,9 +2223,48 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
   const params = new URLSearchParams(location.search);
   if (params.get('acc')) st.acc = params.get('acc');
   const startView = location.hash.slice(1);
-  if (params.get('lesson') && findLesson(params.get('lesson'))) openLesson(params.get('lesson'));
-  else go(params.get('q') || 'actually');
-  if (['book', 'grammar', 'dhamma'].includes(startView)) showView(startView);
+  let started = false;
+  function startPage() {
+    if (started) return; started = true;
+    if (params.get('lesson') && findLesson(params.get('lesson'))) openLesson(params.get('lesson'));
+    else go(params.get('q') || 'actually');
+    if (['book', 'grammar', 'dhamma'].includes(startView)) showView(startView);
+  }
+
+  // The general corpus comes in parts (data-1.js, data-2.js, …) so the first screen does not wait for all of it.
+  // Parts download in parallel and join MAIN in order; an open search grows as they arrive, without restarting the clip.
+  const PARTS = MAIN.parts || [], arrived = [];
+  let merged = 0;
+  function refreshSearch() {
+    if (C !== MAIN || !st.q) return;
+    const cur = hitSeg(), had = st.hits.length;
+    st.all = findHits(st.q);
+    if (!had && curView === 'search' && st.override === null) { applyFilters(true); return; }
+    st.hits = st.all.filter(i => passes(C.v[C.s[i][0]]));
+    const k = st.hits.indexOf(cur); st.idx = k >= 0 ? k : 0;
+    renderChips();
+    $('count').textContent = st.hits.length ? (st.idx + 1) + ' / ' + st.hits.length + ' คลิป' : '';
+  }
+  function mergeParts() {
+    let added = false;
+    while (merged < PARTS.length && arrived[merged]) {
+      const rows = arrived[merged]; arrived[merged] = true;
+      for (const r of rows) { r[3] = cleanCap(r[3]); MAIN.s.push(r); }
+      merged++; added = true;
+    }
+    if (!added) return;
+    if (C === MAIN) { indexVideos(); renderStats(); }
+    if (!started) startPage(); else refreshSearch();
+    if (merged === PARTS.length && C === MAIN) { buildVocab(); renderNear(); }
+  }
+  PARTS.forEach(([src], i) => {
+    const el = document.createElement('script');
+    el.src = src;
+    el.onload = () => { const p = window.CORPUS_PARTS || {}; arrived[i] = p[i] || []; delete p[i]; mergeParts(); };
+    el.onerror = () => { arrived[i] = []; mergeParts(); };
+    document.body.appendChild(el);
+  });
+  if (!PARTS.length) startPage();
 })();
 </script>
 </body>
