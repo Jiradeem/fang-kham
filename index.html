@@ -98,10 +98,12 @@ main.stage { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1
 .subs { padding: 14px 18px 16px; min-height: 118px; display: grid; gap: 4px; }
 .subs .ctx { color: #8b97a1; font-size: 14px; line-height: 1.45; }
 .subs .now { color: var(--subtitle); font-size: 21px; line-height: 1.4; font-weight: 500; }
-.subs .now .w { cursor: pointer; border-radius: 3px; }
+.subs .now .w { cursor: pointer; border-radius: 3px; opacity: .6; transition: opacity .12s; }
+.subs .now .w.on, .subs .now.static .w { opacity: 1; }
+.subs .th { color: #bfe3e6; font-size: 16px; line-height: 1.5; }
 .subs .now .w:hover { background: rgba(255, 213, 74, .18); }
 .subs mark { background: var(--subtitle); color: #111; border-radius: 3px; padding: 0 2px; }
-.subs.hide-text .now, .subs.hide-text .ctx { filter: blur(7px); user-select: none; }
+.subs.hide-text .now, .subs.hide-text .ctx, .subs.hide-text .th { filter: blur(7px); user-select: none; }
 .meta { display: flex; flex-wrap: wrap; gap: 4px 12px; padding: 0 18px 14px; color: #9aa6b0; font-size: 12.5px; }
 .meta a { color: #c8d0d6; }
 .tag { font-family: var(--font-mono); font-size: 11px; border: 1px solid #39444c; border-radius: 4px; padding: 0 6px; color: #c8d0d6; }
@@ -142,6 +144,18 @@ textarea, .panel input[type="text"] { width: 100%; border: 1.5px solid var(--lin
 .note-list li { display: flex; gap: 8px; align-items: flex-start; justify-content: space-between; border-bottom: 1px dashed var(--line); padding-bottom: 6px; }
 .note-list button.link { border: 0; background: none; padding: 0; color: var(--accent); text-align: left; }
 .note-list .x { border: 0; background: none; color: var(--muted); }
+.quiz-q { font-size: 17px; line-height: 1.6; margin: 6px 0 10px; }
+.quiz-q .blank { display: inline-block; min-width: 4.5em; border-bottom: 2px solid var(--accent); text-align: center; color: var(--accent); font-weight: 600; }
+.opts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.opts .btn { justify-content: center; }
+.opts .btn.right { background: var(--good); border-color: var(--good); color: #fff; }
+.opts .btn.wrong { background: var(--bad); border-color: var(--bad); color: #fff; }
+.set-words { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+.set-words button { border: 0; background: var(--chip); border-radius: 6px; padding: 3px 9px; font-size: 13.5px; }
+.set-words button small { color: var(--muted); font-family: var(--font-mono); font-size: 11px; margin-left: 4px; }
+.set-words button.cur { background: var(--accent); color: var(--accent-ink); }
+.set-words button.cur small { color: inherit; }
+.status { font-size: 13.5px; color: var(--accent); font-weight: 600; }
 footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display: grid; gap: 4px; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 </style>
@@ -160,6 +174,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     <div class="chips" id="accChips"><span class="label">สำเนียง</span></div>
     <div class="chips" id="catChips"><span class="label">ประเภทสื่อ</span></div>
     <div class="chips" id="speedChips"><span class="label">ความเร็วพูด</span></div>
+    <div class="chips" id="levelChips"><span class="label">ระดับ</span></div>
   </section>
 
   <main class="stage">
@@ -176,6 +191,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
         <div class="subs" id="subs">
           <div class="ctx" id="subPrev"></div>
           <div class="now" id="subNow"></div>
+          <div class="th" id="subTh" hidden></div>
           <div class="ctx" id="subNext"></div>
         </div>
         <div class="meta" id="meta"></div>
@@ -189,6 +205,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
         <span class="sep"></span>
         <button class="btn" id="bLoop" aria-pressed="false" title="วนประโยคเดิม (L)">วนประโยค</button>
         <button class="btn" id="bHide" aria-pressed="false" title="ซ่อนซับ (H)">ซ่อนซับ</button>
+        <button class="btn" id="bTh" aria-pressed="false" title="แสดงคำแปลไทย (T)">แปลไทย</button>
         <label class="kbd" for="rate">ความเร็ว</label>
         <select id="rate"><option value="0.5">0.5×</option><option value="0.75">0.75×</option><option value="1" selected>1×</option><option value="1.25">1.25×</option></select>
         <button class="btn" id="bSave" title="บันทึกคลิปนี้ (S)">☆ บันทึก</button>
@@ -210,6 +227,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
           <button role="tab" aria-selected="true" data-tab="speak">พูดตาม</button>
           <button role="tab" aria-selected="false" data-tab="dict">ฟังแล้วพิมพ์</button>
           <button role="tab" aria-selected="false" data-tab="use">แต่งประโยค</button>
+          <button role="tab" aria-selected="false" data-tab="quiz">ควิซเติมคำ</button>
         </div>
         <div data-pane="speak">
           <p class="hint">ฟังประโยคแล้วพูดตาม ระบบจะฟังเสียงแล้วบอกว่าคำไหนตรง (ใช้ได้ดีที่สุดใน Chrome)</p>
@@ -221,6 +239,11 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
           </div>
           <div class="row"><span class="score" id="spScore"></span><span class="diff" id="spDiff"></span></div>
           <div class="hint" id="spHeard"></div>
+          <div class="row" style="border-top:1px dashed var(--line);padding-top:10px">
+            <button class="btn" id="bShadow">▶ ฝึกพูดตามต่อเนื่อง</button>
+            <span class="status" id="shStatus"></span>
+          </div>
+          <p class="hint" style="margin:6px 0 0">เว็บจะเล่นทีละประโยค หยุดรอให้พูดตาม ให้คะแนน แล้วไปประโยคถัดไปเอง</p>
         </div>
         <div data-pane="dict" hidden>
           <p class="hint">ซับจะถูกซ่อน กด "ฟังซ้ำ" ได้หลายครั้ง แล้วพิมพ์ประโยคที่ได้ยิน</p>
@@ -239,6 +262,26 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
           </div>
           <div class="hint" id="useMsg"></div>
         </div>
+        <div data-pane="quiz" hidden>
+          <div id="quizStart">
+            <p class="hint">ฟังคลิปแล้วเลือกคำที่หายไป 10 ข้อ ใช้สำเนียง ประเภท และระดับที่เลือกไว้ด้านบน</p>
+            <button class="btn primary" id="bQuiz">เริ่มควิซ</button>
+          </div>
+          <div id="quizBox" hidden>
+            <div class="row" style="margin-top:0;justify-content:space-between"><span class="count" id="qProg"></span><span class="count" id="qScore"></span></div>
+            <div class="quiz-q" id="qText"></div>
+            <div class="opts" id="qOpts"></div>
+            <div class="row"><button class="btn" id="qReplay">↻ ฟังอีกครั้ง</button><button class="btn primary" id="qNext" hidden>ข้อต่อไป →</button></div>
+            <div class="hint" id="qMsg"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>ชุดคำศัพท์ <small>กดคำเพื่อฟัง</small></h3>
+        <select id="setSel" aria-label="เลือกชุดคำศัพท์" style="width:100%;border:1.5px solid var(--line);border-radius:8px;padding:7px 9px;background:var(--bg)"></select>
+        <div class="set-words" id="setWords"></div>
+        <div class="row"><button class="btn" id="bSetNext">คำถัดไปในชุด →</button></div>
       </div>
 
       <div class="panel">
@@ -256,6 +299,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   <footer class="foot">
     <div id="stats"></div>
     <div>คลิปทั้งหมดเล่นผ่านเครื่องเล่น YouTube จากช่องทางการของเจ้าของ · สำเนียงกำหนดตามประเทศของช่อง ผู้พูดบางคนอาจมีสำเนียงต่างออกไป · ซับที่ติดป้าย "auto" สร้างโดยระบบอัตโนมัติของ YouTube อาจคลาดเคลื่อนบ้าง</div>
+    <div>ระดับ A2–C1 เป็นค่าประมาณจากความเร็วพูดและความยากของคำ สื่อจริงของเจ้าของภาษาแทบไม่มีระดับ A1 ผู้เรียนระดับเริ่มต้นแนะนำให้เลือกระดับ A2 ความเร็ว "ช้า" และเปิดความเร็ว 0.75× · คำแปลไทยใช้บริการแปลฟรี (จำกัดจำนวนต่อวัน) และไฮไลต์ทีละคำเป็นจังหวะโดยประมาณ</div>
   </footer>
 </div>
 
@@ -271,6 +315,9 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   const CAT_TH = Object.fromEntries(CAT);
   const SPEED = [['all', 'ทั้งหมด'], ['slow', 'ช้า (<140 คำ/นาที)'], ['mid', 'ปานกลาง'], ['fast', 'เร็ว (>175)']];
   const speedOf = wpm => wpm < 140 ? 'slow' : wpm > 175 ? 'fast' : 'mid';
+  const LEVEL = [['all', 'ทั้งหมด'], ['A2', 'A2'], ['B1', 'B1'], ['B2', 'B2'], ['C1', 'C1']];
+  const passes = v => (st.acc === 'All' || v[4] === st.acc) && (st.cat === 'all' || v[3] === st.cat) &&
+    (st.speed === 'all' || speedOf(v[7]) === st.speed) && (st.level === 'all' || v[8] === st.level);
 
   // Segment ranges per video, so the subtitle strip can follow the player.
   const vStart = [], vEnd = [];
@@ -281,7 +328,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     set(k, v) { try { localStorage.setItem('fk.' + k, JSON.stringify(v)); } catch (e) {} }
   };
 
-  const st = { q: '', acc: store.get('acc', 'All'), cat: 'all', speed: 'all', hits: [], all: [], idx: 0, loop: false, hide: false, rate: 1 };
+  const st = { q: '', acc: store.get('acc', 'All'), cat: 'all', speed: 'all', level: 'all', hits: [], all: [], idx: 0, loop: false, hide: false, rate: 1, th: false, override: null };
 
   // ---------- search ----------
   const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -313,10 +360,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
 
   function applyFilters(reset) {
     const cur = st.hits[st.idx];
-    st.hits = st.all.filter(i => {
-      const v = C.v[C.s[i][0]];
-      return (st.acc === 'All' || v[4] === st.acc) && (st.cat === 'all' || v[3] === st.cat) && (st.speed === 'all' || speedOf(v[7]) === st.speed);
-    });
+    st.hits = st.all.filter(i => passes(C.v[C.s[i][0]]));
     const keep = reset ? -1 : st.hits.indexOf(cur);
     st.idx = keep >= 0 ? keep : 0;
     renderChips();
@@ -342,6 +386,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     chipRow($('accChips'), ACC, st.acc, countBy(v => v[4]), st.all.length, k => { st.acc = k; store.set('acc', k); applyFilters(false); });
     chipRow($('catChips'), CAT, st.cat, countBy(v => v[3]), st.all.length, k => { st.cat = k; applyFilters(false); });
     chipRow($('speedChips'), SPEED, st.speed, countBy(v => speedOf(v[7])), st.all.length, k => { st.speed = k; applyFilters(false); });
+    chipRow($('levelChips'), LEVEL, st.level, countBy(v => v[8]), st.all.length, k => { st.level = k; applyFilters(false); });
   }
 
   // ---------- player ----------
@@ -354,6 +399,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
         onError: () => {
           $('meta').insertAdjacentHTML('afterbegin', '<span class="tag">คลิปนี้เล่นไม่ได้ กำลังข้ามไปคลิปถัดไป…</span>');
           // Skip clips that stopped being playable, but never loop through the whole list on our own.
+          if (quiz.on) { setTimeout(() => quizLoad(true), 1200); return; }
           if (++autoSkips < 5 && st.hits.length > 1) setTimeout(() => step(1), 1200);
         },
         onStateChange: e => {
@@ -371,11 +417,15 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   function load(si) {
     if (!playerReady) { pending = si; return; }
     const s = C.s[si], v = C.v[s[0]];
-    player.loadVideoById({ videoId: v[0], startSeconds: Math.max(0, s[1] - 1) });
+    let same = false;
+    try { same = player.getVideoData().video_id === v[0]; } catch (e) {}
+    if (same) { player.seekTo(Math.max(0, s[1] - 1), true); player.playVideo(); }
+    else player.loadVideoById({ videoId: v[0], startSeconds: Math.max(0, s[1] - 1) });
     player.setPlaybackRate(st.rate);
   }
 
-  function hitSeg() { return st.hits.length ? st.hits[st.idx] : -1; }
+  // The line being studied: a search hit, or a line picked by the quiz or the shadowing mode.
+  function hitSeg() { return st.override !== null ? st.override : st.hits.length ? st.hits[st.idx] : -1; }
 
   function show() {
     const n = st.hits.length;
@@ -389,15 +439,18 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
       if (playerReady) player.stopVideo();
       updatePractice(); renderNear(); return;
     }
-    const si = hitSeg();
-    load(si);
+    renderClip(hitSeg());
+    updatePractice(); renderNear(); setUrl();
+  }
+
+  function renderClip(si, reload = true) {
+    if (reload) load(si);
     renderSub(si);
     const v = C.v[C.s[si][0]];
     $('meta').innerHTML = '<span class="tag">' + v[4] + '</span><span class="tag">' + (CAT_TH[v[3]] || v[3]) + '</span>' +
-      (v[5] === 'a' ? '<span class="tag">ซับ auto</span>' : '') + '<span class="tag">' + v[7] + ' คำ/นาที</span>' +
+      (v[5] === 'a' ? '<span class="tag">ซับ auto</span>' : '') + '<span class="tag">' + v[7] + ' คำ/นาที</span><span class="tag">ระดับ ' + v[8] + '</span>' +
       '<span>' + escHtml(v[2]) + ' — ' + escHtml(v[1]) + '</span>' +
       '<a href="https://www.youtube.com/watch?v=' + v[0] + '&t=' + Math.floor(C.s[si][1]) + 's" target="_blank" rel="noopener">เปิดใน YouTube ↗</a>';
-    updatePractice(); renderNear(); setUrl();
   }
 
   let shownSeg = -1;
@@ -407,6 +460,64 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     $('subPrev').textContent = prev && prev[0] === s[0] ? prev[3] : '';
     $('subNext').textContent = next && next[0] === s[0] ? next[3] : '';
     $('subNow').innerHTML = highlight(s[3]);
+    $('subNow').classList.add('static');
+    karaoke = { si, idx: -1, ends: [...$('subNow').querySelectorAll('.w, mark')].map(el => el.textContent.length) };
+    let acc = 0; const total = karaoke.ends.reduce((a, b) => a + b, 0) || 1;
+    karaoke.ends = karaoke.ends.map(n => (acc += n) / total);
+    translateNow();
+  }
+  // Word-by-word highlight, timed by spreading the line's duration over its letters.
+  let karaoke = null;
+  function karaokeTick(t) {
+    if (!karaoke || karaoke.si !== shownSeg) return;
+    const s = C.s[shownSeg], frac = (t - s[1]) / Math.max(0.3, s[2]);
+    if (frac < 0 || frac > 1.2) { $('subNow').classList.add('static'); return; }
+    $('subNow').classList.remove('static');
+    const idx = karaoke.ends.findIndex(e => e >= frac);
+    if (idx === karaoke.idx) return;
+    karaoke.idx = idx;
+    $('subNow').querySelectorAll('.w').forEach(el => {
+      const all = [...$('subNow').querySelectorAll('.w, mark')];
+      el.classList.toggle('on', idx < 0 || all.indexOf(el) <= idx);
+    });
+  }
+
+  // ---------- Thai translation ----------
+  const thCache = store.get('th', {});
+  let thToken = 0;
+  async function translate(text) {
+    if (thCache[text]) return thCache[text];
+    const tries = [
+      async () => {
+        const r = await fetch('https://api.mymemory.translated.net/get?langpair=en|th&q=' + encodeURIComponent(text));
+        const j = await r.json(); const t = j && j.responseData && j.responseData.translatedText;
+        if (!r.ok || !t || /MYMEMORY WARNING|QUERY LENGTH/i.test(t)) throw new Error('mymemory');
+        return t;
+      },
+      async () => {
+        const r = await fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=th&dt=t&q=' + encodeURIComponent(text));
+        if (!r.ok) throw new Error('gtx');
+        const j = await r.json(); return j[0].map(x => x[0]).join('');
+      }
+    ];
+    for (const f of tries) {
+      try {
+        const t = await f();
+        thCache[text] = t;
+        const keys = Object.keys(thCache); if (keys.length > 400) delete thCache[keys[0]];
+        store.set('th', thCache); return t;
+      } catch (e) {}
+    }
+    throw new Error('none');
+  }
+  async function translateNow() {
+    const box = $('subTh');
+    box.hidden = !st.th;
+    if (!st.th || shownSeg < 0) return;
+    const text = C.s[shownSeg][3], tok = ++thToken;
+    box.textContent = thCache[text] || 'กำลังแปล…';
+    try { const t = await translate(text); if (tok === thToken) box.textContent = t; }
+    catch (e) { if (tok === thToken) box.innerHTML = 'แปลไม่ได้ตอนนี้ (บริการแปลฟรีเต็มโควตา) <a style="color:inherit" target="_blank" rel="noopener" href="https://translate.google.com/?sl=en&tl=th&op=translate&text=' + encodeURIComponent(text) + '">เปิด Google แปล ↗</a>'; }
   }
   function highlight(text) {
     const re = st.q ? makeRe(st.q) : null;
@@ -428,21 +539,25 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     if (!playerReady || !st.hits.length || typeof player.getCurrentTime !== 'function') return;
     const t = player.getCurrentTime(), hs = C.s[hitSeg()];
     if (!hs) return;
-    if (st.loop && t > hs[1] + hs[2] + 0.4) { player.seekTo(Math.max(0, hs[1] - 0.3), true); return; }
+    if (st.loop && !shadow.on && t > hs[1] + hs[2] + 0.4) { player.seekTo(Math.max(0, hs[1] - 0.3), true); return; }
     const vi = hs[0];
     let lo = vStart[vi], hi = vEnd[vi], found = -1;
     while (lo <= hi) { const mid = (lo + hi) >> 1; if (C.s[mid][1] <= t + 0.15) { found = mid; lo = mid + 1; } else hi = mid - 1; }
     // Keep the matched line on screen during the lead-in second before it is spoken.
     if (found < hitSeg() && t < hs[1]) found = hitSeg();
-    if (found >= 0 && found !== shownSeg) renderSub(found);
+    if (found >= 0 && found !== shownSeg && !shadow.on) renderSub(found);
+    karaokeTick(t);
+    shadowTick(t);
   }, 200);
 
   // ---------- controls ----------
-  function step(d) { if (!st.hits.length) return; st.idx = (st.idx + d + st.hits.length) % st.hits.length; show(); }
+  function step(d) { stopModes(); if (!st.hits.length) return; st.idx = (st.idx + d + st.hits.length) % st.hits.length; show(); }
   function replay() { const s = C.s[hitSeg()]; if (s && playerReady) { player.seekTo(Math.max(0, s[1] - 0.5), true); player.playVideo(); } }
   function back5() { if (playerReady) player.seekTo(Math.max(0, player.getCurrentTime() - 5), true); }
   function toggle() { if (!playerReady) return; player.getPlayerState() === 1 ? player.pauseVideo() : player.playVideo(); }
   function setLoop(v) { st.loop = v; $('bLoop').setAttribute('aria-pressed', String(v)); }
+  function setTh(v) { st.th = v; $('bTh').setAttribute('aria-pressed', String(v)); translateNow(); }
+  $('bTh').onclick = () => setTh(!st.th);
   function setHide(v) { st.hide = v; $('bHide').setAttribute('aria-pressed', String(v)); $('subs').classList.toggle('hide-text', v); }
   $('bPrev').onclick = () => step(-1);
   $('bNext').onclick = () => step(1);
@@ -455,7 +570,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   document.addEventListener('keydown', e => {
     if (e.target.matches('input, textarea, select') || e.metaKey || e.ctrlKey || e.altKey) return;
     const k = e.key.toLowerCase();
-    const map = { n: () => step(1), p: () => step(-1), r: replay, b: back5, k: toggle, l: () => setLoop(!st.loop), h: () => setHide(!st.hide), s: saveClip };
+    const map = { n: () => step(1), p: () => step(-1), r: replay, b: back5, k: toggle, l: () => setLoop(!st.loop), h: () => setHide(!st.hide), s: saveClip, t: () => setTh(!st.th) };
     if (map[k]) { e.preventDefault(); map[k](); }
   });
 
@@ -545,6 +660,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
   document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => {
     document.querySelectorAll('.tabs button').forEach(x => x.setAttribute('aria-selected', String(x === b)));
     document.querySelectorAll('[data-pane]').forEach(p => p.hidden = p.dataset.pane !== b.dataset.tab);
+    if (b.dataset.tab !== 'quiz' && quiz.on) quizEnd(false);
     if (b.dataset.tab === 'dict') { setHide(true); setLoop(true); }
   });
   const toks = t => norm(t).replace(/[^a-z0-9' ]+/g, ' ').split(' ').filter(Boolean);
@@ -565,6 +681,7 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     return { score: a.length ? Math.round(ok / a.length * 100) : 0, html: out.map(([k, w]) => '<span class="' + k + '">' + escHtml(w) + '</span>').join(' ') };
   }
   function targetText() { const s = C.s[hitSeg()]; return s ? s[3] : ''; }
+  function updatePracticeLine() { $('spTarget').textContent = targetText() || '—'; $('spScore').textContent = ''; $('spDiff').innerHTML = ''; }
   function updatePractice() {
     $('spTarget').textContent = targetText() || '—';
     $('spScore').textContent = ''; $('spDiff').innerHTML = ''; $('spHeard').textContent = '';
@@ -580,6 +697,10 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
     if (!SR) { $('spHeard').textContent = 'เบราว์เซอร์นี้ไม่รองรับการฟังเสียง กรุณาใช้ Google Chrome บนคอมพิวเตอร์หรือ Android'; return; }
     if (rec) { rec.stop(); return; }
     if (playerReady) player.pauseVideo();
+    listen(() => {});
+  };
+  // Listen once and score against the current line; done(score or null) runs when listening ends.
+  function listen(done) {
     rec = new SR();
     const v = C.v[C.s[hitSeg()]?.[0]];
     rec.lang = LANG[v ? v[4] : 'All']; rec.interimResults = true; rec.maxAlternatives = 1;
@@ -592,9 +713,127 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
       const c = compare(targetText(), txt); $('spScore').textContent = c.score + '%'; $('spDiff').innerHTML = c.html;
     };
     rec.onerror = e => { $('spHeard').textContent = e.error === 'not-allowed' ? 'กรุณาอนุญาตให้ใช้ไมโครโฟน' : 'ฟังไม่สำเร็จ (' + e.error + ') ลองใหม่อีกครั้ง'; };
-    rec.onend = () => { rec = null; $('bSpeak').textContent = '🎙 เริ่มพูด'; if (!finalText && !/กรุณา|ไม่สำเร็จ/.test($('spHeard').textContent)) $('spHeard').textContent = 'ไม่ได้ยินเสียง ลองพูดดังขึ้นอีกนิด'; };
+    rec.onend = () => {
+      rec = null; $('bSpeak').textContent = '🎙 เริ่มพูด';
+      if (!finalText && !/กรุณา|ไม่สำเร็จ/.test($('spHeard').textContent)) $('spHeard').textContent = 'ไม่ได้ยินเสียง ลองพูดดังขึ้นอีกนิด';
+      done(finalText ? compare(targetText(), finalText).score : null);
+    };
     rec.start();
+  }
+
+  // ---------- continuous shadowing ----------
+  const shadow = { on: false, phase: '', scores: [] };
+  function shadowPlay(si) {
+    st.override = si; shadow.phase = 'play';
+    setLoop(false);
+    renderClip(si); updatePracticeLine();
+    $('shStatus').textContent = 'ฟัง…';
+  }
+  function shadowTick(t) {
+    if (!shadow.on || shadow.phase !== 'play') return;
+    const s = C.s[st.override];
+    if (t < s[1] + s[2] + 0.15) return;
+    player.pauseVideo(); shadow.phase = 'listen';
+    $('shStatus').textContent = 'พูดตามได้เลย 🎙';
+    const after = score => {
+      if (!shadow.on) return;
+      if (score !== null) shadow.scores.push(score);
+      const avg = shadow.scores.length ? Math.round(shadow.scores.reduce((a, b) => a + b, 0) / shadow.scores.length) : null;
+      $('shStatus').textContent = (score !== null ? 'ได้ ' + score + '% · ' : '') + (avg !== null ? 'เฉลี่ย ' + avg + '%' : '');
+      shadow.phase = 'gap';
+      setTimeout(() => {
+        if (!shadow.on) return;
+        const next = st.override + 1;
+        if (C.s[next] && C.s[next][0] === s[0]) shadowPlay(next);
+        else { stopModes(); $('shStatus').textContent = 'จบคลิปแล้ว' + (avg !== null ? ' · คะแนนเฉลี่ย ' + avg + '%' : ''); }
+      }, 1800);
+    };
+    if (SR) listen(after);
+    else setTimeout(() => after(null), Math.max(2500, s[2] * 1500));
+  }
+  $('bShadow').onclick = () => {
+    if (shadow.on) { stopModes(); $('shStatus').textContent = 'หยุดแล้ว'; backToHit(); return; }
+    const si = shownSeg >= 0 ? shownSeg : hitSeg();
+    if (si < 0) return;
+    stopModes();
+    shadow.on = true; shadow.scores = [];
+    $('bShadow').textContent = '■ หยุดฝึก';
+    shadowPlay(si);
   };
+  function stopModes() {
+    if (shadow.on) { shadow.on = false; $('bShadow').textContent = '▶ ฝึกพูดตามต่อเนื่อง'; if (rec) rec.stop(); }
+    if (quiz.on) quizEnd(false);
+    st.override = null;
+  }
+
+  // ---------- fill-in-the-blank quiz ----------
+  const quizWords = new Set(C.quiz || []);
+  const quiz = { on: false, items: [], i: 0, score: 0, answered: false };
+  function pickQuiz() {
+    const pool = [];
+    for (let k = 0; k < 4000 && pool.length < 10; k++) {
+      const si = Math.floor(Math.random() * C.s.length), s = C.s[si];
+      if (!passes(C.v[s[0]]) || s[3].split(' ').length < 5 || pool.some(p => p.si === si)) continue;
+      const cands = (s[3].match(/[A-Za-z]+/g) || []).filter(w => quizWords.has(w.toLowerCase()));
+      if (!cands.length) continue;
+      const word = cands[Math.floor(Math.random() * cands.length)];
+      const lw = word.toLowerCase(), similar = (C.quiz || []).filter(w => w !== lw && Math.abs(w.length - lw.length) <= 2);
+      const opts = new Set([lw]);
+      while (opts.size < 4 && similar.length) opts.add(similar[Math.floor(Math.random() * similar.length)]);
+      pool.push({ si, word: lw, opts: [...opts].sort(() => Math.random() - 0.5) });
+    }
+    return pool;
+  }
+  $('bQuiz').onclick = () => {
+    stopModes();
+    quiz.items = pickQuiz();
+    if (quiz.items.length < 3) { $('qMsg').textContent = 'ตัวกรองแคบเกินไป ลองเลือกสำเนียงหรือประเภท "ทั้งหมด"'; $('quizStart').hidden = true; $('quizBox').hidden = false; return; }
+    Object.assign(quiz, { on: true, i: 0, score: 0 });
+    $('quizStart').hidden = true; $('quizBox').hidden = false;
+    quizLoad();
+  };
+  function quizLoad(skip) {
+    if (skip) { quiz.items.splice(quiz.i, 1); if (quiz.i >= quiz.items.length) return quizEnd(true); }
+    const it = quiz.items[quiz.i];
+    quiz.answered = false;
+    st.override = it.si;
+    setHide(true); setLoop(true);
+    renderClip(it.si);
+    const re = new RegExp('\\b' + it.word + '\\b', 'i');
+    $('qText').innerHTML = escHtml(C.s[it.si][3]).replace(re, '<span class="blank">?</span>');
+    $('qProg').textContent = 'ข้อ ' + (quiz.i + 1) + ' / ' + quiz.items.length;
+    $('qScore').textContent = 'ถูก ' + quiz.score;
+    $('qOpts').innerHTML = it.opts.map(o => '<button class="btn" type="button">' + escHtml(o) + '</button>').join('');
+    $('qMsg').textContent = 'ฟังคลิปแล้วเลือกคำที่หายไป'; $('qNext').hidden = true;
+  }
+  $('qOpts').addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b || !quiz.on || quiz.answered) return;
+    const it = quiz.items[quiz.i]; quiz.answered = true;
+    const ok = b.textContent === it.word;
+    if (ok) quiz.score++;
+    $('qOpts').querySelectorAll('button').forEach(x => { if (x.textContent === it.word) x.classList.add('right'); else if (x === b) x.classList.add('wrong'); });
+    $('qText').querySelector('.blank').textContent = it.word;
+    $('qMsg').textContent = ok ? 'ถูกต้อง 👍' : 'ยังไม่ถูก คำที่ถูกคือ “' + it.word + '”';
+    $('qScore').textContent = 'ถูก ' + quiz.score;
+    setHide(false); setLoop(false);
+    $('qNext').hidden = false;
+    $('qNext').textContent = quiz.i + 1 < quiz.items.length ? 'ข้อต่อไป →' : 'ดูผลคะแนน';
+  });
+  $('qNext').onclick = () => { quiz.i++; quiz.i < quiz.items.length ? quizLoad() : quizEnd(true); };
+  $('qReplay').onclick = replay;
+  function quizEnd(showScore) {
+    quiz.on = false; st.override = null; setLoop(false); setHide(false);
+    $('quizBox').hidden = !showScore; $('quizStart').hidden = showScore;
+    if (showScore) {
+      $('qText').innerHTML = '<span class="score">' + quiz.score + ' / ' + quiz.items.length + '</span>';
+      $('qOpts').innerHTML = ''; $('qNext').hidden = true; $('qProg').textContent = 'จบควิซ'; $('qScore').textContent = '';
+      $('qMsg').innerHTML = '<button class="btn primary" type="button" id="qAgain">เล่นอีกรอบ</button>';
+      $('qAgain').onclick = () => $('bQuiz').click();
+      backToHit();
+    }
+  }
+  // After a quiz or shadowing run, return the player to the searched word.
+  function backToHit() { if (st.hits.length) { renderClip(hitSeg()); updatePracticeLine(); } }
 
   let mr = null;
   $('bRec').onclick = async () => {
@@ -667,13 +906,28 @@ footer.foot { margin-top: 26px; color: var(--muted); font-size: 12.5px; display:
 
   // ---------- wiring ----------
   function escHtml(s) { return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
-  function go(q) { q = norm(q || ''); if (!q) return; $('q').value = q; runSearch(q); const h = store.get('history', []).filter(x => x !== q); h.unshift(q); store.set('history', h.slice(0, 50)); }
+  function go(q) { q = norm(q || ''); if (!q) return; stopModes(); renderSetWords(q); $('q').value = q; runSearch(q); const h = store.get('history', []).filter(x => x !== q); h.unshift(q); store.set('history', h.slice(0, 50)); }
   function setUrl() { try { const u = new URL(location.href); u.searchParams.set('q', st.q); if (st.acc !== 'All') u.searchParams.set('acc', st.acc); else u.searchParams.delete('acc'); history.replaceState(null, '', u); } catch (e) {} }
   $('searchForm').addEventListener('submit', e => { e.preventDefault(); go($('q').value); });
 
   const accs = {}; C.v.forEach(v => accs[v[4]] = (accs[v[4]] || 0) + 1);
   $('stats').textContent = 'คลังตอนนี้: ' + C.v.length.toLocaleString() + ' คลิป · ' + C.s.length.toLocaleString() + ' ประโยค · ' +
     Object.entries(accs).map(([k, n]) => k + ' ' + n).join(' · ');
+
+  // ---------- topic word sets ----------
+  const SETS = C.sets || {};
+  $('setSel').innerHTML = Object.keys(SETS).map(k => '<option>' + escHtml(k) + ' (' + SETS[k].length + ')</option>').join('');
+  $('setSel').value = $('setSel').options[0] ? $('setSel').options[0].value : '';
+  function curSet() { return SETS[Object.keys(SETS)[$('setSel').selectedIndex]] || []; }
+  function renderSetWords(q) {
+    $('setWords').innerHTML = curSet().map(([w, n]) => '<button type="button" data-w="' + escHtml(w) + '" class="' + (w === (q || st.q) ? 'cur' : '') + '">' + escHtml(w) + '<small>' + n + '</small></button>').join('');
+  }
+  $('setSel').onchange = () => { store.set('set', $('setSel').selectedIndex); renderSetWords(); const f = curSet()[0]; if (f) go(f[0]); };
+  $('setWords').addEventListener('click', e => { const b = e.target.closest('button'); if (b) go(b.dataset.w); });
+  $('bSetNext').onclick = () => { const list = curSet(), i = list.findIndex(([w]) => w === st.q); const n = list[(i + 1) % list.length]; if (n) go(n[0]); };
+  const savedSet = store.get('set', 0);
+  if ($('setSel').options[savedSet]) $('setSel').selectedIndex = savedSet;
+  renderSetWords();
 
   renderNotes();
   const params = new URLSearchParams(location.search);
