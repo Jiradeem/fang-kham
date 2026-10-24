@@ -12,7 +12,15 @@ import json, glob, os, sys, re, collections
 
 PART_LINES = 20000   # about 1 MB per part
 COMMON = 0.5         # a token found in more than half of the parts is marked 0 in the index
-FIRST = {'learning': 0, 'kids': 0, 'ted': 1, 'documentary': 1}
+# Everyday speech (films, series, real conversations, cartoons) is what the owner wants learners to meet first; the page
+# loads the parts with the most of it first (fourth number of each `parts` entry, in percent). Same rule as clipRank() in index.html.
+EVERYDAY = {'movie', 'series', 'conversation', 'kids'}
+POLITICS = re.compile(r"\b(elections?|electoral|president(ial)?|prime minister|ministers?|parliament|senate|congress(ional)?|government|politic\w*|trump|biden|harris|putin|starmer|sunak|tariffs?|war|military|protests?|campaign|voters?|voting|democrats?|republicans?|labour|tory|tories|white house|sanctions?)\b", re.I)
+def everyday(v): return v[3] in EVERYDAY and not POLITICS.search(v[1] or '')
+TIER = {'movie': 0, 'series': 0, 'conversation': 0, 'kids': 0, 'learning': 1, 'tv': 1, 'documentary': 1, 'interview': 2, 'ted': 2, 'news': 2}
+def order(d):
+    """Sort key for new clips: everyday speech first, politics last, hand-made captions first."""
+    return (3 if POLITICS.search(d['t'] or '') else TIER.get(d['cat'], 1), d['cap'] != 'm', d['id'])
 
 SETS = {
     'คำเชื่อมประโยค': ['however', 'therefore', 'although', 'even though', 'moreover', 'meanwhile', 'instead', 'otherwise', 'in fact',
@@ -158,7 +166,7 @@ def write_part(root, n, rows):
     with open(os.path.join(root, fn), 'w', encoding='utf-8') as o:
         o.write('(window.CORPUS_PARTS=window.CORPUS_PARTS||{})[' + str(n) + ']=')
         json.dump({'v': v, 's': s}, o, ensure_ascii=False, separators=(',', ':')); o.write(';\n')
-    return [fn, len(v), len(s)]
+    return [fn, len(v), len(s), round(100 * sum(1 for x in v if everyday(x)) / max(1, len(v)))]
 
 def part_tokens(rows):
     return {w for _, lines in rows for x in lines for w in tok(x[2])}
@@ -188,7 +196,7 @@ def write_manifest(root, man):
 
 def full(root, docs):
     """Rebuild everything from a list of clip records."""
-    docs = sorted(docs, key=lambda d: (d['cap'] != 'm', FIRST.get(d['cat'], 2), d['id']))
+    docs = sorted(docs, key=order)
     rows = []
     for d in docs:
         s = speech(d)
@@ -226,7 +234,7 @@ def append(root, new_docs, removed_ids=()):
         return full(root, list(docs.values()))
     top, cuts = set(man['top']), man['cuts']
     rows = []
-    for d in sorted(new_docs, key=lambda d: (d['cap'] != 'm', FIRST.get(d['cat'], 2), d['id'])):
+    for d in sorted(new_docs, key=order):
         s = speech(d)
         if len(s) < 5: continue
         wpm = wpm_of(s)

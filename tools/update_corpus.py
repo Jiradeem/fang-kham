@@ -120,11 +120,12 @@ def main():
         print('the corpus is full (', a.max, 'clips ). Raise --max once search runs on a server (step 3).'); return
     a.limit = min(a.limit, room)
 
-    # Channels whose accent and category have the fewest clips go first, so the corpus stays balanced.
+    # Everyday speech first (films, series, real conversations, cartoons; see build_data.TIER), then teaching, TV and
+    # documentaries, then interviews, TED and news. Within a tier, accents and categories with the fewest clips go first.
     acc_n = collections.Counter(r['acc'] for r in recs.values()); cat_n = collections.Counter(r['cat'] for r in recs.values())
     chans = [l.rstrip('\n').split('\t') for l in open(os.path.join(ROOT, 'tools', 'channels.tsv'), encoding='utf-8') if l.strip()]
     random.shuffle(chans)
-    chans.sort(key=lambda c: acc_n[c[2]] + cat_n[c[1]])
+    chans.sort(key=lambda c: (build_data.TIER.get(c[1], 1), acc_n[c[2]] + cat_n[c[1]]))
 
     added, strikes, blocks, stop = 0, 0, 0, False
     unsure = []  # clips with no caption tracks; skipped for good only once YouTube is known not to be blocking us

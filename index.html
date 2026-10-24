@@ -877,10 +877,20 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
     // Spread results across videos: first hit of each video first, in a stable order per word.
     const seed = hash(q), seen = new Set(), first = [], rest = [];
     hits.forEach(i => (seen.has(C.s[i][0]) ? rest : (seen.add(C.s[i][0]), first)).push(i));
-    // Clips with hand-made captions come first: their lines are whole, punctuated sentences, as on YouGlish.
-    const key = i => (C.v[C.s[i][0]][5] === 'a' ? 1 : 0) * 2 ** 32 + hash(seed + ':' + C.s[i][0]);
+    // Everyday speech first (see clipRank), slower speech first within each group, hand-made captions before auto ones.
+    const key = i => clipRank(C.v[C.s[i][0]]) * 2 ** 34 + (C.v[C.s[i][0]][5] === 'a' ? 1 : 0) * 2 ** 32 + hash(seed + ':' + C.s[i][0]);
     first.sort((a, b) => key(a) - key(b));
+    rest.sort((a, b) => key(a) - key(b));
     return first.concat(rest);
+  }
+  // The owner wants learners to meet everyday English first: films, series, real conversations and cartoons, then
+  // teaching channels, TV and documentaries, then interviews, TED and news, with politics last.
+  const CAT_TIER = { movie: 0, series: 0, conversation: 0, kids: 0, learning: 1, tv: 1, documentary: 1, interview: 2, ted: 2, news: 2 };
+  const POLITICS = /\b(elections?|electoral|president(ial)?|prime minister|ministers?|parliament|senate|congress(ional)?|government|politic\w*|trump|biden|harris|putin|starmer|sunak|tariffs?|war|military|protests?|campaign|voters?|voting|democrats?|republicans?|labour|tory|tories|white house|sanctions?)\b/i;
+  function clipRank(v) {
+    if (POLITICS.test(v[1])) return 9;
+    const tier = CAT_TIER[v[3]] === undefined ? 1 : CAT_TIER[v[3]];
+    return tier * 3 + (v[7] < 140 ? 0 : v[7] > 175 ? 2 : 1);
   }
   function runSearch(q) {
     st.q = norm(q);
@@ -2345,7 +2355,9 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
       }
       (cand === null ? all : cand).forEach(n => out.add(n));
     }
-    return [...out].sort((a, b) => a - b);
+    // Parts with more everyday clips (see clipRank) load first; parts[n][3] is that share, in percent.
+    const daily = n => (PARTS[n - 1][3] === undefined ? 50 : PARTS[n - 1][3]);
+    return [...out].sort((a, b) => daily(b) - daily(a) || a - b);
   }
   async function ensureParts(q, more = 0) {
     if (MAIN.fmt !== 2 || C !== MAIN) return;
