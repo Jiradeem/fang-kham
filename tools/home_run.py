@@ -32,7 +32,7 @@ def main():
     if os.name == 'nt':  # keep the computer awake while this runs (ES_CONTINUOUS | ES_SYSTEM_REQUIRED)
         ctypes.windll.kernel32.SetThreadExecutionState(0x80000000 | 0x00000001)
     sync()
-    run(PY + ['--save-dir', CLIPS, '--limit', '600', '--minutes', '420', '--per-channel', '15', '--depth', '120',
+    run(PY + ['--save-dir', CLIPS, '--limit', '1500', '--minutes', '420', '--per-channel', '40', '--depth', '500',
               '--wait-when-blocked', '20'], check=False)
     if not glob.glob(os.path.join(CLIPS, '*.json')): print('nothing collected'); return
     for attempt in range(3):
