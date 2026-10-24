@@ -425,6 +425,8 @@ footer.foot > div:not(#stats) { max-width: 90ch; }
 .subs .ctx { display: none; color: var(--muted); font-size: 15px; line-height: 1.5; }
 .subs.show-ctx .ctx:not(:empty) { display: block; }
 .subs .now { color: var(--sub-ink); font: 600 clamp(21px, 2.6vw, 36px)/1.4 var(--font-body); text-wrap: balance; }
+.more-clips { font-size: 13px; margin-left: 8px; }
+.more-clips:disabled { text-decoration: none; color: var(--muted); cursor: default; }
 .linkbtn { border: 0; background: none; padding: 0; color: var(--accent); text-decoration: underline; font: inherit; cursor: pointer; }
 .meta .linkbtn { color: var(--muted); }
 .meta .linkbtn:hover { color: var(--bad); }
@@ -602,6 +604,7 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
       <div class="result-head">
         <h2 id="headline">กำลังโหลดคลัง…</h2>
         <span class="count" id="count"></span>
+        <button type="button" class="linkbtn more-clips" id="moreClips" hidden></button>
       </div>
       <div class="thbar" id="thBar" hidden></div>
       <div class="screen">
@@ -812,6 +815,8 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
   'use strict';
   // C is the corpus being searched: the general clips, or the Dhamma discussions loaded on demand.
   const MAIN = window.CORPUS || { v: [], s: [] };
+  MAIN.v = MAIN.v || []; MAIN.s = MAIN.s || [];   // format 2 starts empty and fills as parts load
+  let partsLoading = false;
   let C = MAIN, corpusName = 'main';
   const $ = id => document.getElementById(id);
   const ACC = [['All', 'ทั้งหมด'], ['US', 'US'], ['UK', 'UK'], ['AUS', 'AUS'], ['CAN', 'CAN'], ['IRL', 'IRL'], ['SCO', 'SCO'], ['NZ', 'NZ']];
@@ -883,6 +888,7 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
     renderThaiBar();
     showView('search');
     applyFilters(true);
+    ensureParts(st.q);
   }
 
   function applyFilters(reset) {
@@ -982,7 +988,7 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
     ['bPrev', 'bNext', 'bReplay', 'bBack', 'bPlay', 'bSave'].forEach(id => { $(id).disabled = !n; });
     $('noHit').hidden = !!n;
     if (!n) {
-      $('noHit').innerHTML = st.q ? 'ไม่พบคำว่า “' + escHtml(st.q) + '” ' + (st.all.length ? 'ในตัวกรองนี้ ลองเลือกสำเนียงหรือประเภท "ทั้งหมด"' : 'ในคลังตอนนี้ ลองคำใกล้เคียงด้านขวา') : '';
+      $('noHit').innerHTML = partsLoading ? 'กำลังค้นในคลังทั้งหมด…' : st.q ? 'ไม่พบคำว่า “' + escHtml(st.q) + '” ' + (st.all.length ? 'ในตัวกรองนี้ ลองเลือกสำเนียงหรือประเภท "ทั้งหมด"' : 'ในคลังตอนนี้ ลองคำใกล้เคียงด้านขวา') : '';
       ['subPrev', 'subNow', 'subNext', 'meta'].forEach(id => $(id).textContent = '');
       if (playerReady) player.stopVideo();
       updatePractice(); renderNear(); return;
@@ -1638,11 +1644,15 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
   $('searchForm').addEventListener('submit', e => { e.preventDefault(); go($('q').value); });
 
   function renderStats() {
-    const accs = {}; C.v.forEach(v => accs[v[4]] = (accs[v[4]] || 0) + 1);
-    $('stats').textContent = (corpusName === 'dhamma' ? 'คลังธรรมะ: ' : 'คลังตอนนี้: ') + C.v.length.toLocaleString() + ' คลิป · ' + C.s.length.toLocaleString() + ' ประโยค' +
+    // The general corpus loads part by part, so its totals come from data.js, not from what is loaded.
+    const big = corpusName !== 'dhamma' && MAIN.fmt === 2;
+    let accs = {}; if (big) accs = MAIN.accs || {}; else C.v.forEach(v => accs[v[4]] = (accs[v[4]] || 0) + 1);
+    const nClips = big ? MAIN.clips - (MAIN.removed || []).length : C.v.length, nLines = big ? MAIN.lines : C.s.length;
+    $('stats').textContent = (corpusName === 'dhamma' ? 'คลังธรรมะ: ' : 'คลังตอนนี้: ') + nClips.toLocaleString() + ' คลิป · ' + nLines.toLocaleString() + ' ประโยค' +
       (corpusName === 'dhamma' ? '' : ' · ' + Object.entries(accs).map(([k, n]) => k + ' ' + n).join(' · '));
     document.querySelectorAll('#corpusBar [data-corpus]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.corpus === corpusName)));
     document.body.classList.toggle('dh-mode', corpusName === 'dhamma');
+    if (corpusName === 'dhamma') $('moreClips').hidden = true;
   }
   renderStats();
 
@@ -2102,7 +2112,8 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
   }
 
   // ---------- topic word sets ----------
-  const SETS = C.sets || {};
+  const SETS = Object.fromEntries(Object.entries(C.sets || {}).map(([k, v]) => [k, Array.isArray(v) ? v : { d: v.d, w: v.w.filter(x => x[1] >= (v.d ? 2 : 3)) }])
+    .filter(([, v]) => (Array.isArray(v) ? v : v.w).length));
   const setItems = k => Array.isArray(SETS[k]) ? SETS[k] : (SETS[k] && SETS[k].w) || [];
   $('setSel').innerHTML = Object.keys(SETS).map(k => '<option>' + escHtml(k) + ' (' + setItems(k).length + ')</option>').join('');
   $('setSel').value = $('setSel').options[0] ? $('setSel').options[0].value : '';
@@ -2279,40 +2290,90 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
     if (['book', 'grammar', 'dhamma'].includes(startView)) showView(startView);
   }
 
-  // The general corpus comes in parts (data-1.js, data-2.js, …) so the first screen does not wait for all of it.
-  // Parts download in parallel and join MAIN in order; an open search grows as they arrive, without restarting the clip.
-  const PARTS = MAIN.parts || [], arrived = [];
-  let merged = 0;
+  // The general corpus (data.js format 2) is split into parts of about 1 MB (data-p0001.js, …). Part 1 holds the clips
+  // with hand-made captions and the learning channels and loads at once. A search looks its words up in the index
+  // (data-i-<first letter>.js), loads the parts that hold them, best parts first, until there are enough clips, and
+  // offers "โหลดคลิปเพิ่ม" for the rest. Loaded parts join MAIN, so an open search grows without restarting the clip.
+  const PARTS = MAIN.parts || [], REMOVED = new Set(MAIN.removed || []), partState = {}, IDX = {};
+  const ENOUGH = 80, BATCH = 3;
+  let searchToken = 0, moreParts = [], vocabTimer = 0;
   function refreshSearch() {
     if (C !== MAIN || !st.q) return;
     const cur = hitSeg(), had = st.hits.length;
     st.all = findHits(st.q);
+    // Keep the clip being watched first, so the counter does not jump while more parts arrive.
+    const at = st.all.indexOf(cur); if (at > 0) { st.all.splice(at, 1); st.all.unshift(cur); }
     if (!had && curView === 'search' && st.override === null) { applyFilters(true); return; }
     st.hits = st.all.filter(i => passes(C.v[C.s[i][0]]));
     const k = st.hits.indexOf(cur); st.idx = k >= 0 ? k : 0;
     renderChips();
     $('count').textContent = st.hits.length ? (st.idx + 1) + ' / ' + st.hits.length + ' คลิป' : '';
   }
-  function mergeParts() {
-    let added = false;
-    while (merged < PARTS.length && arrived[merged]) {
-      const rows = arrived[merged]; arrived[merged] = true;
-      for (const r of rows) { r[3] = cleanCap(r[3]); MAIN.s.push(r); }
-      merged++; added = true;
-    }
-    if (!added) return;
-    if (C === MAIN) { indexVideos(); renderStats(); }
-    if (!started) startPage(); else refreshSearch();
-    if (merged === PARTS.length && C === MAIN) { buildVocab(); renderNear(); }
+  function loadScript(src) {
+    return new Promise(res => { const el = document.createElement('script'); el.src = src; el.onload = () => res(true); el.onerror = () => res(false); document.body.appendChild(el); });
   }
-  PARTS.forEach(([src], i) => {
-    const el = document.createElement('script');
-    el.src = src;
-    el.onload = () => { const p = window.CORPUS_PARTS || {}; arrived[i] = p[i] || []; delete p[i]; mergeParts(); };
-    el.onerror = () => { arrived[i] = []; mergeParts(); };
-    document.body.appendChild(el);
-  });
-  if (!PARTS.length) startPage();
+  function loadPart(n) {
+    if (partState[n]) return Promise.resolve(partState[n]);
+    partState[n] = loadScript(PARTS[n - 1][0]).then(ok => {
+      const all = window.CORPUS_PARTS || {}, data = all[n]; delete all[n];
+      partState[n] = 'done';
+      if (!ok || !data) return 'done';
+      const map = data.v.map(v => { if (REMOVED.has(v[0])) return -1; MAIN.v.push(v); return MAIN.v.length - 1; });
+      for (const r of data.s) { const vi = map[r[0]]; if (vi < 0) continue; r[0] = vi; r[3] = cleanCap(r[3]); MAIN.s.push(r); }
+      if (C === MAIN) indexVideos();
+      clearTimeout(vocabTimer); vocabTimer = setTimeout(() => { if (C === MAIN) { buildVocab(); renderNear(); } }, 800);
+      return 'done';
+    });
+    return partState[n];
+  }
+  async function idxFor(word) {
+    const k = /^[a-z]/.test(word) ? word[0] : '_';
+    if (!(k in IDX)) { await loadScript('data-i-' + k + '.js'); IDX[k] = (window.CORPUS_IDX || {})[k] || {}; }
+    return IDX[k][word];
+  }
+  // Parts that may hold the query: for each "|" alternative, the parts that hold every one of its words.
+  async function partsFor(q) {
+    const all = PARTS.map((_, i) => i + 1), out = new Set();
+    for (const alt of q.split('|')) {
+      const words = alt.toLowerCase().replace(/[’‘]/g, "'").match(/[a-z]+(?:'[a-z]+)?/g) || [];
+      let cand = null;
+      for (const w of words) {
+        const ps = await idxFor(w);
+        if (ps === undefined) { cand = []; break; }   // the word is not in the corpus
+        if (ps === 0) continue;                         // the word is in most parts
+        cand = cand === null ? ps : cand.filter(n => ps.includes(n));
+      }
+      (cand === null ? all : cand).forEach(n => out.add(n));
+    }
+    return [...out].sort((a, b) => a - b);
+  }
+  async function ensureParts(q, more = 0) {
+    if (MAIN.fmt !== 2 || C !== MAIN) return;
+    const token = ++searchToken;
+    const want = (await partsFor(q)).filter(n => partState[n] !== 'done');
+    const goal = st.all.length + (more || ENOUGH);
+    partsLoading = true; renderMore();
+    for (let i = 0; i < want.length; i += BATCH) {
+      if (token !== searchToken || C !== MAIN) return;
+      if (more ? i >= more : st.all.length >= goal) break;
+      await Promise.all(want.slice(i, i + BATCH).map(loadPart));
+      if (token !== searchToken) return;
+      refreshSearch();
+    }
+    partsLoading = false;
+    moreParts = want.filter(n => partState[n] !== 'done');
+    renderMore();
+    if (!st.hits.length) show();
+  }
+  function renderMore() {
+    const el = $('moreClips');
+    if (partsLoading) { el.hidden = false; el.disabled = true; el.textContent = 'กำลังค้นในคลัง…'; return; }
+    el.hidden = !moreParts.length || C !== MAIN; el.disabled = false;
+    el.textContent = 'ค้นเพิ่มในคลัง (อีก ' + moreParts.length + ' ชุด)';
+  }
+  $('moreClips').onclick = () => { if (st.q) ensureParts(st.q, 6); };
+  if (MAIN.fmt === 2 && PARTS.length) loadPart(1).then(() => { renderStats(); startPage(); });
+  else startPage();
 })();
 </script>
 </body>

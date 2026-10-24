@@ -28,15 +28,11 @@ def read_js(path, prefix_re):
     txt = open(path, encoding='utf-8').read()
     return json.loads(re.sub(prefix_re, '', txt, count=1).rstrip().rstrip(';'))
 
+sys.path.insert(0, os.path.join(ROOT, 'tools'))
+import build_data
+
 def load_records():
-    corpus = read_js(os.path.join(ROOT, 'data.js'), r'^window\.CORPUS=') or {'v': [], 's': [], 'parts': []}
-    lines = list(corpus.get('s') or [])
-    for i, (fn, _) in enumerate(corpus.get('parts') or []):
-        lines += read_js(os.path.join(ROOT, fn), r'^\(window\.CORPUS_PARTS=window\.CORPUS_PARTS\|\|\{\}\)\[\d+\]=') or []
-    by = collections.defaultdict(list)
-    for vi, st, du, tx in lines: by[vi].append([st, du, tx])
-    return {v[0]: {'id': v[0], 't': v[1], 'ch': v[2], 'cat': v[3], 'acc': v[4], 'cap': v[5], 'dur': v[6], 'wpm': v[7], 's': by[vi]}
-            for vi, v in enumerate(corpus['v'])}
+    return build_data.load_docs(ROOT)
 
 def fetch_json(url):
     for i in range(3):
@@ -91,7 +87,7 @@ def main():
     ap.add_argument('--minutes', type=float, default=240)
     ap.add_argument('--per-channel', type=int, default=3)
     ap.add_argument('--depth', type=int, default=15, help='newest clips to look at per channel')
-    ap.add_argument('--max', type=int, default=3000, help='largest corpus to keep')
+    ap.add_argument('--max', type=int, default=30000, help='largest corpus to keep')
     ap.add_argument('--save-dir', help='only collect: write new clips (and newly skipped ids) to this folder')
     ap.add_argument('--merge-dir', help='only merge: add the clips saved in this folder to the corpus and rebuild')
     ap.add_argument('--wait-when-blocked', type=float, default=0, help='minutes to wait and retry when YouTube blocks (0 = stop)')
@@ -100,6 +96,7 @@ def main():
     skip_path = os.path.join(ROOT, 'tools', 'corpus-skip.json')
     skip = set(json.load(open(skip_path))) if os.path.exists(skip_path) else set()
     recs = load_records()
+    published = set(recs)
     # A clip put on the skip list by hand (e.g. reported as unsuitable) also leaves the corpus.
     removed = [v for v in recs if v in skip]
     for v in removed: del recs[v]
@@ -116,7 +113,7 @@ def main():
         new = {k: r for k, r in saved.items() if k not in recs and k not in skip}
         recs.update(new)
         print(len(new), 'clips merged from', a.merge_dir, flush=True)
-        return finish(a, recs, skip, skip_path, len(new), len(removed))
+        return finish(a, recs, published, skip, skip_path, removed)
     known = set(recs) | set(saved)
     room = a.max - len(known)
     if room <= 0:
@@ -180,29 +177,23 @@ def main():
     if a.save_dir:
         json.dump(sorted(skip), open(os.path.join(a.save_dir, 'skip.json'), 'w'), indent=0)
         print('clips collected this run:', added, '| waiting in', a.save_dir, ':', len(saved) + added); return
-    finish(a, recs, skip, skip_path, added, len(removed))
+    finish(a, recs, published, skip, skip_path, removed)
 
-def finish(a, recs, skip, skip_path, added, removed):
+def finish(a, recs, published, skip, skip_path, removed):
     # Stay under the size limit: drop auto-captioned clips from the biggest accent/category groups, fastest speech first.
-    dropped = 0
+    drop = []
     while len(recs) > a.max:
         groups = collections.Counter((r['acc'], r['cat']) for r in recs.values() if r['cap'] == 'a')
         if not groups: break
         g = groups.most_common(1)[0][0]
         victim = max((r for r in recs.values() if r['cap'] == 'a' and (r['acc'], r['cat']) == g), key=lambda r: r.get('wpm') or 0)
-        del recs[victim['id']]; dropped += 1
-
+        del recs[victim['id']]; drop.append(victim['id'])
     json.dump(sorted(skip), open(skip_path, 'w'), indent=0)
-    dropped += removed
-    if not added and not dropped: print('no new clips this run'); return
-    tmp = tempfile.mkdtemp()
-    try:
-        for r in recs.values():
-            json.dump(r, open(os.path.join(tmp, r['id'] + '.json'), 'w', encoding='utf-8'), ensure_ascii=False)
-        subprocess.run([sys.executable, '-X', 'utf8', '-I', os.path.join(ROOT, 'tools', 'build_data.py'), tmp, os.path.join(ROOT, 'data.js')], check=True)
-    finally:
-        shutil.rmtree(tmp)
-    print('clips added this run:', added, '| dropped to stay under', a.max, ':', dropped, '| total', len(recs))
+    new = [r for k, r in recs.items() if k not in published]
+    gone = [k for k in list(removed) + drop if k in published]
+    if not new and not gone: print('no new clips this run'); return
+    build_data.append(ROOT, new, gone)
+    print('clips added this run:', len(new), '| removed:', len(gone), '| total', len(recs))
 
 if __name__ == '__main__':
     main()

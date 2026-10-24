@@ -1,10 +1,18 @@
-# Build data.js for the site from collected caption files.
-# data.js holds the clip list, word sets and quiz words; the caption lines go to data-1.js, data-2.js, … which the
-# page loads in parallel, so the first screen does not wait for the whole corpus.
-# Usage: python3 -I tools/build_data.py <caption dir> data.js
+# Build the general corpus for the site (format 2: append-only parts plus a word index).
+#   data.js        window.CORPUS = {fmt: 2, parts: [[file, clips, lines], …], clips, lines, accs, sets, quiz, top, cuts, removed}
+#   data-pNNNN.js  (window.CORPUS_PARTS = …)[n] = {v: [[id, title, channel, cat, acc, cap, dur, wpm, level], …],
+#                                                  s: [[clipIndexInPart, start, dur, text], …]}
+#   data-i-X.js    (window.CORPUS_IDX = …)['X'] = {token: [part numbers] or 0 (= in most parts)}, X = first letter
+# The page loads part 1 at once and other parts only when a search needs them (the index says which parts hold a word).
+# Published parts are never rewritten: new clips go into new parts and removed clips are listed in `removed`,
+# so nightly commits stay small and the repository does not balloon.
+# Usage: python3 -I tools/build_data.py <caption dir> data.js     full rebuild of everything (renumbers the parts)
+#        tools/update_corpus.py calls append() for new clips.
 import json, glob, os, sys, re, collections
-src, dst = sys.argv[1], sys.argv[2]
-PART_LINES = 45000
+
+PART_LINES = 20000   # about 1 MB per part
+COMMON = 0.5         # a token found in more than half of the parts is marked 0 in the index
+FIRST = {'learning': 0, 'kids': 0, 'ted': 1, 'documentary': 1}
 
 SETS = {
     'คำเชื่อมประโยค': ['however', 'therefore', 'although', 'even though', 'moreover', 'meanwhile', 'instead', 'otherwise', 'in fact',
@@ -66,78 +74,187 @@ NOTED_SETS = {
         ['were killed', 'ถูกฆ่า/เสียชีวิต (พบบ่อยในข่าว)'], ['was arrested', 'ถูกจับกุม (ข่าว)'], ['is expected to', 'คาดว่าจะ… (ข่าว)'], ['being', 'กำลังถูก… (is being + V3)']]),
 }
 
-# Clips with hand-made captions and the learner-friendly channels come first, so they are in the first part.
-FIRST = {'learning': 0, 'kids': 0, 'ted': 1, 'documentary': 1}
-docs = [json.load(open(f, encoding='utf-8')) for f in sorted(glob.glob(os.path.join(src, '*.json')))]
-docs.sort(key=lambda d: (d['cap'] != 'm', FIRST.get(d['cat'], 2), d['id']))
-vids, segs = [], []
-for d in docs:
-    s = [x for x in d['s'] if x[2] and not re.fullmatch(r'\[.*\]|\(.*\)|♪.*', x[2])]
-    if len(s) < 5: continue
-    words = sum(len(x[2].split()) for x in s)
-    span = max(1.0, (s[-1][0] + s[-1][1]) - s[0][0])
-    wpm = round(words / span * 60)
-    vi = len(vids)
-    vids.append([d['id'], d['t'], d['ch'], d['cat'], d['acc'], d['cap'], round(d['dur']), wpm])
-    for st, du, tx in s:
-        segs.append([vi, st, du, re.sub(r'\s+', ' ', tx)])
 
-# Word frequency across the whole corpus, used for level estimates and quiz word choice.
 tok = lambda t: re.findall(r"[a-z]+(?:'[a-z]+)?", t.lower().replace('’', "'"))
-freq = collections.Counter(w for s in segs for w in tok(s[3]))
-rank = {w: i for i, (w, _) in enumerate(freq.most_common())}
-
-# Level estimate per clip: share of less common words plus speaking speed, split by percentile.
-per = collections.defaultdict(list)
-for s in segs: per[s[0]].extend(tok(s[3]))
-score = []
-for vi, v in enumerate(vids):
-    ws = per[vi] or ['a']
-    rare = sum(1 for w in ws if rank.get(w, 99999) > 2500) / len(ws)
-    score.append(rare * 100 + (v[7] - 150) / 6)
-order = sorted(range(len(vids)), key=lambda i: score[i])
-cuts = [(0.10, 'A2'), (0.35, 'B1'), (0.70, 'B2'), (1.01, 'C1')]
-for pos, vi in enumerate(order):
-    frac = pos / max(1, len(order))
-    vids[vi].append(next(l for c, l in cuts if frac < c))
-
-# Topic word sets: keep only items heard in at least 3 lines.
-def count(phrase):
-    body = re.escape(phrase).replace("'", "['’]").replace(r'\ ', r'[\s,.\-–—]+')
-    rx = re.compile(r"(^|[^a-z0-9'’])" + body + r"(?=$|[^a-z0-9'’])", re.I)
-    return sum(1 for s in segs if rx.search(s[3]))
-sets = {}
-for name, items in SETS.items():
-    kept = [[w, n, ''] for w in items if (n := count(w)) >= 3]
-    if kept: sets[name] = {'d': '', 'w': kept}
-for name, (desc, items) in NOTED_SETS.items():
-    kept = [[w, n, note] for w, note in items if (n := count(w)) >= 2]
-    if kept: sets[name] = {'d': desc, 'w': kept}
-
-# Quiz candidates: mid-frequency content words (not the commonest few hundred, not one-offs).
 STOP = set('that this with have from they what there were their about would could should which them then than when been your just like know think really going people because those these other into some very also only'.split())
-# Skip names and places: words that are mostly written with a capital letter mid-sentence.
-lower = collections.Counter(w for s in segs for w in re.findall(r"(?<![.!?]\s)\b[a-z]+\b", s[3]))
-quiz = sorted(w for w, n in freq.items() if 300 <= rank[w] <= 6000 and n >= 4 and len(w) >= 4 and w.isalpha()
-              and w not in STOP and lower[w] >= 0.8 * n)
 
-# Split the lines into parts at clip boundaries.
-parts, cur = [], []
-for i, sg in enumerate(segs):
-    cur.append(sg)
-    if len(cur) >= PART_LINES and (i + 1 == len(segs) or segs[i + 1][0] != sg[0]): parts.append(cur); cur = []
-if cur: parts.append(cur)
-base = os.path.splitext(dst)[0]
-for old in glob.glob(base + '-*.js'): os.remove(old)
-names = []
-for n, part in enumerate(parts):
-    fn = base + '-' + str(n + 1) + '.js'; names.append([os.path.basename(fn), len(part)])
-    with open(fn, 'w', encoding='utf-8') as o:
+def read_js(path, prefix_re):
+    if not os.path.exists(path): return None
+    txt = open(path, encoding='utf-8').read()
+    return json.loads(re.sub(prefix_re, '', txt, count=1).rstrip().rstrip(';'))
+
+PART_RE = r'^\(window\.CORPUS_PARTS=window\.CORPUS_PARTS\|\|\{\}\)\[\d+\]='
+
+def load_docs(root):
+    """Every published clip as {id, t, ch, cat, acc, cap, dur, wpm, level, s}, removed clips left out. Reads format 1 and 2."""
+    man = read_js(os.path.join(root, 'data.js'), r'^window\.CORPUS=')
+    if not man: return {}
+    docs = {}
+    if man.get('fmt') == 2:
+        removed = set(man.get('removed') or [])
+        for fn, *_ in man['parts']:
+            part = read_js(os.path.join(root, fn), PART_RE)
+            by = collections.defaultdict(list)
+            for vi, st, du, tx in part['s']: by[vi].append([st, du, tx])
+            for vi, v in enumerate(part['v']):
+                if v[0] in removed: continue
+                docs[v[0]] = {'id': v[0], 't': v[1], 'ch': v[2], 'cat': v[3], 'acc': v[4], 'cap': v[5], 'dur': v[6], 'wpm': v[7], 'level': v[8], 's': by[vi]}
+        return docs
+    lines = list(man.get('s') or [])
+    for i, (fn, _) in enumerate(man.get('parts') or []):
+        lines += read_js(os.path.join(root, fn), PART_RE) or []
+    by = collections.defaultdict(list)
+    for vi, st, du, tx in lines: by[vi].append([st, du, tx])
+    for vi, v in enumerate(man['v']):
+        docs[v[0]] = {'id': v[0], 't': v[1], 'ch': v[2], 'cat': v[3], 'acc': v[4], 'cap': v[5], 'dur': v[6], 'wpm': v[7], 'level': v[8], 's': by[vi]}
+    return docs
+
+def speech(d):
+    return [[st, du, re.sub(r'\s+', ' ', tx)] for st, du, tx in d['s'] if tx and not re.fullmatch(r'\[.*\]|\(.*\)|♪.*', tx)]
+
+def wpm_of(s):
+    words = sum(len(x[2].split()) for x in s)
+    return round(words / max(1.0, (s[-1][0] + s[-1][1]) - s[0][0]) * 60)
+
+def score(s, wpm, top):
+    ws = [w for x in s for w in tok(x[2])] or ['a']
+    return sum(1 for w in ws if w not in top) / len(ws) * 100 + (wpm - 150) / 6
+
+def level_of(sc, cuts):
+    for c, l in zip(cuts, ['A2', 'B1', 'B2']):
+        if sc < c: return l
+    return 'C1'
+
+def phrase_re(phrase):
+    body = re.escape(phrase).replace("'", "['’]").replace(r'\ ', r'[\s,.\-–—]+')
+    return re.compile(r"(^|[^a-z0-9'’])" + body + r"(?=$|[^a-z0-9'’])", re.I)
+
+def count_in(phrase, lines):
+    rx = phrase_re(phrase)
+    return sum(1 for t in lines if rx.search(t))
+
+def set_counts(lines):
+    """Counts for every set item (kept with low counts too, so later appends can add to them)."""
+    out = {}
+    for name, items in SETS.items():
+        out[name] = {'d': '', 'w': [[w, count_in(w, lines), ''] for w in items]}
+    for name, (desc, items) in NOTED_SETS.items():
+        out[name] = {'d': desc, 'w': [[w, count_in(w, lines), note] for w, note in items]}
+    return out
+
+def chunk(rows):
+    parts, cur, n = [], [], 0
+    for r in rows:
+        cur.append(r); n += len(r[1])
+        if n >= PART_LINES: parts.append(cur); cur, n = [], 0
+    if cur: parts.append(cur)
+    return parts
+
+def write_part(root, n, rows):
+    fn = 'data-p%04d.js' % n
+    v, s = [], []
+    for i, (vrow, lines) in enumerate(rows):
+        v.append(vrow); s += [[i, st, du, tx] for st, du, tx in lines]
+    with open(os.path.join(root, fn), 'w', encoding='utf-8') as o:
         o.write('(window.CORPUS_PARTS=window.CORPUS_PARTS||{})[' + str(n) + ']=')
-        json.dump(part, o, ensure_ascii=False, separators=(',', ':')); o.write(';\n')
-with open(dst, 'w', encoding='utf-8') as o:
-    o.write('window.CORPUS=')
-    json.dump({'v': vids, 's': [], 'parts': names, 'sets': sets, 'quiz': quiz}, o, ensure_ascii=False, separators=(',', ':'))
-    o.write(';\n')
-print(len(vids), 'videos', len(segs), 'lines in', len(parts), 'parts,', sum(os.path.getsize(base + '-' + str(i + 1) + '.js') for i in range(len(parts))) // 1024, 'KB',
-      '| levels', collections.Counter(v[8] for v in vids), '| sets', {k: len(v['w']) for k, v in sets.items()}, '| quiz words', len(quiz))
+        json.dump({'v': v, 's': s}, o, ensure_ascii=False, separators=(',', ':')); o.write(';\n')
+    return [fn, len(v), len(s)]
+
+def part_tokens(rows):
+    return {w for _, lines in rows for x in lines for w in tok(x[2])}
+
+def write_index(root, where, nparts):
+    shards = collections.defaultdict(dict)
+    for w, ps in where.items():
+        key = w[0] if 'a' <= w[0] <= 'z' else '_'
+        shards[key][w] = 0 if len(ps) > COMMON * nparts and nparts > 4 else sorted(ps)
+    for old in glob.glob(os.path.join(root, 'data-i-*.js')): os.remove(old)
+    for key, m in shards.items():
+        with open(os.path.join(root, 'data-i-' + key + '.js'), 'w', encoding='utf-8') as o:
+            o.write('(window.CORPUS_IDX=window.CORPUS_IDX||{})[' + json.dumps(key) + ']=')
+            json.dump(m, o, ensure_ascii=False, separators=(',', ':')); o.write(';\n')
+
+def read_index(root):
+    where = {}
+    for f in glob.glob(os.path.join(root, 'data-i-*.js')):
+        for w, ps in read_js(f, r'^\(window\.CORPUS_IDX=window\.CORPUS_IDX\|\|\{\}\)\[[^\]]*\]=').items():
+            where[w] = ps
+    return where
+
+def write_manifest(root, man):
+    with open(os.path.join(root, 'data.js'), 'w', encoding='utf-8') as o:
+        o.write('window.CORPUS=')
+        json.dump(man, o, ensure_ascii=False, separators=(',', ':')); o.write(';\n')
+
+def full(root, docs):
+    """Rebuild everything from a list of clip records."""
+    docs = sorted(docs, key=lambda d: (d['cap'] != 'm', FIRST.get(d['cat'], 2), d['id']))
+    rows = []
+    for d in docs:
+        s = speech(d)
+        if len(s) < 5: continue
+        rows.append(([d['id'], d['t'], d['ch'], d['cat'], d['acc'], d['cap'], int(round(d['dur'] or 0)), wpm_of(s)], s))
+    lines = [x[2] for _, s in rows for x in s]
+    freq = collections.Counter(w for t in lines for w in tok(t))
+    ranked = [w for w, _ in freq.most_common()]
+    top = set(ranked[:2500]); rank = {w: i for i, w in enumerate(ranked)}
+    scores = sorted(score(s, v[7], top) for v, s in rows)
+    cuts = [scores[int(f * (len(scores) - 1))] for f in (0.10, 0.35, 0.70)] if scores else [0, 0, 0]
+    for v, s in rows: v.append(level_of(score(s, v[7], top), cuts))
+    lower = collections.Counter(w for t in lines for w in re.findall(r"(?<![.!?]\s)\b[a-z]+\b", t))
+    quiz = sorted(w for w, n in freq.items() if 300 <= rank[w] <= 6000 and n >= 4 and len(w) >= 4 and w.isalpha()
+                  and w not in STOP and lower[w] >= 0.8 * n)
+    for old in glob.glob(os.path.join(root, 'data-*.js')): os.remove(old)
+    parts, where = [], collections.defaultdict(set)
+    for n, prow in enumerate(chunk(rows), 1):
+        parts.append(write_part(root, n, prow))
+        for w in part_tokens(prow): where[w].add(n)
+    write_index(root, where, len(parts))
+    accs = collections.Counter(v[4] for v, _ in rows)
+    man = {'fmt': 2, 'parts': parts, 'clips': len(rows), 'lines': len(lines), 'accs': accs, 'sets': set_counts(lines),
+           'quiz': quiz, 'top': sorted(top), 'cuts': cuts, 'removed': []}
+    write_manifest(root, man)
+    print(len(rows), 'clips', len(lines), 'lines in', len(parts), 'parts |', len(where), 'index words |',
+          sum(os.path.getsize(os.path.join(root, p[0])) for p in parts) // 1024, 'KB |', collections.Counter(v[8] for v, _ in rows))
+
+def append(root, new_docs, removed_ids=()):
+    """Add new clips as new parts and list removed clips; published parts stay as they are."""
+    man = read_js(os.path.join(root, 'data.js'), r'^window\.CORPUS=')
+    if not man or man.get('fmt') != 2:
+        docs = load_docs(root); docs.update({d['id']: d for d in new_docs})
+        for r in removed_ids: docs.pop(r, None)
+        return full(root, list(docs.values()))
+    top, cuts = set(man['top']), man['cuts']
+    rows = []
+    for d in sorted(new_docs, key=lambda d: (d['cap'] != 'm', FIRST.get(d['cat'], 2), d['id'])):
+        s = speech(d)
+        if len(s) < 5: continue
+        wpm = wpm_of(s)
+        rows.append(([d['id'], d['t'], d['ch'], d['cat'], d['acc'], d['cap'], int(round(d['dur'] or 0)), wpm, level_of(score(s, wpm, top), cuts)], s))
+    published = set()
+    for fn, *_ in man['parts']:
+        published.update(v[0] for v in read_js(os.path.join(root, fn), PART_RE)['v'])
+    removed = set(man.get('removed') or []) | (set(removed_ids) & published)
+    where = {w: set(ps) if ps else None for w, ps in read_index(root).items()}
+    first = len(man['parts']) + 1
+    for n, prow in enumerate(chunk(rows), first):
+        man['parts'].append(write_part(root, n, prow))
+        for w in part_tokens(prow):
+            if w not in where: where[w] = set()
+            if where[w] is not None: where[w].add(n)
+    nparts = len(man['parts'])
+    # tokens already marked "in most parts" (None) stay that way; give them every part number so write_index keeps the 0
+    write_index(root, {w: (ps if ps is not None else set(range(1, nparts + 1))) for w, ps in where.items()}, nparts)
+    new_lines = [x[2] for _, s in rows for x in s]
+    for name, st in man['sets'].items():
+        for item in st['w']: item[1] += count_in(item[0], new_lines)
+    man['removed'] = sorted(removed)
+    accs = collections.Counter(man['accs']); accs.update(v[4] for v, _ in rows)
+    man['accs'] = accs
+    man['clips'] = man['clips'] + len(rows); man['lines'] = man['lines'] + len(new_lines)
+    write_manifest(root, man)
+    print('appended', len(rows), 'clips in', nparts - first + 1, 'new parts | removed', len(removed), '| total', man['clips'] - len(removed), 'clips')
+
+if __name__ == '__main__':
+    src, dst = sys.argv[1], sys.argv[2]
+    full(os.path.dirname(os.path.abspath(dst)), [json.load(open(f, encoding='utf-8')) for f in glob.glob(os.path.join(src, '*.json'))])
