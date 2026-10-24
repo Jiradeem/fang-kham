@@ -1,6 +1,12 @@
 @echo off
 setlocal EnableExtensions
 rem Nightly job started by Task Scheduler ("fang-kham clips"). The work is done by tools\home_run.py.
+rem It restarts itself in a console with no window (conhost --headless), so nothing pops up at night
+rem and closing a window by mistake cannot stop the job.
+if /i "%~1"=="hidden" goto work
+start "" conhost.exe --headless cmd.exe /c ""%~f0" hidden"
+exit /b
+:work
 cd /d "%~dp0..\.."
 call :findtools
 if not defined GIT echo Git not found >> collect.log & exit /b 1
