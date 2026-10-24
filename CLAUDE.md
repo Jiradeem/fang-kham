@@ -7,33 +7,52 @@ A YouGlish-style listening site for Thai learners of English: search a word or p
 - Pushing to `main` updates the live site within 1–2 minutes. No build step on GitHub; `data.js` is committed.
 
 ## Start here (handoff for the next session)
-Status on 2026-10-23: 1,221 general clips (268,016 lines) from 60+ official channels, 2,554 Dhamma clips (119 with searchable captions), two weekly GitHub Actions workflows set up; the general one was tried once and YouTube blocked GitHub (see item 1).
+Last updated 2026-10-24 by the session that built most of the site.
 
-About the owner (follow these):
+### Status
+- General corpus: 1,221 clips (268,016 lines) in format 2 (on-demand parts, see below), cap 30,000. 128 official channels in `tools/channels.tsv`.
+- Dhamma: 2,554 clips listed, 119 with searchable captions.
+- **Clips are collected every night on the owner's Windows 11 computer** (user `Lenovo`, clone at `C:\Users\Lenovo\fang-kham`), not on GitHub: YouTube blocked GitHub's runner on the first try (run 39971839183). Installed 2026-10-24; first run started 10:57 Thai time.
+
+### What is running
+- Task Scheduler job "fang-kham clips", daily 23:00 (WakeToRun, StartWhenAvailable) → `tools/windows/run.bat` → relaunches itself with `conhost.exe --headless` (no window; the owner asked for this) → `tools/home_run.py`:
+  sync to origin/main → `update_corpus.py --save-dir home-clips --limit 1500 --minutes 420 --per-channel 40 --depth 500 --wait-when-blocked 20` → sync again → `--merge-dir home-clips` (`build_data.append`) → `node tools/count_lessons.js` → commit "Add clips collected on the home computer" → push. Clips stay in `home-clips/` until a push succeeds.
+  Because each run resets the clone to origin/main first, **anything pushed to `main` reaches the owner's computer by the next night** (scripts included). Do not break `tools/home_run.py`, `tools/update_corpus.py`, `tools/build_data.py` or `tools/windows/run.bat`: the owner cannot fix them. Test any change to them (see "Testing the nightly job" below).
+- Channel order: everyday speech first (films, series, real conversations, cartoons), then teaching, TV, documentaries, then interviews, TED, news (`build_data.TIER`). Search results follow the same order (`clipRank()` in index.html), politics last.
+- GitHub Actions `update-corpus.yml` (Wed) and `update-dhamma.yml` (Tue) still exist but YouTube blocks GitHub, so they add nothing; they stop safely. Dhamma clips therefore are not updating; see "Next steps".
+
+### Check first in a new session
+1. `git log --oneline -15` — are there commits "Add clips collected on the home computer" (one per night since 2026-10-24)? If yes, the home job works.
+2. `python3 -c "import json,re;m=json.loads(re.sub(r'^window\.CORPUS=','',open('data.js',encoding='utf-8').read()).rstrip().rstrip(';'));print(m['clips'],len(m['parts']))"` — clip count should grow by ~1,000 a night.
+3. If there are no nightly commits: ask the owner to open `C:\Users\Lenovo\fang-kham\collect.log` in Notepad and send a photo of the end. Likely causes, in order: `conhost --headless` did not start (no `==== start` line for that night; fall back to a visible window or a .vbs launcher), the computer was off, YouTube blocking (`blocked by YouTube`), GitHub sign-in expired (push errors; rerun `setup.bat`).
+4. Open the live site, search a word, check the footer "คลังตอนนี้: … คลิป" and that clips play.
+
+### Next steps (recommended order; ask the owner before starting)
+1. **Verify the first nights** (above). If clips arrive and nothing is blocked, leave the settings; if YouTube blocks often, lower `--limit`/raise the sleep in `update_corpus.py`.
+2. **Dhamma updates from the home computer**: make `home_run.py` also run `tools/update_dhamma.py` (it needs the same save/merge split as the general corpus so it never conflicts), since GitHub cannot reach YouTube.
+3. **New learning features the owner liked** (from a survey of PlayPhrase, Language Reactor, LyricsTraining, Voscreen, EnglishCentral, ELSA): (1) "play all clips in a row" for a word, (2) gap-fill dictation with levels 10/25/50/100% and letter-count dots, write or choose mode, (4) Thai translation blurred until hovered/tapped. Later: (3) timed meaning game, (5) Anki/Quizlet export, (6) per-clip lesson with a total score, (7) points.
+4. **Watch phone data**: a common phrase may load many 1 MB parts (`ENOUGH = 80`, `BATCH = 3` in index.html). If the corpus passes ~15,000 clips and searches feel slow on phones, split the index by two letters and lower `ENOUGH`.
+5. **Communicative curriculum A1 → C1** (agreed earlier, not started; see the section at the end).
+6. Small items waiting for the owner: link "ฟังคำจริง" from the main site's menu "คลังสื่อ" (main site is on Netlify, code not here); GoatCounter visitor counter (needs the owner's code); permission e-mail to the Baan Dhamma foundation (offered, not written); a nicer address such as listen.dreamenglishlearning.com (the owner made a Cloudflare account on 2026-10-24 but it is **not used**; the Cloudflare server plan was replaced by on-demand parts).
+
+### About the owner (follow these)
 - English teacher (not a researcher, not a nursing teacher for this project). Their own site is https://dreamenglishlearning.com (on Netlify; its code is not in this repo). Contact on the site: LINE @154yrgoe and dreamenglishlearningthai@gmail.com (already in the About box).
 - Keep the name "ฟังคำจริง". The owner asked twice about renaming and cancelled both times: do not rename.
-- When the owner is discussing or asking "should we…?", explain and recommend, then wait for "ทำ / ปรับ / ก / ข …" before changing anything. Answer in Thai, short, with a recommendation.
+- When the owner is discussing or asking "should we…?", explain and recommend, then wait for "ทำ / ปรับ / ก / ข …" before changing anything. Answer in Thai, short, with a recommendation. The owner works from Windows screenshots; give click-by-click steps.
 - Before every push: test with Playwright through `python3 -m http.server` (desktop 1366, phone 390, light and dark), then tell the owner what changed in plain Thai.
+- Claude credits are limited on the owner's plan: suggest a new session for big work, keep answers short.
 - Gratitude to Ajahn Sujin: the gold card on the Dhamma page, the gold card in the About box, and a gold line under the player while a Dhamma clip plays (owner's choice "ข"). Name spelling: ท่านอาจารย์สุจินต์ บริหารวนเขตต์.
-
-Waiting for the owner:
-1. **Result of the first GitHub run (2026-10-23, run 39971839183): YouTube blocked GitHub's runner within 10 seconds** (the PROBE clip had no caption tracks). So the weekly workflows will most likely add nothing; they stop safely and change no data. Clips must be collected from a Claude Code session (works; ~450 clips per 2-hour background command) or from the owner's home computer. Options were being discussed with the owner; nothing decided yet. Do not schedule 4 runs a day on GitHub.
-   **Decision (owner chose "ข"): collect on the owner's Windows 11 computer every night.** `tools/windows/setup.bat` (one-time: installs Git, Python 3.12, Node LTS with winget; clones to `%USERPROFILE%\fang-kham`; venv with yt-dlp + yt-dlp-ejs; GitHub sign-in through Git Credential Manager; registers the Task Scheduler job "fang-kham clips" daily 23:00 with WakeToRun/StartWhenAvailable). `tools/windows/run.bat` → `tools/home_run.py`: sync to origin/main, `update_corpus.py --save-dir home-clips --limit 1500 --minutes 420 --per-channel 40 --depth 500 --wait-when-blocked 20`, sync again, `--merge-dir home-clips`, `count_lessons.js`, commit, push (retries; clips stay in `home-clips/` until a push succeeds). The job resets the clone to origin/main at the start, so pushing script changes to `main` updates the home computer automatically. Log: `%USERPROFILE%\fang-kham\collect.log`. Installed on the owner's PC (user `Lenovo`) on 2026-10-24; the first run started 10:57 Thai time. `run.bat` relaunches itself with `conhost.exe --headless` so no window appears (the owner asked for it to run fully in the background); if nightly runs ever stop appearing in `collect.log`, check that first. Collecting stops when the corpus reaches `--max` (now 30,000).
-2. Add a "ฟังคำจริง" link on the main site (menu "คลังสื่อ", function `mediaDropdown()`): a prepared copy of the main site's index.html was made in the previous session but is not in this repo; the owner may do it with their own tools.
-3. Visitor counter (GoatCounter) needs a code from the owner's sign-up; permission e-mail to the Baan Dhamma foundation was offered, not written.
-
-Agreed plan for growing the corpus (the owner asked for "as many clips as possible, as fast as possible", without paying):
-- Step 1: daily runs (see above). Also add more TED / TED-Ed clips (licence CC BY-NC-ND, hand-made captions); 262 TED/TED-Ed talks were added on 2026-10-23 (150 per channel collected; TED now ~170, TED-Ed ~170).
-- Step 2 (done 2026-10-24, instead of Cloudflare): parts load only when a search needs them (format 2 above). The cap is now 30,000 clips (`--max`).
-- Step 3 (Cloudflare Workers + D1) was replaced by step 2: the owner asked for more than 3,000 clips, and on-demand parts give that with no account, token or server. Revisit a server only if the repository gets close to 1 GB (about 50,000+ clips) or searches for common phrases load too many parts on phones.
 - Do not use proxies or IP rotation to get around YouTube limits. The YouTube Data API cannot download other channels' captions.
+
+### Testing the nightly job
+Clone the repo into a temp folder, put two caption files in `home-clips/`, run `python3 -X utf8 -I tools/update_corpus.py --merge-dir home-clips` and `node tools/count_lessons.js`; a new `data-pNNNN.js` must appear and no existing part may change. For the whole flow, clone a bare copy as "origin" and run `tools/home_run.py git node` with a small `--limit`/`--minutes` (the previous session did this; it published to the stand-in origin correctly).
 
 ## Files
 
 | File | What it is |
 |---|---|
 | `index.html` | The whole app: markup, CSS tokens (light and dark), and one inline script. No framework. |
-| `data.js`, `data-1.js` … `data-N.js` | The general corpus (format below), generated by `tools/build_data.py`. Do not edit by hand. |
+| `data.js`, `data-pNNNN.js`, `data-i-X.js` | The general corpus: manifest, append-only parts, word index (format below), generated by `tools/build_data.py`. Do not edit by hand. |
 | `thai.js` | `THAI_EN` (Thai word or phrase → English options, ~218 entries), `THAI_WORD_TIPS` and `thaiTips()` (pronunciation warnings for Thai speakers). Edit by hand. |
 | `curriculum.js` | Two tables of contents: `book` = the owner's speaking course "คิดเป็นไทย พูดเป็นอังกฤษ" (volumes 1–3, 115 lessons) and `grammar` = the owner's A1–A2 grammar syllabus (140 lessons). Each lesson is `[number, Thai title, structure, 'phrase|phrase']`; opening a lesson searches every phrase at once. Edit by hand, then run `node tools/count_lessons.js`. |
 | `counts.js` | Lines found per lesson (`course-volumeIndex-lessonNumber`), generated by `tools/count_lessons.js`. |
@@ -43,8 +62,9 @@ Agreed plan for growing the corpus (the owner asked for "as many clips as possib
 | `dhamma-glossary.js` | `DHAMMA_GLOSSARY`: 461 `[term, definition]` pairs parsed from dhammahome.com's Glossary of Pali Terms (article-en topics 124–148). |
 | `tools/collect_captions.py` | Collects caption files from the channels listed in a TSV into `<TSV folder>/videos/<id>.json` (pauses when YouTube rate-limits). |
 | `tools/build_data.py` | Turns a folder of caption files into `data.js` + `data-*.js`; also holds the topic and grammar word sets with Thai notes. |
-| `tools/update_corpus.py` | Weekly job: rebuilds records from the published files, adds new suitable clips, filters, rebuilds. Its `load_records()`, `UNSUITABLE` and `suitable()` are reused when merging a manual collection. |
-| `tools/channels.tsv` | `handle<TAB>category<TAB>accent` for every channel used (89). |
+| `tools/update_corpus.py` | Finds new suitable clips and appends them (`--save-dir` collects only, `--merge-dir` merges a folder; used by the nightly home job). Holds the classroom filters `UNSUITABLE` and `suitable()`. |
+| `tools/home_run.py`, `tools/windows/setup.bat`, `tools/windows/run.bat` | The nightly job on the owner's computer and its one-time installer. |
+| `tools/channels.tsv` | `handle<TAB>category<TAB>accent` for every channel used (128). |
 | `tools/corpus-skip.json` | Clip ids never to add again (unsuitable, no captions, or removed on request). |
 | `img/owl-192.png` | Dreamy Owl logo from the owner's main site. |
 
@@ -67,7 +87,7 @@ Agreed plan for growing the corpus (the owner asked for "as many clips as possib
 Search (English regex with word boundaries; Thai via `THAI_EN`, then free machine translation as fallback), filters (accent, category, speed, level), YouTube IFrame player that jumps to the line, subtitle strip with prev/next lines, approximate word-by-word highlight, Thai translation of the current line, controls and keyboard shortcuts (N P R B K L H T S), dictionary panel (dictionaryapi.dev, Wiktionary fallback) with "จุดที่คนไทยมักพลาด" tips, practice tabs (speak along with scoring via Web Speech API, continuous shadowing, dictation, write your own sentence, fill-in-the-blank quiz, minimal-pairs game), word sets, nearby words, notebook with spaced review (1·3·7·14·30 days), daily goal with streak. Learning system: a "แนะนำในคลิปนี้" guide per clip (sentences worth learning, connectors, Dhamma terms, useful words, each with a ☆ save), a notebook with filters and CSV export, spaced review (1·3·7·14·30 days) whose word cards change form with the box (choose the Thai meaning → fill the gap from the clip → produce the English from Thai), lesson progress ticks and bars in both courses, a Dhamma word of the day, "lessons from the latest discussions", and backup/restore of all `fk.*` localStorage keys as a JSON file to move between devices (notes are merged). Notebook, stats and review live in `localStorage` per browser; there is no server or login.
 
 ## Automatic general-clip updates
-`.github/workflows/update-corpus.yml` runs `tools/update_corpus.py` every Wednesday 03:23 UTC (and by hand from the Actions tab). It rebuilds the clip records from the published `data.js` + `data-*.js`, lists the newest clips of the channels in `tools/channels.tsv` (accents and categories with the fewest clips first, at most 3 per channel, 80 per run), keeps only classroom-suitable clips (1–20 min, embeddable, not age-restricted, no violent/adult words in the title, at most 2 bleeped lines, mostly speech, English captions with hand-made ones preferred), keeps the corpus under 3,000 clips by dropping auto-captioned clips from the biggest groups (fastest speech first), rebuilds `data.js` and recounts lessons. Rejected clips go to `tools/corpus-skip.json`; adding a clip id there by hand also removes it from the corpus on the next run.
+Done on the owner's computer every night (see "Start here"). The GitHub workflow `update-corpus.yml` runs the same script weekly but YouTube blocks GitHub. Classroom filters: 1–20 min, embeddable, not age-restricted, no violent/adult/drug words in the title (`UNSUITABLE`, whole words only; "Stablecoins" and the name "Rapelang" once matched older patterns), at most 2 bleeped lines, mostly speech, English captions (hand-made preferred). Rejected clips go to `tools/corpus-skip.json`; adding a clip id there by hand also removes it from the corpus on the next run (it is listed in `removed`). When the corpus passes `--max`, auto-captioned clips from the biggest groups are removed, fastest speech first.
 Teachers can hide an unsuitable clip with "🚫 ซ่อนคลิปนี้" under the player (per browser, `fk.hidden`); "คัดลอกรายการเพื่อส่งผู้ดูแล" in the filter box copies the ids to send to the owner, who adds them to `tools/corpus-skip.json`.
 
 ## Automatic Dhamma updates
@@ -78,23 +98,15 @@ Only clips where English is really spoken are kept: hand-made English captions, 
 No raw caption files are stored; the shards are the source. If YouTube blocks GitHub's runners the log says "blocked by YouTube" and the run stops; then run the same script from a Claude Code session (`--caps-dir` merges captions collected elsewhere).
 
 ## Rebuilding or extending the corpus
-The published `data.js` + `data-*.js` are the source; no raw caption files are kept (the old `corpus-videos.tgz` was removed). To add clips from a Claude Code session (Network access: Full):
+The published files are the source; no raw caption files are kept. To add clips from a Claude Code session (Network access: Full) instead of the home computer:
 
 ```bash
 python3 -m venv .venv && .venv/bin/pip install yt-dlp yt-dlp-ejs
-mkdir -p work && printf '@TED\tted\tUS\n' > work/channels.tsv       # handle, category, accent
-.venv/bin/python -I tools/collect_captions.py work/channels.tsv 100 .venv/bin/yt-dlp   # writes work/videos/<id>.json; run it in the background (2-hour limit per command)
+.venv/bin/python -X utf8 -I tools/update_corpus.py --save-dir work --limit 400 --minutes 100   # run in the background (2-hour limit per command)
+git fetch origin main && git reset --hard FETCH_HEAD     # the home job pushes to main too
+.venv/bin/python -X utf8 -I tools/update_corpus.py --merge-dir work && node tools/count_lessons.js
 ```
-Then merge with the published corpus, apply the classroom filters and rebuild (this is what the previous session did):
-```python
-import sys, json, glob; sys.path.insert(0, 'tools'); import update_corpus as u
-recs = u.load_records()                                   # published clips
-for f in glob.glob('work/videos/*.json'): d = json.load(open(f)); recs[d['id']] = d
-skip = set(json.load(open('tools/corpus-skip.json')))
-# drop: id in skip, u.UNSUITABLE.search(title), or u.suitable(segs) in ('mostly music', 'bleeped words'); add dropped ids to skip
-# write the kept records to a folder, then: python3 -I tools/build_data.py <folder> data.js && node tools/count_lessons.js
-```
-Always `git fetch origin main && git reset --hard FETCH_HEAD` in a clean clone before copying files in, because the workflows commit to `main` too.
+For clips collected another way (e.g. `tools/collect_captions.py` for one channel), apply `UNSUITABLE` and `suitable()` yourself, write the kept records into a folder and use `--merge-dir`.
 
 What we learned while collecting:
 - From cloud IPs, YouTube answers normal requests with "Sign in to confirm you're not a bot". `yt-dlp` with `--extractor-args youtube:player_client=web_embedded --ignore-no-formats-error` still works, and it only returns videos whose owners allow embedding, which is exactly what the site needs. `youtube-transcript-api` was blocked.
