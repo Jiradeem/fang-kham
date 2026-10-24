@@ -10,6 +10,7 @@ A YouGlish-style listening site for Thai learners of English: search a word or p
 Last updated 2026-10-24 by the session that built most of the site.
 
 ### Status
+- 2026-10-24 follow-up: the home run published 16 new clips at 17:58 Thai time (1,237 total). A direct diagnostic reproduced HTTP 429 on a caption download. The collector now pauses the whole run on caption HTTP 429, refreshes the same clip's metadata, and retries at most three times (20/40/80 minutes with the nightly settings, or longer if Retry-After requires it). It stops when the remaining collection time is insufficient, preserving already saved clips for the normal merge/publish step. This handles rate limiting; it does not guarantee a nightly clip count. Regression tests: `python -B -I test_rate_limit.py` (7 cases); merge/recount checked with two fixture clips without changing existing parts; browser checks passed at widths 1366 and 390, light and dark.
 - General corpus: 1,221 clips (268,016 lines) in format 2 (on-demand parts, see below), cap 30,000. 128 official channels in `tools/channels.tsv`.
 - Dhamma: 2,554 clips listed, 119 with searchable captions.
 - **Clips are collected every night on the owner's Windows 11 computer** (user `Lenovo`, clone at `C:\Users\Lenovo\fang-kham`), not on GitHub: YouTube blocked GitHub's runner on the first try (run 39971839183). Installed 2026-10-24; first run started 10:57 Thai time.

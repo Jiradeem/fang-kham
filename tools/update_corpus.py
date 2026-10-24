@@ -34,14 +34,51 @@ import build_data
 def load_records():
     return build_data.load_docs(ROOT)
 
+class CaptionRateLimited(Exception):
+    def __init__(self, retry_after=0):
+        super().__init__('HTTP 429: YouTube is limiting caption requests')
+        self.retry_after = retry_after
+
+
+class StopCollection(Exception):
+    pass
+
+
 def fetch_json(url):
-    for i in range(3):
+    try:
+        with urllib.request.urlopen(url, timeout=60) as r: return json.load(r)
+    except urllib.error.HTTPError as e:
+        if e.code == 429:
+            from email.utils import parsedate_to_datetime
+            value = (e.headers or {}).get('Retry-After', '')
+            try:
+                retry_after = max(0, float(value))
+            except (TypeError, ValueError):
+                try: retry_after = max(0, parsedate_to_datetime(value).timestamp() - time.time())
+                except (TypeError, ValueError, OverflowError): retry_after = 0
+            raise CaptionRateLimited(retry_after) from e
+        raise
+
+
+def captions_with_backoff(vid, info, wait_minutes, deadline):
+    # Pause the entire collector, then refresh this clip's expiring caption URL.
+    for attempt in range(4):
         try:
-            with urllib.request.urlopen(url, timeout=60) as r: return json.load(r)
-        except urllib.error.HTTPError as e:
-            if e.code == 429: time.sleep(60 * (i + 1)); continue
-            raise
-    raise RuntimeError('429')
+            return captions(info)
+        except CaptionRateLimited as e:
+            print('rate limited', vid, str(e), flush=True)
+            if wait_minutes <= 0 or attempt == 3:
+                raise StopCollection('caption rate limit persists; keeping collected clips for publishing') from e
+            delay = max(wait_minutes * 60 * (2 ** attempt), e.retry_after)
+            if time.time() + delay >= deadline:
+                raise StopCollection('not enough collection time left to wait; keeping collected clips for publishing') from e
+            print('pausing collection for', round(delay / 60, 2), 'minutes; retry', attempt + 1, 'of 3', flush=True)
+            time.sleep(delay)
+            if time.time() >= deadline:
+                raise StopCollection('collection time limit reached after waiting') from e
+            info = info_of(vid)
+            if not has_tracks(info):
+                raise StopCollection('caption metadata unavailable after waiting; retry on the next run')
 
 def info_of(vid):
     p = subprocess.run(YTDLP + ['-J', '--skip-download', '--no-warnings', '--ignore-no-formats-error', '--extractor-args',
@@ -160,9 +197,12 @@ def main():
                 skip.update(unsure); unsure.clear()
                 if info.get('playable_in_embed') is False or (info.get('age_limit') or 0) > 0 or info.get('availability') not in (None, 'public'):
                     skip.add(vid); continue
-                segs, kind = captions(info)
+                segs, kind = captions_with_backoff(vid, info, a.wait_when_blocked, start + a.minutes * 60)
+            except StopCollection as e:
+                print('stopping collection:', str(e), flush=True); stop = True; break
             except Exception as e:
-                print('error', vid, type(e).__name__, flush=True); time.sleep(10); continue
+                detail = re.sub(r'https?://\S+', '[URL]', str(e))[:300]
+                print('error', vid, type(e).__name__, detail, flush=True); time.sleep(10); continue
             why = 'no English captions' if not segs else suitable(segs)
             if why: skip.add(vid); print('skip (' + why + ')', vid, flush=True); continue
             rec = {'id': vid, 't': info.get('title') or title, 'ch': info.get('channel') or handle, 'cat': cat, 'acc': acc,
