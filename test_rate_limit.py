@@ -27,25 +27,25 @@ class RateLimitTests(unittest.TestCase):
 
     def test_same_clip_retried_with_fresh_metadata_after_pause(self):
         fresh = dict(TRACKS, title='fresh')
-        with patch.object(c, 'captions', side_effect=[c.CaptionRateLimited(1800), ([[0, 2, 'hello']], 'm')]) as captions, patch.object(c, 'info_of', return_value=fresh) as info, patch.object(c.time, 'sleep') as sleep, patch.object(c.time, 'time', return_value=0):
+        with patch.object(c, 'captions', side_effect=[c.CaptionRateLimited(1800), ([[0, 2, 'hello']], 'm')]) as captions, patch.object(c, 'info_of', return_value=fresh) as info, patch.object(c.time, 'sleep') as sleep, patch.object(c.time, 'time', return_value=0), patch.object(c, 'probe_ok', return_value=False):
             self.assertEqual(c.captions_with_backoff('clip', TRACKS, 20, 10000)[1], 'm')
             sleep.assert_called_once_with(1800)
             info.assert_called_once_with('clip')
             self.assertEqual(captions.call_args.args, (fresh,))
 
     def test_persistent_limit_stops_after_three_increasing_pauses(self):
-        with patch.object(c, 'captions', side_effect=c.CaptionRateLimited()) as captions, patch.object(c, 'info_of', return_value=TRACKS), patch.object(c.time, 'sleep') as sleep, patch.object(c.time, 'time', return_value=0):
+        with patch.object(c, 'captions', side_effect=c.CaptionRateLimited()) as captions, patch.object(c, 'info_of', return_value=TRACKS), patch.object(c.time, 'sleep') as sleep, patch.object(c.time, 'time', return_value=0), patch.object(c, 'probe_ok', return_value=False):
             with self.assertRaises(c.StopCollection): c.captions_with_backoff('clip', TRACKS, 20, 30000)
             self.assertEqual(captions.call_count, 4)
             self.assertEqual([call.args[0] for call in sleep.call_args_list], [1200, 2400, 4800])
 
     def test_deadline_prevents_another_request(self):
-        with patch.object(c, 'captions', side_effect=c.CaptionRateLimited()), patch.object(c.time, 'sleep') as sleep, patch.object(c.time, 'time', return_value=100):
+        with patch.object(c, 'captions', side_effect=c.CaptionRateLimited()), patch.object(c.time, 'sleep') as sleep, patch.object(c.time, 'time', return_value=100), patch.object(c, 'probe_ok', return_value=False):
             with self.assertRaises(c.StopCollection): c.captions_with_backoff('clip', TRACKS, 20, 200)
             sleep.assert_not_called()
 
     def test_no_wait_mode_stops_immediately(self):
-        with patch.object(c, 'captions', side_effect=c.CaptionRateLimited()), patch.object(c.time, 'sleep') as sleep:
+        with patch.object(c, 'captions', side_effect=c.CaptionRateLimited()), patch.object(c.time, 'sleep') as sleep, patch.object(c, 'probe_ok', return_value=False):
             with self.assertRaises(c.StopCollection): c.captions_with_backoff('clip', TRACKS, 0, 9999999999)
             sleep.assert_not_called()
 
@@ -63,11 +63,22 @@ class RateLimitTests(unittest.TestCase):
             segments = [[n, 1, 'Hello there.'] for n in range(25)]
             result = type('Result', (), {'stdout': 'first\t120\tFirst clip\nblocked\t120\tSecond clip\nthird\t120\tThird clip'})()
             args = ['collector', '--save-dir', str(saved), '--wait-when-blocked', '0']
-            with patch.object(c, 'ROOT', str(root)), patch.object(c, 'load_records', return_value={}), patch.object(c.subprocess, 'run', return_value=result), patch.object(c, 'info_of', return_value=TRACKS) as info, patch.object(c, 'captions', side_effect=[(segments, 'm'), c.CaptionRateLimited()]), patch.object(c.time, 'sleep'), patch.object(sys, 'argv', args):
+            with patch.object(c, 'ROOT', str(root)), patch.object(c, 'load_records', return_value={}), patch.object(c.subprocess, 'run', return_value=result), patch.object(c, 'info_of', return_value=TRACKS) as info, patch.object(c, 'captions', side_effect=[(segments, 'm'), c.CaptionRateLimited()]), patch.object(c.time, 'sleep'), patch.object(c, 'probe_ok', return_value=False), patch.object(sys, 'argv', args):
                 c.main()
             self.assertTrue((saved / 'first.json').exists())
             self.assertEqual(json.loads((saved / 'skip.json').read_text()), [])
             self.assertEqual([call.args[0] for call in info.call_args_list], ['first', 'blocked'])
+
+    def test_ytdlp_caption_download_429_pauses_instead_of_skipping(self):
+        info = {'id': 'clip', 'subtitles': {'en': [{'ext': 'json3', 'url': 'https://example.invalid/captions'}]}}
+        result = type('Result', (), {'stdout': '', 'stderr': 'WARNING: Unable to download video subtitles for en: HTTP Error 429: Too Many Requests'})()
+        with patch.object(c.subprocess, 'run', return_value=result):
+            with self.assertRaises(c.CaptionRateLimited): c.captions(info)
+
+    def test_429_for_one_clip_only_skips_that_clip(self):
+        with patch.object(c, 'captions', side_effect=c.CaptionRateLimited()), patch.object(c, 'probe_ok', return_value=True), patch.object(c.time, 'sleep') as sleep:
+            with self.assertRaises(c.ClipCaptionDenied): c.captions_with_backoff('clip', TRACKS, 20, 9999999999)
+            sleep.assert_not_called()
 
 
 if __name__ == '__main__':

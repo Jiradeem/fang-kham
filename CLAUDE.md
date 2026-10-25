@@ -22,6 +22,9 @@ Last updated 2026-10-24 by the session that built most of the site.
 - Channel order: everyday speech first (films, series, real conversations, cartoons), then teaching, TV, documentaries, then interviews, TED, news (`build_data.TIER`). Search results follow the same order (`clipRank()` in index.html), politics last.
 - GitHub Actions `update-corpus.yml` (Wed) and `update-dhamma.yml` (Tue) still exist but YouTube blocks GitHub, so they add nothing; they stop safely. Dhamma clips therefore are not updating; see "Next steps".
 
+### Fix of 2026-10-25 (why the first home nights gave 16 and then 0 clips)
+Some caption tracks always answer HTTP 429 while others download fine. Any 429 used to pause the whole night (20+40+80 min) and then stop. Now `captions_with_backoff` first checks the PROBE clip: if it still works, only that clip is skipped (`ClipCaptionDenied`); the night pauses only when the probe fails too. Captions are downloaded by yt-dlp itself (`download_track`, same cookie jar as the lookup) instead of a bare urllib request, with 12 s between clips. `home_run.py` publishes `tools/home-log.txt` (last 400 collector lines) every night, even with no clips: **read it first**. Tests: `python -B -I test_rate_limit.py` (9 cases, written partly by another AI the owner runs on the home computer).
+
 ### Check first in a new session
 1. `git log --oneline -15` — are there commits "Add clips collected on the home computer" (one per night since 2026-10-24)? If yes, the home job works.
 2. `python3 -c "import json,re;m=json.loads(re.sub(r'^window\.CORPUS=','',open('data.js',encoding='utf-8').read()).rstrip().rstrip(';'));print(m['clips'],len(m['parts']))"` — clip count should grow by ~1,000 a night.

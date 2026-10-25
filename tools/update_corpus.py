@@ -44,6 +44,19 @@ class StopCollection(Exception):
     pass
 
 
+class ClipCaptionDenied(Exception):
+    """YouTube answers 429 for this clip's captions only (some tracks always do), while other clips still work."""
+
+
+def probe_ok():
+    """Can we still download captions at all? Checked on a clip that always has them (PROBE)."""
+    try:
+        segs, _ = captions(info_of(PROBE))
+        return bool(segs)
+    except Exception:
+        return False
+
+
 def fetch_json(url):
     try:
         with urllib.request.urlopen(url, timeout=60) as r: return json.load(r)
@@ -67,6 +80,10 @@ def captions_with_backoff(vid, info, wait_minutes, deadline):
             return captions(info)
         except CaptionRateLimited as e:
             print('rate limited', vid, str(e), flush=True)
+            # A 429 for one clip is not always a general limit: some caption tracks are always refused. If a known clip
+            # still works, skip only this one instead of pausing the whole night (this stopped the first home runs).
+            if attempt == 0 and probe_ok():
+                raise ClipCaptionDenied() from e
             if wait_minutes <= 0 or attempt == 3:
                 raise StopCollection('caption rate limit persists; keeping collected clips for publishing') from e
             delay = max(wait_minutes * 60 * (2 ** attempt), e.retry_after)
@@ -80,9 +97,13 @@ def captions_with_backoff(vid, info, wait_minutes, deadline):
             if not has_tracks(info):
                 raise StopCollection('caption metadata unavailable after waiting; retry on the next run')
 
+# One cookie jar for every yt-dlp call, so the caption download happens in the same YouTube session as the lookup.
+WORK = tempfile.mkdtemp(prefix='fang-kham-')
+COOKIES = os.path.join(WORK, 'cookies.txt')
+
 def info_of(vid):
-    p = subprocess.run(YTDLP + ['-J', '--skip-download', '--no-warnings', '--ignore-no-formats-error', '--extractor-args',
-                                'youtube:player_client=web_embedded', 'https://www.youtube.com/watch?v=' + vid],
+    p = subprocess.run(YTDLP + ['-J', '--skip-download', '--no-warnings', '--ignore-no-formats-error', '--cookies', COOKIES,
+                                '--extractor-args', 'youtube:player_client=web_embedded', 'https://www.youtube.com/watch?v=' + vid],
                        timeout=180, **RUN)
     return json.loads(p.stdout or 'null')
 
@@ -98,13 +119,38 @@ def pick(tracks, langs):
             if f.get('ext') == 'json3': return f['url']
     return None
 
+def pick_lang(tracks, langs):
+    for l in langs:
+        if any(f.get('ext') == 'json3' for f in tracks.get(l) or []): return l
+    return None
+
+def download_track(info, lang, kind):
+    """Let yt-dlp fetch the caption file (browser headers and the session cookies), not a bare Python request:
+    from the owner's home connection bare requests to the caption URL were answered with HTTP 429 (2026-10-24)."""
+    vid = info['id']
+    info_file = os.path.join(WORK, vid + '.info.json')
+    with open(info_file, 'w', encoding='utf-8') as o: json.dump(info, o)
+    p = subprocess.run(YTDLP + ['--load-info-json', info_file, '--cookies', COOKIES, '--skip-download', '--ignore-no-formats-error',
+                                '--write-subs' if kind == 'm' else '--write-auto-subs', '--sub-langs', lang, '--sub-format', 'json3',
+                                '-o', os.path.join(WORK, '%(id)s.%(ext)s')], timeout=180, **RUN)
+    out = os.path.join(WORK, vid + '.' + lang + '.json3')
+    try:
+        if os.path.exists(out):
+            with open(out, encoding='utf-8') as f: return json.load(f)
+    finally:
+        for f in (out, info_file):
+            try: os.remove(f)
+            except OSError: pass
+    if '429' in (p.stderr or ''): raise CaptionRateLimited(0)
+    raise RuntimeError('yt-dlp wrote no caption file: ' + (p.stderr or '').strip()[-200:])
+
 def captions(info):
     subs = info.get('subtitles') or {}
-    url = pick(subs, EN + sorted(k for k in subs if k.startswith('en-') and k not in EN)); kind = 'm'
-    if not url: url = pick(info.get('automatic_captions') or {}, ['en-orig', 'en']); kind = 'a'
-    if not url: return None, None
+    lang = pick_lang(subs, EN + sorted(k for k in subs if k.startswith('en-') and k not in EN)); kind = 'm'
+    if not lang: lang = pick_lang(info.get('automatic_captions') or {}, ['en-orig', 'en']); kind = 'a'
+    if not lang: return None, None
     segs = []
-    for ev in fetch_json(url).get('events', []):
+    for ev in download_track(info, lang, kind).get('events', []):
         if 'segs' not in ev: continue
         t = ''.join(s.get('utf8', '') for s in ev['segs']).replace('\n', ' ').strip()
         if t: segs.append([round(ev['tStartMs'] / 1000, 2), round(ev.get('dDurationMs', 0) / 1000, 2), html.unescape(t)])
@@ -200,6 +246,8 @@ def main():
                 segs, kind = captions_with_backoff(vid, info, a.wait_when_blocked, start + a.minutes * 60)
             except StopCollection as e:
                 print('stopping collection:', str(e), flush=True); stop = True; break
+            except ClipCaptionDenied:
+                skip.add(vid); print('skip (captions refused for this clip only)', vid, flush=True); time.sleep(6); continue
             except Exception as e:
                 detail = re.sub(r'https?://\S+', '[URL]', str(e))[:300]
                 print('error', vid, type(e).__name__, detail, flush=True); time.sleep(10); continue
@@ -213,7 +261,7 @@ def main():
                 json.dump(sorted(skip), open(os.path.join(a.save_dir, 'skip.json'), 'w'), indent=0)
             else: recs[vid] = rec
             got += 1; added += 1
-            print('ok', added, vid, acc, cat, kind, len(segs), flush=True); time.sleep(6)
+            print('ok', added, vid, acc, cat, kind, len(segs), flush=True); time.sleep(12)  # slower is safer from home
 
     if a.save_dir:
         json.dump(sorted(skip), open(os.path.join(a.save_dir, 'skip.json'), 'w'), indent=0)
