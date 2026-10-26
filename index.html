@@ -976,16 +976,26 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
     player.setPlaybackRate(st.rate);
     // Browsers often block playback with sound until the viewer has clicked on the page. Like YouGlish, start
     // muted instead so the clip and the captions move at once, and offer one tap to turn the sound on.
+    // Only before the first click or key press: after that the browser allows sound, and a clip that is merely slow
+    // to load must not be muted (the owner had to turn the sound on again for every new clip).
     clearTimeout(autoplayTimer);
     autoplayTimer = setTimeout(() => {
       try {
         const s = player.getPlayerState();
-        if (s !== 1 && s !== 3 && s !== 2) { player.mute(); player.playVideo(); $('unmute').hidden = false; }
+        if (s === 1 || s === 3 || s === 2) return;
+        if (userActed) { player.playVideo(); return; }
+        player.mute(); player.playVideo(); $('unmute').hidden = false; autoMuted = true;
       } catch (e) {}
     }, 1500);
   }
-  let autoplayTimer = 0;
-  $('unmute').onclick = () => { try { player.unMute(); player.setVolume(100); player.playVideo(); } catch (e) {} $('unmute').hidden = true; };
+  let autoplayTimer = 0, userActed = false, autoMuted = false;
+  function turnSoundOn() { try { player.unMute(); player.setVolume(100); } catch (e) {} autoMuted = false; $('unmute').hidden = true; }
+  // The first click or key press anywhere lifts the browser's block; undo our own muting then, once.
+  ['pointerdown', 'keydown'].forEach(ev => document.addEventListener(ev, () => {
+    userActed = true;
+    if (autoMuted && playerReady) turnSoundOn();
+  }, true));
+  $('unmute').onclick = () => { turnSoundOn(); try { player.playVideo(); } catch (e) {} };
 
   // The line being studied: a search hit, or a line picked by the quiz or the shadowing mode.
   function hitSeg() { return st.override !== null ? st.override : st.hits.length ? st.hits[st.idx] : -1; }
