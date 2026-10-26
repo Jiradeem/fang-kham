@@ -954,6 +954,7 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
         onStateChange: e => {
           $('bPlay').classList.toggle('playing', e.data === 1 || e.data === 3);
           if (e.data === 1) {
+            try { tabs && tabs.postMessage('playing'); } catch (err) {}
             if (st.hits.length && st.override === null && countedSeg !== hitSeg()) { countedSeg = hitSeg(); track('listen'); }
             autoSkips = 0;
             // Our subtitle strip replaces YouTube's own captions, which would cover the speaker's face.
@@ -989,6 +990,13 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
     }, 1500);
   }
   let autoplayTimer = 0, userActed = false, autoMuted = false;
+  // Only one clip plays at a time: when this page starts playing, other open pages of the site pause, and a page
+  // pauses when it is hidden (another tab, minimised window, locked screen), so two clips never sound together.
+  let tabs = null;
+  try { tabs = new BroadcastChannel('fang-kham-player'); tabs.onmessage = () => { try { if (playerReady) player.pauseVideo(); } catch (e) {} }; } catch (e) {}
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) { clearTimeout(autoplayTimer); try { if (playerReady) player.pauseVideo(); } catch (e) {} if (shadow.on) stopModes(); }
+  });
   function turnSoundOn() { try { player.unMute(); player.setVolume(100); } catch (e) {} autoMuted = false; $('unmute').hidden = true; }
   // The first click or key press anywhere lifts the browser's block; undo our own muting then, once.
   ['pointerdown', 'keydown'].forEach(ev => document.addEventListener(ev, () => {
