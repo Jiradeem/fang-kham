@@ -1,0 +1,401 @@
+Nightly run on the home computer, 2026-10-27 02:00 (last 400 lines of the collector)
+00:34:12 ok 360 Yd8Ojwv8H-k UK series m 213
+00:34:37 ok 361 JOXJ2h5_eNc UK series m 44
+00:34:52 ok 362 yejNl0RE5o4 UK series a 226
+00:35:06 ok 363 Iy_bDdDCy0U UK series m 96
+00:35:21 ok 364 eGfV8SRj_bQ UK series m 193
+00:35:36 ok 365 8peEp9vQgUM UK series a 105
+00:35:51 ok 366 yi1mUmIYiOg UK series m 116
+00:36:06 ok 367 irh82xNQtOs UK series m 55
+00:36:20 ok 368 vby3e27_y-0 UK series m 103
+00:36:35 ok 369 2Njt-ZGVoUA UK series m 87
+00:36:50 ok 370 mL8YyT_KkPQ UK series m 217
+00:37:05 ok 371 jQCNlyOoyAk UK series a 41
+00:37:20 ok 372 dnuyU836AOc UK series m 248
+00:37:34 ok 373 rjoKeRLZB_s UK series a 473
+00:37:49 ok 374 ANV8nvV8FGo UK series a 248
+00:38:04 ok 375 leG0HrgYVqA UK series a 53
+00:38:19 ok 376 AjAh8PZwGG4 UK series a 152
+00:38:34 ok 377 lvyHf880Qm4 UK series a 448
+00:38:50 skip (too short) v9P3d8EatSc
+00:38:55 ok 378 WKPvhn6hDHc UK series m 230
+00:39:10 ok 379 ukw_qgseakQ UK series a 272
+00:39:24 ok 380 zfhcd5olsgM UK series a 122
+00:39:39 ok 381 KR3eQWvyrf4 UK series a 351
+00:39:54 ok 382 DCeTaRW-8tg UK series a 33
+00:40:09 ok 383 vl7BFsAS5Iw UK series a 359
+00:40:23 ok 384 Q4BXLR8xtGQ UK series a 320
+00:40:38 ok 385 NRozBOv7qto UK series a 25
+00:40:53 ok 386 xBVLEQwNCwU UK series a 476
+00:41:08 ok 387 7-jR43-1TAU UK series a 171
+00:41:22 ok 388 t5CESe7R9vU UK series a 264
+00:41:37 ok 389 RqjbL_Y6-H4 UK series a 71
+00:41:52 ok 390 2Zvwi6NuF7c UK series a 229
+00:42:07 ok 391 OCGoDG3ws3c UK series a 69
+00:42:22 ok 392 Kp5kVPD4BdY UK series a 182
+00:42:37 ok 393 E-FQ4R8xIco UK series a 102
+00:42:51 ok 394 V3GSaRg9r7M UK series a 78
+00:43:06 ok 395 aNssiV_Kau4 UK series a 269
+00:43:20 ok 396 YTrhlZdEL-I UK series a 109
+00:43:35 ok 397 VP81o9EJR7Q UK series a 116
+00:43:47 skip (title) acfLWrT6Ehs Man murdered in home after offering killer place to stay  - 
+00:43:50 ok 398 0ySmcoar3cM UK series a 97
+00:44:05 ok 399 WrzyK4S4Gg4 UK series a 93
+00:44:17 skip (title) R9vRvxKI4Ds Cunk Investigates Ancient Explicit Graffiti | Cunk on Britai
+00:44:19 ok 400 ctrkv9q0An4 UK series a 83
+00:44:45 ok 401 Znvf1BEstnQ UK conversation m 531
+00:45:00 ok 402 jLpoiQI7mhM UK conversation m 560
+00:45:14 ok 403 pnqSoCUoRzM UK conversation m 519
+00:45:29 ok 404 CyLM_Nf9eEI UK conversation a 151
+00:45:44 ok 405 _SF0xH-o4aI UK conversation m 362
+00:45:59 ok 406 I3iM-HkWVCE UK conversation m 595
+00:46:14 ok 407 a2aHV87bO9M UK conversation m 503
+00:46:29 ok 408 NBgeAuK_tuc UK conversation m 289
+00:46:43 ok 409 nqJrFZArMXg UK conversation m 381
+00:46:58 ok 410 ZUFDHmH13Y8 UK conversation m 557
+00:47:13 ok 411 QsBmrBSI444 UK conversation m 494
+00:47:28 ok 412 ckbdiKjzFd4 UK conversation m 613
+00:47:43 ok 413 GdSxRvlgo8U UK conversation m 601
+00:47:57 ok 414 5lqidlEzPME UK conversation m 514
+00:48:13 ok 415 A8KuWz-TDmM UK conversation m 415
+00:48:28 ok 416 YEEs4XyHxS0 UK conversation m 590
+00:48:42 ok 417 iiQsp2byRMg UK conversation m 552
+00:48:57 ok 418 kpZrBz7hPS8 UK conversation m 383
+00:49:12 ok 419 8cSitSymePA UK conversation m 493
+00:49:27 ok 420 t90WVqLVfo8 UK conversation m 553
+00:49:42 ok 421 eQu3kssYtIQ UK conversation m 643
+00:49:57 ok 422 oOrKax8d5_w UK conversation m 464
+00:50:11 ok 423 2IxttdFtf0c UK conversation m 430
+00:50:26 ok 424 VxmhjEvU9p0 UK conversation m 515
+00:50:41 ok 425 tfSWt-WJOpQ UK conversation m 496
+00:50:56 ok 426 iBLzCwC_ixw UK conversation m 464
+00:51:10 ok 427 d96C9idJdfg UK conversation m 503
+00:51:25 ok 428 wmzv0wFvceE UK conversation m 534
+00:51:40 ok 429 PHBQqLOa9Yo UK conversation m 405
+00:51:55 ok 430 pW42HEmrgRA UK conversation m 558
+00:52:10 ok 431 3NL60gZ7iWQ UK conversation m 519
+00:52:25 ok 432 aVIN_pWXYuE UK conversation m 480
+00:52:40 ok 433 HMbxMMkkXac UK conversation m 582
+00:52:54 ok 434 ZxUPRCYDf-4 UK conversation m 493
+00:53:09 ok 435 tout3DRJVlk UK conversation m 491
+00:53:24 ok 436 gWfXlbwYLzc UK conversation m 579
+00:53:39 ok 437 fSncJASPAoI UK conversation m 178
+00:53:54 ok 438 xuqyYVW9zSM UK conversation m 464
+00:54:09 ok 439 X6VshBMtIUM UK conversation m 509
+00:54:24 ok 440 z27jsqKbsMA UK conversation m 392
+00:54:50 ok 441 FKncd9mxUIU UK conversation a 371
+00:55:05 ok 442 Y8-PzZHLi_w UK conversation a 229
+00:55:20 ok 443 YfSGb3bHXsk UK conversation a 346
+00:55:32 skip (title) H9w2vvfmUXg Thomas Markle Investigated Over Child Abuse Images | This Mo
+00:55:35 ok 444 vwvmWQ68Lao UK conversation a 290
+00:55:51 ok 445 KyFwftQa5QI UK conversation a 366
+00:56:06 ok 446 S_xQ-96eKMQ UK conversation a 385
+00:56:21 ok 447 JO6dZBZBWr0 UK conversation a 299
+00:56:37 ok 448 Y6BrHJauaps UK conversation a 315
+00:56:52 ok 449 k7MtZy89MMY UK conversation a 331
+00:57:08 ok 450 637Ymd-OsCY UK conversation a 407
+00:57:23 ok 451 tECgUGDybdI UK conversation a 307
+00:57:39 ok 452 PPneDX26fOI UK conversation a 312
+00:57:54 ok 453 iW8uSEC4h4M UK conversation a 427
+00:58:10 ok 454 o_1Jkkx5M80 UK conversation a 275
+00:58:25 ok 455 t_sCTnqdGDY UK conversation a 322
+00:58:41 ok 456 1ZHLnTRINJ0 UK conversation a 319
+00:58:56 ok 457 e3g2jaLZ4Qg UK conversation a 202
+00:59:12 ok 458 RNUvSA0ZimM UK conversation a 325
+00:59:27 ok 459 gTkltXIgf90 UK conversation a 324
+00:59:42 ok 460 2jYjwJuE_pw UK conversation a 280
+00:59:54 skip (title) jvnEUiRoKAU 'Meningitis Almost Killed Me, Don't Ignore The Signs' | This
+00:59:58 ok 461 LdigaItw5TU UK conversation a 513
+01:00:13 ok 462 XCvGxmfH1-4 UK conversation a 264
+01:00:28 ok 463 iSWOYBEcIa4 UK conversation a 309
+01:00:43 ok 464 _7t71Hd_reA UK conversation a 225
+01:00:59 ok 465 36Lz7P0Hv_M UK conversation a 313
+01:01:14 ok 466 3P4hfXLJSak UK conversation a 291
+01:01:30 ok 467 g3biNn_nkl0 UK conversation a 195
+01:01:44 ok 468 6JnPndAwNMc UK conversation a 343
+01:02:00 ok 469 5sdxHHl1Bus UK conversation a 234
+01:02:15 ok 470 IS852sePAko UK conversation a 485
+01:02:30 ok 471 OTd1ZO-_RJs UK conversation a 306
+01:02:45 ok 472 m3H_Z_8RceQ UK conversation a 324
+01:03:01 ok 473 TBYjun_1bIk UK conversation a 373
+01:03:16 ok 474 q_sFxFZFjuQ UK conversation a 274
+01:03:31 ok 475 x2IVmvKpa2M UK conversation a 237
+01:03:46 ok 476 dKV7FTZYpII UK conversation a 293
+01:04:02 ok 477 O54AEFowWAM UK conversation a 311
+01:04:18 ok 478 TVciZ7PN6to UK conversation a 317
+01:04:33 ok 479 yYmpnJwD9lU UK conversation a 249
+01:04:48 ok 480 c6B2T8PPWXg UK conversation a 288
+01:05:07 ok 481 q9qbH6rw9lg UK conversation a 284
+01:05:22 ok 482 wvWyr6SBGnA UK conversation a 324
+01:05:37 ok 483 UOT2BT7w-DE UK conversation a 287
+01:05:52 ok 484 fok0qbA4Fww UK conversation a 262
+01:06:06 ok 485 OVts5whiY5Y UK conversation a 270
+01:06:21 ok 486 KgCyU8f5UbI UK conversation a 346
+01:06:36 ok 487 NG--e3VxMQo UK conversation a 345
+01:06:51 ok 488 TzLYolV_5L0 UK conversation a 353
+01:07:06 ok 489 LrV7H9FqLsE UK conversation a 325
+01:07:21 ok 490 7zm1vlrg6NY UK conversation a 281
+01:07:35 ok 491 fEacJtQbTko UK conversation a 262
+01:07:50 ok 492 yhWfaJKy4Fo UK conversation a 254
+01:08:05 ok 493 1-BRSuzNB2o UK conversation a 249
+01:08:20 ok 494 zHYpDnDykjo UK conversation a 301
+01:08:34 ok 495 4Utxe1JbiZ8 UK conversation a 210
+01:08:49 ok 496 SA6AWcQDU1U UK conversation a 365
+01:09:04 ok 497 xBcx9CvdHyU UK conversation a 347
+01:09:19 ok 498 9D609JUdDG8 UK conversation a 60
+01:09:33 ok 499 J-KKHoEQRHA UK conversation a 104
+01:09:48 ok 500 2eXHcmbqFFg UK conversation a 168
+01:10:03 ok 501 ftPWjaZrBCE UK conversation a 347
+01:10:18 ok 502 hEUsFFauEIw UK conversation a 332
+01:10:32 ok 503 -OknSRRyFJE UK conversation a 139
+01:10:47 skip (too short) SmYFpb15XbM
+01:10:50 ok 504 iRki2C-YsQo UK conversation a 220
+01:11:04 ok 505 QdBrS0MQJbg UK conversation a 229
+01:11:19 ok 506 hvBHUZsX9n8 UK conversation a 261
+01:11:34 ok 507 ilovOz2nnRw UK conversation a 400
+01:11:49 ok 508 LAYbOaKn8DY UK conversation a 195
+01:12:04 ok 509 LLLJwE6vr2k UK conversation a 161
+01:12:19 ok 510 AnNuM2C0HXY UK conversation a 246
+01:12:34 ok 511 ZyhFrcUP16w UK conversation a 249
+01:12:49 ok 512 F0sd7xR9d1g UK conversation a 130
+01:13:04 ok 513 nvhcPK_IsIQ UK conversation a 314
+01:13:19 ok 514 ogNynYq1IxE UK conversation a 221
+01:13:33 ok 515 c3BuBqR3clk UK conversation a 213
+01:13:48 ok 516 K8nOrxPxofA UK conversation a 305
+01:14:03 ok 517 fZLmMlF9YYE UK conversation a 266
+01:14:18 ok 518 16IrEk42fSo UK conversation a 493
+01:14:33 ok 519 lRLm43mINjQ UK conversation a 283
+01:14:48 ok 520 JE95ppOnv34 UK conversation a 291
+01:15:14 ok 521 t9ZixY5dIHI UK conversation a 255
+01:15:29 ok 522 IY2vTvzX4Jc UK conversation a 160
+01:15:44 ok 523 -UY6QKaU5j0 UK conversation a 109
+01:15:58 ok 524 e8TZBuw86cE UK conversation a 198
+01:16:13 ok 525 8s-4RRYJ9Hk UK conversation a 254
+01:16:28 ok 526 aDMUcltLBUw UK conversation a 289
+01:16:43 ok 527 O4fkjV2vFDo UK conversation a 135
+01:16:58 ok 528 pb2eUPPgBzs UK conversation a 158
+01:17:12 ok 529 nJNOJeFgMQw UK conversation a 229
+01:17:24 skip (title) _vBtCTSivMU GK Barry Opens Up About Rape Ordeal | Loose Women
+01:17:27 ok 530 69orG_4theU UK conversation a 182
+01:17:42 ok 531 4MHPdcJhUjU UK conversation a 241
+01:17:57 ok 532 j3xHLJtvdKs UK conversation a 189
+01:18:11 ok 533 rsywgHKLQ94 UK conversation a 209
+01:18:23 skip (title) PsqkF57r5bs Katie Responds to Abuse About Her Appearance From Online Tro
+01:18:26 ok 534 PY1Fj35lpRA UK conversation a 129
+01:18:41 ok 535 mluGd95ak7I UK conversation a 176
+01:18:56 ok 536 47wP-BNlD4g UK conversation a 164
+01:19:08 skip (title) 8o2nFlrx-5c The Ladies Share Their Holiday Horror Stories | Loose Women
+01:19:11 ok 537 h8V66IestoI UK conversation a 176
+01:19:25 ok 538 kQ4d4gry5Aw UK conversation a 166
+01:19:40 ok 539 7R2gnhJhvJo UK conversation a 182
+01:19:55 ok 540 CJHTIL2yS8U UK conversation a 129
+01:20:10 ok 541 m-bs--YGcGM UK conversation a 239
+01:20:24 ok 542 UyBAZ1aledU UK conversation a 218
+01:20:39 ok 543 2CqG9Nz3PuM UK conversation a 176
+01:20:54 ok 544 imCBzV4apKQ UK conversation a 300
+01:21:08 ok 545 HlkdlOLqy20 UK conversation a 136
+01:21:23 ok 546 vc-Za4zyytg UK conversation a 192
+01:21:38 ok 547 aJBJt8MUvw0 UK conversation a 188
+01:21:53 ok 548 h7wnuJM3Q1o UK conversation a 205
+01:22:05 skip (title) -uxs3XJOd1c Our Panel React To The Shocking News Of Ann Widdecombe's Sus
+01:22:08 ok 549 WKt1OUoZ97s UK conversation a 201
+01:22:22 ok 550 HIgswy7XCI4 UK conversation a 176
+01:22:37 ok 551 WtnqIMZ_8XE UK conversation a 335
+01:22:52 ok 552 SXpfBxD0lqs UK conversation a 267
+01:23:07 ok 553 LsSaIgaPmew UK conversation a 65
+01:23:22 ok 554 rHfTZBpH6ds UK conversation a 188
+01:23:36 ok 555 3c7c9pkWPjo UK conversation a 89
+01:23:52 ok 556 BoaZVy94Ucs UK conversation a 225
+01:24:06 ok 557 undY2AtgG6A UK conversation a 124
+01:24:21 ok 558 nbHVCh9HF9Q UK conversation a 225
+01:24:36 ok 559 eixDMuQnEs4 UK conversation a 153
+01:24:51 ok 560 Msm1oxIy020 UK conversation a 115
+01:25:18 skip (mostly music) Lr4C5n7FFaM
+01:25:20 ok 561 uteOTMS9CAY US movie m 34
+01:25:38 ok 562 j4Yp461emJE US movie m 28
+01:25:52 ok 563 for_t1ySDvk US movie m 47
+01:26:07 ok 564 IXQP43JjY4Q US movie m 48
+01:26:22 ok 565 mlBfQJ8oxB0 US movie m 25
+01:26:42 ok 566 iTVULmCgyR8 US movie m 33
+01:26:56 ok 567 U57CNxSgoss US movie m 22
+01:27:11 ok 568 E96wqnbhIgQ US movie m 27
+01:27:25 skip (too short) -rWIE3-SIOg
+01:27:31 ok 569 oIsysoq-u3A US movie m 20
+01:27:46 skip (too short) 7fDrlNje1iU
+01:27:48 ok 570 1MhhsJw7GSo US movie m 20
+01:28:03 skip (too short) o6zzXbitkM0
+01:28:09 ok 571 2Xn881UkR3s US movie m 26
+01:28:23 skip (too short) eRgc3C3ymCU
+01:28:26 ok 572 M43zGCEF_4s US movie m 24
+01:28:40 skip (mostly music) eokBqEFiVHs
+01:28:43 ok 573 M9NWvGZViCg US movie m 30
+01:28:59 ok 574 NKmm-eI3MIw US movie m 25
+01:29:14 ok 575 pOY-Q5DXfcI US movie m 21
+01:29:28 ok 576 zrOtmDQawas US movie m 25
+01:29:43 skip (bleeped words) 9HFLEy-nSro
+01:29:45 skip (too short) 6mGcxHF7b6k
+01:29:48 ok 577 B3tR6qQjbgI US movie m 37
+01:30:08 ok 578 kGVuOT6h11c US movie m 40
+01:30:22 ok 579 8KKx_f_V3Z4 US movie m 23
+01:30:37 ok 580 VNW5dSRPg0Q US movie m 22
+01:30:53 ok 581 OCZg5l9BfRg US movie m 32
+01:31:08 ok 582 01IeKpHvgvM US movie m 34
+01:31:24 skip (too short) CWbZBIrEfqI
+01:31:26 ok 583 5Z8oBbmkgXo US movie m 32
+01:31:41 skip (too short) SyeHKMfswHk
+01:31:43 skip (too short) 3oCx6HcYz9k
+01:31:46 ok 584 _NUMnS65nho US movie m 67
+01:32:00 skip (too short) gYTzF1vna40
+01:32:03 ok 585 Txk5C-452ak US movie m 29
+01:32:17 ok 586 OaOYc2J_E_U US movie m 46
+01:32:34 ok 587 -TMFe1kICY0 US movie m 20
+01:32:48 skip (too short) 093tE0S-n2E
+01:32:51 ok 588 PuNATO-6a9U US movie m 34
+01:33:09 ok 589 1epklvnxATo US movie m 37
+01:33:23 skip (too short) 4ROpWwIEoPg
+01:33:26 ok 590 vwOzGbMlvDk US movie m 51
+01:33:40 ok 591 W8jMEXwErvk US movie m 35
+01:33:55 skip (too short) 3CpJfFl18e4
+01:33:57 skip (too short) NjA5n52ZbT0
+01:34:01 ok 592 8wgC1XVGolE US movie m 33
+01:34:16 ok 593 VylsOZBYxQA US movie m 30
+01:34:30 ok 594 QS8oH0zscAY US movie m 24
+01:34:46 ok 595 Xs5qsfqp-tA US movie m 44
+01:35:02 skip (too short) EkQDfMLhRLM
+01:35:05 ok 596 utE1mDVY0cA US movie m 32
+01:35:19 skip (too short) Q1c7QmxGVZA
+01:35:22 skip (too short) hsOgBqDSi9M
+01:35:24 skip (too short) ZP_-xfWQ6_U
+01:35:29 ok 597 aVXvS3XzzHI US movie m 36
+01:35:43 ok 598 pePmU6Qu7IE US movie m 25
+01:35:59 ok 599 LK9Jl5Esyz4 US movie m 30
+01:36:14 skip (too short) kagQ-t_PvY8
+01:36:17 skip (title) 7_LOFaPmVDg Conversations with a Killer: The Charles Manson Tapes | Offi
+01:36:20 ok 600 H6RXVb_J5J4 US movie m 35
+01:36:45 ok 601 ntiC8RyPtzU US movie a 30
+01:37:03 ok 602 AygEd91rTvw US movie a 135
+01:37:18 ok 603 Lx6UCxKFcKo US movie a 21
+01:37:33 ok 604 p1Ks7L4AAek US movie a 251
+01:37:47 ok 605 xo2swVa5KPc US movie m 191
+01:38:02 skip (mostly music) kkhvqq5037M
+01:38:05 ok 606 4grK5biJbmk US movie a 405
+01:38:19 ok 607 yBH26u2-iq0 US movie m 35
+01:38:37 ok 608 c51ND9Hdbw0 US movie m 75
+01:38:52 ok 609 ovTeuWpwLkc US movie m 41
+01:39:06 skip (mostly music) JHfLGgOs6gY
+01:39:09 ok 610 sHBLVaIEwj4 US movie m 57
+01:39:23 ok 611 JhAzwl6pWq0 US movie m 75
+01:39:40 ok 612 fjbwYttZYiY US movie a 241
+01:39:55 ok 613 B9G71qT5eu4 US movie m 57
+01:40:09 ok 614 ylB5ssu9_Q4 US movie m 67
+01:40:24 ok 615 NQITqtfIMjY US movie m 32
+01:40:38 ok 616 PXTndVoqxe8 US movie m 43
+01:40:53 ok 617 98xLaH9rXjM US movie a 37
+01:41:09 ok 618 PypDSyIRRSs US movie m 70
+01:41:24 ok 619 Jzz2Nt4rrFA US movie m 66
+01:41:38 ok 620 a_Ghy12E61U US movie m 66
+01:41:53 ok 621 Fj8ia9t0mrg US movie a 109
+01:42:08 ok 622 TZOCUtoygtc US movie a 32
+01:42:24 skip (too short) mIJobTh_Xfs
+01:42:26 ok 623 hJnAHzo4-KI US movie m 58
+01:42:41 ok 624 vOGXgmv90c4 US movie m 36
+01:42:56 ok 625 vIMWju2grM8 US movie a 65
+01:43:11 ok 626 Auv_jRxX_zs US movie m 39
+01:43:25 ok 627 yH5zbV7eweM US movie a 31
+01:43:40 ok 628 GY7LnVJvNiU US movie m 48
+01:43:54 ok 629 is2meozrnx0 US movie m 63
+01:44:09 ok 630 Zse0zsBl5uI US movie a 46
+01:44:23 ok 631 uCH6SMB4ir8 US movie m 34
+01:44:38 ok 632 ETVi5_cnnaE US movie a 44
+01:44:53 ok 633 ksKbh3kwXcU US movie a 23
+01:45:07 ok 634 F_sWjXgSyrU US movie m 42
+01:45:22 ok 635 _XrHHHpg4RI US movie a 38
+01:45:36 ok 636 AhxGObicnPs US movie m 60
+01:45:51 ok 637 oTQb_j_sO44 US movie a 31
+01:46:06 ok 638 8ocanbiSyV4 US movie m 24
+01:46:20 ok 639 y7FvxlnRbPM US movie m 54
+01:46:35 ok 640 CTbJbuWIJNQ US movie m 24
+01:47:00 ok 641 kXq--MIxit8 US movie a 122
+01:47:15 ok 642 GVSKsUS0MZI US movie a 117
+01:47:30 skip (bleeped words) u_9DiAvt674
+01:47:35 skip (too short) 0lCkjhiyOWE
+01:47:35 skip (title) 1yySyLdLxvc Vindicta (2023) - Cop Kills (1/9) | Movieclips
+01:47:35 skip (title) ltfrPM5cKh8 The Strangers: Chapter 3 (2026) 4K - Killer's Caress (10/10)
+01:47:35 skip (title) 10z90wBUQdE The Strangers: Chapter 3 (2026) 4K - RV Double Kill (9/10) |
+01:47:35 skip (title) p8WrUbzAnHk The Strangers: Chapter 3 (2026) 4K - Forced to Kill (8/10) |
+01:47:40 ok 643 DgS8U0MgPmM US movie a 22
+01:47:58 ok 644 wtXWm8P8Jz4 US movie a 24
+01:48:13 ok 645 38ZUqEuhjfw US movie a 24
+01:48:28 ok 646 Uz677AhDXPw US movie a 42
+01:48:43 skip (too short) Zxr40Pr1oCg
+01:48:46 skip (title) lGO1fpcoH9k Critters 2: The Main Course (1988) - Aww... Baby Critters (T
+01:48:46 skip (title) eY4Y509JUgg Carrie (1976) - Carrie Kills Her Mother (12/12) | Movieclips
+01:49:01 ok 647 vCVxkhD0xx8 US movie a 41
+01:49:15 ok 648 9zajUcWNRBE US movie a 29
+01:49:30 ok 649 Nrr0kC18a0c US movie a 59
+01:49:45 ok 650 SMY0QLYZ-ew US movie a 46
+01:50:00 ok 651 R0AXfr6ln94 US movie a 73
+01:50:17 ok 652 -4ef_w5zGL0 US movie a 39
+01:50:32 ok 653 DEbLlM3Id68 US movie a 60
+01:50:48 ok 654 andEv8mgw6A US movie a 34
+01:51:05 ok 655 RqlFKkodOKI US movie a 32
+01:51:22 ok 656 0mYgBQekanE US movie a 55
+01:51:37 skip (mostly music) 62UnyhozoCI
+01:51:37 skip (title) UWihRWXz3Wc Horror of Dracula (1958) - Van Helsing vs. Dracula (10/10) |
+01:51:37 skip (title) utJQd1QixUU Horror of Dracula (1958) - Dracula Kidnapped Mina! (9/10) | 
+01:51:37 skip (title) AWE4LvfYetA Horror of Dracula (1958) - Dracula Seduces Mina (8/10) | Mov
+01:51:37 skip (title) FtttxJngz-Y Horror of Dracula (1958) - Mina's a Vampire! (7/10) | Moviec
+01:51:37 skip (title) IpQNVIwMutk Horror of Dracula (1958) - Van Helsing Stakes Lucy (6/10) | 
+01:51:37 skip (title) CujO1WF-VXw Horror of Dracula (1958) - Van Helsing Burns Lucy With a Cro
+01:51:37 skip (title) cw4Sbe69mXA Horror of Dracula (1958) - Lucy Can't STAND Garlic (4/10) | 
+01:51:37 skip (title) yAeW7wduug8 Horror of Dracula (1958) - Dracula Comes for Lucy (3/10) | M
+01:51:37 skip (title) toNOG6qoYZ8 Horror of Dracula (1958) - Staking the Vampire Woman (2/10) 
+01:51:37 skip (title) u32nIQTZSRA Horror of Dracula (1958) - Dracula Saves Jonathan Harker (1/
+01:51:40 ok 657 I6WcAI26gxY US movie a 181
+01:52:09 skip (too short) nHmYHnwTQwg
+01:52:16 ok 658 b8p4MDLlpUI US movie a 20
+01:52:32 ok 659 b4n-vr9ze68 US movie a 26
+01:52:47 ok 660 E3JniXCqx0Y US movie a 33
+01:53:02 ok 661 InkCKgI847Y US movie a 57
+01:53:17 ok 662 SDYZ7__-I5M US movie a 30
+01:53:32 skip (too short) y3MknfbfOWM
+01:53:35 skip (too short) B1-tbQi-mJI
+01:53:38 ok 663 GSg7j9rBJ8o US movie a 35
+01:53:53 ok 664 0W-T9tHRCKc US movie a 29
+01:54:08 skip (mostly music) 8gimpo1A6yc
+01:54:15 skip (too short) XbaJFTTGTvc
+01:54:17 ok 665 uOQNDJvE9dw US movie a 85
+01:54:32 ok 666 zyUP1XXW8Ao US movie a 50
+01:54:47 ok 667 RQTI9XGw1nI US movie a 20
+01:55:02 ok 668 PaVQrZrOMTg US movie a 22
+01:55:16 ok 669 Z2ubtH7lP4Y US movie a 61
+01:55:31 ok 670 CcC8Gb4bQHw US movie a 70
+01:55:45 ok 671 _4FMGYD5yk8 US movie a 29
+01:56:00 ok 672 ClHB9G4fVf0 US movie a 48
+01:56:15 ok 673 e3xMqBoXz8s US movie a 79
+01:56:30 ok 674 8g1o1MvKHPU US movie a 47
+01:56:45 ok 675 YaXKTYyu2vM US movie a 34
+01:57:00 ok 676 4FiKqFGspx0 US movie a 29
+01:57:14 ok 677 XE7VtEv-G74 US movie a 68
+01:57:26 skip (title) jpFnXMkihJ4 Ghosts of Girlfriends Past (2009) - Haunted by Sexcapades?! 
+01:57:29 ok 678 WjDM4N4X9y0 US movie a 53
+01:57:44 ok 679 -kf7XEyypQE US movie a 89
+01:58:00 ok 680 94Ljsz47seQ US movie a 61
+01:58:24 skip (too short) P0IMFLesX2c
+01:58:28 skip (too short) GFxZN5rteXk
+01:58:30 skip (too short) ESEc6W2h9_k
+01:58:33 skip (mostly music) LIsfMO5Jd_w
+01:58:35 skip (too short) 03fxznugXDo
+01:58:37 skip (too short) PayWxZ8wU8E
+01:58:40 skip (bleeped words) ZeMzWJSQaMw
+01:58:42 skip (too short) P-_WVVgNVvc
+01:58:45 ok 681 x-8c4SrucAo US movie m 74
+01:59:01 ok 682 KbU50SdL8zA US movie m 20
+01:59:16 skip (too short) bn9i2f996sM
+01:59:18 skip (too short) 1p9vb3HbkuU
+01:59:20 skip (too short) OJvWTTTBA_M
+01:59:23 ok 683 3UgNRGsQeuc US movie m 61
+01:59:37 skip (too short) 7wcAyvxOOaI
+01:59:40 skip (too short) sI0KIiUBuT8
+01:59:44 ok 684 tK-X_sMdsT0 US movie m 81
+02:00:10 clips collected this run: 684 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 684
