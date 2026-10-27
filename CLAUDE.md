@@ -9,6 +9,34 @@ A YouGlish-style listening site for Thai learners of English: search a word or p
 ## Start here (handoff for the next session)
 Last updated 2026-10-27.
 
+### Next session: the owner's standing request (2026-10-27)
+The owner wants clips **grouped by what they teach**, so a learner can pick a topic rather than a word. Two parts,
+in this order:
+
+**Part 1 — group the real speech that is already here (do this first).** A survey of all 5,240 clips that day
+found the corpus is almost entirely real media: conversation 1,363, series 995, kids 938, movie 923, ted 299,
+news 292, tv 186, documentary 134, interview 85 — and only **25 clips of `learning`**, all from BBC Learning
+English. Matching teaching keywords against titles returned 0 for grammar, 0 for exam prep, 0 for vocabulary,
+0 for writing and 0 for reading. So categories named after lesson types would be empty, and the useful split is
+by the language the clips actually contain: questions, negatives, imperatives, past, future (will / going to),
+continuous, modals, passive, if-clauses. This is the same tagging the "communicative curriculum" section at the
+end of this file needs, so build it once and let both use it. `CLAUDE.md` already notes the plan to tag lines
+with spaCy at build time (`tools/build_data.py`); the alternative is regex over caption lines in the browser,
+cheap but less accurate — weigh them with the owner before starting. Reuse `#useChips` and `useAssign()` in
+index.html; they already do exactly this shape of work for one searched word.
+
+**Part 2 — collect more teaching clips.** Note before adding anything: ten teaching channels are **already** in
+`tools/channels.tsv` (@EnglishClass101, @EnglishwithLucy, @JenniferESL, @LearnEnglishWithTVSeries,
+@OxfordOnlineEnglish, @SpeakEnglishWithVanessa, @VOALearningEnglish, @bbclearningenglish, @mmmEnglish,
+@rachelsenglish) and have produced only those 25 clips between them. `learning` is tier 1 in `build_data.TIER`
+and the collector visits tier-0 channels first, so these are reached late in a run; @VOALearningEnglish also has
+no caption tracks at all. Find out which of the two it is before adding more channels, or the same thing will
+happen again.
+
+**On skills:** the owner asked for ฟัง / พูด / อ่าน / เขียน as categories. The site plays video, so it serves listening and
+speaking directly; reading and writing could only ever be *clips about* reading and writing, not practice at
+them. That was explained to the owner and is worth repeating rather than quietly building empty tabs.
+
 ### Status
 - 2026-10-27: a GoatCounter visitor counter is now on every page (`fangkham.goatcounter.com`, one async script
   tag at the end of index.html). It sets no cookie and keeps no personal data, so the site needs no consent
