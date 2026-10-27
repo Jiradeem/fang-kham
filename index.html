@@ -702,27 +702,12 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
 
       <div class="panel" id="practicePanel">
         <div class="tabs" role="tablist">
-          <button role="tab" aria-selected="true" data-tab="speak">พูดตาม</button>
-          <button role="tab" aria-selected="false" data-tab="dict">ฟังแล้วพิมพ์</button>
+          <button role="tab" aria-selected="true" data-tab="dict">ฟังแล้วพิมพ์</button>
           <button role="tab" aria-selected="false" data-tab="use">แต่งประโยค</button>
           <button role="tab" aria-selected="false" data-tab="quiz">ควิซเติมคำ</button>
           <button role="tab" aria-selected="false" data-tab="pairs">แยกเสียง</button>
         </div>
-        <div data-pane="speak">
-          <p class="hint">ฟังประโยคแล้วพูดตาม ระบบจะฟังเสียงแล้วบอกว่าคำไหนตรง (ใช้ได้ดีที่สุดใน Chrome)</p>
-          <div class="target" id="spTarget"></div>
-          <div class="row">
-            <button class="btn primary" id="bSpeak">🎙 เริ่มพูด</button>
-          </div>
-          <div class="row"><span class="score" id="spScore"></span><span class="diff" id="spDiff"></span></div>
-          <div class="hint" id="spHeard"></div>
-          <div class="row" style="border-top:1px dashed var(--line);padding-top:10px">
-            <button class="btn" id="bShadow">▶ ฝึกพูดตามต่อเนื่อง</button>
-            <span class="status" id="shStatus"></span>
-          </div>
-          <p class="hint" style="margin:6px 0 0">เว็บจะเล่นทีละประโยค หยุดรอให้พูดตาม ให้คะแนน แล้วไปประโยคถัดไปเอง</p>
-        </div>
-        <div data-pane="dict" hidden>
+        <div data-pane="dict">
           <p class="hint">ซับจะถูกซ่อน กด "ฟังซ้ำ" ได้หลายครั้ง แล้วพิมพ์ประโยคที่ได้ยิน</p>
           <textarea id="dictIn" rows="3" placeholder="พิมพ์สิ่งที่ได้ยิน…"></textarea>
           <div class="row"><button class="btn primary" id="bCheck">ตรวจคำตอบ</button><button class="btn" id="bDictReplay">↻ ฟังซ้ำ</button></div>
@@ -1125,7 +1110,7 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
   let tabs = null;
   try { tabs = new BroadcastChannel('fang-kham-player'); tabs.onmessage = () => { try { if (playerReady) player.pauseVideo(); } catch (e) {} }; } catch (e) {}
   document.addEventListener('visibilitychange', () => {
-    if (document.hidden) { clearTimeout(autoplayTimer); try { if (playerReady) player.pauseVideo(); } catch (e) {} if (shadow.on) stopModes(); }
+    if (document.hidden) { clearTimeout(autoplayTimer); try { if (playerReady) player.pauseVideo(); } catch (e) {} }
   });
   function turnSoundOn() { try { player.unMute(); player.setVolume(100); } catch (e) {} autoMuted = false; $('unmute').hidden = true; }
   // The first click or key press anywhere lifts the browser's block; undo our own muting then, once.
@@ -1135,7 +1120,7 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
   }, true));
   $('unmute').onclick = () => { turnSoundOn(); try { player.playVideo(); } catch (e) {} };
 
-  // The line being studied: a search hit, or a line picked by the quiz or the shadowing mode.
+  // The line being studied: a search hit, or a line picked by the quiz.
   function hitSeg() { return st.override !== null ? st.override : st.hits.length ? st.hits[st.idx] : -1; }
 
   function show() {
@@ -1343,16 +1328,15 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
     const t = player.getCurrentTime(), hs = C.s[hitSeg()];
     if (!hs) return;
     const hsen = sentence(hitSeg());
-    if (st.loop && !shadow.on && t > hsen.t1 + 0.4) { player.seekTo(Math.max(0, hsen.t0 - 0.3), true); return; }
+    if (st.loop && t > hsen.t1 + 0.4) { player.seekTo(Math.max(0, hsen.t0 - 0.3), true); return; }
     const vi = hs[0];
     let lo = vStart[vi], hi = vEnd[vi], found = -1;
     while (lo <= hi) { const mid = (lo + hi) >> 1; if (C.s[mid][1] <= t + 0.15) { found = mid; lo = mid + 1; } else hi = mid - 1; }
     // Keep the searched sentence on screen during the lead-in before it is spoken.
     if (found < hsen.a && t < hsen.t0 && t > hsen.t0 - 3) found = hsen.a;
-    if (found >= 0 && found !== shownSeg && !shadow.on) renderSub(found);
+    if (found >= 0 && found !== shownSeg) renderSub(found);
     try { if (!$('unmute').hidden && !player.isMuted()) $('unmute').hidden = true; } catch (e) {}
     karaokeTick(t);
-    shadowTick(t);
   }, 200);
 
   // ---------- controls ----------
@@ -1493,89 +1477,14 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
     return { score: a.length ? Math.round(ok / a.length * 100) : 0, html: out.map(([k, w]) => '<span class="' + k + '">' + escHtml(w) + '</span>').join(' ') };
   }
   function targetText() { const s = C.s[hitSeg()]; return s ? s[3] : ''; }
-  function updatePracticeLine() { $('spTarget').textContent = targetText() || '—'; $('spScore').textContent = ''; $('spDiff').innerHTML = ''; }
   function updatePractice() {
-    $('spTarget').textContent = targetText() || '—';
-    $('spScore').textContent = ''; $('spDiff').innerHTML = ''; $('spHeard').textContent = '';
     $('dictIn').value = ''; $('dictScore').textContent = ''; $('dictDiff').innerHTML = '';
     $('useWord').textContent = st.q || '…';
     $('useMsg').textContent = '';
     renderWord(st.q.split('|')[0]);
   }
 
-  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
-  let rec = null;
-  $('bSpeak').onclick = () => {
-    if (!SR) { $('spHeard').textContent = 'เบราว์เซอร์นี้ไม่รองรับการฟังเสียง กรุณาใช้ Google Chrome บนคอมพิวเตอร์หรือ Android'; return; }
-    if (rec) { rec.stop(); return; }
-    if (playerReady) player.pauseVideo();
-    listen(() => {});
-  };
-  // Listen once and score against the current line; done(score or null) runs when listening ends.
-  function listen(done) {
-    rec = new SR();
-    const v = C.v[C.s[hitSeg()]?.[0]];
-    rec.lang = LANG[v ? v[4] : 'All']; rec.interimResults = true; rec.maxAlternatives = 1;
-    $('bSpeak').textContent = '■ หยุดฟัง'; $('spHeard').textContent = 'กำลังฟัง… พูดได้เลย';
-    let finalText = '';
-    rec.onresult = e => {
-      let txt = '';
-      for (const r of e.results) txt += r[0].transcript + ' ';
-      finalText = txt; $('spHeard').textContent = 'ได้ยินว่า: ' + txt;
-      const c = compare(targetText(), txt); $('spScore').textContent = c.score + '%'; $('spDiff').innerHTML = c.html;
-    };
-    rec.onerror = e => { $('spHeard').textContent = e.error === 'not-allowed' ? 'กรุณาอนุญาตให้ใช้ไมโครโฟน' : 'ฟังไม่สำเร็จ (' + e.error + ') ลองใหม่อีกครั้ง'; };
-    rec.onend = () => {
-      rec = null; $('bSpeak').textContent = '🎙 เริ่มพูด';
-      if (!finalText && !/กรุณา|ไม่สำเร็จ/.test($('spHeard').textContent)) $('spHeard').textContent = 'ไม่ได้ยินเสียง ลองพูดดังขึ้นอีกนิด';
-      const sc = finalText ? compare(targetText(), finalText).score : null;
-      if (sc !== null) track('speak', sc);
-      done(sc);
-    };
-    rec.start();
-  }
-
-  // ---------- continuous shadowing ----------
-  const shadow = { on: false, phase: '', scores: [] };
-  function shadowPlay(si) {
-    st.override = si; shadow.phase = 'play';
-    setLoop(false);
-    renderClip(si); updatePracticeLine();
-    $('shStatus').textContent = 'ฟัง…';
-  }
-  function shadowTick(t) {
-    if (!shadow.on || shadow.phase !== 'play') return;
-    const s = C.s[st.override];
-    if (t < s[1] + s[2] + 0.15) return;
-    player.pauseVideo(); shadow.phase = 'listen';
-    $('shStatus').textContent = 'พูดตามได้เลย 🎙';
-    const after = score => {
-      if (!shadow.on) return;
-      if (score !== null) shadow.scores.push(score);
-      const avg = shadow.scores.length ? Math.round(shadow.scores.reduce((a, b) => a + b, 0) / shadow.scores.length) : null;
-      $('shStatus').textContent = (score !== null ? 'ได้ ' + score + '% · ' : '') + (avg !== null ? 'เฉลี่ย ' + avg + '%' : '');
-      shadow.phase = 'gap';
-      setTimeout(() => {
-        if (!shadow.on) return;
-        const next = st.override + 1;
-        if (C.s[next] && C.s[next][0] === s[0]) shadowPlay(next);
-        else { stopModes(); $('shStatus').textContent = 'จบคลิปแล้ว' + (avg !== null ? ' · คะแนนเฉลี่ย ' + avg + '%' : ''); }
-      }, 1800);
-    };
-    if (SR) listen(after);
-    else setTimeout(() => after(null), Math.max(2500, s[2] * 1500));
-  }
-  $('bShadow').onclick = () => {
-    if (shadow.on) { stopModes(); $('shStatus').textContent = 'หยุดแล้ว'; backToHit(); return; }
-    const si = shownSeg >= 0 ? shownSeg : hitSeg();
-    if (si < 0) return;
-    stopModes();
-    shadow.on = true; shadow.scores = [];
-    $('bShadow').textContent = '■ หยุดฝึก';
-    shadowPlay(si);
-  };
   function stopModes() {
-    if (shadow.on) { shadow.on = false; $('bShadow').textContent = '▶ ฝึกพูดตามต่อเนื่อง'; if (rec) rec.stop(); }
     if (quiz.on) quizEnd(false);
     if (pairGame.on) pairEnd(false);
     if (!$('rCard').hidden) { $('rCard').hidden = true; setLoop(false); setHide(false); }
@@ -1650,7 +1559,7 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
     }
   }
   // After a quiz or shadowing run, return the player to the searched word.
-  function backToHit() { if (st.hits.length) { renderClip(hitSeg()); updatePracticeLine(); } }
+  function backToHit() { if (st.hits.length) renderClip(hitSeg()); }
 
   $('bCheck').onclick = () => {
     const c = compare(targetText(), $('dictIn').value);
@@ -2127,7 +2036,7 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
     const si = list[n];
     stopModes();
     st.override = si; setLoop(false);
-    renderClip(si); updatePracticeLine();
+    renderClip(si);
     if (b.dataset.w) renderWord(b.dataset.w);
     b.querySelector('small') && list.length > 1 && (b.title = 'จุดที่ ' + (n + 1) + ' จาก ' + list.length);
   });
@@ -2200,7 +2109,7 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
     const vi = C.v.findIndex(v => v[0] === b.dataset.wk); if (vi < 0) return;
     stopModes(); st.lesson = null; st.thq = ''; thaiChips = null;
     runSearch(DH_TERMS ? 'moment' : 'understanding');
-    st.override = vStart[vi]; showView('search'); renderClip(vStart[vi]); updatePracticeLine();
+    st.override = vStart[vi]; showView('search'); renderClip(vStart[vi]);
     $('headline').innerHTML = 'บทเรียนจากคลิป <em>' + escHtml(C.v[vi][1]) + '</em>'; $('count').textContent = ''; $('thBar').hidden = true;
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
