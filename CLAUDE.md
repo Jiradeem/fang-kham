@@ -122,6 +122,24 @@ What we learned while collecting:
 - Classroom filter results on the first big run: 37 clips dropped for titles (murder, drugs, sexual crimes…), 25 mostly music (Sesame Street songs), 7 with many bleeped words. Watch for false positives (a title with "Stablecoins" once matched "stab").
 - The free translation services (MyMemory, translate.googleapis.com gtx) refuse cloud IPs but work from a normal home connection.
 
+## Money and copyright (decided 2026-10-27; do not undo without the owner saying so)
+The owner asked whether students could be charged, YouGlish-style, and whether metering clips (20 free, then pay)
+would be allowed. Both were researched and declined:
+- **Never charge to watch a clip, and never meter them.** YouTube's API Services Developer Policies III.F:
+  "API Clients must not charge users to watch content in an embedded YouTube player", and developers may not
+  charge for what YouTube gives away free. The site uses the IFrame Player API, so this binds it. A free
+  allowance followed by a paywall is still charging to watch.
+- **Staying free also protects the stored captions.** `data-pNNNN.js` holds ~834,000 caption lines, which are
+  the channel owners' copyright. The site relies on the teaching/study exception of the Thai Copyright Act
+  (ม.32), which needs the use to be non-commercial. Charging would remove that footing on both sides at once.
+- **Do not add a way to read a whole transcript.** The snippet-sized display is what keeps the position
+  defensible: the strip shows the matched sentence plus one line either side, and `renderGuide()` picks at most
+  6 sentences per clip. Keep those caps.
+- Income comes from the owner's own CEFR course instead. `#joinCard` in index.html invites learners to it after
+  20, 100 and 400 searches; it is dismissible and blocks nothing. Edit that markup to change the wording or link.
+- The About box carries the source credits, states that no video is downloaded, and promises removal within
+  48 hours on request (`tools/corpus-skip.json` is how a clip is taken out). Keep all three.
+
 ## Constraints and decisions
 - claude.ai Artifacts cannot embed YouTube iframes, so the site is hosted on GitHub Pages instead.
 - Opening `index.html` from a local file may stop YouTube from playing; always test through a web server (`python3 -m http.server`).

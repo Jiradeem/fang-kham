@@ -179,6 +179,13 @@ textarea, .panel input[type="text"] { width: 100%; border: 1.5px solid var(--lin
 .thbar button.cur small { color: inherit; }
 .thbar button:disabled { opacity: .45; cursor: default; }
 .usebar { margin: -2px 0 10px; }
+.join { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 0 0 12px; padding: 12px 14px; border: 1.5px solid var(--accent); border-radius: 14px; background: var(--accent-soft); }
+.join-txt { flex: 1 1 260px; min-width: 0; font-size: 14px; line-height: 1.5; }
+.join-txt b { display: block; font-size: 15.5px; margin-bottom: 2px; }
+.join-txt span { color: var(--muted); }
+.join-go { flex: none; background: var(--coral); color: #fff; border-radius: 999px; padding: 8px 16px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.join-x { flex: none; background: none; border: 0; color: var(--muted); font-size: 16px; line-height: 1; padding: 6px; cursor: pointer; }
+@media (max-width: 720px) { .join-go { width: 100%; text-align: center; } }
 .usebar .label { min-width: auto; margin-right: 2px; }
 @media (max-width: 720px) { .usebar { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; } .usebar::-webkit-scrollbar { display: none; } .usebar .chip { flex: none; } }
 .tips { margin-top: 10px; border-top: 1px dashed var(--line); padding-top: 8px; }
@@ -602,6 +609,15 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
   </section>
   </details>
 
+  <aside class="join" id="joinCard" hidden>
+    <div class="join-txt">
+      <b>อยากเรียนเป็นระบบตามระดับ CEFR ไหม?</b>
+      <span>ฟังคำจริงใช้ฟรีเสมอ ดูคลิปได้ไม่จำกัด · ถ้าอยากมีครูจัดลำดับบทเรียนให้ ตรวจงานให้ และพาไปทีละระดับ A1 → C1 ดูคอร์สของครูดรีมได้ที่เว็บหลัก</span>
+    </div>
+    <a class="join-go" href="https://dreamenglishlearning.com/" target="_blank" rel="noopener">ดูคอร์ส CEFR ↗</a>
+    <button type="button" class="join-x" id="joinClose" aria-label="ปิดคำเชิญชวน">✕</button>
+  </aside>
+
   <main class="stage">
     <section aria-live="polite">
       <div class="result-head">
@@ -798,7 +814,7 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
       <p class="hint" style="margin:8px 0 0"><b>แหล่งที่มา:</b> วิดีโอทุกคลิปเล่นผ่านเครื่องเล่นของ YouTube จากช่องทางการของเจ้าของ (TED, BBC, PBS, CBC, ABC, RTÉ, RNZ, NBC, Warner Bros. และอื่น ๆ) ลิขสิทธิ์เป็นของเจ้าของแต่ละช่อง ·
         คลิปสนทนาธรรมจากช่อง International Dhamma Discussions และ Studying Dhamma with Ajahn Sujin ของมูลนิธิศึกษาและเผยแพร่พระพุทธศาสนา (บ้านธัมมะ) · อภิธานศัพท์บาลีจาก <a href="https://www.dhammahome.com/article_en/section/4" target="_blank" rel="noopener">dhammahome.com</a> ·
         พจนานุกรมจาก Free Dictionary API และ Wiktionary · คำแปลอัตโนมัติจาก MyMemory / Google แปล</p>
-      <p class="hint" style="margin:6px 0 0"><b>สำหรับเจ้าของเนื้อหา:</b> หากต้องการให้นำคลิป ซับไตเติล หรือข้อความใดออก กรุณาติดต่อทางอีเมลหรือ LINE ด้านบน เราจะนำออกโดยเร็ว</p>
+      <p class="hint" style="margin:6px 0 0"><b>สำหรับเจ้าของเนื้อหา:</b> เว็บนี้ไม่ได้ดาวน์โหลดวิดีโอ ทุกคลิปเล่นผ่านเครื่องเล่นของ YouTube และมีลิงก์กลับไปต้นทางเสมอ · เก็บเฉพาะข้อความซับไว้เพื่อใช้ค้นหา และแสดงให้ผู้เรียนเห็นเพียงประโยคที่ค้นเจอกับบริบทสั้น ๆ ไม่เปิดให้อ่านซับทั้งคลิป · หากต้องการให้นำคลิป ซับไตเติล หรือข้อความใดออก กรุณาติดต่อทางอีเมลหรือ LINE ด้านบน <b>เราจะนำออกภายใน 48 ชั่วโมง</b></p>
     </section>
     <div id="stats"></div>
     <div>คลิปทั้งหมดเล่นผ่านเครื่องเล่น YouTube จากช่องทางการของเจ้าของ · สำเนียงกำหนดตามประเทศของช่อง ผู้พูดบางคนอาจมีสำเนียงต่างออกไป · ซับที่ติดป้าย "auto" สร้างโดยระบบอัตโนมัติของ YouTube อาจคลาดเคลื่อนบ้าง</div>
@@ -1739,7 +1755,25 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
     q = (q || '').trim(); if (!q) return; stopModes();
     if (isThai(q)) { st.lesson = null; $('q').value = q; thaiSearch(q); return; }
     st.thq = ''; thaiChips = null; st.lesson = null;
-    q = norm(q); renderSetWords(q); $('q').value = q; runSearch(q); const h = store.get('history', []).filter(x => x !== q); h.unshift(q); store.set('history', h.slice(0, 50)); }
+    q = norm(q); renderSetWords(q); $('q').value = q; runSearch(q); bumpSearches(); const h = store.get('history', []).filter(x => x !== q); h.unshift(q); store.set('history', h.slice(0, 50)); }
+  // ---------- course invitation ----------
+  // The site stays free and nothing here gates a clip: YouTube's developer policies forbid charging to watch
+  // content in an embedded player, and being free is also what keeps the teaching exception of Thai copyright
+  // law (ม.32) available for the stored captions. So the owner's own CEFR course is offered instead, once the
+  // learner has searched enough to find the site useful. One card, dismissible, and it stays dismissed until
+  // the next milestone. To change the wording or the link, edit #joinCard in the markup above.
+  const JOIN_AT = [20, 100, 400];
+  function renderJoin() {
+    const el = $('joinCard');
+    const n = +store.get('searches', 0) || 0, hid = +store.get('joinHid', 0) || 0;
+    let t = 0; JOIN_AT.forEach(x => { if (n >= x) t = x; });
+    el.dataset.t = t;
+    el.hidden = !t || hid >= t;
+  }
+  function bumpSearches() { store.set('searches', (+store.get('searches', 0) || 0) + 1); renderJoin(); }
+  $('joinClose').onclick = () => { store.set('joinHid', +$('joinCard').dataset.t || 0); renderJoin(); };
+  renderJoin();
+
   function setUrl() { try { const u = new URL(location.href); if (st.lesson) { u.searchParams.delete('q'); u.searchParams.set('lesson', st.lesson.id); } else { u.searchParams.delete('lesson'); u.searchParams.set('q', st.thq || st.q); } if (st.acc !== 'All') u.searchParams.set('acc', st.acc); else u.searchParams.delete('acc'); history.replaceState(null, '', u); } catch (e) {} }
   $('searchForm').addEventListener('submit', e => { e.preventDefault(); go($('q').value); });
 
