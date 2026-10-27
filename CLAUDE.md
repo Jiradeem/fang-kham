@@ -10,6 +10,10 @@ A YouGlish-style listening site for Thai learners of English: search a word or p
 Last updated 2026-10-27.
 
 ### Status
+- 2026-10-27: a GoatCounter visitor counter is now on every page (`fangkham.goatcounter.com`, one async script
+  tag at the end of index.html). It sets no cookie and keeps no personal data, so the site needs no consent
+  banner. Nothing was counted before this, so the owner's first real visitor numbers start from this date;
+  the free plan keeps 6 months of history. Removing the one script tag turns it off.
 - 2026-10-27: the home job is confirmed working — three "Add clips collected on the home computer" commits that day, the last collecting round saving 687 clips with no HTTP 429 and no "blocked by YouTube". Next steps item 1 is therefore done. Added the same day: usage groups above the player (see "Features").
 - 2026-10-24 follow-up: the home run published 16 new clips at 17:58 Thai time (1,237 total). A direct diagnostic reproduced HTTP 429 on a caption download. The collector now pauses the whole run on caption HTTP 429, refreshes the same clip's metadata, and retries at most three times (20/40/80 minutes with the nightly settings, or longer if Retry-After requires it). It stops when the remaining collection time is insufficient, preserving already saved clips for the normal merge/publish step. This handles rate limiting; it does not guarantee a nightly clip count. Regression tests: `python -B -I test_rate_limit.py` (7 cases); merge/recount checked with two fixture clips without changing existing parts; browser checks passed at widths 1366 and 390, light and dark.
 - General corpus: 4,590 clips (833,979 lines) in 45 parts, format 2 (on-demand parts, see below), cap 30,000. 128 official channels in `tools/channels.tsv`.
@@ -38,7 +42,7 @@ Some caption tracks always answer HTTP 429 while others download fine. Any 429 u
 3. **New learning features the owner liked** (from a survey of PlayPhrase, Language Reactor, LyricsTraining, Voscreen, EnglishCentral, ELSA): (1) "play all clips in a row" for a word, (2) gap-fill dictation with levels 10/25/50/100% and letter-count dots, write or choose mode, (4) Thai translation blurred until hovered/tapped. Later: (3) timed meaning game, (5) Anki/Quizlet export, (6) per-clip lesson with a total score, (7) points.
 4. **Watch phone data**: a common phrase may load many 1 MB parts (`ENOUGH = 80`, `BATCH = 3` in index.html). If the corpus passes ~15,000 clips and searches feel slow on phones, split the index by two letters and lower `ENOUGH`.
 5. **Communicative curriculum A1 → C1** (agreed earlier, not started; see the section at the end).
-6. Small items waiting for the owner: link "ฟังคำจริง" from the main site's menu "คลังสื่อ" (main site is on Netlify, code not here); GoatCounter visitor counter (needs the owner's code); permission e-mail to the Baan Dhamma foundation (offered, not written); a nicer address such as listen.dreamenglishlearning.com (the owner made a Cloudflare account on 2026-10-24 but it is **not used**; the Cloudflare server plan was replaced by on-demand parts).
+6. Small items waiting for the owner: link "ฟังคำจริง" from the main site's menu "คลังสื่อ" (main site is on Netlify, code not here); permission e-mail to the Baan Dhamma foundation (offered, not written); a nicer address such as listen.dreamenglishlearning.com (the owner made a Cloudflare account on 2026-10-24 but it is **not used**; the Cloudflare server plan was replaced by on-demand parts).
 
 ### About the owner (follow these)
 - English teacher (not a researcher, not a nursing teacher for this project). Their own site is https://dreamenglishlearning.com (on Netlify; its code is not in this repo). Contact on the site: LINE @154yrgoe and dreamenglishlearningthai@gmail.com (already in the About box).
