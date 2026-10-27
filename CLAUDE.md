@@ -13,7 +13,13 @@ Last updated 2026-10-27.
 - 2026-10-27: a GoatCounter visitor counter is now on every page (`fangkham.goatcounter.com`, one async script
   tag at the end of index.html). It sets no cookie and keeps no personal data, so the site needs no consent
   banner. Nothing was counted before this, so the owner's first real visitor numbers start from this date;
-  the free plan keeps 6 months of history. Removing the one script tag turns it off.
+  the free plan keeps 6 months of history. Removing the one script tag turns it off. The footer also shows
+  the running total (`#hitsWrap`), which needs "Allow adding visitor counts on your website" switched on in
+  the GoatCounter site settings; the line hides itself whenever no number comes back.
+  **This container cannot reach goatcounter.com, gc.zgo.at or jiradeem.github.io** (the network policy blocks
+  them, and a blocked request returns an empty body, which reads exactly like a missing tag). Do not try to
+  verify the live site or the counter with curl from here — check the deploy with
+  `gh api repos/Jiradeem/fang-kham/deployments` and ask the owner what their browser shows.
 - 2026-10-27: the home job is confirmed working — three "Add clips collected on the home computer" commits that day, the last collecting round saving 687 clips with no HTTP 429 and no "blocked by YouTube". Next steps item 1 is therefore done. Added the same day: usage groups above the player (see "Features").
 - 2026-10-24 follow-up: the home run published 16 new clips at 17:58 Thai time (1,237 total). A direct diagnostic reproduced HTTP 429 on a caption download. The collector now pauses the whole run on caption HTTP 429, refreshes the same clip's metadata, and retries at most three times (20/40/80 minutes with the nightly settings, or longer if Retry-After requires it). It stops when the remaining collection time is insufficient, preserving already saved clips for the normal merge/publish step. This handles rate limiting; it does not guarantee a nightly clip count. Regression tests: `python -B -I test_rate_limit.py` (7 cases); merge/recount checked with two fixture clips without changing existing parts; browser checks passed at widths 1366 and 390, light and dark.
 - General corpus: 4,590 clips (833,979 lines) in 45 parts, format 2 (on-demand parts, see below), cap 30,000. 128 official channels in `tools/channels.tsv`.

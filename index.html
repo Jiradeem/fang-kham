@@ -817,6 +817,7 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
       <p class="hint" style="margin:6px 0 0"><b>สำหรับเจ้าของเนื้อหา:</b> เว็บนี้ไม่ได้ดาวน์โหลดวิดีโอ ทุกคลิปเล่นผ่านเครื่องเล่นของ YouTube และมีลิงก์กลับไปต้นทางเสมอ · เก็บเฉพาะข้อความซับไว้เพื่อใช้ค้นหา และแสดงให้ผู้เรียนเห็นเพียงประโยคที่ค้นเจอกับบริบทสั้น ๆ ไม่เปิดให้อ่านซับทั้งคลิป · หากต้องการให้นำคลิป ซับไตเติล หรือข้อความใดออก กรุณาติดต่อทางอีเมลหรือ LINE ด้านบน <b>เราจะนำออกภายใน 48 ชั่วโมง</b></p>
     </section>
     <div id="stats"></div>
+    <div id="hitsWrap" hidden>ผู้เข้าชมเว็บนี้ <span id="hits"></span></div>
     <div>คลิปทั้งหมดเล่นผ่านเครื่องเล่น YouTube จากช่องทางการของเจ้าของ · สำเนียงกำหนดตามประเทศของช่อง ผู้พูดบางคนอาจมีสำเนียงต่างออกไป · ซับที่ติดป้าย "auto" สร้างโดยระบบอัตโนมัติของ YouTube อาจคลาดเคลื่อนบ้าง</div>
     <div>ระดับ A2–C1 เป็นค่าประมาณจากความเร็วพูดและความยากของคำ สื่อจริงของเจ้าของภาษาแทบไม่มีระดับ A1 ผู้เรียนระดับเริ่มต้นแนะนำให้เลือกระดับ A2 ความเร็ว "ช้า" และเปิดความเร็ว 0.75× · คำแปลไทยใช้บริการแปลฟรี (จำกัดจำนวนต่อวัน) และไฮไลต์ทีละคำเป็นจังหวะโดยประมาณ</div>
   </footer>
@@ -2490,5 +2491,23 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
 <!-- Visitor counter: GoatCounter, no cookies and no personal data, so no consent banner is needed.
      It only tells the owner whether anyone is using the site. Remove this one line to turn it off. -->
 <script data-goatcounter="https://fangkham.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+// Show the visit total in the footer. The count.js above loads asynchronously, so wait for it, and only
+// reveal the line once a number has actually arrived: if the site setting "Allow adding visitor counts on
+// your website" is off, or the viewer blocks trackers, the footer simply stays as it was.
+(function () {
+  var tries = 0, wait = setInterval(function () {
+    if (++tries > 40) { clearInterval(wait); return; }
+    if (!(window.goatcounter && window.goatcounter.visit_count)) return;
+    clearInterval(wait);
+    try { window.goatcounter.visit_count({ append: '#hits', type: 'html' }); } catch (e) { return; }
+    var shown = 0, show = setInterval(function () {
+      var el = document.getElementById('hits');
+      if (el && el.children.length) { document.getElementById('hitsWrap').hidden = false; clearInterval(show); }
+      else if (++shown > 40) clearInterval(show);
+    }, 250);
+  }, 250);
+})();
+</script>
 </body>
 </html>
