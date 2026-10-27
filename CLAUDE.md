@@ -131,6 +131,14 @@ What we learned while collecting:
 - YouTube rate-limits one machine after a few hundred requests (HTTP 429, or clips coming back with no caption tracks). A "429" warning alone is harmless; `collect_captions.py` checks a known clip (PROBE) before pausing. yt-dlp now needs `yt-dlp-ejs` for its JavaScript challenge.
 - Classroom filter results on the first big run: 37 clips dropped for titles (murder, drugs, sexual crimes…), 25 mostly music (Sesame Street songs), 7 with many bleeped words. Watch for false positives (a title with "Stablecoins" once matched "stab").
 - The free translation services (MyMemory, translate.googleapis.com gtx) refuse cloud IPs but work from a normal home connection.
+- **Google (gtx) is asked first, MyMemory second** (changed 2026-10-27). MyMemory is a translation memory, not a
+  translator: for a two-word fragment such as "should i" it returns whatever it has seen, and much of that is
+  period-drama subtitles, so the owner saw ข้าควร where a learner needs ฉันควร. `modernThai()` then puts the
+  archaic pronouns back into everyday Thai. Thai has no spaces, so bare ข้า is only replaced when the next
+  letter cannot be starting another word — ข้าว, ข้าง, ข้าม, ข้าราชการ and ข้าศึก must survive untouched.
+  Test any change to that list the way this one was tested: run the pure function over those words in node.
+  The chip translations are still the least reliable text on the site, because a two-word fragment carries no
+  context; whole sentences translate far better.
 
 ## Money and copyright (decided 2026-10-27; do not undo without the owner saying so)
 - **Removed on the owner's instruction (2026-10-27):** the notebook's CSV download and the "อัดเสียงตัวเอง"
