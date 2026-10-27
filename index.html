@@ -940,46 +940,62 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
   }
 
   // ---------- usage groups ----------
-  // A common word returns hundreds of lines that teach quite different things. Group them by the form the
-  // word really takes in each line — negative, question, or the word that follows it — so a learner can
-  // study one use at a time ("will be", "will you", "won't") instead of meeting all of them at once.
+  // A common word returns hundreds of lines that teach quite different things. Group them by the shape the
+  // word takes in each line, so a learner can study one use at a time. Besides negatives and questions, each
+  // line offers two candidate phrases — the word with what follows it ("should be") and with what comes
+  // before it ("at school") — and the line joins whichever of the two is the commoner pattern in this search.
+  // Looking only forwards left nouns with nothing to show: "school and", "school i" instead of "at school".
   const USE_NEG = /^(not|never|no|none|nothing|nobody|nowhere)$/;
-  const USE_MIN = 3, USE_MAX = 8;
-  let useKeys = new Map(), useKeysFor = '', useRe = null;
-  function useKey(si) {
-    const ck = st.q + '|' + corpusName;
-    if (useKeysFor !== ck) { useKeys = new Map(); useKeysFor = ck; useRe = st.q ? makeRe(st.q) : null; }
-    if (useKeys.has(si)) return useKeys.get(si);
-    const text = C.s[si][3] || '', m = useRe && text.match(useRe);
-    let key = 'etc';
-    if (m) {
-      const after = text.slice(m.index + m[0].length);
-      const w = ((after.match(/[A-Za-z][A-Za-z'’]*/) || [''])[0]).toLowerCase().replace(/[’]/g, "'");
-      if (USE_NEG.test(w) || /n't$/.test(w)) key = 'neg';
-      else if (after.includes('?')) key = 'q';
-      else if (w) key = 'w:' + w;
-    }
-    useKeys.set(si, key);
-    return key;
-  }
-  let useCache = [], useCacheFor = '';
-  function useGroups() {
+  const USE_MIN = 3, USE_MAX = 14;
+  const useWord = w => (w || '').toLowerCase().replace(/[\u2019]/g, "'");
+  let useAsg = null, useAsgFor = '';
+  function useAssign() {
     const ck = st.q + '|' + corpusName + '|' + st.all.length;
-    if (useCacheFor === ck) return useCache;
-    const counts = {};
-    st.all.forEach(i => { const k = useKey(i); counts[k] = (counts[k] || 0) + 1; });
+    if (useAsgFor === ck) return useAsg;
+    const re = st.q ? makeRe(st.q) : null;
+    const cand = new Map(), tally = {};
+    st.all.forEach(si => {
+      const text = C.s[si][3] || '', m = re && text.match(re);
+      if (!m) { cand.set(si, ['etc']); return; }
+      const start = m.index + m[1].length, end = m.index + m[0].length;
+      const before = text.slice(0, start), after = text.slice(end);
+      const next = useWord((after.match(/^[^A-Za-z]{0,3}([A-Za-z][A-Za-z'\u2019]*)/) || [])[1]);
+      // A word on the far side of a full stop belongs to another sentence, not to this phrase.
+      const prev = /[.?!]\s*$/.test(before) ? '' : useWord((before.match(/([A-Za-z][A-Za-z'\u2019]*)[^A-Za-z]{0,3}$/) || [])[1]);
+      if (USE_NEG.test(next) || /n't$/.test(next)) { cand.set(si, ['neg']); return; }
+      if (after.includes('?')) { cand.set(si, ['q']); return; }
+      const c = [];
+      if (next && !/^[.?!]/.test(after.trim())) c.push('n:' + next);
+      if (prev) c.push('p:' + prev);
+      c.forEach(k => { tally[k] = (tally[k] || 0) + 1; });
+      cand.set(si, c.length ? c : ['etc']);
+    });
+    // Each line joins its strongest candidate, so the groups never overlap.
+    const keys = new Map(), counts = {};
+    cand.forEach((c, si) => {
+      let best = c[0];
+      c.forEach(k => { if ((tally[k] || 0) > (tally[best] || 0)) best = k; });
+      keys.set(si, best);
+      counts[best] = (counts[best] || 0) + 1;
+    });
     const out = [];
-    if (counts.neg) out.push(['neg', 'ปฏิเสธ', counts.neg]);
-    if (counts.q) out.push(['q', 'เป็นคำถาม', counts.q]);
+    if (counts.neg) out.push(['neg', '\u0e1b\u0e0f\u0e34\u0e40\u0e2a\u0e18', counts.neg]);
+    if (counts.q) out.push(['q', '\u0e40\u0e1b\u0e47\u0e19\u0e04\u0e33\u0e16\u0e32\u0e21', counts.q]);
     let etc = counts.etc || 0;
-    Object.keys(counts).filter(k => k.startsWith('w:')).map(k => [k, counts[k]])
+    const label = k => k.charAt(0) === 'n' ? st.q + ' ' + k.slice(2) : k.slice(2) + ' ' + st.q;
+    Object.keys(counts).filter(k => k.charAt(1) === ':').map(k => [k, counts[k]])
       .sort((a, b) => b[1] - a[1])
-      .forEach(([k, n], i) => { if (i < USE_MAX && n >= USE_MIN) out.push([k, st.q + ' ' + k.slice(2), n]); else etc += n; });
+      .forEach(([k, n], i) => { if (i < USE_MAX && n >= USE_MIN) out.push([k, label(k), n]); else etc += n; });
     out.sort((a, b) => b[2] - a[2]);
-    if (etc) out.push(['etc', 'อื่น ๆ', etc]);
-    useCacheFor = ck; useCache = out;
-    return out;
+    // Lines whose group was too small are not lost; they fall into the catch-all.
+    const shown = new Set(out.map(g => g[0]));
+    keys.forEach((k, si) => { if (!shown.has(k)) keys.set(si, 'etc'); });
+    if (etc) out.push(['etc', '\u0e2d\u0e37\u0e48\u0e19 \u0e46', etc]);
+    useAsgFor = ck; useAsg = { keys: keys, groups: out };
+    return useAsg;
   }
+  function useKey(si) { return useAssign().keys.get(si) || 'etc'; }
+  function useGroups() { return useAssign().groups; }
   // Not for a lesson (many phrases at once), for a handful of hits, or for a rare word whose lines share no
   // pattern: a bar that is almost all "\u0e2d\u0e37\u0e48\u0e19 \u0e46" teaches nothing, so hide it instead.
   function useOn() {
@@ -998,7 +1014,7 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
       const b = document.createElement('button');
       b.className = 'chip'; b.type = 'button'; b.dataset.k = k;
       b.innerHTML = escHtml(label) + ' <small>' + n + '</small>' +
-        (k.indexOf('w:') === 0 ? '<span class="use-th" data-uth="' + escHtml(label) + '"></span>' : '');
+        (k.charAt(1) === ':' ? '<span class="use-th" data-uth="' + escHtml(label) + '"></span>' : '');
       b.setAttribute('aria-pressed', String(k === st.use));
       b.onclick = () => { st.use = k; applyFilters(false); };
       el.appendChild(b);
