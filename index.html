@@ -184,7 +184,16 @@ textarea, .panel input[type="text"] { width: 100%; border: 1.5px solid var(--lin
 .join-txt b { display: block; font-size: 15.5px; margin-bottom: 2px; }
 .join-txt span { color: var(--muted); }
 .join-go { flex: none; background: var(--coral); color: #fff; border-radius: 999px; padding: 8px 16px; font-weight: 700; text-decoration: none; white-space: nowrap; }
-.join-go.alt { background: transparent; color: var(--accent); border: 1.5px solid var(--accent); }
+.join-go:not(.alt) { animation: joinBreathe 2.6s ease-in-out infinite; }
+@keyframes joinBreathe {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 122, 89, .5); }
+  50% { transform: scale(1.045); box-shadow: 0 0 0 12px rgba(255, 122, 89, 0); }
+}
+.join-go:hover { transform: scale(1.06); animation-play-state: paused; }
+.join-go.alt { background: transparent; color: var(--accent); border: 1.5px solid var(--accent); transition: background .15s; }
+.join-go.alt:hover { background: var(--accent-soft); }
+/* Some people get motion sick, and some simply ask their device for less of it. */
+@media (prefers-reduced-motion: reduce) { .join-go:not(.alt) { animation: none; } .join-go:hover { transform: none; } }
 .join-x { flex: none; background: none; border: 0; color: var(--muted); font-size: 16px; line-height: 1; padding: 6px; cursor: pointer; }
 @media (max-width: 720px) { .join-go { width: 100%; text-align: center; } }
 .usebar .label { min-width: auto; margin-right: 2px; }
@@ -1730,23 +1739,21 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
     q = (q || '').trim(); if (!q) return; stopModes();
     if (isThai(q)) { st.lesson = null; $('q').value = q; thaiSearch(q); return; }
     st.thq = ''; thaiChips = null; st.lesson = null;
-    q = norm(q); renderSetWords(q); $('q').value = q; runSearch(q); bumpSearches(); const h = store.get('history', []).filter(x => x !== q); h.unshift(q); store.set('history', h.slice(0, 50)); }
+    q = norm(q); renderSetWords(q); $('q').value = q; runSearch(q); const h = store.get('history', []).filter(x => x !== q); h.unshift(q); store.set('history', h.slice(0, 50)); }
   // ---------- course invitation ----------
   // The site stays free and nothing here gates a clip: YouTube's developer policies forbid charging to watch
   // content in an embedded player, and being free is also what keeps the teaching exception of Thai copyright
   // law (ม.32) available for the stored captions. So the owner's own CEFR course is offered instead, once the
   // learner has searched enough to find the site useful. One card, dismissible, and it stays dismissed until
   // the next milestone. To change the wording or the link, edit #joinCard in the markup above.
-  const JOIN_AT = [20, 100, 400];
+  // The owner wants the course always on offer, not held back until a learner has searched a few times.
+  // Closing it hides it for this browser session only, so it is back on the next visit.
   function renderJoin() {
-    const el = $('joinCard');
-    const n = +store.get('searches', 0) || 0, hid = +store.get('joinHid', 0) || 0;
-    let t = 0; JOIN_AT.forEach(x => { if (n >= x) t = x; });
-    el.dataset.t = t;
-    el.hidden = !t || hid >= t;
+    let gone = false;
+    try { gone = sessionStorage.getItem('fk.joinHid') === '1'; } catch (e) {}
+    $('joinCard').hidden = gone;
   }
-  function bumpSearches() { store.set('searches', (+store.get('searches', 0) || 0) + 1); renderJoin(); }
-  $('joinClose').onclick = () => { store.set('joinHid', +$('joinCard').dataset.t || 0); renderJoin(); };
+  $('joinClose').onclick = () => { try { sessionStorage.setItem('fk.joinHid', '1'); } catch (e) {} renderJoin(); };
   renderJoin();
 
   function setUrl() { try { const u = new URL(location.href); if (st.lesson) { u.searchParams.delete('q'); u.searchParams.set('lesson', st.lesson.id); } else { u.searchParams.delete('lesson'); u.searchParams.set('q', st.thq || st.q); } if (st.acc !== 'All') u.searchParams.set('acc', st.acc); else u.searchParams.delete('acc'); history.replaceState(null, '', u); } catch (e) {} }

@@ -150,8 +150,11 @@ would be allowed. Both were researched and declined:
 - **Do not add a way to read a whole transcript.** The snippet-sized display is what keeps the position
   defensible: the strip shows the matched sentence plus one line either side, and `renderGuide()` picks at most
   6 sentences per clip. Keep those caps.
-- Income comes from the owner's own CEFR course instead. `#joinCard` in index.html invites learners to it after
-  20, 100 and 400 searches; it is dismissible and blocks nothing. Edit that markup to change the wording or link.
+- Income comes from the owner's own CEFR course instead. `#joinCard` in index.html carries the offer on every
+  page view (the owner asked for it always on, 2026-10-27): the 390 baht / 30 days subscription through the
+  owner's referral link, and the CEFR lessons. The subscribe button breathes slowly (`joinBreathe`, switched
+  off under `prefers-reduced-motion`); closing the card hides it for that browser session only. It still
+  gates nothing — every clip stays free and unmetered. Edit that markup to change the wording or links.
 - The About box carries the source credits, states that no video is downloaded, and promises removal within
   48 hours on request (`tools/corpus-skip.json` is how a clip is taken out). Keep all three.
 
