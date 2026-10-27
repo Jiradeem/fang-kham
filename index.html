@@ -198,10 +198,6 @@ textarea, .panel input[type="text"] { width: 100%; border: 1.5px solid var(--lin
 @media (max-width: 720px) { .join-go { width: 100%; text-align: center; } }
 .usebar .label { min-width: auto; margin-right: 2px; }
 @media (max-width: 720px) { .usebar { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; } .usebar::-webkit-scrollbar { display: none; } .usebar .chip { flex: none; } }
-.tips { margin-top: 10px; border-top: 1px dashed var(--line); padding-top: 8px; }
-.tips b { font-size: 13px; color: var(--bad); }
-.tips ul { margin: 4px 0 0; padding-left: 18px; font-size: 13.5px; }
-.tips li { margin-bottom: 3px; }
 .set-note { font-size: 13.5px; background: var(--chip); border-radius: 8px; padding: 8px 10px; margin-top: 8px; }
 .set-note:empty { display: none; }
 .item-note { font-size: 13.5px; color: var(--accent); margin-top: 6px; }
@@ -691,7 +687,6 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
         <div class="row" id="wAudio"></div>
         <ol class="defs" id="wDefs"></ol>
         <div class="links" id="wLinks"></div>
-        <div class="tips" id="wTips" hidden><b>⚠ จุดที่คนไทยมักพลาด</b><ul id="wTipList"></ul></div>
       </div>
 
       <details class="panel fold" id="guidePanel" open>
@@ -1354,9 +1349,6 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
       ['https://translate.google.com/?sl=en&tl=th&op=translate&text=' + enc, 'Google แปล'],
       ['https://youglish.com/pronounce/' + enc + '/english', 'YouGlish']
     ].map(([u, t]) => '<a href="' + u + '" target="_blank" rel="noopener">' + t + ' ↗</a>').join('') : '';
-    const tips = q && window.thaiTips ? window.thaiTips(q) : [];
-    $('wTips').hidden = !tips.length;
-    $('wTipList').innerHTML = tips.map(t => '<li>' + escHtml(t) + '</li>').join('');
     if (!q) return;
     $('wSyl').textContent = q.includes(' ') ? 'วลี' : syllables(q) + ' พยางค์ (ประมาณ)';
     if (q.split(' ').length > 3) return;
