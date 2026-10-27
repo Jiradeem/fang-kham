@@ -197,6 +197,8 @@ textarea, .panel input[type="text"] { width: 100%; border: 1.5px solid var(--lin
 .join-x { flex: none; background: none; border: 0; color: var(--muted); font-size: 16px; line-height: 1; padding: 6px; cursor: pointer; }
 @media (max-width: 720px) { .join-go { width: 100%; text-align: center; } }
 .usebar .label { min-width: auto; margin-right: 2px; }
+.usebar .use-th:not(:empty) { color: var(--accent); font-size: 12px; margin-left: 5px; }
+.usebar .chip[aria-pressed="true"] .use-th { color: inherit; opacity: .85; }
 @media (max-width: 720px) { .usebar { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; } .usebar::-webkit-scrollbar { display: none; } .usebar .chip { flex: none; } }
 .set-note { font-size: 13.5px; background: var(--chip); border-radius: 8px; padding: 8px 10px; margin-top: 8px; }
 .set-note:empty { display: none; }
@@ -995,11 +997,30 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
     [['all', 'ทั้งหมด', st.all.length]].concat(useGroups()).forEach(([k, label, n]) => {
       const b = document.createElement('button');
       b.className = 'chip'; b.type = 'button'; b.dataset.k = k;
-      b.innerHTML = escHtml(label) + ' <small>' + n + '</small>';
+      b.innerHTML = escHtml(label) + ' <small>' + n + '</small>' +
+        (k.indexOf('w:') === 0 ? '<span class="use-th" data-uth="' + escHtml(label) + '"></span>' : '');
       b.setAttribute('aria-pressed', String(k === st.use));
       b.onclick = () => { st.use = k; applyFilters(false); };
       el.appendChild(b);
     });
+    translateUseChips();
+  }
+  // Fill the Thai in afterwards, one chip at a time, so a learner who does not read the English still knows what
+  // each group is. translate() answers from its own cache first, so this costs a request only for a phrase never
+  // seen before, and a new search abandons the batch. If the translation service is unreachable or out of free
+  // quota, the chips simply stay English.
+  let useTok = 0;
+  async function translateUseChips() {
+    const tok = ++useTok;
+    for (const el of $('useChips').querySelectorAll('[data-uth]')) {
+      if (tok !== useTok) return;
+      if (el.textContent) continue;
+      let t;
+      try { t = await translate(el.dataset.uth); } catch (e) { return; }
+      if (tok !== useTok) return;
+      t = (t || '').replace(/[.\u3002]$/, '').trim();
+      if (t && t.toLowerCase() !== el.dataset.uth.toLowerCase()) el.textContent = t;
+    }
   }
 
   // ---------- chips ----------
