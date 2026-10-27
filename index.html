@@ -184,6 +184,7 @@ textarea, .panel input[type="text"] { width: 100%; border: 1.5px solid var(--lin
 .join-txt b { display: block; font-size: 15.5px; margin-bottom: 2px; }
 .join-txt span { color: var(--muted); }
 .join-go { flex: none; background: var(--coral); color: #fff; border-radius: 999px; padding: 8px 16px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.join-go.alt { background: transparent; color: var(--accent); border: 1.5px solid var(--accent); }
 .join-x { flex: none; background: none; border: 0; color: var(--muted); font-size: 16px; line-height: 1; padding: 6px; cursor: pointer; }
 @media (max-width: 720px) { .join-go { width: 100%; text-align: center; } }
 .usebar .label { min-width: auto; margin-right: 2px; }
@@ -611,10 +612,11 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
 
   <aside class="join" id="joinCard" hidden>
     <div class="join-txt">
-      <b>อยากเรียนเป็นระบบตามระดับ CEFR ไหม?</b>
-      <span>ฟังคำจริงใช้ฟรีเสมอ ดูคลิปได้ไม่จำกัด · ถ้าอยากมีครูจัดลำดับบทเรียนให้ ตรวจงานให้ และพาไปทีละระดับ A1 → C1 ดูคอร์สของครูดรีมได้ที่เว็บหลัก</span>
+      <b>เรียนกับครูดรีม ครูจอย</b>
+      <span>ฟังคำจริงใช้ฟรีเสมอ · อยากเรียนเป็นระบบ มีบทเรียนตามระดับ CEFR พร้อมแบบฝึกทักษะอังกฤษหลากหลาย</span>
     </div>
-    <a class="join-go" href="https://dreamenglishlearning.com/" target="_blank" rel="noopener">ดูคอร์ส CEFR ↗</a>
+    <a class="join-go" href="https://dreamenglishlearning.com/" target="_blank" rel="noopener">สมัครเรียน 390 บาท / 30 วัน ↗</a>
+    <a class="join-go alt" href="https://dreamenglishlearning.com/" target="_blank" rel="noopener">บทเรียนตามระดับ CEFR ↗</a>
     <button type="button" class="join-x" id="joinClose" aria-label="ปิดคำเชิญชวน">✕</button>
   </aside>
 
