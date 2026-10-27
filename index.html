@@ -178,6 +178,9 @@ textarea, .panel input[type="text"] { width: 100%; border: 1.5px solid var(--lin
 .thbar button.cur { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
 .thbar button.cur small { color: inherit; }
 .thbar button:disabled { opacity: .45; cursor: default; }
+.usebar { margin: -2px 0 10px; }
+.usebar .label { min-width: auto; margin-right: 2px; }
+@media (max-width: 720px) { .usebar { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; } .usebar::-webkit-scrollbar { display: none; } .usebar .chip { flex: none; } }
 .tips { margin-top: 10px; border-top: 1px dashed var(--line); padding-top: 8px; }
 .tips b { font-size: 13px; color: var(--bad); }
 .tips ul { margin: 4px 0 0; padding-left: 18px; font-size: 13.5px; }
@@ -606,6 +609,7 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
         <span class="count" id="count"></span>
         <button type="button" class="linkbtn more-clips" id="moreClips" hidden></button>
       </div>
+      <div class="chips usebar" id="useChips" hidden></div>
       <div class="thbar" id="thBar" hidden></div>
       <div class="screen">
         <div class="player-box">
@@ -853,7 +857,7 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
 
   // Clips a teacher hid as unsuitable (this browser only); the list can be copied and sent to the site owner.
   const hiddenClips = new Set(store.get('hidden', []));
-  const st = { q: '', acc: store.get('acc', 'All'), cat: 'all', speed: 'all', level: 'all', hits: [], all: [], idx: 0, loop: false, hide: false, rate: 1, th: false, override: null, thq: '', lesson: null };
+  const st = { q: '', acc: store.get('acc', 'All'), cat: 'all', speed: 'all', level: 'all', use: 'all', hits: [], all: [], idx: 0, loop: false, hide: false, rate: 1, th: false, override: null, thq: '', lesson: null };
 
   // ---------- search ----------
   const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -894,6 +898,7 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
   }
   function runSearch(q) {
     st.q = norm(q);
+    st.use = 'all';
     st.all = findHits(st.q);
     renderThaiBar();
     showView('search');
@@ -903,11 +908,77 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
 
   function applyFilters(reset) {
     const cur = st.hits[st.idx];
-    st.hits = st.all.filter(i => passes(C.v[C.s[i][0]]));
+    validUse();
+    st.hits = filterHits();
     const keep = reset ? -1 : st.hits.indexOf(cur);
     st.idx = keep >= 0 ? keep : 0;
     renderChips();
     show();
+  }
+
+  // ---------- usage groups ----------
+  // A common word returns hundreds of lines that teach quite different things. Group them by the form the
+  // word really takes in each line — negative, question, or the word that follows it — so a learner can
+  // study one use at a time ("will be", "will you", "won't") instead of meeting all of them at once.
+  const USE_NEG = /^(not|never|no|none|nothing|nobody|nowhere)$/;
+  const USE_MIN = 3, USE_MAX = 8;
+  let useKeys = new Map(), useKeysFor = '', useRe = null;
+  function useKey(si) {
+    const ck = st.q + '|' + corpusName;
+    if (useKeysFor !== ck) { useKeys = new Map(); useKeysFor = ck; useRe = st.q ? makeRe(st.q) : null; }
+    if (useKeys.has(si)) return useKeys.get(si);
+    const text = C.s[si][3] || '', m = useRe && text.match(useRe);
+    let key = 'etc';
+    if (m) {
+      const after = text.slice(m.index + m[0].length);
+      const w = ((after.match(/[A-Za-z][A-Za-z'’]*/) || [''])[0]).toLowerCase().replace(/[’]/g, "'");
+      if (USE_NEG.test(w) || /n't$/.test(w)) key = 'neg';
+      else if (after.includes('?')) key = 'q';
+      else if (w) key = 'w:' + w;
+    }
+    useKeys.set(si, key);
+    return key;
+  }
+  let useCache = [], useCacheFor = '';
+  function useGroups() {
+    const ck = st.q + '|' + corpusName + '|' + st.all.length;
+    if (useCacheFor === ck) return useCache;
+    const counts = {};
+    st.all.forEach(i => { const k = useKey(i); counts[k] = (counts[k] || 0) + 1; });
+    const out = [];
+    if (counts.neg) out.push(['neg', 'ปฏิเสธ', counts.neg]);
+    if (counts.q) out.push(['q', 'เป็นคำถาม', counts.q]);
+    let etc = counts.etc || 0;
+    Object.keys(counts).filter(k => k.startsWith('w:')).map(k => [k, counts[k]])
+      .sort((a, b) => b[1] - a[1])
+      .forEach(([k, n], i) => { if (i < USE_MAX && n >= USE_MIN) out.push([k, st.q + ' ' + k.slice(2), n]); else etc += n; });
+    out.sort((a, b) => b[2] - a[2]);
+    if (etc) out.push(['etc', 'อื่น ๆ', etc]);
+    useCacheFor = ck; useCache = out;
+    return out;
+  }
+  // Not for a lesson (many phrases at once), for a handful of hits, or for a rare word whose lines share no
+  // pattern: a bar that is almost all "\u0e2d\u0e37\u0e48\u0e19 \u0e46" teaches nothing, so hide it instead.
+  function useOn() {
+    if (!st.q || st.q.includes('|') || st.all.length < 12) return false;
+    const g = useGroups();
+    return g.length >= 2 && g.reduce((a, x) => a + (x[0] === 'etc' ? 0 : x[2]), 0) >= st.all.length * 0.2;
+  }
+  function validUse() { if (st.use !== 'all' && (!useOn() || !useGroups().some(g => g[0] === st.use))) st.use = 'all'; }
+  function filterHits() { return st.all.filter(i => passes(C.v[C.s[i][0]]) && (st.use === 'all' || useKey(i) === st.use)); }
+  function renderUseChips() {
+    const el = $('useChips'), on = useOn();
+    el.hidden = !on;
+    if (!on) return;
+    el.innerHTML = '<span class="label">วิธีใช้</span>';
+    [['all', 'ทั้งหมด', st.all.length]].concat(useGroups()).forEach(([k, label, n]) => {
+      const b = document.createElement('button');
+      b.className = 'chip'; b.type = 'button'; b.dataset.k = k;
+      b.innerHTML = escHtml(label) + ' <small>' + n + '</small>';
+      b.setAttribute('aria-pressed', String(k === st.use));
+      b.onclick = () => { st.use = k; applyFilters(false); };
+      el.appendChild(b);
+    });
   }
 
   // ---------- chips ----------
@@ -934,6 +1005,7 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
       .filter(([, cur, all]) => cur !== all).map(([list, cur]) => (list.find(x => x[0] === cur) || [, cur])[1]);
     $('filterSum').textContent = (corpusName === 'dhamma' ? 'คลิปธรรมะ' : 'คลิปทั่วไป') + ' · ' + (on.length ? on.join(' · ') : 'ทั้งหมด');
     $('filterSum').classList.toggle('set', on.length > 0);
+    renderUseChips();
   }
 
   // ---------- player ----------
@@ -1048,7 +1120,7 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
     if (!confirm('ซ่อนคลิปนี้ในเครื่องนี้?\n"' + v[1] + '"\n\nถ้าคลิปไม่เหมาะกับผู้เรียน กด "คัดลอกรายการ" ในกล่องตัวกรองแล้วส่งให้ผู้ดูแลเว็บ เพื่อเอาออกจากคลังถาวร')) return;
     hiddenClips.add(v[0]); store.set('hidden', [...hiddenClips]); renderHidden();
     const idx = st.idx;
-    st.hits = st.all.filter(i => passes(C.v[C.s[i][0]]));
+    st.hits = filterHits();
     st.idx = Math.max(0, Math.min(idx, st.hits.length - 1));
     renderChips(); show();
   });
@@ -2332,7 +2404,8 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
     // Keep the clip being watched first, so the counter does not jump while more parts arrive.
     const at = st.all.indexOf(cur); if (at > 0) { st.all.splice(at, 1); st.all.unshift(cur); }
     if (!had && curView === 'search' && st.override === null) { applyFilters(true); return; }
-    st.hits = st.all.filter(i => passes(C.v[C.s[i][0]]));
+    validUse();
+    st.hits = filterHits();
     const k = st.hits.indexOf(cur); st.idx = k >= 0 ? k : 0;
     renderChips();
     $('count').textContent = st.hits.length ? (st.idx + 1) + ' / ' + st.hits.length + ' คลิป' : '';
