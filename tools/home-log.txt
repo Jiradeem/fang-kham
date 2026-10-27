@@ -1,401 +1,401 @@
-Nightly run on the home computer, 2026-10-27 08:04 (last 400 lines of the collector)
-06:28:27 ok 328 JWQTF8bztLE UK kids m 139
-06:28:42 ok 329 epcQ3uaeeAY UK kids a 221
-06:28:57 ok 330 SV5GbwY7MoE UK kids a 30
-06:29:12 ok 331 CH3IoM7OVUY UK kids m 120
-06:29:26 ok 332 2--p1KVc49Y UK kids a 268
-06:29:41 ok 333 Dz5O7f6f73U UK kids a 31
-06:29:55 ok 334 As1xbGNH-Sc UK kids m 108
-06:30:10 ok 335 CcCx3okOEtk UK kids a 27
-06:30:26 skip (mostly music) 9moOkRewF1k
-06:30:28 ok 336 Fjzqi4Y5Esc UK kids a 141
-06:30:43 ok 337 9NyumLPuCrE UK kids a 27
-06:30:58 ok 338 1qScSLd-vvk UK kids a 208
-06:31:13 ok 339 mUfxmf0CHLc UK kids a 28
-06:31:27 ok 340 Z3mhmjZ4PBk UK kids a 24
-06:31:42 ok 341 Tggxjt6ThTs UK kids m 97
-06:31:57 ok 342 6p7Il4gepOw UK kids a 187
-06:32:11 ok 343 VGRHNqyuuWw UK kids a 40
-06:32:26 ok 344 u4OwyPLog1g UK kids a 215
-06:32:41 ok 345 h3rf6G2gd-Q UK kids a 34
-06:32:55 ok 346 QWsDsIDQ73w UK kids a 145
-06:33:14 ok 347 nxyR-o-KVy8 UK kids a 31
-06:33:28 ok 348 pNdNfjMAwfU UK kids a 34
-06:33:43 ok 349 nBodsL8ma8c UK kids a 34
-06:33:58 ok 350 SG9i0EOQYjg UK kids m 94
-06:34:23 ok 351 G-qBGRF3HKw UK conversation a 203
-06:34:38 ok 352 qh0Cxb1_QD0 UK conversation a 170
-06:34:52 ok 353 ukzPavQ01Bc UK conversation a 193
-06:35:07 ok 354 aPAWL1_n-mU UK conversation a 129
-06:35:22 ok 355 GqzcNUreF3I UK conversation a 150
-06:35:36 ok 356 ZpKpoaIfIbc UK conversation a 194
-06:35:51 ok 357 lBGTvFkpf5E UK conversation a 230
-06:36:06 ok 358 m5YXrNJsOps UK conversation a 268
-06:36:20 ok 359 OKw8sLtNT0E UK conversation a 298
-06:36:35 ok 360 zrI5_qlBAaU UK conversation a 106
-06:36:50 ok 361 Oxz8YT_1Wh0 UK conversation a 222
-06:37:02 skip (title) CpNKsRTWg9I Katie: 'Moustaches Should Stay Where They Belong: In Porn!' 
-06:37:04 ok 362 RKxzrTakQt0 UK conversation a 119
-06:37:19 ok 363 lp48szyllls UK conversation a 242
-06:37:34 ok 364 sjsSnBBuBVk UK conversation a 185
-06:37:48 ok 365 Vs6Yrhk5w4g UK conversation a 199
-06:38:00 skip (title) 6tyDsTer1-I MAFS Scandal: Should We Teach Kids About Sexual Violence? | 
-06:38:04 ok 366 FtmWoFK7NMY UK conversation a 312
-06:38:18 ok 367 gVtUG679cCc UK conversation a 158
-06:38:30 skip (title) rwg_ktDrWeM Jane Says Smartphones Are Ruining Sex! | Loose Women
-06:38:33 ok 368 4Hz_IHFowAQ UK conversation a 128
-06:38:48 ok 369 sHdxl5FuzGo UK conversation a 189
-06:39:03 ok 370 mJK9ybdd1pQ UK conversation a 109
-06:39:17 ok 371 8UA5jfkAODw UK conversation a 279
-06:39:32 ok 372 hXusFY9r-cA UK conversation a 144
-06:39:47 ok 373 SoJKknaCB_Q UK conversation a 147
-06:40:01 ok 374 sKwKgF2ED4I UK conversation a 203
-06:40:13 skip (title) KmaFx2-5Epw Coleen Says Sexy Pics Give Her The Ick! | Loose Women
-06:40:16 ok 375 X3a3s38QCXo UK conversation a 293
-06:40:31 ok 376 t2g_JW47HfY UK conversation a 134
-06:40:46 ok 377 cWlSAZpGZDU UK conversation a 133
-06:41:01 ok 378 SXVAQ2o-3Eg UK conversation a 164
-06:41:16 ok 379 IK1gyDH1SlE UK conversation a 226
-06:41:30 ok 380 zQwAc2R8Whc UK conversation a 184
-06:41:45 ok 381 jzUjnovmRDQ UK conversation a 176
-06:42:00 ok 382 lZXUwc1xeUI UK conversation a 186
-06:42:15 ok 383 rSupXQLQ7QA UK conversation a 167
-06:42:29 ok 384 uNljVv70yBU UK conversation a 259
-06:42:44 ok 385 Dqh1hH92fqk UK conversation a 221
-06:43:00 ok 386 3O97ashIOLA UK conversation a 201
-06:43:14 ok 387 IdJODfJcSQo UK conversation a 200
-06:43:29 ok 388 fZaI5x3-Zrg UK conversation a 130
-06:43:44 ok 389 urka35Nmtb0 UK conversation a 225
-06:43:58 ok 390 QjS8nUTfi9w UK conversation a 152
-06:44:24 ok 391 igDl2kWLXR0 UK conversation m 562
-06:44:39 ok 392 0dq5nvVjm7s UK conversation m 356
-06:44:56 ok 393 626C1G0FQsE UK conversation m 547
-06:45:11 ok 394 PacHP3YgPU0 UK conversation m 425
-06:45:25 ok 395 qOonaMbj5sg UK conversation m 548
-06:45:41 ok 396 DV1SHLr0YEQ UK conversation m 385
-06:45:55 ok 397 9RXmCJmv30c UK conversation m 423
-06:46:12 ok 398 dW2pRxTdMoc UK conversation m 550
-06:46:27 ok 399 N2Hp-OJL8Vo UK conversation m 533
-06:46:41 ok 400 rVsYXBbuJmA UK conversation m 571
-06:46:56 ok 401 R8DYmx4oVfI UK conversation m 540
-06:47:12 ok 402 _f99kibAxjg UK conversation m 471
-06:47:27 ok 403 ZIwCsNtfA0s UK conversation m 547
-06:47:41 ok 404 5WS1-LHOR_o UK conversation m 444
-06:47:56 ok 405 e9LlNjEQvKg UK conversation m 569
-06:48:11 ok 406 ztKV3J9LKl4 UK conversation m 590
-06:48:26 ok 407 Z7vsfD9BOhU UK conversation m 493
-06:48:41 ok 408 R7KHyz8F2Oo UK conversation m 456
-06:48:55 ok 409 jRjIARwJG7I UK conversation m 506
-06:49:10 ok 410 X3Z5VJMQsjU UK conversation m 569
-06:49:25 ok 411 5q42ZLzoLmE UK conversation m 520
-06:49:39 ok 412 NY3AkkFXweQ UK conversation m 396
-06:49:56 ok 413 v5lSgzHegys UK conversation a 367
-06:50:12 ok 414 BfQzapEnAA4 UK conversation m 522
-06:50:27 ok 415 5rQpjtiJZTY UK conversation m 557
-06:50:42 ok 416 VrLl_m3t1BA UK conversation m 368
-06:50:57 ok 417 cj9P7z5GB8M UK conversation m 493
-06:51:13 ok 418 2djdXtYgjCg UK conversation m 311
-06:51:28 ok 419 LTpB3WnNaj8 UK conversation m 429
-06:51:43 ok 420 b68f1d7fw5U UK conversation m 481
-06:51:57 ok 421 VEYjB8Q5XSM UK conversation m 542
-06:52:13 ok 422 2vD7xQKrnm4 UK conversation m 412
-06:52:27 ok 423 7VxYx9Ukl3M UK conversation m 473
-06:52:42 ok 424 KWDrvMqDfb4 UK conversation m 504
-06:52:58 ok 425 yXCwt1ZrecE UK conversation m 457
-06:53:13 ok 426 RlrWYOp3ZB8 UK conversation m 568
-06:53:28 ok 427 hwM45aUKg_Y UK conversation m 537
-06:53:44 ok 428 tOmhYh8P-zg UK conversation m 538
-06:53:59 ok 429 8wcU5r_mqQs UK conversation m 322
-06:54:14 ok 430 jACtU_dQlRQ UK conversation m 402
-06:54:31 ok 431 Bu9-EgO14w4 UK conversation m 170
-06:54:46 ok 432 _DOhrD4Ddqk UK conversation m 365
-06:55:01 skip (bleeped words) NqRtCXjYNAg
-06:55:03 ok 433 vwgFqFLmJ0c UK conversation m 231
-06:55:18 ok 434 n1uiM90tbWY UK conversation m 259
-06:55:33 ok 435 Y48ATz0pGT8 UK conversation m 242
-06:55:47 skip (bleeped words) TcKlT14Ub-0
-06:55:51 ok 436 xdm_jTnuprs UK conversation m 275
-06:56:06 skip (bleeped words) peKZtKmfS0g
-06:56:08 ok 437 faCwev9ENUU UK conversation m 235
-06:56:23 ok 438 NpVysd5oTsM UK conversation m 295
-06:56:38 ok 439 OLwe9a5ammE UK conversation a 330
-06:56:53 ok 440 qky3U0cQe_E UK conversation m 250
-06:57:08 ok 441 wtcQJnZQTG0 UK conversation m 264
-06:57:22 ok 442 Nq81eJjw3IY UK conversation m 394
-06:57:37 ok 443 caHsExeTVsM UK conversation m 235
-06:57:52 ok 444 BaS1iZs_AQ8 UK conversation m 213
-06:58:07 ok 445 U2HcYi9R74c UK conversation m 273
-06:58:21 ok 446 TSUteoWzu40 UK conversation m 192
-06:58:36 ok 447 ecmVV_Iajac UK conversation m 151
-06:58:51 ok 448 H-9YghG2suI UK conversation m 114
-06:59:06 ok 449 SsjrOV4Isfs UK conversation m 211
-06:59:20 ok 450 aGKMWBB5xwI UK conversation m 288
-06:59:35 ok 451 c_xshVVlegw UK conversation m 195
-06:59:50 ok 452 6pP-caxrr6Y UK conversation m 223
-07:00:05 ok 453 62zCAMoQlmc UK conversation m 173
-07:00:21 ok 454 pQzJAOwREiI UK conversation m 131
-07:00:35 ok 455 D4i6rkSdFBA UK conversation m 147
-07:00:50 ok 456 dZyvX6g7lA0 UK conversation m 246
-07:01:05 ok 457 m2zvacuRpLg UK conversation m 230
-07:01:20 ok 458 wozXvPxHXdY UK conversation m 65
-07:01:34 ok 459 QffHIpIrxPs UK conversation m 184
-07:01:49 ok 460 u4MuBpp1vaE UK conversation m 177
-07:02:04 ok 461 gR4ViPKa9iA UK conversation m 178
-07:02:16 skip (title) Yuvi8elkqvU What is the Best Horror Movie? | Easy English 88
-07:02:18 ok 462 4BbdosSV3J8 UK conversation m 261
-07:02:33 ok 463 i4fw2iptK-Y UK conversation m 183
-07:02:48 ok 464 E6Wy7VFXlH0 UK conversation m 184
-07:03:03 ok 465 jQTsUhVFbYA UK conversation m 94
-07:03:18 ok 466 4sEscSxpMKY UK conversation m 189
-07:03:33 ok 467 7WvW2KZm8S0 UK conversation m 171
-07:03:48 ok 468 OHN9xZywzm0 UK conversation m 150
-07:04:03 ok 469 -WB_SGqeJo8 UK conversation m 236
-07:04:17 ok 470 H3zJIP3BJ6Y UK conversation m 272
-07:04:45 ok 471 KlhJAlWKb1w UK conversation a 285
-07:05:01 ok 472 anzUsOiZsdk UK conversation a 255
-07:05:17 ok 473 xDCZMbQ1qEg UK conversation a 376
-07:05:32 ok 474 8XHcP3Ns69c UK conversation a 179
-07:05:47 ok 475 uQFIswY7hnE UK conversation a 295
-07:06:03 ok 476 9HToHYRC3cg UK conversation a 272
-07:06:19 ok 477 59wP57JPlME UK conversation a 325
-07:06:34 ok 478 xDDbG5CsVdo UK conversation a 344
-07:06:49 ok 479 gwVimg2Xlho UK conversation a 370
-07:07:04 ok 480 v-qbENDCHl0 UK conversation a 308
-07:07:19 ok 481 X15Xgsd7awk UK conversation a 211
-07:07:35 ok 482 1VNl8yg2Pts UK conversation a 346
-07:07:56 ok 483 MURr8NrUfck UK conversation a 287
-07:08:11 ok 484 S27K7s56Euc UK conversation a 253
-07:08:27 ok 485 OfWIcsLprXE UK conversation a 257
-07:08:41 ok 486 yAmMXelGRgw UK conversation a 323
-07:08:57 ok 487 0GNDdyOJd98 UK conversation a 280
-07:09:12 ok 488 ha6_f9NwvHA UK conversation a 206
-07:09:28 ok 489 oLbGYtmVRAY UK conversation a 260
-07:09:43 ok 490 YSbogtDzwoE UK conversation a 366
-07:09:59 ok 491 B2sNW41mdG0 UK conversation a 326
-07:10:14 ok 492 zd0KYPolxRQ UK conversation a 394
-07:10:31 ok 493 9-G1PefFSC8 UK conversation a 377
-07:10:46 ok 494 SbS0khPtN_8 UK conversation a 43
-07:11:01 ok 495 sDBSylgz_rc UK conversation a 398
-07:11:16 ok 496 6HeIuMOT9Yk UK conversation a 334
-07:11:31 ok 497 -y5eq8yaPZc UK conversation a 232
-07:11:47 ok 498 cMmHiCwtRE0 UK conversation a 352
-07:12:02 ok 499 mztTh0y9yiI UK conversation a 313
-07:12:17 ok 500 Dnz75p9SzJ8 UK conversation a 336
-07:12:33 ok 501 jaEIdKHRV94 UK conversation a 321
-07:12:48 ok 502 YSqeVcEMzH4 UK conversation a 461
-07:13:06 ok 503 Mbj_Ter-7jM UK conversation a 422
-07:13:21 ok 504 xdpyudf-Sa8 UK conversation a 244
-07:13:36 ok 505 5ox8G-t3W5U UK conversation a 306
-07:13:52 ok 506 BjGhI47nkc4 UK conversation a 299
-07:14:07 ok 507 oHfEAmMa7Y8 UK conversation a 356
-07:14:22 ok 508 WyK9lELWZKA UK conversation a 287
-07:14:39 ok 509 JhwWz5bScQ4 UK conversation a 130
-07:14:53 ok 510 EPym8Q1bPzg UK conversation a 363
-07:15:22 ok 511 0OaGiiL3G8I US movie m 24
-07:15:37 skip (too short) WRbcHKRB8Fw
-07:15:39 ok 512 mObRUsA7dPY US movie m 27
-07:15:54 ok 513 pWgJNIehQ7k US movie m 25
-07:16:10 ok 514 diRwnGRr-Ko US movie m 28
-07:16:24 ok 515 cXA3Zgsky18 US movie m 40
-07:16:40 skip (too short) g1fq327snPU
-07:16:43 ok 516 z77qp-27D_M US movie m 38
-07:17:03 ok 517 HmvHY3IK1UA US movie m 49
-07:17:19 ok 518 cTW78JSBoyw US movie m 28
-07:17:34 skip (too short) M_Las484swM
-07:17:38 ok 519 rcp-j0StBR0 US movie m 39
-07:17:55 ok 520 bWtrFcerKE0 US movie m 44
-07:18:11 ok 521 fzW61JgRbNk US movie m 42
-07:18:26 ok 522 VGzqkAB_-hQ US movie m 23
-07:18:41 ok 523 9mi3YVYm3ZU US movie m 36
-07:18:55 skip (too short) tQ31ScZSYFQ
-07:18:58 ok 524 5C8yGUQ7gww US movie m 73
-07:19:12 ok 525 Dy6qLO9EmBQ US movie m 33
-07:19:27 ok 526 EnvBoDKSNKg US movie m 29
-07:19:41 ok 527 HqqYxLYIwBc US movie m 26
-07:19:56 ok 528 KlyNjng1SjU US movie m 35
-07:20:10 ok 529 ga8bJyvnSYs US movie m 26
-07:20:25 skip (too short) fdBr5KyUilU
-07:20:27 skip (too short) TRsZK_gkWVs
-07:20:32 ok 530 qCaCxy0HrBA US movie m 44
-07:20:46 skip (too short) kIbR3oCBOT8
-07:20:49 ok 531 umdDAJavJ7s US movie m 70
-07:21:04 ok 532 d8_FSNLyTAY US movie m 35
-07:21:18 ok 533 N-J-HR3quc4 US movie m 60
-07:21:36 skip (too short) PJIJwZk-Vuw
-07:21:39 skip (too short) ZRDp88kZn2A
-07:21:41 ok 534 q7taU9-vOAo US movie m 37
-07:22:00 ok 535 PsvUvqXoTpE US movie m 40
-07:22:14 skip (bleeped words) cLpnircVSsk
-07:22:17 ok 536 k-358jALXlA US movie m 25
-07:22:29 skip (title) OQAB1CXnWzg A Good Girl's Guide to Murder: Season 2 | Official Trailer |
-07:22:31 ok 537 xHH0lSDRF5g US movie m 50
-07:22:46 ok 538 bgpDgJkQka0 US movie m 29
-07:23:01 ok 539 PC3u76Wzc74 US movie m 20
-07:23:18 ok 540 QBvYXE6oZ64 US movie m 39
-07:23:32 ok 541 e9vROenw4cw US movie m 39
-07:23:47 ok 542 fODfHjrBz6Y US movie m 23
-07:24:02 ok 543 11gcNa-TBRA US movie m 47
-07:24:16 ok 544 1MasbNLZP8I US movie m 22
-07:24:28 skip (title) 0fMsAQ83KKc Murder Mindfully: Season 2 | Official Trailer | Netflix
-07:24:31 ok 545 kOEG8URlFBE US movie m 38
-07:24:46 ok 546 Mrc3vwreFMA US movie m 24
-07:25:01 ok 547 3iKFLt9gjAU US movie m 24
-07:25:13 skip (title) Vj5uaeZTKRM The Murder of Rachel Nickell | Official Trailer | Netflix
-07:25:17 ok 548 ooyhfmyOKGQ US movie m 39
-07:25:34 ok 549 djFCbZYavHs US movie m 42
-07:25:52 ok 550 6nrk0bGttMU US movie m 33
-07:26:46 skip (too short) OHWiTwH53lU
-07:27:03 ok 551 aTMqRPOqkGs US movie m 22
-07:29:09 ok 552 5tiV69_ZvFs US movie a 85
-07:29:23 ok 553 cUJzie2qeLc US movie m 83
-07:29:38 ok 554 wNKJTnvyk3Q US movie a 43
-07:29:53 ok 555 316cZOI0ToI US movie m 54
-07:30:07 ok 556 gBXA8sO7nEc US movie a 145
-07:30:22 ok 557 xMC4xiayeOE US movie a 30
-07:30:37 ok 558 VV_nNBQcos4 US movie m 24
-07:30:51 ok 559 RiX2g6yIspQ US movie a 397
-07:31:06 ok 560 F2zlKfc95dY US movie m 62
-07:31:21 ok 561 qAMwvv8LYZY US movie m 53
-07:31:35 ok 562 qVALOgV5XxI US movie a 55
-07:31:50 ok 563 cHS_C2MviPM US movie m 35
-07:32:05 ok 564 EEz5xbzYPKI US movie m 45
-07:32:20 skip (too short) X83x9Z8B92g
-07:32:23 skip (too short) 55iwlDE7dNI
-07:32:25 skip (too short) 3fjmjX0QOIg
-07:32:28 ok 565 ZqsJ2Hi-YJU US movie m 130
-07:32:43 ok 566 v2iu9f5Ec68 US movie a 38
-07:32:57 ok 567 cD-MF32q3Z0 US movie m 103
-07:33:12 ok 568 EJFEq8PH_2M US movie m 114
-07:33:26 ok 569 O_PFsjkfuYg US movie a 68
-07:33:41 ok 570 fkp938cwBNk US movie m 27
-07:33:56 ok 571 iHbGps7bi4s US movie a 55
-07:34:11 ok 572 kWgdBKq6dcg US movie a 43
-07:34:25 ok 573 b-DUYQg_-AQ US movie a 77
-07:34:40 ok 574 K8y9xk6CwKA US movie a 46
-07:34:56 ok 575 l9DMLeH__D4 US movie m 64
-07:35:10 ok 576 AdqTpx5RaCM US movie m 359
-07:35:25 ok 577 8ART31AzQSM US movie a 21
-07:35:40 ok 578 e9_USRhGJRQ US movie a 33
-07:35:54 skip (too short) 6t95Kd1irh8
-07:35:57 ok 579 q_MGZcXowTA US movie m 173
-07:36:12 ok 580 GGdL27EyNE4 US movie m 28
-07:36:26 ok 581 Vsjghjdt7GY US movie a 50
-07:36:41 ok 582 Z7UCRy1PIjE US movie m 37
-07:36:56 ok 583 m_qqlx4YZoY US movie m 124
-07:37:11 ok 584 O8uu23T7Ek4 US movie m 22
-07:37:26 ok 585 n7f6hlKsxxo US movie m 49
-07:37:40 ok 586 p_ApVqa0veI US movie m 133
-07:37:55 ok 587 QjGvW9-SvfI US movie m 31
-07:38:10 ok 588 a4Nc9-r8L40 US movie m 203
-07:38:25 ok 589 Ys8-yowm8Ps US movie a 69
-07:38:39 ok 590 5rxhIphbIm0 US movie m 23
-07:38:54 ok 591 s1X59pGE-kw US movie a 101
-07:39:19 ok 592 f_bKjZeJBBI US movie m 29
-07:39:34 ok 593 JRG244IfrRE US movie m 63
-07:39:50 ok 594 zW_7YpzIQ8s US movie a 160
-07:40:05 ok 595 3ce5i0MXEY0 US movie a 147
-07:40:20 ok 596 wfDrvlRpMv0 US movie a 138
-07:40:34 ok 597 EYs4nq08XSA US movie a 41
-07:40:50 ok 598 yavU0_xuWRY US movie a 105
-07:41:05 ok 599 vyISuWUWcFs US movie a 72
-07:41:21 ok 600 --yejSpUg8Y US movie a 39
-07:41:37 ok 601 54Sc7sL3nrU US movie a 110
-07:41:51 ok 602 4NpJzwH2guk US movie a 55
-07:42:06 ok 603 _ofmLZ3Qe6k US movie a 33
-07:42:24 ok 604 iznEVevzIRk US movie a 28
-07:42:38 ok 605 kc8lsf2StCE US movie m 20
-07:42:55 ok 606 S80heWRilu4 US movie a 38
-07:43:10 ok 607 lWoFybDIcD0 US movie a 215
-07:43:26 ok 608 Xx8JgW68rSA US movie a 214
-07:43:41 ok 609 w7-ucmtqITc US movie a 130
-07:43:55 ok 610 54SZ3TL_LzM US movie m 46
-07:44:10 ok 611 a8RHqN93qfo US movie m 34
-07:44:25 ok 612 eX74S-06Nok US movie a 164
-07:44:40 ok 613 i30t4BDE7zU US movie a 259
-07:44:56 ok 614 WZO7nu59Neg US movie a 28
-07:45:11 ok 615 DUKUBN6i0cU US movie a 29
-07:45:29 ok 616 iZfMF2oGhLQ US movie a 163
-07:45:43 ok 617 SCYT8vb2siQ US movie m 33
-07:45:57 skip (title) jkTD3hPWVRc Frenzy (1972) | The Necktie Killer Takes Brenda
-07:46:00 ok 618 Y-Q8kbGvb7g US movie a 140
-07:46:17 ok 619 OCo_qYlOZrQ US movie m 33
-07:46:33 ok 620 JT7F2PGlULQ US movie a 147
-07:46:47 ok 621 EwKvjQAOZmQ US movie a 159
-07:47:02 ok 622 Qz3RmlxfgP8 US movie a 27
-07:47:17 ok 623 0ok6LEdgt3Y US movie a 185
-07:47:33 ok 624 XAP6fWTdwi0 US movie a 114
-07:47:48 ok 625 zsWLqkPLu9U US movie a 235
-07:48:02 ok 626 V9dMCww31hI US movie a 57
-07:48:17 ok 627 cYXOEjB85HQ US movie a 30
-07:48:32 skip (too short) N32YL6wV2j0
-07:48:38 ok 628 yxZGAd2QTfc US movie a 147
-07:48:53 ok 629 Nugd7gQkDmk US movie m 32
-07:49:08 ok 630 3zOLzsbOleM US movie m 42
-07:49:23 ok 631 Px0g62AizsY US movie a 72
-07:49:51 ok 632 OZMcC2yKVY8 US movie a 55
-07:50:06 ok 633 mClesGc3xPo US movie a 48
-07:50:18 skip (title) 4F9WZItoi9E Operation Finale (2018) 4K - Shooting the Wrong Nazi (1/10) 
-07:50:23 ok 634 VAPdPufClH8 US movie a 29
-07:50:38 ok 635 9mm0p0BL3jA US movie a 29
-07:50:53 ok 636 qHDnwTGX8Sw US movie a 75
-07:51:11 ok 637 cw5RxYTcBFI US movie a 45
-07:51:23 skip (title) i-D4u7qpZ9I S.W.A.T. - Street Arrests His Brother's Killer (S3E12) | Mov
-07:51:26 ok 638 5R9cODN9pWA US movie a 83
-07:51:38 skip (title) 1PYu7c48TfQ S.W.A.T. - Cardboard Heroin (S3E12) | Movieclips
-07:51:40 ok 639 1bY91rHjKyk US movie a 50
-07:51:56 ok 640 VxyrH8n73aA US movie a 47
-07:52:11 ok 641 aT_LAPovWIQ US movie a 90
-07:52:23 skip (title) Hg7Ssl1nJg4 S.W.A.T. - Street's "Murders" (S3E12) | Movieclips
-07:52:26 ok 642 _Kw1MTTjp4w US movie a 45
-07:52:42 skip (too short) VN4DHA6U7IM
-07:52:44 ok 643 DUNmAtAoHBg US movie a 58
-07:52:59 ok 644 nAL2aHOTfXk US movie a 56
-07:53:19 ok 645 fZU-h9wxd0w US movie a 61
-07:53:35 ok 646 vp6TiaOegoY US movie a 51
-07:53:51 ok 647 EGWFRNxQZHo US movie a 49
-07:54:06 ok 648 7_eBrS7sKbg US movie a 67
-07:54:22 ok 649 59ZZe9OnfcU US movie a 71
-07:54:37 ok 650 7AJ-7u6JF3Y US movie a 83
-07:54:52 skip (too short) PlSEJbjFkcg
-07:54:55 ok 651 4HR8PFSSJ2c US movie a 38
-07:55:10 ok 652 4f8XM2_4rLw US movie a 22
-07:55:25 ok 653 pukto523jOA US movie a 42
-07:55:40 ok 654 HuJmH8Vhdxw US movie a 74
-07:55:55 ok 655 FD4upATQ6BM US movie a 46
-07:56:11 ok 656 aJBhwo7WGNc US movie a 39
-07:56:26 skip (mostly music) d4isn77ExTk
-07:56:30 ok 657 2P4QsthXtT8 US movie a 63
-07:56:45 ok 658 465-cte7WPo US movie a 32
-07:57:01 ok 659 Pm75PntkEW8 US movie a 39
-07:57:16 ok 660 wz0Fb-nt5XY US movie a 28
-07:57:32 ok 661 M7FXn66nKEE US movie a 145
-07:57:47 ok 662 n_RUsRzpwPY US movie a 64
-07:58:04 ok 663 HseOc6e7Lh8 US movie a 28
-07:58:19 ok 664 rv45Iy7XJ-M US movie a 44
-07:58:35 ok 665 sGQT1WCC7Vo US movie a 27
-07:58:50 skip (too short) 2ONysiBRHDE
-07:58:53 ok 666 WbpawNKCBcw US movie a 51
-07:59:11 ok 667 UCUcmj-560Q US movie a 29
-07:59:23 skip (title) yp5WEEY2Am8 Days of Thunder (1990) 4K - Sexy Cop Prank (2/10) | Moviecli
-07:59:27 ok 668 -ZLpIJtzgCg US movie a 86
-07:59:42 ok 669 HdeknLgVt6Y US movie a 40
-07:59:58 ok 670 E19Saq1W5Lw US movie a 26
-08:00:14 ok 671 BeNEKOkCcJY US movie a 48
-08:00:46 ok 672 EDhrywr4FXw US movie a 34
-08:01:01 ok 673 0ir3Z8hLeHc US movie m 80
-08:01:15 skip (too short) OnQWxkpz8mg
-08:01:18 ok 674 TX0JHzBw07k US movie m 70
-08:01:33 ok 675 wHBBoUtJHhA US movie m 75
-08:01:48 ok 676 UPPbSLZwyIQ US movie a 37
-08:02:02 ok 677 Hg4QX90m_gQ US movie m 52
-08:02:17 ok 678 na0J3ViQUhw US movie m 59
-08:02:32 ok 679 T3uEDgAHNf0 US movie a 21
-08:02:46 ok 680 J5YMu-w2icc US movie m 32
-08:03:01 ok 681 vSSC-Lhu-lc US movie m 39
-08:03:16 ok 682 b1KCZnE5Oio US movie m 37
-08:03:31 ok 683 Cl9bvRnXldU US movie m 83
-08:03:46 ok 684 7XtKrrXNvp4 US movie m 46
-08:04:01 ok 685 vSbNukYUiik US movie a 48
-08:04:16 ok 686 e2XMrKeIZFQ US movie a 41
-08:04:31 ok 687 -p34bVBZKtg US movie m 70
-08:04:44 clips collected this run: 687 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 687
+Nightly run on the home computer, 2026-10-27 11:09 (last 400 lines of the collector)
+09:30:54 ok 302 OkLZN0ziLuI US movie m 177
+09:31:09 ok 303 8Pe8GStxtGM US movie a 47
+09:31:25 ok 304 Rb_5NWJoyzw US movie m 21
+09:31:41 ok 305 N6DY_IkzPCI US movie m 44
+09:31:57 skip (too short) CW7uKQORd3Q
+09:32:01 skip (too short) _7CDtVEckco
+09:32:06 ok 306 CEGxsSIYVcE US movie m 31
+09:32:23 skip (mostly music) P2dENchK1P8
+09:32:26 ok 307 axIWdw3ii3g US movie m 223
+09:32:41 ok 308 mYfJxlgR2jw US movie m 76
+09:32:56 ok 309 R6PZ2m3lENM US movie m 39
+09:33:14 skip (too short) FZwxjtpbnvc
+09:33:20 skip (too short) nl_JkjgHfFU
+09:33:25 ok 310 3PgFeOi6E4k US movie m 99
+09:33:43 ok 311 ZblQ4uar6kY US movie a 223
+09:33:59 ok 312 cxrSzmXnu6Y US movie m 53
+09:34:17 ok 313 kKzvaY6Z-eM US movie m 26
+09:34:34 ok 314 -0ZOGj-a2xc US movie a 23
+09:34:50 ok 315 RZRY4Uaa3Z4 US movie m 80
+09:35:05 ok 316 kANkfJfK2a4 US movie m 86
+09:35:21 ok 317 L3ZepLuLD4c US movie a 48
+09:35:46 ok 318 YdAIBlPVe9s US movie m 38
+09:36:23 skip (too short) Jpie-fec5qY
+09:36:31 ok 319 YqpIKFUrLrk US movie m 22
+09:36:51 ok 320 aqCtC-ytN74 US movie m 41
+09:37:07 ok 321 yeetI2DfbaE US movie m 51
+09:37:24 ok 322 M9nc3simqAE US movie m 32
+09:37:39 ok 323 WRczRZ0lWBM US movie m 21
+09:37:54 skip (too short) AmF0JRoWRGU
+09:37:57 skip (too short) 9bRQvnlIYQM
+09:38:00 ok 324 cL-HUAbenBk US movie m 23
+09:38:18 ok 325 VL1wuCh8IV4 US movie m 48
+09:38:35 ok 326 xSnV_igzU4c US movie m 36
+09:38:51 ok 327 b14IFe4an5k US movie m 37
+09:39:06 ok 328 WppBQWgPHLA US movie m 39
+09:39:22 ok 329 D4JPjVN4gcg US movie m 43
+09:39:37 ok 330 bdmWZQY27EM US movie m 65
+09:39:52 skip (too short) IDWFVWfPW6k
+09:39:58 ok 331 ypPWAObvh1k US movie m 22
+09:40:13 ok 332 OpfhIXAv7CE US movie m 36
+09:40:28 ok 333 hcFZIS5A9NE US movie m 21
+09:40:44 skip (too short) ZtQoofDhJOM
+09:40:47 ok 334 I5ZwysaPVZI US movie m 34
+09:41:04 ok 335 glgmAwRDP8s US movie m 40
+09:41:19 ok 336 FfpAgFiG9Mo US movie m 34
+09:41:34 ok 337 AkMdV05NEXI US movie m 21
+09:41:49 ok 338 t5kPeQqA-XY US movie m 42
+09:42:04 skip (too short) XlMK-i8Ilrs
+09:42:06 ok 339 K52T25CcE9k US movie m 22
+09:42:21 ok 340 zEeJGZwwTPM US movie m 24
+09:42:33 skip (title) FsP18xDSEDY Untold: The Shooting at Hawthorne Hill | Official Trailer | 
+09:42:36 ok 341 kajCUhg36R0 US movie m 31
+09:42:51 ok 342 PMWh8evLLT0 US movie m 29
+09:43:10 ok 343 kgv8jf_8dm0 US movie m 22
+09:43:25 skip (title) UTOgDYEZ-Mg Should I Marry A Murderer? | Official Trailer | Netflix
+09:43:28 skip (too short) fbZYa3bWnVw
+09:43:31 ok 344 7l3DK-5Vsmw US movie m 34
+09:43:46 ok 345 ahMnT9f2uDM US movie m 27
+09:44:04 ok 346 u6Qs4W0uwBw US movie m 28
+09:44:19 skip (too short) xR_Ap5NFqno
+09:44:21 ok 347 n0zKkQ9eUfY US movie m 27
+09:44:39 skip (too short) auFBzA5JuFw
+09:44:44 ok 348 7iPaXgUN0-U US movie m 43
+09:44:59 ok 349 32kQ9Niy7EA US movie m 38
+09:45:16 ok 350 Dzs8T12cSVs US movie m 42
+09:45:34 ok 351 uLPRvmpwNHg US movie m 33
+09:45:54 ok 352 vMc_pWm7G7o US movie m 28
+09:46:10 ok 353 AdhShxCtEXk US movie m 38
+09:46:26 ok 354 tTGeLuCs97Q US movie m 41
+09:46:41 ok 355 hzyOsNyDkbM US movie m 25
+09:46:57 ok 356 n-I3uEVyOi8 US movie m 21
+09:47:14 skip (too short) bth5JO94ir8
+09:47:16 skip (too short) manTABsbuwQ
+09:47:19 ok 357 4k7lkMdZorE US movie m 36
+09:47:34 ok 358 PF3dDdeSIVc US movie m 42
+09:48:04 ok 359 otdw1i1vCAI US movie m 148
+09:48:19 ok 360 5-6-OEMN18Q US movie m 27
+09:48:34 ok 361 m9GXbsRKhg4 US movie m 207
+09:48:49 ok 362 ckFFOgqjidE US movie m 482
+09:49:04 ok 363 FLhD4Dxjw6w US movie a 42
+09:49:19 ok 364 5OyyirHj8Jg US movie m 44
+09:49:34 ok 365 aW6tfvxQfZ0 US movie m 37
+09:49:49 ok 366 -fxUoQazk9o US movie a 45
+09:50:04 ok 367 rP83kECBfZM US movie a 89
+09:50:18 skip (mostly music) gDHpJrQeW48
+09:50:21 ok 368 doIAeY5Q124 US movie m 23
+09:50:36 skip (too short) 6hZR4iMWfHQ
+09:50:39 skip (mostly music) vkaVY9mT8FE
+09:50:42 ok 369 ax_0ZnwdJc8 US movie m 101
+09:50:57 ok 370 H-goe1mvoAI US movie m 63
+09:51:12 ok 371 WYdRe2s1Ag8 US movie m 123
+09:51:27 ok 372 Zvj7bDmetUI US movie m 131
+09:51:42 ok 373 bOd3mvrPMvY US movie m 354
+09:51:57 ok 374 YFc1P4FGRYg US movie m 65
+09:52:13 ok 375 sFOJeloXWc8 US movie a 219
+09:52:28 ok 376 -hQmCq7dnY4 US movie m 21
+09:52:43 ok 377 NBwfK-G4QSc US movie m 48
+09:52:58 ok 378 sO_DI4c3KYY US movie m 89
+09:53:13 ok 379 qWarE5bn-xw US movie a 95
+09:53:28 ok 380 I-Vz24KyF1g US movie a 84
+09:53:43 ok 381 E_Rj7kJJdOA US movie a 89
+09:53:59 ok 382 7dt3xZyZt_w US movie a 75
+09:54:15 skip (mostly music) wlpswslcxoo
+09:54:20 ok 383 hBC70gZcKHY US movie a 44
+09:54:35 ok 384 HGPsbxj_f_g US movie m 172
+09:54:50 ok 385 tKURwrzUKSM US movie m 188
+09:55:04 ok 386 pxBV-HUYXmY US movie m 117
+09:55:20 ok 387 -iQg3nZn090 US movie m 374
+09:55:34 ok 388 qEfhgd0jyfM US movie m 65
+09:55:49 ok 389 ayWSp8P56Uo US movie m 102
+09:56:04 ok 390 HZzedRS-30I US movie a 47
+09:56:19 ok 391 vfOZLmcCccQ US movie a 114
+09:56:34 ok 392 bO1jm4btYBU US movie a 64
+09:56:50 ok 393 Op-5HjO5Txw US movie a 58
+09:57:04 ok 394 6mNAJZ-7lyQ US movie m 139
+09:57:19 skip (too short) QKYFfYLe5rs
+09:57:23 ok 395 V-b0BKnkAuI US movie a 33
+09:57:38 ok 396 PYIphkVE5jQ US movie m 30
+09:57:53 ok 397 YYzB2U4v2Jk US movie m 28
+09:58:08 ok 398 9GlTylX4S7Y US movie m 26
+09:58:35 ok 399 mPEgSAdrULY US movie a 55
+09:58:50 ok 400 1XMfbufNBJs US movie a 53
+09:59:08 ok 401 aINMszc5uTE US movie a 50
+09:59:24 ok 402 FHMNt_56Uwo US movie a 45
+09:59:39 ok 403 nKE_kU5FRGU US movie a 92
+09:59:54 ok 404 b1Vx9v56GO0 US movie a 53
+10:00:09 ok 405 kJaAsZP0PGc US movie a 60
+10:00:25 ok 406 xxh1y9qrCSU US movie a 54
+10:00:40 ok 407 6VvHtp2J4WA US movie a 26
+10:00:55 ok 408 C8GZ4NtE2gk US movie a 50
+10:01:10 ok 409 xqnazmfXRgQ US movie a 94
+10:01:26 ok 410 uaThHB1mB_I US movie a 60
+10:01:41 ok 411 vjSmymy1RFQ US movie a 78
+10:01:56 ok 412 yeVU4Yn33EI US movie a 79
+10:02:12 ok 413 TFEYFOUlTTI US movie a 51
+10:02:27 ok 414 IHUqn5ymvRg US movie a 49
+10:02:42 ok 415 R_0F2fA3jt4 US movie a 83
+10:02:57 ok 416 AnGMkOncVC4 US movie a 86
+10:03:13 ok 417 BUjXY9itq_A US movie a 66
+10:03:28 ok 418 AYYMTc0Hqas US movie a 60
+10:03:43 ok 419 Yjx4vkRtcqk US movie a 56
+10:03:58 ok 420 cdTl7YqktPc US movie a 27
+10:04:10 skip (title) x5XqMYgvylc Sniper (1993) - Shooting With No Trigger Finger (12/12) | Mo
+10:04:10 skip (title) zmNpAVq1rDI Sniper (1993) - One Shot, TWO KILLS (11/12) | Movieclips
+10:04:13 ok 421 Vwg3oKwGsI0 US movie a 20
+10:04:33 ok 422 yskjHP7qOmk US movie a 20
+10:04:53 ok 423 UBv9xQnxGpU US movie a 22
+10:05:08 ok 424 CHKFwhfrC74 US movie a 30
+10:05:28 skip (too short) ThWFJ-YwirQ
+10:05:31 ok 425 i_Oqdtn_hxQ US movie a 70
+10:05:46 ok 426 5bdDaqUl5Ko US movie a 43
+10:06:04 ok 427 ws5WPof3GLA US movie a 44
+10:06:19 ok 428 hoLJpdcOHac US movie a 78
+10:06:34 ok 429 _jy_vVOFf-w US movie a 34
+10:06:50 ok 430 SZsWs4IyKC4 US movie a 34
+10:07:05 ok 431 1J-u6K3GSvU US movie a 70
+10:07:17 skip (title) HtT3XipGyLM Practical Magic (1998) - Gillian & Sally Kill Jimmy (2/11) |
+10:07:17 skip (title) Xm-YlpEUel8 Practical Magic (1998) - The Love Curse Kills Sally's Husban
+10:07:23 ok 432 uPIDcqt9oaQ US movie a 81
+10:07:40 ok 433 -3soCoIfKS0 US movie a 60
+10:08:01 ok 434 _oWSvAqzvd0 US movie a 42
+10:08:17 ok 435 u0dbkUQJAGQ US movie a 51
+10:08:32 ok 436 UC4I3zxmR4E US movie a 33
+10:08:47 ok 437 iJXM_kLD77Q US movie a 28
+10:08:59 skip (title) 21BwCPiRgfw S.W.A.T. - Kill Your Mother or Die (S3E10) | Movieclips
+10:09:02 ok 438 0FUYY6E_CSo US movie a 97
+10:09:31 ok 439 WbDQYJxhWsQ US movie a 154
+10:09:48 ok 440 hJRzyg2T2zY US movie a 93
+10:10:03 ok 441 -2JalEdm-cA US movie m 33
+10:10:18 ok 442 4RTgo3tgBew US movie a 120
+10:10:34 ok 443 j9MK_oRVbis US movie a 170
+10:10:50 ok 444 BcZDr6dWMWo US movie a 162
+10:11:06 skip (mostly music) xm8I67pPZXY
+10:11:09 ok 445 -Bp6sl3UmTw US movie a 221
+10:11:25 ok 446 Wwbm1A_ta20 US movie a 185
+10:11:40 ok 447 C_W7y-0eors US movie a 55
+10:11:58 ok 448 DfeLfwwXvPc US movie a 221
+10:12:13 skip (too short) Mzw2ttJD2qQ
+10:12:18 ok 449 UMjLG_lPbdw US movie a 164
+10:12:33 ok 450 UFe6NRgoXCM US movie a 25
+10:12:48 ok 451 VIzNuVFjn8o US movie a 30
+10:13:09 ok 452 d1_sOkPbZ84 US movie a 74
+10:13:24 ok 453 hCo1_ndweZw US movie a 73
+10:13:40 ok 454 AqicyECDtuI US movie a 121
+10:14:00 ok 455 qysNG8eAXn0 US movie a 102
+10:14:17 ok 456 47-Hqi2jyOg US movie a 35
+10:14:42 ok 457 Bz5fekh1Jj4 US movie a 126
+10:15:01 ok 458 FnDdvyAI-OU US movie a 189
+10:15:18 ok 459 CCK88XmWJuk US movie a 34
+10:15:33 ok 460 htyKwH_YMaQ US movie a 35
+10:15:48 ok 461 nomrV-GXrho US movie a 35
+10:16:05 ok 462 09kuFgvohIU US movie m 59
+10:16:20 ok 463 JVkZsN2UvFE US movie a 207
+10:16:36 ok 464 4IMZUL0RzTY US movie a 196
+10:16:51 skip (too short) AuYmKbtnmEA
+10:16:54 ok 465 MwRrnt8PIeQ US movie a 39
+10:17:09 skip (too short) NQypHE9_Fm4
+10:17:13 ok 466 Ax65hq0lQQM US movie a 61
+10:17:33 ok 467 7MSAG6a84os US movie a 36
+10:17:50 ok 468 UK3M2XDwKm0 US movie a 162
+10:18:05 ok 469 i36Zw32GfRQ US movie m 49
+10:18:23 ok 470 SCjcg-2yslQ US movie a 101
+10:18:39 ok 471 dMMsap9QfII US movie a 105
+10:18:54 ok 472 YWVliG7Lw1M US movie a 72
+10:19:09 ok 473 d8j8a2wulG8 US movie a 56
+10:19:23 ok 474 pWNucAcRoBY US movie m 20
+10:19:40 ok 475 dWECpN2t5SQ US movie a 134
+10:19:55 ok 476 iWJKgODmrFQ US movie a 68
+10:20:10 ok 477 hnJkwemg2Sw US movie a 42
+10:20:25 ok 478 R2Xubj7lazE US movie m 52
+10:20:51 ok 479 G0L_38_QT8I US series a 393
+10:21:07 ok 480 NrZVdjtD50E US series a 513
+10:21:22 ok 481 hL2L-bsbswU US series a 455
+10:21:37 ok 482 N-YY8NvZqU4 US series a 392
+10:21:52 ok 483 e-dm4fEkFKE US series a 328
+10:22:08 ok 484 FiEWxLLYZL4 US series a 378
+10:22:23 ok 485 NTD7Q_MyEZI US series a 361
+10:22:39 ok 486 Gjhyid8qSek US series a 356
+10:22:54 ok 487 bsYi5OhtVVU US series a 387
+10:23:10 ok 488 WRsmusSCxYM US series a 429
+10:23:25 ok 489 Zjg_L23bxP0 US series a 376
+10:23:40 ok 490 htZhAkCxL9M US series a 199
+10:23:56 skip (bleeped words) MrggKSvcPOY
+10:24:00 ok 491 z3KNjMRDo1o US series a 276
+10:24:15 ok 492 i8iCdd8qnNA US series a 418
+10:24:30 ok 493 E0DhFwXdWBA US series a 389
+10:24:46 ok 494 SbyFI2qJqkE US series a 221
+10:25:01 ok 495 6_nsKL7WNAw US series a 305
+10:25:17 ok 496 FcZ3ceFhisA US series a 285
+10:25:32 ok 497 udWoHuJe-LM US series a 300
+10:25:47 ok 498 9CIto3uQzyc US series a 451
+10:26:03 ok 499 4eQnqpitiRQ US series a 218
+10:26:19 ok 500 HU-sJOu-N6A US series a 319
+10:26:34 ok 501 CePpRkvmMnU US series a 269
+10:26:49 ok 502 BtYiYd4kju8 US series a 253
+10:27:04 ok 503 7wDy1T3YY3o US series a 334
+10:27:19 ok 504 yBrp4vyBDjQ US series a 317
+10:27:35 ok 505 ppUahvVBy2A US series a 352
+10:27:50 ok 506 Iyvvear4Kxo US series a 352
+10:28:05 ok 507 KBKovqDDbhE US series a 290
+10:28:20 ok 508 xGSZbpP4CiM US series a 289
+10:28:36 ok 509 F-xfJkpgBs4 US series a 169
+10:28:51 ok 510 cORMwIo89Lw US series a 306
+10:29:06 ok 511 TXsoTK0PhAM US series a 249
+10:29:22 ok 512 owTla1kJGhs US series a 232
+10:29:37 ok 513 THolqsuG-Do US series a 386
+10:29:53 ok 514 gg3De5xzkk4 US series a 221
+10:30:08 ok 515 KkbJ_F__D14 US series a 266
+10:30:23 ok 516 4mIy3f4ERBk US series a 195
+10:30:39 ok 517 fx0Hz8-6fFE US series a 224
+10:30:54 ok 518 Bd_nvjvrrds US series a 385
+10:31:20 ok 519 vp6khXjGsQ4 US series a 345
+10:31:35 ok 520 hXJ4XT6KS0w US series a 83
+10:31:50 ok 521 l4fuqN_BVU4 US series a 147
+10:32:05 ok 522 OJDo_GtfFUk US series a 42
+10:32:20 ok 523 B-jWgm0M-2U US series a 140
+10:32:35 ok 524 S_HWNBWQ5Xw US series a 335
+10:32:50 ok 525 dFoAp98II10 US series a 124
+10:33:02 skip (title) AIy6m6tYQXY Did Phoebe Kill Ugly Naked Guy? | Friends
+10:33:05 ok 526 lWixlxqqkJo US series a 156
+10:33:20 ok 527 Drs_zyVb68M US series a 41
+10:33:35 ok 528 ry4Y11GE2i8 US series a 122
+10:33:50 ok 529 CMSTS9OASiA US series a 309
+10:34:05 ok 530 Vf6h6wtL7Tc US series a 140
+10:34:20 ok 531 jGI1S-G12BY US series a 43
+10:34:35 ok 532 uwOKFAeC1eY US series a 113
+10:34:50 ok 533 tRR-LCVy9Bs US series a 116
+10:35:05 ok 534 JozmBuXnhMA US series a 88
+10:35:21 ok 535 RV90F8gpaDA US series a 436
+10:35:37 ok 536 tZslxgq13aM US series a 116
+10:35:52 ok 537 xtEYY3SH894 US series a 129
+10:36:07 ok 538 0Eyd0SyBhQA US series a 125
+10:36:22 ok 539 _DnP35SkIYI US series a 99
+10:36:37 ok 540 Et1nsnFJRaA US series a 64
+10:36:52 ok 541 5Sm5DhO6xRE US series a 382
+10:37:07 ok 542 AZhBDuqcPZo US series a 68
+10:37:22 ok 543 Dgwv9M_0TvY US series a 109
+10:37:37 ok 544 PfrCZu1e0dU US series a 99
+10:37:52 ok 545 BpolQuV9s3Y US series a 95
+10:38:07 ok 546 htut79uDTok US series a 125
+10:38:22 ok 547 UOgrTsXGaXY US series a 80
+10:38:37 ok 548 nI2kLO2d5ho US series a 97
+10:38:52 ok 549 ImhDYdqi5a0 US series a 42
+10:39:07 ok 550 FqGaN7E3WZg US series a 94
+10:39:22 ok 551 5NQUTBgHSyI US series a 45
+10:39:37 ok 552 RzkP9jPVNA0 US series a 549
+10:39:52 ok 553 SazKaLo9T9U US series a 51
+10:40:07 ok 554 ZLt06z7VgNc US series a 109
+10:40:22 ok 555 XpLcK49lAzY US series a 81
+10:40:37 ok 556 AldQZ6U7WSQ US series a 131
+10:40:53 ok 557 cWheLYR8moU US series a 520
+10:41:08 ok 558 Ws3nirQtEpM US series a 110
+10:41:35 ok 559 qTWftN6p_Rw US series a 285
+10:41:50 ok 560 CXCVOk2EKdw US series a 299
+10:42:06 ok 561 GpKWBEYCalM US series a 360
+10:42:21 ok 562 HFnlkeMXpFU US series a 486
+10:42:37 ok 563 iRkVNQzwOgk US series a 503
+10:42:52 ok 564 HIbslRifKsg US series a 309
+10:43:07 ok 565 8xsjCzok6og US series a 488
+10:43:23 ok 566 ufQtINICcTk US series a 395
+10:43:38 ok 567 BvEZ5NeYlpY US series a 281
+10:43:53 ok 568 jfulJej6WQI US series a 547
+10:44:08 ok 569 1TefatOlSJg US series a 374
+10:44:24 ok 570 PO-fltxkaEE US series a 377
+10:44:39 ok 571 ss9Jfu9u-P0 US series a 304
+10:44:54 ok 572 X6ACXL49jcE US series a 415
+10:45:10 ok 573 pnTf14T7-sk US series a 362
+10:45:25 ok 574 zBaVpgB72Tk US series a 419
+10:45:40 ok 575 mv_1gh6HFBc US series a 288
+10:45:55 ok 576 zsycv2f4KN8 US series a 474
+10:46:11 ok 577 6HoJsQPLQ9o US series a 373
+10:46:26 ok 578 HvohFRO7C5Y US series a 573
+10:46:41 ok 579 JeLJ7aw3J8Q US series a 288
+10:46:56 ok 580 80tTEMv35lw US series a 415
+10:47:12 ok 581 uRA3okgob9s US series a 285
+10:47:27 ok 582 Xo1rZNlJMyA US series a 530
+10:47:44 ok 583 LzWuZpuuruc US series a 285
+10:48:00 ok 584 hLj9uaYd2_M US series a 471
+10:48:15 ok 585 Bjcdt57x5sA US series a 439
+10:48:32 ok 586 u0pbkpnp4tw US series a 396
+10:48:47 ok 587 9bhM1HgHCWA US series a 395
+10:49:02 ok 588 sX5cp7jekzY US series a 449
+10:49:18 ok 589 oI1z3aYwNIk US series a 309
+10:49:33 ok 590 LvlwLxhSRxc US series a 245
+10:49:48 ok 591 LXaGywIJ7O8 US series a 519
+10:50:03 ok 592 JXOC8_g0N-8 US series a 214
+10:50:18 ok 593 B4CaD1pSApM US series a 188
+10:50:34 ok 594 cZ08Wb-MiUg US series a 241
+10:50:49 ok 595 PqB6QGemflA US series a 414
+10:51:04 ok 596 1cmE1F2wS9I US series a 138
+10:51:20 ok 597 BFgqkFSSnvQ US series a 400
+10:51:35 ok 598 iGkiLxM457s US series a 298
+10:52:04 ok 599 W7aOa7ffsNI US series a 156
+10:52:19 ok 600 xf4Gxb1jQYI US series a 422
+10:52:34 ok 601 XJ_HpS-5M34 US series a 441
+10:52:49 ok 602 DtWlz42I730 US series a 511
+10:53:04 ok 603 MHgq4kro_jA US series a 463
+10:53:19 ok 604 EvAIMOEeuUY US series a 416
+10:53:35 ok 605 0qYgfpwIt1M US series a 300
+10:53:50 ok 606 4LWcGyPB_Ec US series a 363
+10:54:06 ok 607 EI7ec3G0o94 US series a 422
+10:54:21 ok 608 siYw2bdDdi4 US series a 357
+10:54:37 ok 609 5sZuf5VdJAQ US series a 419
+10:54:52 ok 610 GTnbMflgm_I US series a 496
+10:55:07 ok 611 JnRSxD2uKf0 US series a 530
+10:55:23 ok 612 PCrGRv8sfmo US series a 423
+10:55:38 ok 613 TXc2pAjElz8 US series a 476
+10:55:54 ok 614 Prc7VEa9Bxc US series a 463
+10:56:10 ok 615 xdF_a7sFzj4 US series a 256
+10:56:25 ok 616 Md6AwafOOWQ US series a 471
+10:56:40 ok 617 6rA1X1tYhzM US series a 309
+10:56:56 ok 618 UcSrisDSIBw US series a 278
+10:57:11 ok 619 ctXLUlwbZjY US series a 157
+10:57:26 ok 620 8MyWZQmsjpI US series a 270
+10:57:42 ok 621 Hq78BVQ58ME US series a 227
+10:57:58 ok 622 0qkL3oJN9lw US series a 191
+10:58:13 ok 623 n6LAT2mjcZA US series a 227
+10:58:31 ok 624 gY20fNEFABk US series a 461
+10:58:50 ok 625 rPsVUikQrXk US series a 339
+10:59:09 ok 626 EeyWoGpVHz0 US series a 283
+10:59:26 ok 627 YBJSvYNjxH4 US series a 221
+10:59:42 ok 628 wKqYUeOrhrk US series a 382
+10:59:57 ok 629 7cyMd0nZOaA US series a 396
+11:00:13 ok 630 GZHrUikYC-E US series a 425
+11:00:28 ok 631 HNk6wfqGgok US series a 205
+11:00:43 ok 632 tL5dWKwIV3w US series a 114
+11:00:59 ok 633 V8G6bwlGvPc US series a 390
+11:01:16 ok 634 FFF7LECPOms US series a 90
+11:01:32 ok 635 w6DjvtGJXnQ US series a 390
+11:01:47 ok 636 GO9GdXTN-KE US series a 450
+11:02:02 ok 637 GfT0WK7vzFk US series a 272
+11:02:17 ok 638 vPWIxphz17Q US series a 454
+11:02:44 skip (mostly music) J8zeZXchYhw
+11:02:47 ok 639 2PTK9r3vuu8 US kids m 115
+11:03:02 skip (mostly music) 4ni0O0gASH4
+11:03:15 ok 640 YP-EtqFqY9U US kids m 267
+11:03:30 skip (mostly music) navTCf7PkVk
+11:03:33 ok 641 p4pALo5h6O4 US kids m 229
+11:03:48 ok 642 oHsVbFNZ51Y US kids m 308
+11:04:03 ok 643 CWnmdB-Yx3M US kids m 32
+11:04:18 ok 644 CttJJgW6lpM US kids m 121
+11:04:33 skip (mostly music) cJGIlfSmfXg
+11:04:37 skip (mostly music) KLAT4RTgbWU
+11:04:40 skip (mostly music) pkGAX4ogIeA
+11:04:43 skip (mostly music) MzV-mfKOqq4
+11:04:46 ok 645 Kk-mkbuhGHE US kids m 81
+11:05:01 ok 646 Lv639CrdRWM US kids m 124
+11:05:16 skip (mostly music) xCRch4uf7Pw
+11:05:19 skip (mostly music) i-6Cd1jHSfY
+11:05:22 skip (mostly music) JUon2-NYulw
+11:05:27 ok 647 kXeCNB40U9Q US kids m 253
+11:05:43 ok 648 024YXUVlRvE US kids m 234
+11:05:58 skip (mostly music) 1E-NGfyrzJk
+11:06:01 skip (mostly music) krTvmCpaLHc
+11:06:04 skip (mostly music) syr1VL4Gzdg
+11:06:09 ok 649 YJsFrMajQmY US kids m 70
+11:06:23 skip (mostly music) SrE3EYT11lw
+11:06:26 ok 650 pbjL8fNM1vE US kids m 59
+11:06:41 skip (mostly music) 510xfsKrnqA
+11:06:45 clips collected this run: 650 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 650
