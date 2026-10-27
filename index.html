@@ -707,8 +707,6 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
           <div class="target" id="spTarget"></div>
           <div class="row">
             <button class="btn primary" id="bSpeak">🎙 เริ่มพูด</button>
-            <button class="btn" id="bRec">⏺ อัดเสียงตัวเอง</button>
-            <audio id="recAudio" controls hidden></audio>
           </div>
           <div class="row"><span class="score" id="spScore"></span><span class="diff" id="spDiff"></span></div>
           <div class="hint" id="spHeard"></div>
@@ -1605,24 +1603,6 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
   // After a quiz or shadowing run, return the player to the searched word.
   function backToHit() { if (st.hits.length) { renderClip(hitSeg()); updatePracticeLine(); } }
 
-  let mr = null;
-  $('bRec').onclick = async () => {
-    if (mr && mr.state === 'recording') { mr.stop(); return; }
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      const chunks = [];
-      mr = new MediaRecorder(stream);
-      mr.ondataavailable = e => chunks.push(e.data);
-      mr.onstop = () => {
-        stream.getTracks().forEach(t => t.stop());
-        const a = $('recAudio'); a.src = URL.createObjectURL(new Blob(chunks, { type: mr.mimeType })); a.hidden = false;
-        $('bRec').textContent = '⏺ อัดเสียงตัวเอง';
-      };
-      if (playerReady) player.pauseVideo();
-      mr.start(); $('bRec').textContent = '■ หยุดอัด';
-    } catch (e) { $('spHeard').textContent = 'ใช้ไมโครโฟนไม่ได้ กรุณาอนุญาตการใช้ไมโครโฟนในเบราว์เซอร์'; }
-  };
-
   $('bCheck').onclick = () => {
     const c = compare(targetText(), $('dictIn').value);
     $('dictScore').textContent = c.score + '%';
@@ -1663,8 +1643,7 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
   function renderNotes() {
     const all = notes();
     $('noteCount').textContent = all.length ? all.length + ' รายการ' : '';
-    $('noteFilter').innerHTML = NOTE_KINDS.map(([k, l]) => '<button type="button" class="chip" data-nf="' + k + '" aria-pressed="' + (k === noteFilter) + '">' + l + '</button>').join('') +
-      (all.length ? '<button type="button" class="chip" id="bCsv">⬇ ดาวน์โหลด CSV</button>' : '');
+    $('noteFilter').innerHTML = NOTE_KINDS.map(([k, l]) => '<button type="button" class="chip" data-nf="' + k + '" aria-pressed="' + (k === noteFilter) + '">' + l + '</button>').join('');
     const show = all.map((n, i) => [n, i]).filter(([n]) => noteFilter === 'all' || (noteFilter === 'dhamma' ? n.corp === 'dhamma' : n.type === noteFilter));
     $('notes').innerHTML = show.length ? show.map(([n, i]) => '<li><div><button class="link" data-i="' + i + '">' + escHtml(n.q || '') + '</button> ' +
       (n.type === 'sentence' ? '✍️ ' : n.type === 'word' ? '📌 ' : '🎬 ') + (n.corp === 'dhamma' ? '🪷 ' : '') +
@@ -1672,13 +1651,6 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
       : '<li class="hint">กด ☆ ในกล่อง "แนะนำในคลิปนี้" หรือปุ่ม ☆ บันทึก เพื่อเก็บคำและประโยคไว้ทบทวนตามรอบ</li>';
   }
   $('noteFilter').addEventListener('click', e => {
-    if (e.target.closest('#bCsv')) {
-      const rows = [['ประเภท', 'คำ/หัวข้อ', 'ความหมาย', 'ประโยค', 'คลิป', 'ลิงก์', 'คลัง', 'รอบทบทวนถัดไป']].concat(notes().map(n => [n.type, n.q || '', n.th || '', n.text || '', n.vid || '',
-        n.vid ? 'https://www.youtube.com/watch?v=' + n.vid + '&t=' + Math.floor(n.t || 0) + 's' : '', n.corp || 'main', n.due ? new Date(n.due * 86400000).toISOString().slice(0, 10) : '']));
-      const csv = '\ufeff' + rows.map(r => r.map(c => '"' + String(c).replace(/"/g, '""') + '"').join(',')).join('\r\n');
-      const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' })); a.download = 'fang-kham-notebook.csv'; a.click();
-      return;
-    }
     const b = e.target.closest('[data-nf]'); if (b) { noteFilter = b.dataset.nf; renderNotes(); }
   });
   $('notes').addEventListener('click', e => {
