@@ -1,401 +1,401 @@
-Nightly run on the home computer, 2026-10-28 13:52 (last 400 lines of the collector)
-12:11:44 ok 275 82QHMEvIwjw US series a 169
-12:11:59 ok 276 rTON9EwwY6A US series a 43
-12:12:13 ok 277 7BhroE-HD3w US series a 47
-12:12:28 ok 278 lkbr5qnYSUU US series a 103
-12:12:44 ok 279 S6xR7_zvbjg US series a 54
-12:12:59 ok 280 uGZkrWwh63E US series a 48
-12:13:13 skip (too short) KCQjvfm_A2w
-12:13:17 ok 281 JvC0PFUCzp4 US series a 72
-12:13:32 ok 282 SWBMp1kAScU US series a 39
-12:13:46 ok 283 TbGgi1UY6MQ US series a 36
-12:14:14 ok 284 dUKs3BVYlWA US series a 111
-12:14:30 ok 285 vwYXsmz7iVg US series a 461
-12:14:45 ok 286 HngKsxQ2ncY US series a 272
-12:15:04 ok 287 ZXWnDtj6oYo US series a 398
-12:15:20 ok 288 PD0-SltSzrc US series a 316
-12:15:35 ok 289 w5vXzUhO73s US series a 261
-12:15:51 ok 290 TYwrxBblT9o US series a 215
-12:16:06 ok 291 cOayz2Manxs US series a 343
-12:16:23 ok 292 nbjpfYlWsqk US series a 326
-12:16:39 ok 293 KJdusDlc_BA US series a 252
-12:16:55 ok 294 Yp8Ald1w8wg US series a 301
-12:17:12 ok 295 xs5rSnxnUT8 US series a 330
-12:17:27 ok 296 K3YNmoV9NsM US series a 256
-12:17:42 ok 297 OvEGZZsWH8A US series a 118
-12:17:58 ok 298 aGD8atl7klQ US series a 233
-12:18:13 ok 299 PwanIBdvPfc US series a 160
-12:18:29 ok 300 42BAlAm3Buk US series a 196
-12:18:44 ok 301 _fLhwHB2FPE US series a 440
-12:19:00 ok 302 XzscvjLkL3Y US series a 222
-12:19:15 ok 303 1t6mywCxuEM US series a 290
-12:19:31 ok 304 PGotRfoW7Fg US series a 178
-12:19:48 ok 305 R-BnCN5MGk0 US series a 329
-12:20:03 ok 306 P8K4OwmFo98 US series a 234
-12:20:20 ok 307 XZTfj5Nffe8 US series a 248
-12:20:35 ok 308 HrhQzNXgqrU US series a 391
-12:20:51 ok 309 qKOGrX_2128 US series a 187
-12:21:07 ok 310 U9k4yzgUgaE US series a 195
-12:21:23 ok 311 Ls7KoG61X_s US series a 255
-12:21:38 ok 312 p6AGCpSqOV8 US series a 176
-12:21:54 ok 313 wW0KG4gODNI US series a 300
-12:22:10 ok 314 UTol02jWMZc US series a 235
-12:22:25 ok 315 sYFEKAcpS7M US series a 236
-12:22:40 ok 316 cBE8OUlX33k US series a 280
-12:22:56 ok 317 ev1LNHKr7Co US series a 274
-12:23:11 ok 318 rSvpG3ECpB4 US series a 182
-12:23:26 ok 319 2vB80RUSybg US series a 82
-12:23:42 ok 320 Zf6J5ZtPkgI US series a 244
-12:23:57 ok 321 yHa4az3Bbrw US series a 310
-12:24:13 ok 322 dhegzFfc3zg US series a 325
-12:24:28 ok 323 2zSFL66FWpw US series a 254
-12:24:55 ok 324 Li8d4yAhKYU US conversation a 455
-12:25:10 skip (bleeped words) YaZo4G3e_Ak
-12:25:13 skip (bleeped words) 5-jt9oxDVsY
-12:25:16 skip (bleeped words) -4-VC2eX5jI
-12:25:20 skip (bleeped words) l_H0seCy20A
-12:25:23 skip (bleeped words) HplCu-x9uzI
-12:25:26 ok 325 Ye-a8Zsj_Mo US conversation m 222
-12:25:43 skip (bleeped words) BKJVpqnn_iM
-12:25:46 ok 326 C2QbtwQwsOo US conversation a 355
-12:26:01 skip (bleeped words) uuaLELiHsQA
-12:26:04 ok 327 SW0sOGeKUC0 US conversation a 412
-12:26:19 skip (bleeped words) GLGFk8orSz0
-12:26:22 ok 328 Un8HUKwxStE US conversation m 463
-12:26:37 ok 329 7SGo7IwkL-o US conversation a 207
-12:26:52 ok 330 x69PsVge3dQ US conversation m 421
-12:27:07 ok 331 FD4Gr5KHAu4 US conversation m 472
-12:27:22 ok 332 hXJNXXXhtnE US conversation m 301
-12:27:39 skip (bleeped words) kilQ2xOCBio
-12:27:39 skip (title) apqUNNTHBac Which Couple Has the Most Sex? | Lineup | Cut
-12:27:42 skip (bleeped words) op8Knb8VcEg
-12:27:42 skip (title) BpX2jomVZVQ What Do I Sound Like During Sex? | Keep it 100 | Cut
-12:27:45 ok 333 oxpI4R4gtpw US conversation m 413
-12:28:02 ok 334 TwEYcx_F9Ek US conversation a 369
-12:28:17 ok 335 fS765uiVZA4 US conversation a 450
-12:28:36 ok 336 08j18Acaaww US conversation a 187
-12:28:51 skip (bleeped words) PS5LMO0ObLg
-12:28:55 skip (bleeped words) ciDWJ1lfNgo
-12:28:57 skip (bleeped words) HBXcYiWNehI
-12:29:00 ok 337 KmvD7NRHKlo US conversation a 285
-12:29:15 ok 338 cnD76OOinMQ US conversation a 232
-12:29:27 skip (title) JuRexjKCZsk Couples Give Each Other Sex Advice | Keep it 100 | Cut
-12:29:30 ok 339 vH0luYI1Ugw US conversation a 223
-12:29:46 skip (bleeped words) A5IbCJilkm8
-12:29:49 ok 340 DP28FzBclxM US conversation a 95
-12:30:04 ok 341 jjEH1rdiu2w US conversation a 211
-12:30:19 skip (bleeped words) iZcH-HJrxtg
-12:30:23 ok 342 2z_0dNRleHk US conversation m 335
-12:30:38 ok 343 h85xCZeCqWo US conversation a 413
-12:30:54 ok 344 sM_QcBG8o8Y US conversation m 172
-12:31:09 skip (bleeped words) XC9RYm38bNM
-12:31:12 ok 345 6slMINjVPvw US conversation m 537
-12:31:27 ok 346 viURy8tYYlU US conversation m 366
-12:31:42 ok 347 _KiAMd5ypQI US conversation m 429
-12:32:05 ok 348 PhcM20qAaSE US conversation a 252
-12:32:23 ok 349 DFALGw7RsFg US conversation m 564
-12:32:38 skip (bleeped words) Qau8xajj0mc
-12:32:43 skip (bleeped words) WO16XrIHstA
-12:32:46 ok 350 dnxOgXH_13M US conversation m 271
-12:33:04 skip (bleeped words) vnUoFCBIj6E
-12:33:10 ok 351 _EMlgD73-74 US conversation m 618
-12:33:22 skip (title) uGgsFhIP9zw 100 Couples Describe Their First Time Having Sex | Keep it 1
-12:33:29 ok 352 s97prNUdEKA US conversation m 450
-12:33:47 skip (bleeped words) i50BQITbQSs
-12:33:52 skip (bleeped words) dw7BJ7i-iik
-12:33:59 ok 353 ZVcMUmuatuA US conversation m 164
-12:34:17 ok 354 x3schx4ulCs US conversation m 273
-12:34:29 skip (title) GOG2Ik0aBn0 Guess Who's a Pornstar | Lineup | Cut
-12:34:39 ok 355 EI8eNjJnEJM US conversation m 493
-12:34:54 ok 356 fdmkffMX-dc US conversation m 220
-12:35:06 skip (title) lL-SxpW_1Go Guess My Sexual Orientation | Lineup | Cut
-12:35:14 ok 357 p3PRgNA7jNQ US conversation m 452
-12:35:31 ok 358 bvZBylThxUQ US conversation m 216
-12:35:49 ok 359 HG7F9EKI-eE US conversation a 193
-12:36:04 ok 360 mmJc1NLjaSY US conversation m 432
-12:36:23 ok 361 8EeYl1wt5YI US conversation m 234
-12:36:39 ok 362 0A-QoXNSowE US conversation a 242
-12:36:54 ok 363 OSU8npukBUg US conversation a 165
-12:37:24 ok 364 8bZbRTh92NM US conversation m 136
-12:37:39 ok 365 YZrRoa_Pbq4 US conversation a 79
-12:37:57 ok 366 vtSAtH5pEic US conversation m 163
-12:38:13 ok 367 BY_RBFOvl14 US conversation m 185
-12:38:31 ok 368 mToO6jDg4pM US conversation m 129
-12:38:50 ok 369 FgonhCwNjCQ US conversation a 149
-12:39:06 ok 370 9xxIRqSB8jA US conversation a 53
-12:39:25 ok 371 xoaJwcrCPXA US conversation m 187
-12:39:40 ok 372 SYZm3TuaGcc US conversation m 113
-12:40:05 ok 373 jwp2I5TNi3U US conversation m 110
-12:40:21 ok 374 j7r9tPBbybg US conversation m 133
-12:40:37 ok 375 xg_sSIzCYb8 US conversation m 92
-12:40:55 ok 376 Ph1fvQHVdJw US conversation a 126
-12:41:13 ok 377 nmA5EIQVPHc US conversation m 121
-12:41:35 ok 378 jk9cwYi-_Cg US conversation m 142
-12:41:51 ok 379 AsMN2n_1p4E US conversation m 146
-12:42:11 ok 380 8KGB9DDCOk0 US conversation m 75
-12:42:26 ok 381 CTJMIvonUFA US conversation m 106
-12:42:44 ok 382 Yuqitclz2E0 US conversation m 111
-12:43:01 ok 383 hHQ3Pr0XgLg US conversation m 170
-12:43:17 ok 384 QmjgVL-oBXs US conversation m 158
-12:43:37 ok 385 NmAQb8Cnw_Q US conversation m 152
-12:43:55 ok 386 Q0e7fXBQf3g US conversation m 152
-12:44:16 ok 387 L8ROH4_BM_k US conversation m 143
-12:44:32 ok 388 0IvdSAF5D24 US conversation m 126
-12:44:50 ok 389 Q1YJwNOb8yA US conversation m 135
-12:45:10 ok 390 8_ZEpVbuX24 US conversation m 118
-12:45:26 ok 391 0QRug6lC_ZE US conversation m 141
-12:45:45 ok 392 F2hao6kcBWU US conversation m 115
-12:46:00 ok 393 1n6fduOVi8Y US conversation m 120
-12:46:20 ok 394 5PvOtPo3Dto US conversation m 173
-12:46:35 ok 395 5RWH3iJopuY US conversation m 110
-12:46:57 ok 396 0m5rgRTN2Hg US conversation m 104
-12:47:13 ok 397 2rp2jIUizIU US conversation m 111
-12:47:34 ok 398 9D4U1xj4OJQ US conversation m 228
-12:47:54 ok 399 3dTdOgsXF9o US conversation m 186
-12:48:09 ok 400 WFgaPi1LxFE US conversation m 250
-12:48:30 ok 401 ZVnQxqyI4r0 US conversation m 220
-12:48:46 ok 402 QEaL2sMxVfg US conversation m 230
-12:49:10 ok 403 onaBw8G8b9Y US conversation m 196
-12:49:41 ok 404 L7wMBQFn4Ks US conversation m 472
-12:49:58 ok 405 fi8l2TE0pBM US conversation m 496
-12:50:18 ok 406 D6eMOWu9hs8 US conversation m 473
-12:50:37 ok 407 mZePPMuttk4 US conversation m 528
-12:50:52 ok 408 am4q-l_sAcg US conversation m 382
-12:51:10 ok 409 ICISHNou9Zs US conversation m 563
-12:51:27 ok 410 PvXqsRANABA US conversation m 402
-12:51:46 ok 411 -j-Sjl8Wjas US conversation m 447
-12:52:03 ok 412 jnHVhLjhgWM US conversation m 443
-12:52:23 ok 413 uamPYhwrB0A US conversation m 417
-12:52:40 ok 414 bFLKIVEN8RE US conversation m 283
-12:52:59 ok 415 P_IWdMgmQtI US conversation m 505
-12:53:15 ok 416 3hwTdEfIiFs US conversation m 353
-12:53:27 skip (title) G4QEziyJlkM How do Spiritual Leaders Talk about Sex
-12:53:32 ok 417 AVIFYy1B7Vc US conversation m 512
-12:53:49 ok 418 iPjYp4FfKAk US conversation m 361
-12:54:13 ok 419 CNwH0LVyHD0 US conversation m 259
-12:54:42 ok 420 BjwWQ5zrbaE US conversation m 545
-12:55:08 ok 421 Olq0O03eyt8 US conversation m 281
-12:55:26 ok 422 4yWV8VIhkn0 US conversation m 476
-12:55:43 ok 423 BTGJIdpUuhQ US conversation m 258
-12:56:00 ok 424 g6nzpiNFue0 US conversation m 521
-12:56:19 ok 425 XLAinrKzh0E US conversation m 235
-12:56:35 ok 426 CxL1b7nEFxA US conversation m 423
-12:56:51 ok 427 RH7HaLt3ZXI US conversation m 446
-12:57:07 ok 428 9wCwQfgERMo US conversation m 399
-12:57:27 ok 429 lqey-v99qKQ US conversation m 330
-12:57:49 ok 430 Y0E_gM__Vj4 US conversation m 379
-12:58:04 ok 431 VvwVuXj-O9I US conversation m 307
-12:58:22 ok 432 uagojj31T1E US conversation m 398
-12:58:38 ok 433 JsJLISvY-C0 US conversation m 521
-12:59:00 ok 434 HKqlIUtsoMU US conversation m 648
-12:59:15 ok 435 _IHoLBDVf9Y US conversation m 332
-12:59:34 ok 436 XZqqB6IsnBY US conversation m 321
-12:59:53 ok 437 PG2Rebgm_n0 US conversation m 313
-13:00:08 ok 438 -0lUgFJ1zm4 US conversation m 424
-13:00:24 ok 439 8dtXGw2o7KQ US conversation m 314
-13:00:39 ok 440 73mx3byzAQw US conversation a 192
-13:00:58 ok 441 29Zy6tFnyFo US conversation m 218
-13:01:14 ok 442 V05ixl9P1Zk US conversation m 242
-13:01:33 ok 443 cohqBKUOAO8 US conversation m 395
-13:02:09 ok 444 IZo3yZy2yR4 US conversation m 437
-13:02:24 ok 445 kJJ8elM9kQ8 US conversation m 473
-13:02:42 ok 446 ijjBdmZbIhc US conversation m 279
-13:02:57 ok 447 OdbSrx4l8rM US conversation m 316
-13:03:13 ok 448 HjsqE5SdAng US conversation m 287
-13:03:29 ok 449 qhZrvE3qhhg US conversation m 429
-13:03:46 ok 450 J6KnuGWs7fw US conversation m 295
-13:04:02 ok 451 0jSqBWoBMOI US conversation m 173
-13:04:17 ok 452 jkyv6RXYH64 US conversation m 356
-13:04:32 ok 453 StWK0MEuFKc US conversation m 216
-13:04:48 ok 454 U-ij0ul8mlA US conversation m 230
-13:05:04 ok 455 zxBNYL-KaRg US conversation m 258
-13:05:19 ok 456 qwDry6MF7hU US conversation m 357
-13:05:35 ok 457 oe9PCgONfd0 US conversation m 239
-13:05:51 ok 458 A2BLyqu_dCU US conversation m 213
-13:06:06 ok 459 pRR6OuEGOsQ US conversation m 201
-13:06:22 ok 460 RwYossga_jI US conversation m 437
-13:06:38 ok 461 fUd0qcR2PbA US conversation m 223
-13:06:56 ok 462 gC8wGB2J--4 US conversation m 288
-13:07:13 ok 463 Gk6CcMtKd-A US conversation m 479
-13:07:34 ok 464 QBcZwHpaqB4 US conversation m 234
-13:07:53 ok 465 q7YhpGfcVXo US conversation m 269
-13:08:08 ok 466 LcvAun4Jr70 US conversation m 238
-13:08:23 ok 467 Q_gCIPsk3jY US conversation m 303
-13:08:39 ok 468 TqQ4whV8FTw US conversation m 325
-13:08:54 ok 469 EcgxV1KLjvI US conversation m 279
-13:09:09 ok 470 itruEUXXDEY US conversation m 258
-13:09:25 ok 471 htPA3OrZkdo US conversation m 415
-13:09:45 ok 472 dI_xuwQqmSg US conversation m 413
-13:10:01 ok 473 lXWkG771LFI US conversation m 348
-13:10:16 ok 474 uIXXQ4e36fA US conversation m 384
-13:10:33 ok 475 vKPbL3_xEAw US conversation m 436
-13:10:49 ok 476 vy6lvb91ULc US conversation m 446
-13:11:04 ok 477 jWQQhSeKjHA US conversation m 424
-13:11:26 ok 478 MA5dLKlfp78 US conversation m 460
-13:11:42 ok 479 FW8RBp_XR6A US conversation m 350
-13:11:57 ok 480 Ov9uLm0QEEY US conversation a 515
-13:12:14 ok 481 1byuDovVkWw US conversation m 257
-13:12:29 ok 482 SQwT8ha1294 US conversation m 96
-13:12:45 ok 483 X-koH49RxF4 US conversation m 398
-13:13:14 ok 484 i5EEK2BJFuY IRL tv a 41
-13:13:30 skip (too short) ZF1ZmwHURHM
-13:13:33 ok 485 kYTBfi3WPR0 IRL tv a 114
-13:13:48 skip (too short) duGqF9dU9bA
-13:13:51 skip (too short) Qm_97ZuL404
-13:13:54 skip (too short) GJPQjptn97Y
-13:13:57 ok 486 _76Xa6zZ_mI IRL tv a 24
-13:14:13 ok 487 KKPy04t-S4s IRL tv a 55
-13:14:28 ok 488 CsVvy7pEz0k IRL tv a 25
-13:14:43 ok 489 EMB3IbTluqc IRL tv a 58
-13:14:59 ok 490 JT2bNGBhLK8 IRL tv a 124
-13:15:14 ok 491 pem14bTcPDU IRL tv a 118
-13:15:30 skip (mostly music) kX6rxfW6dYM
-13:15:35 ok 492 RgTJflYqmts IRL tv a 47
-13:15:50 ok 493 eQoX_dQEqgU IRL tv a 49
-13:16:05 skip (mostly music) 0tuWSZzIPqM
-13:16:09 ok 494 dhvO7tDy6lA IRL tv a 258
-13:16:24 ok 495 cgdzLcrSkfg IRL tv a 114
-13:16:40 ok 496 YzCV45vNNAM IRL tv a 97
-13:16:55 ok 497 7dbHceATzpY IRL tv a 46
-13:17:14 ok 498 nfa55dBiXi8 IRL tv a 24
-13:17:29 ok 499 CgmGHZcmbuw IRL tv a 48
-13:17:45 ok 500 IDzWvWBwi6Y IRL tv a 28
-13:18:00 ok 501 iOvOq3ZRhPE IRL tv a 28
-13:18:15 ok 502 kI10VO43Trc IRL tv a 23
-13:18:32 ok 503 fGsh8I_P40Y IRL tv a 35
-13:18:47 skip (too short) KRy2TcWpHTI
-13:18:50 ok 504 HQSwMj1IMIg IRL tv a 25
-13:19:06 ok 505 YEcM4AVkWL4 IRL tv a 35
-13:19:21 ok 506 2S1Fm2uNSd8 IRL tv a 33
-13:19:36 ok 507 rIsEcz-PYzM IRL tv a 25
-13:19:51 ok 508 e2QIrIrQFH8 IRL tv a 33
-13:20:06 ok 509 CHpFy4OkRRg IRL tv a 20
-13:20:22 ok 510 _ZIBhuoPtCw IRL tv a 413
-13:20:37 skip (too short) 7G1_FrZuvaU
-13:20:40 ok 511 y75blzVIkws IRL tv a 20
-13:20:55 ok 512 HlWr7IehdMY IRL tv a 294
-13:21:11 ok 513 _Ohr310b2OM IRL tv a 252
-13:21:26 ok 514 b6iQO6Fvo_U IRL tv a 269
-13:21:41 ok 515 fEFZBiEv9AQ IRL tv a 25
-13:21:57 ok 516 Uwk6v3ICRnc IRL tv a 30
-13:22:11 ok 517 Ah4o_Puf8Ns IRL tv a 27
-13:22:27 ok 518 AeapNrAG0lU IRL tv a 343
-13:22:42 ok 519 4nv5BX0FEVM IRL tv a 324
-13:22:57 ok 520 tT5XiDl9RQ0 IRL tv a 79
-13:23:12 ok 521 FgF07oTltO8 IRL tv a 340
-13:23:27 ok 522 EuAd2tFh3eM IRL tv a 356
-13:23:42 ok 523 MRtg5E-DJZ0 IRL tv a 349
-13:24:10 ok 524 ocpGfxJ_S1g IRL tv a 241
-13:24:26 ok 525 1AbG70fho5k IRL tv a 261
-13:24:41 ok 526 aSS2z8TcFIw IRL tv a 325
-13:24:57 ok 527 sUjQV-we8aU IRL tv a 213
-13:25:12 ok 528 vVjIREizcgE IRL tv a 318
-13:25:29 ok 529 Htti4Ne10d0 IRL tv a 105
-13:25:45 ok 530 ntOfE8wngGM IRL tv a 35
-13:26:00 ok 531 Q1QKPruAM7I IRL tv a 479
-13:26:15 ok 532 pzkMyn3n5IQ IRL tv a 130
-13:26:31 ok 533 _3EiNhLKtko IRL tv a 248
-13:26:46 ok 534 sLhtiO1iLic IRL tv a 54
-13:27:02 ok 535 _bsehjkcLW8 IRL tv a 167
-13:27:17 ok 536 -uidPGmqvUw IRL tv a 96
-13:27:32 ok 537 ZiWJHgDKc70 IRL tv a 280
-13:27:47 ok 538 65PrZ-Phl9c IRL tv a 132
-13:28:02 ok 539 W3jxjAiAH04 IRL tv a 85
-13:28:17 ok 540 IqtQVPeXEQU IRL tv a 56
-13:28:33 skip (mostly music) GxeMPlI7kIM
-13:28:37 ok 541 AOkAwLVzVpc IRL tv a 172
-13:28:52 ok 542 bflgj1-cdnE IRL tv a 206
-13:29:07 ok 543 s0eGTy8LGVE IRL tv a 100
-13:29:22 ok 544 RKKPsx3od6g IRL tv a 140
-13:29:38 ok 545 SiCFTci15Gg IRL tv a 129
-13:29:53 ok 546 zwnW2C5YhkU IRL tv a 92
-13:30:09 ok 547 h5YF9hRQYNI IRL tv a 55
-13:30:24 skip (mostly music) cFfGZiv8swk
-13:30:28 ok 548 aeR8k1IrLMY IRL tv a 153
-13:30:44 ok 549 9Qc-ZuLi6Ik IRL tv a 129
-13:31:00 ok 550 ZR1v2nVL6Kk IRL tv a 165
-13:31:15 ok 551 heTRFtW9sFA IRL tv a 143
-13:31:31 ok 552 qMiGpsBm6uY IRL tv a 131
-13:31:47 ok 553 c2ln2rtJ00w IRL tv a 193
-13:32:02 ok 554 gZdn_aouY7o IRL tv a 135
-13:32:18 ok 555 6HSkZJH7rSs IRL tv a 104
-13:32:33 ok 556 kS49vQvRfH0 IRL tv a 181
-13:32:49 ok 557 OuXR4cjIn8s IRL tv a 210
-13:33:05 ok 558 iZ1FXthTBo4 IRL tv a 91
-13:33:19 ok 559 ajc6Q3yaEgg IRL tv a 78
-13:33:35 ok 560 whZSljenx3M IRL tv a 144
-13:33:50 ok 561 JY9fKhHu_Rc IRL tv a 53
-13:34:05 ok 562 GbwutLxlLW0 IRL tv a 66
-13:34:21 ok 563 fmKRHKeDbw8 IRL tv a 227
-13:34:48 ok 564 H6zsd0NbWTM NZ documentary a 40
-13:35:03 skip (too short) 5gfR6584OgQ
-13:35:06 ok 565 5VTVHjoCv3w NZ documentary a 37
-13:35:27 ok 566 ktSprNqVffg NZ documentary a 31
-13:35:45 ok 567 GsHOzUCVBaU NZ documentary a 145
-13:36:01 ok 568 sIK4sy7JMNU NZ documentary a 23
-13:36:16 ok 569 qER8_x00erA NZ documentary a 25
-13:36:32 ok 570 TOoIqpJ4HyE NZ documentary a 29
-13:36:46 ok 571 Pvd0bTPrHDc NZ documentary a 23
-13:37:01 skip (too short) 3atgP0D_0DI
-13:37:05 ok 572 3IItCvRNz6w NZ documentary a 48
-13:37:20 ok 573 lSvwH8etvYU NZ documentary a 59
-13:37:35 ok 574 k6aY9id76tI NZ documentary a 29
-13:37:50 skip (too short) AEoAmCRHnq0
-13:37:53 ok 575 Qv5bSqjCMwQ NZ documentary a 22
-13:38:08 ok 576 Jr0TaCH67Wg NZ documentary a 29
-13:38:23 ok 577 7meITFPjyxk NZ documentary a 31
-13:38:38 ok 578 akjnrV1-G1M NZ documentary a 23
-13:38:54 ok 579 W9xlru7QRls NZ documentary a 21
-13:39:09 ok 580 SFdwBUpkSwI NZ documentary a 28
-13:39:26 ok 581 l0H4tOQpZvA NZ documentary a 33
-13:39:42 ok 582 TlQOnlJg01U NZ documentary a 31
-13:39:57 ok 583 SiiH6HacVMQ NZ documentary a 64
-13:40:12 ok 584 M5fH-r7oqQU NZ documentary a 38
-13:40:29 ok 585 18tnChUKmUg NZ documentary a 27
-13:40:51 skip (too short) KoQYKJ1Qx2A
-13:40:57 ok 586 wxrAvDF5UEE NZ documentary a 38
-13:41:14 ok 587 XcS-iHy9c1Q NZ documentary a 22
-13:41:29 ok 588 A7xXoN8o4T0 NZ documentary a 34
-13:41:45 ok 589 QPzbNqkr1nA NZ documentary a 26
-13:42:06 ok 590 4GKHQzocDLg NZ documentary a 36
-13:42:23 skip (too short) EP1F6_yN6_g
-13:42:25 ok 591 RSrFVhoCQJs NZ documentary a 29
-13:42:41 skip (too short) IYe2LdAhJbU
-13:42:44 ok 592 zPkJpeIi2EQ NZ documentary a 26
-13:42:59 ok 593 S1yLgyte7Vc NZ documentary a 56
-13:43:15 ok 594 dWc6yOG1vsw NZ documentary a 23
-13:43:30 ok 595 q97G7AOXwLM NZ documentary a 27
-13:43:45 ok 596 zIP4SQ477p8 NZ documentary a 51
-13:44:00 ok 597 BSag2PUhkPA NZ documentary a 36
-13:44:15 ok 598 qknI2IejvYw NZ documentary a 31
-13:44:32 ok 599 QDS7Elp6BXM NZ documentary a 28
-13:44:46 ok 600 K3FLHmxWikE NZ documentary a 36
-13:45:01 ok 601 pcD2KNWE1y0 NZ documentary a 31
-13:45:17 ok 602 Djg6oVpNxjE NZ documentary a 38
-13:45:32 ok 603 RBRE_Rzqi4A NZ documentary a 36
-13:46:12 ok 604 nmu0Cl30Mxo CAN tv a 60
-13:46:27 ok 605 crp1zJXxhiI CAN tv a 60
-13:46:43 ok 606 NNadcqEaJ50 CAN tv a 57
-13:46:58 ok 607 oJiEYfyzx60 CAN tv a 80
-13:47:14 ok 608 DRE1k_GM538 CAN tv a 78
-13:47:29 ok 609 sDlWns7EewI CAN tv a 84
-13:47:45 skip (bleeped words) nNAQgQa7r58
-13:47:49 ok 610 -IuYdk3usMY CAN tv a 92
-13:48:04 ok 611 ZEzL0BEiyYA CAN tv a 131
-13:48:20 ok 612 AymTkQmXN2s CAN tv a 136
-13:48:35 ok 613 3h2BLmBf_CE CAN tv a 106
-13:48:50 ok 614 w1cTzBEFKTQ CAN tv a 187
-13:49:06 skip (too short) 6quUEDuF4Y8
-13:49:10 ok 615 95jGfK0O0hI CAN tv a 44
-13:49:22 skip (title) jFjvz06JCmw "An at home pornography business... FINALLY"
-13:49:25 ok 616 3Bznf2UxF24 CAN tv a 40
-13:49:45 ok 617 rkAXpFtyApY CAN tv a 25
-13:50:02 ok 618 245zIjaD6XY CAN tv a 76
-13:50:21 ok 619 q_wY6zXIbnM CAN tv a 32
-13:50:38 ok 620 HVD0hKLobA4 CAN tv a 32
-13:50:54 ok 621 95DMAm6ClTU CAN tv a 46
-13:51:09 ok 622 wz3AwyvbW3U CAN tv a 208
-13:51:24 ok 623 ukN2ODnKTo8 CAN tv a 258
-13:51:40 skip (bleeped words) YLOh_O3rwEs
-13:51:43 ok 624 sQZeFmogjz4 CAN tv a 174
-13:51:57 clips collected this run: 624 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 624
+Nightly run on the home computer, 2026-10-28 16:54 (last 400 lines of the collector)
+15:10:54 ok 253 cCv9bG2iGUc US conversation m 425
+15:11:09 ok 254 zRSLiENy9LQ US conversation m 216
+15:11:24 ok 255 FAJhogu0Q1w US conversation m 335
+15:11:39 skip (bleeped words) QE_STtKIAIQ
+15:11:43 ok 256 vD7WMRQ9yEk US conversation m 462
+15:11:55 skip (title) ZyGfA0mWf3E What's Your Favorite Sex Position? | Keep it 100 | Cut
+15:11:58 ok 257 s_0UlCjM8YU US conversation a 219
+15:12:14 skip (bleeped words) _L5mYigNXsI
+15:12:17 skip (bleeped words) qshXV9Pg9ow
+15:12:20 ok 258 pIIn-XeLLog US conversation a 204
+15:12:35 ok 259 dFlvfi1vzTI US conversation a 199
+15:12:51 ok 260 lQmNz8gBc2E US conversation m 374
+15:13:06 ok 261 yOh21JlwKFY US conversation m 530
+15:13:22 ok 262 YCW2merCRz8 US conversation m 217
+15:13:37 ok 263 euktkjCMn54 US conversation m 293
+15:13:53 ok 264 6RuGcpAy0UQ US conversation m 373
+15:14:08 ok 265 wcMsPPCs13g US conversation m 644
+15:14:24 ok 266 HVn8AHLr8Vo US conversation m 187
+15:14:36 skip (title) GEYXN0wjxBE Have You Sent a Nude? | Keep it 100 | Cut
+15:14:39 ok 267 G7CgqPdzUHA US conversation m 312
+15:14:55 ok 268 vbxanxfKkLs US conversation m 428
+15:15:10 ok 269 loh3o_MT74I US conversation m 433
+15:15:25 ok 270 _cPlFYFLvhc US conversation m 141
+15:15:41 ok 271 k47BSXOD0Iw US conversation m 198
+15:15:53 skip (title) JBCcFu16j-0 Virgins and Sex Workers Play Truth or Drink | Cut
+15:15:56 ok 272 z_o_ChTnGoo US conversation m 334
+15:16:11 ok 273 Gip8tatY2-w US conversation m 315
+15:16:26 ok 274 JrFEW3Lu_IA US conversation m 263
+15:16:42 ok 275 UfmsSOBaV08 US conversation m 318
+15:16:57 ok 276 Z3ju1tuVc8w US conversation m 337
+15:17:13 ok 277 qAwYJ7Yvbe0 US conversation m 423
+15:17:29 ok 278 XXfyWrD7SlQ US conversation m 240
+15:17:44 ok 279 ptXIy9R2qqg US conversation m 197
+15:17:59 ok 280 _brhqNSQ3ZE US conversation m 472
+15:18:15 skip (bleeped words) nYr1-CNpyf8
+15:18:19 ok 281 ho9nu0TZ1B8 US conversation m 163
+15:18:34 ok 282 WUy_VhoUHoY US conversation m 224
+15:18:49 ok 283 w0NPId3epSE US conversation m 414
+15:19:04 ok 284 azbYUHZSpj0 US conversation m 320
+15:19:16 skip (title) bgE7rrlv-dY 100 Moms Give Sex Advice | Keep it 100 | Cut
+15:19:20 ok 285 RypP9yRstik US conversation m 265
+15:19:35 ok 286 hPtFud4B8xU US conversation m 346
+15:19:50 ok 287 B7SNK2rbCRE US conversation a 150
+15:20:21 ok 288 qbAstEutWH4 US conversation a 448
+15:20:36 ok 289 5VOoEaAZ_Fs US conversation m 338
+15:20:52 ok 290 W-7nHpFViUk US conversation m 351
+15:21:10 ok 291 IX4U1w21hxg US conversation m 153
+15:21:25 ok 292 uPYjJ51_cYM US conversation m 296
+15:21:41 ok 293 u6ubttMQ2r0 US conversation m 318
+15:21:56 ok 294 N8XBGuHrzro US conversation m 428
+15:22:12 ok 295 3R0uxqXYTJM US conversation m 374
+15:22:27 ok 296 8IuwPb6g5Bg US conversation m 473
+15:22:43 ok 297 vL4ev50sLA4 US conversation m 280
+15:22:58 ok 298 KtO_SBFTQas US conversation m 278
+15:23:14 ok 299 Ke-6bldBx54 US conversation m 230
+15:23:30 ok 300 d-VqIrQZUG4 US conversation m 236
+15:23:45 ok 301 Cx2q1Tdgp2E US conversation m 362
+15:24:01 ok 302 Jk7P7g7eeUM US conversation m 424
+15:24:16 ok 303 vjy0Vig52aw US conversation a 338
+15:24:31 ok 304 2d7PaerGJIo US conversation m 415
+15:24:47 ok 305 wa_S0ZDt_ZU US conversation m 390
+15:25:05 ok 306 87lSfB8q1W4 US conversation m 121
+15:25:20 ok 307 ahEesHYyyvk US conversation m 453
+15:25:35 ok 308 9l8TJwfHbdE US conversation m 372
+15:25:53 ok 309 R7WJgNcWHh4 US conversation m 195
+15:26:09 ok 310 JSH2GW2Aaxw US conversation m 307
+15:26:24 ok 311 1nimZhtweP0 US conversation m 353
+15:26:42 ok 312 gIxKuoW_5-0 US conversation a 422
+15:26:57 ok 313 g-3elr_KUwA US conversation a 326
+15:27:13 ok 314 C5-_4tFUhm8 US conversation m 255
+15:27:29 ok 315 W4RMwryxt9A US conversation m 397
+15:27:48 ok 316 m3nvefwqWW0 US conversation m 260
+15:28:04 ok 317 BjqmgEF7F04 US conversation m 356
+15:28:19 ok 318 FVzdkDLyuHY US conversation m 332
+15:28:34 ok 319 bvViWWXkXm0 US conversation m 531
+15:28:50 ok 320 WLxg4jPbEM0 US conversation m 276
+15:29:06 ok 321 lHhqCyH_NP8 US conversation a 467
+15:29:21 ok 322 f1IU4YiiJQU US conversation m 342
+15:29:37 ok 323 Lrn2AONZyCM US conversation m 211
+15:29:52 ok 324 hzaHVHVYOoo US conversation m 326
+15:30:10 ok 325 UfhVuZyhIxA US conversation m 366
+15:30:25 ok 326 oafQtKTji1U US conversation m 382
+15:30:45 ok 327 bsvjT1SqXAs US conversation m 507
+15:31:18 ok 328 WA4a8ouaars US conversation m 534
+15:31:33 ok 329 1Oai_903Zuk US conversation m 247
+15:31:49 ok 330 OAYyYGgRpKM US conversation m 309
+15:32:05 ok 331 gVjO2p_Cumo US conversation m 240
+15:32:23 ok 332 jvXfxs0bTho US conversation m 289
+15:32:39 ok 333 nXEiEU_1wOU US conversation m 299
+15:32:54 ok 334 1frpwEzkV2o US conversation m 442
+15:33:10 ok 335 ExFdXSWN9js US conversation m 255
+15:33:26 ok 336 qBfswELKIwU US conversation m 339
+15:33:41 ok 337 tDTI0QeXiBc US conversation m 284
+15:33:57 ok 338 _xeTv-R9Vzw US conversation m 206
+15:34:12 ok 339 ykvqpeD6atU US conversation m 321
+15:34:29 ok 340 2C-vWhMPeaw US conversation m 348
+15:34:44 ok 341 wqdZtiF_W9M US conversation m 257
+15:34:59 ok 342 bSQ0h2tca8Y US conversation m 380
+15:35:15 ok 343 3E4sKz1qHRc US conversation m 374
+15:35:30 ok 344 UvKbfegN1g0 US conversation m 288
+15:35:46 ok 345 Plq6DtKYrk4 US conversation m 418
+15:36:02 ok 346 QEYogxozkQk US conversation m 416
+15:36:20 ok 347 ItgkkdIgPe0 US conversation m 220
+15:36:36 ok 348 8-2g5mcRc-M US conversation m 395
+15:36:48 skip (title) 8axiIoJ96qs Guess the Real Drug Dealer
+15:36:58 ok 349 UCNMyOH5lFI US conversation m 464
+15:37:14 ok 350 xorH-uoVW8A US conversation m 285
+15:37:29 ok 351 XzAPG1scAVc US conversation m 344
+15:37:44 ok 352 vfKym4ESwnw US conversation m 320
+15:38:00 ok 353 ovL-u_o71FA US conversation m 378
+15:38:15 ok 354 oXHk5wOV9T0 US conversation m 371
+15:38:31 ok 355 -igcP9Y8hBA US conversation m 225
+15:38:47 ok 356 5NnmcS-Xucs US conversation m 290
+15:39:02 ok 357 qd6k8PZDicw US conversation m 322
+15:39:18 ok 358 Tv7wDvQFKCw US conversation m 321
+15:39:33 ok 359 c78lndyxUlI US conversation m 336
+15:39:49 ok 360 26fLymYXPm0 US conversation m 452
+15:40:04 ok 361 mUpzRwfRzoU US conversation m 441
+15:40:22 ok 362 9x24p_K0heA US conversation m 320
+15:40:38 ok 363 _AKTwdZDmoM US conversation m 429
+15:40:56 ok 364 r4LzSX6bAbk US conversation m 247
+15:41:11 ok 365 gQPqmGj8AaQ US conversation m 388
+15:41:27 ok 366 uh3nNX9BZ3M US conversation m 348
+15:41:42 ok 367 hXbKzog5iCY US conversation m 382
+15:42:11 ok 368 S6BdnK_cscw US conversation m 114
+15:42:26 ok 369 yFLkhNtB8AA US conversation m 113
+15:42:41 ok 370 o43lrYhTyaE US conversation m 86
+15:42:56 ok 371 Q0283hUow5Q US conversation m 134
+15:43:11 ok 372 5IU0QXoUw3g US conversation m 133
+15:43:27 ok 373 IfO2eCjyuz0 US conversation m 90
+15:43:42 ok 374 j4T6pl-TJ0o US conversation m 78
+15:43:57 ok 375 4hRXBffOExI US conversation m 179
+15:44:12 ok 376 Ho2ZB3Aj1NI US conversation m 141
+15:44:27 ok 377 20bM-_dXNqg US conversation m 224
+15:44:44 ok 378 kwlCVw9T4lM US conversation m 143
+15:45:00 ok 379 DutTQG6_4UM US conversation m 126
+15:45:15 ok 380 Qogiom_wtw0 US conversation m 127
+15:45:30 ok 381 6K-aXRRuJ8A US conversation m 132
+15:45:46 ok 382 DJJCKv2Lctc US conversation m 118
+15:46:01 ok 383 JZHrCashnNg US conversation a 151
+15:46:16 ok 384 YiWzqmGDlks US conversation a 66
+15:46:31 ok 385 q_jSw-7IKJo US conversation a 81
+15:46:47 ok 386 G6NgH65fsy4 US conversation a 97
+15:47:02 ok 387 W3Egu8zU79s US conversation a 195
+15:47:24 ok 388 QOUCll5e01g US conversation a 100
+15:47:39 ok 389 Lv8RwlTlhTc US conversation a 89
+15:47:54 ok 390 bP4YBk_89oU US conversation a 123
+15:48:09 ok 391 rwbmDuHmeQM US conversation m 172
+15:48:26 ok 392 fHMG4lYG2to US conversation a 115
+15:48:41 ok 393 YNuh_wIJMa8 US conversation a 139
+15:48:57 ok 394 Gps2EJTWzxg US conversation a 100
+15:49:12 ok 395 HieVpt747VU US conversation a 142
+15:49:27 ok 396 JBkZ1ip-h-U US conversation m 87
+15:49:42 ok 397 rD4YM9Fs__M US conversation a 167
+15:49:57 ok 398 JjhXT_Bf3Og US conversation a 136
+15:50:14 ok 399 _y7K8q5lB4U US conversation m 67
+15:50:35 ok 400 hBbd4S6xa4o US conversation m 117
+15:50:51 ok 401 BNIh9S7jKec US conversation m 119
+15:51:06 ok 402 nT88ZQmRaKQ US conversation m 152
+15:51:21 ok 403 9KXf4qajAYQ US conversation m 128
+15:51:37 ok 404 7n2QocSM9LE US conversation a 145
+15:51:51 ok 405 kfhjyr07gYk US conversation m 162
+15:52:07 ok 406 vOaugsz3l0k US conversation m 146
+15:52:22 ok 407 T20verA-0Zc US conversation m 100
+15:52:50 ok 408 4YnRXtu_rz0 NZ documentary a 48
+15:53:05 ok 409 ZADu_fBNKwc NZ documentary a 34
+15:53:20 ok 410 6fO4V1VmQN0 NZ documentary a 29
+15:53:35 ok 411 GDyFGPJoP20 NZ documentary a 46
+15:53:50 ok 412 -y1oCB_LLFA NZ documentary a 26
+15:54:05 ok 413 rc4smvxha6c NZ documentary a 28
+15:54:20 ok 414 VtsqSaqfYAY NZ documentary a 26
+15:54:35 ok 415 Q_IX7a_m12Y NZ documentary a 37
+15:54:50 ok 416 19FcMzt6Sjc NZ documentary a 36
+15:55:05 ok 417 NRXPFOEmrxc NZ documentary a 28
+15:55:20 ok 418 vr9Uml-cm88 NZ documentary a 28
+15:55:36 ok 419 pjoGtJE8otw NZ documentary a 37
+15:55:51 ok 420 WNeAtbuUFl8 NZ documentary a 33
+15:56:07 ok 421 pG15loAmn24 NZ documentary a 41
+15:56:22 ok 422 lDYmg-T7xnk NZ documentary a 27
+15:56:36 ok 423 DNvYnbze0DI NZ documentary a 31
+15:56:51 ok 424 csAFx39C_pM NZ documentary a 25
+15:57:06 ok 425 3zY15E1RbL0 NZ documentary a 24
+15:57:21 ok 426 MM2Gq1d0ylI NZ documentary a 29
+15:57:36 skip (too short) liTrXAVvYhA
+15:57:40 ok 427 NlP91KO1ZlA NZ documentary a 27
+15:57:55 ok 428 AtKae33fWUQ NZ documentary a 24
+15:58:10 ok 429 d6Tds8y8qbs NZ documentary a 39
+15:58:25 ok 430 8-XzHeD99FI NZ documentary a 21
+15:58:40 ok 431 FWNYSQb5Nso NZ documentary a 31
+15:58:55 ok 432 x2uOsu5OxSQ NZ documentary a 24
+15:59:11 ok 433 I2ScldEJ16w NZ documentary a 24
+15:59:55 ok 434 6xxEzgj4OU4 IRL tv a 395
+16:00:11 ok 435 AlCmjO1h5YM IRL tv a 346
+16:00:26 ok 436 tyNZX91U9BM IRL tv a 287
+16:00:42 ok 437 ibf4LxEmkUw IRL tv a 305
+16:00:57 ok 438 c6beUs5JVx4 IRL tv a 177
+16:01:13 ok 439 tjj7EvSjDKI IRL tv a 47
+16:01:29 ok 440 FidGVMcaLXk IRL tv a 216
+16:01:44 ok 441 juxrSQ5llls IRL tv a 24
+16:02:00 skip (too short) XOccKKZ-6D0
+16:02:04 skip (too short) leROGi2lzvE
+16:02:07 skip (too short) wuD-hNN8liY
+16:02:10 ok 442 47kXaJa_s0Q IRL tv a 60
+16:02:26 ok 443 JysmmGXMkCQ IRL tv a 41
+16:02:41 ok 444 1nRCOhmXAio IRL tv a 49
+16:02:56 ok 445 p11cq8ZItQM IRL tv a 61
+16:03:11 ok 446 4ohW0oOOaQQ IRL tv a 20
+16:03:26 skip (too short) THeu9z0ZKeo
+16:03:29 ok 447 XZv_3nDpbAw IRL tv a 20
+16:03:45 skip (too short) izQ6kd6Lwkw
+16:03:48 skip (too short) gbfiKlm0iC0
+16:03:51 skip (too short) HhbFggD8xIg
+16:03:54 ok 448 t-itVG9QtGw IRL tv a 20
+16:04:09 ok 449 K-KFKMWZ8sk IRL tv a 85
+16:04:24 skip (too short) pcSc2N-1Ip4
+16:04:27 skip (too short) 8wT4AcwQs2Y
+16:04:31 ok 450 huXP0hCwKYg IRL tv a 21
+16:04:46 ok 451 qw5DsYkYn6Y IRL tv a 94
+16:05:01 ok 452 XC9AjRhVxbk IRL tv a 111
+16:05:17 ok 453 xXNJ32jTDwM IRL tv a 82
+16:05:45 ok 454 aGTLP6A_-Ho IRL tv a 100
+16:06:02 ok 455 xnOEmt7ILIY IRL tv a 152
+16:06:17 ok 456 dIsyaOQNrBc IRL tv a 38
+16:06:33 ok 457 VfoF10B_27I IRL tv a 45
+16:06:48 ok 458 MC97FXzf59I IRL tv a 87
+16:07:04 ok 459 VI441m_-ct8 IRL tv a 227
+16:07:19 ok 460 vY1EbQ-1Q1o IRL tv a 126
+16:07:37 ok 461 r6V5rlWZ9Zk IRL tv a 233
+16:07:53 ok 462 cPscTD_OCOE IRL tv m 116
+16:08:09 ok 463 tOEvbfieUI4 IRL tv a 234
+16:08:25 ok 464 xBYJqZMDghM IRL tv a 239
+16:08:42 ok 465 le_QfEpA2ag IRL tv a 347
+16:08:58 ok 466 21xP5U8xHVA IRL tv a 244
+16:09:17 ok 467 ofO2wn2rb2o IRL tv a 72
+16:09:34 ok 468 qcCoDloPp-s IRL tv a 37
+16:09:50 ok 469 WVwRoiX-0yo IRL tv a 197
+16:10:06 ok 470 q0ir3ykBBq4 IRL tv a 187
+16:10:21 ok 471 NRevWWeh0Zg IRL tv a 273
+16:10:37 ok 472 Os9l8QZL1qU IRL tv a 52
+16:10:53 ok 473 X3zTtafEHAA IRL tv a 113
+16:11:09 ok 474 b6xLpNWGFPA IRL tv a 160
+16:11:25 ok 475 dA0CiTVW8PA IRL tv a 83
+16:11:43 ok 476 Q-_ns2Kh87o IRL tv a 262
+16:11:58 ok 477 wmkzzlj8R54 IRL tv a 159
+16:12:14 ok 478 QjRB5gjlroE IRL tv a 101
+16:12:31 ok 479 8edz4qgiB1w IRL tv a 75
+16:12:47 ok 480 9zaLCeFnaOU IRL tv a 132
+16:13:03 ok 481 f69N908XkEk IRL tv a 126
+16:13:22 ok 482 qdyoMe5MRDI IRL tv a 193
+16:13:39 ok 483 J7VhJxI8_Og IRL tv a 264
+16:13:54 ok 484 hX9-vYKEAhI IRL tv a 194
+16:14:11 ok 485 FQfYrHDV5Tc IRL tv a 52
+16:14:26 ok 486 2-A6ykI3OmM IRL tv a 309
+16:14:43 ok 487 L-fylr8vcsk IRL tv a 305
+16:14:59 ok 488 90E99utI3Zc IRL tv a 120
+16:15:14 ok 489 mhgXK0xOWco IRL tv a 121
+16:15:30 ok 490 KaHtSlVyNIs IRL tv a 216
+16:15:46 ok 491 wJNyPU6b7L0 IRL tv a 171
+16:16:01 ok 492 h9NNwpD1Af4 IRL tv a 193
+16:16:17 ok 493 19zmZtYgTMk IRL tv a 136
+16:17:07 ok 494 iVq8D0y3wbY CAN tv a 28
+16:17:27 ok 495 peFdg67RMAY CAN tv a 60
+16:17:44 ok 496 LahKQjT5Dp8 CAN tv a 33
+16:18:02 ok 497 4OBpO8mSO7o CAN tv a 37
+16:18:29 ok 498 WOp02EZGk9c CAN tv a 49
+16:18:55 ok 499 aq2RTQ39CEc CAN tv a 108
+16:19:20 ok 500 FvvoUfzGKNc CAN tv a 70
+16:19:38 ok 501 eGxXtORu1LQ CAN tv m 58
+16:19:58 ok 502 ewL-vr_hmdc CAN tv a 101
+16:20:18 ok 503 urtQO8dPUmY CAN tv a 74
+16:20:38 ok 504 i31vwFfs-dg CAN tv a 109
+16:20:56 ok 505 0pqXK4slt_s CAN tv a 58
+16:21:14 ok 506 tTgm55WnrYc CAN tv a 173
+16:21:33 ok 507 psBapljFIgk CAN tv a 77
+16:21:51 ok 508 LRScWn_xr-E CAN tv a 258
+16:22:10 ok 509 ZUwifqiE3NY CAN tv a 45
+16:22:28 ok 510 ahHZVr7ekds CAN tv a 77
+16:22:45 ok 511 SZqktehAKNI CAN tv a 61
+16:23:05 ok 512 YigLxziMFBk CAN tv a 26
+16:23:25 ok 513 wMdrJAF29MI CAN tv a 80
+16:23:43 ok 514 7gETXIHxDvU CAN tv a 144
+16:24:03 ok 515 Q2Xh8l2vIfk CAN tv a 54
+16:24:20 ok 516 ZeZVa-Aoowo CAN tv a 64
+16:24:35 ok 517 QTJQaojUAPE CAN tv a 55
+16:24:50 ok 518 PEU5ESXQWsY CAN tv a 48
+16:25:05 ok 519 pN9YHy0ukE0 CAN tv a 73
+16:25:21 ok 520 oT0tFs2nn50 CAN tv a 211
+16:25:38 ok 521 BA2q7X2PLBQ CAN tv a 60
+16:25:54 ok 522 q2Cpx_f6xD0 CAN tv m 25
+16:26:09 ok 523 NpuQKm9Lu8k CAN tv a 97
+16:26:24 ok 524 8FptTw-PqU0 CAN tv a 55
+16:26:39 ok 525 V8sQHkoL758 CAN tv a 113
+16:26:55 ok 526 5_KOUmCMyXY CAN tv a 162
+16:27:10 ok 527 liKvShWZIk8 CAN tv a 209
+16:27:25 ok 528 MwkeWl-PPDQ CAN tv a 238
+16:27:43 ok 529 jvPrHu86J4I CAN tv a 73
+16:28:01 ok 530 GzVE_nhbyZY CAN tv a 135
+16:28:17 ok 531 UhedgV9CJg4 CAN tv a 231
+16:28:32 ok 532 tO_Gmv0chSQ CAN tv a 64
+16:28:47 ok 533 TP31_LCT-Eo CAN tv a 146
+16:29:17 ok 534 zNDcguR0tt8 CAN tv a 139
+16:29:32 ok 535 OEz27y3GQuI CAN tv a 175
+16:29:47 ok 536 aIB6WIDmg20 CAN tv a 122
+16:30:03 skip (bleeped words) kZ8Cv3pUY0M
+16:30:08 ok 537 n0MMtVXRAfc CAN tv m 29
+16:30:23 ok 538 IVAJtjFFeTE CAN tv m 32
+16:30:39 ok 539 JZm7V8LsSUw CAN tv m 72
+16:30:55 ok 540 n3HtNKXlliI CAN tv m 37
+16:31:11 ok 541 cz0wWZ0cVVQ CAN tv m 26
+16:31:26 ok 542 X4NuDa83iv0 CAN tv m 63
+16:31:45 skip (too short) jHPRNzGUIro
+16:31:52 ok 543 feOeQ5MQvVg CAN tv m 49
+16:32:07 ok 544 0r7iAw-9mPw CAN tv m 41
+16:32:22 ok 545 rqFD_adz46Q CAN tv m 54
+16:32:38 ok 546 p9z0gWDElaw CAN tv m 46
+16:32:53 ok 547 GgzVfA8JXdI CAN tv m 24
+16:33:09 ok 548 7yO1Vdu1tkM CAN tv m 240
+16:33:24 ok 549 9VGGQZBlEe0 CAN tv m 33
+16:33:39 ok 550 Py7di50WcfM CAN tv m 30
+16:33:54 ok 551 G8gPR8lEw4M CAN tv m 56
+16:34:09 ok 552 00pCHmAULUo CAN tv m 32
+16:34:25 ok 553 dqboSRXPE4I CAN tv m 34
+16:34:40 ok 554 _E1i7XtOXA0 CAN tv m 31
+16:34:55 ok 555 qPIfYAEaQSI CAN tv m 47
+16:35:10 ok 556 FZP-zqbYzMk CAN tv a 32
+16:35:25 ok 557 Kizv6SWOICo CAN tv a 39
+16:35:42 skip (too short) bCxsV_PuvhY
+16:35:46 ok 558 B27JAncoJO8 CAN tv m 20
+16:36:01 ok 559 axmL16U8FN4 CAN tv m 30
+16:36:17 ok 560 4pbWGnrE__0 CAN tv m 37
+16:36:32 ok 561 PSF_FtQUglw CAN tv m 29
+16:36:49 ok 562 hD9JNcxmNRU CAN tv m 25
+16:37:05 ok 563 xdF54-ITmM0 CAN tv m 43
+16:37:20 ok 564 U6wiDvXESfk CAN tv m 62
+16:37:35 ok 565 YFVP6GfiZkk CAN tv m 81
+16:37:52 ok 566 _Y_2ZL8iJdQ CAN tv m 31
+16:38:07 ok 567 owT0sFVpEk8 CAN tv m 38
+16:38:22 ok 568 SDDBZMS8xlE CAN tv m 97
+16:38:38 ok 569 JaVETBsHQR8 CAN tv a 42
+16:38:53 ok 570 BNB3bmxK0Sg CAN tv m 33
+16:39:08 ok 571 mr4rJieVr5Q CAN tv m 50
+16:39:23 ok 572 Axsv4WlEFDI CAN tv m 29
+16:39:38 ok 573 p0EhPVBQCkg CAN tv m 31
+16:40:07 skip (title) ChqH0xcdMT0 Mark of a Murderer | Official Trailer | ABC iview
+16:40:10 ok 574 vm1BUvJkqIA AUS tv a 237
+16:40:25 ok 575 4LqI-KUsLdo AUS tv m 51
+16:40:40 ok 576 7fH2tFClQq4 AUS tv a 290
+16:40:55 ok 577 -qjJyjbMPz4 AUS tv m 147
+16:41:10 ok 578 Xvfo2tv8j40 AUS tv a 621
+16:41:25 ok 579 im6lwu3PVys AUS tv m 55
+16:41:40 ok 580 w-N9-6CpHnY AUS tv m 151
+16:41:56 ok 581 0FT4zXYvBxE AUS tv a 318
+16:42:11 ok 582 o0LA5gZQUHw AUS tv a 142
+16:42:26 ok 583 9H-fvL_swPk AUS tv m 304
+16:42:41 skip (bleeped words) O7yygZ_l01E
+16:42:44 ok 584 i4pYI9BNMQI AUS tv a 261
+16:42:56 skip (title) PNrSlUrtOoY A graphic designer's most controversial opinions
+16:43:04 ok 585 Dv1wQHNQFZg AUS tv a 248
+16:43:22 skip (bleeped words) -CP-xXr827M
+16:43:26 ok 586 7Ylvs20oegQ AUS tv a 286
+16:43:41 ok 587 npvjnLserBY AUS tv m 283
+16:43:56 skip (bleeped words) zgxH7LGCMwU
+16:43:59 ok 588 9-xmQjl_kFY AUS tv a 115
+16:44:15 ok 589 DhUfo-HbfmI AUS tv m 170
+16:44:30 skip (bleeped words) gZ1m0tIUIDM
+16:44:33 ok 590 412mS_7-yQs AUS tv m 78
+16:44:48 ok 591 hgbY3jEIRf4 AUS tv a 319
+16:45:03 ok 592 QcTOr7ur1Yo AUS tv a 33
+16:45:19 ok 593 Ct0xIKWDqPA AUS tv m 194
+16:45:33 ok 594 QXOQylptaFo AUS tv m 126
+16:45:49 ok 595 C9Rjs8VH38M AUS tv a 320
+16:46:04 ok 596 r-zT8fbqLI8 AUS tv a 275
+16:46:19 ok 597 OAbzyV2mM8Y AUS tv m 108
+16:46:34 ok 598 K_b-_y-C2hs AUS tv a 337
+16:46:49 ok 599 j8P_jwMF77Q AUS tv m 177
+16:47:05 ok 600 NXJurJZfqYM AUS tv a 195
+16:47:19 ok 601 I7-cepV2rGs AUS tv a 255
+16:47:35 ok 602 lkiBdeFvkRQ AUS tv a 183
+16:47:50 ok 603 eVrUYIR9b2s AUS tv a 226
+16:48:09 ok 604 6q6bwPDAOds AUS tv a 167
+16:48:25 ok 605 nGGClFW3N38 AUS tv a 267
+16:48:42 ok 606 wIYlYZb1hGs AUS tv a 235
+16:48:57 ok 607 mHyB7Ze_aSU AUS tv a 102
+16:49:16 ok 608 xOECN-cS7Mk AUS tv a 254
+16:49:35 ok 609 Q-1gQSZe9oo AUS tv a 134
+16:49:56 ok 610 J3iWBujmtTE AUS tv a 150
+16:50:14 ok 611 AmhLaUrEDbY AUS tv a 296
+16:50:35 ok 612 ja8kM5ldRHc AUS tv a 219
+16:50:55 ok 613 0-oydrsyQ4c AUS tv a 326
+16:51:35 ok 614 ZeoeRCKayno AUS tv a 43
+16:51:57 ok 615 tYI0pPkDLaI AUS tv a 57
+16:52:20 ok 616 x8pEfqbbR2k AUS tv a 61
+16:52:57 ok 617 BziTO8dKJDA AUS tv a 39
+16:53:12 ok 618 -oC4-TE2wVY AUS tv a 33
+16:53:27 ok 619 rpKqUMRG_Hg AUS tv a 37
+16:53:43 ok 620 ZKLfP3bu7aM AUS tv a 42
+16:53:59 ok 621 K6ldJ-qO108 AUS tv a 27
+16:54:14 ok 622 il4LVjiXfAo AUS tv a 22
+16:54:30 ok 623 l_7qJazxuT0 AUS tv a 41
+16:54:44 clips collected this run: 623 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 623
