@@ -1,401 +1,401 @@
-Nightly run on the home computer, 2026-10-29 17:19 (last 400 lines of the collector)
-15:42:14 ok 263 Q_eq0PPXDvI UK learning m 336
-15:42:30 ok 264 tGZBF3unpxg UK learning m 182
-15:42:45 ok 265 qXuZ90Dt4mw UK learning m 90
-15:43:01 ok 266 loGKkB8pTK0 UK learning m 155
-15:43:16 ok 267 l83_78U67A4 UK learning m 273
-15:43:31 ok 268 1LAgDCV0BgQ UK learning m 311
-15:43:46 ok 269 t_yAebw8K5E UK learning m 46
-15:44:01 ok 270 2h2f2Mdra4I UK learning m 129
-15:44:17 ok 271 ZZTV0Gwyo_Q UK learning m 159
-15:44:33 ok 272 IRR487w3tTM UK learning m 285
-15:44:48 ok 273 EcVv6YfsdHs UK learning m 182
-15:45:03 ok 274 dq42tWvBoUA UK learning m 119
-15:45:19 ok 275 XgVY4zX9Y4M UK learning m 226
-15:45:35 ok 276 MOvWM-hfKmo UK learning m 144
-15:45:50 ok 277 zNUhMBmPbTU UK learning m 85
-15:46:06 ok 278 -5jDMf4kTkY UK learning m 98
-15:46:21 ok 279 srYPJYgDaj8 UK learning m 127
-15:46:37 ok 280 PM3X-t0-6Mc UK learning m 77
-15:46:52 ok 281 mHNQ8s2pnX8 UK learning m 61
-15:47:08 ok 282 Nco2ifowuTk UK learning m 98
-15:47:23 ok 283 DRl6tpsxchw UK learning m 98
-15:47:39 ok 284 WRpRBgvptMQ UK learning m 194
-15:47:54 ok 285 Z_t_klt6cso UK learning m 235
-15:48:09 ok 286 i4YoxY9ydwQ UK learning m 71
-15:48:25 ok 287 DHsDmUvLN5I UK learning m 100
-15:48:40 ok 288 JomIijMfK78 UK learning m 40
-15:48:55 ok 289 vTSdnhBtQUM UK learning m 61
-15:49:10 ok 290 RqPAeq3vA_s UK learning m 97
-15:49:26 ok 291 uNOnyMRdDTA UK learning m 155
-15:49:43 ok 292 BT3JbwlpQxU UK learning m 186
-15:50:00 ok 293 z8mkCUFp_Mk UK learning m 69
-15:50:15 ok 294 _bC0J-zFTLE UK learning m 82
-15:50:30 ok 295 hXT0DjCeClI UK learning a 105
-15:50:46 ok 296 Bks4JX95dD8 UK learning m 202
-15:51:01 ok 297 l5WuVFgh33Y UK learning m 255
-15:51:17 ok 298 XSrHqSFEdCI UK learning m 89
-15:51:33 ok 299 JnLr6u0ytew UK learning m 140
-15:51:59 ok 300 g374UymUv4I UK documentary m 91
-15:52:15 ok 301 ij_xXZAhJPs UK documentary m 74
-15:52:30 ok 302 sNppKQh0xPo UK documentary m 70
-15:52:46 ok 303 DeMk2eNW8PQ UK documentary m 72
-15:53:03 ok 304 JC7U4tA8ttQ UK documentary m 63
-15:53:19 ok 305 6WqI16Ppte0 UK documentary m 45
-15:53:34 ok 306 tMiyzuO1qMs UK documentary m 60
-15:53:52 ok 307 YYkIjy8sOmE UK documentary m 40
-15:54:07 ok 308 slHkSBj-g-A UK documentary m 71
-15:54:23 ok 309 51M5kF53MKk UK documentary m 64
-15:54:38 ok 310 fcM6rqFzuw4 UK documentary m 55
-15:54:54 skip (mostly music) AB9-qdPO1Eg
-15:54:57 ok 311 oaFHXOsAMi0 UK documentary m 74
-15:55:15 ok 312 -h0VFmyAZxc UK documentary m 82
-15:55:31 ok 313 ApzuR8_qNjs UK documentary m 77
-15:55:48 ok 314 XINQvKbqzq0 UK documentary m 94
-15:56:06 ok 315 _j_zHKgwFAM UK documentary m 53
-15:56:23 ok 316 IMGrrFp8Ujo UK documentary m 65
-15:56:39 ok 317 _0onFbc5FQM UK documentary m 65
-15:56:54 ok 318 EkMjXGUT6BA UK documentary m 52
-15:57:09 ok 319 R8srJcF65Mc UK documentary m 76
-15:57:25 ok 320 5QwKBNWOgbA UK documentary m 52
-15:57:40 ok 321 sYrB03_FX9g UK documentary m 32
-15:57:55 ok 322 o1vHQKc_JiM UK documentary m 79
-15:58:10 ok 323 TfuOjf_aRUQ UK documentary m 38
-15:58:25 ok 324 bZIuielZpf4 UK documentary m 72
-15:58:40 ok 325 EoCaV-Hf3a4 UK documentary m 78
-15:58:55 ok 326 rjgo1pzUMa4 UK documentary m 68
-15:59:11 ok 327 ORiIgDkfopM UK documentary m 66
-15:59:25 ok 328 0IjLMuljWro UK documentary m 63
-15:59:40 ok 329 o1Y4Z0oh1GE UK documentary m 58
-15:59:55 ok 330 EhNENidw6xI UK documentary m 47
-16:00:11 ok 331 DAyXeXVFSbw UK documentary m 70
-16:00:26 ok 332 XinNmhlnTyI UK documentary m 85
-16:00:41 ok 333 GnTIKh5w0j8 UK documentary m 86
-16:01:06 ok 334 mTfqbZa0Pr4 UK documentary m 108
-16:01:21 ok 335 KZGVgz9b2fw UK documentary m 91
-16:01:37 ok 336 eT0aet4Bptg UK documentary m 68
-16:01:52 ok 337 RVmuU04-X5E UK documentary m 47
-16:02:07 ok 338 0S_hqbCbo9Y UK documentary m 88
-16:02:32 ok 339 sDrOrtbhbiY UK documentary m 103
-16:03:04 skip (too short) kuF8Ppb7Ijw
-16:03:08 skip (too short) TAxIrP3xvgE
-16:03:11 ok 340 gPC_wcFDx0E UK documentary m 43
-16:03:26 ok 341 YSLk4WziVmM UK documentary m 22
-16:03:44 ok 342 phg_LGThrwA UK documentary m 25
-16:03:59 ok 343 4QieIjCSsqc UK documentary m 33
-16:04:15 ok 344 Mxh9-GzJa0E UK documentary m 25
-16:04:30 ok 345 Hx5d07OQXcE UK documentary m 46
-16:04:46 ok 346 SYvhpZ9K8IQ UK documentary m 31
-16:05:16 ok 347 ENeZFK8oYEg UK tv m 258
-16:05:35 ok 348 Zst0WdavX6k UK tv m 72
-16:05:55 ok 349 LM-WXVqjzbQ UK tv m 171
-16:06:13 ok 350 zg0upqWM7-E UK tv m 254
-16:06:28 ok 351 iGx3AFrZm9s UK tv m 212
-16:06:44 ok 352 VwDFanYsXyM UK tv m 367
-16:06:59 ok 353 jUTijHzhW2E UK tv m 193
-16:07:16 ok 354 FMP7Oa713Sc UK tv m 184
-16:07:33 ok 355 aPwiyxkRbwA UK tv m 215
-16:07:49 ok 356 svcRwn-g-0E UK tv m 223
-16:08:08 ok 357 R31cwKpAT9c UK tv m 200
-16:08:24 ok 358 8_k8Wu1Zw1g UK tv m 308
-16:08:39 ok 359 24bkFNTUgUs UK tv m 288
-16:08:54 ok 360 y96Uk5RoWx8 UK tv m 99
-16:09:12 ok 361 0UyIqQzg36U UK tv m 357
-16:09:27 ok 362 pJN6Kn6OxUs UK tv m 84
-16:09:42 ok 363 oxgzrA4CWDk UK tv m 283
-16:09:58 ok 364 OTLUGNFugC4 UK tv m 88
-16:10:16 ok 365 Vg6ys0D8C2o UK tv m 295
-16:10:33 ok 366 x_CkztJ4PHk UK tv m 227
-16:10:48 ok 367 6rmpYZNgPEY UK tv m 100
-16:11:06 ok 368 QzGlTULmheI UK tv m 122
-16:11:23 ok 369 TYZuifJ_yyo UK tv m 161
-16:11:41 ok 370 easvzXhyplQ UK tv m 337
-16:11:57 ok 371 lCnGxF_4qZo UK tv m 280
-16:12:16 ok 372 CWan7u2-yNM UK tv m 169
-16:12:31 ok 373 pIPhrdHLDYI UK tv m 353
-16:12:46 ok 374 QqgQkhBF9jU UK tv m 304
-16:13:01 ok 375 T0dH5LAJFy4 UK tv m 269
-16:13:16 ok 376 dE3FFSegd-8 UK tv m 174
-16:13:33 ok 377 YkaPbU48oCw UK tv m 235
-16:13:49 ok 378 Cmr416JxS3o UK tv m 241
-16:14:04 ok 379 Vp9jEYY2Ch0 UK tv m 171
-16:14:19 ok 380 p6gUbu9fSYs UK tv m 333
-16:14:34 ok 381 bN-ED-6MEwI UK tv m 258
-16:14:50 ok 382 KBziapXIanE UK tv m 130
-16:15:08 ok 383 zvsFuv8WGxw UK tv m 203
-16:15:25 ok 384 xZSLw0wDED4 UK tv m 175
-16:15:42 ok 385 uk5rkVf_QN0 UK tv m 300
-16:15:58 ok 386 N-tI0IOQP90 UK tv m 155
-16:16:28 ok 387 t8E3b9olptc UK tv a 34
-16:16:43 ok 388 pUHypFeNPac UK tv a 46
-16:16:59 ok 389 _rWmBSMJKI8 UK tv a 47
-16:17:14 ok 390 8lsX8pNvfqU UK tv a 46
-16:17:29 ok 391 H1LQ-EbXGmg UK tv a 509
-16:17:45 ok 392 bhNE7_wDWOE UK tv a 118
-16:18:00 ok 393 hocad80qDH0 UK tv a 44
-16:18:15 ok 394 919-rHrdKbI UK tv a 55
-16:18:31 ok 395 uE29MW7JrUk UK tv a 404
-16:18:46 ok 396 0sBKvFKDGvs UK tv a 152
-16:19:01 ok 397 IrKbBxDdVgw UK tv a 29
-16:19:17 ok 398 Bg3BtvZo5BA UK tv a 61
-16:19:32 ok 399 cdvX669iEyk UK tv a 88
-16:19:47 ok 400 spxnmCT_gmA UK tv a 43
-16:20:02 ok 401 l8a1aaWw4L0 UK tv a 301
-16:20:17 ok 402 1lecy81nIQ8 UK tv a 158
-16:20:32 ok 403 Q6vN6M2qFjs UK tv a 28
-16:20:48 ok 404 Ki7Uy2T3YQo UK tv a 47
-16:21:03 ok 405 Hmt2QA7x_-c UK tv a 42
-16:21:18 ok 406 1n9d7Rjt8OY UK tv a 27
-16:21:33 ok 407 dpNpIATQQdM UK tv a 156
-16:21:48 ok 408 osgvYFJ8AYQ UK tv a 104
-16:22:04 ok 409 ElfIUhQQJYk UK tv a 455
-16:22:19 ok 410 f0rQgrt_pVk UK tv a 47
-16:22:34 ok 411 5DZct_wC-Gc UK tv a 40
-16:22:49 ok 412 -BskysMshyI UK tv a 30
-16:23:05 ok 413 t3q0NZllzy0 UK tv a 395
-16:23:20 ok 414 6mfRC-xpKOE UK tv a 359
-16:23:37 ok 415 Q9M6iRXRVA8 UK tv a 96
-16:23:52 ok 416 mdEbUs8GzSk UK tv a 33
-16:24:07 ok 417 XvhcDyV8zvA UK tv a 51
-16:24:22 ok 418 dlEw0e2XJJU UK tv a 48
-16:24:37 ok 419 qmjXHXuvnLA UK tv a 44
-16:24:52 skip (bleeped words) L0PGtzaI34w
-16:24:55 ok 420 zDlD1O0oNkY UK tv a 101
-16:25:10 ok 421 AlqD7nlDiIs UK tv a 37
-16:25:25 ok 422 6MEaF01_apE UK tv a 79
-16:25:40 ok 423 P3rZy2HPN7A UK tv a 36
-16:25:56 ok 424 cZLfbozBWdA UK tv a 400
-16:26:11 ok 425 LIAvGP5BK3A UK tv a 272
-16:26:27 ok 426 v6QAirjZAJ4 UK tv a 129
-16:26:59 ok 427 3519Uc_VKR4 UK tv a 43
-16:27:14 ok 428 orsJlOS4-qE UK tv m 310
-16:27:29 ok 429 fkMGtqOSw5I UK tv a 422
-16:27:45 ok 430 JslWXRj_YvQ UK tv a 46
-16:28:00 ok 431 K0EHWX3Hifo UK tv a 27
-16:28:15 ok 432 6RTZ_l35QJs UK tv m 317
-16:28:31 ok 433 zWMB5YJqWIk UK tv a 116
-16:28:46 ok 434 jnvc6N13LY0 UK tv m 111
-16:29:01 ok 435 Rm31xo_MdzY UK tv m 269
-16:29:16 ok 436 hvN0Xx37Se0 UK tv m 178
-16:29:31 ok 437 YKfgMbWPgII UK tv m 248
-16:29:47 ok 438 nbe3roJtmmM UK tv m 176
-16:30:02 ok 439 wwRwPcm3P4Q UK tv a 23
-16:30:17 ok 440 AWtLTbECjk8 UK tv a 57
-16:30:32 ok 441 JF7g_7NAWNw UK tv m 95
-16:30:47 ok 442 z-SAVMUrm5E UK tv m 108
-16:31:02 ok 443 NuwzCB65k-o UK tv a 22
-16:31:17 ok 444 vEBWoH3MULU UK tv m 156
-16:31:32 ok 445 3SwmJop3nqU UK tv m 156
-16:31:47 ok 446 rEMYtxfPhXc UK tv m 113
-16:32:03 ok 447 gNiC4YDH0Mw UK tv a 138
-16:32:18 ok 448 YvLb4BLh6Vw UK tv m 160
-16:32:33 ok 449 yCD-8JqN9tY UK tv m 160
-16:32:51 skip (bleeped words) GnLyA3Ov5vA
-16:32:54 ok 450 Li0ZdqX9iVc UK tv a 157
-16:33:09 ok 451 X8peRx-WRAk UK tv a 93
-16:33:24 ok 452 5dZjnknHNj4 UK tv a 135
-16:33:39 ok 453 x4yXnWly3Dk UK tv a 116
-16:33:55 ok 454 xAhFonn1ED0 UK tv a 71
-16:34:09 ok 455 _Hg8WSM2UPE UK tv a 24
-16:34:25 ok 456 AKCB_VAyg8k UK tv a 128
-16:34:40 ok 457 cvKrwpWcvRY UK tv a 276
-16:34:55 ok 458 E4SxGFDnPOo UK tv a 143
-16:35:10 ok 459 gaih6xGRALA UK tv a 81
-16:35:22 skip (title) OBI68v_XRlI "When Was The Last Time You Had Sex?" | What It's Like Datin
-16:35:25 ok 460 sLOlzw-DbkE UK tv a 89
-16:35:40 ok 461 S2vDSOBuOUs UK tv a 321
-16:35:55 ok 462 taWwcLmPUso UK tv a 25
-16:36:10 ok 463 G7uUGJhiehM UK tv a 126
-16:36:26 ok 464 VHgCZJGT9Fo UK tv a 52
-16:36:41 ok 465 Bt2Lzqb_1p8 UK tv a 298
-16:36:56 ok 466 B7gvdq8TQ9s UK tv a 94
-16:37:29 ok 467 k8bQdMoTnJk US learning a 139
-16:37:44 ok 468 hxqYPNEGORY US learning a 65
-16:37:59 ok 469 d3mL5PaH5uo US learning a 130
-16:38:14 ok 470 iAn6LTUhY2I US learning a 184
-16:38:29 ok 471 ij1T3JH2QOs US learning a 146
-16:38:47 ok 472 63Ix79i78JQ US learning a 26
-16:39:02 ok 473 Oj8c11kAuuY US learning a 171
-16:39:17 ok 474 C0f79eLmCvg US learning a 215
-16:39:32 ok 475 gG5odzM8GDo US learning a 135
-16:39:47 ok 476 lpJdW3pdiTM US learning a 261
-16:40:03 ok 477 EOjW3Na2X8A US learning a 171
-16:40:20 ok 478 lgsfaZzkBaQ US learning a 28
-16:40:37 ok 479 U3e6FgLtHy4 US learning a 133
-16:40:52 ok 480 yyc0JIeSed0 US learning a 217
-16:41:07 ok 481 f_Z_jyOdT-g US learning a 28
-16:41:22 ok 482 V-sMdOcsMPs US learning a 122
-16:41:37 ok 483 A7rLXI-X-SM US learning a 122
-16:41:52 ok 484 2XRARHP9nt0 US learning a 211
-16:42:08 ok 485 iMDEcsApRhw US learning a 235
-16:42:25 ok 486 O8wcGNCyLHw US learning a 26
-16:42:40 ok 487 dPEdHT6ndGA US learning a 188
-16:42:55 ok 488 FmVuiQprD7w US learning a 201
-16:43:10 ok 489 I9osLn5Xwgs US learning a 123
-16:43:25 ok 490 llcxeE73k7k US learning a 210
-16:43:40 ok 491 _AKyKCJbWQA US learning a 25
-16:43:55 ok 492 Aon9X9lZs4U US learning a 65
-16:44:10 ok 493 FDrVSz3iMdg US learning a 142
-16:44:26 ok 494 h-rj2AIVlJg US learning a 201
-16:44:41 ok 495 EaSQQQqteJY US learning a 130
-16:44:56 ok 496 cUlVifloFeI US learning a 223
-16:45:12 ok 497 KbY605wmMjo US learning a 27
-16:45:27 ok 498 jQKXibscnWM US learning a 150
-16:45:42 ok 499 sE59KjdXWsM US learning a 185
-16:45:58 ok 500 rqtzZxdB3aE US learning a 141
-16:46:13 ok 501 CL37FqwRvIo US learning a 221
-16:46:28 ok 502 V3jzVQpVdAQ US learning a 25
-16:46:46 ok 503 pqIxEOKQa3I US learning a 137
-16:47:01 ok 504 haAxMX0Ott0 US learning a 216
-16:47:16 ok 505 QJfWDSPWNUY US learning a 68
-16:47:32 ok 506 iTGi2zSoejM US learning a 62
-16:48:00 ok 507 HLanPkuxXmM US learning m 116
-16:48:15 ok 508 Zqvl1YulEM0 US learning m 180
-16:48:30 ok 509 03lUEpWg8OM US learning m 180
-16:48:45 ok 510 KXwxTXzjyyk US learning m 158
-16:49:01 ok 511 QyNP5jVmc_U US learning m 136
-16:49:16 ok 512 IOaLCRzRvSA US learning m 164
-16:49:31 ok 513 qnMy1twCKAI US learning m 155
-16:49:46 ok 514 vaoySjPebqk US learning m 94
-16:50:02 ok 515 _vx2ylysiTs US learning m 104
-16:50:17 ok 516 r6LIDcV0neE US learning m 149
-16:50:32 ok 517 QMn0-OrWBVA US learning m 136
-16:50:48 ok 518 dVIG9eFokC4 US learning m 145
-16:51:02 ok 519 P500FJ8Sptk US learning m 119
-16:51:17 ok 520 n68k7k68iLA US learning m 87
-16:51:33 ok 521 JT0FKgE-qPI US learning m 225
-16:51:48 ok 522 7W2eUcFMCU4 US learning m 138
-16:52:03 ok 523 GhkuLXAJbfg US learning m 149
-16:52:18 ok 524 R1Ge9NFSDyE US learning m 172
-16:52:33 ok 525 0v3SLspaaf0 US learning m 138
-16:52:48 ok 526 903ikamLC2M US learning m 109
-16:53:04 ok 527 lSFBCHnEmrY US learning m 172
-16:53:19 ok 528 ijQDxwUGIOg US learning m 204
-16:53:34 ok 529 Cj4rpkPbWt0 US learning m 89
-16:53:51 ok 530 _DxqTeK6ncQ US learning m 167
-16:54:10 ok 531 nnDVoc5GwSc US learning m 196
-16:54:26 ok 532 8ZJNFcy3rJI US learning m 119
-16:54:40 ok 533 GBee7qwyl5k US learning m 110
-16:54:55 ok 534 ofrryYmOBqQ US learning m 171
-16:55:11 ok 535 uCXjxMw9wak US learning m 148
-16:55:26 ok 536 7mmBdUc0ZMA US learning m 196
-16:55:41 ok 537 TzCJD8YmbtQ US learning m 223
-16:55:56 ok 538 eHgsSNfFpcY US learning m 333
-16:56:11 ok 539 ZqcIgCDWtGs US learning m 154
-16:56:26 ok 540 IFoNI_kyvXs US learning m 379
-16:56:41 ok 541 yUOZb1Q8PlI US learning m 288
-16:56:56 ok 542 t2l9VLRLhtE US learning m 149
-16:57:11 ok 543 wS7QCkl3nQE US learning m 309
-16:57:27 ok 544 JOaq8IM2tag US learning m 168
-16:57:42 ok 545 kCbl5sjut50 US learning m 338
-16:57:57 ok 546 egc43jO-oGM US learning m 243
-16:58:25 skip (too short) 1HCDKF-hBVc
-16:58:29 ok 547 OCp43nUf0yQ US learning a 448
-16:58:49 ok 548 EV9IoHnkPyY US learning a 281
-16:59:04 ok 549 F23Bm4FrwJI US learning m 29
-16:59:23 skip (too short) PvPEhfYnf8c
-16:59:26 skip (no English captions) oHODZhFe__0
-16:59:29 ok 550 4BeeN2VLvMw US learning a 429
-16:59:44 skip (too short) FZXyYuiyq2I
-16:59:47 ok 551 zNxdtSlQo9g US learning a 460
-17:00:02 skip (no English captions) _R0KXSj_5Fk
-17:00:06 ok 552 J4kd-hG9ZDk US learning a 343
-17:00:21 skip (too short) SkViUbosnD4
-17:00:24 ok 553 6lggL2ivrBY US learning m 34
-17:00:42 skip (too short) 8Md2rfTtKdI
-17:00:44 skip (too short) JK7TJBkNwY4
-17:00:48 skip (too short) 2li3fhbUnXI
-17:00:51 ok 554 rWZ48zPN6Po US learning a 448
-17:01:06 skip (too short) XHhKbKfJfuI
-17:01:09 skip (too short) YDTw1qL0wDw
-17:01:12 ok 555 vV_onVQFJt8 US learning m 24
-17:01:27 skip (too short) q3UH86tOuDI
-17:01:30 skip (too short) VgNRllGDfig
-17:01:32 skip (no English captions) GVloe3ztJhA
-17:01:35 ok 556 on4SqK6EKTo US learning m 34
-17:01:50 ok 557 67b2RzwCqsI US learning m 20
-17:02:05 ok 558 AqOL3KYtVSA US learning m 41
-17:02:20 skip (too short) NZzNSIrMZs0
-17:02:23 skip (too short) 3G9t4tphq3k
-17:02:25 skip (too short) RQuL3lsuarQ
-17:02:28 skip (too short) RjQJRRU8ZFU
-17:02:33 ok 559 JDYksdXAOOU US learning m 28
-17:02:48 skip (too short) wYodBKlvJ78
-17:02:50 skip (no English captions) ilICGM4vH40
-17:02:54 ok 560 W3NpQjUi5KQ US learning a 340
-17:03:09 ok 561 3GCmsMI5iAY US learning m 25
-17:03:23 ok 562 xR7qcezLcXI US learning m 69
-17:03:38 skip (too short) OT1BSBQtEvc
-17:03:41 ok 563 DglMn5Lx04s US learning m 20
-17:03:56 ok 564 u5Y7kOMhEkk US learning m 105
-17:04:11 skip (too short) wc3rY_2YQkM
-17:04:14 ok 565 L2ylZyu0j7g US learning a 333
-17:04:26 skip (title) wPrgNy76s7g Learn English With NETFLIX Series — Sex Education
-17:04:29 skip (too short) 4rX4sH8PMFc
-17:04:32 skip (too short) _CV7X5WxSJQ
-17:04:35 ok 566 t0Mty0M7kwY US learning m 30
-17:04:50 skip (too short) MKv55DyDk0Y
-17:04:54 ok 567 36EJUmw9flU US learning m 151
-17:05:09 skip (too short) wdh9y2TkIns
-17:05:12 skip (too short) rp11KpaLA9A
-17:05:15 ok 568 7Ck3q5GaF5M US learning m 160
-17:05:30 skip (too short) 3yoaBM8jIEg
-17:05:33 ok 569 wHLHsFisgWg US learning m 48
-17:05:48 skip (too short) wUUIG1_lQBI
-17:05:51 ok 570 rz478f17kn0 US learning m 36
-17:06:06 skip (too short) Ik9I5T7ClSE
-17:06:09 ok 571 67E6Dl6LaW4 US learning m 20
-17:06:24 ok 572 KEWge76EHpA US learning m 40
-17:06:39 skip (too short) IYsurU_B4Qo
-17:06:43 ok 573 gyv1acv-E44 US learning m 113
-17:06:58 ok 574 jslJbssyfUQ US learning m 90
-17:07:13 skip (too short) g29qrFOk6jk
-17:07:16 ok 575 L5EW4uRl_ps US learning m 95
-17:07:31 ok 576 5uLvms-CIXk US learning m 91
-17:07:46 skip (too short) 3kcpvIRbSnA
-17:07:49 ok 577 4axG_GhsP7Y US learning m 80
-17:08:04 ok 578 ys0SYYPLVOg US learning m 31
-17:08:19 ok 579 2cNGCdekJXk US learning m 118
-17:08:34 skip (too short) -ocbbt-iOqs
-17:08:37 ok 580 J135Qy4TVfQ US learning m 149
-17:09:18 ok 581 aANEvqI7bhk US learning m 176
-17:09:33 ok 582 w693r5DHYnI US learning m 95
-17:09:48 ok 583 I2VbppgKKDI US learning m 213
-17:10:03 ok 584 iTx_ZKTVzk4 US learning m 88
-17:10:18 ok 585 EeT-dNlvsdc US learning m 174
-17:10:33 ok 586 spITeJ_M0Sw US learning m 72
-17:10:48 ok 587 Qvba0DREM-s US learning m 98
-17:11:03 ok 588 RSGxCZMPyrI US learning m 111
-17:11:19 ok 589 ai6l7z3xrcw US learning m 109
-17:11:33 ok 590 Gj3wEsT8vEc US learning m 101
-17:11:49 ok 591 _OQtB9bXElQ US learning m 95
-17:12:04 ok 592 Y75P4hNwQpM US learning m 117
-17:12:19 ok 593 yCyz0DuafPI US learning m 106
-17:12:35 ok 594 39d5WWDoGhk US learning m 91
-17:12:49 ok 595 6tcC-3bosAo US learning m 119
-17:13:05 ok 596 lBpN7a0z4r4 US learning m 131
-17:13:20 ok 597 PWSWQ85qJaY US learning m 118
-17:13:35 ok 598 zYxG9M-F9H4 US learning m 150
-17:13:50 ok 599 AMSelaQyHyo US learning m 94
-17:14:05 ok 600 qiEXPEzp0Ao US learning m 114
-17:14:21 ok 601 Zt61eU5Wqs4 US learning m 108
-17:14:36 ok 602 bvxAkjfTAYg US learning m 137
-17:14:51 ok 603 q4VJVnvegx8 US learning m 97
-17:15:06 ok 604 CdFZY9lvr2I US learning m 147
-17:15:21 ok 605 Cz4CF0j02VU US learning m 148
-17:15:36 ok 606 Pm7z7bAz3x8 US learning m 157
-17:15:51 ok 607 W-yTLUfKydQ US learning m 192
-17:16:06 ok 608 lpHfVBpjYpc US learning m 165
-17:16:21 ok 609 T3cAUHCtd60 US learning m 139
-17:16:36 ok 610 UtbOPLZS37M US learning m 146
-17:16:52 ok 611 uJ1ZZBc1Ztw US learning m 124
-17:17:08 ok 612 QmWR75a6zRM US learning m 134
-17:17:23 ok 613 KPWJp8TRooU US learning m 127
-17:17:38 ok 614 b_lMFXn43eQ US learning m 139
-17:17:53 ok 615 62BJ5CBOLIw US learning m 128
-17:18:08 ok 616 rPHmw0C_xBE US learning m 152
-17:18:23 ok 617 4qlD7UW0jQY US learning m 149
-17:18:38 ok 618 p4v5zVWr0uk US learning m 211
-17:18:55 ok 619 zJ9wXuYH1ug US learning m 150
-17:19:10 ok 620 -JFTlwVPaSk US learning m 91
-17:19:38 clips collected this run: 620 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 620
+Nightly run on the home computer, 2026-10-29 20:22 (last 400 lines of the collector)
+18:37:33 ok 242 Z21elmpg-W0 US documentary m 158
+18:37:45 skip (title) ruZqnWHINWE Sexual & Asexual Reproduction: How Animals Do It: Crash Cour
+18:37:49 ok 243 HCWzzZFCwag US documentary m 156
+18:38:05 ok 244 NKpkU4-Sf9A US documentary m 142
+18:38:21 ok 245 IoHsju75rKc US documentary m 138
+18:38:36 ok 246 Nb6oWRnvBDw US documentary m 134
+18:38:52 ok 247 PFEFBY-cQhE US documentary m 161
+18:39:07 ok 248 N5XU87zxTyk US documentary m 141
+18:39:22 ok 249 gAWYROgu4JU US documentary m 187
+18:39:37 ok 250 kjZAHBMMKoU US documentary m 176
+18:39:52 ok 251 rT6QV0dWJG4 US documentary m 177
+18:40:08 ok 252 pvVvCt6Kdp8 US documentary m 205
+18:40:40 ok 253 vpGLVMEoBXY US documentary m 291
+18:40:55 ok 254 _VHb_XftAKk US documentary m 287
+18:41:11 ok 255 PtuZD2bjFPQ US documentary m 281
+18:41:26 ok 256 UzN6eHeaJj4 US documentary m 159
+18:41:43 ok 257 z-sopGQvF64 US documentary m 116
+18:41:58 ok 258 g8hbTcARHeE US documentary m 292
+18:42:14 ok 259 HoYY9J2w75E US documentary m 129
+18:42:30 ok 260 wlqA8W5yhqo US documentary m 238
+18:42:45 ok 261 Ccn-Kkm1e_Y US documentary m 166
+18:43:01 ok 262 xuQgqrcWm-o US documentary m 270
+18:43:16 ok 263 ALE1EiAdZNo US documentary m 273
+18:43:34 ok 264 2ZK_Gy1uE2A US documentary m 227
+18:43:50 ok 265 PwmrWb8kCBE US documentary m 278
+18:44:05 ok 266 ZWj4vWYAGYc US documentary m 158
+18:44:20 ok 267 nIhY_Z7s7Nc US documentary m 316
+18:44:36 ok 268 YEdJl1E7gzo US documentary m 210
+18:44:51 ok 269 IS9bo3cVmYI US documentary m 99
+18:45:07 ok 270 ONSW0a6ihKI US documentary m 279
+18:45:22 ok 271 7XqkL3Lke4s US documentary m 217
+18:45:38 ok 272 g8Chxr0xbFA US documentary m 222
+18:45:54 ok 273 JahBXEUx-wk US documentary m 256
+18:46:10 ok 274 BRgmhNwAZyw US documentary m 258
+18:46:26 ok 275 HQksmqO2QIg US documentary m 272
+18:46:41 ok 276 0fem2B1-YbE US documentary m 150
+18:47:01 ok 277 TPj1HyJwabE US documentary m 155
+18:47:17 ok 278 GB-_T28Abrc US documentary m 203
+18:47:32 ok 279 tPJSvpN9Z5c US documentary m 133
+18:47:48 ok 280 cBJ3dCIsnqA US documentary m 239
+18:48:04 ok 281 sSP16cG3dRA US documentary m 237
+18:48:19 ok 282 M_lOTOGINXs US documentary m 312
+18:48:45 ok 283 oby-7rVVAgA US documentary m 161
+18:49:01 ok 284 pJVX0h_8pV8 US documentary m 198
+18:49:17 ok 285 xhahnvObE5s US documentary m 129
+18:49:29 skip (title) 8dMnyKip1wE What's In Those Gas Station Drugs?
+18:49:32 ok 286 bISWSp63RPs US documentary m 312
+18:49:48 ok 287 9WeYlTmqViQ US documentary m 150
+18:50:03 ok 288 QD7E-gf74w0 US documentary m 280
+18:50:18 ok 289 5LWkgXxEtx0 US documentary m 112
+18:50:38 ok 290 PNL_C3j1C2A US documentary m 142
+18:50:54 ok 291 zghn9r7iLT4 US documentary m 131
+18:51:09 ok 292 cnlL-7wp7MQ US documentary m 283
+18:51:38 skip (title) xGqYbXL3kZc How AI tells Israel who to bomb
+18:51:41 ok 293 Oh2RevEsyoI US documentary m 220
+18:51:57 ok 294 hNQk4325W9w US documentary m 140
+18:52:13 ok 295 VaS-iVwaOLw US documentary m 176
+18:52:31 ok 296 ObL2xm5NrCk US documentary m 204
+18:52:46 ok 297 nPhTwmylZi8 US documentary m 129
+18:53:02 ok 298 ZT9NpPe0wRg US documentary m 216
+18:53:17 ok 299 j1Bfxxhdn6g US documentary m 190
+18:53:33 ok 300 0uvurQcj0fs US documentary m 151
+18:53:48 ok 301 bqWwV3xk9Qk US documentary m 207
+18:54:03 ok 302 VQKpMmBDtZo US documentary m 174
+18:54:29 ok 303 YsZ-lx_3eoM US documentary m 334
+18:54:44 ok 304 hU4viZzTaRc US documentary m 275
+18:54:56 skip (title) _iTUaDp-FeI UV light kills viruses. Why isn't it everywhere?
+18:55:00 ok 305 2I30SamNYFs US documentary m 178
+18:55:16 ok 306 yvdtWfHpCR4 US documentary m 290
+18:55:31 ok 307 bXYRJJIn_wI US documentary m 383
+18:55:47 ok 308 sJs_64OUpEs US documentary m 135
+18:56:02 ok 309 ZWPWY0j321k US documentary a 59
+18:56:18 ok 310 2StLbCSW7p4 US documentary m 184
+18:56:35 ok 311 c0TQlgoUHRE US documentary a 166
+18:56:51 ok 312 bEJ0_TVXh-I US documentary m 371
+18:57:18 ok 313 Exza1UYxXXM US documentary m 229
+18:57:33 ok 314 Fv5SvRVds_w US documentary m 236
+18:57:49 ok 315 Xkuh6JqDiQc US documentary m 167
+18:58:05 ok 316 NqabT21d8VM US documentary m 252
+18:58:20 ok 317 UWhuHiL8Pug US documentary m 172
+18:58:32 skip (title) CoBeQzc4vQc How The Conjuring became the Marvel of horror
+18:58:36 ok 318 lv1SpwwJEW8 US documentary m 308
+18:58:51 ok 319 nf-Yy3EuZi0 US documentary m 132
+18:59:06 ok 320 oRUjKZOhV6E US documentary m 128
+18:59:22 ok 321 a9FbqgOi-4g US documentary m 173
+18:59:34 skip (title) V4j606F6mvo The True Cost of Financial Abuse | Advertiser content from T
+18:59:37 ok 322 pf1GvrUqeIA US documentary m 225
+18:59:53 ok 323 ZlFF7A8nk0w US documentary m 225
+19:00:08 ok 324 R2karaKGgkk US documentary m 391
+19:00:24 ok 325 pZz3tfXEFmU US documentary m 284
+19:00:40 ok 326 yeaQUhAOdtk US documentary m 777
+19:00:55 ok 327 R63DdEe_8aM US documentary m 146
+19:01:12 ok 328 UpmwhkNg5Dw US documentary m 268
+19:01:37 ok 329 DiheSWIxydk US documentary m 178
+19:01:52 ok 330 STff_wOQHn4 US documentary m 199
+19:02:07 ok 331 6xvrKW2H_hA US documentary m 177
+19:02:24 ok 332 e9OsIj32w7U US documentary m 178
+19:02:56 ok 333 CGr2jdK5DYY US documentary m 222
+19:03:15 skip (too short) W4KdFr5-21E
+19:03:18 ok 334 4Zedkd12xoE US documentary m 99
+19:03:39 ok 335 N4ppYO0usjY US documentary m 352
+19:03:58 ok 336 adp6HX3x4hM US documentary m 131
+19:04:13 ok 337 0qkddZ5udJ0 US documentary m 258
+19:04:31 ok 338 NWldrd-cFz8 US documentary m 275
+19:04:46 ok 339 Un_sxee_Eq4 US documentary m 109
+19:05:02 ok 340 HbdvrVpAH_I US documentary m 81
+19:05:17 ok 341 Lk8mFZSmKbk US documentary m 347
+19:05:33 skip (too short) yvXkziwHGPU
+19:05:36 ok 342 CF9LnbtZpnI US documentary a 22
+19:05:54 ok 343 jNhQoYt2dsw US documentary m 32
+19:06:10 ok 344 1Aff5rr_9kQ US documentary m 140
+19:06:26 ok 345 VwSbSMzimfU US documentary a 23
+19:06:41 ok 346 oTnRLt7I_oA US documentary m 44
+19:06:53 skip (title) pQYFcdD7684 How Penguins Outswim a Deadly Killer Seal | Secrets of the P
+19:06:59 ok 347 sJpdxlIkiV4 US documentary m 280
+19:07:14 ok 348 mO-tEo1j8FU US documentary a 29
+19:07:30 ok 349 9D7N7FJjLec US documentary m 113
+19:07:45 ok 350 GqTaW7ZzXog US documentary a 219
+19:08:02 ok 351 b8aa33_7oUM US documentary m 306
+19:08:29 ok 352 -QFySooMwG4 US documentary m 79
+19:08:44 ok 353 YdeeVyyMSzg US documentary a 62
+19:08:59 ok 354 R6ACDc8iAEw US documentary m 104
+19:09:16 ok 355 LfUXGbZ6vVQ US documentary m 543
+19:09:31 ok 356 uLA4kk3Cp3w US documentary m 33
+19:09:46 ok 357 5HGCGnT1DS0 US documentary m 47
+19:10:02 ok 358 sqsAyIqIaQg US documentary a 48
+19:10:17 ok 359 jrBN9zcQAGw US documentary m 27
+19:10:32 ok 360 3nMJqvxfTOg US documentary a 41
+19:10:48 ok 361 ckmP3kBCoyI US documentary m 43
+19:11:03 skip (too short) VSMAZIKokJI
+19:11:06 ok 362 QFAetirD6YY US documentary a 29
+19:11:22 ok 363 o0uYyOTrsW4 US documentary a 47
+19:11:37 ok 364 Uccqfvbx9K4 US documentary m 112
+19:11:52 ok 365 8RjUifUsy6I US documentary m 69
+19:12:10 skip (too short) v5J7aP2FYH4
+19:12:24 ok 366 tvMdJC1_tR0 US documentary m 274
+19:12:39 ok 367 C67rl6MNGe0 US documentary m 43
+19:12:55 ok 368 5iKEUMxTrvQ US documentary m 192
+19:13:11 ok 369 BfGS6VzQkCk US documentary m 60
+19:13:27 ok 370 lo2x59a1KmI US documentary m 336
+19:13:42 skip (mostly music) 6sEo1DFO7hM
+19:13:46 ok 371 tK4gcjHxCM8 US documentary m 184
+19:14:02 ok 372 lOdfgVsmKPY US documentary m 124
+19:14:35 ok 373 gftHWQ6CLu8 US learning m 167
+19:14:54 ok 374 2ZaYlcIa0IY US learning m 158
+19:15:10 ok 375 odJwJQGdxBI US learning m 171
+19:15:25 ok 376 qu0kbc5Umk4 US learning m 109
+19:15:40 ok 377 0VwSkJPiBoY US learning m 151
+19:15:56 ok 378 b35GFJ99RdQ US learning m 195
+19:16:12 ok 379 kHNKmaZ3N80 US learning m 161
+19:16:28 ok 380 aYdprii_X4A US learning m 121
+19:16:43 ok 381 5VlNIKQPF2Y US learning m 159
+19:16:58 ok 382 jm0q7O8-Ruo US learning m 108
+19:17:14 ok 383 UfHNbCtx4cE US learning m 279
+19:17:31 ok 384 Q53Wb3MKD68 US learning m 215
+19:17:46 ok 385 dlwuDX2kdP8 US learning m 224
+19:18:02 ok 386 JqxEjQ5xfpw US learning m 244
+19:18:18 ok 387 AEd0Xthfhr0 US learning m 296
+19:18:34 ok 388 9HIriRfDBEs US learning m 275
+19:18:50 ok 389 dJvxnoRYII4 US learning m 293
+19:19:06 ok 390 qpINexluCJI US learning m 235
+19:19:21 ok 391 SJOnhWiJArM US learning m 160
+19:19:36 skip (too short) smAGuUOlvbQ
+19:19:51 ok 392 q7SAt9h4sd0 US learning m 336
+19:20:06 ok 393 3MHvhZI6S_Q US learning m 117
+19:20:21 ok 394 OtT3GIO0Tqg US learning m 193
+19:20:37 ok 395 50sVMNMYNjA US learning m 159
+19:20:52 ok 396 opKPVqxE_QY US learning m 166
+19:21:10 ok 397 QloimUQLArY US learning m 207
+19:21:25 ok 398 8hpndhXOi0s US learning m 96
+19:21:40 ok 399 fQ4BXjaRCUk US learning m 91
+19:21:56 ok 400 JmRXMKwLegg US learning m 200
+19:22:12 ok 401 adgx_K-PFWo US learning m 226
+19:22:28 ok 402 Vq99rxftBWQ US learning m 177
+19:22:43 ok 403 GyorGDeYUIg US learning m 235
+19:22:59 ok 404 0ibXz0OAKr4 US learning m 176
+19:23:14 ok 405 mV3Y_PnOIT4 US learning m 261
+19:23:31 ok 406 cZKy162liRg US learning m 239
+19:23:47 ok 407 KfVfjL8-R-0 US learning m 147
+19:24:02 ok 408 hCF2_0G337Y US learning m 361
+19:24:18 ok 409 03lc-joQHjI US learning m 126
+19:24:33 ok 410 Bkm7BApLELQ US learning m 210
+19:24:48 ok 411 2Z_ZZgs1AM0 US learning m 250
+19:25:04 ok 412 vdA3iugoXOA US learning m 212
+19:25:44 ok 413 CwUTLYIDZUY US learning m 179
+19:26:01 ok 414 nmRKrf0JguY US learning m 191
+19:26:17 ok 415 eu5z18K7xdA US learning m 101
+19:26:32 ok 416 WVHJe9kgpC0 US learning a 90
+19:26:48 ok 417 RI6TyhtNjyw US learning m 276
+19:27:03 ok 418 N0hqwvMCvUk US learning m 248
+19:27:18 ok 419 nEluvJrXCGI US learning m 318
+19:27:34 ok 420 AlhkhvPXLgg US learning m 122
+19:27:49 ok 421 9RWj1MceGkc US learning m 182
+19:28:05 ok 422 7xuuz1KQivI US learning m 175
+19:28:20 ok 423 Wrx-SRfnYyo US learning m 154
+19:28:35 ok 424 ae0iNNwGpCI US learning m 178
+19:28:51 ok 425 bIAa95IKMj0 US learning m 164
+19:29:06 ok 426 qL5X38u4xoA US learning m 124
+19:29:22 ok 427 fKWaTMrvpbA US learning m 272
+19:29:37 ok 428 tAAWTGZVLDg US learning m 319
+19:29:55 ok 429 sPSifIDPQsU US learning m 265
+19:30:11 ok 430 7rcjCoB6Sr4 US learning m 167
+19:30:27 ok 431 _GXOjZfTTTw US learning a 145
+19:30:43 ok 432 HBiWy2TFmA4 US learning m 356
+19:30:59 ok 433 WQCS2LDx0ow US learning m 249
+19:31:16 ok 434 iDqHm8GiDx4 US learning m 174
+19:31:31 ok 435 sS1LIjDJLf4 US learning m 256
+19:31:48 ok 436 ioldoJQYKyQ US learning m 277
+19:32:03 ok 437 g-hjVyOVJzw US learning m 302
+19:32:19 ok 438 4T4yrmcONYQ US learning m 355
+19:32:34 ok 439 299PL3Wqlmw US learning m 154
+19:32:50 ok 440 lgpa5WYBrN8 US learning m 133
+19:33:06 ok 441 AaRhgWg2R4o US learning m 205
+19:33:23 ok 442 FBRnMkWRKdY US learning m 137
+19:33:41 ok 443 M0_DMrkjf7M US learning m 218
+19:33:56 ok 444 1jDoMFD3oGs US learning m 347
+19:34:15 ok 445 jVIJPXuantM US learning m 191
+19:34:31 ok 446 RCcv-Tz07JQ US learning m 343
+19:34:47 ok 447 IWH8LZx8qoQ US learning m 240
+19:35:03 ok 448 34KVFkBaFeU US learning m 216
+19:35:19 ok 449 7h1O3wm7k18 US learning m 330
+19:35:35 ok 450 rHAkzvVE5t4 US learning m 210
+19:35:51 ok 451 dOw3G0hi4ys US learning m 225
+19:36:07 ok 452 GRxYvfKa4a4 US learning m 280
+19:36:38 ok 453 8yBbwD29zMY US learning a 20
+19:36:54 ok 454 L30AAYO7GnI US learning a 58
+19:37:10 ok 455 VZboTJ1nFZ0 US learning a 107
+19:37:26 ok 456 lJqch4NGyzI US learning a 43
+19:37:41 ok 457 CsHi3IQxY-Q US learning a 20
+19:37:57 ok 458 EWU79WCAid4 US learning a 44
+19:38:13 skip (too short) 3x3S26qg2aQ
+19:38:19 ok 459 lBTc0QeUWNg US learning a 66
+19:38:34 skip (too short) 6MDGJwRVp-s
+19:38:38 ok 460 00ZBf4x1mIs US learning a 118
+19:38:54 ok 461 BBAnbAt7ZpA US learning a 56
+19:39:10 ok 462 QBah_z3RGto US learning a 74
+19:39:28 skip (too short) UFjVXLabe7A
+19:39:33 ok 463 AnL5ZEWCGDA US learning a 102
+19:39:48 ok 464 1o_W12dNuEE US learning a 74
+19:40:04 ok 465 Ahj8Vr6MUBA US learning a 78
+19:40:19 skip (too short) pREt9DFu09s
+19:40:33 ok 466 OfYXOf-sldE US learning a 112
+19:40:59 ok 467 sV8Di1-brg8 US learning a 66
+19:41:15 ok 468 6wx8RIynJGw US learning a 121
+19:41:31 ok 469 psaI05ZiUBw US learning a 109
+19:41:46 ok 470 RGH3pDIvHQw US learning a 59
+19:42:02 ok 471 kRMpbLZPLWA US learning a 69
+19:42:18 skip (too short) sXrDOL3qH_8
+19:42:22 ok 472 5gm6bBYsdyE US learning a 119
+19:42:38 ok 473 t82-6eOBtW0 US learning a 78
+19:42:53 ok 474 6CR9FPoZg-s US learning a 58
+19:43:09 ok 475 nsqfnWYbKdo US learning a 110
+19:43:24 ok 476 JM60OFr4msE US learning a 101
+19:43:39 ok 477 S9Efd_T1F3w US learning a 41
+19:43:55 skip (too short) LwN5eJsP9gs
+19:44:00 ok 478 z5bix2mTPiI US learning a 124
+19:44:18 ok 479 hw3MfjuXFIE US learning a 76
+19:44:34 ok 480 XJaxKsAemhA US learning a 105
+19:44:50 ok 481 Kd2sYfm7fbc US learning a 126
+19:45:06 ok 482 dleryorhwaY US learning a 77
+19:45:25 ok 483 q_CO4DL9nQY US learning a 56
+19:45:41 skip (too short) ckjhfrfAhBk
+19:45:45 ok 484 g0imIeFg_WU US learning a 110
+19:46:01 ok 485 a46XKfUCXUg US learning a 48
+19:46:28 ok 486 dhTrKHVfnbU US learning a 46
+19:46:43 skip (too short) Lu43OsYY0Qo
+19:46:46 ok 487 qqfnj4XNwqM US learning a 112
+19:47:02 ok 488 aeO_oGgnB1k US learning a 114
+19:47:19 ok 489 QkkoqtS0OcQ US learning a 75
+19:47:35 skip (too short) NiOmD742QUw
+19:47:38 ok 490 nm-mmVL0SsE US learning a 59
+19:47:54 ok 491 ESX46CDzJMA US learning a 118
+19:48:10 ok 492 mJxcP4uL4WA US learning a 82
+19:49:14 ok 493 9xM5BCKyfIU UK tv a 169
+19:49:30 ok 494 Mkwujc-jQcg UK tv a 81
+19:49:45 ok 495 qQwN_YSP1Oo UK tv a 157
+19:50:01 ok 496 ylaaP5SyGsE UK tv a 177
+19:50:17 ok 497 7UDNqeLXA-Q UK tv a 163
+19:50:34 ok 498 trZip7iHGh8 UK tv a 134
+19:50:50 ok 499 Md2eBT6Ta_s UK tv a 92
+19:51:02 skip (title) sddmpyRhOxk Jamie Lee Curtis Hates Horror Movies | Extended Interview | 
+19:51:06 ok 500 tAecrjg5om0 UK tv a 280
+19:51:22 ok 501 V-k7YE246zE UK tv a 139
+19:51:34 skip (title) BCeq5IzV8zE 'The Naked Gun' Stars Pamela Anderson & Liam Neeson On The G
+19:51:37 ok 502 CDrQE4LFeWE UK tv a 139
+19:51:53 ok 503 5ksU76kWyvU UK tv a 150
+19:52:08 ok 504 Hw6r7oSTUFQ UK tv a 166
+19:52:26 ok 505 4cc68xAJh80 UK tv a 148
+19:52:41 ok 506 leak_uLdw2g UK tv a 136
+19:52:57 ok 507 zYpPcRWdDqQ UK tv a 260
+19:53:12 ok 508 qTve41FGNJg UK tv a 217
+19:53:28 ok 509 N7NPKTFhaDc UK tv a 155
+19:53:45 ok 510 B8dFns2v_6Q UK tv a 245
+19:54:01 ok 511 TPjUcVCwjOo UK tv a 143
+19:54:17 ok 512 fj4upuN2HWA UK tv a 288
+19:54:32 ok 513 19DDMrN1hiA UK tv a 132
+19:54:49 ok 514 mR1bcSJl57g UK tv a 212
+19:55:05 ok 515 TlfwVTxn3C0 UK tv a 92
+19:55:20 ok 516 C3dlzTpjMjs UK tv a 242
+19:55:36 ok 517 lWqyOCNT0Yw UK tv a 187
+19:55:51 ok 518 M3DvEqtkHgo UK tv a 139
+19:56:07 ok 519 oa6gzUGVSJw UK tv a 168
+19:56:22 ok 520 tdgXueyMkzU UK tv a 205
+19:56:34 skip (title) Qbp994TUGKM Daniel Radcliffe Likes To Get Naked | Extended Interview | T
+19:56:38 ok 521 E1fWgb2GyX4 UK tv a 155
+19:57:19 ok 522 HPZxcfglU2Q UK tv m 233
+19:57:36 ok 523 YbKxc_i4if4 UK tv m 357
+19:57:58 ok 524 5qHbRmW7Tc8 UK tv m 347
+19:58:14 ok 525 93qN5jjNL00 UK tv m 249
+19:58:36 ok 526 XiYVqXzRD0k UK tv m 160
+19:59:04 ok 527 tnz094DLgdc UK tv m 241
+19:59:20 ok 528 eVmMTPgKAOw UK tv m 88
+19:59:38 ok 529 bIZqSNkkteE UK tv m 357
+20:00:02 ok 530 ARaSR5l4loA UK tv m 214
+20:00:21 ok 531 -_lE-_Up6XI UK tv m 138
+20:00:39 ok 532 X7ckUbZaAxs UK tv m 242
+20:00:55 ok 533 ypv-o2QBsxM UK tv m 157
+20:01:11 ok 534 XDLFERMIgD0 UK tv m 167
+20:01:29 ok 535 A5E2teq9qoI UK tv m 190
+20:01:53 ok 536 fyAlU7L1YvE UK tv m 199
+20:02:17 ok 537 L6adrYYHumU UK tv m 327
+20:02:39 ok 538 xNc2RrSKkqk UK tv m 295
+20:02:56 ok 539 ikZAsnplfUY UK tv m 218
+20:03:12 ok 540 H90oLVv6WUM UK tv m 261
+20:03:28 ok 541 9c6cTsxvv1c UK tv m 295
+20:03:44 ok 542 3Ry5Yf5c6M8 UK tv m 208
+20:04:01 ok 543 ihB4zL72QSM UK tv m 290
+20:04:17 ok 544 64gb5fQa41A UK tv m 202
+20:04:33 ok 545 vI9_3Z8Fm5o UK tv m 175
+20:04:50 ok 546 pm5KO3Ji_IE UK tv m 150
+20:05:31 ok 547 cEO6mVqo8K8 UK tv m 331
+20:05:53 ok 548 2LmYy1CK6vM UK tv m 266
+20:06:10 ok 549 Tvo9fSMYM5s UK tv m 336
+20:06:26 ok 550 UmNDpH1Ymsk UK tv m 291
+20:06:46 ok 551 UpQePaasx2g UK tv m 288
+20:07:02 ok 552 Kdx1OSOhMPs UK tv m 146
+20:07:21 ok 553 Lj7QTOeGEIU UK tv m 128
+20:07:37 ok 554 dZIg75EYumo UK tv m 178
+20:08:00 ok 555 IHCx-AzBXwk UK tv m 310
+20:08:21 ok 556 -SqY65vVry8 UK tv m 99
+20:08:37 ok 557 iGp1K6gen4M UK tv m 333
+20:09:02 ok 558 EsaYy2-jzPQ UK tv m 114
+20:09:20 ok 559 it8xrIIC1cI UK tv m 227
+20:09:35 skip (too short) PX1nPKTmFjQ
+20:09:40 ok 560 L9XnJobeklc UK tv m 164
+20:10:04 ok 561 EMnQGRYm8fM UK tv m 115
+20:10:41 ok 562 KpVFfIuH8KA UK tv m 319
+20:10:58 skip (too short) jMdPlWnQ2r8
+20:11:02 skip (too short) tRFMm5BIBtI
+20:11:07 ok 563 kBp8phs8mys UK tv a 60
+20:11:23 ok 564 nORZxqqHxQU UK tv m 301
+20:11:38 ok 565 1-FyCQC5bQU UK tv m 161
+20:11:53 skip (too short) _c6pNpacerw
+20:11:57 ok 566 xtX6jbo1ys8 UK tv a 145
+20:12:13 ok 567 lNkNr0wk4Dk UK tv m 336
+20:12:29 skip (too short) 2C5JWPosl2M
+20:12:33 ok 568 9lwF4fYaJRg UK tv a 71
+20:12:48 ok 569 VZS8HnkLBtw UK tv m 139
+20:13:05 ok 570 EX-B6fB62mA UK tv a 22
+20:13:21 ok 571 5bikHvMVgFg UK tv m 164
+20:13:37 skip (too short) nf2BoHg1rFI
+20:13:41 ok 572 eKdKrazu28Y UK tv a 62
+20:13:58 ok 573 BlGqA26jF3U UK tv a 68
+20:14:15 skip (bleeped words) sqjc6YGbQOI
+20:14:19 ok 574 6xxzmOmvnVg UK tv a 146
+20:14:35 ok 575 73WvyccWQPc UK tv a 39
+20:15:01 ok 576 Rmq-b6PsOpE UK tv a 63
+20:15:16 ok 577 MPBkPakryKE UK tv a 21
+20:15:33 skip (bleeped words) aSkeyWjftbg
+20:15:37 ok 578 mSw7rn6PVxM UK tv m 347
+20:15:54 ok 579 ajCGpEPkxR0 UK tv a 66
+20:16:10 ok 580 YqnlkgyTFfs UK tv m 274
+20:16:29 ok 581 V9WZcxdkJoE UK tv a 69
+20:16:44 ok 582 uy1WQsAYMHo UK tv m 202
+20:17:00 ok 583 VDAyLhR8fvI UK tv a 162
+20:17:16 ok 584 YIGRwt5H-HQ UK tv a 49
+20:17:32 skip (too short) 9vuESSNBy6w
+20:17:36 ok 585 lotzUuC4nzM UK tv a 40
+20:17:51 ok 586 TfzDk4xFuQo UK tv m 251
+20:18:14 skip (too short) aBolDDyBsDo
+20:18:20 ok 587 fEcUhccE0IQ UK tv m 484
+20:18:38 ok 588 esW3kXOhkJM UK tv a 79
+20:18:56 ok 589 svwgTd9S9eE UK tv m 343
+20:19:12 skip (bleeped words) BTuXJaXkjTE
+20:19:17 skip (too short) w1avyAqG7ws
+20:19:21 skip (too short) M51Uca3m3sE
+20:19:26 ok 590 pa5H5tbi-4I UK tv a 68
+20:19:42 ok 591 FCGgB36dMW0 UK tv a 85
+20:20:00 ok 592 rtGFWdaHeTY UK tv m 71
+20:20:16 ok 593 290o1GoO0A8 UK tv a 64
+20:20:28 skip (title) nZ_5afGPDpM Inviting Another Man Into Your Bedroom | Open House: The Gre
+20:20:32 skip (too short) RNqfL4YBWtg
+20:20:36 skip (too short) ubvfzLhRifw
+20:20:42 ok 594 jcpUCi1kc2M UK tv a 50
+20:20:58 ok 595 Ie8_s8GzHRo UK tv a 34
+20:21:14 ok 596 sh40y-tO88g UK tv m 196
+20:21:29 ok 597 JwTTll3nFmI UK tv a 38
+20:21:45 ok 598 9Id5kPcVXsE UK tv a 125
+20:22:00 skip (too short) vgYwuECQ77U
+20:22:05 clips collected this run: 598 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 598
