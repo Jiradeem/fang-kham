@@ -807,8 +807,9 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
         พจนานุกรมจาก Free Dictionary API และ Wiktionary · คำแปลอัตโนมัติจาก MyMemory / Google แปล</p>
       <p class="hint" style="margin:6px 0 0"><b>สำหรับเจ้าของเนื้อหา:</b> เว็บนี้ไม่ได้ดาวน์โหลดวิดีโอ ทุกคลิปเล่นผ่านเครื่องเล่นของ YouTube และมีลิงก์กลับไปต้นทางเสมอ · เก็บเฉพาะข้อความซับไว้เพื่อใช้ค้นหา และแสดงให้ผู้เรียนเห็นเพียงประโยคที่ค้นเจอกับบริบทสั้น ๆ ไม่เปิดให้อ่านซับทั้งคลิป · หากต้องการให้นำคลิป ซับไตเติล หรือข้อความใดออก กรุณาติดต่อทางอีเมลหรือ LINE ด้านบน <b>เราจะนำออกภายใน 48 ชั่วโมง</b></p>
     </section>
-    <div id="stats"></div>
     <div id="hitsWrap" hidden>ผู้เข้าชมเว็บนี้ <b id="hits"></b> คน · นับโดย <a href="https://www.goatcounter.com" target="_blank" rel="noopener">GoatCounter</a></div>
+    <!-- Empty: the library totals were taken out, but the Dhamma corpus still reports loading here. -->
+    <div id="stats"></div>
     <div>คลิปทั้งหมดเล่นผ่านเครื่องเล่น YouTube จากช่องทางการของเจ้าของ · สำเนียงกำหนดตามประเทศของช่อง ผู้พูดบางคนอาจมีสำเนียงต่างออกไป · ซับที่ติดป้าย "auto" สร้างโดยระบบอัตโนมัติของ YouTube อาจคลาดเคลื่อนบ้าง</div>
     <div>ระดับ A2–C1 เป็นค่าประมาณจากความเร็วพูดและความยากของคำ สื่อจริงของเจ้าของภาษาแทบไม่มีระดับ A1 ผู้เรียนระดับเริ่มต้นแนะนำให้เลือกระดับ A2 ความเร็ว "ช้า" และเปิดความเร็ว 0.75× · คำแปลไทยใช้บริการแปลฟรี (จำกัดจำนวนต่อวัน) และไฮไลต์ทีละคำเป็นจังหวะโดยประมาณ</div>
   </footer>
@@ -1707,13 +1708,10 @@ nav.views button[aria-current="page"] { background: linear-gradient(180deg, var(
   function setUrl() { try { const u = new URL(location.href); if (st.lesson) { u.searchParams.delete('q'); u.searchParams.set('lesson', st.lesson.id); } else { u.searchParams.delete('lesson'); u.searchParams.set('q', st.thq || st.q); } if (st.acc !== 'All') u.searchParams.set('acc', st.acc); else u.searchParams.delete('acc'); history.replaceState(null, '', u); } catch (e) {} }
   $('searchForm').addEventListener('submit', e => { e.preventDefault(); go($('q').value); });
 
+  // The footer used to print the library's totals. The owner took them out on 2026-10-29: the count a learner
+  // actually needs is the one beside the headline ("1 / 373 คลิป"), which already shows how much there is to hear
+  // for the word in front of them, the way YouGlish does it.
   function renderStats() {
-    // The general corpus loads part by part, so its totals come from data.js, not from what is loaded.
-    const big = corpusName !== 'dhamma' && MAIN.fmt === 2;
-    let accs = {}; if (big) accs = MAIN.accs || {}; else C.v.forEach(v => accs[v[4]] = (accs[v[4]] || 0) + 1);
-    const nClips = big ? MAIN.clips - (MAIN.removed || []).length : C.v.length, nLines = big ? MAIN.lines : C.s.length;
-    $('stats').textContent = (corpusName === 'dhamma' ? 'คลังธรรมะ: ' : 'คลังตอนนี้: ') + nClips.toLocaleString() + ' คลิป · ' + nLines.toLocaleString() + ' ประโยค' +
-      (corpusName === 'dhamma' ? '' : ' · ' + Object.entries(accs).map(([k, n]) => k + ' ' + n).join(' · '));
     document.querySelectorAll('#corpusBar [data-corpus]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.corpus === corpusName)));
     document.body.classList.toggle('dh-mode', corpusName === 'dhamma');
     if (corpusName === 'dhamma') $('moreClips').hidden = true;

@@ -195,7 +195,15 @@ would be allowed. Both were researched and declined:
   off under `prefers-reduced-motion`); closing the card hides it for that browser session only. It still
   gates nothing — every clip stays free and unmetered. Edit that markup to change the wording or links.
 - The About box carries the source credits, states that no video is downloaded, and promises removal within
-  48 hours on request (`tools/corpus-skip.json` is how a clip is taken out). Keep all three.
+  48 hours on request (`tools/corpus-skip.json` is how a clip is taken out). Keep all three. The owner asked
+  twice whether that notice should come out, worried it shows too much; it stays, because it is the record of
+  good faith and of the snippet-sized display, and the repository is public anyway, so removing it hides
+  nothing and only looks like concealment.
+- **The footer no longer prints the library totals** (owner's choice, 2026-10-29). They had read "14,812 clips ·
+  2,475,569 lines · SCO 430 · AUS 1275 …"; the owner's reasoning was that the count beside the headline,
+  "1 / 373 คลิป", already tells a learner how much there is for the word in front of them, the way YouGlish
+  does. `#stats` is kept as an empty slot because the Dhamma corpus still reports its loading there, so do not
+  delete the element. Totals are still in `data.js`, which is public; this was a tidying, not a secret.
 
 ## Constraints and decisions
 - claude.ai Artifacts cannot embed YouTube iframes, so the site is hosted on GitHub Pages instead.
