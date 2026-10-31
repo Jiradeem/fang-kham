@@ -1,401 +1,401 @@
-Nightly run on the home computer, 2026-10-31 05:21 (last 400 lines of the collector)
-02:58:42 ok 179 S6dXxLZnu6Q US tv a 115
-02:58:57 ok 180 HAdxJ2fIsdE US tv a 155
-02:59:12 ok 181 Fe3ai93IP0g US tv a 390
-02:59:26 ok 182 LmF_zQRF4Ok US tv a 290
-02:59:51 ok 183 MMJrFBZp2bg US tv m 240
-03:00:05 ok 184 91XARXThye8 US tv m 155
-03:00:20 ok 185 WrFfX1x6AGw US tv m 216
-03:00:35 ok 186 4_dGBVQ5gAc US tv m 200
-03:00:50 ok 187 QE0W5UW2qxE US tv m 534
-03:01:05 ok 188 Nizs3ULQPtg US tv m 260
-03:01:20 ok 189 KUJHbbXJLQU US tv m 276
-03:01:35 ok 190 qGjKbXNdg9Q US tv m 229
-03:01:49 ok 191 GX-pNtRAj00 US tv m 98
-03:02:04 skip (mostly music) kLmmqlVP4O8
-03:02:08 ok 192 s7F6JG5fs28 US tv m 259
-03:02:22 ok 193 9ESaEJ_KEcM US tv m 269
-03:02:37 ok 194 Bmo4od7VWD8 US tv m 176
-03:02:52 ok 195 _UPjHZAgp-Q US tv m 92
-03:03:07 ok 196 m5voCGft51Q US tv m 242
-03:03:22 skip (mostly music) 7bBHyHsAvI4
-03:03:25 ok 197 MDFRoYavgtI US tv m 283
-03:03:40 ok 198 ny_81R_jhDQ US tv m 131
-03:03:54 ok 199 h0wPG052710 US tv m 332
-03:04:10 ok 200 0GBXmwOVWBQ US tv m 233
-03:04:24 ok 201 YN0bqTrx-KE US tv m 395
-03:04:39 ok 202 SGKMWnx_F4k US tv m 473
-03:04:54 ok 203 PgzJ6DopYUs US tv m 177
-03:05:09 skip (mostly music) z3GtkWyMvsQ
-03:05:12 ok 204 uWizncz_rNU US tv m 110
-03:05:27 ok 205 8nVq1BiycrY US tv m 291
-03:05:43 ok 206 RkxRRB5KN3Y US tv m 176
-03:05:55 skip (title) 0Ty399QhI4w Callum Turner and Monica Barbaro React to One Night Only "Se
-03:05:57 ok 207 zNe2fHtUIzE US tv m 316
-03:06:12 skip (mostly music) Rs1O5AmoMkw
-03:06:15 ok 208 kkuK4qFK1ts US tv m 226
-03:06:30 ok 209 ZOv82bBgeT8 US tv m 134
-03:06:45 ok 210 oIKpB3eSr-M US tv m 225
-03:07:00 ok 211 d6g42CgdK5E US tv m 324
-03:07:15 skip (mostly music) QXLegsq_7hM
-03:07:18 ok 212 7C7105ucXgI US tv m 170
-03:07:33 ok 213 _R4NlZ5xW3c US tv m 228
-03:07:48 ok 214 YLSiX43_eO4 US tv m 364
-03:08:03 ok 215 gdEKr7scEqE US tv m 192
-03:08:18 skip (mostly music) kemVySTD8p4
-03:08:21 ok 216 kLOtk85XSUM US tv m 225
-03:08:36 ok 217 1R_gBhX7Lec US tv m 315
-03:08:51 ok 218 rFlkRjxtN7U US tv m 183
-03:09:06 ok 219 cmqtVF7maEc US tv m 81
-03:09:21 ok 220 GkA7cIMUk8I US tv m 292
-03:09:36 ok 221 6epcmfjDLzg US tv m 282
-03:09:51 ok 222 328kfLKR_Eg US tv m 167
-03:10:15 ok 223 0tckStTjJYk US tv m 158
-03:10:30 ok 224 ousKwp8nQSE US tv m 271
-03:10:45 ok 225 wCtVTwC5TJE US tv m 204
-03:11:00 ok 226 bRk29bseuOk US tv m 336
-03:11:15 ok 227 xCfQIeEJcx0 US tv m 426
-03:11:30 ok 228 DgjZauqynhk US tv m 324
-03:11:44 ok 229 9lhxaZiO5pU US tv m 426
-03:11:59 ok 230 45ceXlZ7ZN0 US tv m 97
-03:12:14 ok 231 -NnlPVZbZeI US tv m 377
-03:12:29 ok 232 TinVbP94JNY US tv m 124
-03:12:44 ok 233 t7wLbiNT4HM US tv m 291
-03:12:59 ok 234 MOyaPeSg3eQ US tv m 357
-03:13:14 ok 235 c9oHcvrWEVM US tv m 40
-03:13:31 ok 236 cbkcZIx-C2s US tv m 321
-03:13:46 ok 237 ePJgK9_op5w US tv m 226
-03:14:01 ok 238 tWFHjmfaa5g US tv m 66
-03:14:15 ok 239 I2_l9uUGHjQ US tv m 267
-03:14:30 ok 240 GBbixb7wQmw US tv m 467
-03:14:45 ok 241 GS6p_GLtbdU US tv m 271
-03:15:00 ok 242 zWMRr-cTQNg US tv m 346
-03:15:15 ok 243 syYscZPGaEA US tv m 201
-03:15:30 ok 244 RAq2phtqYHs US tv m 199
-03:15:45 ok 245 Wz_JVFW83iY US tv m 418
-03:16:00 ok 246 Ho02J4qRVhQ US tv m 216
-03:16:15 ok 247 xLGxbjFlMbo US tv m 317
-03:16:30 ok 248 QxU8BLIPiNQ US tv m 155
-03:16:45 ok 249 O6AmOZL0bws US tv m 245
-03:16:59 ok 250 DKexx931Edk US tv m 173
-03:17:14 ok 251 Hk04uMl_jd8 US tv m 446
-03:17:29 ok 252 bvpTNziCX6U US tv m 340
-03:17:44 ok 253 MtxEtZUd73Y US tv m 326
-03:17:59 ok 254 E3M_MUYdHqA US tv m 260
-03:18:14 ok 255 dsdUNKXZi6k US tv m 442
-03:18:29 ok 256 TO1mnDYQPF4 US tv m 344
-03:18:44 ok 257 bTK8p6Q3dQU US tv m 339
-03:18:59 ok 258 PdOmfXnWwtA US tv m 275
-03:19:15 ok 259 CMCCX8zwBXY US tv m 338
-03:19:30 ok 260 Qwm0i2oceVA US tv m 424
-03:19:44 ok 261 6ANA1CjfLhU US tv m 333
-03:19:59 ok 262 RBkUKukwBpU US tv m 254
-03:20:27 ok 263 z2xzoI8dpEw NZ news a 566
-03:20:42 ok 264 gu7frWs_hfQ NZ news a 140
-03:20:56 ok 265 RIdZHgMk6j8 NZ news a 128
-03:21:11 ok 266 QTtXdLvT1ZE NZ news a 474
-03:21:26 ok 267 GVLcKuUIsd0 NZ news m 344
-03:21:41 ok 268 oR8UNyy4GxI NZ news a 169
-03:21:55 ok 269 Iq7v9oLdGRg NZ news a 347
-03:22:10 ok 270 wmJG7AgrXzA NZ news a 495
-03:22:25 ok 271 QO47AgEc2WI NZ news a 396
-03:22:39 ok 272 Ay2sBqYb3PU NZ news a 551
-03:22:54 ok 273 33EvecoM7IA NZ news a 233
-03:23:09 ok 274 USD2YruqB1w NZ news m 20
-03:23:23 ok 275 rsPH5JCXDT4 NZ news a 88
-03:23:38 ok 276 FLpeQsn58t0 NZ news a 537
-03:23:54 ok 277 JQ1Uir87ouQ NZ news a 272
-03:24:09 ok 278 LQAQrb1ZszE NZ news a 26
-03:24:24 ok 279 yEdQY031UQA NZ news a 353
-03:24:39 ok 280 nr2LJRvoGXQ NZ news a 543
-03:24:53 ok 281 FDuwqp-wpRU NZ news a 115
-03:25:08 ok 282 oF4T5Q_ApmE NZ news a 102
-03:25:22 ok 283 d5WtFR7ENFo NZ news a 119
-03:25:37 ok 284 hqT2Y1BZKCA NZ news a 47
-03:25:52 ok 285 iM2uDGJCeos NZ news a 436
-03:26:06 ok 286 tcJO3A0Ts_g NZ news a 156
-03:26:21 ok 287 t1Ee9pMbzro NZ news a 162
-03:26:36 ok 288 rS8MdFSQzX4 NZ news a 392
-03:26:50 ok 289 uPpyuVooGNg NZ news a 313
-03:27:05 ok 290 sBzsJHvQmyc NZ news a 86
-03:27:19 ok 291 i4p22icVLM4 NZ news m 160
-03:27:34 ok 292 XDwJDQUBWDg NZ news a 170
-03:27:49 ok 293 5X96nq6vJn8 NZ news a 92
-03:28:03 ok 294 BpywZ63lIAo NZ news a 56
-03:28:20 ok 295 i7kN1F0fZ80 NZ news a 182
-03:28:35 ok 296 rIrk-HRq1bs NZ news a 131
-03:28:50 skip (too short) i8luiyxRgss
-03:28:53 ok 297 eGCiqWTrkaA NZ news a 230
-03:29:07 ok 298 JxdZeoCrie0 NZ news a 417
-03:29:22 ok 299 7yQQLwULfT8 NZ news a 79
-03:29:36 ok 300 f09rwT4a5Oc NZ news a 110
-03:29:51 ok 301 BgeDcekrPpU NZ news a 91
-03:30:06 skip (mostly music) O19vMVcz7mI
-03:30:08 ok 302 kRZ5EcGH7l0 NZ news a 215
-03:30:34 ok 303 UMXyIt-3Vp8 NZ news a 89
-03:30:50 ok 304 h-Uy6WKi_zQ NZ news a 84
-03:31:06 ok 305 NTH1uvceq3Y NZ news a 130
-03:31:23 ok 306 AjHHBAPGLN8 NZ news a 237
-03:31:39 ok 307 eLBBBKVk_rg NZ news a 137
-03:31:56 ok 308 cjA0dD_aNp8 NZ news a 50
-03:32:12 ok 309 w0JdwUXrsm0 NZ news a 152
-03:32:24 skip (title) vUBiiWtGfR8 Is the Pacific Ocean a drug-smuggling highway? | Ryan Bridge
-03:32:29 ok 310 wcWfrw9Z_lw NZ news a 99
-03:32:45 ok 311 26PIzUgJNXg NZ news a 121
-03:33:01 ok 312 AEH-dDZaF10 NZ news a 195
-03:33:17 ok 313 4qoMue3WYfw NZ news a 28
-03:33:33 ok 314 TpWf4S__vyc NZ news a 44
-03:33:50 ok 315 7T4wvuW4_wo NZ news a 222
-03:34:06 ok 316 ADWhOSHFW_I NZ news a 75
-03:34:22 ok 317 iH0SDzhPxRw NZ news a 160
-03:34:39 ok 318 WKYApZw6Vds NZ news a 152
-03:34:55 ok 319 mft8BELLEKA NZ news a 160
-03:35:12 ok 320 A44ZsdnpvcM NZ news a 546
-03:35:24 skip (title) zKUDJ0wbeJY 'Fundraising to stay alive': Nurse's rare cancer and the dru
-03:35:29 ok 321 oUnOmb-RkLQ NZ news a 160
-03:35:45 ok 322 0FMg_pm1ymo NZ news a 54
-03:36:02 ok 323 -PiAtbwbVzc NZ news a 155
-03:36:18 ok 324 CtWuf9hkxFU NZ news a 218
-03:36:34 ok 325 uIRVEpWPvA4 NZ news a 172
-03:36:50 ok 326 5SvR069Elec NZ news a 38
-03:37:06 ok 327 Tl9J6RRfxoo NZ news a 125
-03:37:18 skip (title) wSOK9B22rlc 'Election stunt': Goff on National's right to silence in chi
-03:37:23 ok 328 C-rzTP9E0hY NZ news a 128
-03:37:39 ok 329 ZB4Dlu5JxXo NZ news a 160
-03:37:56 ok 330 hmPZL8PMpL4 NZ news a 136
-03:38:12 ok 331 xn-hRf-TyPQ NZ news a 118
-03:38:28 ok 332 dLf4lPubJcc NZ news a 123
-03:38:40 skip (title) ilcGNDd0H6g A re-elected National to remove right to silence when a chil
-03:38:40 skip (title) SlttLHW1zOg 'It could work': Law expert on National's child murder case 
-03:38:45 ok 333 LOC6EmuWLt0 NZ news a 26
-03:38:59 ok 334 OsGfiKKEomE NZ news a 74
-03:39:15 ok 335 ArtX3ad9868 NZ news a 153
-03:39:31 ok 336 CUFLusIaDyw NZ news a 145
-03:39:48 ok 337 cSzbKyt9B2U NZ news a 83
-03:40:04 ok 338 suFcbaev6UE NZ news a 96
-03:40:20 ok 339 GMcRyhtoPxM NZ news a 188
-03:40:37 ok 340 R5ddQIX1Ltc NZ news a 484
-03:40:53 ok 341 NaGX2HF07yI NZ news a 77
-03:41:10 ok 342 LlM7sDlPnhI NZ news a 259
-03:41:46 ok 343 FCHCghtFy0E SCO news a 58
-03:42:02 ok 344 oH0eVRhMQJQ SCO news a 59
-03:42:18 ok 345 enXgQwm4nZg SCO news a 55
-03:42:34 ok 346 cofXyYg68yM SCO news a 90
-03:42:51 ok 347 k5OCfg4N2Aw SCO news a 72
-03:43:07 ok 348 NPdaGmgEtnM SCO news a 76
-03:43:19 skip (title) RsUOOsbru-Y Reaction to murder conviction review
-03:43:23 ok 349 SkEDOaA8wOI SCO news a 65
-03:43:35 skip (title) BSyQlIdhtwg Football fans asked for help 43 years after taxi driver kill
-03:43:40 ok 350 nlVcNjJ7Mic SCO news a 72
-03:43:56 ok 351 -v6yrf_YOy0 SCO news a 79
-03:44:13 ok 352 tnGVXypMPl0 SCO news a 65
-03:44:25 skip (title) Te5vpCfioxk Critical shortage of legal aid solicitors impacting women fl
-03:44:25 skip (title) X6aDnIRNbPo Paul Ferris trial: The murder case that gripped Scotland
-03:44:29 ok 353 5zl_pY4b8w0 SCO news a 170
-03:44:46 ok 354 ZY69YsPjEdo SCO news a 45
-03:45:02 ok 355 syn2Mi9WSpI SCO news a 81
-03:45:18 ok 356 REjVhNDMme4 SCO news a 50
-03:45:35 ok 357 -JbTSKUQ4GE SCO news a 91
-03:45:51 ok 358 ls8dVQp9dX8 SCO news a 68
-03:46:07 ok 359 AF7w3z13ySs SCO news a 77
-03:46:24 ok 360 v9QRCxpr11M SCO news a 233
-03:46:40 ok 361 bDJXZ45kQDM SCO news a 223
-03:46:57 ok 362 w2hDkx8I-vU SCO news a 45
-03:47:13 ok 363 gdezNz1sBnQ SCO news a 70
-03:47:29 ok 364 XVFgO6VL-vo SCO news a 50
-03:47:46 ok 365 oz4P1cy4z_c SCO news a 55
-03:48:02 ok 366 Ts9oHf30XyQ SCO news a 45
-03:48:18 ok 367 ZsED2QK-uAw SCO news a 232
-03:48:35 ok 368 qfXtkI2odb8 SCO news a 63
-03:48:51 ok 369 -6YL7z5ezNs SCO news a 66
-03:49:07 ok 370 Ur4q4ZZAyNw SCO news a 78
-03:49:23 ok 371 0h9NWCpvU2Y SCO news a 85
-03:49:40 ok 372 oIsn75pF_Ng SCO news a 27
-03:49:56 ok 373 z7UdfOq1s-Y SCO news a 65
-03:50:08 skip (title) Hf3Cfe4iDHA Drug designed to slow the progression of Parkinson's describ
-03:50:12 ok 374 JCnuecCemlQ SCO news a 52
-03:50:29 ok 375 PUoOkYtULTE SCO news a 68
-03:50:45 ok 376 w0_naaNOLIs SCO news a 71
-03:51:01 ok 377 1z2mjzo2sXA SCO news a 70
-03:51:18 ok 378 BQrAJ44mx_Q SCO news a 76
-03:51:34 ok 379 E0LK4RRGDi0 SCO news a 46
-03:51:51 ok 380 mdBVfEUr7MU SCO news a 54
-03:52:07 ok 381 gMub2tPIlLA SCO news a 50
-03:52:23 ok 382 pR2eprE6RHM SCO news a 58
-03:52:41 ok 383 _Axr6d6G1DU SCO news a 43
-03:52:58 ok 384 fGDA-WDIdkk SCO news a 51
-03:53:12 ok 385 _OeSAUNvpvY SCO news a 61
-03:53:41 ok 386 xIrn4MZ5JZQ SCO news a 55
-03:53:56 ok 387 wg5geyUlU4Y SCO news a 52
-03:54:14 skip (too short) arPCq4bwdWQ
-03:54:17 ok 388 E-rcZnbibHE SCO news a 27
-03:54:33 skip (too short) 1NPZKAXCnz8
-03:54:35 ok 389 Efg1h0EzLeE SCO news a 56
-03:54:50 ok 390 zDwgoseV3NY SCO news a 130
-03:55:08 ok 391 8JSAPxCbUrs SCO news a 130
-03:55:25 skip (too short) 3zDCRZjs3ik
-03:55:27 skip (mostly music) 8YXVM252h-k
-03:55:30 ok 392 vPiF2v7zIww SCO news a 39
-03:55:45 ok 393 8iEbWpbjzxY SCO news a 131
-03:56:00 skip (mostly music) rWyWR5NNqzc
-03:56:02 ok 394 RJIERi8TfIs SCO news a 92
-03:56:17 skip (mostly music) rEZJ_sjG7II
-03:56:19 skip (mostly music) bxWQMyoYJBU
-03:56:22 ok 395 tSRtesvKWlo SCO news a 72
-03:56:38 ok 396 JVp7C5vzMgw SCO news a 109
-03:56:54 ok 397 gsZmE95t2Yw SCO news a 54
-03:57:09 skip (mostly music) Fqtbjg6bVNI
-03:57:15 ok 398 yfySK7CLEEg SCO news a 29
-03:57:35 skip (mostly music) wCvzwd87d70
-03:57:48 ok 399 ilH0dzr-Spk IRL news m 28
-03:58:04 ok 400 m1bSZYOY3DU IRL news a 461
-03:58:20 ok 401 jJ58-WAbf_I IRL news m 71
-03:58:37 ok 402 VxIjzHUmYrg IRL news m 75
-03:58:53 ok 403 C78zo-2ebDg IRL news m 38
-03:59:10 ok 404 A6cMncZUvp4 IRL news a 51
-03:59:25 ok 405 _dpYuqFFbkw IRL news a 546
-03:59:40 ok 406 W2yG45EsKNc IRL news m 51
-03:59:56 ok 407 29cO3jumVs0 IRL news a 55
-04:00:13 ok 408 YfWMBXGyK5E IRL news a 255
-04:00:28 skip (too short) 6cr92YJOzQo
-04:00:33 ok 409 hoMp-SnQHJo IRL news m 81
-04:00:45 skip (title) qgioNUZrzxA Swiss politician accused of drugging and raping Irish teen a
-04:00:47 ok 410 SWBtYxev2hs IRL news m 54
-04:01:04 ok 411 xmVhNqByDIs IRL news m 88
-04:01:20 ok 412 J7cWfzzEd5U IRL news m 100
-04:01:36 ok 413 X97TYHUIJ2Q IRL news m 116
-04:01:52 ok 414 kYtEWS2RMlA IRL news m 67
-04:02:09 ok 415 LBXVY0B4DQw IRL news m 80
-04:02:25 ok 416 _lc8VcpEuRw IRL news a 36
-04:02:41 ok 417 wQxXFVDSDJM IRL news m 115
-04:02:58 ok 418 8KvmDeFdToI IRL news a 76
-04:03:12 ok 419 gt3CCA8Wyv4 IRL news a 39
-04:03:29 skip (mostly music) FbpCNkHUIY8
-04:03:33 ok 420 SJEjUFRZSp4 IRL news m 69
-04:03:49 ok 421 oLc_gVpuWQk IRL news a 48
-04:04:10 ok 422 TDDsW4Rtzzw IRL news a 45
-04:04:27 ok 423 pju0K3W6NLM IRL news a 368
-04:04:43 ok 424 nN3ka-hcy0o IRL news a 207
-04:04:55 skip (title) OpkTVLt4CZc Taoiseach Issues State Apology to Kenneally Abuse Survivors
-04:05:00 ok 425 HcDgSTH_7Vw IRL news a 73
-04:05:16 ok 426 vbTmcU6XG8c IRL news a 21
-04:05:33 ok 427 8inDomtCXYA IRL news a 377
-04:05:49 ok 428 2mTWT0TumjY IRL news a 79
-04:06:01 skip (title) efMebq9MCFc Why the Government is rejecting drug decriminalisation | Ins
-04:06:05 ok 429 lezPq3YsxXI IRL news a 329
-04:06:22 ok 430 phouNK9Onuw IRL news a 96
-04:06:36 ok 431 qkgIFfN8gUY IRL news a 123
-04:06:51 ok 432 TXHXIF90Ygc IRL news a 58
-04:07:06 ok 433 sfcCKHZbuuE IRL news m 21
-04:07:20 ok 434 TQTtom72Dyc IRL news a 205
-04:07:35 ok 435 Ch0pbw0GEUg IRL news a 430
-04:07:50 ok 436 QjBm46YiZ3M IRL news a 72
-04:08:05 ok 437 ySGkDJVf6Ow IRL news a 343
-04:08:20 ok 438 rUzDMLMlDjs IRL news a 307
-04:08:46 ok 439 rI94nKTwHRo IRL news a 168
-04:09:02 ok 440 FJuccWmxfOo IRL news a 249
-04:09:19 ok 441 pKQyh6jEtlg IRL news a 180
-04:09:35 ok 442 _M6YpGmBI3c IRL news a 211
-04:09:52 ok 443 Z19hlpfen-U IRL news a 104
-04:10:09 ok 444 9bgq8WGVk3c IRL news a 99
-04:10:25 ok 445 Absrp_W-B7Q IRL news a 47
-04:10:41 ok 446 oAo8nikM4X0 IRL news a 62
-04:10:58 ok 447 ODgiuTxvfr4 IRL news a 62
-04:11:14 ok 448 Mv-e8tDeceY IRL news a 60
-04:11:30 ok 449 g2RR4xgIMiU IRL news a 107
-04:11:46 ok 450 i-o5Em98IrE IRL news a 191
-04:12:03 ok 451 73voWxw7300 IRL news a 44
-04:12:19 ok 452 0e-AUqsUVBg IRL news a 116
-04:12:31 skip (title) -orpM0uBA_c Passengers describe stabbing drama on Israel-bound flight | 
-04:12:36 ok 453 JweALC-EHKc IRL news a 486
-04:12:53 ok 454 VGn1zDnZaXU IRL news a 208
-04:13:09 ok 455 HbhY5Noqf_4 IRL news a 555
-04:13:26 ok 456 k5s9lk3off4 IRL news a 68
-04:13:43 ok 457 Cen4qAjAT2M IRL news a 187
-04:14:01 ok 458 8FAiVzUPErk IRL news a 195
-04:14:17 ok 459 Ld6qdtdobYA IRL news a 52
-04:14:34 ok 460 eGJHnotbVeU IRL news a 98
-04:14:50 ok 461 aN_81LZw6Go IRL news a 203
-04:15:07 ok 462 ng7LpIxbrVw IRL news a 148
-04:15:23 ok 463 eB5TX4CbCLo IRL news a 400
-04:15:35 skip (title) PsK02uERIjE Dubliner breaks silence on abuse at Celtic Boys Club | Prime
-04:15:40 ok 464 P3IKYiV5gMg IRL news a 318
-04:15:56 ok 465 QR0MGMbIvw4 IRL news a 132
-04:16:13 ok 466 YwvXPRz5g0E IRL news a 334
-04:16:30 ok 467 Gh9vWilE6RU IRL news a 116
-04:16:46 ok 468 zvtkr-PQNa4 IRL news a 267
-04:17:03 ok 469 2PB5HL1QcyY IRL news a 71
-04:17:19 ok 470 YcMr3eBWSfI IRL news a 113
-04:17:36 ok 471 pA-5fNWaofU IRL news a 345
-04:17:48 skip (title) NwyIeRaKB0I As many as 14 men involved in Omagh bomb plot, inquiry hears
-04:17:52 ok 472 Jw60pjxCzcM IRL news a 247
-04:18:09 ok 473 2_h2UVgFTuk IRL news a 55
-04:18:25 ok 474 1ip5v5KOsyI IRL news a 57
-04:18:41 ok 475 t1hNpt9DOQM IRL news a 114
-04:18:57 ok 476 tXO_8B7o13k IRL news a 208
-04:19:14 ok 477 Rn5ZPbygksM IRL news a 389
-04:19:30 ok 478 VcEy8_c_6ls IRL news a 115
-04:19:54 ok 479 yyKriw2-Y_M AUS news a 81
-04:20:08 ok 480 wigCTAhRP4M AUS news a 153
-04:20:23 ok 481 f1mMddo31YM AUS news a 63
-04:20:37 ok 482 y9jMX_7IaTg AUS news a 49
-04:20:52 ok 483 d0k9HmOXgiM AUS news a 62
-04:21:06 ok 484 LZbjuKslfYo AUS news a 46
-04:21:18 skip (title) -uAStyKofAE Mushroom murderer Erin Patterson loses appeal, has sentence 
-04:21:21 ok 485 wcckis45Iq8 AUS news a 199
-04:21:36 ok 486 UwxPvoUG9QI AUS news a 29
-04:21:50 ok 487 YmCFn27GDUQ AUS news a 45
-04:22:05 ok 488 DppiRGxbEHQ AUS news a 40
-04:22:19 ok 489 bzDJAVRRa_A AUS news a 44
-04:22:34 ok 490 QQmEZdynGkg AUS news a 86
-04:22:49 ok 491 Pw0ehu59r8A AUS news a 101
-04:23:03 ok 492 VYidZJkjNR0 AUS news a 321
-04:23:18 ok 493 nNdS5lcPI8E AUS news a 74
-04:23:32 ok 494 Yu_tRPcx8gc AUS news a 90
-04:23:46 ok 495 hyQYU5w9hzg AUS news a 94
-04:23:58 skip (title) uXoW5WtX7vE Mushroom murderer Erin Patterson likely to die in prison aft
-04:24:01 ok 496 os8wDN4Xcm0 AUS news a 57
-04:24:15 ok 497 a5yqFeJVA_Q AUS news a 43
-04:24:30 ok 498 pAgtYhKo_ow AUS news a 52
-04:24:45 ok 499 jxBEzTXOSz0 AUS news a 80
-04:24:59 ok 500 UE9YGu2wEZI AUS news a 72
-04:25:14 ok 501 du6Af31JAmM AUS news a 67
-04:25:28 ok 502 -yLYuiPZvCg AUS news a 65
-04:25:43 ok 503 7oRTP9gQqN0 AUS news a 340
-04:25:57 ok 504 lmY6bR8bgZU AUS news a 413
-04:26:12 ok 505 -9U_IRGPQVM AUS news a 296
-04:26:26 ok 506 LpNADB17wiw AUS news a 202
-04:26:41 ok 507 omKcwR4FkJE AUS news a 214
-04:26:53 skip (title) errrcQj76fA NT teen charged with collecting documents likely to facilita
-04:26:56 ok 508 0Zezv6vW0G8 AUS news a 41
-04:27:10 ok 509 OvO7To1_3JY AUS news a 114
-04:27:25 ok 510 oCg80_MfWJs AUS news a 60
-04:27:37 skip (title) rXnHjikbJgk Teen girl dies in hospital after drive-by shooting south of 
-04:27:39 ok 511 122cnN45xUA AUS news a 53
-04:27:54 ok 512 Z_f3ohYIum4 AUS news a 40
-04:28:08 ok 513 9o5lF_eELC4 AUS news a 90
-04:28:23 ok 514 Z8Ww3MuCEfA AUS news a 451
-04:28:35 skip (title) b43hNsrR6cU Russell Brand tells jury friends won’t defend him over sex c
-04:28:38 ok 515 IxZs71OhxAk AUS news a 41
-04:28:52 ok 516 Xa3B1a4-Q-M AUS news a 218
-04:29:07 ok 517 rHumiOt6LW8 AUS news a 134
-04:29:21 ok 518 9SVTqun0TZw AUS news a 92
-04:29:57 skip (title) zXpG074ybUs Mushroom killer Erin Patterson appeal denied | Netanyahu all
-04:29:57 skip (title) tecHud3K4rA Mushroom killer Erin Patterson to learn appeal outcome | Mor
-04:30:57 skip (title) Fp4gLauQ1V4 Drive by shooting in Queensland | Morning News Bulletin 26 O
-04:31:01 skip (title) BIzFjOa4c7k Threat of West Bank offensive after two IDF soldiers killed 
-04:31:16 skip (title) jCFVNBltXHQ Alleged Police shooting in Sydney | Morning News Bulletin 23
-04:32:53 skip (title) eVL4vIdh0GY CBA CEO warning | Financial abuse reform | Census update
-04:34:08 skip (title) bCSP7S7Ps9k Overdue step toward justice for veterans discharged over sex
-04:35:01 skip (title) eANnO7yky0U Pilot stabbed on an Israeli-bound plane | Celebrations in Ir
-04:35:26 skip (title) DjJF8t2OHgs Vietnam detains Melbourne activist on terror charges
-04:35:43 skip (title) U6tFIbBm4BU UK investigates suspected airbase terror plot | Heavy fighti
-04:35:45 skip (title) EnQ-FSDpYHM Five arrested over alleged UK terror plot | Morning News Bul
-04:36:21 skip (title) xXZ_oeu31es Trump's warning to Iran at the UN | Arctic security deal | S
-04:36:23 skip (title) nWASN-gTF4A Lamarre-Condon claims self-defence in murder trial
-04:36:35 skip (title) giLI1Wgr394 Beau Lamarre-Condon appears in court as double murder trial 
-04:38:39 skip (title) hTnYmatFv4A Sunflowers cast into Sydney Harbour to remember those lost t
-04:39:27 skip (title) WUnhELBK1ks Israeli strikes kill 13 in Southern Lebanon | Murder trial f
-04:40:40 blocked by YouTube, waiting 20.0 minutes
-05:01:07 blocked by YouTube, waiting 20.0 minutes
-05:21:12 clips collected this run: 518 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 518
+Nightly run on the home computer, 2026-10-31 10:52 (last 400 lines of the collector)
+05:49:25 ok 67 nKPRwoVjIL4 US documentary m 183
+05:49:40 ok 68 gDKW0nldkxs US documentary m 259
+05:49:54 ok 69 pjIyR44Da3s US documentary m 135
+05:50:10 ok 70 _M7VhhptSrU US documentary m 137
+05:50:25 ok 71 YbcI4MBW-aU US documentary m 266
+05:50:40 ok 72 6Sgwn4JiUkM US documentary m 128
+05:50:54 ok 73 y9sSNQNpILo US documentary m 154
+05:51:09 ok 74 0sNYdSg1fL8 US documentary m 114
+05:51:24 ok 75 guPx59je6eE US documentary m 365
+05:51:36 skip (title) K6OYz94o5EE How Killing Trees Could Save The Planet
+05:51:38 ok 76 TSfjnNA1wdo US documentary m 167
+05:51:53 ok 77 wfqhKKITC1w US documentary m 223
+05:52:08 ok 78 5Htj0cURi2Q US documentary m 375
+05:52:23 ok 79 UEuz5ZHABtI US documentary m 285
+05:52:37 ok 80 kJT0-6jzAXU US documentary m 67
+05:52:52 ok 81 BOSe_24nGgU US documentary m 347
+05:53:07 ok 82 0b94O3c6Of0 US documentary m 251
+05:53:22 ok 83 ckK_Eg86JqQ US documentary m 470
+05:53:36 ok 84 hctONunfeac US documentary m 144
+05:54:11 ok 85 B2fibJldmW0 US tv a 56
+05:54:26 ok 86 9kQXQrVCT5Q US tv a 375
+05:54:40 ok 87 OUOGsnAnuWQ US tv a 31
+05:54:55 ok 88 r1Q1BsHDA_c US tv a 289
+05:55:10 ok 89 HpDIMz9ylHY US tv a 417
+05:55:25 ok 90 Zb5wByP4sSY US tv a 478
+05:55:39 ok 91 AlZcndegE8M US tv a 297
+05:55:54 ok 92 qD4J7VS8m58 US tv a 513
+05:56:09 ok 93 iCuJm5hZP_U US tv a 446
+05:56:24 ok 94 dA2lbMiciow US tv a 504
+05:56:39 ok 95 VERsActCeqw US tv a 321
+05:56:53 ok 96 Gc84Qk7f-pg US tv a 77
+05:57:08 ok 97 aPAm0Tyt0jY US tv a 373
+05:57:23 ok 98 BuQ_Wg6nxYg US tv a 330
+05:57:38 ok 99 x5z9NRTSCKE US tv a 594
+05:57:53 ok 100 RlRngcqTNMI US tv a 377
+05:58:08 ok 101 CdswK1A1vzE US tv a 221
+05:58:22 ok 102 yaaDc3ldZNU US tv a 39
+05:58:37 ok 103 IFUny5cZAdk US tv a 299
+05:58:52 ok 104 rFO8OVRpGJU US tv a 525
+05:59:07 ok 105 E4CbukVfpHY US tv a 419
+05:59:22 ok 106 B4-MIkVFAi4 US tv a 291
+05:59:36 ok 107 8L4xbZC0pgY US tv a 353
+05:59:51 ok 108 V1O1Ock2Ues US tv a 244
+06:00:06 ok 109 ac2Do2NNlvI US tv a 493
+06:00:20 ok 110 5Pfnyn94iXQ US tv a 49
+06:00:35 ok 111 Q4rM4d0l06k US tv a 396
+06:00:50 ok 112 eP-95TuOVB8 US tv a 482
+06:01:05 ok 113 OYqSI_wyv4o US tv a 262
+06:01:19 ok 114 vu_zj0VI4Jg US tv a 80
+06:01:34 ok 115 uXAnLqHGbkI US tv a 451
+06:01:49 ok 116 x1UIC1k6GQo US tv a 36
+06:02:04 ok 117 WCtdrYbtMRs US tv a 62
+06:02:18 ok 118 z5s6NzpEskY US tv a 549
+06:02:33 ok 119 HbDqk4wLCF8 US tv a 282
+06:02:48 ok 120 dgJrHeeyQdA US tv a 402
+06:03:03 ok 121 yQ89nQw9grE US tv a 72
+06:03:18 ok 122 A4k3KE2uesc US tv a 302
+06:03:32 ok 123 Hod-28wQL2M US tv a 491
+06:03:47 ok 124 g_MBX1Mu4EQ US tv a 459
+06:04:21 ok 125 L6fSd9gidHk US tv m 323
+06:04:36 ok 126 YvwMHVcOAD0 US tv m 464
+06:04:51 ok 127 -DG9QKGkGS8 US tv m 346
+06:05:07 ok 128 9rLzE0QjUgA US tv m 264
+06:05:22 ok 129 UQWJtQlQWa0 US tv m 320
+06:05:34 skip (title) kvsLtz0ibeQ Amy Adams Threatened Her Kid with Singing Enchanted, Rejecte
+06:05:37 ok 130 X9o-zGGlGVw US tv m 135
+06:05:52 ok 131 O5-4j67YNek US tv m 236
+06:06:07 ok 132 CbYYqSEilrs US tv m 254
+06:06:21 ok 133 WQ6SESSSxbE US tv m 418
+06:06:37 ok 134 W9aHUMvXZpQ US tv m 409
+06:06:51 ok 135 I04j3-WL23s US tv m 292
+06:07:07 ok 136 880rXMN5LIg US tv m 274
+06:07:22 ok 137 aDomjd3v53U US tv m 180
+06:07:37 ok 138 iCif1rVVeTE US tv m 355
+06:07:52 ok 139 X9PAAlnvz7U US tv m 434
+06:08:07 ok 140 njMpDnhAEFw US tv m 161
+06:08:19 skip (title) OsY58fp-8EQ Rubio Grilled on Trump Sleeping; Trump's Reflecting Pool Obs
+06:08:21 ok 141 4LJomCMRO1k US tv m 226
+06:08:37 ok 142 TeDQWzshXFM US tv m 360
+06:08:52 ok 143 vVXSLpBPJfc US tv m 420
+06:09:07 ok 144 vMk4jlIHPVU US tv m 309
+06:09:21 ok 145 Cn4h9ew8xK8 US tv m 353
+06:09:36 ok 146 1ynbQ0xW2Bo US tv m 234
+06:09:51 ok 147 Ojj68i8A0bc US tv m 212
+06:10:06 ok 148 o6pjN05Bk7c US tv m 127
+06:10:21 ok 149 0MYJadaUkzw US tv m 233
+06:10:36 ok 150 xgPTULn32EY US tv m 311
+06:10:51 ok 151 mZKycKMdDhM US tv m 269
+06:11:06 ok 152 AYzremZTgHk US tv m 420
+06:11:21 ok 153 uSSN-MhBkDo US tv m 332
+06:11:36 ok 154 NE46rk_uOBY US tv m 533
+06:11:51 ok 155 FKlVAoD3KzM US tv m 474
+06:12:06 ok 156 MsyzK_RiCEg US tv m 291
+06:12:21 ok 157 iwgW2F3HH1E US tv m 400
+06:12:36 ok 158 64ORYRhi3Y0 US tv m 212
+06:12:51 ok 159 yQS9Gx25zoo US tv m 454
+06:13:06 ok 160 SVarWpN3AKE US tv m 194
+06:13:21 ok 161 P47rRYyblUQ US tv m 215
+06:13:36 ok 162 ABnoE8FkrmM US tv m 372
+06:13:51 ok 163 TdKKnEVwCu4 US tv m 398
+06:14:06 ok 164 gozkDRAHFN8 US tv m 199
+06:14:34 ok 165 s5cI9Kao4NA US tv a 267
+06:14:48 ok 166 qGLjL5lL_R8 US tv a 317
+06:15:03 ok 167 Uh3Log6S4ko US tv a 529
+06:15:18 ok 168 Md_4yMNBqn4 US tv a 193
+06:15:32 ok 169 N0CoGp6y38Q US tv a 196
+06:15:47 ok 170 IXU1ncdCe-g US tv a 199
+06:16:02 ok 171 6nJUfilPCIQ US tv a 427
+06:16:16 ok 172 5dWslHuC1XU US tv a 105
+06:16:31 ok 173 hz3Qx1u9oho US tv a 221
+06:16:45 ok 174 9OFdRB7pAQk US tv a 317
+06:17:00 ok 175 iBTJsmfSQcw US tv a 290
+06:17:16 ok 176 DfgX5U1ntmI US tv a 431
+06:17:31 ok 177 sK8ruD7qaVQ US tv a 136
+06:17:46 ok 178 fkZ6U1z9-Jg US tv a 435
+06:18:00 ok 179 AIa5qeeQEpM US tv a 51
+06:18:15 ok 180 _juGht8djmI US tv a 285
+06:18:29 ok 181 L4H5NPLlnK4 US tv a 355
+06:18:44 ok 182 i1ODOKKVQVY US tv a 42
+06:18:58 ok 183 dvxAt7iKi9M US tv a 99
+06:19:13 ok 184 DSJzFOdWeWo US tv a 141
+06:19:28 ok 185 fW7GPoDxD_8 US tv a 38
+06:19:42 ok 186 WZCfaAFGD6c US tv a 102
+06:19:57 ok 187 4thKSSh0yas US tv a 187
+06:20:11 ok 188 41hVyg1ISLQ US tv a 84
+06:20:26 ok 189 ff0jnIPLjkA US tv a 90
+06:20:40 ok 190 FaZ8waf4Z3U US tv a 122
+06:20:55 ok 191 fRoBV9xZTQ4 US tv a 176
+06:21:10 ok 192 z3jvWIGMmoI US tv a 371
+06:21:24 ok 193 bz5YFIG1vN8 US tv a 304
+06:21:39 ok 194 IiU4sp_mCWY US tv a 305
+06:21:54 ok 195 o65M2MgGHiM US tv a 377
+06:22:08 ok 196 SUbJ7PzPfDE US tv a 398
+06:22:23 ok 197 md60fGHa3qU US tv a 425
+06:22:37 ok 198 ScKUPsKMEzI US tv a 137
+06:22:52 ok 199 7TtcFU-7jao US tv a 116
+06:23:07 ok 200 BSq8UYHBo2g US tv a 289
+06:23:21 ok 201 QUIH93m3DC8 US tv a 192
+06:23:36 ok 202 1jZ8hNGPYdE US tv a 402
+06:23:51 ok 203 XgjZg1Ce-bA US tv a 56
+06:24:06 ok 204 c6ygcT5Pr5o US tv a 103
+06:24:30 ok 205 UlC4YIxYqks US tv m 193
+06:24:45 ok 206 kpt_1kKsxxM US tv m 300
+06:24:59 ok 207 gSxQ1hOS8E4 US tv m 214
+06:25:14 skip (mostly music) o_-GMfeXWVc
+06:25:17 ok 208 X8Q6aW4MsU0 US tv m 215
+06:25:32 ok 209 vYnQcmhGPF4 US tv m 275
+06:25:47 ok 210 7zyMaA-XIec US tv m 207
+06:26:02 skip (mostly music) blOL6aLaz3s
+06:26:05 skip (mostly music) bmBEfh-yNYY
+06:26:09 ok 211 pVCxepj-NsE US tv m 223
+06:26:24 ok 212 PL5Rp17wMuU US tv m 211
+06:26:39 ok 213 -CKylJSYE9A US tv m 153
+06:26:54 ok 214 N82aULqJqe4 US tv m 27
+06:27:09 ok 215 mJzvv0Dpfcw US tv m 277
+06:27:24 ok 216 9h1WUtE_BjA US tv m 121
+06:27:39 ok 217 _NGwEUxtYJI US tv m 243
+06:27:54 ok 218 cqH7f_tDhV0 US tv m 125
+06:28:08 ok 219 iqX8RxAPT6s US tv m 253
+06:28:23 ok 220 Hq4Cr3oLNjY US tv m 152
+06:28:38 ok 221 H4xkUk84UWU US tv m 82
+06:28:53 skip (mostly music) TEX6MWJrFUw
+06:28:56 ok 222 aU_GvgKC8EA US tv m 217
+06:29:11 ok 223 UkKpsKIqIvY US tv m 176
+06:29:28 ok 224 SURxF9BnID0 US tv m 273
+06:29:43 ok 225 EerIWxkCh0g US tv m 298
+06:29:57 skip (mostly music) 3zynW4uASX4
+06:30:00 ok 226 ZMX2J7GNFzw US tv m 312
+06:30:15 ok 227 7RCAcXjwftQ US tv m 202
+06:30:30 ok 228 1kdOQuFRghk US tv m 241
+06:30:45 ok 229 9tY4GSs8zd8 US tv m 249
+06:31:00 skip (mostly music) LHyoVd5wxCE
+06:31:03 ok 230 o2vB_hgRdIE US tv m 371
+06:31:18 ok 231 skKdRyTSSQk US tv m 184
+06:31:32 ok 232 Yno-jvYzQdU US tv m 100
+06:31:47 ok 233 QmEwF6l-paw US tv m 42
+06:32:02 ok 234 6YN2Lw-8LoQ US tv m 148
+06:32:17 ok 235 dXUAm9PjNL0 US tv m 153
+06:32:32 ok 236 UsBDhRhMiXY US tv m 168
+06:32:47 ok 237 CBt_UoyYJxI US tv m 263
+06:33:01 ok 238 nySXDoq4YE4 US tv m 137
+06:33:13 skip (title) 8DeFOEgubnM Tonight Show Lookalikes: Parks and Recreation Extra, Bobbi i
+06:33:17 ok 239 RxR1pU0P7T4 US tv m 357
+06:33:29 skip (title) KUiWWrBnyPI Chance the Rapper: Same Drugs | The Tonight Show Starring Ji
+06:33:31 ok 240 MNxfhdkKE00 US tv m 170
+06:33:43 skip (title) jJyqedXdrYs Chance the Rapper Finished Coloring Book Minutes Before Rele
+06:33:43 skip (title) FjWmGbCmD1w Callum Turner Shows Off His Pizza-Making Skills, Talks React
+06:33:47 ok 241 Ih3FEv7-QzY US tv m 182
+06:34:01 ok 242 m8TaNKhZju4 US tv m 473
+06:34:16 skip (too short) wdIB_zLaB5Y
+06:34:19 ok 243 -VM2pPx3M6Y US tv m 195
+06:34:34 ok 244 mWjnucGgbvM US tv m 216
+06:35:10 ok 245 sS1tuPAbGgU NZ news a 392
+06:35:25 skip (too short) NuFiHqcSSQ0
+06:35:28 ok 246 hlIUmzwNOco NZ news a 49
+06:35:42 ok 247 Bp5af6cboWg NZ news a 124
+06:35:57 ok 248 eSub8uhJpBg NZ news a 113
+06:36:13 ok 249 RvtZqAgbzbE NZ news a 146
+06:36:28 ok 250 1x4qn84lkAU NZ news a 217
+06:36:43 ok 251 WRzF-NUc8XY NZ news a 64
+06:36:57 skip (too short) t95UGNDIDOc
+06:37:02 ok 252 8nJrGsj5UPE NZ news a 22
+06:37:16 ok 253 NegI1xMnZqk NZ news a 407
+06:37:31 ok 254 mu6NbvWfR9k NZ news a 60
+06:37:45 ok 255 oSfBA1igByc NZ news a 85
+06:38:00 ok 256 FoETtE3J5Jk NZ news a 97
+06:38:14 ok 257 e0YOd6I8AxE NZ news a 128
+06:38:29 ok 258 nnKRehLo8aM NZ news a 86
+06:38:44 ok 259 omRefK-LTOA NZ news a 227
+06:38:59 ok 260 CaiUv9WllV4 NZ news a 340
+06:39:13 ok 261 73fnZ1mmZCI NZ news a 133
+06:39:28 ok 262 HfnWlxkUAoo NZ news a 142
+06:39:43 ok 263 24OsQGCDDBI NZ news a 123
+06:39:57 ok 264 p8Y9V7hnuu0 NZ news m 171
+06:40:12 ok 265 jSFe_1_xYq0 NZ news a 62
+06:40:26 ok 266 Eo14a16i1CI NZ news a 57
+06:40:41 ok 267 3t6-q1moTw4 NZ news a 50
+06:40:55 ok 268 3ZYm5mhbd-I NZ news a 128
+06:41:10 ok 269 floZW9xA2UE NZ news a 245
+06:41:25 ok 270 ZbSdmW-5v58 NZ news a 299
+06:41:39 ok 271 sIc5CXNUP-o NZ news a 233
+06:41:54 skip (bleeped words) ErW_Z9mynDI
+06:41:56 ok 272 JADCuHs78X0 NZ news a 178
+06:42:11 ok 273 rzgOJYbKyo4 NZ news a 71
+06:42:26 ok 274 0wUySHaCopU NZ news a 477
+06:42:40 ok 275 r2UoVQm0Ovo NZ news a 68
+06:42:55 ok 276 eBqHBF-S9xw NZ news a 153
+06:43:10 skip (bleeped words) 4WOfvd9lH4I
+06:43:12 ok 277 FLkJW-hDy0E NZ news a 244
+06:43:27 ok 278 516iNUbUVdk NZ news a 167
+06:43:41 ok 279 36prBnn3Xvs NZ news a 106
+06:43:56 ok 280 1olYhWFizno NZ news m 208
+06:44:11 ok 281 gIm_ClnzOs0 NZ news a 119
+06:44:26 ok 282 PN_3uJvBZmE NZ news a 371
+06:44:41 ok 283 OtGQzDeTq7E NZ news a 192
+06:44:55 skip (mostly music) 9J5W1Wlj9Zs
+06:44:58 ok 284 q_qkfzETEP8 NZ news a 22
+06:45:22 ok 285 T6BuQH9T4n0 NZ news a 380
+06:45:39 ok 286 r6VPgZkKpwo NZ news a 138
+06:45:55 ok 287 qNx8ok1AmHE NZ news a 96
+06:46:12 ok 288 wPPZv3NccfI NZ news a 46
+06:46:28 ok 289 xrdOlehdHH4 NZ news a 181
+06:46:45 ok 290 fn4PGVlwymI NZ news a 145
+06:47:01 ok 291 Ry_daF_xMp4 NZ news a 168
+06:47:18 ok 292 IqzFjIQ4FyM NZ news a 134
+06:47:35 ok 293 f7HX1PrHv0Q NZ news a 52
+06:47:51 ok 294 PAi8jzHU_uY NZ news a 112
+06:48:07 ok 295 i9m226BgEwc NZ news a 148
+06:48:23 ok 296 gP4zq4boi3w NZ news a 263
+06:48:40 ok 297 Ja5HVS5NXQA NZ news a 179
+06:48:56 ok 298 XQgjkxpecfQ NZ news a 201
+06:49:13 ok 299 oE79w6ZFe_s NZ news a 143
+06:49:29 ok 300 qjxXNCkH5Pk NZ news a 112
+06:49:46 ok 301 OS5PJGkBe3I NZ news a 130
+06:50:02 ok 302 otHz3OK3L_s NZ news a 108
+06:50:23 ok 303 UsPggBihxKo NZ news a 106
+06:50:39 ok 304 SPLZB3LgbSA NZ news a 439
+06:50:55 ok 305 5AdBi_0xOvo NZ news a 41
+06:51:12 ok 306 T09jd1Bw_Co NZ news a 74
+06:51:28 ok 307 WuRSVWx_4xA NZ news a 33
+06:51:43 ok 308 cfde28OjenI NZ news a 366
+06:51:59 ok 309 JYb8_tbNdGU NZ news a 32
+06:52:16 ok 310 o6x3LYI1Qa8 NZ news a 55
+06:52:32 ok 311 TD6DxLkoxpQ NZ news a 99
+06:52:49 ok 312 2mFbPj4bxmQ NZ news a 121
+06:53:05 ok 313 dPLS2lsdVCc NZ news a 28
+06:53:22 ok 314 Cc15g5pUUwI NZ news a 146
+06:53:38 ok 315 8k3eHNSO_7c NZ news a 224
+06:53:54 ok 316 r-b_lVpWvAI NZ news a 153
+06:54:09 ok 317 eAre7Nn0qcU NZ news a 234
+06:54:26 ok 318 0MreKEc2AJM NZ news a 200
+06:54:40 ok 319 pU_9igfWGEo NZ news a 272
+06:54:57 ok 320 des-Lk2dffw NZ news a 247
+06:55:13 ok 321 fH1VO8IKvDc NZ news a 101
+06:55:30 ok 322 QHvkZNrCru0 NZ news a 43
+06:55:46 ok 323 k66c2xS4OZo NZ news a 124
+06:56:02 ok 324 P8D0ijYNdJU NZ news a 121
+06:56:29 ok 325 W1_8lvfeOkc SCO news a 85
+06:56:45 ok 326 qv2qQ48R47s SCO news a 74
+06:57:02 ok 327 BIG2zOcIaL8 SCO news a 65
+06:57:18 ok 328 PwANoz5O8Wk SCO news a 60
+06:57:33 ok 329 JlRe3G4JdV4 SCO news a 189
+06:57:50 ok 330 Q028oamxe0o SCO news a 124
+06:58:06 ok 331 1zdQvyoKSgk SCO news a 69
+06:58:23 ok 332 M4uVHnDlJ7c SCO news a 352
+06:58:39 ok 333 dzL7-E27u24 SCO news a 235
+06:58:56 ok 334 eWd9FGFngHg SCO news a 248
+06:59:21 ok 335 sp2qvSy3Bqo SCO news a 38
+06:59:59 ok 336 18WoBJtgbEE SCO news a 71
+07:00:16 ok 337 jfa8kWaCBes SCO news a 79
+07:00:28 skip (title) RU1IdRyMstk Former world snooker champion Graeme Dott jailed for seven y
+07:00:32 ok 338 LLzbrV4LfxQ SCO news a 79
+07:00:48 ok 339 ypm5f_ca9bM SCO news a 65
+07:01:05 ok 340 5jBXcdEkH-A SCO news a 68
+07:01:22 ok 341 WydU1wXA5Y8 SCO news a 56
+07:01:38 ok 342 yEGs0ySHbNo SCO news a 44
+07:01:55 ok 343 UYFkqMgB_r0 SCO news a 63
+07:02:11 ok 344 22wd3fzj8GM SCO news a 110
+07:02:28 ok 345 41F1yA650ew SCO news a 133
+07:02:45 ok 346 2Bu3g7Ox_VA SCO news a 219
+07:03:01 ok 347 yuJrUu8EAuQ SCO news a 65
+07:03:18 ok 348 1CY4Kf4gQoM SCO news a 71
+07:03:34 ok 349 S5PhBWsNhVQ SCO news a 79
+07:03:46 skip (title) HrXh4jlRsjs Specialist nurses for sexual assault victims to be rolled ou
+07:03:50 ok 350 tiUmSnk1yWo SCO news a 154
+07:04:07 ok 351 jzkiODkHxiQ SCO news a 210
+07:04:24 ok 352 XZ_j2bseaYg SCO news a 78
+07:04:40 ok 353 TNEFzvjYH2k SCO news a 179
+07:04:52 skip (title) ZwN_Y90WpQQ Number of drug deaths rises sharply across Scotland
+07:04:56 ok 354 CcrCBh6olsI SCO news a 74
+07:05:13 ok 355 ovmOQyMlm0g SCO news a 93
+07:05:30 ok 356 EtUt8yLcJEo SCO news a 41
+07:05:46 ok 357 5CB5HVXn4Tg SCO news a 128
+07:06:02 ok 358 c4dSm6plw40 SCO news a 329
+07:06:19 ok 359 u7Y-qPD4NvY SCO news a 83
+07:06:31 skip (title) J-woxU0Zpqg Deadly contaminated drugs flood Scotland's streets
+07:06:35 ok 360 qF0lviFKIls SCO news a 70
+07:06:52 ok 361 vsQ0i4krGUc SCO news a 61
+07:07:08 ok 362 EYZtxsCtTFA SCO news a 290
+07:07:25 ok 363 ya-MkG1ARzI SCO news a 35
+07:07:37 skip (title) OCx5QIsdAJA New breast cancer drug now available on NHS
+07:07:42 ok 364 S_l07YpckPw SCO news a 53
+07:08:12 ok 365 k1yGMOhCDls IRL news a 144
+07:08:28 ok 366 khdnog3z40A IRL news a 159
+07:08:45 ok 367 W0aIrwT6juI IRL news a 111
+07:09:01 ok 368 YrqBAuiTL04 IRL news a 137
+07:09:18 ok 369 4B7T4T4zzTA IRL news a 508
+07:09:34 ok 370 0iwkQWSW8OE IRL news a 114
+07:09:51 ok 371 blAtXBFwbns IRL news a 114
+07:10:07 ok 372 fnfxsfAoS8o IRL news a 322
+07:10:23 ok 373 sBWqpo1AUeU IRL news a 546
+07:10:40 ok 374 scfU5lMFcfw IRL news a 383
+07:10:56 ok 375 EgIy8G1QioY IRL news a 282
+07:11:13 ok 376 V_eAWfRZWaA IRL news a 134
+07:11:29 ok 377 e377QS7K2v8 IRL news a 53
+07:11:46 ok 378 nmEGK6K439M IRL news a 82
+07:12:02 ok 379 6lMqqgtd-bQ IRL news a 79
+07:12:19 ok 380 GVALe_RYcjk IRL news a 109
+07:12:35 ok 381 7kAK0K9JJhY IRL news a 364
+07:12:52 ok 382 skZitbN9ghw IRL news a 204
+07:13:08 ok 383 vrwNIEUkAIM IRL news a 280
+07:13:25 ok 384 MneC9utdnag IRL news a 196
+07:13:42 ok 385 pVJul4VZQmk IRL news a 108
+07:13:59 ok 386 THFxkUc6Rok IRL news a 95
+07:14:19 ok 387 72JIJKqIHJY IRL news a 264
+07:14:35 ok 388 5hBocNM3uhc IRL news a 60
+07:14:52 ok 389 6R5Fa-ciXNs IRL news a 90
+07:15:08 ok 390 ou2_vkBj8NI IRL news a 34
+07:15:24 ok 391 a3Rsb3LlMBQ IRL news a 63
+07:15:36 skip (title) 4tb91SnevOY Judge in five-week Lindsay Clancy murder trial declares mist
+07:15:41 ok 392 4X8wvKjlG-E IRL news a 208
+07:15:57 ok 393 9Wm1IoaU4io IRL news a 377
+07:16:13 ok 394 7FGQKBSZEBg IRL news a 60
+07:16:30 ok 395 vudlPRUhQaU IRL news a 420
+07:16:46 ok 396 BOeRlDYRZEc IRL news a 259
+07:17:03 ok 397 1wGeiCIbukM IRL news a 257
+07:17:19 ok 398 YzsLqZvZbF8 IRL news a 183
+07:17:36 ok 399 2hRPQX00lls IRL news a 138
+07:17:53 ok 400 4vQL4z93_gI IRL news a 60
+07:18:09 ok 401 j9fUfch2zVU IRL news a 348
+07:18:26 ok 402 vpQ5tmLo0ys IRL news a 153
+07:18:42 ok 403 g3522XWsuDM IRL news a 145
+07:18:59 ok 404 nQaU-VXj22k IRL news a 208
+07:19:24 ok 405 puhv2kywr3c IRL news a 189
+07:19:39 ok 406 pI1-Ln0-yFo IRL news m 129
+07:19:54 ok 407 M5q0RiLSFvc IRL news m 76
+07:20:09 ok 408 iAEbVukjpEg IRL news a 191
+07:20:24 ok 409 K8BezXKyyyc IRL news a 65
+07:20:39 ok 410 tHcU21SOlKU IRL news a 31
+07:20:53 ok 411 jUeVvV4v5JI IRL news a 183
+07:21:08 ok 412 4aArsY1LFKo IRL news a 53
+07:21:23 ok 413 lLUT4HJQUgI IRL news a 62
+07:21:38 ok 414 e5NnGdQlTj4 IRL news a 52
+07:21:52 skip (too short) moV94MY020g
+07:21:55 ok 415 XShBLzGBBFs IRL news a 96
+07:22:13 ok 416 sWYKBVnYeqM IRL news a 28
+07:22:27 ok 417 1Svkdp_6nt0 IRL news a 40
+07:22:44 ok 418 oUnIXMskGXo IRL news a 48
+07:22:58 ok 419 nUeZzL-UU8w IRL news a 22
+07:23:13 ok 420 t2yscK-bg9M IRL news a 20
+07:23:27 ok 421 DomsV3hWcsk IRL news a 135
+07:23:42 ok 422 5hXUHa1MVDo IRL news a 42
+07:23:57 ok 423 Fa91dHyUZuM IRL news a 26
+07:24:11 ok 424 VvphWoO1m8w IRL news a 63
+07:24:26 ok 425 -onduNVZse0 IRL news a 44
+07:24:41 ok 426 C0grRwltqpw IRL news a 56
+07:24:55 ok 427 1P3D50AsboU IRL news a 59
+07:25:10 ok 428 HraVEyzYHLA IRL news a 47
+07:25:26 skip (too short) fxOHMxIEhY4
+07:25:29 ok 429 W-EmGupsUSA IRL news a 123
+07:25:46 ok 430 tiPepq0kHi4 IRL news a 122
+07:26:00 ok 431 qU9nTg6yA4U IRL news a 35
+07:26:15 ok 432 tpxDM_2FdHc IRL news a 26
+07:26:29 ok 433 Bad-NMMS_CU IRL news a 37
+07:26:44 ok 434 oZqotCDp6fw IRL news a 34
+07:26:59 ok 435 pj73QhNG6Vs IRL news a 61
+07:27:13 ok 436 kPVT6zVogqs IRL news a 73
+07:27:28 ok 437 aY5Ow0-KofU IRL news a 118
+07:28:03 blocked by YouTube, waiting 20.0 minutes
+10:51:45 clips collected this run: 437 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 437
