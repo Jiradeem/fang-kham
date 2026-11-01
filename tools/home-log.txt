@@ -1,401 +1,401 @@
-Nightly run on the home computer, 2026-11-01 14:49 (last 400 lines of the collector)
-13:12:51 ok 250 kIfhKqK_UOA CAN news a 58
-13:13:11 ok 251 XZwfHs0K3PE CAN news a 79
-13:13:28 ok 252 B4k8I_rR0uY CAN news a 189
-13:13:46 ok 253 d3jBWscNt_k CAN news a 161
-13:14:02 ok 254 sqA2FdamFJQ CAN news a 206
-13:14:20 ok 255 WCRKnO395h8 CAN news a 268
-13:14:38 ok 256 E--xNKjDyIg CAN news a 66
-13:14:55 ok 257 qx1bzyaaPV8 CAN news a 183
-13:15:10 ok 258 g0aHPiYChMQ CAN news a 185
-13:15:28 ok 259 VT94skvfxmo CAN news a 235
-13:15:45 ok 260 jriV7uf1gZM CAN news a 158
-13:16:02 ok 261 kIbFufjy4Rs CAN news a 113
-13:16:20 ok 262 LacgfXXfAyQ CAN news a 163
-13:16:39 ok 263 eWV2tXWvBlA CAN news a 104
-13:17:06 ok 264 GmrZhqfjoV8 CAN news a 163
-13:17:22 ok 265 zRyEoTbEkak CAN news a 171
-13:17:37 ok 266 NKvSGI4EeVE CAN news a 314
-13:17:52 ok 267 cHVp6Q0eV7Q CAN news a 292
-13:18:04 skip (title) DbLRyacc1kU Montreal man sentenced to life in prison after killing his d
-13:18:08 ok 268 DapiRbg3lUs CAN news a 391
-13:18:23 ok 269 1XYr_jz-ig8 CAN news a 54
-13:18:38 ok 270 wSoIuJMTg5s CAN news a 154
-13:18:50 skip (title) 2iEAxrP304Q Police lost key evidence in a P.E.I. cold-case murder. Now a
-13:18:50 skip (title) wQkJyGiBVrc Charges in P.E.I. cold-case killing withdrawn because police
-13:18:53 ok 271 8UvjHvsxZh4 CAN news a 96
-13:19:09 ok 272 dfoGZb4qc0Q CAN news a 223
-13:19:24 ok 273 yrqLvq6i2s8 CAN news a 379
-13:19:39 ok 274 j4wMBOJwTLE CAN news a 422
-13:19:54 ok 275 IRz6XMYTItM CAN news a 201
-13:20:06 skip (title) pcCWYCUTJZk Duane 'Keffe D' Davis sentenced to 40 years to life in Tupac
-13:20:10 ok 276 d1ZmoGeQdqA CAN news a 91
-13:20:25 ok 277 4WmwoMu-WvI CAN news a 540
-13:20:41 ok 278 DjGR9tKORD4 CAN news a 56
-13:20:56 ok 279 CBoZxLj_NSM CAN news a 71
-13:21:11 ok 280 oWcdVkFF2SY CAN news a 93
-13:21:26 ok 281 AIf5rlJAv6E CAN news a 124
-13:21:42 ok 282 cuuMRE6zG-Y CAN news a 220
-13:21:57 ok 283 j7tfzHtL4bA CAN news a 70
-13:22:12 ok 284 Pn53xqJOmDI CAN news a 230
-13:22:28 ok 285 a-7DHnNQfCE CAN news a 107
-13:22:43 ok 286 OB2K3cS6_wA CAN news a 263
-13:22:58 ok 287 5XjECHRDey0 CAN news a 394
-13:23:13 ok 288 cg4PFd9pDQw CAN news a 525
-13:23:29 ok 289 MGVsuQS9QmU CAN news a 220
-13:23:44 ok 290 QJnYY01Tbc8 CAN news a 104
-13:23:56 skip (title) FMTHiHSCrZU Isaias kills 2 after smashing into Gulf Coast as hurricane
-13:23:59 ok 291 53sInfRCUD4 CAN news a 86
-13:24:14 ok 292 guDOOgjE0f4 CAN news a 130
-13:24:29 ok 293 wfN96zswKu8 CAN news a 117
-13:24:45 ok 294 80YB8GXaCDU CAN news a 279
-13:25:01 ok 295 z1A2G8SMMOw CAN news a 340
-13:25:16 ok 296 jgzWJZM8v8I CAN news a 457
-13:25:31 ok 297 9nBh4TJ8guY CAN news a 177
-13:25:47 ok 298 kPcc4Yhb0W4 CAN news a 99
-13:26:02 ok 299 lL5D23Jj-iA CAN news a 65
-13:26:18 ok 300 EgrOuiaUTJ0 CAN news a 136
-13:26:33 ok 301 HnI1jDqyu3Y CAN news a 133
-13:26:45 skip (title) zjOF2bMYdP4 Execution of Fort Hood shooter will be livestreamed, Pentago
-13:26:48 ok 302 yk5mfunM5TU CAN news a 159
-13:27:03 ok 303 7tJmEkInx3Y CAN news a 507
-13:27:30 ok 304 iST_ioRPmkA CAN news m 91
-13:27:45 ok 305 ddlzOAfXX5Y CAN news m 177
-13:27:59 ok 306 8-aNGUdEYWs CAN news m 70
-13:28:14 ok 307 loMhgJDnkLQ CAN news a 62
-13:28:29 ok 308 WqTH52eOeJs CAN news a 72
-13:28:44 ok 309 X2Ykhbsm1sM CAN news a 47
-13:28:59 ok 310 fQFMZEAV2RU CAN news a 47
-13:29:14 ok 311 Dg1ZmvSCMvk CAN news a 96
-13:29:29 ok 312 8cK9jhTS7io CAN news m 77
-13:29:44 skip (too short) 8VNX34cSoS8
-13:29:47 ok 313 7En4gayPmEU CAN news a 72
-13:30:01 ok 314 9Jgm2ehVbL4 CAN news m 93
-13:30:18 ok 315 sx_opH1cMno CAN news m 117
-13:30:32 skip (too short) eNY8pli37ik
-13:30:35 ok 316 0mdli2T2NxQ CAN news m 185
-13:30:50 ok 317 QiZrPvEy608 CAN news m 109
-13:31:06 skip (too short) dp9TP39oAoM
-13:31:09 skip (too short) zBM9-5dvdhw
-13:31:12 ok 318 KtzGAh8BzVU CAN news m 85
-13:31:27 skip (too short) NK1siwqKEjk
-13:31:30 ok 319 J73FT8kaEbQ CAN news m 58
-13:31:45 ok 320 DJX9mWax-yY CAN news m 103
-13:31:59 skip (too short) VMl4GhxWvhw
-13:32:02 ok 321 l5ayOqiP-GE CAN news m 97
-13:32:17 ok 322 q5UUlCXuag8 CAN news m 133
-13:32:32 skip (too short) qpe7Dl4ecTY
-13:32:34 ok 323 DeuL1RvJ-74 CAN news m 49
-13:32:49 ok 324 V8LRK4iRVPI CAN news m 113
-13:33:04 ok 325 3GZMMk53YlI CAN news m 97
-13:33:19 skip (too short) Bqzem6HshBQ
-13:33:21 ok 326 JMpkfq7o06A CAN news m 109
-13:33:36 ok 327 C7z3-Ap-0Ao CAN news m 143
-13:33:51 ok 328 yXkzNMc2dUY CAN news m 113
-13:34:06 skip (too short) QPX65uj96xI
-13:34:10 ok 329 QJWKxl54nIs CAN news m 62
-13:34:25 ok 330 hzrL-JdV0V8 CAN news m 123
-13:34:40 ok 331 FlcTWDInWEQ CAN news m 79
-13:34:55 skip (too short) l6kI94n5Y-c
-13:34:57 ok 332 qwrRowPRKHE CAN news m 120
-13:35:12 ok 333 IOyrbsNcXt8 CAN news m 130
-13:35:27 ok 334 jbJK4OR30eY CAN news a 55
-13:35:44 ok 335 lheJTIxymz4 CAN news m 79
-13:35:59 ok 336 XGj-4SVbi3Q CAN news m 105
-13:36:13 skip (too short) 7yLVoXx9As0
-13:36:16 ok 337 QUukEcheefo CAN news m 88
-13:36:31 ok 338 zwtE7iXf1zI CAN news m 100
-13:36:46 skip (too short) VmnSONWc4w8
-13:36:49 skip (too short) NCgoy0OnVnM
-13:36:52 ok 339 Kb9I3dD8c98 CAN news m 47
-13:37:09 ok 340 Zo2CjnoAWPE CAN news m 69
-13:37:24 ok 341 BG05xS8fRJg CAN news m 116
-13:37:39 skip (too short) x5Kx9oiIo6c
-13:37:41 skip (too short) P3AcfW6t_JI
-13:37:44 ok 342 8mEDKDJe2Ow CAN news a 99
-13:37:59 ok 343 1g7esJQETE0 CAN news m 159
-13:38:26 ok 344 3UaiG_HVhGE CAN news a 53
-13:38:38 skip (title) j16ythJn-pg Substance abuse ER visits spiking for young mothers in Ontar
-13:38:41 ok 345 TxnPNVpw0Dg CAN news a 106
-13:38:56 ok 346 xekw28uzBYg CAN news a 151
-13:39:08 skip (title) f9I1o4RMjFc Man stabbed to death at party in Mississauga industrial buil
-13:39:11 ok 347 Rl6RCKYkGzw CAN news a 61
-13:39:27 ok 348 Nm2x2yaW1nE CAN news a 65
-13:39:42 ok 349 7gg7Grlg6oM CAN news a 56
-13:39:57 ok 350 LUfu_JhPevA CAN news a 53
-13:40:15 ok 351 dbI7RJOFja0 CAN news a 216
-13:40:31 ok 352 xxEP6TIrimI CAN news a 35
-13:40:46 ok 353 6e93p1hFbwY CAN news a 206
-13:41:02 ok 354 Dq9WFribTy0 CAN news a 276
-13:41:14 skip (title) r7kjxs_CpXo Wainwright exercises resume without additional safety measur
-13:41:17 ok 355 Hv9TjyqgUFU CAN news a 174
-13:41:32 ok 356 HhXsbjlEGwQ CAN news a 382
-13:41:47 ok 357 LrGYyIuWMqw CAN news a 71
-13:42:02 ok 358 w_kk-dGbcPk CAN news a 56
-13:42:18 ok 359 qqYnQn7BQ2Y CAN news a 52
-13:42:34 ok 360 G8oyi5LrYgY CAN news a 49
-13:42:49 ok 361 dxgz7LmRaY8 CAN news a 104
-13:43:04 ok 362 JuUi4gx7KPY CAN news a 206
-13:43:19 ok 363 69HfjBRkISI CAN news a 59
-13:43:34 ok 364 cSODk4tWN0U CAN news a 56
-13:43:49 ok 365 154-zvWjDMk CAN news a 66
-13:44:05 ok 366 qiXdVTD6bWM CAN news a 55
-13:44:20 ok 367 TMMODzSM8gY CAN news a 79
-13:44:36 ok 368 jSeaIenYn-Y CAN news a 49
-13:44:52 ok 369 uxgmfREWZtI CAN news a 56
-13:45:07 ok 370 hkZ9bPq05xo CAN news a 91
-13:45:22 ok 371 3hcRGYx79_0 CAN news a 153
-13:45:38 ok 372 U9rGQaQwuYU CAN news a 57
-13:45:50 skip (title) mDqEnPkTkBc Shooting near Paris was "a terrorist and racist attack," Fre
-13:45:53 ok 373 sBzJN_Vsorw CAN news a 63
-13:46:09 ok 374 eEkALHhcYkk CAN news a 104
-13:46:21 skip (title) 6ZUsfN7KukA Jordan officials say “extremists” carried out church attack,
-13:46:24 skip (too short) CAHvvsiQkLo
-13:46:27 ok 375 NjuwEu63PZE CAN news a 79
-13:46:42 ok 376 ICZbMMCrYV0 CAN news a 52
-13:46:54 skip (title) ztQH1zVcpw0 Netanyahu orders “full lockdown” of West Bank after shooting
-13:46:58 ok 377 xcvs4MqehPo CAN news a 185
-13:47:13 ok 378 padErexfzSo CAN news a 64
-13:47:28 ok 379 pmhvVkKs4_8 CAN news a 58
-13:47:43 ok 380 BVl8N13Z39s CAN news a 64
-13:47:59 ok 381 Q8Vnol-VKQE CAN news a 47
-13:48:14 ok 382 NDchyw_Cof4 CAN news a 73
-13:48:30 ok 383 NLTanKPjE6I CAN news a 59
-13:49:13 ok 384 X-OBaVbjHpM UK interview a 68
-13:49:28 ok 385 c-KY5atCr_E UK interview a 29
-13:49:47 ok 386 RoqB04dA7Fk UK interview a 51
-13:50:03 ok 387 3LToG3Fvetg UK interview a 181
-13:50:19 ok 388 lgqVqzx7LCs UK interview a 54
-13:50:34 ok 389 mYZgwcA7AUg UK interview a 42
-13:50:52 ok 390 sEe7educsFw UK interview a 357
-13:51:07 ok 391 kpnYw9minjY UK interview m 57
-13:51:22 ok 392 1rwitRcjohg UK interview a 167
-13:51:37 ok 393 O3u-c77jhkU UK interview a 394
-13:51:53 ok 394 rMZd_wL930A UK interview a 712
-13:52:08 ok 395 6B9pfnkmY24 UK interview a 460
-13:52:23 ok 396 voEjX0UZ-vg UK interview a 93
-13:52:38 ok 397 tZOFijTZtbs UK interview a 555
-13:52:54 ok 398 vnNvUc__U0k UK interview m 23
-13:53:09 ok 399 sHeCEQtgU5U UK interview a 205
-13:53:25 ok 400 sqWuZNDOdcU UK interview a 326
-13:53:41 ok 401 stfulWqzEz0 UK interview m 375
-13:53:56 ok 402 3ZEY3HPRhxg UK interview a 306
-13:54:11 ok 403 Fq3Fx79Ldq4 UK interview a 456
-13:54:26 ok 404 CMaSa14pEdM UK interview a 500
-13:54:41 ok 405 rWKlgQRDwQY UK interview a 533
-13:54:57 ok 406 RybBmfKA_RA UK interview a 471
-13:55:12 ok 407 MPj2JqeodOs UK interview a 62
-13:55:27 ok 408 jVkbU-ARAfs UK interview a 485
-13:55:42 ok 409 Ljhd8zfAs2Q UK interview a 412
-13:55:58 ok 410 6RF4CE7mIrs UK interview a 233
-13:56:13 ok 411 Qo_opDSHmH0 UK interview a 297
-13:56:28 ok 412 zZB1Md_GGb4 UK interview a 313
-13:56:43 ok 413 Iu1_p45SZHY UK interview a 55
-13:56:58 ok 414 YNqIinrUnwY UK interview a 47
-13:57:13 ok 415 yC-Tz3y8n24 UK interview a 125
-13:57:28 ok 416 VWQh_WamCZU UK interview a 157
-13:57:44 ok 417 K51kdB2Vca4 UK interview a 213
-13:57:59 ok 418 a6ILBSrIMzU UK interview a 231
-13:58:14 ok 419 w4v8w1NF2Mk UK interview a 167
-13:58:29 ok 420 NhMqMdu6Wlc UK interview a 526
-13:58:45 ok 421 H68mMW-c9xw UK interview a 430
-13:59:00 ok 422 Rl2xXoH9BMs UK interview a 482
-13:59:15 ok 423 N3Lu7IE0V-0 UK interview a 488
-13:59:42 ok 424 nyx6W01ZMRo UK news a 246
-13:59:58 ok 425 xQQ0t9Rsvlo UK news a 159
-14:00:10 skip (title) 7UBJnHyvFK4 Undercover in Britain's pheasant shooting industry: bird flu
-14:00:13 ok 426 TldRksKyLys UK news a 183
-14:00:28 ok 427 v3Ovx6ICDWc UK news a 199
-14:00:44 ok 428 hJvPr5n19Qk UK news a 272
-14:01:05 ok 429 GIujplnC10M UK news a 84
-14:01:20 ok 430 2Fs3IXvho6U UK news a 258
-14:01:32 skip (title) WCP3lxSAATM Ukraine: Besieged town gets aid as Russian strikes kill at l
-14:01:35 ok 431 fxVZof_Olic UK news a 116
-14:01:50 ok 432 wP6csTqZne4 UK news a 405
-14:02:06 ok 433 uHHnjBE9noc UK news a 290
-14:02:21 ok 434 d6Hjw5QOc8I UK news a 133
-14:02:33 skip (title) sf94bDVnad0 Human error blamed after Spain train accident kills at least
-14:02:36 ok 435 aGsSEBD2wqs UK news a 419
-14:02:52 ok 436 Sc1SNP_dO2Y UK news a 335
-14:03:04 skip (title) 6OP8yyZcrTg Brand: 'Sexual encounters always consensual', court hears | 
-14:03:07 ok 437 1LD6fsS-yXU UK news a 93
-14:03:23 ok 438 SAkVnDgBIO4 UK news a 294
-14:03:38 ok 439 AXGWlQbVaws UK news a 553
-14:03:53 ok 440 nTmpPKa-V1k UK news a 102
-14:04:09 ok 441 YB0Z7Qgq1lg UK news a 189
-14:04:24 ok 442 UycDq3ymRj4 UK news a 238
-14:04:39 ok 443 BXNVu_G8bc0 UK news a 119
-14:04:54 ok 444 E4piyMrxhbw UK news a 77
-14:05:10 ok 445 E0wwwLvOAWk UK news a 52
-14:05:26 ok 446 Kc1Y0gg_OJE UK news a 106
-14:05:42 ok 447 mPQ4R7hsnJw UK news a 103
-14:05:57 ok 448 bKOXzJqN-Ps UK news a 160
-14:06:13 ok 449 lhRXrmg4_6M UK news a 433
-14:06:28 ok 450 rAzAqWJZjiE UK news a 240
-14:06:44 ok 451 9Di9ksWgJIM UK news a 231
-14:06:59 ok 452 5af_M5tNjlc UK news a 103
-14:07:15 ok 453 r-IwYRghkF4 UK news a 178
-14:07:30 ok 454 7dGcRYaG4iA UK news a 77
-14:07:45 ok 455 YghoO3dasjo UK news a 248
-14:08:01 ok 456 3OyRy_zZQjA UK news a 374
-14:08:13 skip (title) ogCxB7qHJ7Q Norwegian teen jailed for 20 years over Iran-backed murder p
-14:08:16 ok 457 QqvnvtpYuFU UK news a 285
-14:08:32 ok 458 uNXG6JcW5u8 UK news a 250
-14:08:48 ok 459 M4Yh0mGmwTk UK news a 338
-14:09:03 ok 460 rOdiYgR3gQA UK news a 118
-14:09:18 ok 461 ZJkgFA9Y9hY UK news a 334
-14:09:30 skip (title) Ql5NqB7FKqo Jeffrey Donaldson jailed for 15 years for child sex abuse cr
-14:09:33 ok 462 rJNsYWONkms UK news a 475
-14:09:45 skip (title) _aQW4TD1dxY Brand was 'ruthless sexual predator' court hears | Trial Day
-14:09:48 ok 463 cloJLLEQxs8 UK news a 234
-14:10:18 ok 464 -JpcWiX555Q UK news a 244
-14:10:39 ok 465 EOX7d1nWBWg UK news a 488
-14:10:57 ok 466 4v8Ekt_MxPo UK news a 38
-14:11:16 ok 467 0sonIBXBYIM UK news a 86
-14:11:34 ok 468 vdwQfu2d8GM UK news a 239
-14:11:51 ok 469 TutpccVg_Tw UK news a 67
-14:12:09 ok 470 Nhke9rmY3WQ UK news a 31
-14:12:29 ok 471 MBQSmst73Z0 UK news a 47
-14:12:46 ok 472 AQMXNTdPPNY UK news a 62
-14:13:04 ok 473 jk4bWPrEuTI UK news a 61
-14:13:21 ok 474 YHhXsfF8jIE UK news a 123
-14:13:39 ok 475 8Nx1GsFpbiY UK news a 58
-14:13:57 ok 476 8QR2v7z_-Hk UK news a 53
-14:14:15 ok 477 Dw3zx_6heKM UK news a 196
-14:14:32 ok 478 qBygQUp4DXo UK news a 261
-14:14:50 ok 479 RV0MOe8ZOVo UK news a 69
-14:15:08 ok 480 tmMkc5BoqP4 UK news a 156
-14:15:25 ok 481 PMQcznER8Tk UK news a 54
-14:15:45 ok 482 dgYCivWP29k UK news a 28
-14:16:04 ok 483 q5XKzB6t2wc UK news a 72
-14:16:22 ok 484 zszUqjbytXo UK news a 53
-14:16:41 ok 485 OMgv3ExSceI UK news a 243
-14:17:01 ok 486 rELhDRjmAVk UK news a 50
-14:17:17 ok 487 a2HM2pUxeLE UK news a 44
-14:17:35 ok 488 SB8g09meJs0 UK news a 80
-14:17:56 ok 489 FvKQ5xwb1E8 UK news a 27
-14:18:14 ok 490 zMcwRXVVwqA UK news a 32
-14:18:32 ok 491 _X_4b-3fEmc UK news a 70
-14:18:50 ok 492 RNsEtf1N76Y UK news a 26
-14:19:07 ok 493 yOfgOiiqOWQ UK news a 37
-14:19:24 ok 494 QizpjQg1K-Y UK news a 139
-14:19:41 ok 495 5mSxzTIVhsQ UK news a 149
-14:19:59 ok 496 mtV4jtXuA04 UK news a 264
-14:20:17 ok 497 1B9CS-2HrXU UK news a 57
-14:20:36 ok 498 eXwOQWI8_hk UK news a 77
-14:20:55 ok 499 uRM3YvxPoP8 UK news a 250
-14:21:14 ok 500 0rhRs4IsZcE UK news a 68
-14:21:32 ok 501 PlB1xIwPS1g UK news a 25
-14:21:49 ok 502 _XEW0vALz7U UK news a 55
-14:22:07 ok 503 nX_XBgpYsHA UK news a 109
-14:22:34 ok 504 YN8kwv39t-M UK news a 59
-14:22:49 ok 505 v1CtvcXcyHA UK news a 46
-14:23:04 ok 506 ekkHuu-Ehz4 UK news a 56
-14:23:19 ok 507 IiOgAxaUZNk UK news a 338
-14:23:35 ok 508 2WuFtEVX3q8 UK news a 79
-14:23:47 skip (title) fhWC0o8B0qo Israel imposes full closure of occupied West Bank after Hebr
-14:23:47 skip (title) gb4xKDe-zmg Jordan church shooting: Gunmen open fire during funeral proc
-14:23:50 ok 509 Apy_KeL1cTo UK news a 395
-14:24:06 ok 510 INHhBpavSv0 UK news a 356
-14:24:21 ok 511 HBl689FmhlU UK news a 32
-14:24:37 ok 512 Oee2rwgU_UQ UK news a 56
-14:24:53 ok 513 mDXzZV742_8 UK news a 418
-14:25:11 ok 514 35I4wyFqVTQ UK news a 138
-14:25:28 ok 515 bRLhP89HAKk UK news a 196
-14:25:43 ok 516 bQ2L-aPxcQc UK news a 85
-14:25:58 ok 517 v6jc7JN-9e0 UK news a 51
-14:26:13 ok 518 dwMoyefAY3Q UK news a 54
-14:26:28 ok 519 34MKSr5dwi0 UK news a 47
-14:26:43 ok 520 _tR-5Y1I1Ts UK news a 51
-14:26:58 ok 521 utfvaEAQ9sQ UK news a 68
-14:27:13 ok 522 OBK_1RThixs UK news a 417
-14:27:29 ok 523 oDsxbIaf1E0 UK news a 54
-14:27:44 ok 524 TIKtKNrO24o UK news a 42
-14:28:00 ok 525 H7DGwTM0Ywk UK news a 58
-14:28:15 ok 526 6nLaUIFqORg UK news a 106
-14:28:30 ok 527 oA-hLanCd7I UK news a 475
-14:28:45 ok 528 exJCn5pFXMM UK news a 45
-14:29:00 ok 529 9B4_9iNtoYQ UK news a 251
-14:29:16 ok 530 sZLR_fDiHaE UK news a 50
-14:29:31 ok 531 qVbmHYcWl8k UK news a 237
-14:29:46 ok 532 -pfCTwuDXgQ UK news a 263
-14:30:01 ok 533 NyyoSpHldKc UK news a 67
-14:30:17 ok 534 H5cL3NKjiN0 UK news a 296
-14:30:32 ok 535 1J61HpbaYJA UK news a 88
-14:30:47 ok 536 3FmLuuL9uqQ UK news a 75
-14:31:02 ok 537 JJanrpggMOw UK news a 53
-14:31:17 ok 538 05MrrrLLwmI UK news a 71
-14:31:33 ok 539 G2y9Wk48VC8 UK news a 34
-14:31:48 ok 540 HB0-y7W4SkE UK news a 37
-14:32:03 ok 541 hnzGEiVB_rM UK news a 34
-14:32:18 ok 542 jsCxiByO9Jc UK news a 44
-14:32:33 ok 543 FlqKg_4YC-4 UK news a 56
-14:33:00 ok 544 dNUIxtrXQ68 UK news a 68
-14:33:15 ok 545 RNrLN9p5PRQ UK news a 35
-14:33:30 ok 546 VtlR5QoPpww UK news a 120
-14:33:45 ok 547 n9fI7Q78T50 UK news a 92
-14:34:00 ok 548 x6SLDHb8XbU UK news a 112
-14:34:16 ok 549 -Xp_6jGteW4 UK news a 206
-14:34:30 ok 550 UyvliSl7Kl8 UK news a 383
-14:34:45 ok 551 VNslMg2kDog UK news a 60
-14:35:01 ok 552 CKeOdB87SDU UK news a 104
-14:35:16 ok 553 8oQiVNhBa1U UK news a 67
-14:35:31 ok 554 M6egDAfs-NM UK news a 148
-14:35:47 ok 555 ZAM_imxElSU UK news a 179
-14:36:02 ok 556 PzQANChSKUQ UK news a 75
-14:36:17 ok 557 -AM8pW98cug UK news a 295
-14:36:33 ok 558 3SpM3WVz7z0 UK news a 148
-14:36:45 skip (title) 3SStP92sxvU How workplace sexual harassment laws are changing
-14:36:48 ok 559 UTxMdNe3eGI UK news a 135
-14:37:03 ok 560 eMELVcPjI5E UK news a 149
-14:37:18 ok 561 _NDysXa1G-M UK news a 84
-14:37:33 ok 562 Tr9_PyBO4_s UK news a 124
-14:37:48 ok 563 RavxImeB8YY UK news a 482
-14:38:03 ok 564 1wq9KaZrOJ0 UK news a 274
-14:38:18 ok 565 WFDjcPy5G_4 UK news a 372
-14:38:33 ok 566 zVaCUL1qwk0 UK news a 64
-14:38:49 ok 567 mQ3qQIExNC8 UK news a 129
-14:39:01 skip (title) oTnMMvQmG10 Laura Brand tells rape trial Russell Brand cheated on her bu
-14:39:04 ok 568 rEBpb33r1S8 UK news a 272
-14:39:19 ok 569 09inrQe4OWc UK news a 235
-14:39:35 ok 570 QeqW1w8jK8M UK news a 221
-14:39:50 ok 571 WLSNltMVxgI UK news a 117
-14:40:05 ok 572 wBdlil6fk-g UK news a 143
-14:40:20 ok 573 U56BecDb0Mw UK news a 121
-14:40:35 ok 574 DMTCnV8p3b8 UK news a 389
-14:40:51 ok 575 hNSbvlGneUk UK news a 395
-14:41:06 ok 576 jFRPC1l-2Mc UK news a 89
-14:41:22 ok 577 3gpJce57aqk UK news a 402
-14:41:37 ok 578 5P2etbeBJbs UK news a 44
-14:41:52 ok 579 Wyb6B3RXWF4 UK news a 252
-14:42:07 ok 580 W1sGTeP3dGQ UK news a 49
-14:42:19 skip (title) ODYcoE-jidw Local authorities: At least 39 killed after two high-speed t
-14:42:22 ok 581 UoLsc_EEpIk UK news a 128
-14:42:38 ok 582 RcTbfZXiiOE UK news a 168
-14:42:53 ok 583 kfkaIX9b1gE UK news a 150
-14:43:20 ok 584 XtlIMl-0eEE UK news a 99
-14:43:35 ok 585 d3G1wDxmbGg UK news a 198
-14:43:50 ok 586 AJyyMf_I0xA UK news a 80
-14:44:05 ok 587 JS1hHsd860I UK news a 190
-14:44:21 ok 588 HYLreKO_UD4 UK news a 187
-14:44:33 skip (title) fH84fODBNk0 Watch as police uncover £415m of cocaine smuggled inside che
-14:44:36 ok 589 ehUTtz2bLvc UK news a 121
-14:44:51 ok 590 Ok3ok-stP7w UK news a 187
-14:45:06 ok 591 0uBgKVz_hYY UK news a 158
-14:45:21 ok 592 ZYo38qTHSeM UK news a 132
-14:45:36 ok 593 UTtb2m5weWQ UK news a 105
-14:45:55 ok 594 OCjjLm0bVSY UK news a 373
-14:46:11 ok 595 y7pI2PSCXd8 UK news a 190
-14:46:26 ok 596 8dSMDy-UgKk UK news a 82
-14:46:43 ok 597 ZWhws9AhhYQ UK news a 109
-14:46:58 ok 598 Y5edod8ROEM UK news a 112
-14:47:13 ok 599 I5Jx2jeIiYg UK news a 107
-14:47:28 ok 600 4MyE5QnAR-A UK news a 147
-14:47:40 skip (title) eT4qQ9VaVu4 What it was like in court as Russell Brand gave evidence in 
-14:47:43 ok 601 10wHswmrv2s UK news a 438
-14:47:59 ok 602 VW22mXFjAMQ UK news a 148
-14:48:14 ok 603 nmf580GrBeE UK news a 477
-14:48:29 ok 604 jVvx-qxiVuI UK news a 100
-14:48:45 ok 605 zj_0QBo__jQ UK news a 173
-14:49:00 ok 606 4n-zkQ-vE1Q UK news a 148
-14:49:17 clips collected this run: 606 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 606
+Nightly run on the home computer, 2026-11-01 17:51 (last 400 lines of the collector)
+16:14:44 ok 239 94s_08TbSmA CAN news a 30
+16:15:03 ok 240 PnlhXnUzoag CAN news a 30
+16:15:30 ok 241 9cWsUyoArmY CAN news a 189
+16:15:45 ok 242 U0GamiHrv0Y CAN news a 184
+16:16:01 ok 243 u6I65qtTEsE CAN news a 140
+16:16:16 ok 244 lyAaLAipTt0 CAN news a 69
+16:16:31 ok 245 TCskLfXrgx0 CAN news a 56
+16:16:47 ok 246 YILMm0wkC-g CAN news a 292
+16:17:03 ok 247 y-y9uSpt12I CAN news a 97
+16:17:18 ok 248 DeQaTtvC9hU CAN news a 74
+16:17:33 ok 249 Q7FSyBe1C3Y CAN news a 27
+16:17:48 ok 250 sZZrc8OsCOE CAN news a 106
+16:18:03 ok 251 yAU-11oGDE8 CAN news a 87
+16:18:19 ok 252 ABckl9wjV3c CAN news a 74
+16:18:34 ok 253 I5BdULZ3iz8 CAN news a 35
+16:18:50 ok 254 dBJPf6Pxfvs CAN news a 35
+16:19:06 ok 255 HRF4JUCgUDA CAN news a 49
+16:19:21 ok 256 fKd9tT25Rkw CAN news a 61
+16:19:36 ok 257 qjRlDNOEFIM CAN news a 59
+16:19:52 ok 258 nQH0s7EZn6Y CAN news a 139
+16:20:07 ok 259 2gRpDiwbsS0 CAN news a 127
+16:20:22 ok 260 koiL6ZqhSCs CAN news a 276
+16:20:39 ok 261 6lzdo34hCPc CAN news a 86
+16:20:55 ok 262 1uO0pnOzw2s CAN news a 73
+16:21:10 ok 263 d8fduZNLkMM CAN news a 77
+16:21:25 ok 264 UIZwUzOWkrk CAN news a 94
+16:21:41 ok 265 8Sin7g4udFk CAN news a 148
+16:21:53 skip (title) 2ghyeWX6Ask U.S. resident charged with helping Tumbler Ridge shooter | T
+16:21:56 ok 266 gxXGoX5WtKU CAN news a 130
+16:22:11 ok 267 Gu-W9qViJbE CAN news a 32
+16:22:26 ok 268 LcI6TELwsPQ CAN news a 45
+16:22:41 ok 269 0ZeXt9eQ_L0 CAN news a 141
+16:22:53 skip (title) T6Gg45WyIcc 'Would I have fans?' Messages between Tumbler Ridge shooter,
+16:22:57 ok 270 bo8XsKn0VpM CAN news a 264
+16:23:09 skip (title) OqdmpZcwaFM B.C. MP 'shocked' U.S. citizen alleged to have assisted in T
+16:23:12 ok 271 PzQ_otjQW7c CAN news a 24
+16:23:24 skip (title) h17arrD45zI U.S. resident allegedly gave advice, money to Tumbler Ridge 
+16:23:27 ok 272 SlD7U1HstLM CAN news a 48
+16:23:42 ok 273 UgRt2ktfVhU CAN news a 56
+16:23:57 ok 274 tnGZVK7T89U CAN news a 33
+16:24:13 ok 275 HK6dVpQd8JQ CAN news a 70
+16:24:28 ok 276 RM4AjVXTgQs CAN news a 28
+16:24:43 ok 277 U7k5ul04Dxc CAN news a 33
+16:24:58 ok 278 OqI2wXiJZkQ CAN news a 163
+16:25:13 ok 279 __894JzND9s CAN news a 263
+16:25:25 skip (title) yk-SFnm1zOs Campus sexual assault not just a Cornell problem, says stude
+16:25:29 ok 280 s1crLXNqAGk CAN news a 43
+16:25:56 ok 281 ojiwNa5p39s CAN news a 27
+16:26:11 ok 282 g11eYgxCPOY CAN news a 26
+16:26:26 ok 283 30QrCM-Pi4Y CAN news a 28
+16:26:41 ok 284 l1HstKwJQXw CAN news a 28
+16:26:56 ok 285 Jmb0ujD8n8Y CAN news a 29
+16:27:11 ok 286 7KukOjutqhU CAN news a 24
+16:27:28 ok 287 G9FnGM93tjk CAN news a 264
+16:27:43 ok 288 y6IqwwcAows CAN news a 28
+16:27:58 ok 289 R-cvqqwLURs CAN news a 52
+16:28:13 ok 290 iGj87KUR40E CAN news a 30
+16:28:29 ok 291 5dBKvWgJ9co CAN news a 30
+16:28:47 ok 292 6217O6X8kZk CAN news a 235
+16:29:02 ok 293 LnUrOj31LSw CAN news a 29
+16:29:18 ok 294 vPIsU4xVLsE CAN news a 30
+16:29:34 ok 295 ZnUicrjKh6k CAN news a 42
+16:29:50 ok 296 BIe7PROTSXI CAN news a 42
+16:30:05 ok 297 KPO7Tq11nn4 CAN news a 328
+16:30:21 ok 298 y-83NqjX3to CAN news a 31
+16:30:36 ok 299 QlSaQi_-mxA CAN news a 111
+16:30:51 ok 300 R08S2LlZ2JY CAN news a 27
+16:31:09 ok 301 eEqZejEyz2U CAN news a 30
+16:31:24 skip (too short) arbIGQM8TMU
+16:31:27 ok 302 _miwO-15wrc CAN news a 23
+16:31:42 ok 303 bbThs_fqCsY CAN news a 28
+16:31:57 ok 304 IcSwo5WIph4 CAN news a 73
+16:32:14 ok 305 YLab8aa5Nn8 CAN news a 24
+16:32:30 ok 306 ytavfZI3GPg CAN news a 68
+16:32:45 ok 307 HIioO0nU0YU CAN news a 30
+16:33:01 ok 308 H0foeZWXkfs CAN news a 30
+16:33:16 ok 309 tYTBrPnUZrg CAN news a 92
+16:33:32 ok 310 YQJyW2PveA8 CAN news a 40
+16:33:47 ok 311 Z1njfnROrV8 CAN news a 20
+16:34:04 ok 312 88iJ4DGszoI CAN news a 29
+16:34:20 ok 313 m5M-w8EAOlY CAN news a 32
+16:34:36 ok 314 NhEpsVJUOrg CAN news a 26
+16:34:52 ok 315 idF9_MuKzew CAN news a 34
+16:35:07 ok 316 _bKinP7wEkA CAN news a 33
+16:35:22 ok 317 JeXvgxejdiI CAN news a 30
+16:35:37 ok 318 g0R37tBRWy0 CAN news a 24
+16:35:52 ok 319 lcYjDt0SWh4 CAN news a 20
+16:36:08 ok 320 APgeLmjQiKY CAN news a 88
+16:36:34 ok 321 i5II8QMwuR4 UK interview a 27
+16:36:49 ok 322 USRKcDoqVPI UK interview a 232
+16:37:05 ok 323 NRUI7s9mG9Q UK interview a 30
+16:37:20 ok 324 qY2-Wll8zOU UK interview a 49
+16:37:36 ok 325 AvBH_0Kdwx0 UK interview a 209
+16:37:51 ok 326 o2mWZR7zbGM UK interview a 198
+16:38:06 ok 327 2aXOZwaVxDw UK interview a 270
+16:38:22 ok 328 wWa3Z0Flg5A UK interview a 148
+16:38:37 skip (mostly music) aHCKh-tlHwY
+16:38:40 skip (too short) cSGmBXCI5Fk
+16:38:43 ok 329 zddClfWHQbQ UK interview a 22
+16:38:58 ok 330 VT6YRaWHegk UK interview a 100
+16:39:14 ok 331 0uaEL_BHafw UK interview a 117
+16:39:29 ok 332 5vW-PSgALZQ UK interview a 87
+16:39:45 ok 333 wYNKcamsmo4 UK interview a 335
+16:40:00 ok 334 wnlV03_iFcI UK interview a 96
+16:40:16 ok 335 jbI5k1UDMfk UK interview a 160
+16:40:31 ok 336 iUzOZfgq4yY UK interview a 63
+16:40:47 ok 337 nipnSa_QV_g UK interview a 135
+16:41:11 skip (bleeped words) ag4rP3JA5Ic
+16:41:13 ok 338 CSIw0puKGbs UK interview a 27
+16:41:28 ok 339 V9TKYFNPH9U UK interview a 30
+16:41:44 ok 340 JjdExwh5JBo UK interview a 120
+16:41:59 ok 341 bVPQUR4MDjc UK interview a 265
+16:42:14 ok 342 W9mu_LpJgIk UK interview a 24
+16:42:29 skip (too short) IuOeOW-lWkg
+16:42:29 skip (title) EsLv4aXCgBE Aimee Lou Wood on her best director's note, Sex Education, T
+16:42:33 ok 343 JtZ8MxK8ZA0 UK interview a 244
+16:42:48 ok 344 Td4jKnd2FMo UK interview a 25
+16:43:03 ok 345 4yEi8fc782w UK interview a 27
+16:43:18 ok 346 1EZm_bOh7zQ UK interview a 28
+16:43:34 ok 347 3JQXT-ETQVY UK interview a 24
+16:43:49 ok 348 iHOZVR9ZXa4 UK interview a 237
+16:44:04 ok 349 v3WOkodNcdY UK interview a 159
+16:44:20 ok 350 zlp_X5o2lC8 UK interview a 182
+16:44:35 ok 351 AYhJ48RB_M8 UK interview a 214
+16:44:50 ok 352 mtgrK5OxuW0 UK interview a 205
+16:45:05 ok 353 uhO7ufofQ30 UK interview a 34
+16:45:21 ok 354 MDX-0rh-H_k UK interview a 154
+16:45:36 ok 355 MR7CdH2oEZA UK interview a 162
+16:45:51 ok 356 x7d04WUpOQQ UK interview a 123
+16:46:07 ok 357 -4P9HEr56xU UK interview a 239
+16:46:22 ok 358 gSScYy9EQys UK interview a 314
+16:46:37 ok 359 3If3_O4HYZ4 UK interview a 296
+16:46:53 ok 360 -KL7D05cFtI UK interview a 102
+16:47:20 ok 361 9wMYccf7V70 UK news a 117
+16:47:36 ok 362 g96OUZWA2oI UK news a 92
+16:47:51 ok 363 VaU1qxEz2Cw UK news a 43
+16:48:06 ok 364 mdB-d2usrM0 UK news a 83
+16:48:21 ok 365 7jNgrNHIopI UK news a 100
+16:48:36 ok 366 9CbrbQeUrPc UK news a 156
+16:48:51 ok 367 wcvNeT293d8 UK news a 161
+16:49:07 ok 368 y3Rus6XYfTo UK news a 227
+16:49:19 skip (title) 0xeqAPhPEOI Man killed by falling tree as Storm Boelo continues to batte
+16:49:22 ok 369 d4hygWFL_d4 UK news a 48
+16:49:34 skip (title) ti8zLkLwmuk How a killer pretended to 'find' friend's body hours after m
+16:49:37 ok 370 JqE3fWzE9IQ UK news a 55
+16:49:52 ok 371 K1LsJdGj2y4 UK news a 48
+16:50:07 ok 372 pVbPI2oTL-Y UK news a 103
+16:50:19 skip (title) RFIMld88ZHU CCTV shows killer student moments before he stabbed housemat
+16:50:23 ok 373 mCUsO47eN2c UK news a 176
+16:50:40 ok 374 KULaJI-IqU4 UK news a 54
+16:50:56 ok 375 I4Agjag3vzI UK news a 87
+16:51:12 ok 376 cZV1dS-pqtE UK news a 96
+16:51:27 ok 377 tNVwluT6ODs UK news a 266
+16:51:39 skip (title) Ujb1a0fh5aw Aerials show scale of Spain flooding as Storm Adam kills two
+16:51:39 skip (title) 3An9AdXEHZM Everything we know about police officer shooting in Nottingh
+16:51:42 ok 378 fG68qRarEPM UK news a 43
+16:51:58 ok 379 37PIAlYktXA UK news a 143
+16:52:13 ok 380 oQYUOGFCV1c UK news a 38
+16:52:28 ok 381 La_4FzMHFpI UK news a 25
+16:52:43 ok 382 PUVGsCQDh68 UK news a 67
+16:52:55 skip (title) EIgcvp6BtRU Teenage hitman locked up for plotting UK murder for Iran-bac
+16:52:58 ok 383 eXpdxMb7lgA UK news a 90
+16:53:13 ok 384 bnVDg3d1kXE UK news a 168
+16:53:28 ok 385 C1uComFT0Pc UK news a 139
+16:53:44 ok 386 6bMlEPFcwvM UK news a 147
+16:53:59 ok 387 fykfL4DVDJU UK news a 183
+16:54:11 skip (title) le3GcpZWpAg Ex-DUP leader Jeffrey Donaldson given 15-year sentence for s
+16:54:14 ok 388 ThCMp1Sh77A UK news a 38
+16:54:29 ok 389 dGvJwSNp3v0 UK news a 177
+16:54:44 skip (bleeped words) aO5quh6bwLc
+16:54:44 skip (title) nifqvfhOpuw What happened on the first day of Russell Brand's rape trial
+16:54:48 ok 390 PfzIudzfsxc UK news a 41
+16:55:03 ok 391 3yMyJ3wuyG4 UK news a 80
+16:55:18 ok 392 mxiTaKIb9GU UK news a 48
+16:55:34 ok 393 WNQn50rQJfI UK news a 220
+16:55:49 ok 394 E3WQKKZA59k UK news a 37
+16:56:04 ok 395 VHanJdCS56M UK news a 141
+16:56:19 ok 396 a0C6s00e_qQ UK news a 72
+16:56:34 ok 397 sqFeIuMitbI UK news a 80
+16:56:49 ok 398 9IWYmCwmKs8 UK news a 104
+16:57:05 ok 399 I_p8qifVSKU UK news a 27
+16:57:21 ok 400 Ut1cmK7DMWU UK news a 79
+16:57:48 ok 401 6LOMt5LBfrQ UK news a 137
+16:58:04 ok 402 MaIFGhaKF_s UK news a 110
+16:58:19 ok 403 lTOzNAj9fJU UK news a 142
+16:58:34 ok 404 MTJtw7doyMs UK news a 186
+16:58:49 ok 405 axtzjVs1sIM UK news a 77
+16:59:04 ok 406 x8UjHTzX7gI UK news a 52
+16:59:19 ok 407 4SebtIglWHE UK news a 106
+16:59:35 ok 408 4VewsvyIBYQ UK news a 40
+16:59:47 skip (title) MNH7vj_AVOs Nine women paid compensation over police abuse claims | BBC 
+16:59:50 ok 409 nGEz6M1P1dY UK news a 80
+17:00:06 ok 410 xungdJ6rUXg UK news a 184
+17:00:21 ok 411 h9d0d1ZB-YM UK news a 62
+17:00:36 ok 412 3G04KooY2J0 UK news a 210
+17:00:51 ok 413 wiBSDYDK2Uc UK news a 162
+17:01:06 ok 414 siYdveYFQKo UK news a 113
+17:01:21 ok 415 b_Gt-s4v6r4 UK news a 56
+17:01:37 ok 416 mLJ6zfzxWoE UK news a 48
+17:01:52 ok 417 5xGNe6vBa_w UK news a 40
+17:02:07 ok 418 K1Ufboz7gZs UK news a 183
+17:02:22 ok 419 xhr_2sylEEc UK news a 180
+17:02:37 ok 420 8nWECs7q4pc UK news a 117
+17:02:52 ok 421 sgm2Cv6ZtoY UK news a 149
+17:03:08 ok 422 Vm4yz7CR9WU UK news a 20
+17:03:23 ok 423 NyzzLugFl_I UK news a 107
+17:03:38 ok 424 AJwgJSVDIIc UK news a 104
+17:03:53 ok 425 99AE4-gd5c4 UK news a 127
+17:04:09 ok 426 eEb8UIWYnRA UK news a 55
+17:04:24 ok 427 OuWTrQHuFtk UK news a 137
+17:04:40 ok 428 694PSqrFivo UK news a 43
+17:04:55 ok 429 2Q1UG9wYgc0 UK news a 232
+17:05:11 ok 430 Z7IUjkHTQUw UK news m 449
+17:05:25 ok 431 kCWt8P2ERBs UK news a 69
+17:05:41 ok 432 K9Mbt1fnHiE UK news a 53
+17:05:56 ok 433 j-0JJ8uqpAI UK news a 39
+17:06:11 ok 434 KF4DWhkugTM UK news a 117
+17:06:27 ok 435 7sAITRqU90o UK news a 143
+17:06:41 ok 436 rxn-NJHbzaI UK news a 51
+17:06:57 ok 437 wUGFsjjH_II UK news m 178
+17:07:12 ok 438 kolOjI1K6jE UK news a 64
+17:07:27 ok 439 oaa4lp0iQrM UK news a 137
+17:07:44 ok 440 GxPSdgPcdrs UK news a 282
+17:08:07 skip (title) TRp6GRxo1o4 Family 'let down' as killer who murdered partner keeps paren
+17:08:10 ok 441 hdQU1hMqruo UK news a 49
+17:08:25 ok 442 fpaaOozWCHU UK news a 136
+17:08:37 skip (title) OPXpOHapZ2o ‘I have never engaged in non-consensual sexual activity’ - w
+17:08:40 ok 443 RRT3H9FUGy4 UK news a 124
+17:08:56 ok 444 q2gTzcxwXKc UK news a 248
+17:09:08 skip (title) 9ZHdAT9-8fQ Philippine police seek warrant over alleged abuse images lin
+17:09:11 ok 445 sQQsxRhOETU UK news a 31
+17:09:27 ok 446 53nVTzH7Evs UK news a 37
+17:09:41 ok 447 NUPWEukGQDE UK news a 265
+17:09:56 ok 448 iZXhyB8WNkE UK news a 78
+17:10:12 ok 449 8waMNADM2Us UK news a 86
+17:10:27 ok 450 BDCFryzwPyU UK news a 48
+17:10:42 ok 451 GQ7hlCmRI1c UK news a 146
+17:10:57 ok 452 uKx46OqR1Ck UK news a 29
+17:11:13 ok 453 XaT5mcmgGs8 UK news a 176
+17:11:28 ok 454 nnMLKK3OcSA UK news a 175
+17:11:44 ok 455 iCjQNQ-3TJA UK news a 183
+17:12:00 ok 456 giokryTGj_A UK news a 98
+17:12:15 ok 457 hNyyrmvhaRk UK news a 128
+17:12:30 ok 458 L_u2E_uSS5Y UK news a 213
+17:12:45 ok 459 Z9iZOc-i-l0 UK news a 28
+17:13:00 ok 460 EkVg3EUWY_0 UK news a 27
+17:13:16 ok 461 KuCFb02SIF8 UK news a 38
+17:13:32 ok 462 U6YLbCL6mco UK news a 87
+17:13:47 ok 463 5eKfeututOE UK news a 40
+17:14:03 ok 464 1uuYe7IRY40 UK news a 75
+17:14:18 ok 465 XvH6grRXM8Q UK news a 31
+17:14:33 ok 466 KWHUAqZhSBQ UK news a 102
+17:14:49 ok 467 MLRwaREPe6A UK news a 32
+17:15:04 ok 468 6h5vt9s71E4 UK news a 173
+17:15:20 ok 469 a7HiUHeX7lA UK news a 58
+17:15:35 ok 470 EOUgThACHac UK news a 170
+17:15:51 ok 471 s8CWw0LlTVg UK news a 264
+17:16:06 ok 472 FH6tZ3thQic UK news a 77
+17:16:18 skip (title) fc3ig83rzqA Met Police did not pass on Thomas Markle child abuse allegat
+17:16:22 ok 473 kgNtrjf_uAs UK news a 79
+17:16:37 ok 474 b1qMJAic2eI UK news a 37
+17:16:52 ok 475 VQgHFLVnfmw UK news a 141
+17:17:08 ok 476 nWFFj7iAkX8 UK news a 55
+17:17:23 ok 477 rgDM720r89o UK news a 95
+17:17:38 ok 478 h3KKIjez5jw UK news a 51
+17:17:53 ok 479 l_aAYE0aD4Y UK news a 37
+17:18:09 ok 480 esV6Pjln_Qc UK news a 47
+17:18:32 skip (title) afdeyGgX6f4 Preview: The DNA That Unmasked a Killer | True Crime Reports
+17:18:34 ok 481 dtp4RMq6d4w UK news a 34
+17:18:49 ok 482 aqRtywN55aE UK news a 34
+17:19:05 ok 483 TdG_pOdFwVY UK news a 58
+17:19:20 ok 484 aj7pzbilwBE UK news a 79
+17:19:35 ok 485 wZbaJ_9nsfA UK news a 31
+17:19:50 ok 486 AlJM_qYxMU8 UK news a 231
+17:20:06 skip (too short) zakBJ3XSBDM
+17:20:09 ok 487 xhnFTCaIBmI UK news a 36
+17:20:23 ok 488 fOeub9TT-dQ UK news a 34
+17:20:39 ok 489 b52wgllHqQc UK news a 26
+17:20:54 ok 490 y0ldJfeT0tw UK news a 33
+17:21:09 ok 491 FsPGAQeoDHc UK news a 32
+17:21:24 ok 492 rUDFy0VUN9c UK news a 158
+17:21:39 ok 493 c5fHhCiagg0 UK news a 150
+17:22:05 ok 494 XpeBz1gBImI UK news a 30
+17:22:17 skip (title) wDqgWmPIl-8 Russian strikes kill four in Kyiv as Zelenskyy seeks US air 
+17:22:20 ok 495 7ZNlMM5X9E4 UK news a 58
+17:22:32 skip (title) EcEhJRbmESM Yemen: Houthi missile strike kills at least 58 recruits in S
+17:22:34 ok 496 1kHRY2ba7jc UK news a 41
+17:22:50 ok 497 lIQgjgYZQEo UK news a 23
+17:23:04 ok 498 O21YyetqTTA UK news a 84
+17:23:20 ok 499 1o9vKXnaJPw UK news a 31
+17:23:35 ok 500 q2SgXSCIvMQ UK news a 92
+17:23:50 ok 501 JWgvrS6RL6Q UK news a 28
+17:24:06 ok 502 LIzfy16D3_I UK news a 139
+17:24:21 skip (too short) UeQzK1bILQU
+17:24:24 ok 503 upZ810Ba660 UK news a 245
+17:24:39 ok 504 G7PDgeGUq6o UK news a 31
+17:24:54 ok 505 4OKjdDNkfMw UK news a 55
+17:25:10 skip (too short) R5dp3lNei1c
+17:25:13 skip (too short) UkKmO1b76fk
+17:25:17 ok 506 3ed9S5lARCU UK news a 65
+17:25:29 skip (title) x9e0tfSyivM Houthi missiles strike military base in Yemen, killing at le
+17:25:32 ok 507 1mW83g4Jkr4 UK news a 34
+17:25:47 ok 508 Srs617YnRy8 UK news a 39
+17:26:02 ok 509 Fs0H5qEMWjQ UK news a 26
+17:26:17 ok 510 Pyb5_hI7jKQ UK news a 30
+17:26:33 ok 511 nv2rnKhxLn4 UK news a 24
+17:26:48 ok 512 1o7KCiGbqSk UK news a 33
+17:27:03 ok 513 YVlaR8UDhZQ UK news a 129
+17:27:18 skip (too short) EwZjeOO4jIE
+17:27:21 ok 514 FYSHuGcts00 UK news a 61
+17:27:36 ok 515 73bhDZknlmU UK news a 93
+17:27:51 ok 516 GNev_2mhJvo UK news a 27
+17:28:06 ok 517 hEdyNCQO-Iw UK news a 24
+17:28:21 ok 518 N6O9zR4trXM UK news a 25
+17:28:36 ok 519 yQQAy5TEDlc UK news a 36
+17:28:51 ok 520 04AqFj0TkTo UK news a 94
+17:29:18 ok 521 BQgYRj_SWYs UK news a 61
+17:29:33 ok 522 dHJMw4c50g4 UK news a 67
+17:29:49 ok 523 GGqZHt9E8Ys UK news a 174
+17:30:04 ok 524 W7GIATw5o9g UK news a 106
+17:30:19 ok 525 -xSAvhxfFUA UK news a 42
+17:30:34 ok 526 K8BYw_KvL3E UK news a 226
+17:30:49 ok 527 lnOEZodASHA UK news a 71
+17:31:05 ok 528 a3mA-Yinlv0 UK news a 223
+17:31:20 ok 529 XXpxKDVza4U UK news a 89
+17:31:36 ok 530 EnwLMWzDYQw UK news a 118
+17:31:51 ok 531 XkPWRqEdfPk UK news a 208
+17:32:06 ok 532 fbS1ymrIMxk UK news a 43
+17:32:22 ok 533 PwZ38qMAH_E UK news a 42
+17:32:37 ok 534 l7BjdWcL94E UK news a 126
+17:32:52 ok 535 E8KnD1iZuh4 UK news a 42
+17:33:07 ok 536 bOPAJHByJKw UK news a 91
+17:33:22 ok 537 -CEsncuDnyQ UK news a 95
+17:33:38 ok 538 -1w1DPxKJTM UK news a 137
+17:33:53 ok 539 TMwJrG6lhHU UK news a 56
+17:34:08 ok 540 sOemIl5vt-g UK news a 104
+17:34:24 ok 541 xo2SI_aUwPU UK news a 185
+17:34:40 ok 542 CYFbSic4Mak UK news a 111
+17:34:55 ok 543 lNHF_Rmc1HI UK news a 112
+17:35:10 ok 544 xJOpM2RwZOc UK news a 250
+17:35:26 ok 545 j3RtcCnr_k4 UK news a 80
+17:35:41 ok 546 Iuy0uTuHCmo UK news a 42
+17:35:56 ok 547 unZjPUnn5RE UK news a 183
+17:36:11 ok 548 8uOUD3U6nkk UK news a 103
+17:36:26 ok 549 Z_0UZhRU80M UK news a 58
+17:36:42 ok 550 txPInILvIfA UK news a 56
+17:36:57 ok 551 B6ENpkgHGpw UK news a 152
+17:37:12 ok 552 ii542CbdOxM UK news a 40
+17:37:27 ok 553 hy0qTE1pRvQ UK news a 139
+17:37:42 ok 554 fM92rkqJOzc UK news a 30
+17:37:58 ok 555 Q0MGJDnVxfA UK news a 116
+17:38:10 skip (title) evn9j6RMIwk Students demand accountability after Cornell rape case
+17:38:13 ok 556 E8OWG0JXlVg UK news a 32
+17:38:28 ok 557 yVw4UqR5HXk UK news a 40
+17:38:43 ok 558 coQ6rSGIFA4 UK news a 72
+17:38:58 ok 559 JZlxn75aFok UK news a 144
+17:39:13 ok 560 XWMnLbpjXgo UK news a 37
+17:39:46 ok 561 dPyykPdZze4 UK news a 191
+17:40:05 ok 562 z7GehikgQJc UK news a 28
+17:40:24 skip (too short) j6K8GR5pXKo
+17:40:29 ok 563 qTmjwGuTLKA UK news a 69
+17:40:48 ok 564 Y1hwNMqvn_c UK news a 132
+17:41:05 ok 565 pKAWwQyeQus UK news a 23
+17:41:23 ok 566 SUGFXEm4nZ8 UK news a 41
+17:41:38 ok 567 -fn7ErSmM3Y UK news a 31
+17:41:56 ok 568 Bn8_Dj4r_C8 UK news a 34
+17:42:14 ok 569 s54GvM1SedQ UK news a 27
+17:42:31 ok 570 2Prf8GpApSs UK news a 33
+17:42:56 ok 571 jfjVuN0m6os UK news a 72
+17:43:14 ok 572 ghPeJve7TeU UK news a 52
+17:43:32 ok 573 W3jO9GBlDfA UK news a 34
+17:43:49 skip (too short) r13jP_mMLbc
+17:43:54 ok 574 z1KNff95tu0 UK news a 58
+17:44:12 ok 575 c8xyXeum1uw UK news a 137
+17:44:29 ok 576 bXwYdqTGLDI UK news a 107
+17:44:56 ok 577 I_5Dh7_Qw2I UK news a 60
+17:45:13 ok 578 nEGusSGckpE UK news a 34
+17:45:31 skip (too short) 0IdhdAR6_5g
+17:45:37 ok 579 mAGiqKetU0g UK news a 53
+17:45:55 ok 580 X1G1yQ5Qb7o UK news a 23
+17:46:14 skip (too short) 7zi411H4Uhk
+17:46:17 ok 581 nKPCdZ-lxIM UK news a 127
+17:46:35 skip (too short) Gi1Ji3Ubhsk
+17:46:40 ok 582 zJFi9sgVTvE UK news a 21
+17:46:52 skip (title) AuGKCq4bxKo Heineken serves warning to British pubs over weight loss dru
+17:47:02 ok 583 WtbLqn-uiWI UK news a 77
+17:47:24 ok 584 jlCwNQkewww UK news a 27
+17:47:43 ok 585 usfYdyfFk7s UK news a 43
+17:48:00 ok 586 WFDSApkzHuo UK news a 27
+17:48:21 ok 587 pjT_tJU45N8 UK news a 29
+17:48:40 ok 588 uU2WeAX2w8g UK news a 28
+17:48:59 ok 589 TDyVwIC3NjY UK news a 46
+17:49:15 ok 590 Em8sUjHPAOg UK news a 27
+17:49:33 ok 591 M_QlVhH4NZg UK news a 25
+17:49:59 ok 592 s1xdTtrg8Uc UK news a 125
+17:50:25 ok 593 Rp5D5XUiKVQ UK news a 126
+17:50:51 ok 594 VZ05kOi7fF8 UK news a 21
+17:51:19 ok 595 O78jyA5hmFc UK news a 25
+17:51:37 ok 596 Kw3gBSsO4D4 UK news a 23
+17:51:55 clips collected this run: 596 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 596
