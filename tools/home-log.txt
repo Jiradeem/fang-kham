@@ -1,401 +1,401 @@
-Nightly run on the home computer, 2026-11-02 05:03 (last 400 lines of the collector)
-03:39:05 ok 328 ocb88eBjtfY US interview m 158
-03:39:20 ok 329 C-a4HfmTiqE US interview m 125
-03:39:35 ok 330 mlZhKzbEdZQ US interview m 133
-03:39:50 ok 331 _aqivMICRHg US interview m 127
-03:40:05 ok 332 nRd6j1C7Do8 US interview m 152
-03:40:19 ok 333 W98zvP8FYYM US interview m 136
-03:40:34 ok 334 kBzlDmmK2f8 US interview m 221
-03:40:49 ok 335 3enHvs7VaN8 US interview m 139
-03:41:04 ok 336 vspYdePRl6E US interview m 212
-03:41:19 ok 337 bD9Wl8yvJBc US interview m 147
-03:41:33 ok 338 jn_f9KB10TA US interview m 145
-03:41:49 ok 339 lXzyrRAGOig US interview m 119
-03:42:04 ok 340 jw9lvg5ZZSY US interview m 146
-03:42:19 ok 341 ZF_iIMXYXfM US interview m 149
-03:42:34 ok 342 UHz5IIadnEQ US interview m 175
-03:42:49 ok 343 nxgJ0c5zhfE US interview m 156
-03:43:04 ok 344 FEP9HMcptok US interview m 94
-03:43:19 ok 345 7WB2qpTV404 US interview m 124
-03:43:34 ok 346 zS9s-O2gCZI US interview m 116
-03:43:48 ok 347 xL-YwACc-Xk US interview m 224
-03:44:03 ok 348 46ODaoDuevs US interview m 174
-03:44:18 ok 349 Iw0v_9-a99k US interview m 191
-03:44:33 ok 350 1CmDQS4Z89c US interview m 269
-03:44:48 ok 351 lZJANl5A80s US interview m 383
-03:45:03 ok 352 hATWWX_Zoe0 US interview a 97
-03:45:18 ok 353 wPrFf7uj0K8 US interview m 241
-03:45:32 ok 354 L-9BYcc6--A US interview m 315
-03:45:48 ok 355 GQfNhEmS5DU US interview a 127
-03:46:03 ok 356 3eJxlc1J-r4 US interview m 185
-03:46:17 ok 357 WtAWjbJUThQ US interview m 282
-03:46:41 skip (bleeped words) N14dHf014oU
-03:46:44 skip (bleeped words) rHD3o8EPSO8
-03:46:47 skip (bleeped words) fhElu8HHRhk
-03:46:49 skip (bleeped words) upzAP49dWiY
-03:46:52 skip (bleeped words) u_9ISZbriTo
-03:46:54 skip (bleeped words) Nx-O6ls8RsU
-03:46:57 skip (bleeped words) Uy0mPIZJMjA
-03:46:59 ok 358 555lvgsB5mw US interview a 94
-03:47:14 skip (bleeped words) vI71d8cel0c
-03:47:17 ok 359 dE-k3Xts_OQ US interview a 174
-03:47:31 skip (bleeped words) OA3mNIU8XRo
-03:47:31 skip (title) V-7_pRnOJB8 The Best Da Bomb Reactions of 2024 | Hot Ones
-03:47:34 skip (bleeped words) quDgTwS2A9E
-03:47:37 ok 360 9-GViNVgR1Y US interview a 187
-03:47:51 ok 361 MP4tlw6qu6o US interview a 199
-03:48:06 skip (bleeped words) GMh27mBoO9I
-03:48:09 ok 362 txvhiQ3hlNE US interview a 173
-03:48:24 ok 363 SxpIoebOukw US interview a 271
-03:48:38 skip (bleeped words) oUCpircHHA0
-03:48:41 ok 364 ioVS3CYDQww US interview a 97
-03:48:55 ok 365 -caN5IQ7dYo US interview a 222
-03:49:10 ok 366 FoZyduQUgtQ US interview a 178
-03:49:25 ok 367 jGs0uhCG-S8 US interview a 133
-03:49:39 skip (bleeped words) yEHemMqlsto
-03:49:42 skip (bleeped words) cuxjYXBpXLQ
-03:49:44 ok 368 GQetIIHYEnM US interview a 81
-03:49:59 ok 369 aCiKIK8TDLI US interview a 20
-03:50:14 ok 370 dtKCi15e4fo US interview a 247
-03:50:28 skip (bleeped words) nnRxAieP3YQ
-03:50:31 ok 371 d2xyGMR5-_8 US interview a 232
-03:50:45 skip (bleeped words) fDTvAuP0L_g
-03:50:48 ok 372 GQLn80DnFLs US interview a 75
-03:51:03 skip (bleeped words) UpOF7upKPjc
-03:51:05 skip (bleeped words) ZM-URcBkXUc
-03:51:08 skip (bleeped words) -p-5IJPhsrg
-03:51:11 ok 373 NUjZndbxhpw US interview a 166
-03:51:25 ok 374 kQse2ml5UXY US interview a 73
-03:51:40 skip (bleeped words) IMhiV7YJS5k
-03:51:43 ok 375 He9VccS3bHs US interview a 180
-03:51:57 skip (bleeped words) GxT8HfbpGHg
-03:52:00 ok 376 hREMzhjxDx4 US interview a 247
-03:52:15 skip (bleeped words) 4AmrvU-H60Y
-03:52:17 ok 377 L47oQ6tesN0 US interview a 205
-03:52:32 skip (bleeped words) lHPedyBiI64
-03:52:34 ok 378 KlaVfw5qKjs US interview a 220
-03:52:49 skip (bleeped words) SZB3nL4JOiY
-03:52:51 ok 379 -2yTzR9bULg US interview m 240
-03:53:06 skip (bleeped words) ysIaMwbHdS8
-03:53:09 ok 380 LFLLEsoX_ZM US interview a 193
-03:53:23 ok 381 YbU7v173ENs US interview a 289
-03:53:38 ok 382 Agy15zPUn7c US interview a 98
-03:53:52 skip (bleeped words) C8YHS4eIT1o
-03:53:55 skip (bleeped words) Xqv9-GYau70
-03:53:58 skip (bleeped words) Lz0pUA5iTsY
-03:54:00 ok 383 BdBc5ExN_f4 US interview a 239
-03:54:15 skip (bleeped words) n63Q0ETaVFI
-03:54:18 ok 384 AiyJZBc3b7g US interview a 134
-03:54:32 skip (too short) wWGONyTnLfc
-03:54:35 ok 385 d5eTlW2lbxQ US interview a 82
-03:54:50 ok 386 CU-_6C7hhb8 US interview a 82
-03:55:04 skip (bleeped words) E3aYhIqBol8
-03:55:07 ok 387 sQ4ndHZ4xYk US interview a 90
-03:55:22 skip (bleeped words) oXhjcwWHOIM
-03:55:24 ok 388 hJ8RnQIaQY0 US interview a 95
-03:55:39 skip (bleeped words) v6yruzA1Sg8
-03:55:41 ok 389 SKtwF5kJYoY US interview a 110
-03:55:56 ok 390 IgCVt09lBlI US interview a 239
-03:56:11 ok 391 AL-I1Rdrrw0 US interview a 96
-03:56:25 skip (bleeped words) qJtqkLLPcDE
-03:56:28 skip (bleeped words) P1JuvyOHfCs
-03:56:31 ok 392 sKBRBCwSEnk US interview a 157
-03:56:45 ok 393 AOQaF7-3VEU US interview a 118
-03:57:00 ok 394 cQFt1vELLWw US interview a 83
-03:57:15 ok 395 CqJ2JGYEVU8 US interview a 136
-03:57:29 ok 396 O4_MSChadL4 US interview a 182
-03:57:44 ok 397 vfTvue43nlI US interview a 135
-03:58:10 ok 398 y36eq5cCZ38 US interview a 113
-03:58:22 skip (title) wxYW9iec0CI Sexuality Professor Answers Dating Questions | Tech Support 
-03:58:25 ok 399 2BsZfResnbk US interview m 385
-03:58:40 ok 400 7_x4f37IQjA US interview m 437
-03:58:54 ok 401 1UNfFl92of8 US interview m 345
-03:59:09 ok 402 OSBYlyDcRgI US interview m 301
-03:59:24 ok 403 RnHJFfxCQAg US interview m 332
-03:59:38 ok 404 vnb4eUzYUdg US interview m 227
-03:59:53 ok 405 xXpNGOpj4Cc US interview m 566
-04:00:08 ok 406 UVDjCxKaXS8 US interview m 292
-04:00:22 ok 407 1QnJII4jM1U US interview m 535
-04:00:37 ok 408 ytTr_jyp0dY US interview m 428
-04:00:52 ok 409 V9Gqh0oJ_Mo US interview m 321
-04:01:06 ok 410 jUW7EZ8z99U US interview m 466
-04:01:21 ok 411 9nU6tXCmar4 US interview m 405
-04:01:35 ok 412 IqIMhuAFIQM US interview m 248
-04:01:50 ok 413 lwFH05unSZg US interview m 205
-04:02:04 ok 414 -XbQK6KPN8c US interview m 415
-04:02:19 ok 415 ITkq-8TIeJ0 US interview m 342
-04:02:34 ok 416 xffRL1DrxyU US interview m 435
-04:02:48 ok 417 PpZ0_C_4Ua0 US interview a 111
-04:03:04 ok 418 D_y7dLB8mOo US interview a 194
-04:03:19 ok 419 QGfb40Zr1nU US interview m 429
-04:03:33 ok 420 9um-iun4Gss US interview m 351
-04:03:48 ok 421 2IuezELhnLs US interview m 474
-04:04:02 ok 422 K9U1gxLrab4 US interview m 297
-04:04:17 ok 423 NfRChrkVGPw US interview a 158
-04:04:32 ok 424 4Fhm9ulCwUU US interview m 254
-04:04:46 ok 425 0Gn9KUHweVU US interview m 218
-04:05:01 ok 426 VEUlkBgqGj8 US interview m 598
-04:05:16 ok 427 kiwjeKiy2p4 US interview m 244
-04:05:31 ok 428 Pco7RL6Anow US interview a 125
-04:05:45 ok 429 1fcvU1gZSJA US interview m 322
-04:06:00 ok 430 UGrTMEDAn7I US interview m 157
-04:06:15 ok 431 jGYME7Zdu-o US interview m 267
-04:06:29 ok 432 1-QMRLXkdk8 US interview m 441
-04:06:44 ok 433 et2QlIh_cyA US interview m 417
-04:06:58 ok 434 9G2aLk7L5ys US interview m 215
-04:07:13 ok 435 u9-cjwpthz4 US interview m 257
-04:07:28 ok 436 2RPhn1qkfF4 US interview m 514
-04:07:42 ok 437 3m5JQuSy_AU US interview m 307
-04:08:07 ok 438 6x9GdFhf810 US interview m 353
-04:08:21 ok 439 TZpNenvd0K4 US interview m 246
-04:08:36 ok 440 MLjpq2Jfju0 US interview m 282
-04:08:50 ok 441 4YkLcTZrynQ US interview m 291
-04:09:05 ok 442 dUc_Lu66krY US interview m 430
-04:09:20 ok 443 HwjA2lMECfg US interview m 311
-04:09:35 ok 444 qKut4_IW1Mw US interview m 213
-04:09:49 ok 445 Da740vMHYoA US interview m 335
-04:10:04 ok 446 OhfA1Aw97Bw US interview m 313
-04:10:19 ok 447 vVTbr3_Y__k US interview m 345
-04:10:34 ok 448 pONmJiKK_WI US interview m 21
-04:10:48 ok 449 h1WViLRSOSg US interview m 124
-04:11:03 ok 450 rIgA9egeQAs US interview m 469
-04:11:18 skip (mostly music) ENt4uip1MJ8
-04:11:20 ok 451 PkPaSMEhUHg US interview m 207
-04:11:35 ok 452 tf9aKFleDrY US interview a 165
-04:11:50 ok 453 MPLkONM2U64 US interview m 214
-04:12:05 ok 454 3sf3CbHJxpM US interview m 303
-04:12:19 ok 455 laRNY9e-u80 US interview m 164
-04:12:34 ok 456 V4UG-qF7ytA US interview a 159
-04:12:49 ok 457 rjEWoPJVo7Y US interview m 166
-04:13:04 ok 458 qy9sJFhtLEA US interview m 213
-04:13:19 ok 459 T2yzyVecow0 US interview a 258
-04:13:33 ok 460 aCwufvzb7Ww US interview m 338
-04:13:48 ok 461 6C0orv4gc8E US interview m 325
-04:14:02 ok 462 7cF8_1Rs03A US interview a 62
-04:14:17 ok 463 87QSbS1APoI US interview a 164
-04:14:32 ok 464 Ksqypv4R4Ns US interview m 366
-04:14:47 ok 465 OIr5-PjSUFc US interview m 116
-04:15:01 skip (mostly music) GXxtIjGUecQ
-04:15:04 ok 466 KMJYvKy5IJg US interview m 164
-04:15:18 ok 467 EnHETfE5GOY US interview m 358
-04:15:33 ok 468 yO9lJBT6LEg US interview m 62
-04:15:48 ok 469 xnr0NQDTs08 US interview m 126
-04:16:02 ok 470 NgVTEl70kDg US interview m 211
-04:16:17 ok 471 2aT2drdW3yQ US interview m 160
-04:16:32 ok 472 iLDolvhR1kU US interview m 233
-04:16:47 ok 473 9JbE_HtiewI US interview m 205
-04:17:01 ok 474 7v9Aa2okB9o US interview m 458
-04:17:16 ok 475 PWmlBan5hqM US interview m 368
-04:17:28 skip (title) psMfC__uK5w Lucy Liu Breaks Down 20 Looks, From Charlie's Angels to Kill
-04:17:30 ok 476 guRkQDSfiKk US interview m 261
-04:17:45 ok 477 uPOfnTRLCCw US interview m 350
-04:18:10 ok 478 YFLJPPkyHrg UK news a 205
-04:18:25 ok 479 RHZQCbOq-po UK news a 108
-04:18:40 ok 480 jcsmyiJCqsU UK news a 100
-04:18:55 ok 481 PfVrMwS5XFQ UK news a 236
-04:19:09 ok 482 MFgGSjhLccU UK news a 124
-04:19:24 ok 483 YIBRLEEaueo UK news a 24
-04:19:39 ok 484 L2_6ucG8vtg UK news a 151
-04:19:54 ok 485 Kce0GvSHhRk UK news a 439
-04:20:09 ok 486 6BrCgcjtzks UK news a 221
-04:20:24 ok 487 pfEHQH1RSr0 UK news a 303
-04:20:38 ok 488 etaa_ufWmBY UK news m 203
-04:20:53 ok 489 k8LvDrXnkj0 UK news m 199
-04:21:07 skip (bleeped words) 0ROaYEKNRrQ
-04:21:10 ok 490 9C6AGYSXHW0 UK news m 108
-04:21:25 ok 491 5dJJ2gfMPiY UK news m 219
-04:21:39 ok 492 s0j7UfTt5gw UK news m 258
-04:21:54 ok 493 EoblmWzXozI UK news m 176
-04:22:06 skip (title) NQdB9xPhBCo 'In Israel's eyes, we are terrorists' | In search of Palesti
-04:22:06 skip (title) jDw7JtwWIYc ‘Palestine Action is back’: Terror ban ruled unlawful by Hig
-04:22:08 ok 494 UH8ouQh0e6Q UK news a 71
-04:22:23 ok 495 jhVUyJ8gGZw UK news m 358
-04:22:37 ok 496 CFBvYve92_M UK news m 246
-04:22:52 ok 497 -GFb39Avq4g UK news m 195
-04:23:07 ok 498 RojgoADuoVA UK news m 316
-04:23:21 ok 499 Z2jR1f5rjIM UK news m 111
-04:23:36 ok 500 xffeggLgyNk UK news m 192
-04:23:50 ok 501 MLasJUBXOxA UK news m 181
-04:24:05 ok 502 oRzkXGi153o UK news m 116
-04:24:20 ok 503 N79jV1waf4g UK news m 364
-04:24:34 ok 504 -qMvWp3QMis UK news m 475
-04:24:49 ok 505 Me8KJlzYymI UK news m 335
-04:25:03 ok 506 yN3oLXJ9M6g UK news m 108
-04:25:18 skip (bleeped words) t31x60ZvWu4
-04:25:20 ok 507 ch2eArHFm8c UK news m 234
-04:25:35 ok 508 OmBfr0W0MDE UK news a 197
-04:25:50 ok 509 nMyyVaiY4V8 UK news a 183
-04:26:05 ok 510 eArGP8CdIXA UK news a 202
-04:26:19 ok 511 coPyDlZL1l4 UK news a 86
-04:26:31 skip (title) 3Lg5810yho4 Noel Clarke loses libel case against Guardian over sexual mi
-04:26:34 ok 512 UhtCkbKDnTk UK news a 195
-04:26:49 ok 513 Mw3NYfVuF_M UK news a 87
-04:27:03 ok 514 rx99Sg6SnlY UK news a 207
-04:27:18 ok 515 4cT7EzPND40 UK news a 180
-04:27:33 ok 516 cWmwGnfOKVI UK news a 135
-04:27:47 ok 517 rHHA0tilyzQ UK news m 330
-04:28:11 ok 518 O1QLJGc-MXU UK news a 84
-04:28:26 ok 519 6gFeCamYguI UK news a 46
-04:28:40 ok 520 aGqF3xadMiA UK news a 132
-04:28:55 ok 521 KJdl2I9dc4A UK news a 145
-04:29:10 ok 522 wqR1zYHNLns UK news a 33
-04:29:24 ok 523 gVSKV90xQ7o UK news a 118
-04:29:39 ok 524 ZuBAp6OgiiI UK news a 27
-04:29:54 ok 525 q_DPt6AU_D0 UK news a 197
-04:30:09 ok 526 IYiGQ3KjLok UK news a 97
-04:30:23 ok 527 fXuSSIRpCoM UK news a 56
-04:30:38 ok 528 AV3ZTsrte08 UK news a 251
-04:30:50 skip (title) bYVCxQm_wSY Man killed by tiger may have had medical records breached by
-04:30:52 ok 529 m354PTUGFdQ UK news a 43
-04:31:04 skip (title) PzRX0IrsLyA Norwegian teenage hitman who flew to UK to commit murder jai
-04:31:07 ok 530 cDbFcRCPBbk UK news a 22
-04:31:21 ok 531 aDiqh5U12zo UK news a 42
-04:31:36 ok 532 1yQDpmH2Esc UK news a 35
-04:31:51 ok 533 Tqq-zZtg7sw UK news a 99
-04:32:05 ok 534 kR4DrqkQGFM UK news a 278
-04:32:20 ok 535 CZzrBuXtxQ8 UK news a 31
-04:32:32 skip (title) MFRt4PX59Og ‘Russell Brand did rape me’ - his first accuser gives eviden
-04:32:34 ok 536 I8RVFgzmUS4 UK news a 32
-04:32:49 ok 537 V5aRowzKgsg UK news a 31
-04:33:04 ok 538 fx5FZtXzOBY UK news a 284
-04:33:18 ok 539 CpG19I8_09k UK news a 85
-04:33:33 ok 540 WeYzw8rnS4Y UK news a 50
-04:33:48 ok 541 3Y10AOAfjsk UK news a 47
-04:34:02 ok 542 Hm4EzHh8spc UK news a 50
-04:34:14 skip (title) yIxBiLxnk7A Former DUP leader Jeffrey Donaldson jailed for 15 years for 
-04:34:17 ok 543 xRmf85WaPHI UK news a 89
-04:34:32 ok 544 TLm398BbsxY UK news a 184
-04:34:46 ok 545 p9kQFETY2UM UK news a 199
-04:35:01 ok 546 aLNBDjN2TAI UK news a 37
-04:35:16 ok 547 ik54OdoLj7U UK news a 184
-04:35:28 skip (title) tDCGntu9jyQ A ‘ruthless sexual predator’ - the prosecution case against 
-04:35:30 ok 548 bPQOGZb32qA UK news a 213
-04:35:45 ok 549 N6xtYRaZXOk UK news a 32
-04:36:00 ok 550 nKstIa_No-o UK news a 156
-04:36:14 ok 551 AHc70BILrwM UK news a 88
-04:36:26 skip (title) WF0RxXM4pdI 'Prosecutors allege Russell Brand was 'ruthless' as rape tri
-04:36:29 ok 552 JCDrC-xNWXE UK news a 33
-04:36:43 ok 553 hwg6eXFckV0 UK news a 217
-04:36:58 ok 554 mT4YnE-2ZeQ UK news a 72
-04:37:13 ok 555 kF-aoWU-mQU UK news a 113
-04:37:27 ok 556 EDdb6nSOcnU UK news a 137
-04:37:42 ok 557 CqpRASDge2k UK news a 265
-04:38:07 ok 558 uiIGUNR0JM0 UK news a 58
-04:38:21 ok 559 WRXaIfSUnpw UK news a 260
-04:38:36 ok 560 S1fyZ1XMWMw UK news a 60
-04:38:48 skip (title) a0-TS6j9rVQ Trump defends decision to livestream execution of 'maniac' k
-04:38:51 ok 561 JJ9CYu8aeUk UK news a 94
-04:39:05 ok 562 0E820So98ds UK news a 144
-04:39:20 ok 563 pIEepLHTGkg UK news a 104
-04:39:35 ok 564 CPu3xQ6iLtE UK news a 115
-04:39:49 ok 565 d06nA9V7uzQ UK news a 51
-04:40:04 ok 566 15Uzd97tIEs UK news a 73
-04:40:19 ok 567 RN1ySUelw3g UK news a 51
-04:40:33 ok 568 YNba3dcqFOE UK news a 60
-04:40:48 ok 569 YxzIlNQ093A UK news a 56
-04:41:02 ok 570 r_5rP0myhJI UK news a 68
-04:41:17 ok 571 Raqv-2mzTTc UK news a 89
-04:41:31 ok 572 Jyiab_CAxDU UK news a 179
-04:41:46 ok 573 inmAoUQ4sKs UK news a 96
-04:42:01 ok 574 Zt7iNwnv_ww UK news a 178
-04:42:13 skip (title) OGhjr7BpZ8I Husband of GP to the royal family appears in court charged w
-04:42:15 ok 575 0uWevuh7agY UK news a 39
-04:42:30 ok 576 IbJGljkyFS0 UK news a 99
-04:42:45 ok 577 xgg3ZVaLZjg UK news a 88
-04:42:59 ok 578 C5i5n3kkPgk UK news a 65
-04:43:14 ok 579 InmOUg5A_Xc UK news a 164
-04:43:29 ok 580 yYsd3lHz7_8 UK news a 159
-04:43:43 ok 581 BqB6G5_AObo UK news a 58
-04:43:55 skip (title) k6wYz11A4kY Footage captures man in 'psychotic state' on stabbing rampag
-04:43:58 ok 582 QQd64-jmAL0 UK news a 48
-04:44:12 ok 583 oXMlhIQjF60 UK news a 52
-04:44:27 ok 584 egRf1uwhYe0 UK news a 198
-04:44:42 ok 585 gwh_o0dJ5-g UK news a 222
-04:44:54 skip (title) QZJYC1XT_Fc Flydubai pilot stabbed whilst mid-air speaks out on terrifyi
-04:44:56 ok 586 tLBDgxOCXso UK news a 79
-04:45:11 ok 587 pLWRr-NAErU UK news a 151
-04:45:23 skip (title) xOj1snCbq5k Best friend of stabbed FlyDubai pilot speaks out
-04:45:25 ok 588 eIRxdVEtEus UK news a 274
-04:45:40 ok 589 1KsKFe24AeE UK news a 176
-04:45:55 ok 590 KqiuQ0uHbrM UK news a 100
-04:46:07 skip (title) X7pbjqmmaJ4 How an off-duty pilot rescued Israel-bound plane after cockp
-04:46:09 ok 591 uAmlUQfkFzA UK news a 169
-04:46:24 ok 592 2CYj7tjWQpY UK news a 69
-04:46:39 ok 593 wocYWep5Qk0 UK news a 82
-04:46:53 ok 594 V8DyrIL-JgA UK news a 136
-04:47:08 ok 595 IisqSpL3o9U UK news a 249
-04:47:22 ok 596 dqdkQ3Rd9HY UK news a 36
-04:47:37 ok 597 buihjMLyxCE UK news a 80
-04:48:04 ok 598 sHB1gDLq6cM UK news a 36
-04:48:24 skip (too short) VFs12pvRlS4
-04:48:29 ok 599 SjKbFspZy8A UK news a 125
-04:48:45 ok 600 uZHI-NeOdHU UK news a 30
-04:49:01 ok 601 F8CKa7AWrTM UK news a 112
-04:49:18 skip (too short) xtsvrahpuSs
-04:49:23 skip (too short) BBNfuWtzcZ0
-04:49:27 skip (too short) 1TzmYEiWQ5E
-04:49:32 skip (too short) Vr-99OLPn3E
-04:49:37 ok 602 I91G1xxWs2M UK news a 45
-04:49:57 ok 603 YnwbNGT-ukA UK news a 76
-04:50:14 ok 604 j6EvlFQy4AI UK news a 31
-04:50:30 skip (too short) ZTo4s1mvvhE
-04:50:35 ok 605 i1qT8K1ms50 UK news a 85
-04:50:52 ok 606 WpEuR78Up2M UK news a 54
-04:51:08 ok 607 TEBgzBpOdeY UK news a 33
-04:51:25 ok 608 IyPcHO0ZBOQ UK news a 128
-04:51:41 ok 609 FsaN9RKgLVY UK news a 103
-04:51:55 skip (too short) b8HuJWRli-k
-04:52:00 skip (too short) lRIMiPdU39k
-04:52:04 ok 610 qcJ8VjCD-MY UK news a 46
-04:52:20 ok 611 0cmWtPqggjM UK news a 142
-04:52:32 skip (title) WEeGSY6XuL4 Inside Hollywood's Fear Factory: How horror is saving the bo
-04:52:35 skip (too short) 6WvNuLrRRqM
-04:52:38 ok 612 1BLy8dMgUDI UK news a 22
-04:52:56 ok 613 YVdEap5Ma-E UK news a 138
-04:53:12 skip (too short) NyXIkldNKlE
-04:53:17 ok 614 XLtz2VQoaVo UK news a 25
-04:53:34 ok 615 JoeWHTsEi6A UK news a 34
-04:53:50 ok 616 ZNa1cRITFdI UK news a 137
-04:54:06 ok 617 dMJluXDsKu4 UK news a 20
-04:54:23 skip (too short) QKagdcvOTpU
-04:54:27 skip (too short) B8R4OhRwF0c
-04:54:32 ok 618 v6wZYR8ojP4 UK news a 37
-04:54:47 ok 619 BlKWCNB5VjA UK news a 27
-04:55:03 skip (too short) 4zLgDj9EJHs
-04:55:07 ok 620 Hko9Evnd5Gg UK news a 25
-04:55:24 ok 621 ZgXYH5nxCSA UK news a 76
-04:55:41 ok 622 9XINcoCuDJc UK news a 123
-04:55:57 ok 623 iONTsj0xESE UK news a 26
-04:56:13 ok 624 3QfMHMv6UZ0 UK news a 106
-04:56:30 ok 625 lfME0KfnDxQ UK news a 92
-04:56:46 ok 626 abaLZz-wk3c UK news a 48
-04:57:02 ok 627 fR1W2WjtA2E UK news a 52
-04:57:18 skip (too short) oc_BjxaE7-U
-04:57:23 ok 628 VfYZvzYErUU UK news a 34
-04:57:39 skip (too short) 97JRti1wlHw
-04:57:44 ok 629 pVw_YB9xDmU UK news a 138
-04:58:00 skip (too short) gNjAjKi0Cvs
-04:58:05 ok 630 xgNFpKqPUmw UK news a 88
-04:58:22 ok 631 S-2LrqQKPR4 UK news a 79
-04:58:38 ok 632 wHXkw8MGMTo UK news a 28
-04:58:55 ok 633 ZC4iK7izNR8 UK news a 31
-04:59:11 ok 634 lkq3yPJ8fOA UK news a 34
-04:59:28 ok 635 r_yjGi2tC_4 UK news a 69
-04:59:44 ok 636 sZdHDRReHLw UK news a 23
-05:00:01 ok 637 gnmSNzvLjJU UK news a 39
-05:00:25 ok 638 QjTG2sOC7hg UK news a 46
-05:00:39 ok 639 Icav4JgdKRg UK news a 42
-05:00:54 ok 640 GkyjBro8Czc UK news a 286
-05:01:09 ok 641 615I97nPfMU UK news a 60
-05:01:23 ok 642 qTXVwV6Gq-4 UK news a 98
-05:01:38 ok 643 EXAOPP7lLgg UK news a 39
-05:01:50 skip (title) GtcwcEeR5Tk Deadly Paris shooting investigated as "crime of terrorism" |
-05:01:50 skip (title) 3UdGx2sTFK0 Detective raped by colleague says Met handling of case 'like
-05:01:50 skip (title) E8zFh4i0AaE Netanyahu orders closure of entire occupied West Bank after 
-05:01:53 ok 644 YMWxi98MJSc UK news a 201
-05:02:07 ok 645 HBOQnt-sCS0 UK news a 88
-05:02:22 ok 646 1lauO4C0cv0 UK news a 150
-05:02:37 ok 647 xuDSuF5cBo8 UK news a 153
-05:02:51 ok 648 Jz6lYyYKmDc UK news a 44
-05:03:06 ok 649 bIxzBfzVv5A UK news a 82
-05:03:23 clips collected this run: 649 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 649
+Nightly run on the home computer, 2026-11-02 20:53 (last 400 lines of the collector)
+19:07:13 ok 204 k0TYeg6DqfU US interview m 330
+19:07:28 ok 205 rANtRuIFZf8 US interview m 451
+19:07:44 ok 206 PH1OUKbei54 US interview m 361
+19:08:00 ok 207 2YquYkNcF7I US interview m 586
+19:08:15 ok 208 u9Ds9W3phIo US interview m 523
+19:08:30 ok 209 E7oEq6CE78g US interview m 543
+19:08:49 ok 210 ZrDeebuV76M US interview m 174
+19:09:04 ok 211 kNzuLfPSizs US interview m 284
+19:09:20 ok 212 P6HOy2gCicg US interview m 305
+19:09:36 ok 213 BwcDbtXy_Ww US interview m 175
+19:09:51 ok 214 r4AKiuGQ3K4 US interview m 468
+19:10:07 ok 215 vJ86QH3U0fw US interview m 399
+19:10:22 ok 216 Zl2n7qj_TgM US interview m 127
+19:10:38 ok 217 rc1v0pwvq_Y US interview m 251
+19:10:54 ok 218 gpjUu2g8fOY US interview m 466
+19:11:09 ok 219 Yj-3ECizqmk US interview a 229
+19:11:25 ok 220 nVEl9W-ocsU US interview m 238
+19:11:41 ok 221 -S69LaNcrZA US interview m 397
+19:11:56 ok 222 2ThICGRr6Xs US interview m 326
+19:12:11 ok 223 _NreYBwzRQk US interview m 293
+19:12:27 ok 224 eXmVq8x1Lqk US interview m 337
+19:12:43 ok 225 Ipw_2A2T_wg US interview m 285
+19:12:59 ok 226 3OIrdqam3sU US interview m 313
+19:13:14 ok 227 iKvWixnuZQM US interview m 360
+19:13:29 ok 228 CdFLEfRr3Qk US interview m 263
+19:13:45 ok 229 UZ3-n7x5NnE US interview m 273
+19:14:02 ok 230 bvohPUQMf78 US interview m 329
+19:14:17 ok 231 n_cS6S6bWX4 US interview m 469
+19:14:32 ok 232 M2NFhwHyNhc US interview m 244
+19:14:48 ok 233 aiBvvOWRziY US interview m 255
+19:15:03 ok 234 wR-i-pqFqqE US interview m 241
+19:15:18 ok 235 rvHhqJSIFpY US interview m 345
+19:15:36 ok 236 56uJd9AqMFA US interview m 187
+19:15:52 ok 237 gTZDs3cJV1o US interview m 251
+19:16:08 ok 238 JRqU_7E2T9U US interview m 373
+19:16:34 ok 239 2lfa790tw-s US interview a 217
+19:16:50 ok 240 -L14QU628-4 US interview a 244
+19:17:06 ok 241 D03N-cuizzQ US interview m 281
+19:17:23 ok 242 6xNHA3a-brI US interview a 292
+19:17:43 ok 243 DzRMYShowPo US interview a 210
+19:17:55 skip (title) yF9HmOz4dFw Emma Myers on the Stories Behind Images from 'Wednesday' to 
+19:17:59 ok 244 Vqx2FI8Pu6c US interview a 295
+19:18:15 ok 245 EFbuqSovdko US interview a 257
+19:18:31 ok 246 oPjgWYbGkno US interview m 371
+19:18:46 ok 247 pq1alSV0Ajk US interview m 194
+19:19:02 ok 248 9PN8utUP3uA US interview m 324
+19:19:17 ok 249 nN6uVuWlc1Q US interview m 279
+19:19:33 ok 250 fqmZIH3X5BM US interview a 334
+19:19:49 ok 251 as1szi3kSdI US interview m 282
+19:20:07 ok 252 n7ZWkvCg_3I US interview m 359
+19:20:23 ok 253 uXs7jOxYyPE US interview a 364
+19:20:39 ok 254 R5XVk6iQbSQ US interview a 434
+19:20:54 ok 255 m3OP3b5JVqM US interview a 446
+19:21:06 skip (title) lMgGKu2gwFw Dave Franco and Alison Brie talk collaborating together in t
+19:21:10 ok 256 IKjD-djEr40 US interview a 336
+19:21:28 ok 257 u9uVAIod9T4 US interview m 351
+19:21:44 ok 258 OeKEbSVbhOs US interview m 272
+19:22:00 ok 259 yJ_zI1h7B28 US interview m 304
+19:22:18 ok 260 L8Ei9JmOsEM US interview m 243
+19:22:34 ok 261 rjKEjNyFNvk US interview m 261
+19:22:49 ok 262 0za9B-F1a-g US interview a 110
+19:23:05 ok 263 zJdOfsSfDTI US interview m 287
+19:23:20 ok 264 Nd8XvYRFN-U US interview m 272
+19:23:36 skip (mostly music) 7Ce9T4nU-ws
+19:23:40 ok 265 Q1HLSwKNQRk US interview a 247
+19:23:58 ok 266 80zMHi_bxjM US interview m 230
+19:24:13 ok 267 GQTaD9Vdrf0 US interview a 100
+19:24:32 ok 268 DPp22ebhO9I US interview m 110
+19:24:50 ok 269 a7Inn_IA-MA US interview m 124
+19:25:02 skip (title) t-aH5kzTMlo 'Maria' Cinematographer Breaks Down the Party Scene Using a 
+19:25:06 ok 270 PwhhhUKIm-4 US interview m 180
+19:25:21 ok 271 iGP9OqJi438 US interview m 309
+19:25:33 skip (title) _aInyrSe8do 'Gladiator II' Cinematographer on Shooting the Flooded Colos
+19:25:37 ok 272 j7KA8Ca7sFI US interview m 234
+19:25:53 ok 273 ALbaySbIz1U US interview a 265
+19:26:08 ok 274 F0nEq1Deok4 US interview a 167
+19:26:25 ok 275 FYbX3IwsS9U US interview m 259
+19:26:41 ok 276 M49mQ5FB8To US interview m 370
+19:26:56 ok 277 1PkSjRVIWHU US interview m 228
+19:27:12 ok 278 eR_vIptO3A0 US interview m 320
+19:27:40 ok 279 LUgslZ68_fw US interview m 85
+19:27:57 ok 280 bAfrALWdBn8 US interview m 70
+19:28:12 ok 281 -Bci1a1CF80 US interview m 96
+19:28:28 ok 282 TnSKxibsiis US interview m 254
+19:28:43 ok 283 uV79HH7Qtok US interview m 458
+19:29:01 ok 284 pDMNrRGs38g US interview m 296
+19:29:17 ok 285 lwVCyVnApxI US interview m 286
+19:29:33 ok 286 ZgotC8YiNyM US interview m 441
+19:29:49 ok 287 guru4iTZhQo US interview m 392
+19:30:05 ok 288 HPfS_52Qm_E US interview m 479
+19:30:21 ok 289 kS5MQg79TsY US interview m 232
+19:30:37 ok 290 eUEq4gRYZnU US interview m 448
+19:30:55 ok 291 kI0gitSO3-Y US interview m 198
+19:31:11 ok 292 FNUJl7Wl2Qw US interview m 324
+19:31:26 ok 293 srMlWb9YptU US interview m 589
+19:31:42 ok 294 F1o46Cwe3Fc US interview m 193
+19:31:58 ok 295 IBlmAQKYagY US interview m 321
+19:32:14 ok 296 _J2sHXgypXc US interview m 295
+19:32:32 ok 297 CpirF3zKjLA US interview m 384
+19:32:48 ok 298 NGgHV2Xcav4 US interview a 206
+19:33:06 ok 299 hmlwQLtlxu0 US interview m 488
+19:33:21 ok 300 iMsHcxIE5MU US interview m 323
+19:33:38 ok 301 pNAbRL1JK00 US interview m 291
+19:33:58 ok 302 Otw2LuO6lnI US interview m 297
+19:34:13 ok 303 KKmx3VsclWI US interview m 268
+19:34:30 ok 304 zhxf9dYGVSU US interview m 514
+19:34:45 ok 305 Xenstc6mHWs US interview m 481
+19:35:01 ok 306 SfslrRXigfg US interview m 412
+19:35:16 ok 307 y4mdw4Icl5k US interview m 568
+19:35:32 ok 308 xc6CF4Tsj10 US interview m 298
+19:35:48 ok 309 3ctv4bsjWi8 US interview m 338
+19:36:04 ok 310 4Jw6_xnEFlE US interview m 359
+19:36:21 ok 311 cE5BUbxFKVI US interview m 637
+19:36:36 ok 312 rTvP4tovv1E US interview m 312
+19:36:52 ok 313 PiKQ6kbhfPY US interview m 245
+19:37:08 ok 314 i6ALbJmMw_M US interview m 215
+19:37:23 ok 315 dfiVE96GDIg US interview m 219
+19:37:39 ok 316 PxdWG5S6FLw US interview m 358
+19:37:55 ok 317 lBOCzPSgieU US interview m 508
+19:38:11 ok 318 iNWqRwSxL0k US interview m 342
+19:38:40 skip (bleeped words) 3mCN6dh16eU
+19:38:45 ok 319 u0MD2bR3TQ4 US interview a 39
+19:39:01 ok 320 CRAXvofHVtc US interview a 163
+19:39:17 ok 321 MdhQGWSngMk US interview a 206
+19:39:32 ok 322 17mFt1ejwQY US interview a 232
+19:39:50 skip (bleeped words) DvIS6IoR84c
+19:39:53 ok 323 cQKtrmlZr58 US interview a 278
+19:40:09 ok 324 4ld3tH4i2qs US interview a 149
+19:40:25 ok 325 iL7da9-aEXU US interview a 198
+19:40:41 skip (bleeped words) OI5_lSEmI0k
+19:40:45 ok 326 iW3_5U-UrFM US interview a 160
+19:41:00 ok 327 _gKHLxBCq38 US interview a 175
+19:41:16 skip (bleeped words) GMzXgzFIaCo
+19:41:16 skip (title) yIieWnzBOJA The Best Da Bomb Reactions of 2022 | Hot Ones
+19:41:20 ok 328 Xvdo7ELzs8c US interview a 110
+19:41:36 ok 329 jPRlIOFXjsw US interview a 412
+19:41:52 ok 330 AziU1AA43i0 US interview a 352
+19:42:08 skip (bleeped words) viDDqsRG9oY
+19:42:12 ok 331 oG45U89EXgg US interview a 334
+19:42:31 ok 332 Z7rN9RJNjhw US interview a 397
+19:42:46 ok 333 ow1cBKZvLL4 US interview a 133
+19:43:02 ok 334 _h8sDNNriuY US interview a 300
+19:43:18 ok 335 qI14RH-UnZ8 US interview a 135
+19:43:34 ok 336 tEVX9-TD-jA US interview a 46
+19:43:52 ok 337 2IFmGBOv0nI US interview a 148
+19:44:07 ok 338 qw2uW6-cEuE US interview a 128
+19:44:23 ok 339 GyNCTID_QUg US interview a 236
+19:44:39 ok 340 dgn-6Co6xuk US interview a 127
+19:44:57 ok 341 aMnbaDh2HDI US interview a 180
+19:45:13 skip (bleeped words) 0MDsb6KB5WU
+19:45:17 skip (bleeped words) DzWItq9_HZ8
+19:45:21 ok 342 wLrucsjm5eU US interview a 281
+19:45:36 ok 343 2et6tv1K0-I US interview a 213
+19:45:53 ok 344 lfhpm_rSlKY US interview a 186
+19:46:21 ok 345 Dgmii3eOh88 US interview m 229
+19:46:37 ok 346 dtR3dnbnwsc US interview m 166
+19:46:53 ok 347 A2G9onqTwc0 US interview m 145
+19:47:08 ok 348 0OfhCvzErtY US interview m 110
+19:47:24 ok 349 8tnkWrWztV0 US interview m 207
+19:47:39 ok 350 YviiZlcfoR8 US interview m 158
+19:47:56 ok 351 58Zyf6beY1Y US interview m 142
+19:48:13 ok 352 XiEb39LoESs US interview a 168
+19:48:32 ok 353 rlaK9HMQlwc US interview a 42
+19:48:48 ok 354 b5iKV-FbkAM US interview m 124
+19:49:03 ok 355 gKB6Tds5oV0 US interview m 128
+19:49:19 ok 356 1mxmxMMVH5k US interview m 137
+19:49:34 ok 357 o5tvEPxj1TI US interview m 157
+19:49:50 ok 358 6WhHSR6nmhc US interview m 130
+19:50:07 ok 359 YNtXvMFKdzE US interview m 149
+19:50:24 ok 360 awsAaaaxLYw US interview a 158
+19:50:40 ok 361 51w7gSHVqAc US interview m 161
+19:50:56 ok 362 j0lUhxomS8E US interview m 116
+19:51:13 ok 363 Ydd2pdvdYG8 US interview m 158
+19:51:30 ok 364 JDSn2MuZUJI US interview m 144
+19:51:46 ok 365 x7pGM5FSTpI US interview m 139
+19:52:02 ok 366 LbWVysxsOhQ US interview m 233
+19:52:18 ok 367 zUN9KQpUgzM US interview m 231
+19:52:34 ok 368 PtLjacVrdFc US interview m 96
+19:52:50 ok 369 7xbp7TYk7SU US interview m 195
+19:53:09 ok 370 pG_xSaaFONY US interview m 245
+19:53:24 ok 371 DuJkIi54A_I US interview m 137
+19:53:40 ok 372 3q57cBw5J3g US interview a 41
+19:53:56 ok 373 2C0rPOlIZzw US interview m 268
+19:54:12 ok 374 uVH5mRsA3m0 US interview m 154
+19:54:28 ok 375 -BGPrmgC5h0 US interview m 134
+19:54:44 ok 376 814SuM8gQCs US interview a 340
+19:55:00 ok 377 I6CfG2VEt2c US interview a 271
+19:55:15 ok 378 -J6CrgfBW4Q US interview m 108
+19:55:32 ok 379 fEuG55H28F0 US interview m 244
+19:55:47 ok 380 MC4WRNAv1bg US interview m 319
+19:56:03 ok 381 UzoMCWDgZ84 US interview m 169
+19:56:19 ok 382 SM7zPT1f-c8 US interview m 74
+19:56:35 ok 383 IIGpXXvlapM US interview m 145
+19:56:53 ok 384 8trTf2JYoWQ US interview a 41
+19:57:25 ok 385 43oZ0yUDG8E UK news m 227
+19:57:41 ok 386 SL-GmxuI4o0 UK news a 317
+19:57:57 ok 387 4jfsqzoApnU UK news m 245
+19:58:13 ok 388 8jG6B0o1QfQ UK news a 152
+19:58:29 ok 389 c9M6L90nQf0 UK news m 78
+19:58:41 skip (title) yoslxSw58x8 The Okinawa Bone Hunter: unearthing the horror of WW2's bloo
+19:58:46 ok 390 AEiL_5h14pY UK news m 183
+19:59:04 ok 391 OwxlYvRxzk4 UK news m 204
+19:59:20 ok 392 QVm8bcAEA2c UK news m 181
+19:59:36 ok 393 Wk7o1T-XFbU UK news m 95
+19:59:51 ok 394 SIRkps5J-sE UK news a 516
+20:00:06 ok 395 RLhKPXI-Y_k UK news a 184
+20:00:23 ok 396 K21bENDSd8A UK news a 365
+20:00:41 ok 397 fVPQJCs6PAc UK news a 211
+20:00:59 ok 398 bvOU6Ou7drU UK news m 198
+20:01:15 ok 399 sbFXEbKmzHA UK news a 131
+20:01:31 ok 400 _1J4O4wzccI UK news a 120
+20:01:46 ok 401 9Vg86XkMzRk UK news a 155
+20:02:02 ok 402 hV6fzbRUQKM UK news a 198
+20:02:18 ok 403 Xv1pIP0LoV4 UK news a 254
+20:02:33 ok 404 CFQfbt1hmjU UK news m 220
+20:02:49 ok 405 DcWYsElOkag UK news a 112
+20:03:05 ok 406 XJFgewA3FA0 UK news a 358
+20:03:21 ok 407 3mzG8j16FlQ UK news a 188
+20:03:37 ok 408 oIDsvIQ0UvM UK news a 163
+20:03:52 ok 409 ugl0UGz6-IM UK news a 33
+20:04:04 skip (title) hL2N5gDwYo8 Inside Syria’s ‘horror city': Sednaya and a country reborn |
+20:04:08 ok 410 lJyCwOJh3ZE UK news a 177
+20:04:24 ok 411 3bof2_KHW0o UK news a 54
+20:04:39 ok 412 zYFUvhAuU-Y UK news a 184
+20:04:56 ok 413 sveY8kAakTg UK news a 82
+20:05:11 ok 414 YIjh2utDpUk UK news a 367
+20:05:28 ok 415 NxgTaFQvauc UK news a 278
+20:05:43 ok 416 dBp1dRbyRbE UK news a 275
+20:05:59 ok 417 gQL_Bmsi8Bo UK news a 278
+20:06:15 skip (mostly music) hwJWIecrx9o
+20:06:19 ok 418 Mfg5eknr08M UK news a 94
+20:06:35 ok 419 zoDx-fYjeIA UK news m 127
+20:06:51 ok 420 TqNXqbTUpQ8 UK news m 76
+20:07:10 ok 421 rNE7BUam2dA UK news m 223
+20:07:25 ok 422 5JP303YOKRw UK news m 227
+20:07:42 ok 423 LjkMqdzO-fY UK news a 104
+20:08:08 ok 424 au9Ag8zs6Ck UK news a 222
+20:08:37 ok 425 la_ayqv-CuU UK news a 151
+20:08:53 ok 426 Eo-jFDGa00g UK news a 477
+20:09:19 ok 427 aw_QUjzdBC4 UK news a 83
+20:09:34 ok 428 A9tZOrnOBrc UK news a 476
+20:09:50 ok 429 QJiznqt97_M UK news a 116
+20:10:06 ok 430 D8cxYe8_7LM UK news a 400
+20:10:23 ok 431 WlNHBUdWCD0 UK news a 363
+20:10:40 ok 432 6T0IdyXAHaM UK news a 56
+20:10:52 skip (title) b7GyJIhani4 Counter-terrorism police investigating if RAF Fairford terro
+20:10:55 ok 433 rDjl_4w0BN4 UK news a 74
+20:11:10 ok 434 -0tPjJxQYaw UK news a 82
+20:11:26 ok 435 7Gac2ulu0uE UK news a 197
+20:11:42 ok 436 Ebn5xoKTqsY UK news a 267
+20:11:59 ok 437 CRQkBvXyaw4 UK news a 240
+20:12:14 ok 438 DwRkQjd5CEU UK news a 134
+20:12:30 ok 439 nPJZ0LdqN4g UK news a 96
+20:12:46 ok 440 WkBah1Mq59U UK news a 208
+20:13:02 ok 441 Mmbmy6lrJUI UK news a 206
+20:13:18 ok 442 EGSejQQ-alQ UK news a 135
+20:13:30 skip (title) -wLmr1bu0vk Scotland remains the worst in Europe for drug related deaths
+20:13:34 ok 443 oJAYPFJZbNU UK news a 128
+20:13:50 ok 444 A21fm5KXBM4 UK news a 179
+20:14:05 ok 445 Ila1V2u-rCk UK news a 83
+20:14:21 ok 446 uxjNbgDUPeU UK news a 70
+20:14:36 ok 447 5Py4CemyR70 UK news a 308
+20:14:52 ok 448 8NaA4GtUpsI UK news a 447
+20:15:08 ok 449 tV3kfMKzZy0 UK news a 153
+20:15:24 ok 450 ruaryMQDbuc UK news a 147
+20:15:40 ok 451 n5dAfzheqZA UK news a 248
+20:15:56 ok 452 l1a9zJ_E8TE UK news a 181
+20:16:12 ok 453 B_vozEzM62I UK news a 410
+20:16:24 skip (title) V584wvtTmdA Inside a Southampton community ‘shaken’ after Henry Nowak’s 
+20:16:28 ok 454 GnpCLYNl9_Q UK news a 210
+20:16:44 ok 455 EizVSY52Uyk UK news a 206
+20:17:00 ok 456 S-1amOJfCfA UK news a 174
+20:17:16 ok 457 ilzhsq3IIw0 UK news a 116
+20:17:33 ok 458 TIzM44b5CPY UK news a 93
+20:17:49 ok 459 752VUbuFojs UK news a 152
+20:18:04 ok 460 e_rG4UFqQ-E UK news a 189
+20:18:20 ok 461 Xh-WlAD3BYs UK news a 207
+20:18:36 ok 462 I65XKu4WKk4 UK news a 472
+20:18:52 ok 463 JP5g8VtsrDY UK news a 88
+20:19:08 ok 464 LSmH_hq0YaQ UK news a 95
+20:19:39 ok 465 5Umh_bUYDGY UK news a 69
+20:19:54 ok 466 3xkRdV3rLuE UK news a 234
+20:20:16 ok 467 fjuLKqJjkfA UK news a 50
+20:20:39 ok 468 Z90A3rgB2mY UK news a 204
+20:21:00 ok 469 NAWfbUFzE30 UK news a 294
+20:21:20 ok 470 Yd0lBlEGI50 UK news a 68
+20:21:40 ok 471 qMh1dLFdA_U UK news a 30
+20:22:00 ok 472 jmrbexbKfDM UK news a 49
+20:22:26 ok 473 VoGdR0SBdZE UK news a 27
+20:22:50 ok 474 p1VeCJXBno4 UK news a 25
+20:23:14 ok 475 1AMhZtpObQA UK news a 32
+20:23:35 ok 476 XVoWItayCCA UK news a 85
+20:23:58 ok 477 AMAGk9Xbjtc UK news a 271
+20:24:21 ok 478 upVgy8ueB8s UK news a 78
+20:24:41 ok 479 _FI1xf1D_14 UK news a 250
+20:25:02 ok 480 9VEVjIlcnVI UK news a 103
+20:25:23 ok 481 OUnC9fLn_0o UK news a 62
+20:25:49 ok 482 lmjHE8CEhPM UK news a 68
+20:26:14 ok 483 _J_EYzSnl7g UK news a 566
+20:26:41 ok 484 SGTz2kKFZXI UK news a 70
+20:27:03 ok 485 YX2U6IE124U UK news a 242
+20:27:25 ok 486 Pk3WYsG6Eqc UK news a 54
+20:27:46 ok 487 AgTN9In1zXg UK news a 38
+20:28:13 ok 488 QYeOoxVMnFc UK news a 73
+20:28:34 ok 489 VdNkE9Qxkgw UK news a 23
+20:28:55 ok 490 REHJB87gIxU UK news a 152
+20:29:19 ok 491 42WjO7whBbA UK news a 71
+20:29:40 ok 492 tTgFfeOQfRg UK news a 259
+20:30:01 ok 493 KIPvLT6OAro UK news a 44
+20:30:23 ok 494 jWj-aQ1nmCg UK news a 61
+20:30:42 ok 495 SVsJQiWQC2c UK news a 223
+20:31:01 ok 496 nIBdWBKAxtI UK news a 100
+20:31:20 ok 497 lghyD6mIrdM UK news a 72
+20:31:32 skip (title) 09ClwCtovQQ Sudan market strike kills more than 150 people | Reuters Wor
+20:31:41 ok 498 QlhgcQxpOaA UK news a 76
+20:32:08 ok 499 X1ro28P5KUk UK news a 57
+20:32:28 ok 500 mYGZVqn3Qw4 UK news a 165
+20:32:48 ok 501 UpcDKzZh-Do UK news a 120
+20:33:09 ok 502 nXpS30rpXAw UK news a 103
+20:33:27 ok 503 ZpV1_4bhtOw UK news a 68
+20:33:49 ok 504 ALXFCRhc9zc UK news a 162
+20:34:18 ok 505 SkuijyBls2I UK news a 95
+20:34:33 ok 506 cGth8ujiYJ0 UK news a 69
+20:34:49 ok 507 ZALJ83qT2VY UK news a 445
+20:35:06 ok 508 xBywrYMLFKs UK news a 235
+20:35:22 ok 509 v9MTPa5YL2I UK news a 94
+20:35:37 ok 510 nKYQ8I99p3c UK news a 242
+20:35:53 ok 511 DznxJEnlUJ8 UK news a 63
+20:36:08 ok 512 uEcvD83hal4 UK news a 396
+20:36:24 ok 513 bXdvkDwIlcw UK news a 77
+20:36:40 ok 514 v6G6bntztJ0 UK news a 70
+20:36:57 ok 515 WXEHso7wnBo UK news a 263
+20:37:13 ok 516 lJZkoUdpwEU UK news a 369
+20:37:28 ok 517 EVjaIiFWn_M UK news a 70
+20:37:44 ok 518 Zc_sHu3ND44 UK news a 71
+20:37:56 skip (title) dtSZt8q7QR8 PM announces fresh sanctions after 'terror plot' almost cert
+20:37:56 skip (title) TaE-q2GPdCg How Kurdistan is being used as a frontier for drug smuggling
+20:38:00 ok 519 z8ZpTwAx8SE UK news a 153
+20:38:12 skip (title) tq3vTd36NMw One dead and 11 injured in new attack on Saudi airport - a d
+20:38:16 ok 520 4lgVrQP-ZJ4 UK news a 273
+20:38:33 ok 521 6d-JmMU1K_w UK news a 73
+20:38:50 ok 522 9rqqKdIQUr8 UK news a 169
+20:39:06 ok 523 sZCru09G5E0 UK news a 123
+20:39:22 ok 524 Zh6Y-b7H0yI UK news a 64
+20:39:37 ok 525 sqsAoJ4i8Gs UK news a 48
+20:39:53 ok 526 Dx5hECrZPak UK news a 286
+20:40:09 ok 527 D7aEH1PEBO0 UK news a 327
+20:40:25 ok 528 4g5Kzuq_AFk UK news a 368
+20:40:37 skip (title) yHSReC9hgOQ At least 12 people killed and over 300 injured in Riyadh air
+20:40:42 ok 529 sJu9BGThL_k UK news a 170
+20:40:58 ok 530 1ljvUjOQVp8 UK news a 262
+20:41:13 ok 531 37-igjrbd5Q UK news a 74
+20:41:29 ok 532 jhxX1UijZWA UK news a 233
+20:41:45 ok 533 F-57RB3mXoU UK news a 208
+20:42:01 ok 534 OYcpgMtJtA0 UK news a 171
+20:42:17 ok 535 ZFhO_u5jphc UK news a 181
+20:42:33 ok 536 jguwxd_QuDE UK news a 203
+20:42:49 ok 537 S4XRmTfeVlo UK news a 117
+20:43:06 ok 538 5iE9qTixFJE UK news a 129
+20:43:22 ok 539 ncbU4p9BR9M UK news a 164
+20:43:38 ok 540 RUTGQShHB2I UK news a 69
+20:43:54 ok 541 lm6p5zVuipE UK news a 136
+20:44:09 ok 542 jb_W6MtIfuM UK news a 249
+20:44:25 ok 543 xBQ5mxLtesQ UK news a 467
+20:44:41 ok 544 UVVdilYnKao UK news a 365
+20:45:11 ok 545 6n313Zha8vk UK news a 360
+20:45:27 ok 546 JjTKUYr58t0 UK news a 71
+20:45:43 ok 547 FjVaxQSbjwg UK news a 505
+20:45:58 ok 548 tk9_Uu-RSSE UK news a 239
+20:46:14 ok 549 aXXWpf8YAL4 UK news a 366
+20:46:29 ok 550 CpC_wmgMvyI UK news a 235
+20:46:41 skip (title) uHjki5FJh0c Flydubai latest: Pilot arrested after co-pilot stabbed on fl
+20:46:41 skip (title) akVDXUr7Ypc AI-generated child abuse images surge
+20:46:47 ok 551 lUQkdkkqoLQ UK news a 104
+20:47:03 ok 552 jGK8F9qTDW4 UK news a 167
+20:47:18 ok 553 ZlGVXpDKmuw UK news a 87
+20:47:34 ok 554 tO4ohxzrzow UK news a 66
+20:47:51 ok 555 Lds7vXo_cRw UK news a 471
+20:48:03 skip (title) JGwrYEVl2Kw Counter terror police investigating major incident at RAF Fa
+20:48:06 ok 556 NChTnraBhXQ UK news a 162
+20:48:22 ok 557 GPvgctXrwTk UK news a 83
+20:48:38 ok 558 rBbLny7x9-k UK news a 48
+20:48:54 ok 559 IBPTw9pxzvs UK news a 80
+20:49:10 ok 560 _5WTNcX-ZMM UK news a 336
+20:49:26 ok 561 mN3_S8F8GZE UK news a 55
+20:49:42 ok 562 VFVH3M4agqE UK news a 85
+20:50:00 ok 563 JTOG1p-lrN0 UK news a 388
+20:50:16 ok 564 xu577nWPurI UK news a 225
+20:50:31 ok 565 HkniPBu0xJE UK news a 85
+20:50:47 ok 566 EIAcD26eTRs UK news a 252
+20:51:02 ok 567 B6ZmlWF3NaY UK news a 140
+20:51:18 ok 568 LEeZNH5LOEc UK news a 196
+20:51:34 ok 569 eUgV27XYpoo UK news a 409
+20:51:50 ok 570 xyOcLj4GgWw UK news a 98
+20:52:09 ok 571 Dm6Y1kWYEps UK news a 152
+20:52:28 ok 572 C6_9rXrrbwk UK news a 180
+20:52:45 ok 573 RrPbXnHG9Go UK news a 137
+20:53:00 ok 574 PNaXNPM03vU UK news a 58
+20:53:19 ok 575 NOShRm2dxHE UK news a 75
+20:53:37 clips collected this run: 575 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 1046
