@@ -1,160 +1,401 @@
-Nightly run on the home computer, 2026-11-03 22:29 (last 400 lines of the collector)
-19:39:24 25922 clips published; 5728 on the skip list; 0 removed by the skip list
-19:45:00 error 3puYm1Ow9RU TimeoutExpired Command '['C:\\Users\\Lenovo\\fang-kham\\.venv\\Scripts\\python.exe', '-m', 'yt_dlp', '--load-info-json', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\3puYm1Ow9RU.info.json', '--cookies', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\cookies.txt', '--skip-download', 
-19:48:26 error Nlih7DV9v3o TimeoutExpired Command '['C:\\Users\\Lenovo\\fang-kham\\.venv\\Scripts\\python.exe', '-m', 'yt_dlp', '--load-info-json', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\Nlih7DV9v3o.info.json', '--cookies', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\cookies.txt', '--skip-download', 
-19:51:15 ok 1 vuhrdJNhF5M UK conversation a 193
-20:06:13 error Xi8rMrbOgzU TimeoutExpired Command '['C:\\Users\\Lenovo\\fang-kham\\.venv\\Scripts\\python.exe', '-m', 'yt_dlp', '--load-info-json', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\Xi8rMrbOgzU.info.json', '--cookies', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\cookies.txt', '--skip-download', 
-20:09:26 error SUMyHjZOHFo TimeoutExpired Command '['C:\\Users\\Lenovo\\fang-kham\\.venv\\Scripts\\python.exe', '-m', 'yt_dlp', '--load-info-json', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\SUMyHjZOHFo.info.json', '--cookies', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\cookies.txt', '--skip-download', 
-20:12:38 error 5o8uskfueq0 TimeoutExpired Command '['C:\\Users\\Lenovo\\fang-kham\\.venv\\Scripts\\python.exe', '-m', 'yt_dlp', '--load-info-json', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\5o8uskfueq0.info.json', '--cookies', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\cookies.txt', '--skip-download', 
-20:18:20 ok 2 cMmXrUtlFH8 AUS news a 123
-20:20:11 ok 3 XOK7htdLHFk AUS news a 113
-20:23:26 error W2ccGA3Yz1s TimeoutExpired Command '['C:\\Users\\Lenovo\\fang-kham\\.venv\\Scripts\\python.exe', '-m', 'yt_dlp', '--load-info-json', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\W2ccGA3Yz1s.info.json', '--cookies', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\cookies.txt', '--skip-download', 
-20:28:40 error tDMznL5NOCI TimeoutExpired Command '['C:\\Users\\Lenovo\\fang-kham\\.venv\\Scripts\\python.exe', '-m', 'yt_dlp', '--load-info-json', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\tDMznL5NOCI.info.json', '--cookies', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\cookies.txt', '--skip-download', 
-20:31:58 error zLuwtOhNjvU TimeoutExpired Command '['C:\\Users\\Lenovo\\fang-kham\\.venv\\Scripts\\python.exe', '-m', 'yt_dlp', '--load-info-json', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\zLuwtOhNjvU.info.json', '--cookies', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\cookies.txt', '--skip-download', 
-20:35:17 error Pavi5fn4xLQ TimeoutExpired Command '['C:\\Users\\Lenovo\\fang-kham\\.venv\\Scripts\\python.exe', '-m', 'yt_dlp', '--load-info-json', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\Pavi5fn4xLQ.info.json', '--cookies', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\cookies.txt', '--skip-download', 
-20:38:37 error xjb6Tmhpdqg TimeoutExpired Command '['C:\\Users\\Lenovo\\fang-kham\\.venv\\Scripts\\python.exe', '-m', 'yt_dlp', '--load-info-json', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\xjb6Tmhpdqg.info.json', '--cookies', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\cookies.txt', '--skip-download', 
-20:41:56 error zmPI-6GH4Pk TimeoutExpired Command '['C:\\Users\\Lenovo\\fang-kham\\.venv\\Scripts\\python.exe', '-m', 'yt_dlp', '--load-info-json', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\zmPI-6GH4Pk.info.json', '--cookies', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\cookies.txt', '--skip-download', 
-20:42:06 skip (title) fTDIkzcN6FE Windsor man sentenced in sex assault case
-20:45:14 error -7rA34jdG-8 TimeoutExpired Command '['C:\\Users\\Lenovo\\fang-kham\\.venv\\Scripts\\python.exe', '-m', 'yt_dlp', '--load-info-json', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\-7rA34jdG-8.info.json', '--cookies', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\cookies.txt', '--skip-download', 
-20:48:33 error B76Ksqb-Q0w TimeoutExpired Command '['C:\\Users\\Lenovo\\fang-kham\\.venv\\Scripts\\python.exe', '-m', 'yt_dlp', '--load-info-json', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\B76Ksqb-Q0w.info.json', '--cookies', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\cookies.txt', '--skip-download', 
-20:50:55 skip (too short) X86bJEyGVhE
-20:52:48 ok 4 kJwgBH5KluQ CAN news a 116
-20:54:41 ok 5 6Y8_0hMOrgk CAN news a 116
-20:58:05 error zsj5M01NADs TimeoutExpired Command '['C:\\Users\\Lenovo\\fang-kham\\.venv\\Scripts\\python.exe', '-m', 'yt_dlp', '--load-info-json', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\zsj5M01NADs.info.json', '--cookies', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\cookies.txt', '--skip-download', 
-20:59:14 ok 6 ok2MY6Ql6Ew CAN news a 30
-20:59:26 skip (title) frcGERgnn5w Former junior hockey executive charged with multiple sex off
-21:02:33 error _mrQkJZF1xs TimeoutExpired Command '['C:\\Users\\Lenovo\\fang-kham\\.venv\\Scripts\\python.exe', '-m', 'yt_dlp', '--load-info-json', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\_mrQkJZF1xs.info.json', '--cookies', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\cookies.txt', '--skip-download', 
-21:05:51 error shicY479PoM TimeoutExpired Command '['C:\\Users\\Lenovo\\fang-kham\\.venv\\Scripts\\python.exe', '-m', 'yt_dlp', '--load-info-json', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\shicY479PoM.info.json', '--cookies', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\cookies.txt', '--skip-download', 
-21:08:22 ok 7 PjTd_zS8WjQ CAN news a 29
-21:09:55 ok 8 bqAR0q3vNNg CAN news a 144
-21:12:09 ok 9 0FbC4SW6t2c CAN news a 26
-21:14:41 ok 10 MhdvNsbFQQA CAN news a 63
-21:16:23 ok 11 3FqWRtP3qls CAN news a 25
-21:17:44 ok 12 UDFJl-t9hTM CAN news a 28
-21:18:53 ok 13 28LV1anMivQ CAN news a 21
-21:19:54 ok 14 h-cl1PvKSko CAN news a 149
-21:21:07 ok 15 1R9ggsKV-9o CAN news a 27
-21:22:00 ok 16 UrQ4030tOoo CAN news a 34
-21:22:12 skip (title) Sq67dXuuOzQ N.B. man sentenced for brutal murder of wife
-21:24:02 ok 17 ka3nD_y1x_M CAN news a 102
-21:26:07 ok 18 mbRGBflcgnw CAN news a 28
-21:26:27 ok 19 Dm8ZqaG8G_s CAN news a 64
-21:26:39 skip (title) EKZ1KY3rMCI Former AJHL, BCHL broadcaster charged with sex crimes agains
-21:27:17 ok 20 -Dsvoxqybc4 CAN news a 27
-21:28:35 ok 21 mC7-YGFEiPA CAN news a 33
-21:29:04 ok 22 I8uEO9bC7QI CAN news a 32
-21:30:12 skip (too short) Ak6HzMnLZTc
-21:33:22 error XxFrToDc14Q TimeoutExpired Command '['C:\\Users\\Lenovo\\fang-kham\\.venv\\Scripts\\python.exe', '-m', 'yt_dlp', '--load-info-json', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\XxFrToDc14Q.info.json', '--cookies', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\cookies.txt', '--skip-download', 
-21:36:43 error z5rJKsZiZt4 TimeoutExpired Command '['C:\\Users\\Lenovo\\fang-kham\\.venv\\Scripts\\python.exe', '-m', 'yt_dlp', '--load-info-json', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\z5rJKsZiZt4.info.json', '--cookies', 'C:\\Users\\Lenovo\\AppData\\Local\\Temp\\fang-kham-6c53yvbx\\cookies.txt', '--skip-download', 
-21:37:41 ok 23 pLxBj0HXkJ4 CAN news a 46
-21:39:20 ok 24 j204bYaKYmQ CAN news a 121
-21:39:48 skip (too short) ilFCm1CSSak
-21:40:48 ok 25 fa6HY9aa7zE CAN news a 51
-21:42:13 ok 26 RvY8KOwefeI CAN news a 58
-21:45:25 ok 27 3hs_F-Tzl8A CAN news a 39
-21:46:30 ok 28 E_bC47YJKz4 CAN news a 75
-21:48:11 ok 29 6W_-LAxJ6bM CAN news a 71
-21:49:26 skip (too short) mRb8Od6wBgc
-21:49:35 ok 30 3iJc4nr9qHQ CAN news a 27
-21:49:47 skip (title) rZjSmGqUHxI All nine people on board were killed in the Florida plane cr
-21:50:43 ok 31 Ey1x-OWyv24 CAN news a 35
-21:51:23 skip (too short) 1d0i9OBpnx4
-21:51:23 skip (title) s8biSPkOCq8 2 killed in Highway 22 crash | CTV News Red Deer: Nov. 2, 20
-21:51:41 ok 32 Je14Lq_Myos CAN news a 24
-21:52:02 skip (too short) Z-3UY-Ug-r8
-21:52:08 ok 33 dm25sS8IrZc CAN news a 97
-21:53:00 ok 34 UKMQ2O8nv7E CAN news a 52
-21:53:19 ok 35 qvOxAbC3d0U CAN news a 46
-21:54:08 ok 36 8dCauuPPd1w CAN news a 29
-21:56:19 ok 37 0nnpVbvnCr8 CAN news a 49
-21:56:38 ok 38 2mHxpiAD_ac CAN news a 44
-21:57:08 ok 39 4c0qqmjwMqA CAN news a 34
-21:57:46 ok 40 vtuZdL-pOiM CAN news a 32
-21:58:08 ok 41 IDRoS8uoY8o CAN news a 33
-21:58:46 ok 42 vdEUr_gHqdk CAN news a 64
-21:59:04 ok 43 Db4d7B6G3pE CAN news a 48
-22:00:25 ok 44 yRwoReHd7XU US ted m 79
-22:00:43 ok 45 Id3TCbpWR2M US ted m 84
-22:00:58 ok 46 OI-G23HF6Sw US ted m 74
-22:01:34 ok 47 s5CLtBaRIwY US ted m 80
-22:01:46 skip (title) 8_TYFfkc_1U Ugly History: The Khmer Rouge murders - Timothy Williams
-22:01:59 ok 48 o1z2DfFZBS4 US ted m 74
-22:02:13 skip (title) bObfR_uJ4oQ Ugly History: The El Mozote murders - Diana Sierra Becerra
-22:02:36 ok 49 wCLP3djiKvM US ted m 73
-22:03:11 ok 50 77hLX8jO6e4 US ted m 74
-22:03:47 ok 51 fZNUcyAhOGI US ted m 74
-22:04:12 ok 52 i9p-a8YJO-o US ted m 75
-22:04:48 ok 53 s_TGkDcjBqI US ted m 69
-22:05:14 ok 54 a6pqpINjdRQ US ted m 89
-22:05:39 ok 55 I7EOTLpDSzs US ted m 73
-22:05:51 skip (title) lkdLg0Nq4SQ Why are cockroaches so hard to kill? - Ameya Gondhalekar
-22:06:05 ok 56 zLAYGZeVTPQ US ted m 73
-22:06:21 ok 57 FB921D40ibw US ted m 75
-22:06:36 ok 58 s_Cs1nbbv_M US ted m 72
-22:07:02 ok 59 0yL102ubTiw US ted m 98
-22:07:17 ok 60 8PCHd5banhE US ted m 75
-22:07:42 ok 61 jMA7pWIFmIg US ted m 77
-22:07:58 ok 62 6MiOTB-Kpzw US ted m 72
-22:08:13 ok 63 pq9ECmry8bc US ted m 77
-22:08:25 skip (title) x2Q_kYyCH9Q 4 signs of emotional abuse - Viann Nguyen-Feng
-22:08:39 ok 64 z3QPYXNPaaE US ted m 70
-22:09:14 ok 65 6zCpRVP1DgQ US ted m 79
-22:09:29 ok 66 aQibQlpNIfw US ted m 71
-22:09:45 ok 67 6uy0GCw397I US ted m 79
-22:10:00 ok 68 4ngelr9h2jM US ted m 91
-22:10:15 ok 69 SEDabz-hyKo US ted m 88
-22:10:30 ok 70 EPd2w5d_qAk US ted m 76
-22:10:45 ok 71 C2bjjwv4134 US ted m 84
-22:11:00 ok 72 c5N8hRyHYB0 US ted m 69
-22:11:56 ok 73 lmP0l5udNCE US ted m 72
-22:12:24 ok 74 Zz0Xcneakeg US ted m 76
-22:12:39 ok 75 SaQImmPev2o US ted m 73
-22:12:54 ok 76 lmf6bWl-Hco US ted m 61
-22:13:19 ok 77 6nWba9Ii5Lo US ted m 68
-22:13:35 ok 78 QjVqIW281Qo US ted m 75
-22:14:30 ok 79 F5sZQ4Xutgk US ted m 75
-22:14:55 ok 80 zAxfrI8zHU4 US ted m 71
-22:15:10 ok 81 jdrNjHPYKz4 US ted m 73
-22:15:46 ok 82 D9N7QaIOkG8 US ted m 78
-22:16:11 ok 83 cg_NLOQxFuo US ted m 77
-22:17:02 ok 84 4kyBn6-WNTk US interview m 222
-22:17:27 ok 85 nuWwIA6a3vU US interview m 253
-22:17:53 ok 86 fez7X_oevNs US interview m 432
-22:18:08 ok 87 AUjaoK9ahA8 US interview m 404
-22:18:20 skip (title) QaFb572jyvQ Atomic Expert Explains "Oppenheimer" Bomb Scenes | WIRED
-22:18:23 ok 88 UbZlYl92OGU US interview m 387
-22:18:59 ok 89 FVlEaCrC3IM US interview m 211
-22:19:14 ok 90 pUstiwexvkI US interview m 343
-22:19:30 ok 91 F9VMVA757Oo US interview m 376
-22:19:55 ok 92 40VOI39mQB4 US interview m 444
-22:20:10 ok 93 wr13tU8Nqsc US interview m 315
-22:20:26 ok 94 Gx-wrprpIoI US interview m 252
-22:20:42 ok 95 yrXUed7WybA US interview m 415
-22:20:57 ok 96 pwOxlpGYJAY US interview m 213
-22:21:13 ok 97 m3ici218OGQ US interview m 335
-22:21:28 ok 98 C3T_IaIGQxo US interview m 350
-22:21:44 ok 99 wzGFyRfJIv4 US interview m 287
-22:21:59 ok 100 FLgwWTubPRU US interview a 170
-22:22:14 ok 101 IyuC6iW_k1U US interview m 328
-22:22:30 ok 102 1BPU1E_WaKo US interview m 369
-22:22:45 ok 103 bQ9j-Pkj6cU US interview m 242
-22:23:00 ok 104 vIh-3ZKuC3s US interview m 198
-22:23:36 ok 105 gpnFdAibbBA US interview m 368
-22:23:51 ok 106 3kGlk1E_Cnw US interview m 336
-22:24:06 ok 107 P7BhzVRRZDU US interview m 391
-22:24:22 ok 108 xK65s-rleb8 US interview m 277
-22:24:37 ok 109 4uvlCjcT7oM US interview m 453
-22:24:52 ok 110 uHLWgaSPCcY US interview m 470
-22:25:28 ok 111 iOaFhUVeDhQ US interview m 419
-22:25:53 ok 112 EczIGeweSXo US interview m 418
-22:26:18 ok 113 HM6Rak_d-5s US interview m 531
-22:26:33 ok 114 JUSELxessnU US interview m 376
-22:26:49 ok 115 4dFvHicFoRI US interview m 517
-22:27:25 ok 116 8c-gD4mwI8A US interview m 141
-22:27:40 ok 117 8vz1bmTd_q8 US interview a 93
-22:27:55 ok 118 5Qkm-LuUbBQ US interview a 311
-22:28:11 skip (mostly music) BcHub-31afc
-22:28:14 ok 119 XDBWjfUgaR8 US interview m 440
-22:28:39 ok 120 7PFBG4bBS_I US interview m 201
-22:28:54 ok 121 EIpAlY0QD-o US interview m 306
-22:29:11 clips collected this run: 121 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 121
+Nightly run on the home computer, 2026-11-04 02:00 (last 400 lines of the collector)
+00:21:22 ok 241 OP61CVFkhmo US interview m 587
+00:21:37 ok 242 ZX0Cvfutbpw US interview m 320
+00:21:52 ok 243 APUWarTaCUg US interview m 293
+00:22:07 ok 244 Xi0rJ7T1oxk US interview m 305
+00:22:22 ok 245 NIvWD5qEdJU US interview m 541
+00:22:38 ok 246 6q3zL2CEnsE US interview a 352
+00:22:53 ok 247 nB-5SEW3iC4 US interview m 366
+00:23:05 skip (title) ulzj2Yl16wg Gillian Anderson Rewatches The X-Files, Sex Education, Scoop
+00:23:08 ok 248 SmoeVaKIyIs US interview m 259
+00:23:23 ok 249 I7DcAPEjkBc US interview m 572
+00:23:38 ok 250 -yJMVVh5p_4 US interview m 311
+00:23:53 ok 251 Snj5AelmdhY US interview m 298
+00:24:08 ok 252 wYVgq0gFlwQ US interview m 292
+00:24:23 ok 253 EInKggscqG4 US interview m 427
+00:24:38 ok 254 rDl2QnXu5nI US interview a 82
+00:24:53 ok 255 JGLEVXJoetU US interview m 311
+00:25:08 ok 256 HCvpVtJTzC0 US interview m 151
+00:25:23 ok 257 K04nilXtg4o US interview m 259
+00:25:38 ok 258 VOl15Cq6Obg US interview m 113
+00:25:53 ok 259 xhjooxtYf9Q US interview m 373
+00:26:12 ok 260 l5nLONCv6Kg US interview m 355
+00:26:27 ok 261 kMtjaS4VsPw US interview m 635
+00:26:42 ok 262 Ry3ISTkKdvc US interview m 272
+00:26:57 ok 263 vkTx4vrp5DI US interview m 289
+00:27:13 ok 264 _a7gMea61pE US interview m 257
+00:27:28 ok 265 G7dVn0f1bPg US interview m 576
+00:27:43 ok 266 DNtAuIkVyfo US interview m 326
+00:27:58 ok 267 lzLm2e0Fztw US interview m 315
+00:28:16 ok 268 dm9qz54bwoo US interview m 172
+00:28:31 ok 269 p0hmNvtm40Q US interview m 504
+00:28:47 ok 270 R0Du9ycJTZg US interview m 439
+00:29:02 ok 271 jfZvFyKxkVc US interview m 212
+00:29:17 ok 272 3mye3rt2ONs US interview m 277
+00:29:32 ok 273 uou1mMA39FE US interview m 252
+00:29:47 ok 274 H3ATkbZnE1s US interview m 222
+00:30:02 ok 275 a-4X-K_iB9E US interview m 215
+00:30:17 ok 276 fcPAFXtgqK0 US interview m 236
+00:30:42 ok 277 ga1vn-bBNHw UK news m 174
+00:30:58 ok 278 dMpTUOgqkuo UK news a 146
+00:31:13 ok 279 SfpKDkJrH_s UK news m 123
+00:31:27 ok 280 p4pxtf9xMz8 UK news m 68
+00:31:42 ok 281 0QyXr5MiCBg UK news m 151
+00:31:57 ok 282 bgNRw_8QxPc UK news m 272
+00:32:12 ok 283 x5OjzgQQrGI UK news m 142
+00:32:27 ok 284 pK7yUq0P0os UK news m 284
+00:32:42 ok 285 zpMoFOAE_ss UK news m 188
+00:32:57 ok 286 pTpwZGS3L74 UK news m 106
+00:33:09 skip (title) SZ8L5-gecho How killer robotics are changing modern warfare | It's Compl
+00:33:12 ok 287 B3uNGjDxl_c UK news a 69
+00:33:27 ok 288 UheOilps2zQ UK news m 37
+00:33:43 skip (bleeped words) c1A4mt-KlIw
+00:33:45 ok 289 x7cfBXsg5fM UK news m 282
+00:34:00 ok 290 xq37DtxsXco UK news m 76
+00:34:15 ok 291 -fxbtQkAXO0 UK news m 70
+00:34:30 ok 292 6yHK2y2DkXg UK news a 106
+00:34:45 ok 293 ZjDsbL-V4uw UK news m 159
+00:35:00 ok 294 wbhqOddTSds UK news m 321
+00:35:15 ok 295 2XA7uWxUuVY UK news m 192
+00:35:30 ok 296 0GFzZE-1DJ8 UK news m 260
+00:35:45 ok 297 jOXNm9MaPro UK news m 155
+00:36:00 ok 298 IJ1_frkZ_oc UK news m 261
+00:36:19 ok 299 nHewjEw2fAI UK news m 231
+00:36:34 ok 300 nMSLwmMFhag UK news m 60
+00:36:49 ok 301 EeIevSAhEms UK news m 271
+00:37:03 ok 302 4E55Whp3lkQ UK news m 212
+00:37:18 ok 303 Zr_G-Minosc UK news m 232
+00:37:33 ok 304 2_esq-JnFEo UK news m 261
+00:37:48 ok 305 cAFlYRcdi5o UK news m 76
+00:38:03 ok 306 MkAoR5Hc_8c UK news m 168
+00:38:17 ok 307 PErUCQzVFcU UK news m 266
+00:38:32 ok 308 iau5r3MdUaY UK news m 164
+00:38:47 ok 309 PRmuFJDiZlk UK news m 297
+00:39:02 ok 310 yEWefG-456A UK news m 167
+00:39:17 ok 311 rjkLas2W32g UK news m 207
+00:39:32 ok 312 5EYv7cwVz10 UK news m 175
+00:39:47 ok 313 jPJNS8bU7TQ UK news a 103
+00:40:02 ok 314 65d7ALqZUb0 UK news m 197
+00:40:27 ok 315 E60JwEnS3w4 UK news m 57
+00:40:42 ok 316 8z_GEeQhi6M UK news m 124
+00:41:08 ok 317 KtFTF26I01Y UK news a 284
+00:41:23 ok 318 HnumTuj01ho UK news a 134
+00:41:38 ok 319 PawhL26ZFF8 UK news a 89
+00:41:53 ok 320 ePpjtkFsA-c UK news a 166
+00:42:08 ok 321 dTPXm78MCFI UK news a 278
+00:42:23 ok 322 -i9b3Z48y0g UK news a 549
+00:42:38 ok 323 f4HSEZOQXq4 UK news a 301
+00:42:53 ok 324 TjYQ81krmzI UK news a 168
+00:43:08 ok 325 bem2iQCQzUE UK news a 412
+00:43:23 ok 326 s5RKTAia82k UK news a 365
+00:43:35 skip (title) FPjFtS_5DVs Stepdaughter of antisemitic terror attack victim describes t
+00:43:38 ok 327 MC4zk3B1u88 UK news a 127
+00:43:53 ok 328 YgSueiKtmu0 UK news a 250
+00:44:08 ok 329 1_Qvr6t3EGU UK news a 148
+00:44:23 ok 330 tCsXWRrkImo UK news a 117
+00:44:37 ok 331 WDS4urXPtfU UK news a 90
+00:44:52 ok 332 5kJ9oIgoZdM UK news a 79
+00:45:07 ok 333 D3dY68OVe0M UK news a 162
+00:45:22 ok 334 BWwX8gfEEmo UK news a 473
+00:45:37 ok 335 yZgq-g9nvC8 UK news a 98
+00:45:56 ok 336 8zX0HBb2dd4 UK news a 218
+00:46:12 ok 337 SlkGeIYGfME UK news a 110
+00:46:24 skip (title) 115U4sGrNhk Tupac murder trial begins nearly 30 years after rapper's dea
+00:46:27 ok 338 OYH6nHKuIlI UK news a 139
+00:46:42 ok 339 IPfuDkKay_s UK news a 159
+00:46:57 ok 340 hX3UeUxDcz0 UK news a 356
+00:47:12 ok 341 SwWFBQ7ckRk UK news a 221
+00:47:26 ok 342 UR1oJMK8a2s UK news a 88
+00:47:41 ok 343 aclrhRO6j2A UK news a 76
+00:47:56 ok 344 GRBboJ2l-5o UK news a 343
+00:48:08 skip (title) -1XMLhduEuk Luigi Mangione admits killing US healthcare boss
+00:48:11 ok 345 EGtPq4LaM_4 UK news a 157
+00:48:26 ok 346 dDSmHVSH8Ok UK news a 231
+00:48:41 ok 347 68dxriLDc1E UK news a 221
+00:48:57 ok 348 noMHSrVgFBc UK news a 235
+00:49:11 ok 349 EAJJPNL90KI UK news a 160
+00:49:27 ok 350 HbIX1RIRK-U UK news a 291
+00:49:42 ok 351 3exxO6xyDbE UK news a 160
+00:49:57 ok 352 pEg7n-pH72c UK news a 250
+00:50:12 ok 353 ZEPqDmqOTF4 UK news a 125
+00:50:27 ok 354 O6ZOVpOrxzA UK news a 99
+00:50:41 ok 355 fWPnZFSB6SM UK news a 506
+00:50:56 ok 356 fmcc8SAjYTU UK news a 231
+00:51:23 ok 357 glMN1m-ZemE UK news a 288
+00:51:37 ok 358 MOJck607StM UK news a 232
+00:51:52 ok 359 DGrcQE3Tg3M UK news a 310
+00:52:08 ok 360 VCrZLaCaUPo UK news a 209
+00:52:22 ok 361 37UWX54E0jw UK news a 132
+00:52:37 ok 362 8CPtt4E9tL4 UK news a 175
+00:52:52 ok 363 oX6k_bzwuOc UK news a 345
+00:53:07 ok 364 SlCsZCrfsDU UK news a 177
+00:53:22 ok 365 BFuewt-Q4pQ UK news a 104
+00:53:37 ok 366 9Et3igGEKUs UK news a 456
+00:53:52 ok 367 K4_5X8dEy2Y UK news a 144
+00:54:07 ok 368 n3DcuopjXeE UK news a 83
+00:54:21 ok 369 xkSznk1y424 UK news a 87
+00:54:36 ok 370 W1uDPezYLyQ UK news a 137
+00:54:51 ok 371 mO-nhI80nM4 UK news a 134
+00:55:06 ok 372 _thH1axr9G8 UK news a 286
+00:55:21 ok 373 4pRIN_v87WQ UK news a 167
+00:55:36 ok 374 KVblZubvov8 UK news a 87
+00:55:51 ok 375 dIu70IzePpw UK news a 94
+00:56:06 ok 376 rUAoDHDewB4 UK news a 457
+00:56:21 ok 377 nOGdeqWHDoQ UK news a 185
+00:56:36 ok 378 7cJWwDqTL_8 UK news a 140
+00:56:51 ok 379 nsDzKM2Yjqk UK news a 41
+00:57:06 ok 380 wd-qScPxDaM UK news a 70
+00:57:18 skip (title) RlMSRUAB5RI 37 people killed after Russian attack on Ukrainian warehouse
+00:57:21 ok 381 hDYaRT3KcDo UK news a 166
+00:57:36 ok 382 5lYsXmC3nLI UK news a 112
+00:57:59 ok 383 aYz6age_kw0 UK news a 265
+00:58:14 ok 384 Liz-Pj3S4MY UK news a 485
+00:58:29 ok 385 kCtL3iFwWCE UK news a 67
+00:58:44 ok 386 FO0vEHkOAJY UK news a 101
+00:58:59 ok 387 K35SA1444z0 UK news a 197
+00:59:14 ok 388 cZbyg_tcHfw UK news a 248
+00:59:29 ok 389 IlaH2MVT6Ro UK news a 195
+00:59:44 ok 390 kbrPpP9HRBw UK news a 320
+01:00:09 ok 391 SGjMp-W384k UK news a 113
+01:00:24 ok 392 CQYimF9UkVg UK news a 177
+01:00:39 ok 393 hop7BmXUmac UK news a 449
+01:00:54 ok 394 zEPh2r2RjsY UK news a 330
+01:01:09 ok 395 uD9y4huP-1k UK news a 364
+01:01:24 ok 396 8eqq2tO-nBo UK news a 90
+01:01:51 ok 397 fjiRvGDHe5Q UK news a 71
+01:02:07 ok 398 oczQomgrJJY UK news a 54
+01:02:23 ok 399 -kcRlqF5D4E UK news a 49
+01:02:40 ok 400 xZHnK2a0Vk0 UK news a 113
+01:02:57 ok 401 OIMAU3vblyw UK news a 263
+01:03:13 ok 402 StMb0OX1huQ UK news a 218
+01:03:30 ok 403 W3zYEw4HfaQ UK news a 70
+01:03:47 ok 404 5npdLoyMERw UK news a 171
+01:04:02 ok 405 vCl8T80jCFI UK news a 34
+01:04:20 ok 406 RfHjoWz-FEc UK news a 255
+01:04:37 ok 407 wrf3hyDMw1k UK news a 123
+01:04:54 ok 408 iienV1OXnoU UK news a 267
+01:05:11 ok 409 RWEj8pUhoxI UK news a 35
+01:05:31 ok 410 F7IeaxBx6yY UK news a 274
+01:05:48 ok 411 P-w5zFiKQ74 UK news a 74
+01:06:05 ok 412 zUbE3mA70EU UK news a 44
+01:06:22 ok 413 0OLxDSQJbmA UK news a 45
+01:06:39 ok 414 ZMBfM1fpaoc UK news a 120
+01:06:55 ok 415 iLzvXdLqIyo UK news a 60
+01:07:12 ok 416 z-VX3w65wzY UK news a 83
+01:07:29 ok 417 USRDGdZfOMk UK news a 280
+01:07:46 ok 418 aoMOwEqJb2E UK news a 192
+01:08:03 ok 419 uX7jlGM7qXk UK news a 66
+01:08:20 ok 420 TpI9mp6QZBI UK news a 176
+01:08:36 ok 421 oH4TWZsRvlo UK news a 79
+01:08:53 ok 422 y98k_dvIpYM UK news a 81
+01:09:10 ok 423 3yoQEaXMuDE UK news a 32
+01:09:27 ok 424 D-C1CnAQPyI UK news a 41
+01:09:44 ok 425 1-_laultAZ0 UK news a 149
+01:10:01 ok 426 OglS3A1tCoc UK news a 250
+01:10:17 ok 427 6zV2k6RObn8 UK news a 38
+01:10:35 ok 428 P_0NqC1AkaA UK news a 47
+01:10:54 ok 429 l88C3w7rbwo UK news a 57
+01:11:32 ok 430 926M7ESWupI UK news a 89
+01:11:49 ok 431 JVGH_vahnRg UK news a 82
+01:12:06 ok 432 vk_pYpBtq8g UK news a 122
+01:12:23 ok 433 w9ptCInYpoo UK news a 69
+01:12:41 ok 434 mFOPB2rrCVg UK news a 253
+01:12:57 ok 435 fh4ikS_PmtA UK news a 256
+01:13:14 ok 436 8cnmieVKX9o UK news a 33
+01:13:39 ok 437 6cUMN9REV3s UK news a 176
+01:13:54 ok 438 mofXloTUY7c UK news a 126
+01:14:09 ok 439 c-oI5eLsjFg UK news a 139
+01:14:24 ok 440 b4dMNjvv0QI UK news a 187
+01:14:39 ok 441 xDMUyeLa5WU UK news a 123
+01:14:53 ok 442 8_jLKo_s3MQ UK news a 65
+01:15:08 ok 443 8DpScvUoFTE UK news a 127
+01:15:23 ok 444 FXXkWOax4p4 UK news a 68
+01:15:38 ok 445 PFaMCOeSmsQ UK news a 118
+01:15:53 ok 446 MLXKRJyxl2s UK news a 52
+01:16:08 ok 447 adRzzNFoT7Y UK news a 378
+01:16:23 ok 448 JItVNqfHruI UK news a 169
+01:16:37 ok 449 MGLY7TtXIr8 UK news a 57
+01:16:52 ok 450 Q8Pj_leFJyM UK news a 46
+01:17:08 ok 451 kAJs1-Jarfk UK news a 164
+01:17:23 ok 452 7lizYXyY-kY UK news a 73
+01:17:38 ok 453 nB--uy4aHHU UK news a 200
+01:17:53 ok 454 jCpfRthoqFs UK news a 82
+01:18:08 ok 455 o8YXuNpxTOc UK news a 174
+01:18:23 ok 456 mE4kkLGjv5s UK news a 94
+01:18:38 ok 457 TmDyQWzHGwA UK news a 50
+01:18:53 ok 458 zfGPP4QUJ_o UK news a 83
+01:19:08 ok 459 MhMZ-FE0aZA UK news a 82
+01:19:23 ok 460 -HHJhniGRtk UK news a 245
+01:19:35 skip (title) ZS1Ermoi5XA 'I'm Jane Doe': Why didn't police and Cornell University act
+01:19:38 ok 461 xeKEsV1d1pw UK news a 105
+01:19:53 ok 462 khcLoa3W6XU UK news a 93
+01:20:08 ok 463 NDrzVOeZvlQ UK news a 117
+01:20:23 ok 464 MhtyvlJnFE8 UK news a 81
+01:20:37 ok 465 mARPpKCPsrk UK news a 81
+01:20:49 skip (title) uXgRZPKxb5c Two Iranian men appear in court over alleged bomb plot targe
+01:20:52 ok 466 MWygZ24uA5I UK news a 96
+01:21:07 ok 467 TpP4rD7IwsM UK news a 499
+01:21:22 ok 468 GCIMhjZn9t8 UK news a 147
+01:21:34 skip (title) Kn0sSdpGkmw Ann Widdecombe murder suspect charged over alleged Nigel Far
+01:21:37 ok 469 proNeKKwUio UK news a 387
+01:21:52 ok 470 dZ_oLAbS8ac UK news a 191
+01:22:08 ok 471 vJhY1Gq582Q UK news a 69
+01:22:22 ok 472 hMt3p5SCkO8 UK news a 142
+01:22:38 ok 473 _GMhQNqkjmQ UK news a 101
+01:22:52 ok 474 Pkv9wZi762c UK news a 164
+01:23:07 ok 475 y2MZhwmbxkA UK news a 125
+01:23:22 ok 476 eBKnrikhW28 UK news a 256
+01:23:47 ok 477 CLbjhGrJM1I UK news a 74
+01:24:02 ok 478 TgXiuGKNlnw UK news a 260
+01:24:14 skip (title) yIdRzCCA6mo The women exposing abuse in Iraq | BBC News
+01:24:17 ok 479 WrXDc2NTVWE UK news a 246
+01:24:32 ok 480 dwZrECaXJnM UK news a 107
+01:24:47 ok 481 JeYa984K1F8 UK news a 378
+01:25:02 ok 482 wsIfoS-y6xg UK news a 222
+01:25:17 ok 483 yl6VPYuN16g UK news a 120
+01:25:32 ok 484 kSYNV89Ddo4 UK news a 289
+01:25:47 ok 485 AForJhHmSqg UK news a 400
+01:26:02 ok 486 79MYsbp0Am8 UK news a 278
+01:26:17 ok 487 C1NgSJT5IbA UK news a 279
+01:26:31 ok 488 on59TwjSU4I UK news a 334
+01:26:46 ok 489 xIgTJMQcElM UK news a 247
+01:27:01 ok 490 eR_6A6wt2AM UK news a 127
+01:27:17 ok 491 83-H_wxJDnI UK news a 170
+01:27:32 ok 492 053o-0z5tPs UK news a 269
+01:27:46 ok 493 k_Hn5k1KMtg UK news a 159
+01:28:02 ok 494 MYuZPC7NSeY UK news a 99
+01:28:16 ok 495 BPy6_rAtB80 UK news a 86
+01:28:31 ok 496 aishn_dcHbc UK news m 316
+01:28:43 skip (title) 0gm4wen2XE4 Saudi capital airport attack kills 12 people and more than 3
+01:28:46 ok 497 udXxZJTUlqU UK news a 123
+01:29:01 ok 498 SfGu6a7jcHI UK news a 62
+01:29:13 skip (title) -R_VIs8pB9c Russian glide bomb attack on Zaporizhzhia kills at least 15 
+01:29:16 ok 499 0aeRrz_UoOI UK news a 221
+01:29:31 ok 500 9zD8hPBSxV4 UK news a 150
+01:29:46 ok 501 x27XXYK2ZuQ UK news a 418
+01:29:58 skip (title) sw8oFluQXHI Saudi nationals killed as Iran-backed Houthis in Yemen step 
+01:30:01 ok 502 69lHWNIbeHI UK news a 360
+01:30:16 ok 503 6SLsGy4QWf0 UK news a 77
+01:30:31 ok 504 y6L8PLb5f_w UK news a 307
+01:30:46 ok 505 cfS-Lc2xaqo UK news a 409
+01:31:00 ok 506 V32lxSGMtWg UK news a 88
+01:31:15 ok 507 tCS5PmhZvkI UK news a 89
+01:31:30 ok 508 n_6r6HlPeL4 UK news a 99
+01:31:45 ok 509 V0Lex_vQ7BU UK news a 123
+01:32:00 ok 510 0yZexfJp9_k UK news a 201
+01:32:15 ok 511 aqb9xH-v7rM UK news a 399
+01:32:27 skip (title) m1tXN-P1774 At least 30 dead in Russian glide bomb attacks on buses in U
+01:32:30 ok 512 YN4KKlhJwwA UK news a 253
+01:32:45 ok 513 YuAsIhLiQMk UK news a 254
+01:33:00 ok 514 JWvrCFXc7uk UK news a 268
+01:33:12 skip (title) yTbyd7ZUM8w Russian strike on buses kills at least 30, say Ukrainian off
+01:33:15 ok 515 jMSadzo_0kk UK news a 134
+01:33:30 ok 516 NJbdYqhqetk UK news a 173
+01:33:55 ok 517 g4gElElBh7M UK news a 247
+01:34:10 ok 518 DXKaZ9ZTN7c UK news a 73
+01:34:24 ok 519 cR80Sz-y3a8 UK news a 58
+01:34:39 ok 520 PfK9Geku8mg UK news m 63
+01:34:54 ok 521 AGO49bKktQU UK news a 416
+01:35:09 ok 522 qKQmkPqffC8 UK news a 305
+01:35:21 skip (title) Og2PETtJaD8 Explosion in northern Israel kills one and injures around 20
+01:35:24 ok 523 PE8QwSEbBcQ UK news a 36
+01:35:39 ok 524 -M4mnDmlqqY UK news a 135
+01:35:54 ok 525 LOtr4Nlt5yc UK news a 126
+01:36:09 ok 526 n68Vr8xWdwg UK news a 74
+01:36:24 ok 527 NgMLV0sapxg UK news a 60
+01:36:39 ok 528 7eaHR-7Ral8 UK news a 29
+01:36:54 ok 529 5ietxrQZzvM UK news a 55
+01:37:09 ok 530 I64yQpXqwIg UK news m 69
+01:37:24 ok 531 5JCrMBtMF6A UK news a 162
+01:37:39 ok 532 f4sEgvRJtoQ UK news a 260
+01:37:53 ok 533 8WcQZctitc0 UK news a 47
+01:38:08 ok 534 msreQncNi5o UK news a 52
+01:38:23 ok 535 70Q53VaOnsE UK news a 63
+01:38:38 ok 536 QxGbyuiu2vQ UK news a 70
+01:38:53 ok 537 0qu0qCu4xeU UK news a 85
+01:39:08 ok 538 QGVsNNyEo1M UK news a 143
+01:39:23 ok 539 FlTj5U-NFk0 UK news a 52
+01:39:38 ok 540 ccCn3MSsb38 UK news a 65
+01:39:52 ok 541 T5CxhSGLm6g UK news a 279
+01:40:07 ok 542 wCcB2hBIyQY UK news a 75
+01:40:22 ok 543 0ZfcSzZ99cw UK news a 73
+01:40:37 ok 544 bt2Ui6PqE4w UK news a 60
+01:40:49 skip (title) xIbpdWqNzgU 12 killed in Houthi attack on Riyadh airport as Saudi-led co
+01:40:49 skip (title) wcHsSLBaEfg Sharpeville massacre, 66 years on: Families still wait for j
+01:40:52 ok 545 p5X7UBk7rPs UK news a 357
+01:41:07 ok 546 iDFpHGupdNA UK news a 160
+01:41:22 ok 547 -E3mfQrwJBc UK news a 52
+01:41:36 ok 548 iUSe86Tz01A UK news a 59
+01:41:51 ok 549 7ELFhNAiLEI UK news a 47
+01:42:07 ok 550 xIZG-v-we8s UK news a 133
+01:42:21 ok 551 LfvG35knQIU UK news a 56
+01:42:36 ok 552 k91O2DYMqj8 UK news a 65
+01:42:51 ok 553 db_9yLNr1yM UK news a 79
+01:43:06 ok 554 0hjkYw7iNK0 UK news a 102
+01:43:21 ok 555 Tz4le5uyKXI UK news a 287
+01:43:36 ok 556 lquVK1K4XQM UK news a 198
+01:44:01 ok 557 39CiNBL5AOM US news m 679
+01:44:16 ok 558 TsBT_0acQ2s US news m 146
+01:44:31 ok 559 GKilyIePAfY US news m 376
+01:44:45 ok 560 OloCnnm38Do US news m 349
+01:45:00 ok 561 R7oTSLm2S60 US news m 116
+01:45:15 ok 562 O9d7sS5RAME US news m 102
+01:45:30 ok 563 MmaljUCRS-M US news m 116
+01:45:45 ok 564 sa1Fj8Tw1f8 US news m 237
+01:45:59 ok 565 PK6hbhBJK4E US news m 98
+01:46:14 ok 566 eE__2uvEVqE US news m 111
+01:46:29 ok 567 VjKREc7YWxo US news m 241
+01:46:43 ok 568 7mfPysnaiyA US news m 133
+01:46:58 ok 569 Wj-c9Bl4q2c US news m 770
+01:47:13 ok 570 LlhJaDBimf8 US news m 160
+01:47:28 ok 571 wiSupRNw9m4 US news m 524
+01:47:42 ok 572 q351rVVb0Ks US news m 495
+01:47:57 ok 573 tjwX3-P5bxU US news m 142
+01:48:12 ok 574 kLPIBCW9jV4 US news m 74
+01:48:27 ok 575 gno6UhBgf0U US news m 354
+01:48:41 ok 576 3qk46xLxn28 US news m 333
+01:48:56 ok 577 Xq9a_RSyuJc US news m 723
+01:49:11 ok 578 rTBsbxqMkM0 US news m 479
+01:49:25 ok 579 rJYuiIBp4X8 US news m 172
+01:49:41 ok 580 9D6D0CTh8iA US news m 474
+01:49:55 ok 581 UlBQDI7jrjk US news m 117
+01:50:10 ok 582 Wur9BVrXaDc US news m 206
+01:50:27 ok 583 rSUHuWhRWIc US news m 99
+01:50:41 ok 584 fNfzwUv9y7w US news m 286
+01:50:57 ok 585 iCGn4i08OJg US news m 643
+01:51:11 ok 586 Eavj9SSHit0 US news m 185
+01:51:29 ok 587 Z00oiTAGPcM US news m 498
+01:51:44 ok 588 8tq_gZOzz1g US news m 423
+01:51:59 ok 589 E-E06RfQJrc US news m 167
+01:52:14 ok 590 g6ybq_tKkJY US news m 632
+01:52:29 ok 591 aBWxz0G_EN4 US news m 266
+01:52:43 ok 592 Lc_tz-za0U4 US news m 97
+01:52:58 ok 593 __kthy06MwI US news m 93
+01:53:15 ok 594 087hVCUFH3c US news m 57
+01:53:29 ok 595 N9izJ3CWxTw US news m 125
+01:53:44 ok 596 vhuaJT2oZ58 US news m 111
+01:54:09 ok 597 2-lquO_CbnE US news a 148
+01:54:24 ok 598 VV3B0KlzRps US news a 95
+01:54:39 ok 599 cryuFtTPzUQ US news a 188
+01:54:55 ok 600 MAwx69TkHYk US news a 148
+01:55:11 ok 601 x2F1g8aRf30 US news a 133
+01:55:26 ok 602 eaoeQVA2KaA US news a 134
+01:55:41 ok 603 QRDa8fpWtfM US news a 225
+01:55:56 ok 604 mv-0eW1wZbY US news a 100
+01:56:11 ok 605 c07cS8zaq2k US news a 66
+01:56:26 ok 606 OW9671L3iWw US news a 72
+01:56:42 ok 607 XouFVK4Hm6A US news a 71
+01:56:57 ok 608 jMbAtbYiOX8 US news a 132
+01:57:12 ok 609 bgAJg6eOVeE US news a 290
+01:57:27 ok 610 -wCkojmgkpM US news a 130
+01:57:43 ok 611 1QEJUo8-tSA US news a 51
+01:57:58 ok 612 2oCNeUHYOK0 US news a 96
+01:58:13 ok 613 olRrOUuU9OI US news a 69
+01:58:28 ok 614 4QBdSEKnVOc US news a 39
+01:58:43 ok 615 UgFrzzR2_eg US news a 77
+01:58:58 ok 616 vkwCU6pJVtU US news a 139
+01:59:14 ok 617 FjhwURB6BLA US news a 121
+01:59:29 ok 618 pvsNNryenco US news a 66
+01:59:45 ok 619 6yuCtXRaqT4 US news a 101
+02:00:00 ok 620 TI3d0P23aRY US news a 66
+02:00:17 clips collected this run: 620 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 620
