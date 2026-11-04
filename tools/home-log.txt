@@ -1,401 +1,389 @@
-Nightly run on the home computer, 2026-11-05 03:38 (last 400 lines of the collector)
-02:06:37 ok 69 zy2qf_pR6OE US interview a 100
-02:06:52 ok 70 qscYIQZ6_so US interview m 112
-02:07:13 ok 71 RF4kur-GU4E US interview a 141
-02:07:28 ok 72 HcZqbw36vH4 US interview a 154
-02:07:43 ok 73 Lvn-YB6zkhY US interview m 91
-02:07:58 ok 74 AO-jbZYX-uc US interview a 159
-02:08:13 ok 75 d-c2tOFxgFw US interview a 64
-02:08:28 ok 76 se1GFRtmtdY US interview a 220
-02:08:43 ok 77 nvEaljYczoU US interview a 319
-02:08:58 ok 78 _RZ3eyjLU_k US interview a 330
-02:09:13 ok 79 D7OWERUMBOI US interview a 183
-02:09:30 rate limited oEnRJsSq1yY HTTP 429: YouTube is limiting caption requests
-02:09:32 skip (captions refused for this clip only) oEnRJsSq1yY
-02:09:41 ok 80 geQgyFcBl5w US interview m 102
-02:09:56 ok 81 GGt6bWOwOBg US interview a 120
-02:10:21 ok 82 8SPEwzAXLs8 US interview m 115
-02:10:36 ok 83 xKV9vG-KfjU US interview a 185
-02:10:51 ok 84 qsoqV3BOSuk US interview a 157
-02:11:06 ok 85 YMo1_var-sM US interview a 324
-02:11:34 ok 86 RzRHIFlyNNI US interview a 142
-02:12:22 ok 87 rq_W8yFa9kg US interview a 299
-02:12:57 ok 88 rVYnYzeY-9A UK news a 307
-02:13:59 ok 89 d03vGv5K8qw UK news m 194
-02:14:13 ok 90 BoLft-buwJ0 UK news m 234
-02:14:30 rate limited CbQyU-clUSg HTTP 429: YouTube is limiting caption requests
-02:14:32 skip (captions refused for this clip only) CbQyU-clUSg
-02:14:41 ok 91 BuczIXfEN0M UK news m 40
-02:15:05 ok 92 TEL-NCWWuzQ UK news a 37
-02:15:20 ok 93 EmkYKaYeBx0 UK news a 58
-02:15:34 ok 94 KXnuNv6AR0g UK news a 102
-02:16:10 ok 95 UP97pE-w31g US news m 22
-02:16:25 ok 96 EbW2cPfZaoY US news m 121
-02:16:39 ok 97 cCTwJHPQjiI US news m 80
-02:16:54 ok 98 dQAWem3Bh5k US news m 101
-02:17:06 skip (title) sdv7LU25xAU News Wrap: Trump says Fort Hood shooter's execution will not
-02:17:09 ok 99 1InmcAy8JkI US news m 83
-02:17:24 ok 100 7ljcS7vdydE US news m 55
-02:17:39 ok 101 EjvZagopmRs US news m 155
-02:17:54 ok 102 5opQUZgQhIc US news m 126
-02:18:08 ok 103 m_BMS0_eZ68 US news m 156
-02:18:23 ok 104 UikW72mtQlg US news m 92
-02:18:38 ok 105 lMmwFGRb5pg US news m 128
-02:18:53 ok 106 Z-YYudmNcQY US news m 72
-02:19:08 ok 107 d7ck9s169ms US news m 77
-02:19:22 ok 108 4AH1tdAv-uQ US news m 151
-02:19:37 ok 109 A0uN1h8xkWw US news m 111
-02:19:52 ok 110 7o_6xxW-Jvo US news m 80
-02:20:07 ok 111 3XC3fiz5708 US news m 115
-02:20:22 ok 112 3CxDlMzxkiw US news m 93
-02:20:37 ok 113 QZrzL_C115Y US news m 51
-02:20:55 ok 114 cG1--aXqVj0 US news m 81
-02:21:10 ok 115 hQ-QXq2uIl0 US news m 62
-02:21:24 ok 116 _gCb7mbsgYs US news m 81
-02:21:41 skip (too short) ekHTwuX_qdI
-02:21:44 ok 117 Al1eH2-HfiQ US news m 113
-02:21:59 ok 118 kOf45TAne1w US news m 46
-02:22:13 ok 119 2X8SVdiGDoE US news m 105
-02:22:28 ok 120 0u8kvjGih8Y US news m 137
-02:22:43 ok 121 7cke7tBW7nE US news m 127
-02:22:58 ok 122 VoGBMW58dgU US news m 77
-02:23:13 ok 123 YxTMDzLgEo4 US news m 160
-02:23:25 skip (title) rU490PgRtLg News Wrap: Riyadh airport closed after Houthi strikes that k
-02:23:27 ok 124 t9dxL91HWMs US news m 93
-02:23:42 ok 125 G7JZdH0A2kE US news m 61
-02:23:57 ok 126 CgWIxbB8f28 US news m 233
-02:24:11 ok 127 kX2ReJ6Icuw US news m 83
-02:24:26 ok 128 WhdW8QKe4u0 US news m 97
-02:24:38 skip (title) jlWklPLijl0 Navi Pillay wins Nobel Peace Prize after long career of inve
-02:24:41 ok 129 HMZUHxv4nXs US news m 60
-02:24:56 ok 130 oVgM1i4_QqU US news m 95
-02:25:08 skip (title) t5yatycSdLU ICE shooting of man in New York with child in his car sparks
-02:25:11 ok 131 Aitp-LEAl1s US news m 108
-02:25:25 skip (title) _uK8AOv6RsI WATCH: Vance says he's 'not going to be watching' livestream
-02:25:28 ok 132 o_ZtmSgTXjQ US news m 101
-02:25:42 ok 133 EwAQMQjABAk US news m 130
-02:25:57 ok 134 uUUKjQ3dKlI US news m 137
-02:26:22 ok 135 Kv87w7i9QN4 US news a 68
-02:26:37 ok 136 YN550xwRQRs US news a 85
-02:26:49 skip (title) QLHeJNmcMwA 911 call from hero father who took down Oregon school shoote
-02:26:51 ok 137 dJsbB1cvhhI US news a 40
-02:27:06 ok 138 sri8Syy5sBs US news a 96
-02:27:21 ok 139 1m10YUhPIHM US news a 264
-02:27:35 ok 140 kMoesHIY7KQ US news a 219
-02:27:50 ok 141 BLdp306U-DY US news a 107
-02:28:05 ok 142 nF2PMKugXEQ US news a 108
-02:28:19 ok 143 OFb824PeFA0 US news a 146
-02:28:34 ok 144 Bg9j44_q6Iw US news a 131
-02:28:46 skip (title) Szp7LZ9GEW0 Faith Hedgepeth's tribe honors her, spotlights indigenous mu
-02:28:49 ok 145 TiPi3WTtx-M US news a 193
-02:29:03 ok 146 iSVR9I7j0lw US news a 118
-02:29:18 ok 147 xlZ_cdjJWOg US news a 117
-02:29:32 ok 148 Mkt5q8LwyFM US news a 507
-02:29:47 ok 149 AXqwIySogXw US news a 36
-02:30:02 ok 150 WubEMStcPps US news a 69
-02:30:16 ok 151 -0Y-it-1XcU US news a 102
-02:30:31 ok 152 mIQZeLIe4ow US news a 133
-02:30:46 ok 153 ESzvtVD6Krw US news a 194
-02:31:00 ok 154 xGADasNNF3g US news a 47
-02:31:15 ok 155 ZMzjiKvBGlE US news a 168
-02:31:30 ok 156 T788Eq48aLE US news a 190
-02:31:44 ok 157 ks5bBoQXg-E US news m 656
-02:31:59 ok 158 Ek5TTaG0G-g US news a 342
-02:32:14 ok 159 PINv0sphqZI US news m 437
-02:32:28 ok 160 MIe-wgfDAvc US news a 98
-02:32:43 ok 161 k2dE3lpYB-Y US news a 100
-02:32:58 ok 162 k4d2P3TkW3s US news a 49
-02:33:12 ok 163 TdDIMI3lGEk US news a 46
-02:33:27 ok 164 0xEHspftwtE US news a 239
-02:33:42 ok 165 ygPhzZSr_EE US news a 134
-02:33:54 skip (title) FOSHplHiNAE NTSB briefing on Learjet crash that killed all 9 on board
-02:33:57 ok 166 WHt8qdqP7KM US news a 77
-02:34:11 ok 167 IlC1yrRuI40 US news a 182
-02:34:26 ok 168 Gkk3UDEDWtc US news a 44
-02:34:41 ok 169 Mvfx0AkoUOw US news a 60
-02:34:55 ok 170 Sk9K6K77cS0 US news a 65
-02:35:10 ok 171 _kAAXYWLfgY US news a 57
-02:35:25 ok 172 vTsuGpSZ7PA US news a 484
-02:35:39 ok 173 RGEtXtnHlNM US news a 36
-02:35:54 ok 174 ASmU3zCS9pM US news a 79
-02:36:19 ok 175 cfgefvJSI9A US news a 442
-02:36:34 ok 176 hOV2MV8Ui5o US news a 377
-02:36:49 ok 177 84HL22P31-s US news a 154
-02:37:04 ok 178 xDIHJNPc8e0 US news a 90
-02:37:18 ok 179 n6E-HHjXFJY US news a 119
-02:37:33 ok 180 Ikt75Q1Ndzw US news a 201
-02:37:49 ok 181 EsB4h5AjJUk US news a 156
-02:38:04 ok 182 o2eHifgzskQ US news a 110
-02:38:19 ok 183 XaSIJzz66Zo US news a 226
-02:38:34 ok 184 re1D-bxZT0o US news a 125
-02:38:49 ok 185 lpGj0avM_hg US news a 150
-02:39:04 ok 186 RQScddUPMvo US news a 69
-02:39:19 ok 187 3f0IiywAf4w US news a 202
-02:39:34 ok 188 8wIeoWZRvFk US news a 78
-02:39:49 ok 189 p3cudBO8l74 US news a 182
-02:40:04 ok 190 VDhnnRGNV1g US news a 55
-02:40:18 ok 191 ls88Ys9NoXg US news a 156
-02:40:34 ok 192 ZNMT8kWzR_Y US news a 101
-02:40:49 ok 193 sVgkETyyuPg US news a 104
-02:41:03 ok 194 Qt3ZmuoyrvE US news a 144
-02:41:18 ok 195 QOCIL_c4JKw US news a 68
-02:41:35 ok 196 ZDk7NZ1NW_Y US news a 70
-02:41:50 ok 197 3x88OF69CaU US news a 91
-02:42:04 ok 198 l0I4WAcSV90 US news a 79
-02:42:19 ok 199 nDnO3hqeKvs US news a 90
-02:42:34 ok 200 7kYuqCcoJHE US news a 81
-02:42:49 ok 201 XbGWzz8NBYc US news a 78
-02:43:03 ok 202 eZ-v2REj0fo US news a 185
-02:43:18 ok 203 KHjdMN-k_Go US news a 202
-02:43:33 ok 204 6YJR3ma3vHI US news a 223
-02:43:48 ok 205 asGfNIoefc0 US news a 100
-02:44:03 ok 206 eNQLHz14OmE US news a 228
-02:44:18 ok 207 Js9PiFEZPjs US news a 264
-02:44:34 ok 208 zItRSuDkhZs US news a 170
-02:44:49 ok 209 D_QTM7ss2gk US news a 163
-02:45:03 ok 210 LJNiKwI-__o US news a 68
-02:45:18 ok 211 TZS0CjDjsqg US news a 222
-02:45:33 ok 212 se2HSfDtGXw US news a 212
-02:45:48 ok 213 DWqZEtOFy7I US news a 120
-02:46:03 ok 214 xbMsVsU3BNM US news a 236
-02:46:27 ok 215 M5BUxy3XdE4 US news a 76
-02:46:42 ok 216 -MwU0N6oNhk US news a 193
-02:46:56 ok 217 CE3X6HllXns US news a 382
-02:47:11 ok 218 J153W5KxPuM US news m 134
-02:47:23 skip (title) ZwiPm4kcoUw Minnesota Grieves After 2 Killed, 17 Injured In School Shoot
-02:47:25 ok 219 R2_FwWWAlZs US news a 218
-02:47:40 ok 220 PSE3UtBJbEs US news a 179
-02:47:54 ok 221 l-ShpgxDEok US news a 173
-02:48:09 ok 222 7ARk1LH7ZOY US news a 214
-02:48:23 ok 223 rdJVXau32ek US news a 205
-02:48:38 ok 224 cDOyFjnvKVQ US news a 171
-02:48:53 ok 225 UxbIKnxBpkg US news a 195
-02:49:07 ok 226 TXEg8aKe3ZM US news a 166
-02:49:22 ok 227 5JsgVf03_UU US news a 221
-02:49:37 ok 228 cTxK1A7YkqE US news a 221
-02:49:49 skip (title) yPzkC4XRBTA Supreme Court Pressed To Overturn Same-Sex Marriage Decision
-02:49:52 ok 229 ARmB6UiBF_0 US news a 238
-02:50:06 ok 230 sasgEHBqbsY US news a 203
-02:50:21 ok 231 aerCH4PeSUs US news a 219
-02:50:35 ok 232 7KATKlDrXHk US news a 199
-02:50:50 ok 233 hVtyfIb8JoY US news a 176
-02:51:04 ok 234 n7y4BIbt2Q4 US news a 209
-02:51:19 ok 235 TmIChfRY77Q US news a 195
-02:51:34 ok 236 OPwimVAWaQg US news a 219
-02:51:48 ok 237 c8av5qWwYb4 US news a 169
-02:52:03 ok 238 lGtruHz0w5M US news a 229
-02:52:15 skip (title) AyO9TRJH4Zk NYC's Mayor Says Shooting Suspect Was Targeting The NFL | NP
-02:52:17 ok 239 xP5XwOekH58 US news a 206
-02:52:32 ok 240 d8EgyCN3-BM US news a 156
-02:52:46 ok 241 Y3WV_J6Xkp8 US news a 200
-02:53:01 ok 242 1mSofa43wGQ US news a 201
-02:53:15 ok 243 -A-OyQspee4 US news a 78
-02:53:30 ok 244 yF9WjSwW0Zw US news a 242
-02:53:44 ok 245 Ls01gJ7JUcM US news a 170
-02:53:59 ok 246 b5BXYCZz1Gs US news a 206
-02:54:13 ok 247 EzhdaHKo_Wc US news a 203
-02:54:28 ok 248 G1vqmHiSl2o US news a 175
-02:54:43 ok 249 vK9K_pp_dVQ US news a 208
-02:54:58 ok 250 4SBEI71h8ww US news a 248
-02:55:13 ok 251 RwkwMdGaqeg US news a 198
-02:55:27 ok 252 dcucegIljlg US news a 210
-02:55:42 ok 253 wsz7oB66nf0 US news a 184
-02:55:56 ok 254 kKqI_OoJNzs US news a 190
-02:56:20 ok 255 m-Q-OQEev6c US news a 41
-02:56:35 ok 256 DIt_NdZR-vY US news a 338
-02:56:50 ok 257 kyKFHJTOLxY US news a 315
-02:57:05 ok 258 s8lLZ6DcAPs US news a 392
-02:57:19 ok 259 JNg30J6_Dqc US news a 303
-02:57:35 ok 260 _xw91qcj-3g US news a 49
-02:57:50 ok 261 E_k9f999Erw US news a 333
-02:58:05 ok 262 roHFRhhx2Oc US news a 333
-02:58:20 ok 263 6b3OcNaQp60 US news a 149
-02:58:35 ok 264 pfH0L9Ao3bY US news a 155
-02:58:50 ok 265 EqtGdqwXGD4 US news a 353
-02:59:05 ok 266 FF2skImueOE US news a 333
-02:59:19 ok 267 WUg3qOeDNME US news a 324
-02:59:34 ok 268 dDveT8OesWA US news a 315
-02:59:49 ok 269 _885AyhnWGE US news a 40
-03:00:01 skip (title) iQveoPG9imo Trump on White House Correspondents’ Dinner shooting
-03:00:01 skip (title) wIOvAl8u1xs Trump says he "wasn't making it that easy" for Secret Servic
-03:00:04 ok 270 CtQEYRQ0KJ4 US news a 105
-03:00:18 ok 271 acrjgyvxmog US news a 296
-03:00:30 skip (title) 5luISAp_DPw Rachel Goldberg-Polin on grief after Hamas abducted, killed 
-03:00:33 ok 272 ev0hvfrLmvw US news a 307
-03:00:48 ok 273 2xe_5qDMdfs US news a 106
-03:01:03 ok 274 PTmLKfWjwEo US news a 41
-03:01:18 ok 275 3nQvcTYxVi8 US news a 336
-03:01:33 ok 276 ylbvU-lmcpI US news a 343
-03:01:48 ok 277 NVDZYjwSkck US news a 327
-03:02:03 ok 278 urhyDUUqGCY US news a 153
-03:02:18 ok 279 3W1qAkj96Sk US news a 160
-03:02:33 ok 280 2SWPM8_MmCM US news a 332
-03:02:48 ok 281 B1AKRiZunKA US news a 40
-03:03:03 ok 282 dz1LYJBZp84 US news a 342
-03:03:18 ok 283 9Hm0_-bOB4Y US news a 355
-03:03:33 ok 284 d_Qkv_5D6-4 US news a 321
-03:03:47 ok 285 2Z2ZEp_XxkY US news a 151
-03:04:02 ok 286 CjCyn4ktWf0 US news a 159
-03:04:17 ok 287 Im4zC3-3Odo US news a 342
-03:04:32 ok 288 IC4A6c8dHEM US news a 322
-03:04:47 ok 289 vydmUCGQnyI US news a 75
-03:05:03 ok 290 M2PUn-eFPE8 US news a 275
-03:05:18 ok 291 jgT8URb0HO8 US news a 324
-03:05:33 ok 292 90by1ya1W9c US news a 35
-03:05:48 ok 293 gJImdimSsFY US news a 344
-03:06:04 ok 294 BtfWH8sb6ig US news a 170
-03:06:28 skip (too short) I4QU2ITMnoQ
-03:06:32 rate limited zMG9RrjTPco HTTP 429: YouTube is limiting caption requests
-03:06:35 skip (captions refused for this clip only) zMG9RrjTPco
-03:06:46 rate limited a6hLT6ZClJI HTTP 429: YouTube is limiting caption requests
-03:06:48 skip (captions refused for this clip only) a6hLT6ZClJI
-03:06:58 rate limited ILyAN4IQvJY HTTP 429: YouTube is limiting caption requests
-03:07:01 skip (captions refused for this clip only) ILyAN4IQvJY
-03:07:10 ok 295 Ee3jb4dISK4 US news a 49
-03:07:25 ok 296 _pjxfYd8Cts US news a 66
-03:07:40 ok 297 ARPB-XKvzo4 US news a 33
-03:07:56 rate limited tRrZt14ZnQ0 HTTP 429: YouTube is limiting caption requests
-03:07:58 skip (captions refused for this clip only) tRrZt14ZnQ0
-03:08:07 skip (too short) 8Qs0LP-N4EQ
-03:08:09 ok 298 Jx2QdK6KOXA US news a 39
-03:08:21 skip (title) j18d40ZIcH8 A helicopter with the EU force in Bosnia crashes, reportedly
-03:08:26 ok 299 II4Wp-dhkYg US news a 53
-03:08:40 ok 300 bTcmIjndw_8 US news a 34
-03:08:55 ok 301 D15EZ6t9-b8 US news a 46
-03:09:11 ok 302 cboIToyQu5s US news a 495
-03:09:25 ok 303 ND32ZnQzwwA US news a 32
-03:09:40 ok 304 JabwdX-LoTE US news a 26
-03:09:57 rate limited 9T4XqazbX7U HTTP 429: YouTube is limiting caption requests
-03:09:59 skip (captions refused for this clip only) 9T4XqazbX7U
-03:10:08 ok 305 w2TBnpweUPM US news a 44
-03:10:23 ok 306 Ii8VcXw_Diw US news a 24
-03:10:35 skip (title) _ATui0GwUQA Chicago's Hindu community remains resilient after alleged ma
-03:10:37 ok 307 tgZMALfFGcU US news a 27
-03:10:52 ok 308 d0c9FLRdI78 US news a 43
-03:11:06 ok 309 wTs_3pyjFPg US news a 33
-03:11:18 skip (title) Wn6LHXf5z7E High-speed train crash in Spain kills at least 68 people
-03:11:21 ok 310 BKd5k9SA8dw US news a 28
-03:11:35 ok 311 En0AyILDmjQ US news a 59
-03:11:50 ok 312 DC6G2pSXhos US news a 33
-03:12:04 ok 313 nJ7q9Nt0qZg US news a 32
-03:12:19 ok 314 zkIUzMYc6Hw US news a 26
-03:12:31 skip (title) p68Jo3QZ_NQ Tennessee US House candidate Brent Taylor admits to an ‘indi
-03:12:33 ok 315 hMwIxcMLylY US news a 30
-03:12:45 skip (title) X3wiQjv4EUc Assailant killed after attacking an officer outside the Isra
-03:12:49 skip (too short) QhDCjXUu-ws
-03:12:53 rate limited wKVD14csodg HTTP 429: YouTube is limiting caption requests
-03:12:56 skip (captions refused for this clip only) wKVD14csodg
-03:13:06 rate limited SizBIBFR6vA HTTP 429: YouTube is limiting caption requests
-03:13:08 skip (captions refused for this clip only) SizBIBFR6vA
-03:13:19 ok 316 kaOPw1xm8K4 US news a 35
-03:13:33 ok 317 kC5cXIFr9E8 US news a 39
-03:13:48 ok 318 acWT_nt0UeQ US news a 40
-03:14:02 ok 319 nm4c-BtQ0uU US news a 27
-03:14:17 ok 320 h31XMqhtqRQ US news a 44
-03:14:32 ok 321 U7lm0H8yyiY US news a 31
-03:14:46 ok 322 E2TTs6zmvuk US news a 90
-03:15:03 rate limited 041_jUmTrvA HTTP 429: YouTube is limiting caption requests
-03:15:07 skip (captions refused for this clip only) 041_jUmTrvA
-03:15:15 ok 323 1C4mvYCbWgs US news a 34
-03:15:30 ok 324 HMgre4JcBKc US news a 43
-03:15:45 ok 325 JRkTZjXbazg US news a 20
-03:15:59 ok 326 Szkl3jGbxBI US news a 46
-03:16:14 ok 327 cx9jsHeb_oE US news a 30
-03:16:28 ok 328 GPAHTaA5k1c US news a 99
-03:16:43 ok 329 QHioBjOg9Lk US news a 46
-03:17:00 ok 330 SEMDdhMTnjI US news a 37
-03:17:14 ok 331 XAMtLuIpkdk US news a 28
-03:17:31 rate limited jpOcvO90VCY HTTP 429: YouTube is limiting caption requests
-03:17:33 skip (captions refused for this clip only) jpOcvO90VCY
-03:17:44 rate limited yVfmpjb7WB8 HTTP 429: YouTube is limiting caption requests
-03:17:47 skip (captions refused for this clip only) yVfmpjb7WB8
-03:17:55 ok 332 AtisrkJGb8g US news a 27
-03:18:10 ok 333 x9fRToI9P4c US news a 24
-03:18:25 ok 334 N095WEmoPB4 US news a 49
-03:18:50 ok 335 FI7r_sxrP3s US news a 182
-03:19:05 skip (too short) _6Eu1NdVP-I
-03:19:07 ok 336 X7COAAyajQs US news m 52
-03:19:22 ok 337 0wQO7nQ5YnU US news m 146
-03:19:36 ok 338 0FPl9io0XIk US news m 514
-03:19:51 ok 339 SD1_wmDzQnw US news m 62
-03:20:06 ok 340 mmfZHIsJ4FU US news m 81
-03:20:21 ok 341 sFKG_jBmjDA US news m 679
-03:20:36 ok 342 EcFmiDAr5Vs US news m 178
-03:20:48 skip (title) geH1DRc3a1U Train crash kills at least 68 in Spain
-03:20:48 skip (title) pyimfCptuDg Hayden Panettiere overdose death ruled an accident
-03:20:51 ok 343 bA22mnWNXn8 US news m 142
-03:21:06 ok 344 8S_6ud1Y-3k US news m 248
-03:21:20 ok 345 -pjm8epal6o US news m 130
-03:21:35 ok 346 NEpIPcZRi2g US news m 86
-03:21:50 ok 347 fYIYYpStSsA US news m 49
-03:22:05 ok 348 hXZVC2fy0SE US news m 54
-03:22:20 ok 349 bbHtiC0QOno US news m 49
-03:22:35 ok 350 UWi3sy-KA3I US news m 338
-03:22:50 ok 351 FxLSnIlvTXE US news m 143
-03:23:05 ok 352 nlWviKs1WaM US news m 139
-03:23:20 ok 353 AlM_-8qXEXg US news m 69
-03:23:35 ok 354 GNcQzNNiNPY US news m 179
-03:23:50 ok 355 AvrQF2DlYvc US news m 314
-03:24:05 ok 356 DoRQfqI-jDE US news m 238
-03:24:20 ok 357 bmgZi1NhOM8 US news m 623
-03:24:35 ok 358 OFrNYMviEis US news m 82
-03:24:49 ok 359 GgqFaYq3hTY US news m 76
-03:25:04 ok 360 RPYb6E_whXs US news m 72
-03:25:19 ok 361 zoQ4GEbuWng US news m 96
-03:25:34 ok 362 6aW2daApYqI US news m 141
-03:25:49 ok 363 nd8yUSatrOU US news m 110
-03:26:04 ok 364 iJYlbkhJAj4 US news m 43
-03:26:19 ok 365 Yy3E94kQH60 US news m 116
-03:26:31 skip (title) 4hWbz-rabX8 Serial killer Ted Bundy linked to 1974 murder of Utah teenag
-03:26:34 ok 366 FivbR_reR-c US news m 88
-03:26:49 ok 367 vIQTEa4KwPo US news m 129
-03:27:04 ok 368 0C2Q_LB7XQg US news m 34
-03:27:19 ok 369 PwAq6RPd28o US news m 53
-03:27:34 ok 370 mj_-j313KRk US news m 73
-03:27:48 ok 371 0Jq1RhzBQIA US news m 55
-03:28:03 ok 372 zKeS1_2iuGE US news m 77
-03:28:18 ok 373 _VNFTUU9MrA US news m 51
-03:28:33 ok 374 f26NBjo9BXY US news m 346
-03:28:57 ok 375 GYfk7Dqlxjg US news m 237
-03:29:11 ok 376 mFBWxl3V-T4 US news m 658
-03:29:26 ok 377 zyRqr4vdGkI US news m 87
-03:29:40 ok 378 E_E3NGqGqhQ US news m 198
-03:29:54 ok 379 -p-Nbvx6vmw US news m 88
-03:30:09 ok 380 dPeel--nO9o US news m 548
-03:30:23 ok 381 HVeipk45BaM US news m 477
-03:30:38 ok 382 cU4itPv1OMc US news m 83
-03:30:52 ok 383 3a721MId8AI US news m 75
-03:31:07 ok 384 _75_ciqoSZo US news m 97
-03:31:22 ok 385 nNuLlNdc_Co US news m 181
-03:31:36 ok 386 TZPFjWAPGMc US news m 114
-03:31:51 ok 387 8C2Tn8Emmfk US news m 341
-03:32:05 ok 388 znwDXOQSPSE US news m 96
-03:32:20 ok 389 QUherFXq_bE US news m 512
-03:32:34 ok 390 bF1CNcr43Nw US news m 514
-03:32:49 ok 391 Z6m1gjt4MYQ US news m 672
-03:33:03 ok 392 6IsD0Jumj1g US news m 92
-03:33:18 ok 393 N88IS-RxHfA US news m 98
-03:33:33 ok 394 zoAsmX03ZMY US news m 203
-03:33:49 ok 395 t3NU_ZQz_Oo US news m 99
-03:34:04 ok 396 KLAQxEyJ5C0 US news m 487
-03:34:18 ok 397 0vibG3S9u4Q US news m 105
-03:34:30 skip (title) SVBCyDXwB-I GOP Senator goes off on Trump for praising Putin: ‘He is a m
-03:34:33 ok 398 uNfAJRg1g7I US news m 465
-03:34:47 ok 399 jNIs8q_J1IM US news m 178
-03:35:03 ok 400 FQTdUTzPEvk US news m 100
-03:35:17 ok 401 Es653DQkRcc US news m 183
-03:35:32 ok 402 Ofj3QphQNB4 US news m 87
-03:35:46 ok 403 VhxwlsDQ-Qk US news m 96
-03:36:01 ok 404 Fi6y1cG3huo US news m 530
-03:36:15 skip (title) 2Ogwwucp6fI Vance pressed by man whose wife was killed by Iranian drone
-03:36:17 ok 405 gjTlB4WYCl8 US news m 716
-03:36:32 ok 406 UVVCj0EmZMU US news m 517
-03:36:46 ok 407 V5mJ_cZeOYs US news m 169
-03:37:01 ok 408 FBnyDvYw0Pg US news m 113
-03:37:15 ok 409 qwxhv4N2bOw US news m 218
-03:37:30 ok 410 JXyja2nQgfw US news m 222
-03:37:44 ok 411 OZpa3UWjQu4 US news m 120
-03:37:59 ok 412 fFtsub6AajI US news m 115
-03:38:14 ok 413 tbJSjWbELdc US news m 134
-03:38:28 ok 414 NiHyEuQ2E3I US news m 146
-03:38:46 clips collected this run: 414 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 414
+Nightly run on the home computer, 2026-11-05 05:26 (last 400 lines of the collector)
+03:41:19 29515 clips published; 6125 on the skip list; 0 removed by the skip list
+03:41:45 ok 1 _BWJ9K1sRsY AUS kids a 63
+03:44:37 skip (title) 5b6Oe5lR4Zw Savage House (2026) 4K - Killing His Wife's Lover Drives Him
+03:44:40 ok 2 q-DSPY3vkeg US movie a 28
+03:52:52 skip (title) LfU05c4WwY4 Qiulae Wong calls for NZ First candidate Michael Laws to sta
+03:53:19 ok 3 XXnDWre9P4I NZ news a 86
+03:53:35 ok 4 r3e9wD9ViMY NZ news a 236
+03:53:54 ok 5 PcBbdP7WHB8 NZ news a 101
+03:54:14 ok 6 LBcIe7_tReU NZ news a 43
+03:56:09 ok 7 6HWW0b-z0WA CAN news a 190
+03:56:24 ok 8 V1bLawoIUfs CAN news a 320
+03:56:41 ok 9 bqyn4x-nCX8 CAN news a 229
+03:56:57 ok 10 h3a8mvD_y7Q CAN news a 173
+03:57:14 ok 11 _RIkuA3zqxs CAN news a 40
+03:57:30 ok 12 USQj8Y-lqJQ CAN news a 74
+03:57:46 ok 13 4hXb0TAzVDQ CAN news a 67
+03:58:02 ok 14 zeJpmqDHZYE CAN news a 46
+03:58:18 ok 15 O7dv5GfJrrY CAN news a 54
+03:58:32 ok 16 -D0q8wT2CdE CAN news a 89
+03:58:48 ok 17 nIQEMQjyYoU CAN news a 157
+03:59:04 ok 18 g8MBnsX4Iug CAN news a 80
+03:59:21 ok 19 mJ8GccMic28 CAN news a 178
+03:59:37 ok 20 DUlyaxWe2zg CAN news a 56
+04:00:00 ok 21 t2CYqG_VWIw CAN news a 128
+04:00:15 ok 22 Zt6LlvBdt_8 CAN news a 76
+04:02:01 ok 23 6aa2O3R-Xww UK news a 528
+04:02:25 ok 24 NtB0LtUy4DY UK news a 379
+04:02:40 ok 25 erhCjSbgBNA UK news a 428
+04:03:04 ok 26 Hppt5q4MBqs UK news a 420
+04:03:19 ok 27 NrfGMVO3Xmc UK news a 179
+04:03:43 ok 28 3IDmJ43rEJU UK news a 29
+04:04:00 ok 29 kzsDod6PAfI UK news a 31
+04:04:16 ok 30 0A9b9nhg3qw UK news a 44
+04:04:40 ok 31 0RdwoS4bmpM UK news a 397
+04:05:04 ok 32 a60gyUKUnt4 UK news a 239
+04:05:19 ok 33 pTrjuez99Iw UK news a 290
+04:05:42 ok 34 -rsnI8MEXhA UK news a 128
+04:06:06 ok 35 -mqnBKkrpAU US news a 51
+04:06:20 ok 36 2BAHo9gIAjo US news a 29
+04:06:37 skip (too short) 5nDr5uRGCNg
+04:06:39 ok 37 LS357FF_a3M US news a 24
+04:06:59 ok 38 Ntl23vsubGU US news a 57
+04:07:17 ok 39 RJHUrXhcynw US news a 32
+04:07:32 ok 40 kMVNuoZ_9L4 US news a 42
+04:07:44 skip (title) x3hfMLaXvLg Gunmen open fire at a church during a funeral in Jordan, kil
+04:07:44 skip (title) zJTs1ZArE8Q 1 person is killed in a shooting that France officials are c
+04:07:47 ok 41 W2mFtHx-pWY US news a 21
+04:08:02 skip (too short) ec1VcRtPieI
+04:08:04 ok 42 uekPXEGdeiA US news a 60
+04:08:19 ok 43 YknB3uw08x0 US news a 49
+04:08:34 ok 44 u55NtxNQLSQ US news a 25
+04:08:48 ok 45 c1L7gqGy9Ug US news a 40
+04:09:03 ok 46 A0Yr-EdbEvE US news a 52
+04:09:17 ok 47 0AsMeibRX8Q US news a 39
+04:09:32 ok 48 rRvUsQ7TLKM US news a 27
+04:09:46 ok 49 KQCBdd5f38s US news a 106
+04:10:01 ok 50 xxNlVyTOSlM US news a 25
+04:10:16 ok 51 gEALhhHvz0w US news a 32
+04:10:30 ok 52 EiHAdGQFTh0 US news a 34
+04:10:45 ok 53 LlzbvvCVljs US news a 34
+04:10:59 ok 54 SGfCZOsjUNM US news a 32
+04:11:14 ok 55 ImeqlqUDG84 US news a 32
+04:11:28 ok 56 ndZWe7eVH4I US news a 51
+04:11:43 ok 57 krvraS8Amfc US news a 35
+04:11:58 ok 58 Kz9yxgaOCH4 US news a 32
+04:12:12 ok 59 7nZtzhPFjNU US news a 56
+04:12:27 ok 60 flIIjd-mORw US news a 42
+04:12:41 ok 61 Uc2ShTKt7Hw US news a 49
+04:12:56 ok 62 HKGq1MAL9q0 US news a 29
+04:13:11 ok 63 0RH3CyUQxgA US news a 45
+04:13:27 ok 64 -sklEwwahIw US news a 38
+04:13:46 ok 65 Y4uQVf97SjE US news a 44
+04:14:00 ok 66 lHvJ72lKsmY US news a 38
+04:14:15 ok 67 qeYoXodSg9U US news a 22
+04:14:30 ok 68 ubXGIZEBjTM US news a 65
+04:14:44 ok 69 3iKyD4mWB_Y US news a 39
+04:14:59 ok 70 8gIRXSKq2hk US news a 42
+04:15:14 ok 71 Qr92L9_8SIM US news a 45
+04:15:29 ok 72 tjIb3KaQfCg US news a 26
+04:15:43 ok 73 bsmlOFeqNVg US news a 32
+04:15:58 ok 74 QR2g9l31GGc US news a 24
+04:16:22 ok 75 M_TF6snx0uo US news a 215
+04:16:36 ok 76 R2W8wBQAgjI US news a 137
+04:16:51 ok 77 khacXIOBc84 US news a 214
+04:17:06 ok 78 0wTVxnSSMs8 US news a 109
+04:17:21 ok 79 6GFHl4HhGyU US news a 132
+04:17:36 ok 80 AWPf4X1qmL4 US news a 217
+04:17:51 ok 81 gcGdxDC9ayY US news a 105
+04:18:05 ok 82 Nikbk6JBQBs US news a 73
+04:18:20 ok 83 ilHhmHlYxV0 US news a 64
+04:18:35 ok 84 nUdgG96rwAs US news a 56
+04:18:50 ok 85 B_uKj5zlqxg US news a 70
+04:19:04 ok 86 0LspZIV4_kE US news a 103
+04:19:19 ok 87 0UsQSMs9OIQ US news a 96
+04:19:31 skip (title) hhMSMA-XBFg At least 68 killed in high-speed train accident in Spain
+04:19:34 ok 88 -_bgFJNOZb8 US news a 112
+04:19:49 ok 89 boAc02m1R84 US news a 277
+04:20:04 ok 90 YY-isc_a7k4 US news a 213
+04:20:20 ok 91 -crqtAyBlDU US news a 194
+04:20:35 ok 92 fktJRR96xwI US news a 145
+04:20:49 ok 93 wqBAp1X9Mak US news a 97
+04:21:04 ok 94 xc5kda48Rfo US news a 126
+04:21:18 ok 95 MM3TbvW_eCo US news a 58
+04:21:34 ok 96 C7W5vGweaGw US news a 159
+04:21:49 ok 97 CDQ17Qp8VwA US news a 86
+04:22:03 ok 98 oTR6l6mkIzM US news a 116
+04:22:18 ok 99 7xDJ1keXUac US news a 102
+04:22:33 ok 100 HERrAnlIdqM US news a 178
+04:22:48 ok 101 _JKcQAZPJac US news a 218
+04:23:03 ok 102 jiQmTKvOz-Q US news a 76
+04:23:18 ok 103 UcPUBm9X56s US news a 29
+04:23:33 ok 104 B12E-rgdYMk US news a 56
+04:23:45 skip (title) -iFERqJaRTI Serial killer Ted Bundy linked to 1974 cold case murder of U
+04:23:48 ok 105 tQXjJyHG7rA US news a 253
+04:24:03 ok 106 _2oMQJTWT-s US news a 270
+04:24:18 ok 107 wspa4yRxMH0 US news a 101
+04:24:32 ok 108 -RM63SickPc US news a 107
+04:24:44 skip (title) K4gawvqMbSs Dozens killed in high-speed train collision in Spain
+04:24:47 ok 109 Z42QssZPJD8 US news a 289
+04:25:02 ok 110 oexZNqj49TY US news a 193
+04:25:17 ok 111 UMmXtZ_NB44 US news a 77
+04:25:31 ok 112 mj1ghRHh2d0 US news a 43
+04:25:46 ok 113 dHDc7ws8sSE US news a 57
+04:26:02 ok 114 kM_od7HAp2Q US news a 75
+04:26:26 ok 115 pB1SxTuGuEQ US news m 60
+04:26:41 ok 116 n1pS1YxBJnk US news m 351
+04:26:56 ok 117 izDEs5jjx0Y US news m 590
+04:27:11 ok 118 c_m4Qx62uDQ US news m 119
+04:27:27 ok 119 sLHUajA3xgw US news m 615
+04:27:41 ok 120 EflZK6D0yzc US news m 642
+04:27:56 ok 121 lBc449d-K6c US news m 527
+04:28:11 ok 122 MjpAVgmNrak US news m 63
+04:28:26 ok 123 Zhkc6gNsW2Y US news m 70
+04:28:41 ok 124 PEuMQZgLMiE US news m 35
+04:28:56 ok 125 R50L0M6h5G8 US news m 62
+04:29:11 ok 126 fJt5xFZXIEQ US news m 96
+04:29:23 skip (title) gnZ2BOXqGTg Manhunt underway for convicted murderer who escaped from Ten
+04:29:26 ok 127 R80G8A20cLE US news m 51
+04:29:41 ok 128 t2FshwJWik8 US news m 52
+04:29:56 ok 129 IdxFCPVmN2Y US news m 47
+04:30:11 ok 130 Ag6QhUfBymE US news m 113
+04:30:26 ok 131 nTJlFPwiRj8 US news m 129
+04:30:42 ok 132 G4Ot5VIftfo US news m 321
+04:30:57 ok 133 RxUEYINOgBs US news m 647
+04:31:12 ok 134 UxdFCIjFQC4 US news m 103
+04:31:27 ok 135 mrcAfS6S1G0 US news m 108
+04:31:41 ok 136 GabkfsOhzb8 US news a 76
+04:31:56 ok 137 M67YW07ux5g US news m 73
+04:32:11 ok 138 IjCJKr_KzRw US news m 133
+04:32:26 ok 139 bVIYx1OXqZ0 US news m 460
+04:32:38 skip (title) 0cpKynwMak0 BREAKING: Police arrest a 15-year-old in shooting near Flori
+04:32:41 ok 140 -ruULCHm9eQ US news m 625
+04:32:55 ok 141 6CLDvqUhGQA US news m 98
+04:33:13 ok 142 M9q8BEHqtmI US news m 104
+04:33:28 ok 143 c3hLqriqViU US news m 49
+04:33:43 ok 144 iUsYyynC2-s US news m 55
+04:33:58 ok 145 FZOgKUb4u9w US news m 64
+04:34:13 ok 146 mtFrbm0GRsg US news m 50
+04:34:28 ok 147 3ToPLHvpMI4 US news m 50
+04:34:43 ok 148 B0CfBxChhG8 US news a 376
+04:34:57 ok 149 66EoWu0FCwg US news m 71
+04:35:12 ok 150 LwynbWghLLw US news m 311
+04:35:28 ok 151 rvqKkz-fJ_k US news m 43
+04:35:43 ok 152 BTrNs7qWmu4 US news m 26
+04:35:58 ok 153 g9HG2h9IHuo US news m 468
+04:36:10 skip (title) bGd2hPensjw Mike Rogers on Trump calling Abdul El-Sayed a terrorist: ‘I'
+04:36:13 ok 154 b1rdKIg5Ois US news m 324
+04:36:37 ok 155 CYb7ve0yTJw US news m 88
+04:36:52 ok 156 lEBd7H1pBKs US news m 94
+04:37:06 ok 157 9yxoQH13l48 US news m 93
+04:37:21 ok 158 Nmx_edBsgKU US news m 111
+04:37:35 ok 159 YMwVOj1E888 US news m 58
+04:37:52 ok 160 6PODi-8Kk94 US news m 125
+04:38:06 ok 161 MVms03IeqQU US news m 71
+04:38:18 skip (title) NfsVY_HDp10 The evidence suggesting GLP-1s can curb drug and alcohol cra
+04:38:21 ok 162 c9nlXPAC1bM US news m 129
+04:38:36 ok 163 NdJW0eY2VB0 US news m 63
+04:38:50 ok 164 kKlcUwE1Dgs US news m 83
+04:39:05 ok 165 KUE5WU8fyIY US news m 61
+04:39:17 skip (title) uGMB6Lm0aJY What the Cornell case reveals about how sexual assault alleg
+04:39:21 ok 166 TRInFQmG9xo US news m 51
+04:39:36 ok 167 fMNRXIKmiHs US news m 50
+04:39:51 ok 168 i4yh1MrqyzA US news m 28
+04:40:05 ok 169 HiM32zKbIxE US news m 54
+04:40:20 ok 170 RRfFnkVIxIE US news m 45
+04:40:34 ok 171 ad1x8siM4B0 US news m 33
+04:40:49 ok 172 DJmBjEwHBxM US news m 130
+04:41:03 ok 173 ZrPNa9os53g US news m 160
+04:41:18 ok 174 O6k2rZ4lup0 US news m 171
+04:41:30 skip (title) rxReIXbTppo Haitian student's suicide reveals human toll of immigration 
+04:41:32 ok 175 pYCEg4eKZo8 US news m 77
+04:41:47 ok 176 Lba70asOH7s US news m 51
+04:41:59 skip (title) 4rJstfmMCkM News Wrap: Cornell says Sally Yates will review handling of 
+04:42:02 ok 177 vT2ru_sQPTs US news m 37
+04:42:16 ok 178 JcghcEkrmFg US news m 62
+04:42:31 ok 179 AsNsSd7QHWI US news m 100
+04:42:45 ok 180 GuYpIWkg-ZM US news m 159
+04:43:00 ok 181 -jCdM-KcsUU US news m 119
+04:43:14 ok 182 74s5FaUFc4o US news m 99
+04:43:26 skip (title) Sl6zhi3ilt4 Marine's murder charge in Japan fuels local debate over U.S.
+04:43:29 ok 183 n_KQelyqtsg US news m 98
+04:43:41 skip (title) EOk9hgBjlcg News Wrap: Cornell students protest handling of alleged rape
+04:43:43 ok 184 shluoso7LZY US news m 128
+04:44:00 ok 185 yF1rzzxe2vc US news m 140
+04:44:14 ok 186 a39RzsEcbdI US news m 77
+04:44:29 ok 187 yP9wGEo3NqI US news m 195
+04:44:43 ok 188 DJD6A6DffKw US news m 88
+04:44:58 ok 189 K7X4MNxUrGY US news m 101
+04:45:10 skip (title) gm8FA56yI2o News Wrap: New York AG appointed as special prosecutor in Co
+04:45:12 ok 190 VZs8SqWYuGE US news m 121
+04:45:28 skip (title) DC8JUMghtUM WATCH: Hochul explains why she appointed James as special pr
+04:45:30 ok 191 thvuNk8cYSA US news m 94
+04:45:45 ok 192 EJB6z-IZdVk US news m 125
+04:46:00 ok 193 u3J_MJ7Piz8 US news m 123
+04:46:14 ok 194 OdV_NI_DZ6w US news m 107
+04:46:39 ok 195 44HPl2yfY7o US news a 167
+04:46:54 ok 196 2w2XapBAUds US news a 136
+04:47:08 ok 197 F67dbMYAloM US news a 217
+04:47:23 ok 198 K0yrQXe4Ows US news a 150
+04:47:35 skip (title) fM3m4BzFZj4 Two Firefighters Killed In Ambush-Style Attack In Idaho | NP
+04:47:37 ok 199 S0UMUsTQzy0 US news a 235
+04:47:52 ok 200 NpaMAmABS2s US news a 198
+04:48:06 ok 201 avCdXZN8RTQ US news a 222
+04:48:22 ok 202 zdMBnGxSsLw US news a 202
+04:48:36 ok 203 DV09yp6ypqg US news a 186
+04:48:51 ok 204 3SOOf9zj1-Q US news a 205
+04:49:06 ok 205 hCGmiBkvbyk US news a 207
+04:49:20 ok 206 jt0ExmQNi2A US news a 121
+04:49:32 skip (title) 1t1KbqguXz8 Suspect Captured, Charged In Shootings Of Minnesota Lawmaker
+04:49:35 ok 207 6TadVN6a6Vo US news a 189
+04:49:50 ok 208 85u-NU0PgAk US news a 155
+04:50:05 ok 209 Q6OLF-qeta4 US news a 190
+04:50:19 ok 210 c0NjmETIR0s US news a 178
+04:50:35 ok 211 edYCFyij52s US news a 185
+04:50:49 ok 212 5wMub1ke6b4 US news a 155
+04:51:04 ok 213 mCumP2XU49s US news a 200
+04:51:18 ok 214 2zsRFwo945Q US news a 191
+04:51:33 ok 215 HZyuQlXaRTY US news a 169
+04:51:47 ok 216 AK9OWnei1ys US news a 220
+04:52:02 ok 217 0BFangGq86I US news a 179
+04:52:16 ok 218 lIGVPJZo5uE US news a 213
+04:52:31 ok 219 JJnc2ZjDCaw US news a 204
+04:52:45 ok 220 t2C6s4PgWq0 US news a 91
+04:53:00 ok 221 alji0-btHLE US news a 219
+04:53:15 ok 222 ZTWwGAVBfU0 US news a 382
+04:53:29 ok 223 2aAE-4HjGYA US news a 200
+04:53:44 ok 224 4eCBcjW5jX4 US news a 180
+04:53:59 ok 225 ejDjvcol7Zo US news a 201
+04:54:13 ok 226 GMU9lkBpGvQ US news a 165
+04:54:28 ok 227 gICwqzyDWlc US news a 191
+04:54:43 ok 228 RrjOkuSMF9Q US news a 220
+04:54:57 ok 229 y_tqA293rjg US news a 192
+04:55:12 ok 230 VP-gyouBEtQ US news a 225
+04:55:26 ok 231 6Bwvj4V7_a4 US news a 197
+04:55:40 ok 232 8imittqgjRs US news a 202
+04:55:55 ok 233 LyvJNVQrfjg US news a 175
+04:56:10 ok 234 9G4LOxOYom8 US news a 206
+04:56:34 ok 235 SYT3CDKpcR8 US news m 134
+04:56:50 ok 236 LaC3IbvbHDQ US news m 102
+04:57:05 ok 237 T2tjt2Dk3ng US news m 83
+04:57:19 ok 238 O9uWX7BOV8E US news m 82
+04:57:34 ok 239 RMdhIekKaiM US news m 91
+04:57:48 ok 240 cBJ4MjvRp9M US news m 106
+04:58:03 ok 241 6u57MogIEcM US news m 694
+04:58:17 ok 242 EUzau7Mo9c8 US news m 123
+04:58:32 ok 243 u1PGfQ6eXtE US news m 303
+04:58:46 ok 244 jI2HVk6S2ZA US news m 481
+04:58:58 skip (title) l9DZCZV_oaw 3 children, 1 adult killed in Oregon elementary school shoot
+04:59:01 ok 245 Z-zTFz6mEEc US news m 192
+04:59:15 ok 246 IZgeLPopOZA US news m 91
+04:59:30 ok 247 vDcLEcZrn1c US news m 449
+04:59:50 ok 248 nS_yft5GuL4 US news m 501
+05:00:05 ok 249 FAUpKzviiZQ US news m 368
+05:00:19 ok 250 tweubjhuaPo US news m 171
+05:00:34 ok 251 ET4Af-VYaMY US news m 118
+05:00:48 ok 252 M6M6TDgB1hk US news m 119
+05:01:03 ok 253 RgB5ZtnCT6Q US news m 346
+05:01:17 ok 254 osYmscSK_XM US news m 90
+05:01:32 ok 255 _GLG51SAhrQ US news m 92
+05:01:47 ok 256 iKEMO4iEnf0 US news m 477
+05:02:01 ok 257 p99JNlf2bkk US news m 111
+05:02:16 ok 258 zIJIQ1X9gAQ US news m 707
+05:02:30 ok 259 HnmPkQbJL2w US news m 98
+05:02:45 ok 260 xVSyEO4hmfQ US news m 97
+05:02:59 ok 261 gABqpwUVBVA US news m 94
+05:03:14 ok 262 MiM8FGO36nw US news m 95
+05:03:28 ok 263 eJ8CXzHMSl0 US news m 86
+05:03:43 ok 264 e-avuyU7ovM US news m 61
+05:03:58 ok 265 EYZzRgLnqc0 US news m 486
+05:04:12 ok 266 dZC6Ma-_j-0 US news m 156
+05:04:27 ok 267 70IxSTGD-FQ US news m 478
+05:04:41 skip (title) 7RHWHcBJkyg ‘Just start shooting’: How data center backlash is rattling 
+05:04:43 ok 268 ny_YmIN_7rU US news m 88
+05:04:58 ok 269 tj1dFIUAs7A US news m 92
+05:05:12 ok 270 AX0x_k-KlOg US news m 91
+05:05:27 ok 271 a953Npa54iQ US news m 468
+05:05:42 ok 272 RRisImOez08 US news m 93
+05:05:56 ok 273 BE4VMMLPlCo US news m 130
+05:06:11 ok 274 ZCPwrCriirM US news m 437
+05:06:36 ok 275 2OcQAdsiAhw US news a 240
+05:06:51 ok 276 _7lMQB_QvpU US news a 142
+05:07:06 ok 277 11o3yeE3tTY US news a 372
+05:07:21 ok 278 3WgeOQoMd2Y US news a 37
+05:07:36 ok 279 qF3WdqJBQNE US news a 356
+05:07:51 ok 280 fj0tE2wwTVM US news a 308
+05:08:06 ok 281 6S2gHos7NFA US news a 345
+05:08:21 ok 282 vuSaNxu1zak US news a 178
+05:08:36 ok 283 JWZ05fwdOmo US news a 179
+05:08:51 ok 284 vD74yAeIkx8 US news a 369
+05:09:06 ok 285 Pveerxm7faU US news a 347
+05:09:21 ok 286 rDdFz_nHEKM US news a 27
+05:09:36 ok 287 mQN_vCInkzs US news a 372
+05:09:51 ok 288 ESngm2xGPi0 US news a 307
+05:10:06 ok 289 hOWRrk0kRMY US news a 323
+05:10:21 ok 290 c6vz20jtiM0 US news a 220
+05:10:36 ok 291 GYQ5yGV_-Oc US news a 182
+05:10:51 ok 292 h7YaWZjnyZk US news a 338
+05:11:07 ok 293 Ixdsvizqt-Q US news a 252
+05:11:22 ok 294 jCceL-HCDWg US news a 42
+05:11:36 ok 295 7hPDiwJOHl4 US news a 378
+05:11:52 ok 296 epKHrd2HOfI US news a 360
+05:12:07 ok 297 fANVXdodhh0 US news a 183
+05:12:22 ok 298 GqZis_pCi4c US news a 48
+05:12:37 ok 299 bpdbVZW18oE US news a 36
+05:12:52 ok 300 OiUU1JLoT2E US news a 326
+05:13:04 skip (title) 0NKqkKZb49A How parents are being held responsible after school shooting
+05:13:06 ok 301 jDfvAMK4Q0A US news a 322
+05:13:18 skip (title) NOym4CpBF-o Why labeling mass shooters as "monsters" could hurt efforts 
+05:13:21 ok 302 yj60yD5xTig US news a 320
+05:13:36 ok 303 IKnJsdQCbpM US news a 315
+05:13:51 ok 304 w_B56p1ltyc US news a 306
+05:14:05 ok 305 9LPV-hb1CKU US news a 310
+05:14:21 ok 306 AFtxQoBAGOU US news a 317
+05:14:36 ok 307 TQfczHaGBE4 US news a 344
+05:14:51 ok 308 Bx1SVUBHnEY US news a 42
+05:15:06 ok 309 8dkhBKejWkk US news a 109
+05:15:21 ok 310 7UiVbFbJDPI US news a 328
+05:15:36 ok 311 pSkcluhd4Xg US news a 49
+05:15:51 ok 312 LHO-TrjKJtI US news a 327
+05:16:06 ok 313 xyo29_IvdF0 US news a 44
+05:16:20 ok 314 fuCIY3nkIdg US news a 145
+05:16:44 ok 315 TFpfz_P9Piw US news a 135
+05:16:58 ok 316 qQ3uP-uLmhk US news a 225
+05:17:13 ok 317 LkfAo5mk74I US news a 135
+05:17:25 skip (title) XwbFDAXy1E0 9 Killed In Florida Plane Crash. What You Need To Know - Nov
+05:17:28 ok 318 bBax51p8MkI US news a 60
+05:17:42 ok 319 pWhsfNprTMo US news a 111
+05:17:57 ok 320 w_LgO-qZcbE US news a 40
+05:18:12 ok 321 AyEH_IxGrJY US news a 469
+05:18:26 ok 322 s3Mas2vs17w US news a 253
+05:18:41 ok 323 QDZOojLp2OI US news a 163
+05:18:56 ok 324 XWvGxuQVvIE US news a 161
+05:19:08 skip (title) H6nRYRzS_gg 1 dead, 8 injured in Alabama shooting
+05:19:10 ok 325 jSv4i0xz0hM US news a 78
+05:19:25 ok 326 uOnWfBMvmEY US news a 58
+05:19:40 ok 327 wgs5qncwH3U US news a 223
+05:19:54 ok 328 5pZiR0FSt_w US news a 100
+05:20:09 ok 329 nMFkkF8tYcY US news a 59
+05:20:21 skip (title) d9smq0TGn6M Body camera released in stolen boat shooting
+05:20:24 ok 330 VjkVqgY-VwU US news m 338
+05:20:39 ok 331 LOrmUo92uyw US news a 82
+05:20:51 skip (title) V_mHcY_LlRw Inside hunt for UNC student's killer | 20/20 ’Justice for Fa
+05:20:54 ok 332 2OemcKLLkGA US news a 211
+05:21:08 ok 333 50v4lX4MSNk US news m 429
+05:21:23 ok 334 B_52oG6yPgM US news a 239
+05:21:37 ok 335 -T2cDV9--z0 US news a 218
+05:21:52 ok 336 3FWoojLn_Vk US news a 46
+05:22:07 ok 337 l-J-pqdVxSc US news a 52
+05:22:19 skip (title) o3rX7bD7JGU Suspected sailboat thief killed in Rhode Island police shoot
+05:22:21 ok 338 BsuA8gn6DMk US news a 55
+05:22:36 ok 339 naTW-3t5rNg US news a 89
+05:22:51 ok 340 q2iCAT9ClnE US news a 203
+05:23:05 ok 341 5b3ejgGhJLo US news a 117
+05:23:20 ok 342 GptXi3tFGIQ US news a 184
+05:23:34 ok 343 982BcUecPt4 US news a 47
+05:23:49 ok 344 IY_ESgGt7ko US news a 185
+05:24:03 ok 345 q5rKW94PvX0 US news a 78
+05:24:18 ok 346 5ieL1_aGIDE US news a 38
+05:24:32 ok 347 Zcy3rkaPCE8 US news a 61
+05:24:47 ok 348 -uWVrjkBu0c US news a 39
+05:24:59 skip (title) N4vR5qxbUiM Helicopters collide midair in Oregon, killing 3 people
+05:25:02 ok 349 sugV4J8-sfI US news a 61
+05:25:16 ok 350 AaL2arKkp-U US news a 501
+05:25:31 ok 351 en8nfWAOGgE US news a 52
+05:25:45 ok 352 BKTqPU3IPxM US news a 179
+05:26:00 ok 353 TDn9C6NssGQ US news a 57
+05:26:15 ok 354 2TeyeFeN4ks US news a 42
+05:26:36 clips collected this run: 354 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 354
