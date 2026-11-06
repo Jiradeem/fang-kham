@@ -1,3 +1,3 @@
-Nightly run on the home computer, 2026-11-06 12:25 (last 400 lines of the collector)
-12:25:49 30000 clips published; 6185 on the skip list; 0 removed by the skip list
-12:25:50 the corpus is full ( 30000 clips ). Raise --max once search runs on a server (step 3).
+Nightly run on the home computer, 2026-11-06 12:26 (last 400 lines of the collector)
+12:26:49 30000 clips published; 6185 on the skip list; 0 removed by the skip list
+12:26:50 the corpus is full ( 30000 clips ). Raise --max once search runs on a server (step 3).
