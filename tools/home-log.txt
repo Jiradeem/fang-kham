@@ -1,401 +1,401 @@
-Nightly run on the home computer, 2026-11-08 13:47 (last 400 lines of the collector)
-11:48:55 ok 185 UkQGU266ppQ US kids a 27
-11:49:10 ok 186 ZymCMO5ZMPE US kids a 29
-11:49:25 ok 187 bP_DIp2_BtQ US kids a 28
-11:49:41 ok 188 4sFRwBIlo-U US kids a 31
-11:49:56 ok 189 UhbK6Wa3Ae4 US kids a 22
-11:50:13 ok 190 moUPD_p4Lgc US kids a 26
-11:50:29 ok 191 CbZ7cU5YyGg US kids a 28
-11:50:45 ok 192 haUASg5ax5Q US kids a 31
-11:51:00 ok 193 FIKxLyKCfCc US kids a 104
-11:51:16 skip (too short) VIdr6OAiNXk
-11:51:19 ok 194 vLcandimZzY US kids a 31
-11:51:35 ok 195 wQKtXWbT130 US kids a 25
-11:51:50 ok 196 gNInWLO5WiI US kids a 29
-11:52:06 skip (too short) 9cWzNvr9esU
-11:52:10 ok 197 47PK-Qx25Yo US kids a 23
-11:52:26 ok 198 LP8y0lhOfJQ US kids a 24
-11:52:46 ok 199 oy3roywOey8 US kids a 30
-11:53:02 ok 200 4Ie8p0Yi2A0 US kids a 25
-11:53:38 ok 201 51lsjrcEXc8 US kids m 263
-11:53:54 ok 202 UYeYFoo_AfM US kids m 321
-11:54:12 ok 203 u4pXJMrXmQE US kids m 281
-11:54:28 ok 204 1TDYUn8ep20 US kids m 297
-11:54:43 ok 205 eQB-tDlSSS0 US kids m 310
-11:54:58 ok 206 zXEWyzFTncI US kids m 337
-11:55:13 ok 207 kkfCCE4mLEc US kids m 324
-11:55:32 ok 208 w06mScd4C8c US kids m 310
-11:55:48 ok 209 MU-meKoIcc4 US kids m 298
-11:56:05 ok 210 WH2lLDoeLhs US kids m 312
-11:56:20 ok 211 1wqP6pJGeWo US kids m 312
-11:56:36 ok 212 8z_EDzLWmyw US kids m 291
-11:56:51 ok 213 vgHGoIhmPyg US kids m 316
-11:57:07 ok 214 T_n5niZklWM US kids m 301
-11:57:23 ok 215 rw4I_zc_Bhs US kids m 270
-11:57:39 ok 216 gGwJeJLfj2g US kids m 266
-11:57:55 ok 217 2DmJlB5pjYM US kids m 274
-11:58:10 ok 218 1L9sREjsAmU US kids m 308
-11:58:25 ok 219 PNHQi9EAgyc US kids a 159
-11:58:40 ok 220 goCxKFcM_yg US kids a 152
-11:58:56 ok 221 EhUQsUGe-ak US kids a 172
-11:59:11 ok 222 4q7_QhUE1W0 US kids a 165
-11:59:27 ok 223 no8v7dTixXc US kids a 174
-11:59:43 ok 224 LgLADFJS5Q4 US kids a 153
-11:59:59 ok 225 UtDwygqO2xQ US kids a 164
-12:00:14 ok 226 oe6Cj1OpCMI US kids m 171
-12:00:30 ok 227 6JH_VvUg0rQ US kids a 140
-12:00:45 ok 228 jdvuqIvmet0 US kids a 171
-12:01:01 ok 229 mgdCExjfuDk US kids a 143
-12:01:17 ok 230 _DiLoMK___k US kids a 144
-12:01:32 ok 231 -pPR7zCWHwA US kids a 139
-12:01:48 ok 232 b1l2xyXkmCY US kids a 120
-12:02:04 ok 233 TeJgX3B_Bz8 US kids a 121
-12:02:21 ok 234 aahkgeBYZOY US kids a 147
-12:02:36 ok 235 5btfoepVbKk US kids a 136
-12:02:52 ok 236 XqJR3ZKOmRw US kids a 131
-12:03:08 ok 237 oOTN8IguJ50 US kids a 134
-12:03:24 ok 238 qpF5rCcOlaQ US kids a 155
-12:03:42 ok 239 gBQjtdYbHKc US kids a 147
-12:03:57 ok 240 5oAF9q74lN8 US kids a 163
-12:06:16 ok 241 gRGQ6Q-_Dfo US series a 57
-12:06:32 ok 242 _f3fooox38Y US series a 75
-12:06:49 ok 243 ZL6RXqutVoI US series a 54
-12:07:08 ok 244 Y1Wig4YZIpw US series a 87
-12:07:24 ok 245 SzdGuRsH2TE US series a 65
-12:07:42 ok 246 P7JHrDAoXZI US series a 183
-12:08:00 ok 247 FMooMbnyqYk US series a 194
-12:08:17 ok 248 Bl1RpjhbzhA US series a 94
-12:08:33 ok 249 9hHp7gztPDA US series a 146
-12:08:49 ok 250 7IiPY8V_ED4 US series a 54
-12:09:07 ok 251 6OIyYMzdUv4 US series a 60
-12:09:24 ok 252 5pe5z143I0A US series a 70
-12:09:40 ok 253 3WMtj3BXQa8 US series a 73
-12:10:31 ok 254 fesB26NXvZ0 US conversation a 40
-12:10:50 ok 255 GFPGhWj22BA US conversation a 40
-12:11:08 skip (too short) NN12lNsa6Ws
-12:11:13 skip (too short) rl8d1gZDaXE
-12:11:18 skip (too short) 5PWNw4KtQ74
-12:11:22 skip (too short) C2sJpghYEtk
-12:11:25 ok 256 aQLF8krejG4 US conversation a 43
-12:11:41 ok 257 gA9qWiBnqx4 US conversation a 52
-12:12:05 ok 258 D7bvJXVsJgw US conversation a 67
-12:12:30 ok 259 OGghRvohuL4 US conversation a 36
-12:12:56 ok 260 1H-WDVRsVGE US conversation a 38
-12:13:12 ok 261 tAUb_XHs_TM US conversation a 41
-12:13:30 ok 262 g4WyhxUhn74 US conversation a 40
-12:13:46 skip (too short) yQgnScTLR-Q
-12:13:51 ok 263 x6EjF_hoHFA US conversation a 58
-12:14:06 ok 264 _k_xFt9h5qY US conversation a 35
-12:14:22 skip (too short) KxupEYo_MXg
-12:14:25 skip (too short) vNn0jgKNa54
-12:14:29 ok 265 XawHrf1ebCo US conversation m 181
-12:14:45 ok 266 f4EXpaZYzt8 US conversation m 622
-12:15:03 ok 267 N0dvDDBJqes US conversation m 34
-12:15:23 ok 268 dE4sKHbmgWU US conversation a 66
-12:15:39 ok 269 HxJmFi3vZi8 US conversation a 39
-12:15:54 ok 270 87EeZG2n2po US conversation a 24
-12:16:10 ok 271 _PAg7Gem2rM US conversation m 63
-12:16:26 ok 272 AAs3MQSch1I US conversation m 140
-12:16:44 ok 273 zrxLJdI5C8k US conversation a 106
-12:17:00 ok 274 WcyHC7J5oSo US conversation a 102
-12:17:16 ok 275 I7p6bTCEHrQ US conversation m 556
-12:17:32 ok 276 RRHqze2wNfQ US conversation a 88
-12:17:48 ok 277 pAvk9ZqNlbw US conversation m 119
-12:18:05 ok 278 do6_7HugMXs US conversation m 49
-12:18:24 ok 279 _F4uuoqVltI US conversation m 435
-12:18:39 ok 280 Al0DObwT_Q8 US conversation a 99
-12:18:58 ok 281 hYFQ0bA6nRI US conversation m 391
-12:19:15 ok 282 rOZCGqyohqw US conversation a 214
-12:19:43 ok 283 MEj25p8IjFc US conversation a 122
-12:20:10 ok 284 fitxGCQZ6vI US conversation a 57
-12:20:33 skip (too short) DwkopBWpQ70
-12:20:37 ok 285 1QCRs8yCJHA US conversation m 333
-12:20:52 ok 286 3qDw7SAcQCc US conversation a 94
-12:21:08 ok 287 Ndem_HBCXNI US conversation a 53
-12:21:36 ok 288 R63rdKDElnU US conversation a 70
-12:21:52 ok 289 OBAALDuqG5M US conversation a 75
-12:22:07 ok 290 ARLXdogR2Ho US conversation a 70
-12:22:23 ok 291 Wvpov2domhk US conversation a 108
-12:22:39 skip (too short) t2Uma0r8aQ0
-12:22:43 ok 292 tYRpvUNmR2Q US conversation m 326
-12:23:08 ok 293 n03pXZcDe2o US conversation a 83
-12:24:28 ok 294 pg_nVuiFlU4 US conversation m 92
-12:24:48 ok 295 VYA5T8gCpm4 US conversation m 164
-12:25:06 ok 296 Cw4RomxUXCU US conversation m 321
-12:25:22 ok 297 4_Jcv0uYQp0 US conversation m 26
-12:25:40 ok 298 DFcN4TReoMs US conversation m 361
-12:25:59 ok 299 gvNZSM9N-WY US conversation m 274
-12:26:19 ok 300 UnCb6Eop7WU US conversation m 418
-12:26:35 ok 301 IRtmNOBPnJ4 US conversation m 211
-12:26:50 ok 302 rUre2_AgKD8 US conversation m 314
-12:27:06 ok 303 KqBUPfxFm68 US conversation m 467
-12:27:21 ok 304 07OizRnph7o US conversation m 122
-12:27:37 ok 305 DFc0cTwdbsk US conversation m 304
-12:27:52 ok 306 0-mdCEicjCU US conversation m 166
-12:28:08 ok 307 ytNWUqmWa08 US conversation m 98
-12:28:23 ok 308 E1do93b_ams US conversation m 276
-12:28:39 ok 309 WMYbQiXrXfE US conversation m 143
-12:28:54 ok 310 0Fi5C6u3T9Y US conversation m 277
-12:29:09 ok 311 sBGGX64j8TQ US conversation m 115
-12:29:24 ok 312 as-Cgg-n6vg US conversation m 354
-12:29:43 ok 313 -06Q6ICCtYo US conversation m 252
-12:29:58 ok 314 OV0qSpgHfH4 US conversation m 131
-12:30:14 ok 315 Abnhzw4F4vc US conversation m 305
-12:30:30 ok 316 OBkWgutg4V4 US conversation m 135
-12:30:45 ok 317 Eft2dQdSHTM US conversation m 212
-12:31:01 ok 318 -fGjAL6QLG0 US conversation m 163
-12:31:16 ok 319 AKIQo8HMcik US conversation m 282
-12:31:34 ok 320 -VFO-8GySrs US conversation m 251
-12:31:50 ok 321 auifbJIMceU US conversation m 192
-12:32:06 ok 322 MEi_GLSjq-0 US conversation m 467
-12:32:21 ok 323 oCaxTD5m7IM US conversation m 208
-12:32:36 ok 324 jWM2wv7kNpk US conversation m 284
-12:32:54 ok 325 yOp32sIdOaQ US conversation m 392
-12:33:10 ok 326 KoFLIU1GBLU US conversation m 257
-12:33:27 ok 327 azTaPL0r2DQ US conversation m 347
-12:33:44 ok 328 jXbbzpO1hpY US conversation m 335
-12:33:59 ok 329 2nIMQrpDgaQ US conversation m 275
-12:34:15 ok 330 tP6pgsr4pgw US conversation m 294
-12:34:31 ok 331 -Hy86JbyFg0 US conversation m 151
-12:34:46 ok 332 PIctQRj18m8 US conversation m 122
-12:35:02 ok 333 mTT6ZWGaX94 US conversation m 126
-12:36:34 ok 334 BcfWQVn1pE4 IRL tv a 103
-12:36:54 ok 335 mhqM0o2w-VQ IRL tv m 133
-12:37:14 ok 336 VCcksvhPmxk IRL tv a 89
-12:46:15 skip (title) syYzL3MVUXI Delivery driver killed; Trump offers press secretary role to
-12:46:15 skip (title) nyI5dbadKwU Six killed in Krakow market shooting rampage | 7NEWS
-12:46:19 skip (title) vNA25vUvYcE Vigil held for delivery driver killed in Melbourne CBD | 7NE
-12:46:34 skip (title) yZdJYi-14Rs From airports to newsrooms bomb threats spread across Europe
-12:46:46 skip (title) c-gy3xPVilk Meghan Markle's father arrested over child abuse material | 
-12:46:46 skip (title) I3ZEFpMSgaA Fatal stabbing in Melbourne CBD sparks major manhunt | 7NEWS
-12:46:46 skip (title) eSo4vDKHqEQ Thomas Markle Sr arrested on child abuse material charges | 
-12:46:46 skip (title) YnylsY4WWkg Meghan Markle’s father charged; deadly Melbourne stabbing; Q
-12:47:24 skip (title) 6QHHvUFfVEI Stabbing attack; campaign bus crashes; Russell Brand found g
-12:47:24 skip (title) ZbLw2UHOGB4 Accused killer cop testimony; Bondi massacre victim dies; vi
-12:47:42 skip (title) ijO7e8hPfXE Bondi massacre victim dies nearly one year after attack | 7N
-12:47:42 skip (title) IRMcP7dgsgY Accused killer cop defends fatal shootings in court | 7NEWS
-12:47:42 skip (title) x2OF0SwB2qo Russell Brand convicted of rape and sexual assault | 7NEWS
-12:48:02 skip (title) f0rWQMf2y1o Accused double murderer’s testimony; reward for alleged Coco
-12:48:13 skip (title) i-B77-dYv-A Accused double murderer breaks down describing shootings | 7
-12:48:18 skip (title) y6FAlPSzIB0 Russell Brand convicted of rape and sexual assault | 7NEWS
-12:48:36 skip (title) tLcWel8vbaY Tributes flow for father killed in fatal truck crash | 7NEWS
-12:49:14 skip (title) 07ognqhsUDE Tom Papley drug driving charge rocks Swans| 7NEWS
-12:49:14 skip (title) STU5v_FKalc Accused murderer testifies about relationship with alleged v
-12:49:25 skip (title) voGfqNODrsM Coalition's billion-dollar funding gap; Papley drug charge r
-12:49:28 skip (title) kHgJRDYRWvY David Jones in administration; Lamarre-Condon testifies; Tom
-12:50:24 skip (title) 4ZyW9f5983Y Former RAAF pilot on trial for wife's alleged murder| 7NEWS
-12:50:48 ok 337 i0jKDzxJovc AUS news a 35
-12:51:05 ok 338 CQrNyWGEEW8 AUS news a 55
-12:51:21 ok 339 lRchVwTjuRs AUS news a 26
-12:51:36 ok 340 eL853eKE1nE AUS news a 131
-12:51:51 ok 341 gp5lbP3nmU8 AUS news a 32
-12:52:06 ok 342 fX5bT4RSLV4 AUS news a 36
-12:52:18 skip (title) i49OiWnUQI8 Russell Brand found guilty of rape and sexual assault | ABC 
-12:52:21 ok 343 lXPMvMsnLJk AUS news a 151
-12:52:37 ok 344 armnKs76m8U AUS news a 257
-12:52:51 ok 345 gyfLrXgRutU AUS news a 95
-12:53:03 skip (title) nHz-AIIHRX4 Accused double-murderer Beau Lamarre-Condon gives evidence a
-12:53:07 ok 346 ORPQFOHp7qY AUS news a 25
-12:53:23 ok 347 GfDVAVzAinQ AUS news a 23
-12:53:38 ok 348 evnPZZXagqw AUS news a 83
-12:53:53 ok 349 keephjxZfOQ AUS news a 56
-12:54:09 ok 350 Tc1nz5N7ASY AUS news a 22
-12:54:24 ok 351 SpWdv3KiCsw AUS news a 23
-12:54:39 ok 352 PdbaQ7XhPns AUS news a 46
-12:54:55 ok 353 KY9SBel1DGI AUS news a 37
-12:55:10 ok 354 uQlVQyoMinM AUS news a 25
-12:55:25 ok 355 P-dvCfH7IKo AUS news a 24
-12:55:40 ok 356 f4rpj1B8TCY AUS news a 200
-12:55:55 ok 357 0S1qE6Zia1s AUS news a 39
-12:56:12 ok 358 SXJ4q980HUY AUS news a 303
-12:56:27 ok 359 JswkQ8cKOhQ AUS news a 58
-12:56:42 ok 360 IMA8SZBXBZo AUS news a 33
-12:56:57 ok 361 NgeuQaco340 AUS news a 29
-12:57:12 ok 362 ndqKq46xmjc AUS news a 23
-12:57:28 ok 363 v-vFAa79ukE AUS news a 103
-12:57:43 ok 364 avHneL0Hlag AUS news a 33
-12:57:55 skip (title) fiWTGRKO_LQ Pete Hegseth on the chopping block as Trump mulls midterm ma
-12:57:58 ok 365 qOFJveTNeqQ AUS news a 76
-12:58:13 ok 366 8cWl2J2CvcY AUS news a 43
-12:58:28 ok 367 kAyAZX7PKFA AUS news a 58
-12:59:14 ok 368 26rMXkNcQrQ CAN news a 22
-12:59:29 ok 369 09os5aecgUc CAN news a 32
-12:59:44 skip (too short) IxQR78c-DwY
-12:59:48 ok 370 iVH55lSK6jI CAN news a 47
-13:00:00 skip (title) vLFhLiMrAZw Gunman kills 6 in Poland's Krakow; used military-type firear
-13:00:03 ok 371 TJDsHSJCHyI CAN news a 86
-13:00:18 ok 372 ho7ZqtO1JvM CAN news a 27
-13:00:34 ok 373 VnDPTI-vUNc CAN news a 25
-13:00:46 skip (title) MRxwgXQqh7c Tumbler Ridge shooting survivor Maya Gebala makes surprise h
-13:00:49 ok 374 ew_5tiiDfI4 CAN news a 31
-13:01:05 ok 375 RnAQjM4gvgQ CAN news a 30
-13:01:20 ok 376 kjFq0DEWzzo CAN news a 27
-13:01:36 ok 377 qbQowO5xxT4 CAN news a 27
-13:01:51 ok 378 kWpJf_mOdHk CAN news a 29
-13:02:06 ok 379 tS1zS-0oS2k CAN news a 26
-13:02:21 ok 380 NO-ySIX50g0 CAN news a 20
-13:02:36 ok 381 _c4gx8SSHt0 CAN news a 30
-13:02:52 ok 382 HGD5WNtnezQ CAN news a 28
-13:03:07 ok 383 9WM4AfthzRY CAN news a 37
-13:03:22 ok 384 cVwTMB5sC1M CAN news a 33
-13:03:39 ok 385 Y3XvLgfIbt8 CAN news a 24
-13:03:54 ok 386 BPOhA2XBZXg CAN news a 59
-13:04:09 ok 387 QT-A_LxHwJ4 CAN news a 20
-13:04:24 ok 388 TcfWVjaykmI CAN news a 32
-13:04:39 ok 389 NeZinDUX4OI CAN news a 102
-13:04:55 ok 390 Ccrwd9DrY24 CAN news a 26
-13:05:10 ok 391 pBpYmeaLTKM CAN news a 32
-13:05:25 ok 392 AlySMJmSSDc CAN news a 22
-13:05:40 ok 393 7YUGEpi2m6c CAN news a 33
-13:05:56 ok 394 12RhEB3x4wA CAN news a 32
-13:06:18 ok 395 6HSJ-V_Kx7s CAN news a 27
-13:06:34 ok 396 cO1U29QkUHs CAN news a 36
-13:06:50 ok 397 c9SMqPh8Mv0 CAN news a 81
-13:07:05 ok 398 qDvKI1rzCdk CAN news a 42
-13:07:21 ok 399 nIpSuP0AkKA CAN news a 48
-13:07:36 ok 400 pGum9Wc1Ep4 CAN news a 41
-13:07:51 ok 401 rUnlO1nrmpE CAN news a 79
-13:08:07 ok 402 7S-sfRUtVHM CAN news a 61
-13:08:19 skip (title) Axj27zs_yns Passengers at European airports react after wave of bomb thr
-13:08:23 ok 403 2W_frVsRqGo CAN news a 27
-13:08:38 ok 404 hIDcsGldDFA CAN news a 67
-13:08:54 ok 405 qGNXEgQED5U CAN news a 89
-13:09:09 ok 406 KRLXIbiyr8I CAN news a 23
-13:09:24 ok 407 HNcmcbUAPEs CAN news a 34
-13:09:52 ok 408 imo7fxV3_d0 CAN news a 78
-13:10:04 skip (title) ecTAaMvufa0 Shooting in Krakow leaves 6 dead, more than a dozen injured
-13:10:08 ok 409 1QCXvQ5BFo0 CAN news a 69
-13:10:23 ok 410 6z2iDSuyRTQ CAN news a 124
-13:10:39 ok 411 OgaqPzZnLKU CAN news a 71
-13:10:54 ok 412 ZtQfyFfdILw CAN news a 93
-13:11:09 ok 413 t64YdC_B7vY CAN news a 147
-13:11:25 ok 414 rgUeUdWHA90 CAN news a 124
-13:11:40 ok 415 jayp1Tb3dG4 CAN news a 24
-13:11:52 skip (title) _Bjo6C5Ebn4 Meghan Markle's father arrested for possession of child sexu
-13:11:55 ok 416 50SZU7w758o CAN news a 76
-13:12:11 ok 417 WIJZoMOlJBI CAN news a 60
-13:12:26 ok 418 dstsRHD6Isc CAN news a 34
-13:12:41 ok 419 vRcQ7nHXPR4 CAN news a 82
-13:12:57 ok 420 FJiv96g1PAQ CAN news a 63
-13:13:12 ok 421 xeGx5HaF8Ro CAN news a 273
-13:13:28 ok 422 CfiHDCjTZuI CAN news a 193
-13:13:43 ok 423 l0YcKyazVsE CAN news a 88
-13:13:59 ok 424 -rKRjnOpjCQ CAN news a 35
-13:14:14 ok 425 By9U4fbEMBQ CAN news a 121
-13:14:26 skip (title) 2xz-8WtGIzU Comedian Russell Brand convicted of rape, sexual assault in 
-13:14:26 skip (title) avZe-Zgy2tQ Bomb threats force multiple flights in Europe to make emerge
-13:14:30 ok 426 -7E-G_HVvh0 CAN news a 33
-13:14:45 ok 427 vamoYg8o9nE CAN news a 71
-13:15:00 ok 428 A33WNoVgkmY CAN news a 103
-13:15:15 ok 429 wa3mrEQNr1c CAN news a 136
-13:15:30 ok 430 g5FT3HtkTiA CAN news a 31
-13:15:46 ok 431 0ZwJkDEJ3Wo CAN news a 151
-13:16:22 ok 432 wd7WaIqNmvQ CAN news a 23
-13:16:39 ok 433 GIp2OLqQ9Lk CAN news a 26
-13:17:05 ok 434 LNocuTAm9x4 CAN news a 27
-13:17:24 ok 435 B3fCyKrSApM CAN news a 30
-13:17:44 ok 436 tujBwhQu_HM CAN news a 28
-13:18:04 ok 437 YzUrOo-W6D0 CAN news a 28
-13:18:26 skip (too short) eRgUU6QVZVk
-13:18:35 ok 438 F07QhU42RsU CAN news a 71
-13:18:47 skip (title) _sEb7HRcDAk Authorities begin investigating after Polish shooter opens f
-13:18:56 ok 439 8A2CgxX_IqU CAN news a 26
-13:19:23 ok 440 eWwLip5dRhg CAN news a 59
-13:19:35 skip (title) LMhGNnZ5wHA At least five people killed, several others injured in shoot
-13:19:44 ok 441 jx6-JZdQFrk CAN news a 58
-13:20:07 ok 442 13zKdYb3_wM CAN news a 29
-13:20:28 ok 443 PQ2OfjYeiMw CAN news a 72
-13:20:48 ok 444 QqIQNqieJUU CAN news a 64
-13:21:10 skip (too short) WxsISsuMpuw
-13:21:10 skip (title) nC0T3fYosn4 New 'I Kill the Bear' show makes fun of everybody equally: S
-13:21:19 skip (too short) aQNRYaLn_As
-13:21:30 ok 445 kYt7rHI0BLs CAN news a 27
-13:21:48 ok 446 IFGe9ETvt7c CAN news a 61
-13:22:11 ok 447 9tToakOhwm4 CAN news a 20
-13:22:36 ok 448 I639Y8KZobI CAN news a 36
-13:22:55 ok 449 OZqQQRlBsFk CAN news m 24
-13:23:24 ok 450 qtN9vluHUA0 CAN news a 41
-13:23:45 ok 451 qfrYpp4Q1xY CAN news a 24
-13:24:05 skip (too short) 00nWIl1xQOw
-13:24:15 ok 452 q8jy72BM4Fw CAN news a 33
-13:24:37 ok 453 Ex5FpFTDszg CAN news a 33
-13:24:56 ok 454 Tp49FAVyjvU CAN news a 27
-13:25:15 skip (too short) oGUj0ca_AZk
-13:25:23 skip (too short) LQ1inOIc4Ww
-13:25:31 ok 455 lFtPfNGcnNg CAN news a 35
-13:25:52 ok 456 Csj7zSnj8m4 CAN news a 23
-13:26:14 ok 457 utY218DCMmI CAN news a 28
-13:26:34 ok 458 Jc72-D7GZG0 CAN news a 34
-13:26:57 ok 459 1xrrbs_17U4 CAN news a 25
-13:27:09 skip (title) 01MSsWnpkNo 2 men charged in Surrey extortion shootings
-13:27:17 ok 460 PMw6149WkPM CAN news a 38
-13:27:42 ok 461 AuEYoeqwdN0 CAN news a 40
-13:28:03 skip (too short) W5a145Qkqb4
-13:28:10 ok 462 hM5sgqnhYq0 CAN news a 34
-13:28:32 ok 463 nGIMpHmLFeM CAN news a 28
-13:28:48 ok 464 muXqlCf7qZM CAN news a 35
-13:29:09 ok 465 RAcwVpVbA50 CAN news a 34
-13:29:30 skip (too short) X-81hcQaEpM
-13:29:38 skip (too short) 6KCaMh4weSQ
-13:29:46 ok 466 fbzNwph4LfY CAN news a 49
-13:30:06 skip (too short) XgFnKloUQ_E
-13:30:16 ok 467 pqB0VduaRk8 CAN news a 33
-13:30:40 ok 468 0B1_KcMVf8w CAN news a 27
-13:31:00 ok 469 maWQcn5s7TI CAN news a 25
-13:31:18 skip (too short) 7rtzhR5qego
-13:31:18 skip (title) 7NE3ZDqRAvI Officer promoted while being disciplined for accidentally ki
-13:31:26 ok 470 XSNKTgrz_Yc CAN news a 31
-13:31:44 ok 471 avAmgIxplQY CAN news a 34
-13:32:31 ok 472 bw5tzcoEG88 US ted m 69
-13:33:01 ok 473 84wVmiEl7Dg US ted m 119
-13:33:17 ok 474 VC4g2l47rzc US ted m 210
-13:33:59 ok 475 ao-BzLbFObI US interview a 113
-13:34:29 ok 476 ltf-UAl8Ogw US interview m 409
-13:36:04 ok 477 -vFQKATKX20 UK news a 71
-13:36:16 skip (title) o2C0AbVJURI Russell Brand fallout: Lawyers condemned for perpetuating ‘r
-13:36:16 skip (title) DuAk9RDQFDU Meghan’s father Thomas Markle charged with possession of chi
-13:36:20 ok 478 mtwqnSfof4g UK news a 245
-13:36:35 ok 479 nJsgBGJtf5I UK news a 100
-13:36:51 ok 480 8d6QkH6I_-k UK news a 59
-13:37:03 skip (title) za3eOqV6Wpg Henry Nowak murder: Did police mislead his family about the 
-13:37:06 ok 481 nbaLS_Lq9PA UK news a 86
-13:37:21 ok 482 zlQNcPLPzqM UK news a 207
-13:37:37 ok 483 2N5oMnrh41k UK news a 221
-13:37:52 ok 484 ml5HumMiTZw UK news a 311
-13:38:08 ok 485 ZgYuOE61cE8 UK news a 69
-13:38:20 skip (title) 3N69TfL6sXs Watch footage of Russell Brand's police interviews as comedi
-13:38:23 ok 486 XQeGddhkqgk UK news a 185
-13:38:35 skip (title) M81ZJqz7uEw Henry Nowak's killer Vickrum Digwa has sentence increased - 
-13:38:35 skip (title) D-2WG50uY4c Russell Brand guilty of rape: How the trial unfolded
-13:38:38 ok 487 D-J8tR15SZg UK news a 69
-13:39:20 ok 488 sZWnRRqYilQ UK news a 46
-13:39:35 ok 489 7A5p484IFQw UK news a 31
-13:39:50 ok 490 FcbuOv-wk7M UK news a 322
-13:40:06 ok 491 Itr3Ld5c9yI UK news a 110
-13:40:21 ok 492 hS5FEMd62gU UK news a 53
-13:40:37 ok 493 SRsQnnW6TZI UK news a 66
-13:40:49 skip (title) ASeIIYVYO_E Russell Brand convicted of rape and told he'll face lengthy 
-13:40:52 ok 494 LncdozXvEGc UK news a 227
-13:41:07 ok 495 WMaLzq9uYh8 UK news a 157
-13:41:23 ok 496 5DhCoirnKvc UK news a 81
-13:41:59 ok 497 MXTF-2OcOhg UK news a 139
-13:42:18 ok 498 5HONoO1hxqc UK news a 123
-13:42:40 ok 499 6vhXNXTs27A UK news a 29
-13:42:55 skip (too short) 1zsDzO4qzNU
-13:43:04 ok 500 zJYuoWpgx3w UK news a 24
-13:43:23 skip (too short) o-UdROjxPHw
-13:43:30 ok 501 WvEcoKeZ5Ik UK news a 22
-13:43:42 skip (title) pboLvYR5u9Q Kenyan cult leader gets 200 years for murdering 190 children
-13:43:49 ok 502 2_f7PG39Y8o UK news a 72
-13:44:10 ok 503 HeMXoZzey-I UK news a 23
-13:44:22 skip (title) cxjZoHCF5AY What we know about the bomb threats to European flights
-13:44:31 ok 504 -c5tnAPNVDY UK news a 27
-13:44:54 ok 505 WYUpqCrXY-c UK news a 37
-13:45:13 ok 506 2WlTC2Y_8eQ UK news a 65
-13:45:31 ok 507 eP3julUb1y8 UK news a 137
-13:45:51 ok 508 yjsXvcL2ilk UK news a 21
-13:46:11 ok 509 wHdeOm449uM UK news a 101
-13:46:28 ok 510 K6z21NUupXk UK news a 21
-13:46:51 ok 511 ELmG_SCbeIM UK news a 38
-13:47:08 ok 512 Bx3XmvEZAys UK news a 37
-13:47:30 clips collected this run: 512 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 512
+Nightly run on the home computer, 2026-11-08 16:50 (last 400 lines of the collector)
+14:49:52 ok 197 HRScszh8yhk US kids m 101
+14:50:07 ok 198 5Ud36NzIRWE US kids m 42
+14:50:23 ok 199 W9HUGojnm6M US kids m 39
+14:50:38 ok 200 -qlLHo3IW_M US kids m 141
+14:51:07 ok 201 bvMZVoaAVVI US kids a 62
+14:51:22 ok 202 UPXdeHI7J6w US kids a 44
+14:51:41 ok 203 dGnfenFJKK0 US kids a 49
+14:51:57 ok 204 LvqKiCyO4Dc US kids a 277
+14:52:16 ok 205 gXI-e64NtmA US kids a 58
+14:52:31 ok 206 VqzUYkB-7_4 US kids a 243
+14:52:46 ok 207 qZrvZoCOaXk US kids a 55
+14:53:02 ok 208 oOGvw6Uan9g US kids a 257
+14:53:17 ok 209 mnMjrGj1xvY US kids a 47
+14:53:33 ok 210 F4YREigHoRs US kids a 232
+14:53:49 ok 211 ECLw2smHivs US kids a 53
+14:54:04 ok 212 seSt1yNCoyk US kids a 242
+14:54:20 ok 213 IrUW39VJHjw US kids a 52
+14:54:35 ok 214 FGDWkSsmKM8 US kids a 53
+14:54:51 ok 215 Mk57PfDGPJk US kids a 276
+14:55:07 ok 216 MSUfpFvHvs4 US kids a 52
+14:55:22 ok 217 i1u3Ni7qXgE US kids a 171
+14:55:38 ok 218 cxIAUFUPTGg US kids a 253
+14:55:54 ok 219 mddd5x1yz9k US kids a 42
+14:56:09 ok 220 oNyEoaAkEqY US kids a 184
+14:56:24 ok 221 Jdjc3TDDmZ8 US kids a 223
+14:56:39 ok 222 mD7IYOiAfgc US kids a 54
+14:56:54 ok 223 8pbyxEgi0W4 US kids a 287
+14:57:16 ok 224 sZ0dLnsCQSU US kids a 291
+14:57:31 ok 225 jbfoNQCL1zc US kids a 62
+14:57:47 ok 226 y7WETh6-3wo US kids a 248
+14:58:03 ok 227 GOXHpxsJ7Q8 US kids a 246
+14:58:18 ok 228 oET6vsZpVPg US kids a 64
+14:58:35 ok 229 Lj0C4ugkrpM US kids a 193
+14:58:51 ok 230 nDfccIzV1zY US kids a 76
+14:59:06 ok 231 -AXg91Pb3ic US kids a 64
+14:59:23 ok 232 lIOCgxj2WcY US kids a 298
+14:59:38 ok 233 FT4xSljYI6s US kids a 71
+14:59:54 ok 234 JOqQhqTRzpI US kids a 253
+15:00:10 ok 235 pmaYVV4i8UY US kids a 342
+15:00:26 ok 236 LVVAX1VuGGY US kids a 63
+15:00:43 ok 237 rjqnDG9bvlc US kids a 331
+15:01:00 ok 238 lwV0Tj14WQk US kids a 320
+15:01:17 ok 239 DcjQurFJ8sY US kids a 64
+15:01:34 ok 240 qtT17nGnT2E US kids a 317
+15:05:23 ok 241 rneJ_tmY7EI US conversation m 220
+15:05:42 ok 242 Mjq-Xi_B4jc US conversation m 323
+15:06:00 ok 243 wVJwDPqLXH4 US conversation m 297
+15:06:16 ok 244 KE4kBfFNgKg US conversation a 75
+15:06:35 ok 245 JydctYP4v7M US conversation m 346
+15:06:51 ok 246 7EZJ__aZH0Q US conversation m 125
+15:07:17 ok 247 7MoW7x6Smoo US conversation m 295
+15:07:39 ok 248 M7nvDkRJoL4 US conversation m 400
+15:07:56 ok 249 jbdt4QNzK5k US conversation m 77
+15:08:12 ok 250 YgL2iZ8IwaU US conversation m 131
+15:08:27 ok 251 _tMFcOVpq9Q US conversation m 331
+15:08:43 ok 252 4jtqHyoQwrI US conversation m 95
+15:08:58 ok 253 SNFASZYslnw US conversation m 101
+15:09:17 ok 254 ZWltqDnaaYs US conversation m 277
+15:09:32 ok 255 vzaJSJRQPAU US conversation m 86
+15:09:48 ok 256 1Xx0ToAixzI US conversation m 252
+15:10:04 ok 257 UfEMjcrh64o US conversation m 137
+15:10:19 ok 258 Nocgnp2T3NU US conversation m 109
+15:10:38 ok 259 bXdIC8PaqIQ US conversation m 225
+15:10:53 ok 260 4VQn_4X5X3s US conversation m 153
+15:11:09 ok 261 x7YB5khudN8 US conversation a 169
+15:11:26 skip (no English captions) ccYYPFAlpdI
+15:11:33 ok 262 h0YASu-7E0E US conversation m 219
+15:11:55 ok 263 zDzKQ_4c19k US conversation m 123
+15:12:11 ok 264 -QF4lZUlNIE US conversation m 232
+15:12:27 ok 265 rqCujXgvovg US conversation m 59
+15:12:43 skip (mostly music) j_J-u79xT88
+15:12:46 ok 266 LDNIpfsAIBI US conversation a 58
+15:13:04 ok 267 9YVXt0vLdAY US conversation m 66
+15:13:21 ok 268 5l0XFzPWMQ0 US conversation a 45
+15:13:37 ok 269 FBFXjmr2P10 US conversation a 88
+15:13:53 ok 270 JPTqpfvYx4I US conversation m 218
+15:14:09 ok 271 Pz5o5ylAzlU US conversation a 89
+15:14:25 ok 272 yva0yKdhiFQ US conversation a 58
+15:14:49 ok 273 sHLgLHmRKEg US conversation m 197
+15:15:09 ok 274 Y5okTR7LRRM US conversation m 270
+15:15:33 ok 275 52JzPWj_XNY US conversation m 122
+15:15:52 ok 276 NwtNBdlHPQo US conversation m 484
+15:16:11 ok 277 ga5S0UUKCGA US conversation m 230
+15:16:29 ok 278 j7c5802uNXI US conversation m 150
+15:16:51 ok 279 PVuG2A8d9XY US conversation m 128
+15:17:11 ok 280 MI50MZxh2w4 US conversation m 72
+15:17:55 ok 281 KHnN1LkRf5I US conversation a 102
+15:18:11 ok 282 zu8NJJdozKc US conversation a 137
+15:18:26 ok 283 L0Yn44P7o_w US conversation a 77
+15:18:42 ok 284 g8kktj7EXko US conversation a 26
+15:18:57 ok 285 zd93OVGgpbA US conversation a 268
+15:19:14 ok 286 TU3ymEGQU8U US conversation m 26
+15:19:29 ok 287 ulLG_ANbZm0 US conversation m 331
+15:19:44 ok 288 kYYEjniUzR8 US conversation a 161
+15:20:00 ok 289 6Ke0fZVgscw US conversation a 124
+15:20:12 skip (title) ik9SKPf6zy0 Can You Guess Who The Sexpert Is Based On Their Kiss?
+15:20:16 ok 290 VC8FiFwDYxU US conversation m 252
+15:20:34 ok 291 _Bk11QX3hBU US conversation a 110
+15:20:53 ok 292 Dhv8GbLCPic US conversation m 194
+15:21:09 ok 293 0seJDFTUODU US conversation m 233
+15:21:25 ok 294 rJpH5563ZEo US conversation a 52
+15:21:41 ok 295 pTyk-gx8r00 US conversation a 171
+15:22:00 ok 296 PSQ2wxbBbDg US conversation a 203
+15:22:16 ok 297 sIN0GdFwxVg US conversation a 65
+15:22:32 ok 298 rpc4dDhgYWs US conversation a 206
+15:22:47 ok 299 uknGeRFzNbc US conversation a 90
+15:23:06 ok 300 JwsErCKjjDU US conversation m 254
+15:23:23 ok 301 KKWUg2gNEG4 US conversation m 283
+15:23:38 ok 302 Ax4T2wwse_M US conversation a 78
+15:23:56 ok 303 sdWp-W74YoY US conversation m 247
+15:24:12 ok 304 S6U24y5_DaI US conversation m 290
+15:24:27 ok 305 SZL2IHerB5E US conversation a 55
+15:24:42 ok 306 8J9gXsqstPM US conversation m 103
+15:25:00 ok 307 UMM-JMontes US conversation m 252
+15:25:18 ok 308 t3l8b_waHnA US conversation a 61
+15:25:37 ok 309 CW1TJV_gH5k US conversation m 234
+15:25:52 ok 310 XiAqDjFBekM US conversation a 48
+15:26:07 ok 311 aLpj6jr1wQo US conversation m 306
+15:26:27 ok 312 PoGsxE_7JF8 US conversation m 352
+15:26:43 ok 313 zuscZH7sBfw US conversation m 169
+15:26:59 ok 314 C3D7olMFYFo US conversation a 169
+15:27:14 ok 315 tXnmIpv83FA US conversation a 114
+15:27:31 ok 316 PYY8Xv099XY US conversation a 116
+15:27:49 ok 317 hpIO0bS5q4k US conversation a 138
+15:28:05 ok 318 mNngRTQxdoM US conversation m 263
+15:28:23 ok 319 PHEQ9DI3Abk US conversation m 433
+15:28:38 ok 320 8IZRts5NPoI US conversation m 237
+15:37:52 ok 321 6FicXk9h7qc AUS news a 56
+15:38:49 skip (title) nzwdjoP-3mc Bondi terror attack survivors craft memorial of hope | 7NEWS
+15:38:52 skip (title) zly4bZruV_A Melbourne mourns delivery driver fatally stabbed in CBD | 7N
+15:39:52 ok 322 W20koLGVeEY CAN news a 72
+15:40:07 ok 323 Gidsj9fYWSk CAN news a 63
+15:40:23 ok 324 YqTYlvbOe24 CAN news a 43
+15:40:38 ok 325 XWzDgv-iNAM CAN news a 60
+15:40:53 ok 326 8u8Lw-1zXS8 CAN news a 66
+15:41:09 ok 327 gzmh2Y_SxcQ CAN news a 60
+15:41:24 ok 328 BavJyPtzIKI CAN news a 61
+15:41:51 skip (title) UpBw_YEGfnQ P.E.I. man speaks out on being sexually assaulted while in p
+15:41:59 ok 329 iOOLNbpyRWQ CAN news a 49
+15:42:21 ok 330 tAHHaOrLkmU CAN news a 48
+15:42:41 ok 331 Kq-yrNjgsQE CAN news a 60
+15:43:00 ok 332 hzGopyBIsxY CAN news a 67
+15:43:20 ok 333 prsfh_h5IpU CAN news a 62
+15:43:41 ok 334 5k6OYh8Ypws CAN news a 74
+15:44:01 ok 335 mV0yP0o_q-s CAN news a 32
+15:44:19 ok 336 B7-fJBMWrwo CAN news a 61
+15:44:37 ok 337 4OQo7ey3zzU CAN news a 45
+15:45:03 ok 338 GofamoNCLNc CAN news a 93
+15:45:24 ok 339 xl6rMvAw9Yo CAN news a 53
+15:45:44 ok 340 bD9o1ZKayF8 CAN news a 85
+15:46:04 ok 341 asG7ql99KrY CAN news a 56
+15:46:22 ok 342 npZ9ADg3RiE CAN news a 55
+15:46:45 ok 343 vo_Cps1qB2w CAN news a 58
+15:47:11 ok 344 yXnJu60Y960 CAN news a 57
+15:47:29 ok 345 4y4VwEPHjTM CAN news a 66
+15:47:48 ok 346 txjzAz4QiP8 CAN news a 64
+15:48:07 ok 347 6TthO5XPsw0 CAN news a 69
+15:48:30 ok 348 XkVlRE_zNHw CAN news a 68
+15:48:50 ok 349 mKlkz37vC50 CAN news a 65
+15:49:08 ok 350 Z3PTdVOIvUc CAN news a 95
+15:49:27 ok 351 m4r7eJutezw CAN news a 65
+15:49:47 ok 352 UjbP9AKbxgc CAN news a 97
+15:50:08 ok 353 nDdfZQ9KDys CAN news a 66
+15:50:26 ok 354 O6XFFTlscK4 CAN news a 52
+15:50:44 ok 355 FvQYSPc0Prk CAN news a 87
+15:51:03 ok 356 doHKGVTibqc CAN news a 26
+15:51:22 ok 357 v8iDj_WRKBY CAN news a 36
+15:51:41 ok 358 ijRXS6JutoQ CAN news a 84
+15:52:00 ok 359 zNCI_Gx_3QQ CAN news a 71
+15:52:21 ok 360 VDV0C7ENhxQ CAN news a 35
+15:52:38 ok 361 wgH0A4Ia0t8 CAN news a 37
+15:52:58 ok 362 Xrr0CN3-3-k CAN news a 361
+15:53:19 ok 363 ldCoFAMlV2E CAN news a 78
+15:53:38 ok 364 fEy6t3eZBeI CAN news a 95
+15:53:58 ok 365 nMSqGwxK1yY CAN news a 240
+15:54:18 ok 366 rv8hKZwo2fE CAN news a 59
+15:54:38 ok 367 HqnYT3APqHI CAN news a 55
+15:54:57 ok 368 iHtaZi8FZHQ CAN news a 153
+15:57:47 ok 369 GI92rl0ZOVI UK news a 28
+15:58:06 ok 370 ptPgg2g6_Bs UK news a 263
+15:58:31 ok 371 VYHkK73F95k UK news a 44
+15:58:49 ok 372 CLV--sBWkMY UK news a 50
+15:59:15 ok 373 XAWXM-Agtig UK news a 48
+15:59:33 skip (too short) YfOM21INLBs
+15:59:38 ok 374 CMN8BJb1iIc UK news a 33
+15:59:56 ok 375 LTRb2ra4ti4 UK news a 37
+16:00:13 ok 376 di-tUioQfZs UK news a 23
+16:00:39 ok 377 f5z2GVmSxoY UK news a 40
+16:00:56 ok 378 _BdrLIWevlo UK news a 52
+16:01:16 ok 379 dzLeo8END1c UK news a 153
+16:01:40 ok 380 RJV-8TPTLSE UK news a 43
+16:01:59 ok 381 z3qJUhEi13w UK news a 65
+16:02:16 ok 382 ipUDE6NiYEw UK news a 234
+16:02:35 ok 383 huWhqn1bUJY UK news a 165
+16:02:53 ok 384 gCPBAtCoMFw UK news a 266
+16:03:08 skip (too short) uU1L6VQk1jQ
+16:03:13 ok 385 ckm_cVwNKzU UK news a 64
+16:03:34 ok 386 ujubfMEOEBk UK news a 60
+16:03:51 ok 387 dTCtFTMs3z4 UK news a 60
+16:04:10 ok 388 RSJUgtS3e_M UK news a 559
+16:04:27 ok 389 QLewUonLF5M UK news a 259
+16:04:47 ok 390 mEvE46kXCCs UK news a 40
+16:05:06 ok 391 ARcCbcvup1E UK news a 88
+16:05:35 ok 392 GSm7SzmHtSk UK news a 128
+16:05:47 skip (title) jwxe0E1tOe4 Krakow gunman who killed 6 is “ultra-nationalist inspired by
+16:05:47 skip (title) h4fhtWY6BaA At the scene of the shooting in Krakow | BBC News
+16:05:50 ok 393 rJUsZC2fq_I UK news a 129
+16:06:06 ok 394 VvGP3cRD2XQ UK news a 89
+16:06:24 ok 395 Ps5skCqAqZ8 UK news a 185
+16:06:40 ok 396 Rqs6IGGRDsw UK news a 85
+16:06:57 ok 397 xesCK6mfL2s UK news a 417
+16:07:12 ok 398 Wn0FDCF6Mkw UK news a 238
+16:07:28 ok 399 9WZvihlZoJY UK news a 341
+16:07:44 ok 400 of-WwgsQO3U UK news a 250
+16:07:59 ok 401 jpn4XJEC64Q UK news a 302
+16:08:11 skip (title) _gJjWwdSxBo Kenya cult leader who told parents to starve children jailed
+16:08:11 skip (title) CL4fMbHXyIo Meghan's father Thomas Markle arrested over child sex abuse 
+16:08:16 ok 402 DHWc0uonVbA UK news a 179
+16:08:32 ok 403 fUvtFGZWDVY UK news a 298
+16:08:44 skip (title) p0_FCP21-mg Russell Brand faces more rape allegations as he spends first
+16:08:47 ok 404 xbgtOgYVGJM UK news a 373
+16:09:03 ok 405 ZriAOy9ACfA UK news a 230
+16:09:15 skip (title) bGUZjnflVlc Why are airports across Europe receiving hoax bomb threats? 
+16:09:18 ok 406 8yUfifaYgOE UK news a 173
+16:09:34 ok 407 QNhPdMxymwY UK news a 284
+16:09:46 skip (title) dt_RWIVnZ2o Hit show MAFS UK cancelled after rape allegations revealed |
+16:09:46 skip (title) W9YhPka6bkk Henry Nowak’s killer has minimum jail term increased to 25 y
+16:09:49 ok 408 _YLXAWq4JxY UK news a 419
+16:10:01 skip (title) zQU_m72NdsQ Russell Brand found guilty of rape and sexual assault | BBC 
+16:10:05 ok 409 rbmrF70Udvc UK news a 106
+16:10:20 ok 410 cNLHd5db_rM UK news a 85
+16:10:36 ok 411 yhjy8Cw7XfA UK news a 205
+16:10:52 ok 412 HWxZ_OUsOTg UK news a 143
+16:11:07 ok 413 Pp5HAuHIUTs UK news a 303
+16:11:52 ok 414 TUyFLq-ciDI UK news a 92
+16:12:07 ok 415 3W--LN6a05I UK news a 48
+16:12:22 ok 416 Sc-tdCEbJz8 UK news a 66
+16:12:38 ok 417 Ph3pZDF0je0 UK news a 87
+16:12:50 skip (title) aA64AHY74MM Thomas Markle charged over child sexual abuse images
+16:12:50 skip (title) auSH41DSPFg Andy Burnham considers changes to rape trials after Russell 
+16:12:54 ok 418 S5XZUb5T3NA UK news a 136
+16:13:09 ok 419 a55tUavUdZU UK news a 134
+16:13:21 skip (title) WZ6O7hOOsbU What's retatrutide? The illegal weight-loss drug sweeping so
+16:13:24 ok 420 _uvHKjVHoH0 UK news a 359
+16:13:39 ok 421 fozDPtOmMx8 UK news a 65
+16:13:51 skip (title) AlMM20LDhoo Bomb hoaxes spread across Europe as airlines and media organ
+16:13:55 ok 422 hbZI3VeU2LQ UK news a 70
+16:14:07 skip (title) WFONmhmn7q8 Thomas Markle Snr arrested in Florida over child sexual abus
+16:14:11 ok 423 2BiGITFD9vM UK news a 258
+16:14:36 ok 424 6c92up14LKM UK news a 69
+16:14:52 ok 425 zlqCahA2NFw UK news a 240
+16:15:07 ok 426 A9NODb6-DZQ UK news a 80
+16:15:23 ok 427 0iSgSTTEv60 UK news a 61
+16:15:39 ok 428 JCyvrXWo1lA UK news a 252
+16:15:51 skip (title) -7Zp5wYMzOI Russell Brand guilty of rape and sexual assault | Episode 16
+16:15:54 ok 429 guDX8OBABwE UK news a 226
+16:16:09 ok 430 o1NfIOzjPM4 UK news a 347
+16:16:24 ok 431 7D-fgvJPX3I UK news a 477
+16:16:40 ok 432 pquUXZ1HTUs UK news a 261
+16:16:55 ok 433 awhNz4iCySg UK news a 149
+16:17:07 skip (title) UV-edh-TtlE Police release footage of Russell Brand interviews - as come
+16:17:07 skip (title) 70581HEtlaA Russell Brand found guilty of rape and sexual assault
+16:17:12 ok 434 xy1D5fpbYI4 UK news a 312
+16:17:24 skip (title) 0yVT1wM2IQ4 What happens when a bomb threat is called in? Air traffic co
+16:17:27 ok 435 eUulDI5Qr5k UK news a 58
+16:17:42 ok 436 iQTuuSqtFi0 UK news a 64
+16:17:58 ok 437 lQ1Fh4BFl10 UK news a 405
+16:18:14 ok 438 Ack_MTS_wm4 UK news a 214
+16:18:30 ok 439 P_uwy4bo-yc UK news a 412
+16:18:58 ok 440 R0Tn07B6bDA UK news a 136
+16:19:14 ok 441 kogilWtkbZ8 UK news a 189
+16:19:29 ok 442 EKUfCiGiV2A UK news a 247
+16:19:41 skip (title) TnQP8_WMBNs Air strikes near Yemen's capital Sanaa kill at least 25, Hou
+16:19:44 ok 443 mR1GRo7Uivk UK news a 124
+16:19:59 ok 444 PPLFLDrrxP0 UK news a 242
+16:20:14 ok 445 9uAem0W6RAY UK news a 456
+16:20:29 ok 446 OMMV68jKy_o UK news a 435
+16:20:45 ok 447 yOHXzSlIG_k UK news a 60
+16:21:00 ok 448 goDpAU_qDzE UK news a 367
+16:21:15 ok 449 ZYyWlp-Tt00 UK news a 552
+16:21:31 ok 450 hIGQ29bgjEs UK news a 77
+16:21:43 skip (title) 9Kmo8fSQ91s Bomb threats disrupt flights across Europe as planes diverte
+16:21:46 ok 451 4lkxI9OLOH8 UK news m 104
+16:22:02 ok 452 qI6DAAOEQBE UK news m 69
+16:22:17 ok 453 C748I3_5peQ UK news a 65
+16:22:32 ok 454 vSBNXqCq3x8 UK news a 72
+16:23:26 ok 455 SPiwS4qeBrM US news a 91
+16:23:41 ok 456 Lnt0lIacG3I US news a 114
+16:23:56 ok 457 yx-9oOEej8s US news a 71
+16:24:12 ok 458 sWDNZ0Nl8-Y US news a 61
+16:24:27 ok 459 Q6kUYb-JBMw US news a 41
+16:24:42 ok 460 1u8EIQyOaFA US news a 39
+16:24:57 ok 461 rmnHZvs0aFQ US news m 293
+16:25:12 ok 462 W4S29eQRylA US news a 171
+16:25:28 ok 463 iUxAYVfCc5g US news a 235
+16:25:40 skip (title) LMtm-loNxP8 Thomas Markle Sr. arrested, charged with possessing child se
+16:25:43 ok 464 LhqgUFWKCJM US news a 53
+16:25:55 skip (title) v8AUcbdNeDA Another wave of plane bomb threats across Europe
+16:25:58 ok 465 4HAMpUBO414 US news a 91
+16:26:13 ok 466 B-aITIjlHTE US news a 193
+16:26:28 ok 467 iW72PNa0DDY US news a 242
+16:26:44 ok 468 RWhDvNXehdo US news a 278
+16:26:59 ok 469 6hAuE0FBn7A US news m 255
+16:27:14 ok 470 ukgxGCPfZX0 US news a 56
+16:27:29 ok 471 Brnx8A8aK2s US news a 102
+16:27:41 skip (title) hBq1T-I1VEI New investigation into JonBenét Ramsey murder with Diane Saw
+16:27:44 ok 472 Bk7DnSDokyE US news a 187
+16:28:00 ok 473 EQdTaPHlxj4 US news a 80
+16:28:15 ok 474 yFUocwoCZlw US news a 95
+16:28:30 ok 475 Fj9R5AvxEpk US news a 151
+16:28:46 ok 476 A9gHKFC0RBk US news a 31
+16:29:01 ok 477 hK80bUfReC8 US news a 53
+16:29:16 ok 478 T_I-vH1blNk US news a 96
+16:29:31 ok 479 -clhk9T9-pA US news a 421
+16:29:46 ok 480 5ULR5RKi_gg US news a 52
+16:30:01 ok 481 FqwnASZACdc US news a 187
+16:30:17 ok 482 ZiijNP3NO7o US news m 330
+16:30:29 skip (title) 1OqTWGzD0Cs Russell Brand found guilty of rape and 3 sexual assaults
+16:30:32 ok 483 oCWXotdYg80 US news a 92
+16:30:47 ok 484 wqt73Tb3lPg US news a 492
+16:30:59 skip (title) PnA10m0sioQ Bomb threats divert dozens of planes across Europe
+16:31:03 ok 485 4IIUqmcEfVI US news a 73
+16:31:18 ok 486 FThW5RA0S8Y US news a 73
+16:31:30 skip (title) hMlvFCO2HGM Authorities reveal motive in Citibank complex shooting
+16:31:34 ok 487 swGp4SZgee8 US news a 211
+16:31:49 ok 488 1p2JmsLSo7I US news a 62
+16:32:04 ok 489 mulcAF2XEXk US news a 53
+16:32:20 ok 490 mgNQ70OD4T4 US news a 236
+16:32:35 ok 491 3bPQ4yTfmww US news a 130
+16:32:50 ok 492 HfcDQ7JVnzQ US news a 74
+16:33:06 ok 493 3hgu_9p25N8 US news a 194
+16:33:25 ok 494 XWyFdJ7u5ho US news a 78
+16:33:54 ok 495 eEny8AtA7-M US news m 64
+16:34:10 ok 496 tafaiDPPKts US news m 188
+16:34:25 ok 497 VOr5e4un_X0 US news m 100
+16:34:40 ok 498 5Fr6uZeLldE US news m 86
+16:34:56 ok 499 95aZPLOUb6E US news m 114
+16:35:11 ok 500 HGnIpGrTGjA US news m 70
+16:35:26 ok 501 wi0XHT8yc9g US news m 78
+16:35:41 ok 502 jO7x7KeZjCY US news m 99
+16:36:00 ok 503 jBe7HmLvDOo US news m 71
+16:36:15 ok 504 hwxP9pDs8IQ US news m 140
+16:36:29 ok 505 UYtSr85HGo0 US news m 100
+16:36:44 ok 506 b-MUbRAp9eA US news m 74
+16:36:59 ok 507 bCEoWg8jWyU US news m 123
+16:37:15 ok 508 2zmrMMAIRyw US news m 97
+16:37:30 ok 509 w6zQpPMnONc US news m 103
+16:37:45 ok 510 P_TkHv3wBUM US news m 119
+16:38:01 ok 511 W_JVZz4QMWc US news m 150
+16:38:16 ok 512 aChudI6hDR0 US news m 86
+16:38:31 ok 513 ER891TS95bU US news m 76
+16:38:46 ok 514 d2JwbyOZsck US news m 98
+16:39:01 ok 515 r4uUms122hk US news m 82
+16:39:16 ok 516 9CXc613QuyA US news m 62
+16:39:32 ok 517 7E5foNdWIug US news m 67
+16:39:47 ok 518 HKi6B_zvZ_E US news m 106
+16:40:02 ok 519 wKZR3gqswig US news m 94
+16:40:21 skip (title) G1xG-y8TMLI New details intensify scrutiny of Cornell's handling of gang
+16:40:25 ok 520 821LhlIJhsw US news m 92
+16:40:41 ok 521 asIzQq6Rlxs US news m 92
+16:40:57 ok 522 5saL4JLTv4o US news m 102
+16:41:15 ok 523 1-b9XmcBOvE US news m 166
+16:41:29 ok 524 WQr474YvW3E US news m 119
+16:41:45 ok 525 dCiUBk511cI US news m 149
+16:42:01 ok 526 _YY-TXTlMiY US news m 152
+16:42:16 ok 527 fBB879U5vqY US news m 94
+16:42:32 ok 528 p6Rt7yfQOt4 US news m 96
+16:42:49 ok 529 bH0uSq5K_fI US news m 142
+16:43:04 ok 530 0zY4Mjsjp4k US news m 105
+16:43:20 ok 531 8hEwdSSfIb4 US news m 107
+16:43:35 ok 532 9Nu_hSxcNdE US news m 118
+16:43:47 skip (title) v4NTbQC9CVQ New York prosecutors reopen investigation into alleged rape 
+16:43:50 ok 533 mNtsus637no US news m 97
+16:44:06 ok 534 rqR8uwB-MbM US news m 58
+16:44:35 ok 535 vZrjFkxazoM US news a 54
+16:44:52 ok 536 9SVvWyE1QQ4 US news a 138
+16:45:07 ok 537 pSCHMxe6Y_Y US news a 47
+16:45:22 ok 538 ecSmqNBOQac US news a 80
+16:45:39 ok 539 GJ9E90Ppahg US news a 118
+16:45:54 ok 540 yc6pGbBwsv8 US news a 59
+16:46:06 skip (title) CIL6hBnblu8 Family of 20-year-old co-pilot killed in Florida plane crash
+16:46:10 ok 541 0bO1ysR-pkE US news a 79
+16:46:24 ok 542 bYfPaonUwrs US news a 239
+16:46:40 ok 543 lKNCV7JkbPU US news a 208
+16:46:55 ok 544 w3MwEA6GgX0 US news a 196
+16:47:11 ok 545 MrSknIfdb50 US news a 88
+16:47:26 ok 546 LFwNlDXoD7I US news a 138
+16:47:41 ok 547 FRUHHH1MZD0 US news a 198
+16:47:57 ok 548 ifGabggAxmE US news a 112
+16:48:12 ok 549 QtGIIsIa9-0 US news a 186
+16:48:27 ok 550 6ROYEhH1KxE US news a 481
+16:48:43 ok 551 A78Cd8nqnZE US news a 88
+16:48:58 ok 552 WSaOawRSkl0 US news a 83
+16:49:17 ok 553 vc-2VAdSpww US news a 165
+16:49:32 ok 554 ERr6XR3sBsk US news a 41
+16:49:44 skip (title) Zz82XvtYJ40 Latest news after Meghan Markle's father was arrested in a c
+16:49:48 ok 555 zBdejSbbInk US news a 130
+16:50:04 ok 556 voUj96FPELA US news a 97
+16:50:19 ok 557 uBh4BFWbu0Q US news a 113
+16:50:40 clips collected this run: 557 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 557
