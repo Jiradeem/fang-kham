@@ -1,329 +1,401 @@
-Nightly run on the home computer, 2026-11-08 22:29 (last 400 lines of the collector)
-20:29:08 32240 clips published; 6599 on the skip list; 0 removed by the skip list
-20:42:03 ok 1 QxosV2Tj4jw UK conversation a 134
-20:42:18 ok 2 pstcJ8fnleI UK conversation a 83
-20:42:34 ok 3 P4wW_j7IIOU UK conversation a 66
-20:42:49 ok 4 kdlGiUcNtts UK conversation a 112
-20:43:05 ok 5 kY6eb_BVLHY UK conversation a 365
-20:43:21 ok 6 btsQ_2pLxno UK conversation a 135
-20:43:36 ok 7 edAPqzSXs8g UK conversation a 128
-20:43:51 ok 8 W2kZSgjA0II UK conversation a 104
-20:44:07 ok 9 fw3-9iBPzAA UK conversation a 94
-20:44:22 ok 10 1SN7Ubu-A7U UK conversation a 102
-20:44:37 ok 11 qPjRtY_1sWU UK conversation a 134
-20:44:54 ok 12 3U0nAi3yi8U UK conversation a 114
-20:45:10 ok 13 am_WLVIVy84 UK conversation a 131
-20:45:26 ok 14 KYHFBzgzWY4 UK conversation a 132
-20:45:42 ok 15 Trm1o0HRghQ UK conversation a 136
-20:45:57 ok 16 f_mSCCfcUNM UK conversation a 116
-20:46:16 ok 17 GdI32R3PO0c UK conversation a 79
-20:46:32 ok 18 Cp0i46HgrsE UK conversation a 147
-20:46:47 ok 19 u5JFVKz7iBs UK conversation a 97
-20:47:03 ok 20 4fS4wGg38rw UK conversation a 396
-20:47:18 ok 21 LAqlDhVyJ5A UK conversation a 114
-20:47:34 ok 22 AyLAWPfNvGc UK conversation a 101
-20:47:49 ok 23 59-qssYomd0 UK conversation a 135
-20:48:05 ok 24 3fFpqqk3SGU UK conversation a 130
-20:48:21 ok 25 64Zz3QFE7gE UK conversation a 121
-20:48:36 ok 26 bBfVzLbw_pc UK conversation a 144
-20:48:53 ok 27 NOWsHb9E95w UK conversation a 173
-20:49:09 ok 28 5Eyx7EGgECE UK conversation a 130
-20:49:25 ok 29 TRxZ1o1JDPs UK conversation a 111
-20:49:40 ok 30 HYbM5hDB4EQ UK conversation a 336
-20:49:56 ok 31 uVy2mey9B64 UK conversation a 96
-20:50:13 ok 32 53qsToPLeVQ UK conversation a 146
-20:50:29 ok 33 H_m1GOsWo0c UK conversation a 114
-20:50:45 ok 34 CdumXreRGsM UK conversation a 126
-20:51:00 ok 35 eeo4YhC_ofE UK conversation a 82
-20:51:16 ok 36 ASpEBWkDNoE UK conversation a 110
-20:51:31 ok 37 j2KItOV1Z7Q UK conversation a 103
-20:51:46 ok 38 cXkSC7zdEAo UK conversation a 101
-20:52:01 ok 39 Jlbn_xa3dXY UK conversation a 72
-20:52:17 ok 40 PV-bqyApNFg UK conversation a 114
-20:53:34 ok 41 -g76VuEcvnI UK conversation a 118
-20:53:50 ok 42 TV4KVjeJ1Vc UK conversation a 215
-20:54:15 ok 43 wIYJnjnN2eY UK conversation m 57
-20:54:31 ok 44 9eYZQY7Ih2U UK conversation a 163
-20:54:54 ok 45 WVkpDbr0JAE UK conversation a 238
-20:55:10 ok 46 EnSrTdeBQHQ UK conversation a 169
-20:55:25 ok 47 b4gZo2prPUw UK conversation a 275
-20:55:40 ok 48 V3yA3AQppLc UK conversation a 155
-20:55:55 ok 49 opBONS7HC5E UK conversation a 247
-20:56:11 ok 50 45kXLkjHZuA UK conversation m 63
-20:56:31 ok 51 r0fSzlX8iD4 UK conversation a 198
-20:56:47 ok 52 9TxgV4tNBno UK conversation a 112
-20:57:02 ok 53 sx1eGm_Io_M UK conversation a 198
-20:57:19 ok 54 NowWFjOy6Ko UK conversation a 206
-20:57:36 ok 55 qUEJasXh7xw UK conversation a 67
-20:57:52 ok 56 Jplb7ohir3Y UK conversation a 184
-20:58:07 ok 57 llUbY_EOzvA UK conversation a 429
-20:58:22 ok 58 2Oma6na0Myo UK conversation a 116
-20:58:41 ok 59 JizUYGecmfs UK conversation a 122
-20:58:56 ok 60 fv4MAORVZKM UK conversation a 172
-20:59:12 ok 61 Fi_pua1qMNs UK conversation a 253
-20:59:27 ok 62 S5hookiSpD8 UK conversation a 352
-20:59:43 ok 63 DGeowpADjNc UK conversation a 319
-20:59:59 ok 64 ONTuHf6boWo UK conversation a 302
-21:00:14 ok 65 ROXJ5IqwUUE UK conversation m 53
-21:00:32 ok 66 OF-k1p6jnQw UK conversation a 78
-21:00:47 ok 67 C-rRhAsq1Yw UK conversation a 151
-21:01:04 ok 68 f_IeoJkZRbQ UK conversation a 107
-21:01:21 ok 69 gXvjFo-0KZE UK conversation m 151
-21:01:36 ok 70 HXSwwqNgnuk UK conversation m 55
-21:01:53 ok 71 00Ta9dvd4aY UK conversation m 25
-21:02:09 ok 72 5R8c2BJmM0g UK conversation a 212
-21:02:27 ok 73 op8h-IJ36XM UK conversation m 145
-21:02:42 ok 74 S0SkgGxsVZs UK conversation m 142
-21:02:57 ok 75 TOdSrm2iv8o UK conversation m 91
-21:03:13 ok 76 gUnDkuBkhRY UK conversation m 102
-21:03:28 ok 77 4AdUukPHLTM UK conversation m 125
-21:03:44 ok 78 I1H3TL5wp6I UK conversation a 104
-21:04:07 ok 79 pakUYUvn9Tw UK conversation a 325
-21:04:22 ok 80 Hsa4d4k4HPI UK conversation m 99
-21:06:21 ok 81 hVUOhKftYKg US movie a 34
-21:06:54 ok 82 DBrehOquksg US series a 34
-21:08:12 ok 83 kfHm1ZJTK7E US kids a 203
-21:08:29 ok 84 NLtAdS9s4Bc US kids a 52
-21:08:44 ok 85 nbO9iynmTV4 US kids a 156
-21:08:59 ok 86 XhKsRJakqWE US kids a 57
-21:09:16 ok 87 5R4o40QKhzU US kids a 210
-21:09:33 ok 88 7sBnuHKm6nk US kids a 64
-21:09:50 ok 89 LUuv3R9_5To US kids a 68
-21:10:26 ok 90 yMKqg6u32u0 US kids a 375
-21:10:43 ok 91 u_Bt-xRiGNc US kids a 66
-21:10:58 ok 92 TuD27G7bTGE US kids a 345
-21:11:13 ok 93 3fvNGV8zqsI US kids a 67
-21:11:28 ok 94 yS1AffgNoSU US kids a 68
-21:11:44 ok 95 ugfIKLRApUM US kids a 55
-21:11:59 ok 96 HqYkIubYgPw US kids a 322
-21:12:14 ok 97 EI76VzFcNFA US kids a 64
-21:12:29 ok 98 RmtSq67pYsM US kids a 159
-21:12:44 ok 99 grrsbMxI4ag US kids a 70
-21:13:00 ok 100 3uCrhZFP8S0 US kids a 177
-21:13:15 ok 101 KxOkYpdheDw US kids a 68
-21:13:30 ok 102 9XcG2uYteks US kids a 190
-21:13:46 ok 103 cnc2gyZZpII US kids a 67
-21:14:02 ok 104 6Op6ZkYTMjQ US kids a 347
-21:14:17 ok 105 H9PsHVUuTzs US kids a 54
-21:14:32 ok 106 T09_JgchZqo US kids a 303
-21:14:47 ok 107 vFDWvVIrU8M US kids a 64
-21:15:05 ok 108 RMGSlVaIX4o US kids a 315
-21:15:22 ok 109 FbecYIgqPdg US kids a 54
-21:15:37 ok 110 wsBCK0Q635A US kids a 280
-21:15:52 ok 111 jjLupbi4hI0 US kids a 48
-21:16:07 ok 112 YmXTwFvhplE US kids a 284
-21:16:22 ok 113 SXYDANWHTUI US kids a 71
-21:16:37 ok 114 ZN5MsEMvc20 US kids a 178
-21:16:52 ok 115 pSMBWOWbEyw US kids a 75
-21:17:08 ok 116 qoMPHsZVEyI US kids a 158
-21:17:23 ok 117 DdvUwdW-DLA US kids a 50
-21:17:38 ok 118 0roDYwQ3q7M US kids a 243
-21:17:53 ok 119 KIb3wJMbeTI US kids a 80
-21:18:08 ok 120 3quuVZmbJ_E US kids a 177
-21:18:25 ok 121 QOfm4NM96dM US kids a 59
-21:18:40 ok 122 R3FWsTHiO9I US kids a 62
-21:19:20 ok 123 SRGLPG1KKPs US kids a 286
-21:19:35 ok 124 jI9F0F3Tcf4 US kids m 425
-21:19:50 ok 125 PiCQwCO8h6g US kids m 529
-21:20:06 ok 126 7eC0HcmVOrg US kids m 460
-21:20:24 ok 127 FGS7AuQHrls US kids a 326
-21:20:39 ok 128 aqa4Znxqj6Q US kids a 338
-21:20:54 ok 129 GuPukeTiUUo US kids a 323
-21:21:09 ok 130 ZpLq4UvDLo0 US kids a 290
-21:21:24 ok 131 CFJuqWyBnmI US kids a 321
-21:21:40 ok 132 a8Eo8pyZMmM US kids a 347
-21:21:56 ok 133 Z2kZQsnuPP4 US kids a 314
-21:22:12 ok 134 t4r9ESdLwng US kids a 57
-21:22:28 ok 135 uoRJT1HGO3k US kids a 313
-21:22:45 ok 136 fK2e2_lZ4qM US kids m 39
-21:23:01 ok 137 xNFFL0BsJT8 US kids m 47
-21:23:16 ok 138 cVKmww1GBnA US kids m 38
-21:23:37 ok 139 t9mWxxM7ah8 US kids m 46
-21:23:53 ok 140 _bAXTxgEal0 US kids m 36
-21:24:08 ok 141 icyP5wPSXkM US kids m 61
-21:24:23 ok 142 -I0RH22m8Kg US kids m 48
-21:24:38 ok 143 beWpiXz97Ww US kids m 30
-21:24:53 ok 144 ex9gk_wre-0 US kids m 29
-21:25:09 ok 145 z7rR8b7OJDU US kids m 74
-21:25:24 ok 146 vIp99ug1ePQ US kids m 68
-21:25:39 ok 147 qw1QhfMyj5k US kids m 68
-21:25:54 ok 148 iLCoKdD8F8Q US kids m 87
-21:26:09 skip (mostly music) QsRvHlD1OVA
-21:26:12 ok 149 u1-i-i1xb5Q US kids m 52
-21:26:28 ok 150 TcZ0U3ZoGBY US kids m 51
-21:26:43 ok 151 69FpES7oYr8 US kids m 60
-21:26:58 ok 152 kt_3fpqSeW8 US kids m 48
-21:27:14 ok 153 vyHzfrMVtD0 US kids m 38
-21:27:29 ok 154 i3zRBdj1SiQ US kids m 47
-21:27:44 ok 155 RiNvoowb3XM US kids m 28
-21:28:00 ok 156 BpThHAdg_bw US kids m 42
-21:28:16 ok 157 06l-O5tqmBU US kids m 40
-21:28:31 ok 158 VIewhdk1gF8 US kids m 36
-21:28:46 ok 159 sUpJ1Imj8yg US kids m 25
-21:29:01 ok 160 61UH4Kp9epo US kids m 42
-21:29:18 ok 161 xwi4E6XAktk US kids m 41
-21:29:34 ok 162 V4sLc94m90g US kids m 22
-21:31:05 ok 163 XVXTxNvjTTI US conversation m 371
-21:31:28 ok 164 LGnDC9xH7Oc US conversation m 186
-21:31:40 skip (title) ppSAlO9pmPA Suicide Attempt Survivors Bust Myths About Suicide | Truth o
-21:31:43 ok 165 A1xWVw1SPns US conversation m 336
-21:31:58 ok 166 P3kQfRfxAAg US conversation m 147
-21:32:13 ok 167 _vfNy9qiOfU US conversation m 127
-21:32:35 ok 168 NBN_SJMdErc US conversation m 253
-21:32:52 ok 169 swbf50Mmyfs US conversation m 318
-21:33:07 ok 170 nC8hsnS0KZ4 US conversation m 119
-21:33:22 ok 171 8I_57e6jklw US conversation m 276
-21:33:38 ok 172 8JUuZwzEFlc US conversation m 222
-21:33:53 ok 173 Ato_Tq0RmSU US conversation m 170
-21:34:08 ok 174 3jaCakIYKMc US conversation m 220
-21:34:23 ok 175 bZMFgfZLFFc US conversation m 289
-21:34:38 ok 176 kmq78SrJQYk US conversation m 179
-21:35:02 ok 177 Do64DFhKfyM US conversation m 244
-21:35:17 ok 178 hL8VvfVkv18 US conversation m 189
-21:35:32 ok 179 AJXKtS9lKLM US conversation m 131
-21:35:49 ok 180 bc4W-I9UHm4 US conversation m 151
-21:36:05 ok 181 fOXYqi1yE20 US conversation m 229
-21:36:21 ok 182 5EIByot_I5Q US conversation m 111
-21:36:36 ok 183 k0Z1dgkTb7M US conversation m 326
-21:36:51 ok 184 tiEdwHe_8Hk US conversation m 148
-21:37:07 ok 185 G63YU_RnJ0s US conversation m 138
-21:37:25 ok 186 _nkH2vw-_tQ US conversation m 302
-21:37:40 ok 187 CCTIoBEnWvo US conversation m 110
-21:37:59 ok 188 3Z_MRRo1y58 US conversation m 206
-21:38:15 ok 189 fchRmWN16D4 US conversation m 108
-21:38:31 ok 190 PwvpCtQfuxc US conversation m 262
-21:38:46 ok 191 0MB12BQLDLo US conversation m 161
-21:39:01 ok 192 sBOOER0gPi4 US conversation m 230
-21:39:18 ok 193 U25dcZ1ohw0 US conversation m 157
-21:39:39 ok 194 1n_BYiKhuJ8 US conversation m 147
-21:39:54 ok 195 5TmqytFxsVY US conversation m 194
-21:40:12 ok 196 XjCpEKF_K6o US conversation m 222
-21:40:28 ok 197 GzDakvMGrmQ US conversation m 262
-21:40:43 ok 198 q_92iSr4NH0 US conversation m 219
-21:41:01 ok 199 eKKQfJCwKQQ US conversation m 148
-21:41:16 ok 200 UN2UQ-16u6A US conversation m 221
-21:41:32 ok 201 rJukxB8tCDw US conversation m 167
-21:41:48 ok 202 9NgBWfo-e-o US conversation m 209
-21:43:10 ok 203 0smLr8bVZPs US conversation a 94
-21:43:25 ok 204 zl6souttPvs US conversation a 362
-21:43:41 ok 205 Td0Ay2OZryI US conversation a 79
-21:44:01 skip (too short) 9HlqYlJbrWQ
-21:44:05 ok 206 bh_n7v7SYqY US conversation a 150
-21:44:20 ok 207 2W_AxUvXYlw US conversation a 100
-21:44:36 ok 208 7P6UzxySy20 US conversation a 270
-21:44:51 skip (mostly music) eFlMjmSs2ng
-21:44:55 ok 209 CuZu1eFi72M US conversation a 103
-21:45:11 ok 210 FavuSSqLy1s US conversation a 300
-21:45:26 ok 211 EUjjTXBoDt0 US conversation a 134
-21:45:50 ok 212 vtH5tD7vvh0 US conversation a 265
-21:46:05 ok 213 4CgGVTVRLXo US conversation m 417
-21:46:24 ok 214 9vOwk-opZfc US conversation a 59
-21:46:40 ok 215 QGgzKdK3z2A US conversation a 77
-21:46:52 skip (title) oE2FvAcAJas Ex-Drug Lord Plays Never Have I Ever
-21:46:55 ok 216 4EOO5x6pMgY US conversation m 268
-21:47:11 ok 217 tS03H7eeNiQ US conversation a 90
-21:47:26 ok 218 jhohMHcyzCI US conversation m 142
-21:47:41 ok 219 SZ6ZaetjMyU US conversation a 54
-21:47:53 skip (title) NvSiyatVong Ex-Drug Lord Guesses Ex-Undercover Cop Out Of A Lineup
-21:47:57 ok 220 Ovo9JjoDV-g US conversation a 110
-21:48:13 ok 221 ELBD8Iqcz7o US conversation m 355
-21:48:28 ok 222 4j_8rEyYEXw US conversation m 181
-21:48:44 ok 223 cUplCRqEEfY US conversation a 132
-21:49:00 ok 224 sr1bXlO0KGI US conversation m 529
-21:49:15 ok 225 H8FCZSOqzds US conversation m 152
-21:49:30 ok 226 bZb5Cv_LAkI US conversation a 148
-21:49:46 ok 227 zuw9FVRmKQ8 US conversation a 79
-21:50:02 ok 228 wi8qdnpbMjA US conversation a 99
-21:50:17 ok 229 RqQZmfedInY US conversation a 123
-21:50:35 ok 230 ai94ZSFAtTk US conversation a 43
-21:50:51 ok 231 wWyGK7zQ8ZM US conversation a 149
-21:51:08 ok 232 Lllv0oW3SXc US conversation a 127
-21:51:24 ok 233 8OphEV6Yoog US conversation a 56
-21:51:39 ok 234 AJxyadRmt2E US conversation a 107
-21:51:54 ok 235 Ap2no6m4vxA US conversation m 240
-21:52:10 skip (too short) TKwRcg5Rg8w
-21:52:13 ok 236 sESEjgVBwLI US conversation m 124
-21:52:29 ok 237 6fCRkXg9YwQ US conversation m 161
-21:52:44 ok 238 9Ni1o0CvT4w US conversation a 86
-21:53:00 ok 239 Z5UaoU5sS44 US conversation m 57
-21:53:15 skip (too short) 9kTUh35KQKg
-21:53:20 ok 240 AU5hFqa1XyM US conversation m 62
-21:53:36 ok 241 noAOAXzOuPA US conversation a 102
-21:53:52 ok 242 fH_B905QTt4 US conversation m 52
-22:04:29 ok 243 NaESeIb98c0 CAN news a 140
-22:04:48 ok 244 ceH5YVeWz9c CAN news a 119
-22:05:10 ok 245 pQkZJnlwnxs CAN news a 52
-22:05:27 ok 246 KYDW9_0M8po CAN news a 128
-22:05:45 ok 247 EeFsHuJfYa0 CAN news a 127
-22:06:03 ok 248 FCJpfXNcCvw CAN news a 21
-22:06:23 ok 249 lu6d1EKMg6w CAN news a 292
-22:06:48 ok 250 U_LocW6xfmQ CAN news a 112
-22:07:15 ok 251 bbpxVoPPDJ8 CAN news a 128
-22:07:33 ok 252 GizW_u1bZ98 CAN news a 132
-22:07:52 ok 253 ZcyKUwK3-yk CAN news a 45
-22:08:09 ok 254 BNVbHYVFLqo CAN news a 116
-22:08:30 ok 255 _mavtLtjskg CAN news a 50
-22:08:50 ok 256 4Mq1GeCs0ww CAN news a 60
-22:09:08 ok 257 kUpEvbsHZas CAN news a 32
-22:09:31 ok 258 5ps48mXhSik CAN news a 47
-22:09:49 ok 259 veFEyq72OaE CAN news a 61
-22:10:07 ok 260 hTdfiURbXQE CAN news a 108
-22:10:25 ok 261 SSYo6qztk_0 CAN news a 56
-22:10:52 ok 262 K60f-N8EbUQ CAN news a 54
-22:11:11 ok 263 _ZDXPGZMPYo CAN news a 61
-22:11:31 ok 264 MdxwJKS-3ws CAN news a 38
-22:11:50 ok 265 EIFdDgb4ZU0 CAN news a 38
-22:12:09 ok 266 9MtNgCtiZr4 CAN news a 141
-22:12:26 ok 267 1L5Cg3FY4M0 CAN news a 37
-22:12:41 ok 268 wVr8RmNWlo4 CAN news a 174
-22:13:02 ok 269 7Uvc_Nvk5cI CAN news a 157
-22:13:19 ok 270 TKRFauB-p70 CAN news a 147
-22:13:40 ok 271 WhNpeDmOFGI CAN news a 125
-22:13:58 ok 272 UIh7uASfkO0 CAN news a 43
-22:14:23 ok 273 l9HThb3qlQ0 CAN news a 42
-22:14:43 ok 274 VyDQXKF-RJ8 CAN news a 69
-22:15:02 ok 275 iCLBs8ZRBdg CAN news a 140
-22:15:19 ok 276 rzc8kW01M50 CAN news a 205
-22:15:41 ok 277 U5A440HwW0A CAN news a 43
-22:16:00 ok 278 i_7OTF6VKK0 CAN news a 141
-22:16:18 ok 279 a8BV5StZ9u4 CAN news a 135
-22:16:35 ok 280 c_0K3KkB8F4 CAN news a 77
-22:16:56 ok 281 E-lOGYz1N-0 CAN news a 101
-22:17:08 skip (title) vw0jC6ofFlE Unsolved 519: Sarnia police hope DNA tech solves murder of M
-22:17:14 ok 282 gt-B2lw6qiE CAN news a 30
-22:17:57 ok 283 f4stXzCHzIU CAN news a 65
-22:18:25 ok 284 8pUFb-y0XHM CAN news a 92
-22:20:18 skip (bleeped words) o2qf9gmIHTA
-22:20:21 ok 285 hG6TAlG8vdY US interview a 107
-22:20:37 ok 286 Eip2wuhIcLQ US interview a 395
-22:20:52 skip (bleeped words) eu1PKDpi8hM
-22:20:56 skip (bleeped words) 264kafgePio
-22:21:00 ok 287 vwMY8H1d34w US interview a 112
-22:21:15 ok 288 Tpw5H-0wovk US interview a 270
-22:21:31 ok 289 wW1mYHbxLhs US interview a 212
-22:22:51 ok 290 Nd-u7tIkK64 UK news a 142
-22:23:24 ok 291 Jz6HEaho6os UK news a 22
-22:24:48 skip (too short) x28yyfy0dwA
-22:24:51 ok 292 in1B63e8YDo US news a 29
-22:25:03 skip (title) 2KapKKlrZZk Funerals for police and civilians killed in Russian attack o
-22:25:07 ok 293 jwunY1fpgsY US news a 23
-22:25:24 ok 294 tMk3GAJ-W4o US news a 29
-22:25:40 ok 295 zA6A2W4SFzg US news a 23
-22:25:55 ok 296 AiZ8F3gWCXM US news a 45
-22:26:11 skip (too short) 582uHrk-j5Q
-22:26:14 ok 297 7KSnsJX4FcI US news a 22
-22:26:26 skip (title) xNjF0M80zhQ Three bodies found at Krakow shooting suspect's home believe
-22:26:33 ok 298 _7DFDMNCOus US news a 24
-22:26:50 skip (too short) T4lpePqFv7Y
-22:27:06 skip (too short) 8b4eNuTDmhQ
-22:27:13 ok 299 x8TBAEP1w8Q US news a 32
-22:27:34 ok 300 zbezMVx_QNE US news a 56
-22:27:49 ok 301 KCZYh1UaqPk US news a 67
-22:28:05 ok 302 ZczU5ArBlMs US news a 42
-22:28:20 ok 303 L0_eAlzQSCY US news a 25
-22:28:35 skip (too short) JKRQq7ba7Lg
-22:28:41 ok 304 Rapm9_yG1Vc US news a 52
-22:28:57 ok 305 xOFpWbUirb4 US news a 39
-22:29:12 ok 306 q7in6NIh2-Q US news a 29
-22:29:27 ok 307 zzVxALKxS60 US news a 24
-22:29:53 clips collected this run: 307 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 307
+Nightly run on the home computer, 2026-11-09 01:55 (last 400 lines of the collector)
+00:29:39 ok 261 on1L_jblaw8 US ted m 312
+00:31:52 skip (title) VpRB17cc89w Israel election, Krakow shooting, AI shopping agents | Reute
+00:32:28 ok 262 Xi5HTGoh0KI UK news a 154
+00:33:07 ok 263 3H_abINusHs US news a 201
+00:33:22 ok 264 _H2LY4B4mLQ US news m 287
+00:33:37 ok 265 XdJTTfQieF0 US news m 384
+00:33:51 ok 266 IRvv6X825oA US news m 43
+00:34:03 skip (title) xl7q2uQDkp0 Elderly driver crashes into group of cyclists in North Carol
+00:34:06 ok 267 hKF9_HTC9sU US news m 62
+00:34:22 ok 268 DHWpJ6lF9us US news m 137
+00:34:37 ok 269 n9SLqz3eWdM US news m 212
+00:34:52 ok 270 6sY2btunrtw US news m 85
+00:35:07 ok 271 eLb_JZkNSAM US news m 61
+00:35:22 ok 272 E6vrEZFUVqo US news m 127
+00:35:37 ok 273 jlOGGNXIJIc US news a 26
+00:35:52 ok 274 o76TPcREj8s US news m 446
+00:36:07 ok 275 Zl3rmG6o14Y US news m 89
+00:36:22 ok 276 VeIDWru_-6E US news m 111
+00:36:34 skip (title) R-y-ZgtV8YY At least three people injured in shooting at Des Moines post
+00:36:38 ok 277 IwFQ8NYFmwg US news m 86
+00:36:50 skip (title) mJAvRmfJ8rU Russell Brand found guilty of rape and sexual assault in Lon
+00:36:52 ok 278 vCTcm860ZMY US news m 229
+00:37:08 ok 279 aiodx3Bx7oI US news m 113
+00:37:23 ok 280 FpBeSwn0b7w US news m 219
+00:37:38 ok 281 8eMAJCWyBPY US news m 177
+00:37:53 ok 282 yPsRCMef2Kg US news m 107
+00:38:09 ok 283 NmbbVBIBufs US news m 51
+00:38:24 ok 284 gTh5qK9CRqs US news m 137
+00:38:40 ok 285 7zJEOipFtDc US news m 42
+00:38:52 skip (title) ZlbMYSpmrms Deadly Florida workplace shooting
+00:38:55 ok 286 dx8fZToKzCY US news m 66
+00:39:10 ok 287 uEryVzC70WI US news m 365
+00:39:25 ok 288 O0tCla4bYTk US news m 105
+00:39:40 ok 289 C8xMaU0gVQI US news m 115
+00:39:55 ok 290 PSOgsmKByks US news m 95
+00:40:10 ok 291 -4CQ0Sq8isI US news a 44
+00:40:26 ok 292 jsuAy4B4WHA US news m 160
+00:40:42 ok 293 ylZ4AnDphYU US news m 53
+00:40:57 ok 294 bMnBJfG-t8g US news m 82
+00:41:12 ok 295 e-HkabQAW5s US news m 35
+00:41:27 ok 296 Ey8fu3ZWrEE US news m 138
+00:41:42 ok 297 EUpQUrN0TK8 US news m 297
+00:41:59 ok 298 s8KFLrBWBXg US news m 256
+00:42:14 ok 299 ZYTBcC64awA US news m 607
+00:42:29 ok 300 IKyqKe9zixw US news m 477
+00:42:45 ok 301 Q3jXWW3nMxY US news m 103
+00:43:00 ok 302 d6LHmzAWmMs US news m 108
+00:43:26 ok 303 IYWhJGOk4Os US news m 427
+00:43:40 ok 304 Dh5Yla8p8zw US news m 527
+00:43:55 ok 305 2iGMSEZmCdI US news m 183
+00:44:10 ok 306 yHCLnII9u3c US news m 196
+00:44:25 ok 307 NFcNGZ3pDgY US news m 109
+00:44:37 skip (title) HSLlnZ6DIBY NYC ICE shooting: New video shows feds approach car with gun
+00:44:40 ok 308 AQUhn7d0_BI US news m 127
+00:44:54 ok 309 HqsV1PieIIc US news m 93
+00:45:12 skip (bleeped words) 26ae30DmJ1g
+00:45:14 ok 310 TTbp7GOEpcY US news m 339
+00:45:28 skip (title) FQnV8FE_bMk Pentagon to livestream Ft. Hood shooter’s firing squad execu
+00:45:31 ok 311 jHo9EcZX-zo US news m 397
+00:45:46 ok 312 HQXrY4IZY4g US news m 579
+00:46:01 ok 313 XvX4rjPc_7k US news m 108
+00:46:13 skip (title) c0dVDkZNRIQ Russian attack kills 33 in Ukraine in deadliest attack this 
+00:46:15 ok 314 PemOhmnQUQw US news m 302
+00:46:30 ok 315 ZG9Ru_BRk_o US news m 91
+00:46:45 ok 316 daNMSK_mBro US news m 380
+00:47:00 ok 317 d4HXnXOT1qI US news m 85
+00:47:15 ok 318 EbaQKJs4CPA US news m 414
+00:47:30 ok 319 dY7iDzpedqk US news m 383
+00:47:42 skip (title) jcOGfeST4No Mall of America terror plot foiled
+00:47:47 ok 320 a1ePqZtWiZg US news m 103
+00:48:05 ok 321 DWVPFpFwqrs US news m 160
+00:48:20 ok 322 k4j2xB_0i24 US news m 110
+00:48:35 ok 323 t3NOLL5zW9w US news m 544
+00:48:52 ok 324 iptpvV142go US news m 368
+00:49:09 ok 325 T9oxUIBOAIU US news m 78
+00:49:23 ok 326 JytYyFqdcbs US news m 102
+00:49:40 ok 327 eQCkEWYTF5o US news m 587
+00:49:55 ok 328 tidX1-8lkAE US news m 510
+00:50:10 ok 329 3n0BqV78M88 US news m 80
+00:50:25 ok 330 5Iv9HarPDiE US news m 537
+00:50:40 ok 331 5BHotRSDQHY US news m 649
+00:50:54 ok 332 8Ek9PxisCFM US news m 143
+00:51:10 ok 333 WRGtClceHJE US news m 104
+00:51:25 ok 334 KN4CcSk3UpY US news m 86
+00:51:40 ok 335 CumnsaQDu38 US news m 91
+00:51:55 ok 336 chj4hfH-6FQ US news m 130
+00:52:10 ok 337 9lcBNw6xUig US news m 109
+00:52:25 ok 338 jpL8jy5iwLA US news m 85
+00:52:40 ok 339 SjKSQKN_cGc US news m 414
+00:52:55 ok 340 CfEOKLC_8pY US news m 417
+00:53:10 ok 341 ZyLjr4jOohY US news m 142
+00:53:25 ok 342 YfyR9hk-uKI US news m 316
+00:53:52 ok 343 p5cV2n2n908 US news m 152
+00:54:06 ok 344 Kj7Od9gNPVo US news m 52
+00:54:21 ok 345 Tg4jzQvbqV4 US news m 185
+00:54:36 ok 346 OzEAWoZbzXg US news m 197
+00:54:51 ok 347 GiGJa3zDr7I US news m 44
+00:55:06 ok 348 l328YDFlV9E US news m 151
+00:55:21 ok 349 M5g7DPSs074 US news m 162
+00:55:36 ok 350 B1esQRfJupM US news m 83
+00:55:50 ok 351 lq-e8gWm5Js US news m 33
+00:56:05 ok 352 45Pks3Pqayc US news m 202
+00:56:20 ok 353 3ZuXGVVIasM US news m 137
+00:56:35 ok 354 304ph_rT8rQ US news m 114
+00:56:50 ok 355 rZRGipdy2ws US news m 159
+00:57:05 ok 356 X_iyv1uRrhc US news m 87
+00:57:20 ok 357 0EawCYrsdUc US news m 102
+00:57:35 ok 358 6srQnCiyxP8 US news m 83
+00:57:50 ok 359 9gFjTPRNA3U US news m 44
+00:58:05 ok 360 Fd6R_BCOBrU US news m 107
+00:58:20 ok 361 xP2cFRXXTkM US news m 60
+00:58:35 ok 362 DqOS_jA7IUc US news m 37
+00:58:49 ok 363 xWp6kMZseOg US news m 99
+00:59:04 ok 364 tsurz2nW5Z4 US news m 174
+00:59:19 ok 365 M2RumcY9AXY US news m 93
+00:59:34 ok 366 OM3WMP_nD8g US news m 96
+00:59:48 ok 367 cc1ClRe3oZw US news m 108
+01:00:03 ok 368 kOjU-NStNcs US news m 93
+01:00:18 ok 369 KqQ-yuoRpTI US news m 96
+01:00:33 ok 370 sb5AEvXJmhg US news m 71
+01:00:48 ok 371 JiYbvg89jlg US news m 77
+01:01:03 ok 372 7PK0K2aHFxs US news m 121
+01:01:18 ok 373 jFDnxM4l1Y8 US news m 190
+01:01:32 ok 374 hiIoAeFLEtU US news m 124
+01:01:48 ok 375 mSaGPAYvzTs US news m 140
+01:02:03 ok 376 OsEr0qB9vTc US news m 89
+01:02:19 ok 377 kSbQPCdzFHY US news m 123
+01:02:34 ok 378 FeslKuCMCZE US news m 83
+01:02:49 ok 379 ZqRcfdqTzFc US news m 112
+01:03:04 ok 380 _zzgrb3qmBY US news m 154
+01:03:18 ok 381 5pOXmxF8DG8 US news m 115
+01:03:33 ok 382 xsoxrKbWQQE US news m 122
+01:03:59 ok 383 vl7CamSwDLw US news a 77
+01:04:14 ok 384 xLAdGYC-RPI US news a 131
+01:04:28 ok 385 QvUjzIP0OAg US news a 167
+01:04:43 ok 386 tZkoYAPCRNc US news a 52
+01:04:58 skip (too short) 2vJavFxfOug
+01:05:00 ok 387 J7Ls3lWBl88 US news a 31
+01:05:15 ok 388 AfqmoQ3pPik US news m 358
+01:05:30 skip (too short) LfhbC2Rqraw
+01:05:33 ok 389 1dAC9BIFqSQ US news a 37
+01:05:45 skip (title) E9BpeXdtNK4 At Least 68 Killed in Spain High-Speed Train Disaster. What 
+01:05:47 ok 390 ylwChwc631w US news a 44
+01:06:02 ok 391 G7E1dfb7aoM US news a 23
+01:06:17 ok 392 D1terMZEqbM US news a 120
+01:06:32 ok 393 pGJ1aVXIo4A US news a 230
+01:06:47 skip (too short) Ist5QwZ4VS8
+01:06:49 ok 394 TNy8gecDhFI US news a 21
+01:07:01 skip (title) 3rDBcRLXriA At least 64 killed in train collision on high-speed line in 
+01:07:04 ok 395 RsGucbKUX8M US news a 32
+01:07:19 skip (too short) -CdBS3rZeJA
+01:07:19 skip (title) izhKVQNB9fw Evidence links serial killer Ted Bundy to another victim
+01:07:23 ok 396 YvJkdu9lAag US news a 21
+01:07:35 skip (title) p9qDe_Bev40 Alex Pretti's parents seek answers from DOJ months after son
+01:07:38 ok 397 TPsAz70fBwQ US news a 96
+01:07:53 ok 398 nbenLp2VPEw US news a 24
+01:08:08 ok 399 xP-Pa5baTEc US news m 329
+01:08:23 ok 400 fSQxa7HOG8k US news a 138
+01:08:35 skip (title) 1ganO7Gwva8 Urgent multi-state manhunt for murderer who escaped Tennesse
+01:08:38 ok 401 UOa2ADesV94 US news a 22
+01:08:53 ok 402 HnJlT-0ijI4 US news a 47
+01:09:08 ok 403 XaQCQR8H-Q8 US news a 32
+01:09:22 ok 404 zoywFW-ryHI US news a 95
+01:09:37 ok 405 NoriCoQFWCo US news a 71
+01:09:52 ok 406 lOiFduvaeGE US news a 46
+01:10:07 ok 407 OvwbzzLrHAw US news a 185
+01:10:22 ok 408 -bYEFq47grw US news a 97
+01:10:37 ok 409 u39fTVkiq7k US news a 50
+01:10:52 ok 410 mThv-iW5Zb8 US news a 253
+01:11:04 skip (title) vW5NUCSZ8q0 Widow of man killed on George Washington Bridge demands just
+01:11:06 ok 411 aBX4ved7qtQ US news a 24
+01:11:21 ok 412 BaAeIinjV3c US news a 39
+01:11:37 ok 413 Cr_6asXk0Ts US news a 47
+01:11:52 ok 414 UrPyMaeqDhc US news a 42
+01:12:07 ok 415 Ln7VcUPHRLY US news a 254
+01:12:22 ok 416 M8j_Py_TQ9k US news a 34
+01:12:37 ok 417 aVIgmPGDgAc US news a 21
+01:12:52 ok 418 EuX7qNiZswY US news a 27
+01:13:06 ok 419 Ki1a6tOV7ms US news a 92
+01:13:21 skip (too short) 2I5I40TkEXQ
+01:13:24 ok 420 j-UeAHKxZ8k US news a 28
+01:13:38 ok 421 kN7YhWLX8cA US news a 36
+01:13:53 ok 422 6g4ykd0SnI8 US news a 60
+01:14:20 skip (too short) x656rSG1QW8
+01:14:23 ok 423 T0RZXW5-UYE US news a 21
+01:14:38 skip (too short) xdlKH8mfZD0
+01:14:38 skip (title) 1aoGN6RViaE Mamdani says 6 people were killed in a house fire in Brookly
+01:14:41 skip (too short) VwI33hA2tnI
+01:14:44 ok 424 8XCsokYtFac US news a 25
+01:14:58 skip (too short) TZexBDezhvg
+01:15:01 ok 425 fo5qnyx0bvc US news a 24
+01:15:16 skip (too short) 7GawMpQ6Uy4
+01:15:19 ok 426 xPSFSzKPCAE US news a 20
+01:15:34 ok 427 KWF3ePHrmuk US news a 27
+01:15:46 skip (title) 5UDaCPXOwnw 2 people are dead after an office complex shooting in Tampa
+01:15:48 ok 428 pQchI55hF18 US news a 23
+01:16:03 skip (too short) yuZPbCAHDu0
+01:16:06 ok 429 f5YH4lZPQkc US news a 65
+01:16:20 skip (too short) UWAbYgHNFPQ
+01:16:23 skip (too short) 2bBvEjGwWH4
+01:16:26 ok 430 sP0tOwHnuSM US news a 24
+01:16:41 skip (too short) gKAJ7P-rH0I
+01:16:45 ok 431 zlltYKJm9vA US news a 25
+01:17:00 skip (too short) 0SpwTqUbhVE
+01:17:03 ok 432 AP5bZFn-an0 US news a 43
+01:17:18 skip (too short) CAUAm0T6E0Q
+01:17:21 ok 433 1f7YT3xoJDQ US news a 36
+01:17:36 skip (too short) 5PT4sY-QVbk
+01:17:39 skip (too short) apet2IKQEwc
+01:17:39 skip (title) 6UspppYvcMg Grass fire at Canada military base kills 4 soldiers and crit
+01:17:39 skip (title) aDMYdS1ULtY 4 soldiers killed and dozens injured in a fire at a Canada m
+01:17:42 ok 434 whkB9vWmECE US news a 25
+01:17:57 skip (too short) hn_LKTT7C7k
+01:17:57 skip (title) O-piO_j7fds Woman drives a truck through a soccer game in Kansas, killin
+01:18:00 skip (too short) Dk0SBWqbaEM
+01:18:03 ok 435 LqCVIgwXfLo US news a 28
+01:18:18 skip (too short) bW6Uh2HA4ag
+01:18:23 ok 436 NNn5RMTxas4 US news a 26
+01:18:35 skip (title) rmzIc9dq6vA Teen shooter who killed 4 at an Oregon school was a former s
+01:18:37 ok 437 yRNMkF-ZVc0 US news a 21
+01:18:52 skip (too short) 546BDxEAHxc
+01:18:55 skip (too short) 5fS41xddiu8
+01:18:58 ok 438 bojLvx63uUU US news a 21
+01:19:13 skip (too short) nWWPL6Yn7dY
+01:19:16 ok 439 dUgkPidDgw4 US news a 21
+01:19:28 skip (title) Pc4Z91-7IgY Vigil held for the 4 victims killed in a school shooting in 
+01:19:31 skip (too short) 25FUpaw5svo
+01:19:33 skip (too short) 91GRcwryiYE
+01:19:38 ok 440 MSX65qGZoUE US news a 24
+01:19:50 skip (title) 43SSolfe_qc Teen kills 4 people at an Oregon elementary school before be
+01:19:53 skip (too short) VPbvjTPwJdE
+01:19:56 ok 441 IO10XChpZsA US news a 46
+01:20:11 ok 442 FWxKtA6GWR0 US news a 24
+01:20:25 skip (too short) iIk8T60G9YY
+01:20:28 skip (too short) LdmmjGzO-7A
+01:20:28 skip (title) p5f5AW8myHM Cornell president rejects not being 'concerned' about frater
+01:20:31 ok 443 Djtcu1G6S0Q US news a 33
+01:20:43 skip (title) oPQE0Rbfidc Trump says he wants the death penalty for 'anybody that murd
+01:20:46 skip (too short) r5geqnk06ps
+01:20:48 ok 444 iwe1uryb-Kg US news a 31
+01:21:03 skip (too short) vdnrp2z8nRQ
+01:21:10 ok 445 se4--veMl48 US news a 20
+01:21:26 skip (too short) RJD2GYwVro4
+01:21:29 ok 446 K6fuuAcykTY US news a 22
+01:21:44 skip (too short) _Opp6DmD5PM
+01:21:49 skip (too short) PeXgCxavktk
+01:21:53 ok 447 5tQNnrjqkFI US news a 27
+01:22:08 skip (too short) rxL4t4EXS08
+01:22:11 ok 448 1hxex28iDG0 US news a 77
+01:22:26 skip (too short) bb265e8gy-Q
+01:22:31 skip (too short) 0Kc-h4iJa3Y
+01:22:31 skip (title) bcpf3NONMIM At least 1 person is killed and several injured in a Russian
+01:22:33 skip (too short) OqYStVcvCTY
+01:22:36 ok 449 ZuIaKbNYyEs US news a 23
+01:22:48 skip (title) U8s7sT0tP3Q Duane ‘Keffe D’ Davis gets 40 years to life in prison for Tu
+01:22:52 ok 450 DReuVcMLH98 US news a 22
+01:23:07 skip (too short) 2bE2K8mhVAU
+01:23:11 ok 451 PUXAoyGw2l0 US news a 25
+01:23:30 skip (too short) zWUSaAJuGbY
+01:23:33 ok 452 uzU3bb4JNL0 US news a 22
+01:23:48 skip (too short) dKurC7DxdxE
+01:23:50 skip (too short) 0rYKs2Jsv0A
+01:23:53 skip (too short) QDglMYpR_l0
+01:23:56 ok 453 bumRtJYjdsM US news a 24
+01:24:11 skip (too short) 9vlZrraONDQ
+01:24:13 skip (too short) Y7ZhI7Cr-YY
+01:24:17 skip (too short) PnnsaK2T0w0
+01:24:20 skip (too short) Xjo0CFWSsJc
+01:24:29 skip (too short) uM45wEfbC0Q
+01:24:32 ok 454 vsGgI8hgwjQ US news a 37
+01:24:58 ok 455 5mTRlJBXAaU US news a 92
+01:25:12 ok 456 ZcvxrS4Vp8Y US news a 47
+01:25:27 ok 457 9cXrfHTmI8o US news a 93
+01:25:42 ok 458 FBPBu5D-zaY US news a 128
+01:25:57 ok 459 zDMSTw56crs US news a 76
+01:26:13 ok 460 cVro8sJZha4 US news a 57
+01:26:28 ok 461 pc-urPRRByo US news a 120
+01:26:43 ok 462 Xei0Seq3-eU US news a 208
+01:26:58 ok 463 RaDDA-EBbKA US news a 63
+01:27:14 ok 464 9qTTIstHdAc US news a 20
+01:27:29 ok 465 j77aWFtZVp4 US news a 54
+01:27:44 ok 466 bJpWMTuQSRM US news a 75
+01:27:59 ok 467 tJNCb9OIGhI US news a 33
+01:28:14 ok 468 NH6PytQ3plk US news a 32
+01:28:29 ok 469 7U_MOYWqyKI US news a 61
+01:28:44 ok 470 CGDSgMFiCOI US news a 100
+01:29:00 ok 471 dHCQ5JwAJ7I US news a 48
+01:29:15 ok 472 vmjOhvH69QQ US news a 54
+01:29:31 ok 473 LtLI4MgEwEY US news a 102
+01:29:45 ok 474 7lE93z2DJP8 US news a 123
+01:30:00 ok 475 p8NCDwuQ1ig US news a 26
+01:30:15 ok 476 dLhEekpKNHc US news a 33
+01:30:30 ok 477 78N_GFWdXtE US news a 38
+01:30:45 ok 478 jM70lfzHS0w US news a 38
+01:31:02 ok 479 buAw3MTyzaw US news a 52
+01:31:17 ok 480 76LcDoehtic US news a 30
+01:31:31 ok 481 uM5sQJ9AiEQ US news a 28
+01:31:46 ok 482 N90xtYqdGvI US news a 25
+01:32:01 ok 483 7R7ruKiSVqc US news a 28
+01:32:16 ok 484 gLcCu11RT7M US news a 24
+01:32:31 ok 485 SztXx1DtG5E US news a 46
+01:32:46 ok 486 pn6ATbFuhlg US news a 79
+01:32:58 skip (title) YNsK4XyDJZo Meghan Markle responds as estranged father investigated for 
+01:33:01 ok 487 B1zFScrsy4U US news a 46
+01:33:17 ok 488 1KIdUpR9ye8 US news a 30
+01:33:42 ok 489 VFx8egHiGeU US news a 29
+01:33:57 ok 490 dUeeaiuElco US news a 55
+01:34:12 ok 491 yEHoPo5Fqm8 US news a 71
+01:34:27 ok 492 A1nPFiyZv8c US news a 105
+01:34:42 ok 493 qRubIDcUhNk US news a 51
+01:34:57 ok 494 VKA4NO1p0mc US news a 77
+01:35:22 ok 495 WwU-GSBIPh0 US news a 20
+01:35:37 ok 496 3Iqtw43JwRQ US news a 69
+01:35:53 ok 497 fm_yAgUQ0Ik US news a 217
+01:36:08 ok 498 26njruQCttY US news a 30
+01:36:23 skip (too short) VWf97-n2BhY
+01:36:27 ok 499 FWX0V9BQe_A US news a 166
+01:36:45 ok 500 6ocUfNHyCL0 US news a 165
+01:37:00 ok 501 nArJwD__aE8 US news a 84
+01:37:15 ok 502 LSJxWoRks98 US news a 166
+01:37:30 ok 503 oyQznEFTfzI US news a 78
+01:37:45 skip (too short) 63VxV6u_zrc
+01:37:48 ok 504 56kEuF7RWu8 US news a 168
+01:38:03 ok 505 TljwUrHQu-I US news a 49
+01:38:18 ok 506 ZA5bY4K9XPs US news a 193
+01:38:34 ok 507 VEj5I4CBbgU US news a 165
+01:38:51 skip (too short) bQ1sX6CCDRY
+01:38:54 ok 508 d_b8EAKSrAw US news a 168
+01:39:09 ok 509 LLlVPQ4gJ-Y US news a 21
+01:39:24 ok 510 mMtHGtehswg US news a 81
+01:39:40 ok 511 aQebS3O5Soo US news a 176
+01:39:55 ok 512 -jvP1UNF6Ys US news a 168
+01:40:07 skip (title) yP1ryCM9jPI Parents share emotional look inside empty bedrooms of childr
+01:40:10 ok 513 ZQ4LkUJQvII US news a 144
+01:40:25 ok 514 4Rz2bav6Roo US news a 34
+01:40:40 ok 515 mb0BVQYoYzc US news a 93
+01:40:52 skip (title) smDbWlf7J_Q Russia's assault on Ukrainian civilians raises war crimes co
+01:40:55 ok 516 pI8yRekjeHg US news a 171
+01:41:10 ok 517 aAPpQC-3EyE US news a 183
+01:41:25 ok 518 VmOFhZbgXIc US news a 161
+01:41:37 skip (title) SLgvl6Ng_TQ Visiting the bedrooms left behind by children killed in scho
+01:41:40 ok 519 fwcHn1GSZwo US news a 168
+01:41:55 ok 520 EI_V6Z6tk30 US news a 95
+01:42:10 ok 521 HGZ0Ek_aNgU US news a 87
+01:42:25 ok 522 3cnhJwEoUnU US news a 26
+01:42:41 ok 523 XbHcqGw-JQA US news a 144
+01:42:56 skip (too short) 41uQ4LwZ48g
+01:42:58 skip (too short) N5mQV4ov9rU
+01:43:01 ok 524 mSfCALsfj4I US news a 181
+01:43:16 ok 525 J1vXMTTxL1w US news a 162
+01:43:32 ok 526 ARGSrVvNSvQ US news a 167
+01:43:47 ok 527 tZGsU88OzBE US news a 70
+01:44:02 ok 528 DRm0mbp_n1k US news a 66
+01:44:16 ok 529 ox5A2km68N0 US news a 191
+01:44:31 ok 530 tXQ_ZNdhrWc US news a 187
+01:44:46 ok 531 7HPLIUmxowM US news a 47
+01:45:01 ok 532 U0fEJKKYHSQ US news a 182
+01:45:16 ok 533 cbT_CSvGUEQ US news a 33
+01:45:31 ok 534 uvFb88CY3mU US news a 25
+01:45:57 ok 535 mRJ8ZPj0xpo US news a 60
+01:46:12 ok 536 -FvTEtdj_hk US news a 92
+01:46:26 ok 537 zb7QD9Gdu74 US news a 92
+01:46:41 ok 538 ve3yQftvbj0 US news a 97
+01:46:56 ok 539 jBnCeuV1W68 US news a 108
+01:47:10 ok 540 Swkfcuo2GSQ US news a 112
+01:47:26 ok 541 GXbnrMFr_tY US news a 95
+01:47:41 ok 542 h22ttnhQ6LI US news a 91
+01:47:55 ok 543 CrWLZ4jFhG0 US news a 101
+01:48:10 ok 544 SqIUr28ZQvk US news a 109
+01:48:25 ok 545 UXsO0ehmo34 US news a 100
+01:48:40 ok 546 yqyPO7KIRJU US news a 117
+01:48:55 ok 547 8BW9W0Vrexg US news a 121
+01:49:10 ok 548 fmFBAPTUIZQ US news a 103
+01:49:25 ok 549 QSgPGY2aOcI US news a 101
+01:49:40 ok 550 zpEl08AW10Y US news a 91
+01:49:55 ok 551 RaTdM4WV4cs US news a 97
+01:50:10 ok 552 bhxBfk_0Ob0 US news a 48
+01:50:24 ok 553 GYvbGd2EzGU US news a 65
+01:50:39 ok 554 iP5TwFbMEOM US news a 87
+01:50:54 ok 555 xNXoBEr6pQs US news a 55
+01:51:08 ok 556 vqVPHwZ2J9s US news a 81
+01:51:23 ok 557 lETy4tjE8Rg US news a 52
+01:51:37 ok 558 Ms72k63O0bI US news a 59
+01:51:52 ok 559 ifvMvJwvThE US news a 65
+01:52:07 ok 560 Z9MJoQQLfL4 US news a 44
+01:52:22 ok 561 vF-Ohs9T7Vo US news a 67
+01:52:36 ok 562 N9TUHfLDhBs US news a 44
+01:52:51 ok 563 kT58ggYpZZ8 US news a 67
+01:53:06 ok 564 cKQqnqrpNh4 US news a 57
+01:53:20 ok 565 b_XUeZjloIs US news a 66
+01:53:35 ok 566 8OLCAAHbvqc US news a 64
+01:53:50 ok 567 jnxegMR_jAM US news a 68
+01:54:05 ok 568 7BsB7ZyGkVc US news a 48
+01:54:19 ok 569 fOxmobSoLKw US news a 69
+01:54:34 ok 570 x-_eDuknyXQ US news a 66
+01:54:49 ok 571 Ra0MjUFK4eM US news a 52
+01:55:04 ok 572 srgq7gPYQwI US news a 88
+01:55:18 ok 573 6Ob4EuhesGk US news a 82
+01:55:33 ok 574 sVsfMrKG7AA US news a 87
+01:55:52 clips collected this run: 574 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 574
