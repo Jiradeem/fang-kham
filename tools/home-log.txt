@@ -1,401 +1,401 @@
-Nightly run on the home computer, 2026-11-08 10:43 (last 400 lines of the collector)
-08:51:40 ok 227 Zr7Qxib69Ss US kids m 296
-08:51:55 ok 228 hoqO2X4GviU US kids m 316
-08:52:10 ok 229 T4yIdg5WOJg US kids m 332
-08:52:26 ok 230 5lF0Kna0xaI US kids m 327
-08:52:41 ok 231 wPqbYzksy00 US kids m 361
-08:52:56 ok 232 7WlOG7pE-Z8 US kids m 316
-08:53:12 ok 233 s99mIMgTuhI US kids m 357
-08:53:27 ok 234 C4A6-LC2nA0 US kids m 310
-08:53:42 ok 235 wBSL-2HtSMg US kids m 318
-08:53:57 ok 236 tgApQQ0034U US kids m 315
-08:54:12 ok 237 nz7gWGliEsA US kids m 318
-08:54:27 ok 238 IMwiCRBNe3A US kids m 287
-08:54:42 ok 239 sSh3K5RcSJ4 US kids m 292
-08:54:56 ok 240 I0owP4EyH6I US kids m 313
-08:55:12 ok 241 OBzT1ccQ_AI US kids m 271
-08:55:27 ok 242 NrYVqvHriQc US kids m 292
-08:55:41 ok 243 HteflIAHzOI US kids m 295
-08:55:56 ok 244 BzGCNghko0o US kids m 316
-08:56:11 ok 245 oRlivmumIE4 US kids m 333
-08:56:26 ok 246 NTYF1eTSDLg US kids m 318
-08:56:41 ok 247 auE1i14sYFU US kids m 315
-08:56:57 ok 248 bvjeAEWdavs US kids a 233
-08:57:12 ok 249 15oeVDJuIww US kids m 375
-08:57:27 ok 250 JZia9-cQLy8 US kids m 323
-08:57:42 ok 251 z9wnwb776a0 US kids m 323
-08:57:57 ok 252 pxtL3GpSOAg US kids m 309
-08:58:12 ok 253 6oOv9SCl4wc US kids m 309
-08:58:28 ok 254 SBL1gR5tuHc US kids m 305
-08:58:43 ok 255 jWUdHL_axBU US kids m 329
-08:58:58 ok 256 1a185GTDbME US kids a 343
-08:59:35 ok 257 aD4_rzzAlNw US kids m 307
-09:00:04 ok 258 9jeGd-nqdlI US kids a 320
-09:00:21 ok 259 67x3GqVwR4w US kids a 349
-09:00:37 ok 260 w_7OjkGLoxY US kids a 201
-09:00:56 ok 261 8WS8SHWqooo US kids a 380
-09:01:22 ok 262 XQglDsXGQQo US kids a 223
-09:01:47 ok 263 DCE9HQZ7ah4 US kids a 222
-09:02:05 ok 264 DJITchKJJUU US kids a 284
-09:02:20 ok 265 50ZLL_yCQE4 US kids a 59
-09:02:35 ok 266 3ONVflcZlyQ US kids a 64
-09:02:50 ok 267 ySAvJKox0PA US kids a 42
-09:03:05 ok 268 FdIGOLcKgJk US kids a 76
-09:03:20 ok 269 7HPpllFSqTA US kids a 37
-09:03:36 ok 270 FvWTku8WuAM US kids a 234
-09:03:51 ok 271 QkGRNikJbYE US kids a 291
-09:04:06 ok 272 3omfcszHLXE US kids a 45
-09:04:21 ok 273 9YvWq3EAEJs US kids a 26
-09:04:36 ok 274 IahNACvqwSc US kids a 25
-09:04:53 ok 275 y_vWtq0imc8 US kids a 360
-09:05:09 ok 276 OX8srHXgQDw US kids a 25
-09:05:24 ok 277 Ii3EczyoFk4 US kids a 53
-09:05:40 ok 278 Y_Y3O2KWayA US kids a 21
-09:05:58 ok 279 J0Tae9YITw4 US kids a 47
-09:06:16 ok 280 -dKPerJJLpA US kids a 43
-09:06:34 ok 281 KawGk48NzMs US kids a 50
-09:06:49 ok 282 BBzAK1TvcKQ US kids a 64
-09:07:05 ok 283 L1l0XCJYaAo US kids a 41
-09:07:21 ok 284 INcypCh0ams US kids a 22
-09:07:38 ok 285 6Jq9quXAa84 US kids a 366
-09:07:53 ok 286 T3pnFgEiozE US kids a 72
-09:08:09 ok 287 5tdCDe0hdeo US kids a 54
-09:08:25 ok 288 8ha4B99WZkg US kids a 40
-09:08:40 ok 289 Y0BNUIPFwiU US kids a 35
-09:08:55 ok 290 T4kDxjJnNPo US kids a 366
-09:09:10 ok 291 aDAs40Oa_c4 US kids a 53
-09:09:25 ok 292 NjzS3UAhBhk US kids a 51
-09:09:40 ok 293 g6ftTA3-GJE US kids a 275
-09:09:55 ok 294 ihrRWjSXMZo US kids a 57
-09:10:10 ok 295 VR-nMVKwGGg US kids a 48
-09:10:25 ok 296 anVVrtalY-Y US kids a 47
-09:10:40 ok 297 I6rqrUkbmm4 US kids a 65
-09:11:12 ok 298 HVAnFzokqSY US series a 41
-09:11:41 skip (bleeped words) nm73n9VAzl8
-09:11:45 ok 299 HqJq13RxqDM US series a 111
-09:12:00 ok 300 MthQXWx_ncQ US series a 66
-09:12:15 ok 301 F2O7PMLUzq4 US series a 51
-09:12:30 ok 302 fv6OGagMDYs US series a 59
-09:12:46 ok 303 XNAeK51yJiU US series a 47
-09:13:02 ok 304 7E4so98e2ys US series a 57
-09:13:17 ok 305 BVjyMQspn4o US series a 78
-09:13:32 ok 306 q8gxNR6LSdE US series a 59
-09:13:47 skip (bleeped words) BRkn93xdoZY
-09:13:50 ok 307 CrinW-0ZSbY US series a 62
-09:14:05 ok 308 ZKBUVX1QeTc US series a 70
-09:14:21 ok 309 B8wQvTDsblE US series a 146
-09:14:36 ok 310 EKiA5uwIeC4 US series a 80
-09:14:51 ok 311 4e_KScjZbI4 US series a 133
-09:15:06 ok 312 JAWZXxUmeJg US series a 87
-09:15:21 ok 313 xy5XFDGFPxA US series a 168
-09:15:36 ok 314 cuA-bqCgkPs US series a 210
-09:15:51 ok 315 0EZESsQIFpU US series a 46
-09:16:07 ok 316 HBLo2qe-oqE US series a 93
-09:16:22 skip (bleeped words) mtfLT9Z13fI
-09:16:25 ok 317 TF0UbepIQnA US series a 110
-09:16:40 ok 318 zirltpbPo2w US series a 59
-09:16:56 ok 319 jM5DOZ5KWp8 US series a 170
-09:17:11 ok 320 WNbLgBHTmvk US series a 59
-09:17:28 ok 321 TLz9gnwdcGM US series a 100
-09:17:43 ok 322 c101-_xd-ic US series a 69
-09:17:58 ok 323 -C3NwWWvJo4 US series a 110
-09:18:14 ok 324 jFav-NTzK_8 US series a 60
-09:18:29 ok 325 aVRMqAQM6wM US series a 127
-09:18:44 ok 326 6eF84jO3mfo US series a 60
-09:18:59 ok 327 uQtrzXoV9Fc US series a 43
-09:19:14 ok 328 1_AaKPYW-D8 US series a 98
-09:19:29 ok 329 1pWBFrUoylA US series a 100
-09:19:47 ok 330 RmgbokVQZMs US series a 216
-09:20:02 ok 331 KFefq9j9Zbg US series a 58
-09:20:18 ok 332 Ock8pVFiZqk US series a 69
-09:20:33 ok 333 zeAF84dwasU US series a 56
-09:20:48 ok 334 ys7Dj4i3RjI US series a 50
-09:21:03 skip (bleeped words) tuZk2WCfq1Y
-09:21:06 ok 335 pPuHANJizaU US series a 33
-09:21:22 ok 336 oxXiBFUMF9c US series a 62
-09:21:37 ok 337 nxYMoYrM81s US series a 73
-09:21:52 ok 338 hUd9Hj9fuU4 US series a 69
-09:22:24 ok 339 il-GDAl2H-w US series a 597
-09:22:52 ok 340 MCPgT8WMAWY US series a 29
-09:23:20 ok 341 whbcdv0d38U US series a 511
-09:24:19 ok 342 AbjRYLYKznw US conversation a 300
-09:24:34 ok 343 YXy7h68MNP0 US conversation a 262
-09:24:49 ok 344 MDGvBf3yXfs US conversation a 302
-09:25:04 ok 345 4Ee0Z7z9Tlw US conversation a 465
-09:25:20 ok 346 5MJCTvkV0Fs US conversation a 403
-09:25:35 ok 347 GsUf3sRrrbA US conversation a 210
-09:25:50 ok 348 Jjbq4ZhARhQ US conversation a 378
-09:26:05 ok 349 ZeCTPI4xd5Y US conversation a 409
-09:26:20 ok 350 wWY_8xWKluc US conversation a 507
-09:26:35 ok 351 S9mEzGDrA_I US conversation a 577
-09:26:51 ok 352 4N5jqEAoZDY US conversation a 381
-09:27:07 ok 353 pJz8DeFQzBc US conversation a 284
-09:27:23 ok 354 XY4KuMD-1GQ US conversation a 281
-09:27:38 ok 355 lfs67TXIED4 US conversation a 224
-09:27:53 ok 356 hlGGVlwUXoQ US conversation a 527
-09:28:09 ok 357 K6J2aH-XhJA US conversation a 215
-09:28:25 ok 358 ajicTeiA6Xs US conversation a 276
-09:28:40 ok 359 HYOlIBrx3D8 US conversation a 281
-09:28:56 ok 360 d0mBY3PWmzM US conversation a 230
-09:29:11 ok 361 j_YmL94XiR0 US conversation a 487
-09:29:27 ok 362 jz4QsRS-bvI US conversation a 448
-09:29:42 ok 363 RG0beJDQcY8 US conversation a 242
-09:29:57 ok 364 _UYwiOvGGLc US conversation a 375
-09:30:13 ok 365 em7L8I2Yy_4 US conversation a 323
-09:30:28 ok 366 vw8PRMpEaf0 US conversation a 431
-09:30:43 ok 367 V81gd7Ut1FQ US conversation a 276
-09:30:58 ok 368 FFEzR1JmUA8 US conversation a 324
-09:31:14 ok 369 SyW1Jx2x4kg US conversation a 678
-09:31:30 ok 370 lN6CMAdaiX0 US conversation a 600
-09:31:45 ok 371 BKuU-DSxSNM US conversation a 391
-09:32:01 ok 372 0DMKrzvzKD8 US conversation a 465
-09:32:20 ok 373 LW74vxZAwLk US conversation a 204
-09:32:35 ok 374 YlAwU_3ulSo US conversation a 479
-09:32:50 ok 375 _fy3O7BKafg US conversation a 293
-09:33:05 ok 376 nJP9z5TaY10 US conversation a 492
-09:33:20 ok 377 YBUPdaUTojU US conversation a 342
-09:33:36 ok 378 gxLu-2N8GfE US conversation a 343
-09:33:51 ok 379 WnwSQGH2T2M US conversation a 448
-09:34:09 ok 380 JOgXNuw_h-w US conversation a 376
-09:34:24 ok 381 PVCY7L9TtvA US conversation a 424
-09:35:06 ok 382 TAaNTyYPeDg US conversation a 26
-09:35:21 ok 383 a6ZZT2_ggTA US conversation a 168
-09:35:37 ok 384 FIrsKCDgzfY US conversation a 126
-09:35:52 ok 385 BHaGoJGM7Ag US conversation a 109
-09:36:07 ok 386 GUF79SsFwaE US conversation a 158
-09:36:21 ok 387 gAfVRjk-Tn8 US conversation m 200
-09:36:36 ok 388 JJq6S3PKaLk US conversation m 152
-09:36:51 ok 389 WnmO8SOUcu8 US conversation m 129
-09:37:07 ok 390 8baMaaV9RJU US conversation m 191
-09:37:22 ok 391 MWwBspo_ql0 US conversation m 246
-09:37:37 ok 392 Dh5QpEToQsM US conversation m 334
-09:37:52 ok 393 DJyIIIkLftc US conversation m 182
-09:38:07 ok 394 Da676CaQ03Y US conversation m 186
-09:38:22 ok 395 L5rF5dR-Akg US conversation m 324
-09:38:37 ok 396 tZ-2y8G4Ie8 US conversation m 181
-09:38:52 ok 397 11nzn8JhLeA US conversation m 335
-09:39:09 ok 398 w89w3HaG94k US conversation m 149
-09:39:24 ok 399 YkL1UgVLup8 US conversation m 196
-09:39:39 ok 400 YF-PO9iH2qc US conversation m 423
-09:39:55 ok 401 mcIFVtfrTx4 US conversation m 181
-09:40:10 ok 402 ZMQbVmBggjo US conversation m 344
-09:40:25 ok 403 -ELOfyUC11k US conversation m 221
-09:40:40 ok 404 wAKoVEHptlU US conversation m 226
-09:40:55 ok 405 i37wpQBc2NM US conversation m 424
-09:41:12 ok 406 q9g_iHaRo3U US conversation m 206
-09:41:28 ok 407 bU1BY0dFJyk US conversation m 145
-09:41:43 ok 408 XrM7RzdAa6I US conversation m 207
-09:41:58 ok 409 U1Z_VMebWG8 US conversation m 290
-09:42:13 ok 410 OqcSI4WznuU US conversation m 198
-09:42:28 ok 411 wUxbaOTxTZ0 US conversation m 314
-09:42:44 ok 412 pCYU9qCjrf8 US conversation m 325
-09:42:58 ok 413 Dv8ggwIq7Ek US conversation m 390
-09:43:14 ok 414 9Rj82K4Ku0A US conversation m 234
-09:43:29 skip (mostly music) GcpbPeKAFZ8
-09:43:32 ok 415 AcmcWfHUvdY US conversation m 21
-09:43:47 ok 416 B91cfi3AFcM US conversation m 164
-09:44:02 ok 417 1OOiFan3RyM US conversation m 263
-09:44:17 ok 418 rRw5p9Ef_ak US conversation m 239
-09:44:32 ok 419 hCu0546zkGo US conversation m 329
-09:44:47 ok 420 4jMm83hXeV0 US conversation m 291
-09:45:02 ok 421 zc7bQX_0C30 US conversation m 336
-09:45:33 ok 422 -YP3OCTy3lg US conversation m 534
-09:46:34 ok 423 FvvCqvAFD24 IRL tv a 77
-09:46:51 ok 424 dzjZtGV0P1c IRL tv a 206
-09:47:06 ok 425 YcymtzPjnZY IRL tv a 263
-09:47:21 ok 426 a08zNhFhLII IRL tv a 208
-09:47:36 ok 427 6VGP0x5B7CI IRL tv a 280
-09:47:52 ok 428 _RCQoylCQKE IRL tv a 125
-09:48:07 ok 429 J5ttCcv-E_g IRL tv a 87
-09:48:22 ok 430 M15tWgu1cjQ IRL tv m 87
-09:48:38 ok 431 Wx6x_UFUlE8 IRL tv a 153
-09:48:53 ok 432 PS5NlhjmGpc IRL tv a 174
-09:49:08 ok 433 PgRTcwex7dE IRL tv a 318
-09:49:23 ok 434 -cDPMCD4eng IRL tv a 98
-09:49:38 ok 435 ZnD2kk-Qzqc IRL tv a 104
-09:49:54 ok 436 fqlY6ZssvG8 IRL tv m 147
-09:50:09 ok 437 Lxh0OwRzIyw IRL tv m 84
-09:50:24 ok 438 2wShZYdftAA IRL tv m 198
-09:50:39 ok 439 pStMXm854Z8 IRL tv m 321
-09:50:54 ok 440 eiVbiI4ccLA IRL tv m 199
-09:51:09 ok 441 LvpRtDiZ2pw IRL tv m 84
-09:51:25 ok 442 SuPdS3raGFE IRL tv m 76
-09:51:40 ok 443 4iBBr46tZeg IRL tv m 71
-09:51:56 ok 444 kZkYbV_RXao IRL tv m 176
-09:52:12 ok 445 g-emLx_ngnU IRL tv m 281
-09:52:27 ok 446 D98yvtgKDT0 IRL tv m 281
-09:52:42 ok 447 pkLkYd02ZP0 IRL tv m 250
-09:52:57 ok 448 a0S2bXXdHog IRL tv m 119
-09:53:13 ok 449 9DR_u8buQ5Q IRL tv m 379
-09:53:28 ok 450 KsKNT39bMao IRL tv m 110
-09:53:44 ok 451 Ud81W1YbOPc IRL tv m 237
-09:53:59 ok 452 BHI3dF3gAjY IRL tv m 248
-09:54:14 ok 453 83_6qvNa5rE IRL tv m 228
-09:54:29 ok 454 Ggj4wR3aY1E IRL tv m 45
-09:54:45 ok 455 5DEYYdKbRng IRL tv m 175
-09:55:00 ok 456 iyNztpQEGV0 IRL tv m 49
-09:55:15 ok 457 mVw-WZexnjM IRL tv m 236
-09:55:30 ok 458 GWqsUFXXE1s IRL tv m 132
-09:55:45 ok 459 KpQE7fQ3Ol0 IRL tv m 80
-09:56:00 ok 460 CcjnoDI8W0s IRL tv a 263
-09:56:15 ok 461 YFPeAIx_A9k IRL tv m 156
-09:56:30 ok 462 V1u-FR7cAnU IRL tv m 127
-09:57:01 ok 463 krt2qnzaMBI AUS tv a 234
-09:57:59 ok 464 E3wzEA0nZk0 CAN tv a 38
-09:58:17 ok 465 hIBPREGml8U CAN tv a 96
-09:58:46 ok 466 -ukHyqiEH1U UK learning m 115
-09:59:52 ok 467 uaCoWxIiM10 UK tv a 52
-10:00:41 ok 468 Qn_q-FA1PjM UK tv m 272
-10:01:14 ok 469 wSgwNecMX_4 US learning a 475
-10:02:18 ok 470 rjVCr8iqJcc US learning a 214
-10:02:33 ok 471 sA48zx95w2o US learning a 315
-10:03:14 ok 472 N9zYE5Ui97g US documentary m 255
-10:03:29 ok 473 1EX702Au9oQ US documentary m 117
-10:04:00 ok 474 MQqi6wZYRGs US documentary a 308
-10:04:40 ok 475 8ksoLS2Nbzw US tv m 286
-10:04:56 ok 476 RW6gcDsrmdA US tv m 231
-10:05:11 ok 477 P7j7451oJ40 US tv m 155
-10:05:26 ok 478 tJW2cLnvtJA US tv m 204
-10:05:41 ok 479 kW1fIOfez_4 US tv m 272
-10:05:56 ok 480 JHRgs6gXu0A US tv m 287
-10:06:11 ok 481 X1VkgWlBY5U US tv m 308
-10:06:27 ok 482 k37mcCXYg-o US tv m 203
-10:06:42 ok 483 E_3W5t1B0bM US tv m 462
-10:06:58 ok 484 JKucdAxx2Nk US tv m 123
-10:07:13 ok 485 onTUYsFj4j8 US tv m 374
-10:07:28 ok 486 iD18Xz_nwcg US tv m 221
-10:07:44 ok 487 sceK_gV4zk4 US tv m 221
-10:08:12 ok 488 qTRscQGvTdE US tv a 129
-10:08:27 ok 489 DTVIFyXWBFI US tv a 332
-10:08:42 ok 490 AuAxHJ_kF5M US tv a 142
-10:08:57 ok 491 LnXDReZc2pE US tv a 138
-10:09:24 skip (mostly music) 2q5fRBkzA_k
-10:09:27 ok 492 KCZaSSr5m6o US tv m 288
-10:09:42 ok 493 uWmxJ9_q8t4 US tv m 363
-10:09:57 ok 494 NCGspQaNqi4 US tv m 177
-10:10:12 ok 495 qJB-oN4zHn8 US tv m 165
-10:10:27 ok 496 v2E4D_CO2RE US tv m 107
-10:10:42 skip (mostly music) nJ7RYGHIxcI
-10:10:46 ok 497 rVoNx1yuOH0 US tv m 195
-10:11:02 ok 498 kSt_PCNtkQE US tv m 211
-10:11:17 ok 499 PCsU9f6yXQU US tv m 326
-10:11:33 ok 500 O6gyQAPVAnE US tv m 286
-10:11:50 ok 501 uDTcC4fuDAw US tv m 228
-10:12:05 ok 502 PcALlSqnVAs US tv m 201
-10:12:20 ok 503 awKCW9dyuvQ US tv m 232
-10:12:36 ok 504 vKy1cYrIsVg US tv m 266
-10:12:51 ok 505 gKjwSQyc5Js US tv m 186
-10:13:21 ok 506 TTzta6J30eo US tv a 252
-10:13:37 ok 507 rd2qzmINQCU US tv a 268
-10:13:52 ok 508 wgznUQoK2yI US tv a 66
-10:14:07 ok 509 DBcBmzz8Bf4 US tv a 252
-10:14:22 ok 510 Dp_bpfEvvoQ US tv a 428
-10:15:07 ok 511 4ewvRxDtcz8 SCO news a 45
-10:15:19 skip (title) D0nDgniLmtQ 'I felt guilty I survived': Captain remembers Chinook disast
-10:15:26 ok 512 vmEV8Y_9vf8 SCO news a 66
-10:15:48 ok 513 AhZr3_ZKRQw SCO news a 74
-10:16:06 ok 514 06le_q7-T9o SCO news a 72
-10:16:26 ok 515 4NSVToFRrWE SCO news a 182
-10:16:44 ok 516 f4UyAcP1CsM SCO news a 232
-10:17:01 ok 517 i1qJxxOpbDU SCO news a 299
-10:17:21 ok 518 K-zQFgvpBsI SCO news a 51
-10:17:40 ok 519 wWacSAr_NLc SCO news a 76
-10:17:58 ok 520 dh1J0w1yrgY SCO news a 350
-10:18:35 ok 521 SxFWGI5_FbM NZ news a 221
-10:18:53 ok 522 7P9LwsnqJUQ NZ news a 102
-10:19:13 ok 523 13cOFYNDZ5s NZ news a 90
-10:19:30 ok 524 Ny8vlJ85Xg8 NZ news a 70
-10:19:47 ok 525 h8D37NK5QOE NZ news a 132
-10:20:06 ok 526 vkbngU4neA0 NZ news a 93
-10:20:23 ok 527 8wbiKDf7sjA NZ news a 43
-10:20:43 ok 528 OwBDbz11DGc NZ news a 153
-10:21:00 ok 529 zSXW8f8neuc NZ news a 73
-10:21:17 ok 530 ZtXh2trEjD8 NZ news a 37
-10:21:41 ok 531 ycrG6eYqdGM NZ news a 42
-10:21:59 ok 532 153Fcd8POhw NZ news a 98
-10:22:16 ok 533 iyh-YoOlgpE NZ news a 63
-10:22:33 ok 534 F9h5kPIejKU NZ news a 389
-10:22:51 ok 535 zyxrTMMMHzU NZ news a 34
-10:23:11 ok 536 FSa10vyu_yU NZ news a 102
-10:23:29 ok 537 gJCqllUQ-kM NZ news a 265
-10:23:46 ok 538 2ieUW7COvJw NZ news a 148
-10:24:04 ok 539 DtxeqUkYzhM NZ news a 125
-10:24:19 ok 540 1VM62nyZMs4 NZ news a 296
-10:24:37 ok 541 VVCz5MNlH0o NZ news a 429
-10:24:56 ok 542 oULz2_ekxR0 NZ news a 82
-10:25:13 ok 543 aEg4jM9aiZc NZ news a 57
-10:25:33 ok 544 7t49aoPmAms NZ news a 150
-10:25:50 ok 545 gjoyJxYMYb8 NZ news a 299
-10:26:08 ok 546 jFYJrQTKBq0 NZ news a 161
-10:26:26 ok 547 SFCbFF16t5w NZ news a 152
-10:26:43 ok 548 gwplwKWyO90 NZ news a 72
-10:27:00 ok 549 Q49rVcVmF-4 NZ news a 360
-10:27:19 skip (too short) oN1k3tRc-UY
-10:27:26 ok 550 zozZ8ckBAeM NZ news a 138
-10:27:44 ok 551 g0skNzUy2Xo NZ news a 203
-10:28:01 ok 552 y903qkC5_Xw NZ news a 197
-10:28:19 ok 553 rOd_LwNqApo NZ news a 215
-10:28:48 ok 554 u_kqjdJnuBs NZ news a 142
-10:29:03 ok 555 vE-3BTRRQ8U NZ news a 208
-10:29:18 ok 556 0xnID7Z7HGU NZ news a 53
-10:29:34 ok 557 vHuCoIh2Ops NZ news a 110
-10:29:51 ok 558 h0pRiPkaY14 NZ news a 80
-10:30:06 ok 559 bW0d1OsbVF0 NZ news a 102
-10:30:21 ok 560 U95Owqy4np0 NZ news a 91
-10:30:37 ok 561 xPPUjxOkEYw NZ news a 606
-10:31:23 ok 562 ixFYMW4SBTU IRL news a 48
-10:31:35 skip (title) TLkl65jOIbA Six dead, 15 injured in Krakow shooting, police say | RTÉ Ne
-10:31:35 skip (title) rDOvNiHjSms RTÉ evacuated following bomb threat | RTÉ News
-10:31:35 skip (title) xLN6DqhljSo RTÉ Deputy DG responds to bomb threat after staff evacuated 
-10:31:42 ok 563 C6SfpzFu2e4 IRL news a 233
-10:31:59 ok 564 lZpO9DIcuNc IRL news a 512
-10:32:19 ok 565 atKFzpgPPVs IRL news a 172
-10:32:38 ok 566 K2BY-TOzxe0 IRL news a 118
-10:32:57 ok 567 0lzX9iuzB7g IRL news a 176
-10:33:09 skip (title) 1C_S6qgAz0U Russell Brand found guilty of rape and sexual assault | RTÉ 
-10:33:53 skip (title) DzkMGgfvLlk Lamarre-Condon gives evidence in double murder trial
-10:33:53 skip (title) yHd7248eUqU Woman shot during Bondi terror attack dies in hospital
-10:34:09 skip (title) caP4gq5Cr68 Calls for greater protections against tech-enabled abuse
-10:34:38 ok 568 LwoYGLEb8-o AUS news a 94
-10:34:53 ok 569 37caePkNRuU AUS news a 194
-10:35:05 skip (title) 6Tv-S79t9Ng Bodies found in Krakow mass shooting suspect's home | ABC NE
-10:35:08 ok 570 ksAGkQnDJ-Y AUS news a 230
-10:35:23 ok 571 mxFnbe-cqIU AUS news a 176
-10:35:39 ok 572 EdgUyNF0rU0 AUS news a 54
-10:35:54 ok 573 CV8sE6EXdZo AUS news a 58
-10:36:06 skip (title) _RrhtD0ZHpw Delivery driver killed in Melbourne CBD remembered | ABC NEW
-10:36:09 ok 574 qUTknxT7Fow AUS news a 59
-10:36:24 ok 575 GxOqPdFx5Kk AUS news a 48
-10:36:36 skip (title) qyuLMOxI1Us Meghan Markle's father charged with possessing child sexual 
-10:36:39 ok 576 c9kdUngb9Zc AUS news a 53
-10:36:54 ok 577 GBGNlVEl5ng AUS news a 38
-10:37:10 ok 578 w93wcif2GKs AUS news a 136
-10:37:26 ok 579 HuJAHKTPYNk AUS news a 179
-10:37:43 ok 580 4l39rPlqT_4 AUS news a 120
-10:37:58 ok 581 MipCg7BnMWk AUS news a 49
-10:38:15 ok 582 9dOgHG51vDA AUS news a 85
-10:38:30 ok 583 KjenVh8xINI AUS news a 97
-10:38:42 skip (title) f2D4jrwJOdA Cook Islanders harness killer starfish to revive ancient far
-10:38:45 ok 584 U6-LZiWl_go AUS news a 79
-10:39:01 ok 585 Y1loodxwt-w AUS news a 47
-10:39:17 ok 586 6kaTnG04OVA AUS news a 43
-10:39:29 skip (title) 0Pma2rb8O1Q Beau Lamarre-Condon gives his account of shootings at double
-10:39:33 ok 587 nnApSQsi_w8 AUS news a 50
-10:39:50 ok 588 XVCqklYbA40 AUS news a 53
-10:40:05 ok 589 RArUX9EPas8 AUS news a 46
-10:40:20 ok 590 QwRon4EudiY AUS news a 113
-10:40:36 ok 591 EuxnEBnhfns AUS news a 46
-10:40:48 skip (title) qJ1ECLvR9KI Elderly woman Eva Geller shot during Bondi terror attack die
-10:40:51 ok 592 8VsLUW7SKE4 AUS news a 298
-10:41:06 ok 593 mnberb0SmQ0 AUS news a 46
-10:41:22 ok 594 alsAwAapDjk AUS news a 30
-10:41:37 ok 595 IA_ilSF1pFw AUS news a 108
-10:41:49 skip (title) NgsKKp_H2w4 Europe investigates after bomb threats impact at least 25 fl
-10:41:52 ok 596 ol6ru7yQ1Y4 AUS news a 120
-10:42:07 ok 597 2xBliZGUROI AUS news a 167
-10:42:24 ok 598 UAouT97rpnk AUS news a 54
-10:42:39 ok 599 XNy3AKgEQ6E AUS news a 86
-10:42:54 ok 600 xpHSzajHdTQ AUS news a 55
-10:43:11 ok 601 lB9HH2YJpyg AUS news a 40
-10:43:26 ok 602 6L65X_AGdJM AUS news a 49
-10:43:47 clips collected this run: 602 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 602
+Nightly run on the home computer, 2026-11-08 13:47 (last 400 lines of the collector)
+11:48:55 ok 185 UkQGU266ppQ US kids a 27
+11:49:10 ok 186 ZymCMO5ZMPE US kids a 29
+11:49:25 ok 187 bP_DIp2_BtQ US kids a 28
+11:49:41 ok 188 4sFRwBIlo-U US kids a 31
+11:49:56 ok 189 UhbK6Wa3Ae4 US kids a 22
+11:50:13 ok 190 moUPD_p4Lgc US kids a 26
+11:50:29 ok 191 CbZ7cU5YyGg US kids a 28
+11:50:45 ok 192 haUASg5ax5Q US kids a 31
+11:51:00 ok 193 FIKxLyKCfCc US kids a 104
+11:51:16 skip (too short) VIdr6OAiNXk
+11:51:19 ok 194 vLcandimZzY US kids a 31
+11:51:35 ok 195 wQKtXWbT130 US kids a 25
+11:51:50 ok 196 gNInWLO5WiI US kids a 29
+11:52:06 skip (too short) 9cWzNvr9esU
+11:52:10 ok 197 47PK-Qx25Yo US kids a 23
+11:52:26 ok 198 LP8y0lhOfJQ US kids a 24
+11:52:46 ok 199 oy3roywOey8 US kids a 30
+11:53:02 ok 200 4Ie8p0Yi2A0 US kids a 25
+11:53:38 ok 201 51lsjrcEXc8 US kids m 263
+11:53:54 ok 202 UYeYFoo_AfM US kids m 321
+11:54:12 ok 203 u4pXJMrXmQE US kids m 281
+11:54:28 ok 204 1TDYUn8ep20 US kids m 297
+11:54:43 ok 205 eQB-tDlSSS0 US kids m 310
+11:54:58 ok 206 zXEWyzFTncI US kids m 337
+11:55:13 ok 207 kkfCCE4mLEc US kids m 324
+11:55:32 ok 208 w06mScd4C8c US kids m 310
+11:55:48 ok 209 MU-meKoIcc4 US kids m 298
+11:56:05 ok 210 WH2lLDoeLhs US kids m 312
+11:56:20 ok 211 1wqP6pJGeWo US kids m 312
+11:56:36 ok 212 8z_EDzLWmyw US kids m 291
+11:56:51 ok 213 vgHGoIhmPyg US kids m 316
+11:57:07 ok 214 T_n5niZklWM US kids m 301
+11:57:23 ok 215 rw4I_zc_Bhs US kids m 270
+11:57:39 ok 216 gGwJeJLfj2g US kids m 266
+11:57:55 ok 217 2DmJlB5pjYM US kids m 274
+11:58:10 ok 218 1L9sREjsAmU US kids m 308
+11:58:25 ok 219 PNHQi9EAgyc US kids a 159
+11:58:40 ok 220 goCxKFcM_yg US kids a 152
+11:58:56 ok 221 EhUQsUGe-ak US kids a 172
+11:59:11 ok 222 4q7_QhUE1W0 US kids a 165
+11:59:27 ok 223 no8v7dTixXc US kids a 174
+11:59:43 ok 224 LgLADFJS5Q4 US kids a 153
+11:59:59 ok 225 UtDwygqO2xQ US kids a 164
+12:00:14 ok 226 oe6Cj1OpCMI US kids m 171
+12:00:30 ok 227 6JH_VvUg0rQ US kids a 140
+12:00:45 ok 228 jdvuqIvmet0 US kids a 171
+12:01:01 ok 229 mgdCExjfuDk US kids a 143
+12:01:17 ok 230 _DiLoMK___k US kids a 144
+12:01:32 ok 231 -pPR7zCWHwA US kids a 139
+12:01:48 ok 232 b1l2xyXkmCY US kids a 120
+12:02:04 ok 233 TeJgX3B_Bz8 US kids a 121
+12:02:21 ok 234 aahkgeBYZOY US kids a 147
+12:02:36 ok 235 5btfoepVbKk US kids a 136
+12:02:52 ok 236 XqJR3ZKOmRw US kids a 131
+12:03:08 ok 237 oOTN8IguJ50 US kids a 134
+12:03:24 ok 238 qpF5rCcOlaQ US kids a 155
+12:03:42 ok 239 gBQjtdYbHKc US kids a 147
+12:03:57 ok 240 5oAF9q74lN8 US kids a 163
+12:06:16 ok 241 gRGQ6Q-_Dfo US series a 57
+12:06:32 ok 242 _f3fooox38Y US series a 75
+12:06:49 ok 243 ZL6RXqutVoI US series a 54
+12:07:08 ok 244 Y1Wig4YZIpw US series a 87
+12:07:24 ok 245 SzdGuRsH2TE US series a 65
+12:07:42 ok 246 P7JHrDAoXZI US series a 183
+12:08:00 ok 247 FMooMbnyqYk US series a 194
+12:08:17 ok 248 Bl1RpjhbzhA US series a 94
+12:08:33 ok 249 9hHp7gztPDA US series a 146
+12:08:49 ok 250 7IiPY8V_ED4 US series a 54
+12:09:07 ok 251 6OIyYMzdUv4 US series a 60
+12:09:24 ok 252 5pe5z143I0A US series a 70
+12:09:40 ok 253 3WMtj3BXQa8 US series a 73
+12:10:31 ok 254 fesB26NXvZ0 US conversation a 40
+12:10:50 ok 255 GFPGhWj22BA US conversation a 40
+12:11:08 skip (too short) NN12lNsa6Ws
+12:11:13 skip (too short) rl8d1gZDaXE
+12:11:18 skip (too short) 5PWNw4KtQ74
+12:11:22 skip (too short) C2sJpghYEtk
+12:11:25 ok 256 aQLF8krejG4 US conversation a 43
+12:11:41 ok 257 gA9qWiBnqx4 US conversation a 52
+12:12:05 ok 258 D7bvJXVsJgw US conversation a 67
+12:12:30 ok 259 OGghRvohuL4 US conversation a 36
+12:12:56 ok 260 1H-WDVRsVGE US conversation a 38
+12:13:12 ok 261 tAUb_XHs_TM US conversation a 41
+12:13:30 ok 262 g4WyhxUhn74 US conversation a 40
+12:13:46 skip (too short) yQgnScTLR-Q
+12:13:51 ok 263 x6EjF_hoHFA US conversation a 58
+12:14:06 ok 264 _k_xFt9h5qY US conversation a 35
+12:14:22 skip (too short) KxupEYo_MXg
+12:14:25 skip (too short) vNn0jgKNa54
+12:14:29 ok 265 XawHrf1ebCo US conversation m 181
+12:14:45 ok 266 f4EXpaZYzt8 US conversation m 622
+12:15:03 ok 267 N0dvDDBJqes US conversation m 34
+12:15:23 ok 268 dE4sKHbmgWU US conversation a 66
+12:15:39 ok 269 HxJmFi3vZi8 US conversation a 39
+12:15:54 ok 270 87EeZG2n2po US conversation a 24
+12:16:10 ok 271 _PAg7Gem2rM US conversation m 63
+12:16:26 ok 272 AAs3MQSch1I US conversation m 140
+12:16:44 ok 273 zrxLJdI5C8k US conversation a 106
+12:17:00 ok 274 WcyHC7J5oSo US conversation a 102
+12:17:16 ok 275 I7p6bTCEHrQ US conversation m 556
+12:17:32 ok 276 RRHqze2wNfQ US conversation a 88
+12:17:48 ok 277 pAvk9ZqNlbw US conversation m 119
+12:18:05 ok 278 do6_7HugMXs US conversation m 49
+12:18:24 ok 279 _F4uuoqVltI US conversation m 435
+12:18:39 ok 280 Al0DObwT_Q8 US conversation a 99
+12:18:58 ok 281 hYFQ0bA6nRI US conversation m 391
+12:19:15 ok 282 rOZCGqyohqw US conversation a 214
+12:19:43 ok 283 MEj25p8IjFc US conversation a 122
+12:20:10 ok 284 fitxGCQZ6vI US conversation a 57
+12:20:33 skip (too short) DwkopBWpQ70
+12:20:37 ok 285 1QCRs8yCJHA US conversation m 333
+12:20:52 ok 286 3qDw7SAcQCc US conversation a 94
+12:21:08 ok 287 Ndem_HBCXNI US conversation a 53
+12:21:36 ok 288 R63rdKDElnU US conversation a 70
+12:21:52 ok 289 OBAALDuqG5M US conversation a 75
+12:22:07 ok 290 ARLXdogR2Ho US conversation a 70
+12:22:23 ok 291 Wvpov2domhk US conversation a 108
+12:22:39 skip (too short) t2Uma0r8aQ0
+12:22:43 ok 292 tYRpvUNmR2Q US conversation m 326
+12:23:08 ok 293 n03pXZcDe2o US conversation a 83
+12:24:28 ok 294 pg_nVuiFlU4 US conversation m 92
+12:24:48 ok 295 VYA5T8gCpm4 US conversation m 164
+12:25:06 ok 296 Cw4RomxUXCU US conversation m 321
+12:25:22 ok 297 4_Jcv0uYQp0 US conversation m 26
+12:25:40 ok 298 DFcN4TReoMs US conversation m 361
+12:25:59 ok 299 gvNZSM9N-WY US conversation m 274
+12:26:19 ok 300 UnCb6Eop7WU US conversation m 418
+12:26:35 ok 301 IRtmNOBPnJ4 US conversation m 211
+12:26:50 ok 302 rUre2_AgKD8 US conversation m 314
+12:27:06 ok 303 KqBUPfxFm68 US conversation m 467
+12:27:21 ok 304 07OizRnph7o US conversation m 122
+12:27:37 ok 305 DFc0cTwdbsk US conversation m 304
+12:27:52 ok 306 0-mdCEicjCU US conversation m 166
+12:28:08 ok 307 ytNWUqmWa08 US conversation m 98
+12:28:23 ok 308 E1do93b_ams US conversation m 276
+12:28:39 ok 309 WMYbQiXrXfE US conversation m 143
+12:28:54 ok 310 0Fi5C6u3T9Y US conversation m 277
+12:29:09 ok 311 sBGGX64j8TQ US conversation m 115
+12:29:24 ok 312 as-Cgg-n6vg US conversation m 354
+12:29:43 ok 313 -06Q6ICCtYo US conversation m 252
+12:29:58 ok 314 OV0qSpgHfH4 US conversation m 131
+12:30:14 ok 315 Abnhzw4F4vc US conversation m 305
+12:30:30 ok 316 OBkWgutg4V4 US conversation m 135
+12:30:45 ok 317 Eft2dQdSHTM US conversation m 212
+12:31:01 ok 318 -fGjAL6QLG0 US conversation m 163
+12:31:16 ok 319 AKIQo8HMcik US conversation m 282
+12:31:34 ok 320 -VFO-8GySrs US conversation m 251
+12:31:50 ok 321 auifbJIMceU US conversation m 192
+12:32:06 ok 322 MEi_GLSjq-0 US conversation m 467
+12:32:21 ok 323 oCaxTD5m7IM US conversation m 208
+12:32:36 ok 324 jWM2wv7kNpk US conversation m 284
+12:32:54 ok 325 yOp32sIdOaQ US conversation m 392
+12:33:10 ok 326 KoFLIU1GBLU US conversation m 257
+12:33:27 ok 327 azTaPL0r2DQ US conversation m 347
+12:33:44 ok 328 jXbbzpO1hpY US conversation m 335
+12:33:59 ok 329 2nIMQrpDgaQ US conversation m 275
+12:34:15 ok 330 tP6pgsr4pgw US conversation m 294
+12:34:31 ok 331 -Hy86JbyFg0 US conversation m 151
+12:34:46 ok 332 PIctQRj18m8 US conversation m 122
+12:35:02 ok 333 mTT6ZWGaX94 US conversation m 126
+12:36:34 ok 334 BcfWQVn1pE4 IRL tv a 103
+12:36:54 ok 335 mhqM0o2w-VQ IRL tv m 133
+12:37:14 ok 336 VCcksvhPmxk IRL tv a 89
+12:46:15 skip (title) syYzL3MVUXI Delivery driver killed; Trump offers press secretary role to
+12:46:15 skip (title) nyI5dbadKwU Six killed in Krakow market shooting rampage | 7NEWS
+12:46:19 skip (title) vNA25vUvYcE Vigil held for delivery driver killed in Melbourne CBD | 7NE
+12:46:34 skip (title) yZdJYi-14Rs From airports to newsrooms bomb threats spread across Europe
+12:46:46 skip (title) c-gy3xPVilk Meghan Markle's father arrested over child abuse material | 
+12:46:46 skip (title) I3ZEFpMSgaA Fatal stabbing in Melbourne CBD sparks major manhunt | 7NEWS
+12:46:46 skip (title) eSo4vDKHqEQ Thomas Markle Sr arrested on child abuse material charges | 
+12:46:46 skip (title) YnylsY4WWkg Meghan Markle’s father charged; deadly Melbourne stabbing; Q
+12:47:24 skip (title) 6QHHvUFfVEI Stabbing attack; campaign bus crashes; Russell Brand found g
+12:47:24 skip (title) ZbLw2UHOGB4 Accused killer cop testimony; Bondi massacre victim dies; vi
+12:47:42 skip (title) ijO7e8hPfXE Bondi massacre victim dies nearly one year after attack | 7N
+12:47:42 skip (title) IRMcP7dgsgY Accused killer cop defends fatal shootings in court | 7NEWS
+12:47:42 skip (title) x2OF0SwB2qo Russell Brand convicted of rape and sexual assault | 7NEWS
+12:48:02 skip (title) f0rWQMf2y1o Accused double murderer’s testimony; reward for alleged Coco
+12:48:13 skip (title) i-B77-dYv-A Accused double murderer breaks down describing shootings | 7
+12:48:18 skip (title) y6FAlPSzIB0 Russell Brand convicted of rape and sexual assault | 7NEWS
+12:48:36 skip (title) tLcWel8vbaY Tributes flow for father killed in fatal truck crash | 7NEWS
+12:49:14 skip (title) 07ognqhsUDE Tom Papley drug driving charge rocks Swans| 7NEWS
+12:49:14 skip (title) STU5v_FKalc Accused murderer testifies about relationship with alleged v
+12:49:25 skip (title) voGfqNODrsM Coalition's billion-dollar funding gap; Papley drug charge r
+12:49:28 skip (title) kHgJRDYRWvY David Jones in administration; Lamarre-Condon testifies; Tom
+12:50:24 skip (title) 4ZyW9f5983Y Former RAAF pilot on trial for wife's alleged murder| 7NEWS
+12:50:48 ok 337 i0jKDzxJovc AUS news a 35
+12:51:05 ok 338 CQrNyWGEEW8 AUS news a 55
+12:51:21 ok 339 lRchVwTjuRs AUS news a 26
+12:51:36 ok 340 eL853eKE1nE AUS news a 131
+12:51:51 ok 341 gp5lbP3nmU8 AUS news a 32
+12:52:06 ok 342 fX5bT4RSLV4 AUS news a 36
+12:52:18 skip (title) i49OiWnUQI8 Russell Brand found guilty of rape and sexual assault | ABC 
+12:52:21 ok 343 lXPMvMsnLJk AUS news a 151
+12:52:37 ok 344 armnKs76m8U AUS news a 257
+12:52:51 ok 345 gyfLrXgRutU AUS news a 95
+12:53:03 skip (title) nHz-AIIHRX4 Accused double-murderer Beau Lamarre-Condon gives evidence a
+12:53:07 ok 346 ORPQFOHp7qY AUS news a 25
+12:53:23 ok 347 GfDVAVzAinQ AUS news a 23
+12:53:38 ok 348 evnPZZXagqw AUS news a 83
+12:53:53 ok 349 keephjxZfOQ AUS news a 56
+12:54:09 ok 350 Tc1nz5N7ASY AUS news a 22
+12:54:24 ok 351 SpWdv3KiCsw AUS news a 23
+12:54:39 ok 352 PdbaQ7XhPns AUS news a 46
+12:54:55 ok 353 KY9SBel1DGI AUS news a 37
+12:55:10 ok 354 uQlVQyoMinM AUS news a 25
+12:55:25 ok 355 P-dvCfH7IKo AUS news a 24
+12:55:40 ok 356 f4rpj1B8TCY AUS news a 200
+12:55:55 ok 357 0S1qE6Zia1s AUS news a 39
+12:56:12 ok 358 SXJ4q980HUY AUS news a 303
+12:56:27 ok 359 JswkQ8cKOhQ AUS news a 58
+12:56:42 ok 360 IMA8SZBXBZo AUS news a 33
+12:56:57 ok 361 NgeuQaco340 AUS news a 29
+12:57:12 ok 362 ndqKq46xmjc AUS news a 23
+12:57:28 ok 363 v-vFAa79ukE AUS news a 103
+12:57:43 ok 364 avHneL0Hlag AUS news a 33
+12:57:55 skip (title) fiWTGRKO_LQ Pete Hegseth on the chopping block as Trump mulls midterm ma
+12:57:58 ok 365 qOFJveTNeqQ AUS news a 76
+12:58:13 ok 366 8cWl2J2CvcY AUS news a 43
+12:58:28 ok 367 kAyAZX7PKFA AUS news a 58
+12:59:14 ok 368 26rMXkNcQrQ CAN news a 22
+12:59:29 ok 369 09os5aecgUc CAN news a 32
+12:59:44 skip (too short) IxQR78c-DwY
+12:59:48 ok 370 iVH55lSK6jI CAN news a 47
+13:00:00 skip (title) vLFhLiMrAZw Gunman kills 6 in Poland's Krakow; used military-type firear
+13:00:03 ok 371 TJDsHSJCHyI CAN news a 86
+13:00:18 ok 372 ho7ZqtO1JvM CAN news a 27
+13:00:34 ok 373 VnDPTI-vUNc CAN news a 25
+13:00:46 skip (title) MRxwgXQqh7c Tumbler Ridge shooting survivor Maya Gebala makes surprise h
+13:00:49 ok 374 ew_5tiiDfI4 CAN news a 31
+13:01:05 ok 375 RnAQjM4gvgQ CAN news a 30
+13:01:20 ok 376 kjFq0DEWzzo CAN news a 27
+13:01:36 ok 377 qbQowO5xxT4 CAN news a 27
+13:01:51 ok 378 kWpJf_mOdHk CAN news a 29
+13:02:06 ok 379 tS1zS-0oS2k CAN news a 26
+13:02:21 ok 380 NO-ySIX50g0 CAN news a 20
+13:02:36 ok 381 _c4gx8SSHt0 CAN news a 30
+13:02:52 ok 382 HGD5WNtnezQ CAN news a 28
+13:03:07 ok 383 9WM4AfthzRY CAN news a 37
+13:03:22 ok 384 cVwTMB5sC1M CAN news a 33
+13:03:39 ok 385 Y3XvLgfIbt8 CAN news a 24
+13:03:54 ok 386 BPOhA2XBZXg CAN news a 59
+13:04:09 ok 387 QT-A_LxHwJ4 CAN news a 20
+13:04:24 ok 388 TcfWVjaykmI CAN news a 32
+13:04:39 ok 389 NeZinDUX4OI CAN news a 102
+13:04:55 ok 390 Ccrwd9DrY24 CAN news a 26
+13:05:10 ok 391 pBpYmeaLTKM CAN news a 32
+13:05:25 ok 392 AlySMJmSSDc CAN news a 22
+13:05:40 ok 393 7YUGEpi2m6c CAN news a 33
+13:05:56 ok 394 12RhEB3x4wA CAN news a 32
+13:06:18 ok 395 6HSJ-V_Kx7s CAN news a 27
+13:06:34 ok 396 cO1U29QkUHs CAN news a 36
+13:06:50 ok 397 c9SMqPh8Mv0 CAN news a 81
+13:07:05 ok 398 qDvKI1rzCdk CAN news a 42
+13:07:21 ok 399 nIpSuP0AkKA CAN news a 48
+13:07:36 ok 400 pGum9Wc1Ep4 CAN news a 41
+13:07:51 ok 401 rUnlO1nrmpE CAN news a 79
+13:08:07 ok 402 7S-sfRUtVHM CAN news a 61
+13:08:19 skip (title) Axj27zs_yns Passengers at European airports react after wave of bomb thr
+13:08:23 ok 403 2W_frVsRqGo CAN news a 27
+13:08:38 ok 404 hIDcsGldDFA CAN news a 67
+13:08:54 ok 405 qGNXEgQED5U CAN news a 89
+13:09:09 ok 406 KRLXIbiyr8I CAN news a 23
+13:09:24 ok 407 HNcmcbUAPEs CAN news a 34
+13:09:52 ok 408 imo7fxV3_d0 CAN news a 78
+13:10:04 skip (title) ecTAaMvufa0 Shooting in Krakow leaves 6 dead, more than a dozen injured
+13:10:08 ok 409 1QCXvQ5BFo0 CAN news a 69
+13:10:23 ok 410 6z2iDSuyRTQ CAN news a 124
+13:10:39 ok 411 OgaqPzZnLKU CAN news a 71
+13:10:54 ok 412 ZtQfyFfdILw CAN news a 93
+13:11:09 ok 413 t64YdC_B7vY CAN news a 147
+13:11:25 ok 414 rgUeUdWHA90 CAN news a 124
+13:11:40 ok 415 jayp1Tb3dG4 CAN news a 24
+13:11:52 skip (title) _Bjo6C5Ebn4 Meghan Markle's father arrested for possession of child sexu
+13:11:55 ok 416 50SZU7w758o CAN news a 76
+13:12:11 ok 417 WIJZoMOlJBI CAN news a 60
+13:12:26 ok 418 dstsRHD6Isc CAN news a 34
+13:12:41 ok 419 vRcQ7nHXPR4 CAN news a 82
+13:12:57 ok 420 FJiv96g1PAQ CAN news a 63
+13:13:12 ok 421 xeGx5HaF8Ro CAN news a 273
+13:13:28 ok 422 CfiHDCjTZuI CAN news a 193
+13:13:43 ok 423 l0YcKyazVsE CAN news a 88
+13:13:59 ok 424 -rKRjnOpjCQ CAN news a 35
+13:14:14 ok 425 By9U4fbEMBQ CAN news a 121
+13:14:26 skip (title) 2xz-8WtGIzU Comedian Russell Brand convicted of rape, sexual assault in 
+13:14:26 skip (title) avZe-Zgy2tQ Bomb threats force multiple flights in Europe to make emerge
+13:14:30 ok 426 -7E-G_HVvh0 CAN news a 33
+13:14:45 ok 427 vamoYg8o9nE CAN news a 71
+13:15:00 ok 428 A33WNoVgkmY CAN news a 103
+13:15:15 ok 429 wa3mrEQNr1c CAN news a 136
+13:15:30 ok 430 g5FT3HtkTiA CAN news a 31
+13:15:46 ok 431 0ZwJkDEJ3Wo CAN news a 151
+13:16:22 ok 432 wd7WaIqNmvQ CAN news a 23
+13:16:39 ok 433 GIp2OLqQ9Lk CAN news a 26
+13:17:05 ok 434 LNocuTAm9x4 CAN news a 27
+13:17:24 ok 435 B3fCyKrSApM CAN news a 30
+13:17:44 ok 436 tujBwhQu_HM CAN news a 28
+13:18:04 ok 437 YzUrOo-W6D0 CAN news a 28
+13:18:26 skip (too short) eRgUU6QVZVk
+13:18:35 ok 438 F07QhU42RsU CAN news a 71
+13:18:47 skip (title) _sEb7HRcDAk Authorities begin investigating after Polish shooter opens f
+13:18:56 ok 439 8A2CgxX_IqU CAN news a 26
+13:19:23 ok 440 eWwLip5dRhg CAN news a 59
+13:19:35 skip (title) LMhGNnZ5wHA At least five people killed, several others injured in shoot
+13:19:44 ok 441 jx6-JZdQFrk CAN news a 58
+13:20:07 ok 442 13zKdYb3_wM CAN news a 29
+13:20:28 ok 443 PQ2OfjYeiMw CAN news a 72
+13:20:48 ok 444 QqIQNqieJUU CAN news a 64
+13:21:10 skip (too short) WxsISsuMpuw
+13:21:10 skip (title) nC0T3fYosn4 New 'I Kill the Bear' show makes fun of everybody equally: S
+13:21:19 skip (too short) aQNRYaLn_As
+13:21:30 ok 445 kYt7rHI0BLs CAN news a 27
+13:21:48 ok 446 IFGe9ETvt7c CAN news a 61
+13:22:11 ok 447 9tToakOhwm4 CAN news a 20
+13:22:36 ok 448 I639Y8KZobI CAN news a 36
+13:22:55 ok 449 OZqQQRlBsFk CAN news m 24
+13:23:24 ok 450 qtN9vluHUA0 CAN news a 41
+13:23:45 ok 451 qfrYpp4Q1xY CAN news a 24
+13:24:05 skip (too short) 00nWIl1xQOw
+13:24:15 ok 452 q8jy72BM4Fw CAN news a 33
+13:24:37 ok 453 Ex5FpFTDszg CAN news a 33
+13:24:56 ok 454 Tp49FAVyjvU CAN news a 27
+13:25:15 skip (too short) oGUj0ca_AZk
+13:25:23 skip (too short) LQ1inOIc4Ww
+13:25:31 ok 455 lFtPfNGcnNg CAN news a 35
+13:25:52 ok 456 Csj7zSnj8m4 CAN news a 23
+13:26:14 ok 457 utY218DCMmI CAN news a 28
+13:26:34 ok 458 Jc72-D7GZG0 CAN news a 34
+13:26:57 ok 459 1xrrbs_17U4 CAN news a 25
+13:27:09 skip (title) 01MSsWnpkNo 2 men charged in Surrey extortion shootings
+13:27:17 ok 460 PMw6149WkPM CAN news a 38
+13:27:42 ok 461 AuEYoeqwdN0 CAN news a 40
+13:28:03 skip (too short) W5a145Qkqb4
+13:28:10 ok 462 hM5sgqnhYq0 CAN news a 34
+13:28:32 ok 463 nGIMpHmLFeM CAN news a 28
+13:28:48 ok 464 muXqlCf7qZM CAN news a 35
+13:29:09 ok 465 RAcwVpVbA50 CAN news a 34
+13:29:30 skip (too short) X-81hcQaEpM
+13:29:38 skip (too short) 6KCaMh4weSQ
+13:29:46 ok 466 fbzNwph4LfY CAN news a 49
+13:30:06 skip (too short) XgFnKloUQ_E
+13:30:16 ok 467 pqB0VduaRk8 CAN news a 33
+13:30:40 ok 468 0B1_KcMVf8w CAN news a 27
+13:31:00 ok 469 maWQcn5s7TI CAN news a 25
+13:31:18 skip (too short) 7rtzhR5qego
+13:31:18 skip (title) 7NE3ZDqRAvI Officer promoted while being disciplined for accidentally ki
+13:31:26 ok 470 XSNKTgrz_Yc CAN news a 31
+13:31:44 ok 471 avAmgIxplQY CAN news a 34
+13:32:31 ok 472 bw5tzcoEG88 US ted m 69
+13:33:01 ok 473 84wVmiEl7Dg US ted m 119
+13:33:17 ok 474 VC4g2l47rzc US ted m 210
+13:33:59 ok 475 ao-BzLbFObI US interview a 113
+13:34:29 ok 476 ltf-UAl8Ogw US interview m 409
+13:36:04 ok 477 -vFQKATKX20 UK news a 71
+13:36:16 skip (title) o2C0AbVJURI Russell Brand fallout: Lawyers condemned for perpetuating ‘r
+13:36:16 skip (title) DuAk9RDQFDU Meghan’s father Thomas Markle charged with possession of chi
+13:36:20 ok 478 mtwqnSfof4g UK news a 245
+13:36:35 ok 479 nJsgBGJtf5I UK news a 100
+13:36:51 ok 480 8d6QkH6I_-k UK news a 59
+13:37:03 skip (title) za3eOqV6Wpg Henry Nowak murder: Did police mislead his family about the 
+13:37:06 ok 481 nbaLS_Lq9PA UK news a 86
+13:37:21 ok 482 zlQNcPLPzqM UK news a 207
+13:37:37 ok 483 2N5oMnrh41k UK news a 221
+13:37:52 ok 484 ml5HumMiTZw UK news a 311
+13:38:08 ok 485 ZgYuOE61cE8 UK news a 69
+13:38:20 skip (title) 3N69TfL6sXs Watch footage of Russell Brand's police interviews as comedi
+13:38:23 ok 486 XQeGddhkqgk UK news a 185
+13:38:35 skip (title) M81ZJqz7uEw Henry Nowak's killer Vickrum Digwa has sentence increased - 
+13:38:35 skip (title) D-2WG50uY4c Russell Brand guilty of rape: How the trial unfolded
+13:38:38 ok 487 D-J8tR15SZg UK news a 69
+13:39:20 ok 488 sZWnRRqYilQ UK news a 46
+13:39:35 ok 489 7A5p484IFQw UK news a 31
+13:39:50 ok 490 FcbuOv-wk7M UK news a 322
+13:40:06 ok 491 Itr3Ld5c9yI UK news a 110
+13:40:21 ok 492 hS5FEMd62gU UK news a 53
+13:40:37 ok 493 SRsQnnW6TZI UK news a 66
+13:40:49 skip (title) ASeIIYVYO_E Russell Brand convicted of rape and told he'll face lengthy 
+13:40:52 ok 494 LncdozXvEGc UK news a 227
+13:41:07 ok 495 WMaLzq9uYh8 UK news a 157
+13:41:23 ok 496 5DhCoirnKvc UK news a 81
+13:41:59 ok 497 MXTF-2OcOhg UK news a 139
+13:42:18 ok 498 5HONoO1hxqc UK news a 123
+13:42:40 ok 499 6vhXNXTs27A UK news a 29
+13:42:55 skip (too short) 1zsDzO4qzNU
+13:43:04 ok 500 zJYuoWpgx3w UK news a 24
+13:43:23 skip (too short) o-UdROjxPHw
+13:43:30 ok 501 WvEcoKeZ5Ik UK news a 22
+13:43:42 skip (title) pboLvYR5u9Q Kenyan cult leader gets 200 years for murdering 190 children
+13:43:49 ok 502 2_f7PG39Y8o UK news a 72
+13:44:10 ok 503 HeMXoZzey-I UK news a 23
+13:44:22 skip (title) cxjZoHCF5AY What we know about the bomb threats to European flights
+13:44:31 ok 504 -c5tnAPNVDY UK news a 27
+13:44:54 ok 505 WYUpqCrXY-c UK news a 37
+13:45:13 ok 506 2WlTC2Y_8eQ UK news a 65
+13:45:31 ok 507 eP3julUb1y8 UK news a 137
+13:45:51 ok 508 yjsXvcL2ilk UK news a 21
+13:46:11 ok 509 wHdeOm449uM UK news a 101
+13:46:28 ok 510 K6z21NUupXk UK news a 21
+13:46:51 ok 511 ELmG_SCbeIM UK news a 38
+13:47:08 ok 512 Bx3XmvEZAys UK news a 37
+13:47:30 clips collected this run: 512 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 512
