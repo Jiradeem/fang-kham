@@ -64,6 +64,12 @@ them. That was explained to the owner and is worth repeating rather than quietly
 ### Fix of 2026-10-25 (why the first home nights gave 16 and then 0 clips)
 Some caption tracks always answer HTTP 429 while others download fine. Any 429 used to pause the whole night (20+40+80 min) and then stop. Now `captions_with_backoff` first checks the PROBE clip: if it still works, only that clip is skipped (`ClipCaptionDenied`); the night pauses only when the probe fails too. Captions are downloaded by yt-dlp itself (`download_track`, same cookie jar as the lookup) instead of a bare urllib request, with 12 s between clips. `home_run.py` publishes `tools/home-log.txt` (last 400 collector lines) every night, even with no clips: **read it first**. Tests: `python -B -I test_rate_limit.py` (9 cases, written partly by another AI the owner runs on the home computer).
 
+### 2026-11-08: corpus full at 30,000, cap raised to 50,000
+- The corpus reached 30,000 clips (~5.0 M lines, 273 parts, 276 MB of parts, .git ~165 MB) on 2026-11-05. After that each round ended at once and `home_run.py` pushed a log-only commit **every minute: 3,072 commits** "Home computer: run log (no new clips)" until 2026-11-08. Fixed: a full corpus stops the job for the day; log-only commits at most every 6 hours; a round shorter than 20 minutes waits before the next one.
+- `update_corpus.py --max` default is now **50,000** (~0.5 GB of parts; GitHub Pages allows about 1 GB, so do not go much higher on GitHub). Beyond that, the plan is Cloudflare (owner wants hundreds of thousands, like YouGlish; account exists, unused).
+- 39 more channels added (167 in `tools/channels.tsv`): sitcoms, kids' shows, cooking/real-life talk, learning channels.
+- To watch: phone search speed with ~45 parts per common phrase; channel supply (when most channels are used up, rounds collect little).
+
 ### Check first in a new session
 1. `git log --oneline -15` — are there commits "Add clips collected on the home computer" (one per night since 2026-10-24)? If yes, the home job works.
 2. `python3 -c "import json,re;m=json.loads(re.sub(r'^window\.CORPUS=','',open('data.js',encoding='utf-8').read()).rstrip().rstrip(';'));print(m['clips'],len(m['parts']))"` — clip count should grow by ~1,000 a night.

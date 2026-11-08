@@ -170,7 +170,7 @@ def main():
     ap.add_argument('--minutes', type=float, default=240)
     ap.add_argument('--per-channel', type=int, default=3)
     ap.add_argument('--depth', type=int, default=15, help='newest clips to look at per channel')
-    ap.add_argument('--max', type=int, default=30000, help='largest corpus to keep')
+    ap.add_argument('--max', type=int, default=50000, help='largest corpus to keep (50,000 ≈ 0.5 GB of parts; GitHub Pages allows about 1 GB)')
     ap.add_argument('--save-dir', help='only collect: write new clips (and newly skipped ids) to this folder')
     ap.add_argument('--merge-dir', help='only merge: add the clips saved in this folder to the corpus and rebuild')
     ap.add_argument('--wait-when-blocked', type=float, default=0, help='minutes to wait and retry when YouTube blocks (0 = stop)')

@@ -39,7 +39,12 @@ def build(clips):
     if os.path.isdir(CLIPS):  # also when only skip.json is there, so rejected clips are remembered
         run(PY + ['--merge-dir', CLIPS])
         run([NODE, os.path.join('tools', 'count_lessons.js')])
-    run([GIT, 'add', '-A', '--', 'data.js', 'data-*.js', 'counts.js', 'tools/corpus-skip.json', 'tools/home-log.txt'])
+    paths = ['data.js', 'data-*.js', 'counts.js', 'tools/corpus-skip.json']
+    # A log-only commit at most every 6 hours (once the corpus was full, a round every minute made 3,000 such commits).
+    last = subprocess.run([GIT, 'log', '-1', '--format=%ct', '--', 'tools/home-log.txt'], cwd=ROOT, capture_output=True, text=True).stdout.strip()
+    data_changed = subprocess.run([GIT, 'status', '--porcelain', '--'] + paths, cwd=ROOT, capture_output=True, text=True).stdout.strip()
+    if data_changed or not last or time.time() - int(last) > 6 * 3600: paths.append('tools/home-log.txt')
+    run([GIT, 'add', '-A', '--'] + paths)
     if subprocess.run([GIT, 'diff', '--cached', '--quiet'], cwd=ROOT).returncode == 0: return False
     run([GIT, 'commit', '-m', 'Add clips collected on the home computer' if clips else 'Home computer: run log (no new clips)'])
     return True
@@ -101,11 +106,15 @@ def main():
         left = (end - time.time()) / 60
         if left < 10: break
         sync()
-        tail.clear()
+        tail.clear(); started = time.time()
         collect(PY + ['--save-dir', CLIPS, '--limit', '1500', '--minutes', str(int(min(CYCLE_MIN, left))), '--per-channel', '40',
                       '--depth', '500', '--wait-when-blocked', '20'])
         publish()
         print('---- round done', time.strftime('%Y-%m-%d %H:%M'), flush=True)
+        if any('the corpus is full' in l for l in tail):
+            print('the corpus is full: nothing to collect until --max is raised; stopping for today', flush=True); break
+        # A round that ends at once (an error, or every channel used up) waits, so rounds never repeat every minute.
+        if time.time() - started < 20 * 60: time.sleep(max(0, min(60 * 60, end - time.time() - 60)))
     print('==== done', time.strftime('%Y-%m-%d %H:%M'), '====', flush=True)
 
 if __name__ == '__main__':
