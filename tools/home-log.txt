@@ -1,6 +1,8 @@
-Nightly run on the home computer, 2026-11-09 12:11 (last 400 lines of the collector)
-11:41:47 34238 clips published; 6917 on the skip list; 0 removed by the skip list
-12:04:12 ok 1 DZUGNkoF6PM CAN news a 47
-12:04:29 ok 2 iOCxnD1X27Y CAN news a 71
-12:04:49 ok 3 XTTaGM58sa0 CAN news a 52
-12:11:13 clips collected this run: 3 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 3
+Nightly run on the home computer, 2026-11-09 12:44 (last 400 lines of the collector)
+12:12:57 34241 clips published; 6919 on the skip list; 0 removed by the skip list
+12:34:03 ok 1 pY0WmJdd2fE AUS news a 249
+12:34:39 skip (title) PCLUeTtA_FE Accused murderer exposes himself in bizarre court appearance
+12:35:30 ok 2 VA0jsZi_UHE CAN news a 49
+12:36:10 ok 3 626mEBB8Gds CAN news a 49
+12:39:58 ok 4 DXCWxTmEAOE UK news a 125
+12:44:21 clips collected this run: 4 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 4
