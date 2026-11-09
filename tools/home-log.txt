@@ -1,4 +1,7 @@
-Nightly run on the home computer, 2026-11-09 14:13 (last 400 lines of the collector)
-13:43:56 34250 clips published; 6939 on the skip list; 0 removed by the skip list
-14:05:58 ok 1 syelCnOpx3o AUS news a 321
-14:13:36 clips collected this run: 1 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 1
+Nightly run on the home computer, 2026-11-09 14:44 (last 400 lines of the collector)
+14:15:18 34251 clips published; 6939 on the skip list; 0 removed by the skip list
+14:36:35 skip (title) 6y5ipmIM8GU Teen missing in Victoria's High Country; Millbrook crash; Ac
+14:36:37 skip (title) vK5ZaydoodE Accused murderer exposes himself in court chaos | 7NEWS
+14:36:39 skip (title) j95wClS_9vE Teen critical after stabbing; Lamarre-Condon court clash; Al
+14:41:20 ok 1 8_R6kyvJxJc UK news a 35
+14:44:39 clips collected this run: 1 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 1
