@@ -1,8 +1,10 @@
-Nightly run on the home computer, 2026-11-09 12:44 (last 400 lines of the collector)
-12:12:57 34241 clips published; 6919 on the skip list; 0 removed by the skip list
-12:34:03 ok 1 pY0WmJdd2fE AUS news a 249
-12:34:39 skip (title) PCLUeTtA_FE Accused murderer exposes himself in bizarre court appearance
-12:35:30 ok 2 VA0jsZi_UHE CAN news a 49
-12:36:10 ok 3 626mEBB8Gds CAN news a 49
-12:39:58 ok 4 DXCWxTmEAOE UK news a 125
-12:44:21 clips collected this run: 4 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 4
+Nightly run on the home computer, 2026-11-09 13:13 (last 400 lines of the collector)
+12:46:05 34245 clips published; 6929 on the skip list; 0 removed by the skip list
+13:05:37 skip (title) c3XwUZqQMbI Three charged over Wagga Wagga stabbing murder | 7NEWS
+13:05:37 skip (title) 4Vi1tKv-gdM Accused killer cop grilled over double shooting | 7NEWS
+13:05:37 skip (title) 2Rlz5_tTbyk Teen arrested after stabbing outside Sydney school | 7NEWS
+13:05:41 skip (title) MEUJIsouh48 Teen stabbed at Casula High; Accused killer cop cross-examin
+13:05:59 ok 1 ldJaIbXBE2g AUS news a 44
+13:09:35 skip (title) es4fybm0bP0 'There's no justice': Rape victim challenges sentencing of y
+13:09:39 ok 2 YbvZkg2s4qE UK news a 97
+13:13:00 clips collected this run: 2 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 2
