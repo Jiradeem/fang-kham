@@ -1,11 +1,6 @@
-Nightly run on the home computer, 2026-11-09 11:39 (last 400 lines of the collector)
-11:10:17 34231 clips published; 6915 on the skip list; 0 removed by the skip list
-11:11:33 ok 1 tM3O7B1GdpI NZ conversation a 233
-11:30:16 ok 2 QWBdBBOP5as AUS news a 46
-11:32:13 ok 3 AEGdTgp8IqU CAN news a 24
-11:32:30 ok 4 ao8-myQq_90 CAN news a 31
-11:32:48 ok 5 Zl4eU9GKThQ CAN news a 28
-11:38:12 skip (title) hiVNNLoIGzs Global authorities searching for source of cyberattacks, bom
-11:38:18 ok 6 XEVqm_4Dyqc US news a 69
-11:38:35 ok 7 teOvDtmgSGI US news a 34
-11:39:41 clips collected this run: 7 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 7
+Nightly run on the home computer, 2026-11-09 12:11 (last 400 lines of the collector)
+11:41:47 34238 clips published; 6917 on the skip list; 0 removed by the skip list
+12:04:12 ok 1 DZUGNkoF6PM CAN news a 47
+12:04:29 ok 2 iOCxnD1X27Y CAN news a 71
+12:04:49 ok 3 XTTaGM58sa0 CAN news a 52
+12:11:13 clips collected this run: 3 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 3
