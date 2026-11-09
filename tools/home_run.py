@@ -100,6 +100,9 @@ def main():
     if os.name == 'nt':  # keep the computer awake while this runs (ES_CONTINUOUS | ES_SYSTEM_REQUIRED)
         ctypes.windll.kernel32.SetThreadExecutionState(0x80000000 | 0x00000001)
     add_logon_start()
+    sync()
+    if os.path.exists(os.path.join(ROOT, 'tools', 'PAUSED')):
+        print('collection paused by the owner (tools/PAUSED); exiting', flush=True); return
     end = deadline()
     # Collect in rounds and publish after each, until 22:30, so clips reach the site all day long.
     while True:

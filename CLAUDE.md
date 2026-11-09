@@ -73,6 +73,9 @@ Some caption tracks always answer HTTP 429 while others download fine. Any 429 u
 ### 2026-11-09: Dhamma list restored
 The GitHub run of `update-dhamma.yml` on 2026-10-27 was partly blocked by YouTube; clips with no caption tracks at all were taken as "not English", and 2,442 of 2,554 clips were dropped from `dhamma.js` and put in `tools/dhamma-skip.json`. Restored the list (2,554) and emptied the skip list; `update_dhamma.py` now treats "no tracks of any language" as a block (stops after 4 in a row) and never skips such clips. The Dhamma corpus shards were not affected.
 
+### 2026-11-09: COLLECTING IS PAUSED (owner's request)
+`tools/PAUSED` exists, so `home_run.py` exits at start and `update_corpus.py` fetches nothing. The owner is starting a separate Dhamma website (repo dreamenglishlearningthai-oss/dhamma-english) whose collector runs on the same home computer and internet. **Do not resume until the owner says so.** To resume: delete `tools/PAUSED` and push. If both collectors are to run, share a lock file (planned: %USERPROFILE%\yt-collector.lock) and do not fetch at the same time.
+
 ### Check first in a new session
 1. `git log --oneline -15` — are there commits "Add clips collected on the home computer" (one per night since 2026-10-24)? If yes, the home job works.
 2. `python3 -c "import json,re;m=json.loads(re.sub(r'^window\.CORPUS=','',open('data.js',encoding='utf-8').read()).rstrip().rstrip(';'));print(m['clips'],len(m['parts']))"` — clip count should grow by ~1,000 a night.

@@ -175,6 +175,9 @@ def main():
     ap.add_argument('--merge-dir', help='only merge: add the clips saved in this folder to the corpus and rebuild')
     ap.add_argument('--wait-when-blocked', type=float, default=0, help='minutes to wait and retry when YouTube blocks (0 = stop)')
     a = ap.parse_args()
+    # The owner can pause collecting: while tools/PAUSED exists nothing is fetched from YouTube (merging still works).
+    if not a.merge_dir and os.path.exists(os.path.join(ROOT, 'tools', 'PAUSED')):
+        print('collection paused by the owner (tools/PAUSED); the corpus is full for now, nothing fetched'); return
     start = time.time()
     skip_path = os.path.join(ROOT, 'tools', 'corpus-skip.json')
     skip = set(json.load(open(skip_path))) if os.path.exists(skip_path) else set()
