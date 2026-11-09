@@ -1,11 +1,5 @@
-Nightly run on the home computer, 2026-11-09 08:57 (last 400 lines of the collector)
-08:32:53 34214 clips published; 6906 on the skip list; 0 removed by the skip list
-08:40:52 ok 1 JedmYQje7_0 US conversation m 133
-08:41:07 ok 2 sDTv6EtYWlA US conversation m 225
-08:41:21 ok 3 4WkZ46K41Fo US conversation m 159
-08:41:36 ok 4 4If0r_PGIrk US conversation m 87
-08:41:51 ok 5 ZiYsz2gkneM US conversation m 113
-08:51:31 ok 6 RerGxi_oBMg CAN news a 64
-08:51:46 ok 7 WK1wPyBwraM CAN news a 66
-08:56:09 ok 8 x6OXp_Iu9ek US news a 21
-08:57:20 clips collected this run: 8 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 8
+Nightly run on the home computer, 2026-11-09 09:23 (last 400 lines of the collector)
+08:59:00 34222 clips published; 6907 on the skip list; 0 removed by the skip list
+09:15:16 ok 1 pJvws2iCaqM NZ news a 45
+09:16:54 ok 2 OpXjGHsduWc AUS news a 112
+09:23:13 clips collected this run: 2 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 2
