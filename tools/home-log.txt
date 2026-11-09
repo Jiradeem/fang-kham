@@ -1,5 +1,5 @@
-Nightly run on the home computer, 2026-11-09 09:23 (last 400 lines of the collector)
-08:59:00 34222 clips published; 6907 on the skip list; 0 removed by the skip list
-09:15:16 ok 1 pJvws2iCaqM NZ news a 45
-09:16:54 ok 2 OpXjGHsduWc AUS news a 112
-09:23:13 clips collected this run: 2 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 2
+Nightly run on the home computer, 2026-11-09 10:15 (last 400 lines of the collector)
+09:50:24 34224 clips published; 6910 on the skip list; 0 removed by the skip list
+10:09:02 ok 1 R1qYAszDm1Y AUS news a 72
+10:12:43 ok 2 Mxrm-G6nKe4 UK news a 77
+10:15:41 clips collected this run: 2 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 2
