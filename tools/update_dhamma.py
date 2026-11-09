@@ -59,6 +59,9 @@ def captions(vid):
                                 'youtube:player_client=web_embedded', 'https://www.youtube.com/watch?v=' + vid], capture_output=True, text=True, timeout=180)
     info = json.loads(p.stdout or 'null')
     if not info: return None, 'blocked'
+    # No caption tracks of any language usually means YouTube is limiting us, not that the clip is not English.
+    # On 2026-10-27 a GitHub run took 2,442 such answers as "not English" and dropped them from dhamma.js.
+    if not (info.get('subtitles') or info.get('automatic_captions')): return None, 'no-tracks'
     # Keep only clips where English is really spoken: hand-made English captions, or YouTube's speech
     # recognition ran in English ("en-orig"). A plain "en" track alone is a machine translation (e.g. of Thai).
     manual = (info.get('subtitles') or {}).get('en') or []
@@ -145,13 +148,18 @@ def main():
     print(len(new), 'new clips listed;', len(clips), 'in total;', len(recs), 'with captions', flush=True)
     todo = [c for c in clips if c[0] not in recs]
     todo.sort(key=lambda c: (PRIORITY.get(c[3], 2), c[0] not in {n[0] for n in new}))
-    got = 0
+    got = strikes = 0
     for vid, title, dur, cat in ([] if a.no_fetch else todo):
         if got >= a.limit or time.time() - start > a.minutes * 60: break
         try:
             res, status = captions(vid)
         except Exception as e:
             print('error', vid, type(e).__name__, flush=True); time.sleep(10); continue
+        if status == 'no-tracks':
+            strikes += 1
+            if strikes >= 4: print('no caption tracks for 4 clips in a row: blocked by YouTube, stopping this run', flush=True); break
+            continue
+        strikes = 0
         if status == 'blocked': print('blocked by YouTube, stopping this run', flush=True); break
         if res is None:
             print(status, vid, flush=True)
