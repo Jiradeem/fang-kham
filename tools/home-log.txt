@@ -1,6 +1,4 @@
-Nightly run on the home computer, 2026-11-09 13:42 (last 400 lines of the collector)
-13:14:45 34247 clips published; 6938 on the skip list; 0 removed by the skip list
-13:33:27 ok 1 jVa24tVzkQw NZ news a 388
-13:35:07 ok 2 0nh7YstuTp4 AUS news a 45
-13:41:41 ok 3 bq5rl20BUNI US news a 20
-13:42:02 clips collected this run: 3 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 3
+Nightly run on the home computer, 2026-11-09 14:13 (last 400 lines of the collector)
+13:43:56 34250 clips published; 6939 on the skip list; 0 removed by the skip list
+14:05:58 ok 1 syelCnOpx3o AUS news a 321
+14:13:36 clips collected this run: 1 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 1
