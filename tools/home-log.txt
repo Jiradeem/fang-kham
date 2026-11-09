@@ -1,5 +1,7 @@
-Nightly run on the home computer, 2026-11-09 10:15 (last 400 lines of the collector)
-09:50:24 34224 clips published; 6910 on the skip list; 0 removed by the skip list
-10:09:02 ok 1 R1qYAszDm1Y AUS news a 72
-10:12:43 ok 2 Mxrm-G6nKe4 UK news a 77
-10:15:41 clips collected this run: 2 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 2
+Nightly run on the home computer, 2026-11-09 10:41 (last 400 lines of the collector)
+10:17:15 34226 clips published; 6910 on the skip list; 0 removed by the skip list
+10:35:30 ok 1 VKmBv1FZvfc CAN news a 55
+10:38:30 skip (title) dmM-kuF17m0 Gaza sand embankment collapses onto tents, killing five Pale
+10:40:48 ok 2 vUAQkMFavGI US news a 49
+10:41:00 skip (title) rCpi2Xd3264 Details emerging about suspect in Katie Suarez murder as inv
+10:41:23 clips collected this run: 2 | waiting in C:\Users\Lenovo\fang-kham\home-clips : 2
